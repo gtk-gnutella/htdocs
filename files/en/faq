@@ -32,6 +32,7 @@
   <li><a href="#gnet6">What does "Outdated version, please upgrade" mean?</a></li>
   <li><a href="#gnet7">Why doesn't my HTTP proxy work?</a></li>
   <li><a href="#gnet8">How can I increase the timeouts?</a></li>
+  <li><a href="#gnet-auto">How does auto mode decide between ultra and leaf?</a></li>
 </ul>
 
 <h2>Searches</h2>
@@ -329,6 +330,29 @@
   <q><em>Config->GnutellaNet Settings</em></q>.
 </p>
 
+<h3><a name="gnet-auto">How does auto mode decide between ultra and leaf?</a></h3>
+<p>
+  In order to be promoted to <a href="#general-ultrapeer">ultra mode</a> the 
+  following conditions must be met:
+</p>
+<ol>
+  <li>
+    There must be more than 8192 bytes/s outgoing bandwidth available.
+  </li>
+  <li>
+    If bandwidth schedulers are enabled, leaf nodes must not be configured to 
+    steal all the HTTP outgoing bandwidth.
+  </li>
+  <li>
+    If Gnet out scheduler is enabled, there must be at least 256 bytes/s per 
+    gnet connection (ultrapeer or normal aka legacy).
+  </li>
+  <li>
+    Overall, there must be 32 bytes/s per configured leaf plus 256 bytes/s per 
+    gnet connection available.
+  </li>
+</ol>
+  
 <h2>Searches</h2>
 
 <h3><a name="search0">How can I get more results?</a></h3>
