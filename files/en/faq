@@ -23,6 +23,7 @@
   <li><a href="#gnet4">What does this stuff in the type column mean?</a></li>
   <li><a href="#gnet5">What does "Harmful version banned, upgrade required" mean?</a></li>
   <li><a href="#gnet6">What does "Outdated version, please upgrade" mean?</a></li>
+  <li><a href="#gnet7">Why doesn't my HTTP proxy work?</a></li>
 </ul>
 
 
@@ -30,6 +31,7 @@
 <ul>
   <li><a href="#search0">How can I get more results?</a></li>
   <li><a href="#search1">Where did the filters go?</a></li>
+  <li><a href="#search3">How can I ignore files with no SHA1?</a></li>
 </ul>
 
 
@@ -50,6 +52,11 @@
   <li><a href="#up0">What does "Normalized" mean?</a></li>
 </ul>
 
+<h2>GTK+ 2.x</h2>
+<ul>
+  <li><a href="#gtk2_fonts">I have problems with the fonts.</a></li>
+  <li><a href="#gtk2_ctype">Non-ASCII characters show up as _ (underscore).</a></li>
+</ul>
 
 <!--
   --
@@ -175,6 +182,17 @@
   scalability.  In addition, unstable (cvs) versions are banned after 90 days.  
 </p>
 
+<h3><a name="gnet7">Why doesn't my HTTP proxy work?</a></h3>
+<p>
+ Your HTTP proxy must support the method CONNECT because a normal GET
+ doesn't work with Gnutella connections. This is an extension to the HTTP
+ protocoal and mainly supported by SQUID proxies. It's also often deactivated
+ because it might be considered as a security problem by your provider. At the
+ moment, the proxy support - also for SOCKS - isn't very good. The developers
+ don't use proxies but if you think you can fix it, we would appreciate
+ your patches.  
+</p>
+
 <h2>Searches</h2>
 
 <h3><a name="search0">How can I get more results?</a></h3>
@@ -189,6 +207,13 @@
   If you don't see the filter button in your gtk-gnutella you should probably enable the toolbar in the menu :)
 </p>
 
+<h3><a name="search3">How can I ignore files with no SHA1?</a></h3>
+<p>
+ Click with right mouse button on a search result without a SHA1 and
+ select "Drop results with urn:sha1" from the popup menu. That will drop
+ all results with this SHA1 - in this case none - from your results. You'll
+ miss a lot of spam.
+</p>
 
 <h2>Downloads</h2>
 
@@ -256,7 +281,7 @@
   (see <a href="#gnet1">port forwarding</a>).
 </p>
 
-<h3><a name="down7">why does gtk-gnutella append a .OK to my file names?</a></h3>
+<h3><a name="down7">Why does gtk-gnutella append a .OK to my file names?</a></h3>
 <p>
   You probably haven't set up different directories for downloaded files, 
   temporary files and bad files.
@@ -269,3 +294,23 @@
   This shows the total amount of bytes uploaded for the file divided by the file size.
 </p>
 
+<h2>GTK+ 2.x</h2>
+
+<h3><a name="gtk2_fonts">I have problems with the fonts.</a></h3>
+<p>
+ Set the environment variable GDK_USE_XFT to 0 or 1 and see whether
+ this helps. You can also define which font should be used by putting
+ the following line into your ~/.gtkrc-2.0 file:<br>
+ gtk-font-name = "Sans 12"<br>
+ Sans is the name of the font and 12 the size. Don't miss the whitespace.
+</p>
+
+ 
+<h3><a name="gtk2_ctype">Non-ASCII characters show up as _ (underscore).</a></h3>
+<p>
+ Set the environment variable LC_CTYPE or LC_ALL to an appropriate value
+ for the encoding you use. For example, if you use special German characters
+ in your filenames, set it to de_DE.ISO8859-1. The valid values depend on your
+ Operating System; see setlocale(3) for details. Ideally, everyone would
+ use UTF-8 encoding which covers nearly all languages.
+</p>
