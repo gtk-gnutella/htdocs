@@ -1,0 +1,23 @@
+<!-- content -->
+<!-- $Id$ -->
+
+<h3>The Graphical Gnutella Client for Unix</h3>
+
+<p>
+Gtk-Gnutella is a clone of Gnutella (see <A HREF="http://gnutella.wego.com/">gnutella.wego.com</A>).
+It runs on every Unix which supports <A HREF="http://www.gtk.org/">GTK+</A> (1.2 or above). Gnome is not needed.
+It is currently developed and tested under Linux (Debian 2.2) and is known to run at least on Linux and FreeBSD (on 80x86 machines).<br>
+It is released under the GNU Public License (GPL).
+</p>
+
+<p>
+Gtk-Gnutella is not finished yet, but it is fully functional: you may share, search, and download.
+And it is stable too, users usually just leave it run unattended for days.
+</p>
+
+<p>
+All ideas, comments, bug reports are welcome to <I>rmanfredi at users dot sourceforge dot net</I>, or to the gtk-gnutella-devel mailing list.
+</p>
+
+<!-- end content -->
+

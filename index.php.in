@@ -1,0 +1,124 @@
+<?php
+/* $Id$
+ *
+ * IceWM homepage V2 script
+ *
+ * May 2001, maol, GPL
+ * Nov 2001 customized for Gtk-Gnutella by maol
+ *
+ */
+
+/* my definitions. we want them available in all subs... */
+/****************************************************************
+ *
+ * general configuration variables are in here
+ *
+ */
+//define(VERSION,	"@@VERSION@@");
+define(VERSION,	"0.17");
+define(BASEDIR,	"/home/groups/g/gt/gtk-gnutella/htdocs/V2/files/");
+define(NEWSMIN, 0);
+define(NEWSMAX, 3);
+/*
+ * end of user changeable variables
+ *
+ ****************************************************************/
+define(BASEURL, "$PHP_SELF");
+define(GENDIR,  "general/");
+define(LANG,    getlang());
+
+/* ** hack ** fscking damn php won't use LANG in header() ** hack ** */
+#$CHARSET[ru] = 'koi8-r';
+$ru = $CHARSET[ru] = 'koi8-r';
+if (isset($CHARSET[LANG])) {
+#	header("Content-Type: text/html; charset=$CHARSET[LANG]");
+	header("Content-Type: text/html; charset=$ru");
+}
+    
+/* find out about the visitor's wish */
+switch ($page) {
+	case "shots":
+		define(TITLE, "Gtk-Gnutella Screenshots");
+		iceinclude("header", 0);
+		icecontent("shots");
+		iceinclude("footer", 0);
+		break;
+
+	case "devel":
+		define(TITLE, "Gtk-Gnutella CVS and Changelog");
+		iceinclude("header", 0);
+		icecontent("devel");
+		iceinclude("footer", 0);
+		break;
+
+	case "mailing":
+		define(TITLE, "The Gtk-Gnutella Mailing Lists");
+		iceinclude("header", 0);
+		icecontent("mailing");
+		iceinclude("footer", 0);
+		break;
+
+	case "links":
+		define(TITLE, "Gnutella Links");
+		iceinclude("header", 0);
+		icecontent("links");
+		iceinclude("footer", 0);
+		break;
+
+	default: /* just send the frontpage */
+		define(TITLE, "Gtk-Gnutella - The Graphical Unix Gnutella Client");
+		iceinclude("header", 0);
+		icecontent("intro");
+		iceinclude("news", 0);
+//		icecontent("press");
+		iceinclude("footer", 0);
+		break;
+}
+
+/* getlang sub - check which language the visitor wants */
+function getlang() {
+	global $cooklang, $lang, $HTTP_ACCEPT_LANGUAGE;
+	$accept = $HTTP_ACCEPT_LANGUAGE;
+
+	if (!isset ($lang)) {				/* no language selection in http request */
+		if (isset ($cooklang)) {	/* but a cookie is set */
+			$lang = $cooklang;
+		} else {									/* not even a cookie. Choose from http_accept_language */
+			while ((empty($lang)) && (ereg("([a-z][a-z](-[A-Z][A-Z])?)",$accept,$res))) {
+				$lang = $res[1];
+				$accept = ereg_replace("$lang","",$accept);
+			}
+			if (!isset($lang)) {		/* still no lang selected? take english */
+	  		$lang = "en";
+			}
+		}
+	}
+	setcookie("cooklang", $lang, time()+31536000);
+	return $lang;
+}
+
+/* icecontent sub - include the content files including pre and post files */
+function icecontent($content) {
+	global $page; /* so the included files know about it */
+//	include(BASEDIR . GENDIR . "/cheader");
+	iceinclude($content, 1);
+//	include(BASEDIR . GENDIR . "/cfooter");
+}
+
+/* iceinclude sub - checks whether a file is available in the desired language */
+function iceinclude($file, $box) {
+	global $page; /* so the included files know about it */
+	$incfile = BASEDIR . LANG . "/$file";
+	if (!file_exists($incfile)) {
+                $incfile = BASEDIR . "en/$file";
+                if (file_exists($incfile)) {
+			if ($box) { include(BASEDIR . GENDIR . "/cheader"); }
+                        include("$incfile");
+			if ($box) { include(BASEDIR . GENDIR . "/cfooter"); }
+                }
+        } else {
+		if ($box) { include(BASEDIR . GENDIR . "/cheader"); }
+                include("$incfile");
+		if ($box) { include(BASEDIR . GENDIR . "/cfooter"); }
+        }
+}

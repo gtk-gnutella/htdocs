@@ -1,0 +1,27 @@
+<h3>Gtk-Gnutella Mailing Lists</h3>
+
+<p>
+To get the latest development version, you can always use the CVS repository of Gtk-Gnutella.
+<B>Warning</B>: As a development version, the current version may be unstable or even not compile right
+on your machine.
+</p>
+
+<p>To get the files from CVS just type in the following commands:<br><br>
+
+<tt>
+cvs -d:pserver:anonymous@cvs.gtk-gnutella.sourceforge.net:/cvsroot/gtk-gnutella login<BR>
+cvs -z3 -d:pserver:anonymous@cvs.gtk-gnutella.sourceforge.net:/cvsroot/gtk-gnutella co gtk-gnutella-current
+</tt>
+
+<br><br>
+When prompted for a password for anonymous, simply press the Enter key. 
+</p>
+
+<p>
+If you want to contribute to the development of Gtk-Gnutella, you may subscribe to the
+<A HREF="http://gtk-gnutella.sourceforge.net/lists/">gtk-gnutella-devel</A> mailing
+list. Please post your patches, bug reports and feature requests to <a
+href="http://sourceforge.net/tracker/?group_id=4467">our bug tracker</a>,
+thank you.
+</p>
+

@@ -1,0 +1,20 @@
+<!-- $Id$ -->
+<h4>Mailing Lists</h4>
+
+<p>
+Just click on the links to subscribe or unsubscribe. There's a link to the
+list archive on the subscribe/unsubscribe pages. We don't link the archives
+here because the link is going to change shortly (SourceForge will switch to
+a new mail archiving system, ditching Geocrawler in the process).
+</p>
+
+<p>
+<A HREF="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-users/">gtk-gnutella-users</A>
+Main list for Gtk-Gntuella users<br>
+
+<A HREF="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-devel/">gtk-gnutella-devel</A>
+If you're interested in contributing to Gtk-Gnutella<br>
+
+<A HREF="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-announce/">gtk-gnutella-announce</A>
+For releases announcements only<br>
+</p>

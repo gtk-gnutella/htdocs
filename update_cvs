@@ -1,0 +1,26 @@
+#!/bin/sh
+# $Id$
+# update V2
+#
+
+ROOT=/home/groups/g/gt/gtk-gnutella
+WEB=htdocs
+
+echo "---->> removing created files       <<----"
+cd ${ROOT}/${WEB}
+rm index.php
+
+echo "---->> cd into root dir for cvs co  <<----"
+cd ${ROOT}
+
+echo "---->> cvs checkout ${WEB}          <<----"
+cvs -z3 -q -d:pserver:anonymous@cvs1:/cvsroot/iceorg co ${WEB}
+
+echo "---->> substituting version number  <<----"
+source ${WEB}/VERSION
+sed -e "s|@@VERSION@@|${VERSION}|" ${WEB}/index.php.in > ${WEB}/index.php
+
+echo "---->> chmod -R g+w V2              <<----"
+chmod -R g+w ${ROOT}/${WEB}
+
+echo "---->> all done                     <<----"
