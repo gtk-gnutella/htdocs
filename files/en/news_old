@@ -1,0 +1,13 @@
+<!-- $Id$ -->
+
+<?php
+icecontent("news_old_header");
+	
+newsfiles();
+$count = count($news_items);
+for($i = NEWSNUM; $i < $count; $i++) {
+	icecontent("$news_items[$i]");
+}
+?>
+<!-- end news_old -->
+
