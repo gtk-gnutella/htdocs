@@ -39,6 +39,7 @@
   <li><a href="#search0">How can I get more results?</a></li>
 	<li><a href="#search3">How can I ignore files with no SHA1?</a></li>
 	<li><a href="#search-entry">Where did the search entry box go?</a></li>
+	<li><a href="#search-passive">What are "Passive" searches?</a></li>
 </ul>
 
 <h2>Downloads</h2>
@@ -140,15 +141,15 @@
   <a href="#gnet0">What is a good number of connections?</a>).
 </p>
 <p>
-  Ultrapeers may not be not firewalled, are expected to have long uptimes
+	Ultrapeers must not be not firewalled, are expected to have long uptimes
 	(more than two hours), and have sufficient surplus bandwidth to donate to
 	the gnet.  Ultrapeers forward queries from their leaf nodes and leaf nodes
 	upload to their ultrapeers <a href="<?php echo BASEURL ?>?page=features">QRP</a>
-	tables which contain hashes of keywords that will match files shared by the leaf.  When an
-  ultrapeer gets a hit on a query routing table, it relays the query to the
-  corresponding leaf node.  The result is very low gnet traffic for each leaf
-  node, freeing bandwidth for sharing and downloading, which still occur
-  directly p2p.  Ultrapeers can also act as
+	tables which contain hashes of keywords that will match files shared by the 
+	leaf.  When an ultrapeer gets a hit on a query routing table, it relays the 
+	query to the corresponding leaf node.  The result is very low gnet traffic 
+	for each leaf node, freeing bandwidth for sharing and downloading (which 
+	still occur directly p2p.)  Ultrapeers can also act as
   <a href="<?php echo BASEURL ?>?page=features">push-proxies</a> for
   firewalled leaf nodes.
 </p>
@@ -348,6 +349,35 @@
 <h3><a name="search-entry">Where did the search entry box go?</a></h3>
 <p>
 	Searches are now entered in the <q><em>Search:</em></q> box in the sidebar.
+</p>
+
+<h3><a name="search-passive">What are "Passive" searches?</a></h3>
+<p>
+	A <q><em>passive</em></q> search will return all the search results that 
+	pass through gtk-gnutella.  By 
+	<a href="index.php?page=filtering_howto">filtering</a> these results, 
+	passive searches can be useful.  
+</p>
+<p>
+	If you are in <a href="#general-ultrapeer">ultra</a> mode, many search 
+	results are already passing through your node besides the ones for your own 
+	searches. You can take advantage of this to make searches without generating 
+	any extra gnet traffic.  For example, on my ultrapeer with 200 
+	<a href="#general-ultrapeer">leaf nodes</a>, I opened a passive search and 
+	filtered the results to display only hits with the name 
+	<q><em>eminem</em></q>.  Within an hour or so I had about 1500 results. 
+	Obviously, the more popular the search, and the more patient you are, the 
+	more useful this technique is.
+</p>
+<p>
+	If you are in leaf mode, then the only search results that will pass through 
+	gtk-gnutella will be those from your own searches, so the above technique 
+	won't be useful.  But there is another way to use passive searches that is 
+	only useful in leaf mode.  For example, if you start a passive search and 
+	filter it to display only mp3 files, then all mp3 files from all your open 
+	searches will be conveniently aggregated in one search window.  By opening 
+	more passive searches with different filters, you can display different 
+	file types in each. 
 </p>
 
 <h2>Downloads</h2>
