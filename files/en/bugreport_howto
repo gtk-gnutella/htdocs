@@ -24,7 +24,7 @@
     the latest 
     <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
     released version</a> or from versions built from 
-    <a href="index.php?page=devel#devel-cvs">current cvs</a>.  The developers 
+    <a href="index.php?page=devel#devel-cvs">current CVS</a>.  The developers 
     code gtk-gnutella not for profit, but because they find it an interesting 
     hobby and because they want to give something back to the open source 
     community.  Please don't treat them as if they were a company that you paid 
@@ -62,13 +62,14 @@
     gtk-gnutella web site.  
   </blockquote>
   <p>
-    If it's a cvs version, look in 
-    <code>gtk-gnutella-current/src/CVS/Entries</code> and paste the last 
-    commit entry into your report.  For example:  
+    If it's a CVS version, use
+    <code><a href="http://www.rocketaware.com/man/man1/ident.1.htm">ident</a>
+    </code> or look in <code>gtk-gnutella-current/src/CVS/Entries</code>
+    and paste the last commit entry into your report.  For example:  
   </p>
   <blockquote style="font-weight: bold">
     /support-glade2.c/1.5/Sat Jun 14 17:54:28 2003// 
-  </blockquote> 
+  </blockquote>
   <p>
     If you compiled it yourself, say which <code>./configure </code> options 
     you used and any CFLAGS you passed to it.  For example:
@@ -111,8 +112,8 @@
 <h3><a name="bugreport-compile">Gtk-gnutella won't compile!</a></h3>
   <p>
     Not many compilation problems are reported for gtk-gnutella.  It's known 
-    to compile on linux and freebsd.  If you have problems, paste the last 
-    compiler command, for example:  
+    to compile on Linux and FreeBSD with gcc.  If you have problems, paste the
+    last compiler command, for example:  
   </p>
   <blockquote>
     <code>
@@ -144,9 +145,10 @@
     gtk-gnutella from an icon or menu, then you can find the error wherever 
     your X error log is.  The whole error message and preferably about 10 
     lines leading up to the error should be pasted into your bug report.  If 
-    you're paranoid (after all, they ARE out to get you) you could obfuscate 
-    filenames.  You'll only find the error if gtk-gnutella "abort"s, not if it 
-    has a "segmentation fault" so you should say which case applies.  
+    you're paranoid (after all, they <strong>are</strong> out to get you)
+	you could obfuscate filenames.  You'll only find the error if
+	gtk-gnutella <q>abort</q>s, not if it has a <q>segmentation fault</q> so
+	you should say which case applies.  
   </p>
   <p>
     The most common reason for a gtk-gnutella crash is an "assertion" failure. 
@@ -155,7 +157,7 @@
     particular place in the code execution, a particular condition must be met 
     or the program is not behaving as the developer understands it should.  
     For example, an assertion could state that a variable should at least have 
-    a value, ie the value is not null: <code>g_assert(header != NULL);</code> 
+    a value i.e., the value is not null: <code>g_assert(header != NULL);</code> 
     or that the value should be in some numerical range: 
     <code>g_assert(parq_ul-&gt;position &gt; 0);</code>.  If the assertion fails, 
     the program aborts with an error message saying which assertion failed and 
@@ -181,7 +183,7 @@
     your crash unless you recompile and can reproduce the bug. If you don't 
     want to do that, then provide the information described so far.  That 
     isn't usually enough information to fix the problem but at least it's a 
-    heads up that there IS a bug.  If you've provided a clear enough 
+    heads up that there <em>is</em> a bug.  If you've provided a clear enough 
     description, someone else may be able to reproduce the bug with a 
     debugging version of gtk-gnutella.  
   </p>
@@ -206,7 +208,7 @@
     distributions turn core dumps off by default.  You can turn on core dumps 
     with the shell command <code>ulimit -S -c unlimited</code>, which will 
     only affect that terminal, or you can put the command on your shell config 
-    file (eg <code>~/.profile</code> or <code>~/.cshrc</code> to allow core 
+    file (e.g., <code>~/.profile</code> or <code>~/.cshrc</code> to allow core 
     dumps globally.  Newer core files will overwrite older ones so you should 
     move them to a safe place.  The core file will be in your home directory 
     or in the current directory if you called gtk-gnutella from a terminal.  
@@ -449,8 +451,8 @@
     <a href="http://sourceforge.net/tracker/?atid=104467&group_id=4467&func=browse">
     SourceForge.net Bug Tracker</a> or you can email your report to the
     <a href="http://lists.sourceforge.net/lists/listinfo/gtk-gnutella-devel/">
-    gtk-gnutella-devel</a> mailing list.  You can also find a developer on irc 
-    chat on the <a href="http://www.freenode.net/">Freenode network</a> in the 
+    gtk-gnutella-devel</a> mailing list.  You can also find a developer on IRC 
+    on the <a href="http://www.freenode.net/">Freenode network</a> in the 
     #gtk-gnutella channel.  
   </p>
   <p>
@@ -460,13 +462,13 @@
     your problem is really a bug or not.  It's an excellent place to go when 
     you have already made a report on the list or bug tracker and you want 
     to know if the developers need more information from you.  At the time 
-    this was written, the developers all lived in Europe in the CET timezone 
-    (GMT+1).  You might catch them for a quick question in the morning before 
-    work but the best time is in the evenings or on weekends.  You can have a 
-    look at the 
-    <a href="http://www.maol.ch/irc/?channel=gtk-gnutella">irc log</a> to get 
+    this was written, the developers all lived in the Central European Time
+    (CET) zone (UTC+1). You might catch them for a quick question in the
+    morning before work but the best time is in the evenings or on weekends.
+    You can have a look at the 
+    <a href="http://www.maol.ch/irc/?channel=gtk-gnutella">IRC log</a> to get 
     an idea of when to find people in the channel.  The times listed in the 
-    log are also CET.  
+    log are also UTC+1.
   </p>
   <p>
     The developers' mailing list is a good place to report critical bugs like 
@@ -474,23 +476,25 @@
     people will read a bug report on the list than on the bug tracker and it's 
     perhaps a little more convenient for reading backtraces, etc.  On the 
     other hand, bugs reported to the list can be more easily forgotten than 
-    those submitted to the bug tracker.  You have to register on sourceforge 
+    those submitted to the bug tracker.  You have to register on SourceForge 
     to subscribe to gtk-gnutella-devel, but you don't need to be subscribed to 
-    post a message.  
+    post a message. If you post a message although you're not subscribed to
+    the mailing list, either add your own email address to the Reply-To: header
+    or mention that you're not subscribed.
   </p>
   <p>
-    The best place to submit bugs is the sourceforge bug tracker.  After all, 
+    The best place to submit bugs is the SourceForge bug tracker.  After all, 
     that's what it was designed for.  Have a look and see if your bug has 
     already been reported and if so, add your report as a comment rather than 
-    submitting a new bug.  You need to register at sourceforge and be logged 
+    submitting a new bug.  You need to register at SourceForge and be logged 
     in before you can submit a bug.  
   </p>
   <p>
     Once you have submitted your report, don't forget it.  Your bug report is 
-    not complete until you've answered any followup questions the developers 
+    not complete until you've answered any follow-up questions the developers 
     have for you.  Bug reporters who don't respond to followups are a major 
-		irritant to developers.  Debugging software can be a frustrating 
-		experience for developers but receiving good bug reports can help make 
-		writing free software a little more satisfying.  
+    irritant to developers.  Debugging software can be a frustrating 
+    experience for developers but receiving good bug reports can help make 
+    writing free software a little more satisfying.  
   </p>
 
