@@ -37,9 +37,16 @@ if (isset($CHARSET[LANG])) {
 /* find out about the visitor's wish */
 switch ($page) {
 	case "shots":
-		define(TITLE, "Gtk-Gnutella Screenshots");
+		define(TITLE, "Gtk-Gnutella 0.85 Screenshots");
 		iceinclude("header", 0);
 		icecontent("shots");
+		iceinclude("footer", 0);
+		break;
+
+	case "shots090":
+		define(TITLE, "Gtk-Gnutella 0.90 Screenshots");
+		iceinclude("header", 0);
+		icecontent("shots090");
 		iceinclude("footer", 0);
 		break;
 
