@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<h4>4, January 2004, Version 0.93.2 released</h4>
+<h4>5, January 2004, Version 0.93.2 released</h4>
 <p>
   You can get this new version from our 
   <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
@@ -8,12 +8,12 @@
 <p>
   <strong>Source Code: gtk-gnutella-0.93.2.tar.bz2</strong><br>
   MD5Sum: <tt>ef12e4772d1de26b963da4ec32df2f08</tt><br>
-  <!-- urn:sha1:<tt></tt> -->
+  urn:sha1:<tt>NXTCKAJNFGOIP3HU5BHLAHIPOXUFPQHW</tt>
 </p>
 <p>
   <strong>Debian-3.0 (stable) Package: gtk-gnutella.gtk1_0.93.2-0_i386.deb</strong><br>
   MD5Sum: <tt>325888899ea38e14196e60323f6e8c1b</tt><br>
-  <!-- urn:sha1:<tt></tt> -->
+  urn:sha1:<tt>R5ERY2YWJD4OEJ5XCIZVJ6X6OJD7VJSM</tt>
 </p>
 <p>
   <strong>These are some of the changes made since 0.93.1 stable:</strong>
