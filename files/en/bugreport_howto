@@ -112,14 +112,14 @@
 <h3><a name="bugreport-compile">Gtk-gnutella won't compile!</a></h3>
   <p>
     Not many compilation problems are reported for gtk-gnutella.  It's known 
-    to compile on Linux and FreeBSD with gcc.  If you have problems, paste the
-    last compiler command, for example:  
+    to compile on Linux, OS X, and FreeBSD with gcc.  If you have problems, 
+    paste the last compiler command, for example:  
   </p>
   <blockquote>
     <code>
       gcc -DHAVE_CONFIG_H -I. -I. -I.. -I/usr/include/gtk-1.2 
       -I/usr/include/glib-1.2 -I/usr/lib/glib/include -I/usr/X11R6/include 
-      -I/usr/include/libxml2    -g -O2 -Wall -c nodes.c
+      -I/usr/include/libxml2 -g -O2 -Wall -c nodes.c
     </code>
   </blockquote>
   <p>
@@ -189,17 +189,27 @@
   </p>
   <p>
     If you have compiled gtk-gnutella yourself then by default, it will be 
-    compiled with the <code>-g -O2</code> options passed to gcc.  That will 
-    usually suffice for bug reports but sometimes the optimization will make 
-    things difficult to trace.  For the best quality of bug reporting, you 
-    could compile with <code>-g3</code> to get more debugging symbols and use 
-    less optimization.  For example:
+    compiled with the <code>-O</code> option passed to the compiler and, in 
+    addition <code>make install</code> will strip the executable.  For bug 
+    reporting, you should compile with <code>-g3 -O0</code> to get debugging 
+    symbols and use less optimization.  For example:
   </p>
   <blockquote>
     <code>
 			./Configure -Dccflags="-g3 -Wall" -Doptimize="-O0"
     </code>
   </blockquote>
+  <p>
+    There is currently no way to tell <code>make install</code> to 
+    <strong>not</strong> strip the executable so you will have to copy the 
+    unstripped version over the installed version.  For example:
+  </p>
+  <blockquote>
+    <code>
+      su -c 'install -m555 src/gtk-gnutella /usr/local/bin/gtk-gnutella'
+    </code>
+  </blockquote>
+
   <p>
     When gtk-gnutella crashes, it will dump a "core" file containing an image 
     of the memory it used, including all the values held in RAM at the time.  
