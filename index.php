@@ -71,7 +71,7 @@
                           <br><br>
                               User interface designed with
                               <a href="http://glade.gnome.org/">
-                                <img src="images/glade-banner.gif" alt="Glade" border=0></a>
+                                <img src="images/glade-banner.gif" alt="Glade" border="0" width="100" height="45"></a>
                         </td>
                       </tr>
                     </table>
