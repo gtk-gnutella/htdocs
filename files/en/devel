@@ -21,12 +21,12 @@ Now to the important questions:<br>
 <ul>
   <li>
     Do you know C well enough to start helping to code new functionalities
-    into gtk-gnutella, to help making it the best native Unix client?
+    into gtk-gnutella, to help make it the best native Unix client?
   </li>
   <li>
-    Do you have litterary skills and/or a taste for good documentation?  GTKG
+    Do you have literary skills and/or a taste for good documentation?  GTKG
     currently lacks good documentation, and the current developers are busy...
-    developing precisely.
+    developing, to be precise.
   </li>
   <li>
     Do you have any web skills and would like to take over the maintenance of
@@ -50,8 +50,8 @@ them. Please also read the <a href="index.php?page=developers_howto">"Developers
 <p>
 To get the latest development version, you can always use the CVS repository of Gtk-Gnutella.
 <B>Warning</B>: As a development version, the current version may be unstable or even not compile right
-on your machine. If you're just interested to get an overview over the
-different files you can browse it <a
+on your machine. If you're just interested in getting an overview of the
+different files you can browse the repository <a
 href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/">on
 the web</a>.
 </p>

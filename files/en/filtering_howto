@@ -2,7 +2,7 @@
 <p>
 <i>&copy; 2002 Vidar Madsen, Markus Goetz</i>
 <br>
-<b>This is very much work-in-progress. Please send comments
+<b>This is very much a work-in-progress. Please send comments
 and suggestions to <a href="mailto:vidar@gimp.org">vidar@gimp.org</a>.
 </b>
 </p>
@@ -10,7 +10,7 @@ and suggestions to <a href="mailto:vidar@gimp.org">vidar@gimp.org</a>.
 
 <p>
 The filtering code in gtk-gnutella 0.90 was dramatically
-improved. This small howto wants to tell you how to deal with the big power given by those filters.
+improved. This small howto will tell you how to deal with the power given by those filters.
 </p>
 
 <p>
@@ -34,7 +34,7 @@ DO or DON'T, the filtering is aborted, and the application
 will proceed to DISPLAY and/or DOWNLOAD if the respective
 flags are set. Furthermore, each of the flags can be set only once
 (subsequent attempts to set them will be silently ignored),
-so the order in which you set up the rules are quite important.
+so the order in which you set up the rules is quite important.
 </p>
 
 <h3>Filters</h3>
@@ -61,7 +61,7 @@ be sent to its respective search filter.
 You can practically write "sub-routines" that can be
 called from any of the other filters. For example, you
 can define a "movie" filter that filters away files
-that are less than a certain size, and doesn't match
+that are less than a certain size, and don't match
 any of the common video file extensions. Then
 you can use the "jump" rule in your search filters
 to call your "movie" filter.
@@ -144,7 +144,7 @@ IP rules filter results based on the servent's
 IP address. A typical use for this is to ignore
 certain spammer hosts which return bogus hits.
 Or one can auto-download results that
-come from a certain IP adress or network which
+come from a certain IP address or network which
 is known to be fast.
 </p>
 
@@ -163,7 +163,7 @@ DOWNLOAD (if picked via the "auto-download" item).
 
 <p>
 State rules can be used to process results that
-already have been through a number of other tests.
+have already been through a number of other tests.
 A common application for this rule is to
 automatically download results that haven't been
 marked as DON'T DISPLAY. See under "Sample rulesets"

@@ -69,7 +69,7 @@
     in the GnutellaNet options (expert mode needs to be enabled)
     <li>Depress the lower-left button in the GUI after your downloads have started.
     This will disconnect from the Gnutella network.
-    We strongly advise you to NOT doing that. You won't
+    We strongly advise you to NOT do that. You won't
     be able to get more alternate locations from the net and people won't be able
     to search your files.
   </ul>
@@ -98,17 +98,17 @@
   8 connections. By using more than 10 connections you harm the gnutella network
   because message routing tables will invalidate too early. Avoid setting the max
   connections to a high value!<br>
-  The bandwidth control settings will help you further finetuning gtk-gnutella's
+  The bandwidth control settings will help you further finetune gtk-gnutella's
   bandwidth usage.
 </p>
 
 <h3><a name="gnet1">Do I need to forward a port on my firewall?</a></h3>
 <p>
-  You don't need to forward any port for gtk-gnutella to work, but it
+  You don't need to forward any ports for gtk-gnutella to work, but it
   will perform much better if you do. If gtk-gnutella thinks you are firewalled,
   it will not show any <a href="#down3">"push"</a> results since you wouldn't be
   able to download those anyway.<br>
-  Even people can not connect directly to you, they can still download files from
+  Even when people cannot connect directly to you, they can still download files from
   your node using a <a href="#down3">push request</a>.<br>
   You can configure the port gtk-gnutella listens on. The setting "listen port" is
   located on the "Network settings" tab on the config page.
@@ -126,9 +126,9 @@
   By the way, you also see FC state in the type column
 </p>
 
-<h3><a name="gnet3">Why do i loose gnet connections when i have an upload?</a></h3>
+<h3><a name="gnet3">Why do I lose gnet connections when I have an upload?</a></h3>
 <p>
-  Try to do bandwidth limiting. If that didn't help maybe your provider throttles gnutella traffic. Try changing your
+  Try to do bandwidth limiting. If that doesn't help, maybe your provider throttles gnutella traffic. Try changing your
   gnutella port in the network settings of gtk-gnutella.
 </p>
 
@@ -157,14 +157,14 @@
 
 <h3><a name="search0">How can I get more results?</a></h3>
 <p>
-  The number of results you get depends heavily on wether people are able to
+  The number of results you get depends heavily on whether people are able to
   connect to you (see <a href="#gnet1">port forwarding</a>)
   and on the <a href="#gnet0">number of connections</a> to other hosts.
 </p>
 
 <h3><a name="search1">Where did the filters go??</a></h3>
 <p>
-  If you don't see the filter button in your gtk-gnutella you probaly should enable the toolbar in the menu :)
+  If you don't see the filter button in your gtk-gnutella you should probably enable the toolbar in the menu :)
 </p>
 
 
@@ -174,7 +174,7 @@
 <p>
   This means that gtk-gnutella has that file recorded as complete in its 
   fileinfo database. This database is usually located in 
-  ~/.gtk-gnutella/fileinfo. At the moment there is no way to remove or
+  ~/.gtk-gnutella/fileinfo. At the moment, there is no way to remove or
   modify an entry of that database from the gui, but you can edit the file
   with any text editor while gtk-gnutella is not running. 
 </p>
@@ -183,7 +183,7 @@
 <p>
   This means that gtk-gnutella wants to download a new file from a host, but
   that host does not provide a SHA1 hash for the file. Since the file is new
-  (not yet partially downloaded), gtk-gnutella can not do an overlap check to
+  (not yet partially downloaded), gtk-gnutella cannot do an overlap check to
   verify that the file on the host is really the file you want. In such a case
   it relies on the SHA1 provided by the remote host, but if no SHA1 is supplied,
   then gtk-gnutella has no way of assuring that the file it wants to download
@@ -196,7 +196,7 @@
 <p>
   Check the "Range" column. This is called <a href="#down3">swarming</a>.
   Gtk-gnutella tries to get the file in <a href"#down4">chunks</a> and will
-  get it from multiple hosts in parallel if possible.
+  get it from multiple hosts in parallel, if possible.
 </p>
 
 <h3><a name="down3">What is "swarming"?</a></h3>
@@ -219,23 +219,24 @@
 <p>
   When you download a file from a host that supports the download mesh,
   it will tell you about additional sources for the requested file
-  (provided it know any). Those will then be used for
+  (provided it knows of any). Those will then be used for
   <a href="#down4">swarming</a>
 </p>
 
 <h3><a name="down6">What is a "push request"?</a></h3>
 <p>
-  The "push request" is a facility to download files from hosts you can
-  not connect to directly (because they are firewalled). Well, you can
-  not connect to those hosts, but they probably can connect to you. To
+  The "push request" is a facility to download files from hosts you cannot 
+  connect to directly (because they are firewalled). Well, you cannot
+  connect to those hosts, but they probably can connect to you. To
   tell a remote host to connect to your host so that you can download
   a file from the remote host you send a push request to it.<br>
-  You can't make use the the push requests when you are behind a firewall
+  You can't make use of push requests when you are behind a firewall
   (see <a href="#gnet1">port forwarding</a>).
 </p>
 
 <h3><a name="down7">why does gtk-gnutella append a .OK to my file names?</a></h3>
 <p>
-  You have probably not setup different directories for downloaded files, temporary files and bad files.
+  You probably haven't set up different directories for downloaded files, 
+  temporary files and bad files.
 
 </p>

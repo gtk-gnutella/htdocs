@@ -1,4 +1,4 @@
-I've sown together a gtkg-compatible sha1 calculator;
+I've thrown together a gtkg-compatible sha1 calculator;
   http://vidar.gimp.org/gtkg/sha1.c
 
 Compiled with:

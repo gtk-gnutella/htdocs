@@ -6,10 +6,10 @@ working on GTKG:
 
 * Read the source code: take one functionality you'd like to understand,
   and follow the execution path.  Use the "tags" mode of your favorite
-  editor to naviage, and tools like "cscope" to cross-reference things.
+  editor to navigate, and tools like "cscope" to cross-reference things.
 
 * Learn the doc/devguide/STYLE by heart, before making any change to the
-  code.  It is important that we all use an uniform coding style to make
+  code.  It is important that we all use a uniform coding style to make
   the source pleasant to read.  The coding style we picked (mine, mostly)
   is not arbitrary: it is the one used most commonly in the industry.
 
@@ -32,8 +32,8 @@ We have quite big projects ahead of us:
 4. Metadata collection for shared files (e.g. for audio, the type, length and
    the bitrate, for videos: the type of codec, length, resolution on screen.
    For images, type (jpg, gif) and size. etc...).
-5. Support for XML queries, so that people can search for various type of
-   characterestics on the collected metadata.
+5. Support for XML queries, so that people can search for various types of
+   characteristics on the collected metadata.
 6. magnet: URI support: make GTKG a magnet: handler.
 7. Separation of the core process and the GUI processes.
 8. Redesign of the logging layer, to separate different logs of the
@@ -47,9 +47,9 @@ If you wish to participate to Gnutella core development, you also need
 to register to the GDF (Gnutella Developer Forum), which you may find
 at http://groups.yahoo.com/group/the_gdf/.
 
-Get also familiar with ALL the documentation available in the "Files" section
+Also, get familiar with ALL the documentation available in the "Files" section
 of the GDF, and in the doc/ directory of the gtk-gnutella sources.  You don't
-need to do that in one week-end though ;-)  But at least browse it once.
+need to do that in one weekend though ;-)  But at least browse it once.
 
 At first, changes you make should be sent via e-mail for integration.
 The preferred way to make those diffs is via "cvs diff -u".  After a few
@@ -58,7 +58,7 @@ CVS access in write mode.
 
 You should be aware that our quality standards are quite high.  We do not
 usually commit something that does not work to CVS.  Here, "work" means
-that it has been tested reasonnably for a few days, to make sure nothing is
+that it has been tested reasonably for a few days, to make sure nothing is
 wrong.
 
 If after all this you're still willing to help, then I'm sure you have all
@@ -67,7 +67,7 @@ welcome in the "developer's team".
 
 I should add that until now, I have enjoyed working with the other developers:
 
-Richard, of course, a truly amazing contributor, which always surprises me by
+Richard, of course, is a truly amazing contributor, who always surprises me with
 the quality of his implementation.  Richard has been promoted "co-admin" on
 the project recently (not that *I* care about those hierarchical distinctions,
 but they're always nice on a resume).
