@@ -15,6 +15,11 @@
   <li><a href="#general-ultrapeer">What are Ultrapeers and Leaf nodes?</a></li>
 </ul>
 
+<h2>Building from source</h2>
+<ul>
+	<li><a href="#build1">How do I make Configure stop asking me all those questions?</a></li>
+</ul>
+
 <h2>Gnutella connections</h2>
 <ul>
   <li><a href="#gnet0">What is a good number of connections?</a></li>
@@ -44,8 +49,11 @@
   <li><a href="#down3">What is "swarming"?</a></li>
   <li><a href="#down4">What is a "chunk"?</a></li>
   <li><a href="#down5">What is the "download mesh"?</a></li>
-  <li><a href="#down6">What is a "push request"?</a></li>
+  <li><a href="#down_push">What is a "push request"?</a></li>
   <li><a href="#down7">Why does gtk-gnutella append a .OK to my filenames?</a></li>
+  <li><a href="#down8">I got a file that just won't download!</a></li>
+  <li><a href="#down9">In the downloads pane, what does it mean if the color of the text
+		is grey instead of black?</a></li>
 </ul>
 
 <h2>Uploads</h2>
@@ -71,8 +79,8 @@
 
 <h3><a name="general0">What is gnutella anyway?</a></h3>
 <p>
-  Gnutella is a decentralized Peer to Peer information exchanging network. At 
-  the moment you can publish and download files of any kind using the Gnutella 
+  Gnutella is a decentralized Peer to Peer information exchanging network. At
+  the moment you can publish and download files of any kind using the Gnutella
   network.  For more information, visit the 
   <a href="http://www.infoanarchy.org/wiki/wiki.pl?Gnutella">  definition of 
     gnutella</a> on the infoAnarchy wiki.
@@ -86,12 +94,12 @@
 
 <h3><a name="general1">This eats up too much bandwidth!</a></h3>
 <p>
-  At the moment you can try one or more of the following things if you are a user 
+  At the moment you can try one or more of the following things if you are a user
   on a slow line (modem):
 </p>
 <ul>
   <li>
-    Run as a leaf node. You change the peermode setting in the configuration 
+    Run as a leaf node. You change the peermode setting in the configuration
     panel under GnutellaNet. An icon in the statusbar indicates in which mode
     you are running.
   </li>
@@ -99,14 +107,14 @@
     Limit the number of gnet connections you have.
   </li>
   <li>
-    If you are able to receive incoming connections, enable <q><em>Prefer 
+    If you are able to receive incoming connections, enable <q><em>Prefer
     compressed connections</em></q> in the <q><em>Bandwidth control</em></q> 
-    options. 
+    options.
   </li>
   <li>
     Even if you are on a slow connection, it's still important to share 
     files.  With <a href="#down3">swarming</a>, people can upload small chunks 
-    of files from you, so even a slow connection, multiplied by many sources on 
+    of files from you, so even a slow connection, multiplied by many sources on
     the gnet, makes a tremendous contribution.  If you have a 56K modem, you 
     can set <q><em>Bandwidth for HTTP traffic</em></q> - <q><em>Limit 
     bandwidth for outgoing traffic</em></q> to 1K/s so you still have the 
@@ -129,76 +137,113 @@
   number of other ultrapeers.  (see 
   <a href="#gnet0">What is a good number of connections?</a>)  Ultrapeers are 
   not firewalled, have long expected uptimes (more than two hours), and have 
-  sufficient surplus bandwidth to donate to the gnet.  Ultrapeers forward 
+  sufficient surplus bandwidth to donate to the gnet.  Ultrapeers forward
   queries from their leaf nodes and leaf nodes upload to their ultrapeers
-  <a href="<?php echo BASEURL ?>?page=features">QRP</a> tables which contain 
-  hashes of keywords that will match files shared by the leaf.  When an 
-  ultrapeer gets a hit on a query routing table, it relays the query to the 
-  corresponding leaf node.  The result is very low gnet traffic for each leaf 
-  node, freeing bandwidth for sharing and downloading, which still occur 
-  directly p2p.  Ultrapeers can also act as 
-  <a href="<?php echo BASEURL ?>?page=features">push-proxies</a> for 
-  firewalled leaf nodes.  
+  <a href="<?php echo BASEURL ?>?page=features">QRP</a> tables which contain
+  hashes of keywords that will match files shared by the leaf.  When an
+  ultrapeer gets a hit on a query routing table, it relays the query to the
+  corresponding leaf node.  The result is very low gnet traffic for each leaf
+  node, freeing bandwidth for sharing and downloading, which still occur
+  directly p2p.  Ultrapeers can also act as
+  <a href="<?php echo BASEURL ?>?page=features">push-proxies</a> for
+  firewalled leaf nodes.
+</p>
+
+<h2>Building from source</h2>
+
+<h3><a name="build1">How do I make Configure stop asking me all those questions?</a></h3>
+<p>
+	You can run the <code>Configure</code> script in the following way to make it
+	use the default settings. It then behaves as calling the old <code>configure</code>
+	script from autoconf did back in the old days.
+</p>
+<p>
+	<code>$ ./Configure -ders</code>
+</p>
+<p>
+	You can set compile options on the command line too. Here is an example that will
+	configure gtkg to
+	<ul>
+		<li>
+			accept custom settings (<code>-O</code>). Without this all the parameters below
+			won't have an effect.
+		</li>
+		<li>
+			use the Gtk1 frontend, activate the remote shell
+			(<code>-D gtkversion=1 -D remotectrl=y</code>)
+		</li>
+		<li>
+			compile for a pentium with MMX support
+			(<code>-Dccflags="-march=pentium -mmmx"</code>).
+		</li>
+		<li>
+		compile in debugging information while turning off all compiler optimizations
+		(<code>-Doptimize="-g -O0"</code>).
+		</li>
+	<</ul>
+</p>
+<p>
+	<code>$ ./Configure -ders -O -D gtkversion=1 -D remotectrl=y -Dccflags="-march=pentium -mmmx" -Doptimize="-g -O0"</code>
 </p>
 
 <h2>Gnutella connections</h2>
 
 <h3><a name="gnet0">What is a good number of connections?</a></h3>
 <p>
-  Short answer: in legacy mode, 4/5 (minumum/maximum), in 
-  <a href="#general-ultrapeer">leaf</a> mode 3 ultrapeers, in 
-  <a href="#general-ultrapeer">ultrapeer</a> mode 8/10 (minimum/maximum) 
-  ultrapeers and at least 20 leaf nodes.  You can calculate a bandwidth 
-  consumption of 1kb/s per connection in legacy mode, however, this will be 
-  much less for leaf nodes and somewhat higher for ultrapeer-ultrapeer 
-  connections.  If you have set "Prefer compressed connections," bandwidth 
-  used will be much lower.  You should never use up all your bandwidth with 
-  gnet connections.  Especially on an asymmetric cable/DSL connection you can 
-  easily starve your incoming traffic by producing too much outgoing traffic 
-  (TCP/IP issue).  Use at most half of your outgoing bandwidth for gnet 
-  connections.  E.g. on a line with 128kbit/s upstream set up at most 8 
-  connections.  By using more than 10 connections you harm the gnutella 
-  network so avoid setting the max connections to a high value!  
+  Short answer: in legacy mode, 4/5 (minumum/maximum), in
+  <a href="#general-ultrapeer">leaf</a> mode 3 ultrapeers, in
+  <a href="#general-ultrapeer">ultrapeer</a> mode 8/10 (minimum/maximum)
+  ultrapeers and at least 20 leaf nodes.  You can calculate a bandwidth
+  consumption of 1kb/s per connection in legacy mode, however, this will be
+  much less for leaf nodes and somewhat higher for ultrapeer-ultrapeer
+  connections.  If you have set "Prefer compressed connections," bandwidth
+  used will be much lower.  You should never use up all your bandwidth with
+  gnet connections.  Especially on an asymmetric cable/DSL connection you can
+  easily starve your incoming traffic by producing too much outgoing traffic
+  (TCP/IP issue).  Use at most half of your outgoing bandwidth for gnet
+  connections.  E.g. on a line with 128kbit/s upstream set up at most 8
+  connections.  By using more than 10 connections you harm the gnutella
+  network so avoid setting the max connections to a high value!
 </p>
 <p>
-  In ultrapeer mode you should have a minimum of 4/5 connections to other 
-  ultrapeers and because of the adoption by other servents of "high 
-  outdegree," 8/10 connections is better, if you have the bandwidth.  This 
-  will rise even more when gtk-gnutella implements high outdegree.  The number 
-  of leaf connections to use depends on your bandwidth and the speed of your 
-  cpu.  As an absolute minimum an ultrapeer should connect to 20 leaf nodes 
-  and it's much better to connect to 100 or more.  Watch the bandwidth 
-  odometers on the lower left of the gui and use the top command to keep track 
-  of cpu usage.  Increase the number of leaf connections until you reach the 
-  maximum amount of bandwidth and system resources you wish to devote to this 
+  In ultrapeer mode you should have a minimum of 4/5 connections to other
+  ultrapeers and because of the adoption by other servents of "high
+  outdegree," 8/10 connections is better, if you have the bandwidth.  This
+  will rise even more when gtk-gnutella implements high outdegree.  The number
+  of leaf connections to use depends on your bandwidth and the speed of your
+  cpu.  As an absolute minimum an ultrapeer should connect to 20 leaf nodes
+  and it's much better to connect to 100 or more.  Watch the bandwidth
+  odometers on the lower left of the gui and use the top command to keep track
+  of cpu usage.  Increase the number of leaf connections until you reach the
+  maximum amount of bandwidth and system resources you wish to devote to this
   purpose.
 </p>
 <p>
-  The bandwidth control settings will help you further fine-tune 
+  The bandwidth control settings will help you further fine-tune
   gtk-gnutella's bandwidth usage.
 </p>
 
 <h3><a name="gnet1">Do I need to forward a port on my firewall?</a></h3>
 <p>
   You don't need to forward any ports for gtk-gnutella to work, but it
-  will perform much better if you do. If gtk-gnutella thinks you are 
-  firewalled, it will not show any <a href="#down3">"push"</a> results since 
+  will perform much better if you do. If gtk-gnutella thinks you are
+  firewalled, it will not show any <a href="#">"push"</a> results since
   you wouldn't be able to download those anyway.<br>
-  Even when people cannot connect directly to you, they can still download 
-  files from your node using a <a href="#down3">push request</a>.<br>
-  You can configure the port gtk-gnutella listens on. The setting 
+  Even when people cannot connect directly to you, they can still download
+  files from your node using a <a href="#down_push">push request</a>.<br>
+  You can configure the port gtk-gnutella listens on. The setting
   <q><em>Listen port</em></q> is located on the 
   <q><em>Network settings</em></q> tab on the config page.
 </p>
 
 <h3><a name="gnet-udp">Does gtk-gnutella use UDP?</a></h3>
 <p>
-  No, gtk-gnutella does not use 
+  No, gtk-gnutella does not use
   <a href="http://www.faqs.org/rfcs/rfc768.html">UDP</a>.  The Gnutella 
-  Protocol uses only 
+  Protocol uses only
   <a href="http://www.faqs.org/rfcs/rfc793.html">TCP</a>.  However, proposals 
   are occasionally made to make use of UDP on the gnutella network so this may 
-  change at some point in the future.  
+  change at some point in the future.
 </p>
 
 <h3><a name="gnet2">What does "[FC]" mean?</a></h3>
@@ -208,8 +253,8 @@
   not flow control.  Watch for the trailing <q><em>[FC]</em></q> indication at 
   the end of the <q><em>Info</q></em> string (you may need to drag the right 
   edge past the window to trigger the underlying scroll bar), or look at the 
-  FC state in the <a href="#gnet4">Flags</a> column. As a rule of thumb, if 
-  you have more than one node flow-controlling at a given time, you don't have 
+  FC state in the <a href="#gnet4">Flags</a> column. As a rule of thumb, if
+  you have more than one node flow-controlling at a given time, you don't have
   enough outgoing bandwidth dedicated to gnet, and therefore you are harming 
   the network: either decrease the amount of connections, enable the 
   <q><em>Prefer compressed connections</em></q> option or raise the outgoing 
@@ -226,7 +271,7 @@
 <h3><a name="gnet4">What does the stuff in the Flags column mean?</a></h3>
 <p>
   You can see the type and some of the settings of a connection here.  Note 
-  push-proxies are implemented in 0.92.1c and later.  
+  push-proxies are implemented in 0.92.1c and later.
 </p>
 <pre>
      0123456789 (offset)
@@ -254,7 +299,7 @@
 
 <h3><a name="gnet6">What does "Outdated version, please upgrade" mean?</a></h3>
 <p>
-  Versions of gtk-gnutella more than one year old are banned, since they 
+  Versions of gtk-gnutella more than one year old are banned, since they
   lack features that are important to the rapidly evolving gnet's health and 
   scalability.  In addition, unstable versions are banned after 90 days.  
 </p>
@@ -267,7 +312,7 @@
   because it might be considered a security problem by your provider. At the
   moment, the proxy support - also for SOCKS - isn't very good. The developers
   don't use proxies but if you think you can fix it, we would appreciate
-  your patches.  
+  your patches.
 </p>
 
 <h3><a name="#gnet8">How can I increase the timeouts?</a></h3>
@@ -324,15 +369,15 @@
   supplied, then gtk-gnutella has no way of assuring that the file it wants to 
   download and the file on the remote server are really the same.<br>
   If you get annoyed by those messages you can activate the <q><em>Optimistic 
-  first chunk</q></em> option on the <q><em>Download settings</q></em> tab in 
+  first chunk</q></em> option on the <q><em>Download settings</q></em> tab in
   the config page.
 </p>
 
 <h3><a name="down2">Why is the same file downloaded X times?</a></h3>
 <p>
-  Check the <q><em>Range</em></q> column. This is called 
-  <a href="#down3">swarming</a>.  Gtk-gnutella tries to get the file in 
-  <a href="#down4">chunks</a> and will get it from multiple hosts in parallel, 
+  Check the <q><em>Range</em></q> column. This is called
+  <a href="#down3">swarming</a>.  Gtk-gnutella tries to get the file in
+  <a href="#down4">chunks</a> and will get it from multiple hosts in parallel,
   if possible.
 </p>
 
@@ -348,8 +393,8 @@
 <p>
   A chunk is another word for "part of a file". When gtk-gnutella runs in
   <a href="#down4">swarming mode</a> it will retrieve multiple chunks of a
-  downloading file until it has downloaded the complete file. The 
-  <q><em>Range</em></q> column shows you which chunk you are currently 
+  downloading file until it has downloaded the complete file. The
+  <q><em>Range</em></q> column shows you which chunk you are currently
   downloading.
 </p>
 
@@ -361,28 +406,60 @@
   <a href="#down4">swarming</a>
 </p>
 
-<h3><a name="down6">What is a "push request"?</a></h3>
+<h3><a name="down_push">What is a "push request"?</a></h3>
 <p>
-  The "push request" is a facility to download files from hosts you cannot 
+  The <em>push request</em> is a facility to download files from hosts you cannot
   connect to directly (because they are firewalled). Well, you cannot
   connect to those hosts, but they probably can connect to you. To
   tell a remote host to connect to your host so that you can download
   a file from the remote host you send a push request to it.<br>
+	If you download a file using a push request and you loose contact to
+	the host which originally returned the result for that file to you,
+	then the <em>push route</em> is lost and you can no longer download this file.
+	Therefore push routes are quite fragile.
   You can't make use of push requests when you are behind a firewall
   (see <a href="#gnet1">port forwarding</a>).
 </p>
 
 <h3><a name="down7">Why does gtk-gnutella append a .OK to my file names?</a></h3>
 <p>
-  You probably haven't set up different directories for downloaded files, 
+  You probably haven't set up different directories for downloaded files,
   temporary files and bad files.
+</p>
+
+<h3><a name="down8">I got a file that just won't download!</a></h3>
+<p>
+	If you don't see a smiling yellow icon with sunglasses in the statusbar, you
+	should try to change that. See the section about <a href="#gnet1">firewalls</a>.
+</p>
+<p>
+	Otherwise if gtkg says it has only a few sources for the file (best seen
+	in the fileinfo subtab in the downloads pane) then this can have two reasons:
+	<ul>
+		<li>the file is a rare one</li>
+		<li>
+			you selected a version of the file that is unique. Chances are that there
+			may be a more common version. A file can become unique e.g. when somebody
+			changes the mp3info on an mp3 file or otherwise does some custom modification
+			to the file.
+		</li>
+	</ul>
+	You can try to search for the file again and see if you find another version which
+	is more common. It's usually a good indication if the "#" shows a number for a file.
+	The largner the number, the better are the chances that you can get it quickly.
+</p>
+
+<h3><a name="down9">In the downloads pane, what does it mean if the color of the text
+is grey instead of black?</a></h3>
+<p>
+	It means that the file is recieved over a <a href="#down_push">push route</a>.
 </p>
 
 <h2>Uploads</h2>
 
 <h3><a name="up0">What does "Normalized" mean?</a></h3>
 <p>
-  This shows the total amount of bytes uploaded for the file divided by the 
+  This shows the total amount of bytes uploaded for the file divided by the
   file size.
 </p>
 
@@ -390,19 +467,20 @@
 
 <h3><a name="gtk2_slow">Gtk2 is way sloooow.</a></h3>
 <p>
-  Set the environment variable GDK_USE_XFT to 0 and see whether
+  Set the environment variable <code>GDK_USE_XFT</code> to 0 and see whether
   this helps. This turns off anti aliasing in Gtk2 which can use a lot of cpu.
   The Gtk2 frontend is much slower than the Gtk1 frontend. So on a slow machine,
   you should consider using the Gtk1 frontend.
 </p>
 
- 
+
 <h3><a name="gtk2_ctype">Non-ASCII characters show up as _ (underscore).</a></h3>
 <p>
-  Set the environment variable LC_CTYPE or LC_ALL to an appropriate value
-  for the encoding you use. For example, if you use special German characters
-  in your filenames, set it to de_DE.ISO8859-1. The valid values depend on your
-  Operating System; see setlocale(3) for details. Ideally, everyone would
-  use UTF-8 encoding which covers nearly all languages.
+  Set the environment variable <code>LC_CTYPE</code> or <code>LC_ALL</code> to an
+	appropriate value for the encoding you use. For example, if you use special German
+	characters in your filenames, set it to <code>de_DE.ISO8859-1</code>. The valid
+	values depend on your Operating System; see the manpage setlocale(3) for details.
+	Ideally, everyone would use UTF-8 encoding which covers nearly all languages.
 </p>
+
 <!-- end faq -->
