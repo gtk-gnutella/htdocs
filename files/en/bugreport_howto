@@ -1,0 +1,496 @@
+<!-- $Id$ -->
+<h1 align="center">Bug Report HOWTO</h1>
+<ul>
+  <li><a href="#bugreport-intro">How do I file a useful bug report?</a></li>
+  <li><a href="#bugreport-wrong">Gtk-gnutella is doing something wrong or unexpected.</a></li>
+  <li><a href="#bugreport-compile">Gtk-gnutella won't compile!</a></li>
+  <li><a href="#bugreport-crash">Gtk-gnutella crashed!  Now what?</a></li>
+  <li><a href="#bugreport-where">Where's the best place to submit my bug report?</a></li>
+</ul>
+<h3><a name="bugreport-intro">How do I file a useful bug report?</a></h3>
+  <p>
+    Developers love getting good bug reports.  Unfortunately, for one reason 
+    or another, the reports they get are often of no use.  Here's some hints 
+    on producing bug reports that will help make gtk-gnutella better.  The 
+    ideal bug report would contain exactly the information needed - no more, 
+    no less - and a lovingly crafted patch to correct the problem.  If you'd 
+    like to contribute a patch, please read the <a href="index.php?page=devel">
+    development</a> page and the <a href="index.php?page=developers_howto">
+    Developers Howto</a>.  Most of us, however, don't have the skills and/or 
+    time to fix gtk-gnutella for ourselves.  That's OK, we can still help.  
+  </p>
+  <p>
+    Keep in mind that the developers are only interested in bug reports from 
+    the latest 
+    <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
+    released version</a> or from versions built from 
+    <a href="index.php?page=devel#devel-cvs">current cvs</a>.  The developers 
+    code gtk-gnutella not for profit, but because they find it an interesting 
+    hobby and because they want to give something back to the open source 
+    community.  Please don't treat them as if they were a company that you paid 
+    money to and that you can now expect service from.  Supporting old versions 
+    falls into the "been there, done that, boring" category and new versions 
+    are generally better for you and better for the gnet.  
+  </p>
+  <p>
+    A common mistake people make is to include too little information in their 
+    report.  The developers would much rather search through a bug report and 
+    find what they need than to get no bug report at all.  They don't have 
+    time to extract the information bit by bit from the user.  So, if you're 
+    not sure, put it in.  Once you have filed a report make sure you stay 
+    tuned for a request for more information from the developer.  If they do 
+    ask you for more details, make sure you answer <strong>all</strong> their 
+    questions, even if the answer is "I don't know."  Nothing is more 
+    frustrating than knowing you have a bug in your program but not having 
+    quite enough information to fix it.   
+  </p>
+  <p>
+    The first thing developers want to know is the version of gtk-gnutella 
+    that experienced the bug so they will know which version of the source 
+    code has the problem (and if the bug is already fixed.) You can copy this 
+    information from the <strong>About</strong> pop up window.  For example: 
+  </p>
+  <blockquote style="font-weight: bold">
+    gtk-gnutella/0.92 (15/06/2003; X11; Linux 2.4.21 i586)
+  </blockquote> 
+  <p>
+    If it's a distribution package, say which one and where you got it.  For 
+    example:  
+  </p>
+  <blockquote style="font-weight: bold">
+    I'm using the GTK2-gtk-gnutella_0.92.0-0_i386.deb package from the 
+    gtk-gnutella web site.  
+  </blockquote>
+  <p>
+    If it's a cvs version, look in 
+    <code>gtk-gnutella-current/src/CVS/Entries</code> and paste the last 
+    commit entry into your report.  For example:  
+  </p>
+  <blockquote style="font-weight: bold">
+    /support-glade2.c/1.5/Sat Jun 14 17:54:28 2003// 
+  </blockquote> 
+  <p>
+    If you compiled it yourself, say which <code>./configure </code> options 
+    you used and any CFLAGS you passed to it.  For example:
+  </p>
+  <blockquote>
+    <code>
+      CFLAGS="-g3 -O0" ./configure --prefix=/usr --enable-gtk2 --disable-tos
+    </code>
+  </blockquote>
+  <p>
+    Say what distribution and version and what architecture you're running.  
+    For example:  
+  </p>
+  <blockquote style="font-weight: bold">
+    debian 2.2.22 on compaq alpha
+  </blockquote>
+  <p>
+    Include the relevant version information in every bug report.  
+  </p>
+
+<h3><a name="bugreport-wrong">Gtk-gnutella is doing something wrong or unexpected.</a></h3>
+  <p>
+    If gtk-gnutella is acting the way its programmers intended but you would 
+    prefer it behaved differently, then you should probably file a 
+    <a href="http://sourceforge.net/tracker/?atid=354467&group_id=4467&func=browse">
+    feature request</a> rather than a bug report.  Of course, there are 
+    exceptions - the behavior could be harmful in some unforseen way or not 
+    conform to standards.  Besides, it's hard to know what the developer 
+    intended, so the traditional confusion about bug vs feature is inevitable.  
+  </p>
+  <p>
+    If you decide it is a bug, explain clearly what gtk-gnutella is doing 
+    wrong and what you think it should be doing. Your description should be 
+    detailed enough that someone else can reproduce the bug from your report.  
+    Which pane were you in and what options did you have selected?  What were 
+    the precise actions that led to the bug?  It may help to write a few quick 
+    notes before you forget.
+  </p>
+    
+<h3><a name="bugreport-compile">Gtk-gnutella won't compile!</a></h3>
+  <p>
+    Not many compilation problems are reported for gtk-gnutella.  It's known 
+    to compile on linux and freebsd.  If you have problems, paste the last 
+    compiler command, for example:  
+  </p>
+  <blockquote>
+    <code>
+      gcc -DHAVE_CONFIG_H -I. -I. -I.. -I/usr/include/gtk-1.2 
+      -I/usr/include/glib-1.2 -I/usr/lib/glib/include -I/usr/X11R6/include 
+      -I/usr/include/libxml2    -g -O2 -Wall -c nodes.c
+    </code>
+  </blockquote>
+  <p>
+    and the errors that it generated into your report, along with the version 
+    and configuration options described above. 
+  </p>
+  
+<h3><a name="bugreport-crash">Gtk-gnutella crashed!  Now what?</a></h3>
+  <p>
+    In order to debug a crash, the executable needs to have its debugging 
+    symbols intact.  Unfortunately, to save space on the hard drive and in 
+    memory, debugging symbols are stripped from gtk-gnutella when a 
+    distribution package is created.  The rpm, debian, and slackware 
+    packages on the gtk-gnutella download site have all been stripped and are 
+    useless for debugging.  But if you have a crash while using a package, 
+    you should still report the bug and the <strong>exact</strong> error 
+    message so others can attempt to reproduce it with an unstripped 
+    executable.  
+  </p>
+  <p>
+    If you run gtk-gnutella from an xterm, then you'll find the error message 
+    in the terminal window (might have to scroll back a bit.)  If you start 
+    gtk-gnutella from an icon or menu, then you can find the error wherever 
+    your X error log is.  The whole error message and preferably about 10 
+    lines leading up to the error should be pasted into your bug report.  If 
+    you're paranoid (after all, they ARE out to get you) you could obfuscate 
+    filenames.  You'll only find the error if gtk-gnutella "abort"s, not if it 
+    has a "segmentation fault" so you should say which case applies.  
+  </p>
+  <p>
+    The most common reason for a gtk-gnutella crash is an "assertion" failure. 
+    Assertions are logical statements that are placed strategically throughout 
+    the code to help programmers find bugs.  They "assert" that, at a 
+    particular place in the code execution, a particular condition must be met 
+    or the program is not behaving as the developer understands it should.  
+    For example, an assertion could state that a variable should at least have 
+    a value, ie the value is not null: <code>g_assert(header != NULL);</code> 
+    or that the value should be in some numerical range: 
+    <code>g_assert(parq_ul-&gt;position &gt; 0);</code>.  If the assertion fails, 
+    the program aborts with an error message saying which assertion failed and 
+    exactly where in the code the assertion was placed.  For example:  
+  </p>
+  <blockquote>
+    <code>
+      ** ERROR **: file parq.c: line 1138 (parq_upload_free): assertion failed: 
+      (parq_ul-&gt;by_ip-&gt;uploading &lt;= parq_ul-&gt;by_ip-&gt;total)  
+    </code>
+  </blockquote>
+  <p>
+    The developers can then investigate the values and hopefully realize where 
+    the bug is that led to the incorrect value.  Or they can add more 
+    assertions further back in the code until the problem has been isolated.  
+    There are more than five hundred assertions in the gtk-gnutella code, so 
+    you can see why the developers need you to give them the exact error 
+    message, including the file and line number.  
+  </p>
+  <p>
+    If you are using a package or you have stripped the gtk-gnutella 
+    executable yourself, there's not much more information to be gained from 
+    your crash unless you recompile and can reproduce the bug. If you don't 
+    want to do that, then provide the information described so far.  That 
+    isn't usually enough information to fix the problem but at least it's a 
+    heads up that there IS a bug.  If you've provided a clear enough 
+    description, someone else may be able to reproduce the bug with a 
+    debugging version of gtk-gnutella.  
+  </p>
+  <p>
+    If you have compiled gtk-gnutella yourself then by default, it will be 
+    compiled with the <code>-g -O2</code> options passed to gcc.  That will 
+    usually suffice for bug reports but sometimes the optimization will make 
+    things difficult to trace.  For the best quality of bug reporting, you 
+    could compile with <code>-g3</code> to get more debugging symbols and use 
+    less optimization.  For example:
+  </p>
+  <blockquote>
+    <code>
+      CFLAGS="-g3 -O0" ./configure
+    </code>
+  </blockquote>
+  <p>
+    When gtk-gnutella crashes, it will dump a "core" file containing an image 
+    of the memory it used, including all the values held in RAM at the time.  
+    This file can then be loaded into the gdb debugger to investigate the 
+    state of gtk-gnutella at the time of the crash.  However, most 
+    distributions turn core dumps off by default.  You can turn on core dumps 
+    with the shell command <code>ulimit -S -c unlimited</code>, which will 
+    only affect that terminal, or you can put the command on your shell config 
+    file (eg <code>~/.profile</code> or <code>~/.cshrc</code> to allow core 
+    dumps globally.  Newer core files will overwrite older ones so you should 
+    move them to a safe place.  The core file will be in your home directory 
+    or in the current directory if you called gtk-gnutella from a terminal.  
+    If you're serious about bug hunting for gtk-gnutella you might want to use 
+		something like the following shell script to start it.  You'll have to 
+		modify it to suit your system, of course.  For instance, the core file 
+		could be named "core", "gtk-gnutella.core", "core.[PID]", etc.  
+  </p>
+  <blockquote>
+    <code>
+      #!/bin/sh<br>
+      <br>
+      # This is where the configuration stuff is stored.<br>
+      #export GTK_GNUTELLA_DIR=$HOME/.gtk gnutella<br>
+      <br>
+      # Turn on core dumps and delete old dump and log<br>
+      ulimit -S -c unlimited<br>
+      rm -f core gtk-gnutella.log<br>
+      <br>
+      # Run gtk-gnutella and redirect output to a log file<br>
+      # The log could get quite large if your uptime is long.<br>
+      # To just keep output in the terminal use:<br>
+      # gtk-gnutella<br>
+      # instead and remove the other log references.<br>
+      gtk-gnutella &gt;gtk-gnutella.log 2&gt;&amp;1<br>
+      <br>
+      # If a core is dumped, create a uniquely named directory<br>
+      # to save the core, log and executable<br>
+      if [ -e core ] ; then <br>
+      &nbsp;&nbsp;Core_Save_Dir=$(date "+core%Y.%m.%d.%H.%M.%S")<br>
+      &nbsp;&nbsp;mkdir $Core_Save_Dir<br>
+      &nbsp;&nbsp;cp $(which gtk-gnutella) $Core_Save_Dir<br>
+      &nbsp;&nbsp;cp core $Core_Save_Dir<br>
+      &nbsp;&nbsp;cp gtk-gnutella.log $Core_Save_Dir<br>
+      fi<br>
+    </code>
+  </blockquote>
+  <p>
+    Ok, now that you have an unstripped executable and a core file, you can 
+    use the <code>gdb</code> debugger to make a backtrace.  Note that in this 
+    example, the gtk-gnutella executable and the core have been saved to the 
+    same directory. 
+  </p>
+  <blockquote>
+    <code>
+      ~/src/test/core2003.06.12.18.01.40&gt; gdb -c core ./gtk-gnutella<br>
+      GNU gdb 5.2<br>
+      Copyright 2002 Free Software Foundation, Inc.<br>
+      GDB is free software, covered by the GNU General Public License, and you are<br>
+      welcome to change it and/or distribute copies of it under certain conditions.<br>
+      Type "show copying" to see the conditions.<br>
+      There is absolutely no warranty for GDB.  Type "show warranty" for details.<br>
+      This GDB was configured as "i386-slackware-linux"...<br>
+      Core was generated by `gtk-gnutella'.<br>
+      Program terminated with signal 6, Aborted.<br>
+      Reading symbols from /usr/lib/libgtk-1.2.so.0...done.<br>
+      Loaded symbols for /usr/lib/libgtk-1.2.so.0<br>
+      Reading symbols from /usr/lib/libgdk-1.2.so.0...done.<br>
+      Loaded symbols for /usr/lib/libgdk-1.2.so.0<br>
+      Reading symbols from /usr/lib/libgmodule-1.2.so.0...done.<br>
+      Loaded symbols for /usr/lib/libgmodule-1.2.so.0<br>
+      Reading symbols from /usr/lib/libglib-1.2.so.0...done.<br>
+      Loaded symbols for /usr/lib/libglib-1.2.so.0<br>
+      Reading symbols from /lib/libdl.so.2...done.<br>
+      Loaded symbols for /lib/libdl.so.2<br>
+      Reading symbols from /usr/X11R6/lib/libXext.so.6...done.<br>
+      Loaded symbols for /usr/X11R6/lib/libXext.so.6<br>
+      Reading symbols from /usr/X11R6/lib/libX11.so.6...done.<br>
+      Loaded symbols for /usr/X11R6/lib/libX11.so.6<br>
+      Reading symbols from /lib/libm.so.6...done.<br>
+      Loaded symbols for /lib/libm.so.6<br>
+      Reading symbols from /usr/lib/libz.so.1...done.<br>
+      Loaded symbols for /usr/lib/libz.so.1<br>
+      Reading symbols from /usr/lib/libxml2.so.2...done.<br>
+      Loaded symbols for /usr/lib/libxml2.so.2<br>
+      Reading symbols from /lib/libc.so.6...done.<br>
+      Loaded symbols for /lib/libc.so.6<br>
+      Reading symbols from /lib/ld-linux.so.2...done.<br>
+      Loaded symbols for /lib/ld-linux.so.2<br>
+      Reading symbols from /usr/X11R6/lib/X11/locale/common/xlcDef.so.2...done.<br>
+      Loaded symbols for /usr/X11R6/lib/X11/locale/common/xlcDef.so.2<br>
+      Reading symbols from /usr/X11R6/lib/X11/locale/common/ximcp.so.2...done.<br>
+      Loaded symbols for /usr/X11R6/lib/X11/locale/common/ximcp.so.2<br>
+      Reading symbols from /lib/libnss_compat.so.2...done.<br>
+      Loaded symbols for /lib/libnss_compat.so.2<br>
+      Reading symbols from /lib/libnsl.so.1...done.<br>
+      Loaded symbols for /lib/libnsl.so.1<br>
+      Reading symbols from /lib/libnss_db.so.2...done.<br>
+      Loaded symbols for /lib/libnss_db.so.2<br>
+      Reading symbols from /lib/libnss_files.so.2...done.<br>
+      Loaded symbols for /lib/libnss_files.so.2<br>
+      Reading symbols from /lib/libdb-3.1.so...done.<br>
+      Loaded symbols for /lib/libdb-3.1.so<br>
+      #0  0x4036b2f1 in kill () from /lib/libc.so.6<br>
+      (gdb) <br>
+    </code>
+  </blockquote>
+  <p>
+    OK, now let's do a full backtrace:
+  </p>
+  <blockquote>
+    <code>
+      (gdb) bt full<br>
+      #0  0x4036b2f1 in kill () from /lib/libc.so.6<br>
+      No symbol table info available.<br>
+      #1  0x4036afbc in raise () from /lib/libc.so.6<br>
+      No symbol table info available.<br>
+      #2  0x4036c7cb in abort () from /lib/libc.so.6<br>
+      No symbol table info available.<br>
+      #3  0x4018f9de in g_logv () from /usr/lib/libglib-1.2.so.0<br>
+      No symbol table info available.<br>
+      #4  0x4018fa91 in g_log () from /usr/lib/libglib-1.2.so.0<br>
+      No symbol table info available.<br>
+      #5  0x0814efda in parq_upload_free (parq_ul=0x8d62328) at parq.c:1138<br>
+      No locals.<br>
+      #6  0x0814d696 in parq_close () at parq.c:416<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;queues = (GList *) 0x0<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dl = (GList *) 0x0<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sl = (GSList *) 0x8a20040<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;remove = (GSList *) 0x8a204b8<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;removeq = (GSList *) 0x8a204c0<br>
+      #7  0x0811f3a4 in gtk_gnutella_exit (n=0) at main.c:113<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now = 1055466099<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tick = 143511256<br>
+      #8  0x080d7eba in quit (force=0) at main_cb.c:44<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;confirm = 0<br>
+      #9  0x080d7f04 in on_button_quit_clicked (button=0x8358d44, user_data=0x0) at main_cb.c:62<br>
+      No locals.<br>
+      #10 0x400b10d5 in gtk_marshal_NONE__NONE () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #11 0x400e091c in gtk_signal_remove_emission_hook () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #12 0x400dfd85 in gtk_signal_set_funcs () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #13 0x400dde63 in gtk_signal_emit () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #14 0x401149be in gtk_widget_activate () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #15 0x400b9534 in gtk_menu_shell_activate_item () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #16 0x400b87ba in gtk_menu_shell_deactivate () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #17 0x400b0d5f in gtk_marshal_BOOL__POINTER () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #18 0x400dfdc3 in gtk_signal_set_funcs () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #19 0x400dde63 in gtk_signal_emit () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #20 0x4011487b in gtk_widget_event () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #21 0x400b0ca5 in gtk_propagate_event () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #22 0x400afe0e in gtk_main_do_event () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #23 0x4015f047 in gdk_wm_protocols_filter () from /usr/lib/libgdk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #24 0x4018d258 in g_main_dispatch () from /usr/lib/libglib-1.2.so.0<br>
+      No symbol table info available.<br>
+      #25 0x4018d863 in g_main_iterate () from /usr/lib/libglib-1.2.so.0<br>
+      No symbol table info available.<br>
+      #26 0x4018d9fc in g_main_run () from /usr/lib/libglib-1.2.so.0<br>
+      No symbol table info available.<br>
+      #27 0x400af707 in gtk_main () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #28 0x080d7cf2 in main_gui_run () at main_gui.c:650<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coord = {0, 0, 1276, 965}<br>
+      #29 0x0811fc2b in main (argc=1, argv=0xbffff924, env=0xbffff92c) at main.c:463<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i = 256<br>
+      #30 0x4035a17d in __libc_start_main () from /lib/libc.so.6<br>
+      No symbol table info available.<br>
+    </code>
+  </blockquote>
+  <p>
+    Paste the backtrace into your bug report.
+  </p>
+  <p>
+    The developers will probably need some more information but if you send the 
+    backtrace and the other information, then they'll have a good place to 
+    start.  They can then get back to you and request that you load the core 
+    into gdb again and print the specific values they need.  However, for 
+    bonus points, you can anticipate their needs.  If you understand C, you 
+    can take a peek at the code and decide what to include but if you don't 
+    know C, you can still take a guess by having a look at the assertion.  In 
+    this example, the error message was:
+  </p>
+  <blockquote>
+    <code>
+      ** ERROR **: file parq.c: line 1138 (parq_upload_free): assertion failed: 
+      (parq_ul-&gt;by_ip-&gt;uploading <= parq_ul->by_ip-&gt;total)  
+    </code>
+  </blockquote>
+  <p>
+    Looking at the backtrace, you see in #5 <code>parq.c:1138</code>, the same 
+    line where the assertion was placed, so lets investigate some values in 
+    that frame:
+  </p>
+  <blockquote>
+    <code>
+      (gdb) frame 5<br>
+      #5  0x0814efda in parq_upload_free (parq_ul=0x8d62328) at parq.c:1138<br>
+      1138 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; g_assert(parq_ul-&gt;by_ip-&gt;uploading <= parq_ul->by_ip-&gt;total);
+    </code>
+  </blockquote>
+  <p>
+    First, lets print out the values of the members of <code>parq_ul</code>.
+  </p>
+  <blockquote>
+    <code>
+      (gdb) p * parq_ul<br>
+      $1 = {magic = 1782120609, flags = 10, position = 1735, relative_position = 1, has_slot = 0, had_slot = 0, eta = 81, <br>
+      &nbsp;&nbsp;expire = 1055465788, retry = 1055465787, enter = 1055465787, updated = 1055465787, ban_timeout = 1055466387, <br>
+      &nbsp;&nbsp;disc_timeout = 0, last_queue_sent = 0, queue_sent = 0, queue_refused = 0, is_alive = 0, <br>
+      &nbsp;&nbsp;id = 0x8a15af8 "6cad90dc1f0edd94f5d0e991cc89f25e", <br>
+      &nbsp;&nbsp;ip_and_name = 0x8a16578 "3521280541 Somethingorother.mp3", <br>
+      &nbsp;&nbsp;name = 0x8a16583 "Somethingorother.mp3", remote_ip = 3521280541, file_size = 2652639, <br>
+      &nbsp;&nbsp;chunk_size = 1005329, ip = 0, port = 0, major = 0, minor = 0, queue = 0x84f85c8, by_ip = 0x86259e8}
+    </code>
+  </blockquote>
+  <p>
+    Notice that the last member listed is <code>by_ip = 0x86259e8</code>.  
+    The assertion compares two of the members of <code>parq_ul-&gt;by_ip</code> 
+    so let's print out the values.
+  </p>
+  <blockquote>
+    <code>
+      (gdb) p * parq_ul-&gt;by_ip<br>
+      $2 = {uploading = 2, total = 1, ip = 3521280551, list = 0x8bb639c}
+    </code>
+  </blockquote>
+  <p>There are the values the developer was looking for: 
+    <code>parq_ul-&gt;by_ip-&gt;uploading</code> = 2 and 
+    <code>parq_ul-&gt;by_ip-&gt;total</code> = 1.  Since <code>2 <= 1</code> is 
+    false, the assertion failed.  Now the developer can try and figure out 
+    what went wrong.
+  </p>
+  
+<h3><a name="bugreport-where">Where's the best place to submit my bug report?</a></h3>
+  <p>
+    You can report your bug using the 
+    <a href="http://sourceforge.net/tracker/?atid=104467&group_id=4467&func=browse">
+    SourceForge.net Bug Tracker</a> or you can email your report to the
+    <a href="http://lists.sourceforge.net/lists/listinfo/gtk-gnutella-devel/">
+    gtk-gnutella-devel</a> mailing list.  You can also find a developer on irc 
+    chat on the <a href="http://www.freenode.net/">Freenode network</a> in the 
+    #gtk-gnutella channel.  
+  </p>
+  <p>
+    IRC can be useful for a quick response if you happen to catch a developer 
+    in the channel, but it's easy for bugs to be forgotten if they are only 
+    reported there.  It can be a good place to go if you aren't sure whether 
+    your problem is really a bug or not.  It's an excellent place to go when 
+    you have already made a report on the list or bug tracker and you want 
+    to know if the developers need more information from you.  At the time 
+    this was written, the developers all lived in Europe in the CET timezone 
+    (GMT+1).  You might catch them for a quick question in the morning before 
+    work but the best time is in the evenings or on weekends.  You can have a 
+    look at the 
+    <a href="http://www.maol.ch/irc/?channel=gtk-gnutella">irc log</a> to get 
+    an idea of when to find people in the channel.  The times listed in the 
+    log are also CET.  
+  </p>
+  <p>
+    The developers' mailing list is a good place to report critical bugs like 
+    crashes, although you could use the bug tracker for these as well.  More 
+    people will read a bug report on the list than on the bug tracker and it's 
+    perhaps a little more convenient for reading backtraces, etc.  On the 
+    other hand, bugs reported to the list can be more easily forgotten than 
+    those submitted to the bug tracker.  You have to register on sourceforge 
+    to subscribe to gtk-gnutella-devel, but you don't need to be subscribed to 
+    post a message.  
+  </p>
+  <p>
+    The best place to submit bugs is the sourceforge bug tracker.  After all, 
+    that's what it was designed for.  Have a look and see if your bug has 
+    already been reported and if so, add your report as a comment rather than 
+    submitting a new bug.  You need to register at sourceforge and be logged 
+    in before you can submit a bug.  
+  </p>
+  <p>
+    Once you have submitted your report, don't forget it.  Your bug report is 
+    not complete until you've answered any followup questions the developers 
+    have for you.  Bug reporters who don't respond to followups are a major 
+		irritant to developers.  Debugging software can be a frustrating 
+		experience for developers but receiving good bug reports can help make 
+		writing free software a little more satisfying.  
+  </p>
+
