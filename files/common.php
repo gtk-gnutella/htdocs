@@ -8,7 +8,7 @@
  * general configuration variables are in here
  *
  */
-include("VERSION");
+include("files/VERSION");
 
 define(BASEDIR,	"/var/www/gtk-gnutella/files/");
 define(NEWSMIN, 6);
