@@ -1,7 +1,8 @@
-<h1 align="center">Features</h1>
 <p>
+<h1 align="center">Features</h1>
+
 <ul>
-	<li>Share files on the gnutella network (Limewire, BearShare, Xolox, Gnucleus, Shareaza ...)
+	<li>Share files on the gnutella network (Limewire, BearShare, Xolox, Gnucleus, Shareaza, Morpheus ...)
 	<li>Compressed GNet connections
 	<li>Simultaneous downloading of files from multiple hosts (swarming)
 	<li>Passive searches

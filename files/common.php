@@ -31,7 +31,8 @@ $pages = array(
   "faq",
   "features",
   "filtering_howto",
-  "searching_by_hash"
+  "searching_by_hash",
+  "developers_howto"
 );
 
 /* ** hack ** fscking damn php won't use LANG in header() ** hack ** */
