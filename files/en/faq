@@ -24,6 +24,7 @@
   <li><a href="#gnet5">What does "Harmful version banned, upgrade required" mean?</a></li>
   <li><a href="#gnet6">What does "Outdated version, please upgrade" mean?</a></li>
   <li><a href="#gnet7">Why doesn't my HTTP proxy work?</a></li>
+  <li><a href="#gnet8">How can I increase the timeouts?</a></li>
 </ul>
 
 <h2>Searches</h2>
@@ -178,16 +179,16 @@
      012345678 (offset)
      NIrwqTRPFh
      ^^^^^^^^^
-     |||||||||+ hops flow triggerd (h), or total query flow control (f)
-     ||||||||+  flow control (F), or pending data in queue (d)
-     |||||||+   we are push-proxy for node (P) or node is our push-proxy (p)
-     ||||||+    indicates whether RX is compressed
-     |||||+     indicates whether TX is compressed
-     ||||+      indicates whether we sent/received a QRT, or send/receive one
-     |||+       indicates whether node is writable
-     ||+        indicates whether node is readable
-     |+         indicates connection type (Incoming, Outgoing, Ponging)
-     +          indicates peer mode (Normal, Ultra, Leaf)
+     |||||||||+ hops flow triggerd (<b>h</b>), or total query flow control (<b>f</b>)
+     ||||||||+  flow control (<b>F</b>), or pending data in queue (<b>d</b>)
+     |||||||+   we are push-proxy for node (<b>P</b>) or node is our push-proxy (<b>p</b>)
+     ||||||+    indicates whether <b>R</b>X is compressed
+     |||||+     indicates whether <b>T</b>X is compressed
+     ||||+      indicates whether we sent/received a <b>Q</b>RT, or send/receive one
+     |||+       indicates whether node is <b>w</b>ritable
+     ||+        indicates whether node is <b>r</b>eadable
+     |+         indicates connection type (<b>I</b>ncoming, <b>O</b>utgoing, <b>P</b>onging)
+     +          indicates peer mode: <b>U</b>ltra, <b>L</b>eaf, Legacy (a.k.a. <b>N</b>ormal)
 </pre>
 
 <h3><a name="gnet5">What does "Harmful version banned, upgrade required" mean?</a></h3>
@@ -215,6 +216,15 @@
   moment, the proxy support - also for SOCKS - isn't very good. The developers
   don't use proxies but if you think you can fix it, we would appreciate
   your patches.  
+</p>
+
+<h3><a name="#gnet8">How can I increase the timeouts?</a></h3>
+<p>
+  If your internet connection suffers from high latency it might help to
+  increase the timeouts. Go to <q><em>Config->User Interface</em></q>
+  and tick <q><em>allow experimenting with low-level settings</em></q>.
+  Now, you'll find a lot more settings to change when you go to
+  <q><em>Config->GnutellaNet Settings</em></q>.
 </p>
 
 <h2>Searches</h2>
