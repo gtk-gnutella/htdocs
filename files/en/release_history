@@ -1,21 +1,21 @@
 <!-- $Id$ -->
 <h1>Release history</h1>
 <ul>
-  <li><a href="#0.95">0.95</a></li>
-  <li><a href="#0.94">0.94</a></li>
-  <li><a href="#0.93.3">0.93.3</a></li>
-  <li><a href="#0.93.2">0.93.2</a></li>
-  <li><a href="#0.93.1">0.93.1</a></li>
-  <li><a href="#0.93">0.93</a></li>
-  <li><a href="#0.92.1">0.92.1</a></li>
-  <li><a href="#0.92">0.92</a></li>
-  <li><a href="#0.91.1">0.91.1</a></li>
-  <li><a href="#0.91">0.91</a></li>
-  <li><a href="#0.90">0.90</a></li>
-  <li><a href="#0.85">0.85</a></li>
+  <li><a href="#v0.95">0.95</a></li>
+  <li><a href="#v0.94">0.94</a></li>
+  <li><a href="#v0.93.3">0.93.3</a></li>
+  <li><a href="#v0.93.2">0.93.2</a></li>
+  <li><a href="#v0.93.1">0.93.1</a></li>
+  <li><a href="#v0.93">0.93</a></li>
+  <li><a href="#v0.92.1">0.92.1</a></li>
+  <li><a href="#v0.92">0.92</a></li>
+  <li><a href="#v0.91.1">0.91.1</a></li>
+  <li><a href="#v0.91">0.91</a></li>
+  <li><a href="#v0.90">0.90</a></li>
+  <li><a href="#v0.85">0.85</a></li>
 </ul>
 
-<h4 id="0.95">27 November 2004, Version 0.95 Released</h4>
+<h4 id="v0.95">27 November 2004, Version 0.95 Released</h4>
 
 <p>
   With the release of version 0.95 Gtk-Gnutella supports the
@@ -114,7 +114,7 @@
 </div>
 
 
-<h4 id="0.94">10. July 2004, Version 0.94 released</h4>
+<h4 id="v0.94">10. July 2004, Version 0.94 released</h4>
 
 <p>
   While 0.93 was improved for stability with the 0.93.4 release, the just released 0.94 contains some nice new features, while it should be at least as stable as 0.93.4:
@@ -155,7 +155,7 @@
 </div>
 
 
-<h4><a name="0.93.3"></a>25. January 2004, Version 0.93.3 released</h4>
+<h4><a name="v0.93.3"></a>25. January 2004, Version 0.93.3 released</h4>
 <p>
   <strong>These are changes made since 0.93.2 stable:</strong>
 </p>
@@ -217,7 +217,7 @@
   </p>
 </div>
 
-<h4><a name="0.93.2"></a>5. January 2004, Version 0.93.2 released</h4>
+<h4><a name="v0.93.2"></a>5. January 2004, Version 0.93.2 released</h4>
 <p>
   <strong>These are changes made since 0.93.1 stable:</strong>
 </p>
@@ -282,7 +282,7 @@
 </div>
 
 
-<h4><a name="0.93.1">28. December 2003, Version 0.93.1 released</a></h4>
+<h4><a name="v0.93.1">28. December 2003, Version 0.93.1 released</a></h4>
 <p>
   <strong>These are changes made since 0.93 stable:</strong>
 </p>
@@ -390,7 +390,7 @@
 	</p>
 </div>
 
-<h4><a name="0.93"></a>2. November 2003, Version 0.93 released</h4>
+<h4><a name="v0.93"></a>2. November 2003, Version 0.93 released</h4>
 <p>
   <strong>These are changes made since 0.92.1 stable:</strong>
 </p>
@@ -481,7 +481,7 @@
 
 
 
-<h4><a name="0.92.1"></a>15. August 2003, Version 0.92.1 released</h4>
+<h4><a name="v0.92.1"></a>15. August 2003, Version 0.92.1 released</h4>
 <p>
   <strong>These are changes made since 0.92 stable:</strong>
 </p>
@@ -566,7 +566,7 @@
 
 
 
-<h4><a name="0.92"></a>15. June 2003, Version 0.92 released</h4>
+<h4><a name="v0.92"></a>15. June 2003, Version 0.92 released</h4>
 <p>
   Here are some of the changes since 0.91.1:
 </p>
@@ -648,7 +648,7 @@
   </li>
 </ul>
 
-<h4><a name="0.91.1"></a>22. Nov 2002, Version 0.91.1 stable released</h4>
+<h4><a name="v0.91.1"></a>22. Nov 2002, Version 0.91.1 stable released</h4>
 <p>
 	<strong>Here are some of the changes since 0.91:</strong>
 </p>
@@ -704,7 +704,7 @@
   </li>
 </ul>
 
-<h4><a name="0.91"></a>19. Oct 2002, Version 0.91 stable released</h4>
+<h4><a name="v0.91"></a>19. Oct 2002, Version 0.91 stable released</h4>
 <p>
   <strong>Here are some of the changes since 0.90:</strong>
 </p>
@@ -790,7 +790,7 @@
   </li>
 </ul>
 
-<h4><a name="0.90"></a>07. July 2002, Version 0.90 stable released</h4>
+<h4><a name="v0.90"></a>07. July 2002, Version 0.90 stable released</h4>
 <p>
   <strong>Here are some of the changes since 0.85:</strong>
 </p>
@@ -853,7 +853,7 @@
   </li>
 </ul>
 
-<h4><a name="0.85"></a>04. April 2002, Version 0.85 stable released</h4>
+<h4><a name="v0.85"></a>04. April 2002, Version 0.85 stable released</h4>
 <p>
   <strong>Summary of changes (user-visible) since 0.80:</strong>
 </p>
