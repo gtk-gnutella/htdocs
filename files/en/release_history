@@ -6,11 +6,13 @@
 	<li><a href="#0.93">0.93</a></li>
 	<li><a href="#0.92.1">0.92.1</a></li>
 	<li><a href="#0.92">0.92</a></li>
+	<li><a href="#0.91.1">0.91.1</a></li>
+	<li><a href="#0.91">0.91</a></li>
+	<li><a href="#0.90">0.90</a></li>
+	<li><a href="#0.85">0.85</a></li>
 </ul>
 
-
-
-<h4><a name="0.93.2"></a>5. January 2004, Version 0.93.2 released</a></h4>
+<h4><a name="0.93.2"></a>5. January 2004, Version 0.93.2 released</h4>
 <p>
   <strong>These are changes made since 0.93.1 stable:</strong>
 </p>
@@ -183,7 +185,7 @@
 	</p>
 </div>
 
-<h4><a name="0.93"></a>2. November 2003, Version 0.93 released</a></h4>
+<h4><a name="0.93"></a>2. November 2003, Version 0.93 released</h4>
 <p>
   <strong>These are changes made since 0.92.1 stable:</strong>
 </p>
@@ -274,7 +276,7 @@
 
 
 
-<h4><a name="0.92.1"></a>15. August 2003, Version 0.92.1 released</a></h4>
+<h4><a name="0.92.1"></a>15. August 2003, Version 0.92.1 released</h4>
 <p>
   <strong>These are changes made since 0.92 stable:</strong>
 </p>
@@ -359,7 +361,7 @@
 
 
 
-<h4><a name="0.92"></a>15. June 2003, Version 0.92 released</a></h4>
+<h4><a name="0.92"></a>15. June 2003, Version 0.92 released</h4>
 <p>
   Here are some of the changes since 0.91.1:
 </p>
@@ -441,4 +443,256 @@
   </li>
 </ul>
 
-<!-- end news_[32] -->
+<h4><a name="0.91.1"></a>22. Nov 2002, Version 0.91.1 stable released</h4>
+<p>
+	<strong>Here are some of the changes since 0.91:</strong>
+</p>
+<ul>
+  <li>
+    Will now verify the SHA1 of downloaded files in the background.
+  </li>
+  <li>
+    New configuration parameter for the directory where "bad files" not 
+    matching their advertised SHA1 should be put (don't forget to configure 
+    it, as it defaults to /tmp).
+  </li>
+  <li>
+    Files are now copied in the background, so it is possible to setup the 
+    various "download" directories on different filesystems.
+  </li>
+  <li>
+    Node connection time and remote node's uptime (if available) are now shown.
+  </li>
+  <li>
+    It is now possible to paste a "magnet:" URI in the search to launch a SHA1 
+    search.
+  </li>
+  <li>
+    The "connection indicator" at the bottom left is now a toggle.  Depressing 
+    it will terminate any Gnet connection but will continue to serve uploads 
+    and process downloads.
+  </li>
+  <li>
+    The active download status now shows how many sources are available and 
+    how many are currently active (i.e. downloading).  It will also show the 
+    estimated remaining time for the whole file, as well as the global 
+    reception rate for the file, accounting for all currently active sources.
+  </li>
+  <li>
+    Fixed bug that prevented proper downloading from recent BearShare (4.1.x 
+    or better) and Shareaza (1.6.0.x or better) nodes when the SHA1 of the 
+    file is known.
+  </li>
+  <li>
+    Will now protect against "PUSH floods" by banning the relevant IPs.
+  </li>
+  <li>
+    At startup, scan the download "tmp" dir for orphan files and reintegrate 
+    them into the fileinfo database, moving completed files to the relevant  
+    directory (depending on whether its SHA1 checked OK).
+  </li>
+  <li>
+    Minor bug fixing: improper countdown for push timeout when falling back, 
+    fixed corner-case processing that could lead to crashes or incorrect 
+    behaviour, accidental localization on X-Live-Since headers, freezing of 
+    the GUI when clearing many uploads, obscure portability fixes.
+  </li>
+</ul>
+
+<h4><a name="0.91"></a>19. Oct 2002, Version 0.91 stable released</h4>
+<p>
+  <strong>Here are some of the changes since 0.90:</strong>
+</p>
+<ul>
+  <li>
+    Now uses HTTP/1.1, which implies support for persistent connections. 
+  </li>
+  <li>
+    gtk-gnutella will now monitor whether we're connected to Internet and 
+    slow down its connection requests when it detects the connection was 
+    broken (after a delay of ~3 minutes at most).
+  </li>
+  <li>
+    Download swarming is now supported: gtk-gnutella will download different 
+    portions of the same file from many hosts, as long as alternate sources 
+    are available.
+  </li>
+  <li>
+    The download mesh (alternate source collection during downloads) is now 
+    used to fill the download queue with more sources.
+  </li>
+  <li>
+    Alternate locations can also be passively collected from query hits. You 
+    can enable this in the swarming section on the download config pane.
+  </li>
+  <li>
+    Download scheduling was entirely redesigned to avoid hammering busy hosts 
+    and scale to 5000+ entries in the queue without slowing down the whole.
+  </li>
+  <li>
+    Is now smart about the "push" flag and will try to ignore it if possible, 
+    in case the remote host wrongly set the flag but is not firewalled.
+  </li>
+  <li>
+    gtk-gnutella now remembers the files it downloaded and will ignore further 
+    requests to download the same file.  It will visually mark those files, as 
+    well as the ones it already shares, by showing them in lighter color in 
+    the search results.
+  </li>
+  <li>
+    It is possible to supply to gtk-gnutella your own ignore lists by SHA1 and 
+    by name/size but the feature is under-documented.
+  </li>
+  <li>
+    Added an "expert mode".  Only when this is enabled will gtk-gnutella show 
+    the users some of the most complex settings.
+  </li>
+  <li>
+    New Gnutella statistics pane, showing the packets we sent and received, 
+    how many we generated, and the reasons why we drop packets, by packet type.
+  </li>
+  <li>
+    Now understands UTF-8 queries, but does not generate them.
+  </li>
+  <li>
+    Fixed important bugs whereby all earlier versions of gtk-gnutella were 
+    unintentionally corrupting the Gnutella traffic!
+  </li>
+  <li>
+    Moved away from the public hostcaches and now uses the Gnutella Web Cache.
+  </li>
+  <li>
+    Will now show all upload attempts, not only the ones that are 
+    transferring. If the connection is aborted, the reason is also shown.
+  </li>
+  <li>
+    New search stats types: queries by router, whole query.
+    <ul>
+      <li>
+        "Queries by router" shows how many queries have been recieved from any 
+        node gtk-gnutella was directly connected to.
+      </li>
+      <li>
+        "Whole query" shows stats based on the complete query string instead 
+        of individual query words.
+      </li>
+    </ul>
+  </li>
+  <li>
+    New visual indications via icons in the status bar: whether gtk-gnutella 
+    is rebuilding the library, computing SHA1 of shared files in the 
+    background, and whether we are connected to Internet or not.
+  </li>
+</ul>
+
+<h4><a name="0.90"></a>07. July 2002, Version 0.90 stable released</h4>
+<p>
+  <strong>Here are some of the changes since 0.85:</strong>
+</p>
+<ul>
+  <li>
+    Greatly enhanced auto-selection in searches to use far less CPU.
+  </li>
+  <li>
+    Will now warn user when encountering a newer version of gtk-gnutella.
+  </li>
+  <li>
+    URN searches now supported, by typing "urn:sha1:" in search text, followed 
+    by the base32 value.
+  </li>
+  <li>
+    All configuration can now be made from the GUI.
+  </li>
+  <li>
+    Fully redesigned search filters to work like ipchains/iptable on Linux.
+  </li>
+  <li>
+    Obsoleted experimental "auto-download", superseded by the new filtering 
+    code.
+  </li>
+  <li>
+    Added Gnutella bandwidth management (0.85 already had HTTP bandwidth 
+    management, but it was not configurable via the GUI).
+  </li>
+  <li>
+    Both HTTP and Gnet bandwidth is now displayed real time.
+  </li>
+  <li>
+    Added full HUGE support (Hash/URN Gnutella Extensions).
+  </li>
+  <li>
+    Added support for local host preference.
+  </li>
+  <li>
+    Gtk-gnutella can do traffic compression when connecting to a node that 
+    also supports it.
+  </li>
+  <li>
+    Upload and downloads will now show User-Agent/Server information.
+  </li>
+  <li>
+    Added status to the download queue.
+  </li>
+  <li>
+    You can now freeze the download queue whilst manipulating it.
+  </li>
+  <li>
+    Searches can now be listed on the left side of the screen, or as tabs 
+    like in the previous versions.
+  </li>
+  <li>
+    Added automatic banning of servents that are hammering us.
+  </li>
+  <li>
+    Many more cool new features that you'll discover whilst playing with it.
+  </li>
+</ul>
+
+<h4><a name="0.85"></a>07. July 2002, Version 0.85 stable released</h4>
+<p>
+  <strong>Summary of changes (user-visible) since 0.80:</strong>
+</p>
+<ul>
+  </li>
+    Now support Gnutella traffic prioritization and flow-control for enhanced 
+    stability of connections.
+  </li>
+  <li>
+    Can now use an HTTP proxy for outgoing connections, in addition to SOCKS 
+    v4 and v5 proxies.
+  </li>
+  <li>
+    When "Force local IP" is ticked, gtk-gnutella will try to automatically 
+    update the value if it detects a change in your IP address.
+  </li>
+  <li>
+    Added search statistics.
+  </li>
+  <li>
+    Added persistent upload statistics, keeping track of which files were 
+    uploaded by users, and how many times.
+  </li>
+  <li>
+    Will now show the size of the uploaded file and the requested range, under 
+    the form "request @ offset" in the Range column.
+  </li>
+  <li>
+    Node servent names are now displayed in the gnutellaNet window, if known.
+  </li>
+  <li>
+    Bandwidth management for input and output traffic is now possible.  It can 
+    only be configured via the config file though, not via the GUI.  It only 
+    accounts upload/download traffic, not Gnet traffic.
+  </li>
+  <li>
+    Displayed transfer rates are now instantaneous transfer rates, not average.
+  </li>
+  <li>
+    Upon completion, uploads and downloads show the time spent in transfer.
+  </li>
+  <li>
+    Hidden useless gnutellaNet stats window.
+  </li>
+</ul>
+
+<!-- end release_history -->
