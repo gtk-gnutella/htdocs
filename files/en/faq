@@ -212,10 +212,10 @@ See also,
 
 <h3><a name="gnet0">What is a good number of connections?</a></h3>
 <p>
-  Short answer: in legacy mode, 4/5 (minumum/maximum), in
-  <a href="#general-ultrapeer">leaf</a> mode 3 ultrapeers, in
-  <a href="#general-ultrapeer">ultrapeer</a> mode 8/10 (minimum/maximum)
-  ultrapeers and at least 20 leaf nodes.  You can calculate a bandwidth
+  In <a href="#general-ultrapeer">leaf</a> mode 3 ultrapeers, in
+  <a href="#general-ultrapeer">ultrapeer</a> mode 32/40 (minimum/maximum)
+  ultrapeers and around 200 leaf nodes. The actual number should depend on the 
+  available bandwidth.  You can calculate a bandwidth
   consumption of 1kb/s per connection in legacy mode, however, this will be
   much less for leaf nodes and somewhat higher for ultrapeer-ultrapeer
   connections.  If you have set "Prefer compressed connections," bandwidth
