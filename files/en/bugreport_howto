@@ -196,7 +196,7 @@
   </p>
   <blockquote>
     <code>
-			./Configure -Dccflags="-g3 -Wall" -Doptimize="-O0"
+      ./Configure -O -Dccflags="-g3 -Wall" -Doptimize="-O0" -ders
     </code>
   </blockquote>
   <p>
@@ -206,7 +206,7 @@
   </p>
   <blockquote>
     <code>
-      su -c 'install -m555 src/gtk-gnutella /usr/local/bin/gtk-gnutella'
+      su -c 'install -m 555 src/gtk-gnutella /usr/local/bin/gtk-gnutella'
     </code>
   </blockquote>
 
