@@ -12,8 +12,8 @@
 if (!defined(BASEDIR)) {
   define(BASEDIR, "/home/groups/g/gt/gtk-gnutella/htdocs/files/");
 }
-define(NEWSMIN, 7);
-define(NEWSMAX, 20);
+define(NEWSMIN, 8);
+define(NEWSMAX, 21);
 
 define(BASEURL, "$PHP_SELF");
 define(GENDIR,  "general/");
@@ -22,6 +22,7 @@ define(LANG,    getlang());
 include(BASEDIR . "VERSION");
 
 $pages = array(
+  "gwebcache",
   "shots", 
   "shots090", 
   "devel", 

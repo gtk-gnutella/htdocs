@@ -1,0 +1,16 @@
+<p>
+<h1 align="center">GWebCache</h1>
+gtk-gnutella supports the <a href="http://www.gnucleus.net/gwebcache">GWebCache</a> system, which provides gnutella clients
+with a bootstrapping method. This is needed for gnutella clients to find hosts to connect to when it has never been connected to
+the gnutella network (gnet) before.<br>
+If you want to support gnutella and you have a stable web server running, you can run a script on it that provides this functionality.
+It costs about 100 MB of traffic per month and the more people run it, the lesser traffic everyone will have. The scripts
+are available for PHP, ASP and ColdFusion. <br>
+After your script is up and running, you can send a e-mail to our <a href="index.php?page=mailing">development mailing list</a> and
+to the maintainer of the GWebCache Homepage (see his e-mail address at the bottom of his page)<br>
+For more information,
+visit the <a href="http://www.gnucleus.net/gwebcache">GWebCache page</a>
+
+<br><br>
+
+</p>
