@@ -1,0 +1,90 @@
+<!-- $Id$ -->
+<h4>15. August 2003, Version 0.92.1 released</h4>
+<p>
+  You can get this new version from our download section.
+</p>
+<p>
+  <strong>These are some of the changes made since 0.92 stable:</strong>
+</p>
+<ul>
+  <li>
+    Support for push proxies was added which reduces problems with firewalled 
+    servents.
+  </li>
+  <li>
+    Support for pre-0.90 configuration files has been dropped.
+  </li>
+  <li>
+    Improved PARQ and fixed some problems with it.
+  </li>
+  <li>
+    The default directories for downloads are now set to $HOME.
+  </li>
+  <li>  
+    A lot of minor bugfixes and code clean-ups so that it compiles on even 
+    more platforms and with other (C99) compilers.
+  </li>
+  <li>
+    GTKG can now monitor unstable IP addresses and unstable servents, to avoid 
+    keeping connecting to bad nodes.
+  </li>
+  <li>
+    The download pane now shows how many items are actively and passively 
+    queued.
+  </li>
+  <li>
+    The search pane allows one to hide hits that are either ignored or which 
+    have been already queued up by the core due to a matching SHA1 or filename.
+  </li>
+  <li>
+    The "Purge" button could be hidden due to long filenames (#770625).
+  </li>
+  <li>  
+    A duplicate free() problem was fixed in _search_send_packet() (#706014).
+  </li>
+  <li>
+    The "Purge" button no longer cause crashes (#757276).
+  </li>
+  <li>
+    A bug which could cause a crash when resuming a download was fixed 
+    (#739262).
+  </li>
+</ul>
+<p>
+  The following changes affect only the GTK+ 2.x front-end:
+</p>
+<ul>
+  <li>
+    XFT support is not turned off by default.
+  </li>
+  <li>
+    The node and the uploads panel have been tuned (a little).
+  </li>
+  <li>
+    No more crashes if the uploads are sorted by status.
+  </li>
+  <li>
+    Non-UTF-8 encoded were passed to GTK+ 2.x causing warnings (#769342)
+  </li>
+</ul>
+<p>
+  The following changes affect the build system:
+</p>
+<ul>
+  <li>
+    Switched to metaconfig, and abandoned autoconf/automake.  There may be 
+    some portability issues introduced on non-linux system since there are 
+    lots of new metaconfig units that had to be developed for the 
+    configuration of GTKG.  In the long run, it will catch up.
+  </li>
+  <li>
+    The "intl" directory containing GNU gettext() is no longer supported, 
+    because it is currently only configurable via autoconf.  If you don't have 
+    proper GNU gettext() support on your system, you might have to disable NLS 
+    support to be able to compile.
+  </li>
+</ul>
+<p>
+<em>gtk-gnutella team</em>
+</p>
+<!-- end news_29 -->
