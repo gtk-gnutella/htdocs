@@ -1,26 +1,40 @@
 <!-- $Id$ -->
 <a href="<?php echo BASEURL ?>?page=news">
   News</a><br>
-<a href="<?php echo BASEURL ?>?page=shots092">
-  Screenshots</a><br>
-<a href="<?php echo BASEURL ?>?page=features">
-  Features</a><br>
-<a href="<?php echo BASEURL ?>?page=faq">
-  FAQ</a><br>
+
 <a href="<?php echo BASEURL ?>?page=docs">
-  Documentation</a><br>
+ 	Documentation</a><br>
+<div class="indent">
+	<a href="<?php echo BASEURL ?>?page=features">
+  	Features</a><br>
+	<a href="<?php echo BASEURL ?>?page=faq">
+  	FAQ</a><br>
+	<a href="<?php echo BASEURL ?>?page=shots092">
+  	Screenshots</a><br>
+	<a href="<?php echo BASEURL ?>?page=release_history">
+  	History</a><br>
+</div>
+
 <a href="<?php echo BASEURL ?>?page=mailing">
-  Getting help</a><br>
-<a href="<?php echo BASEURL ?>?page=bugreport_howto">
-  Bug Reports</a><br>
+ 	Getting help</a><br>
+<div class="indent">
+	<a href="<?php echo BASEURL ?>?page=bugreport_howto">
+  	Bug Reports</a><br>
+</div>
+
 <a href="<?php echo BASEURL ?>?page=devel">
   Development</a><br>
+
 <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
   <strong>Download</strong></a><br>
-<a href="<?php echo BASEURL ?>?page=devel#devel-snapshots">
-  Snapshots</a><br>
+<div class="indent">
+	<a href="<?php echo BASEURL ?>?page=devel#devel-snapshots">
+		Snapshots</a>
+</div>
+
 <a href="<?php echo BASEURL ?>?page=links">
   Links</a><br>
+
 <a href="<?php echo BASEURL ?>?page=donate">
   Donate</a><br>
 <!-- end sidenav -->

@@ -1,10 +1,11 @@
 <!-- $Id$ -->
 <h4>20. July 2003, Version 0.92.1 candidate released</h4>
 <p>
-  Please test this candidate so we can provide a very stable 0.92.1 in a few 
-  weeks. It should be very stable and just as fine as a release. Due to some 
-  problems with the toolchain, it's a source-only release. 
+  Please test this candidate so we can provide a very stable 0.92.1 in a few
+  weeks. It should be very stable and just as fine as a release. Due to some
+  problems with the toolchain, it's a source-only release.
 </p>
+<!--
 <p>
   Here are the checksums:
 </p>
@@ -22,62 +23,11 @@
     MD5 (gtk-gnutella-0.92.1c.tar.gz) = b6b5222b8d092e33176a779359f99ef1
   </li>
 </ul>
+-->
 <p>
-  Thanks a lot to all the contributors and bug reporters! 
+  Thanks a lot to all the contributors and bug reporters!
 </p>
-<p>
-  <strong>These are some of the changes since 0.92 stable:</strong>
-</p>
-<ul>
-  <li>
-    Push Proxies have been implemented, a direct way to transfer push requests 
-    for firewalled servents over the gnutella network and increase the success 
-    rate of push'ed downloads.
-  </li>
-  <li>
-    Support for pre-0.90 configuration files has been dropped.
-  </li>
-  <li>
-    Improved PARQ and fixed some problems with it.
-  </li>
-  <li>
-    The default directories for downloads are now set to $HOME instead of /tmp.
-  </li>
-  <li>  
-    A lot of minor bugfixes and code clean-ups so that it compiles on even 
-    more platforms.
-  </li>
-  <li>
-    The "Purge" button could be hidden due to long filenames (#770625).
-  </li>
-  <li>  
-    A duplicate free() problem was fixed in _search_send_packet() (#706014).
-  </li>
-  <li>
-    The "Purge" button no longer cause crashes (#757276).
-  </li>
-  <li>
-    A bug which could cause a crash when resuming a download was fixed 
-    (#739262).
-  </li>
-</ul>
-<p>
-  The following changes affect only the GTK+ 2.x front-end:
-</p>
-<ul>
-  <li>
-    XFT support is not turned off by default.
-  </li>
-  <li>
-    The node and the uploads panel have been tuned (a little).
-  </li>
-  <li>
-    No more crashes if the uploads are sorted by status.
-  </li>
-  <li>
-    Non-UTF-8 encoded were passed to GTK+ 2.x causing warnings (#769342)
-  </li>
-</ul>
+
 <p>
 <em>gtk-gnutella team</em>
 </p>

@@ -1,6 +1,6 @@
 <?php
-/* 
- * $Id$ 
+/*
+ * $Id$
  */
 
 /*
@@ -24,19 +24,20 @@ include(BASEDIR . "VERSION");
 $pages = array(
   "gwebcache",
   "donate",
-  "shots", 
-  "shots090", 
+  "shots",
+  "shots090",
   "shots092",
-  "devel", 
-  "mailing", 
-  "links", 
+  "devel",
+  "mailing",
+  "links",
   "docs",
   "faq",
   "features",
   "filtering_howto",
   "searching_by_hash",
   "developers_howto",
-  "bugreport_howto"
+  "bugreport_howto",
+  "release_history"
 );
 
 /* ** hack ** fscking damn php won't use LANG in header() ** hack ** */

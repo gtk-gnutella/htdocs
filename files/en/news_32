@@ -1,69 +1,31 @@
 <!-- $Id$ -->
-<h4>5, January 2004, Version 0.93.2 released</h4>
+<h4>5. January 2004, Version 0.93.2 released</h4>
+
+<div class="warning">
+	This is known to have critical bugs. Please don't use it.
+</div>
+
 <p>
-  You can get this new version from our 
-  <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
-  Download</a> section.
-</p>
-<p>
-  <strong>Source Code: gtk-gnutella-0.93.2.tar.bz2</strong><br>
-  MD5Sum: <tt>a89c3bc8e94a9bc63d0d7e1a9573e104</tt><br>
-  urn:sha1:<tt>5S76TMCQFNEMAXM5Z4R3BMYECK7HLFUB</tt>
-</p>
-<p>
-  <strong>Debian-3.0 (stable) Package: gtk-gnutella.gtk1_0.93.2-0_i386.deb</strong><br>
-  MD5Sum: <tt>fe69d3b0f65fdf473d9b40983c422fba</tt><br>
-  urn:sha1:<tt>XRDW4SQTYWXTOYEGCV7HVQ5KOG7FTXEI</tt>
-</p>
-<p>
-  <strong>These are some of the changes made since 0.93.1 stable:</strong>
+  <strong>These are some of the changes made since 0.93.1:</strong>
 </p>
 <ul>
-  <li>
-    Numerous GUI updates:
-    <ul>
-      <li>
-        GTK1 now supports grouped searches and grouped downloads, like GTK2 
-        did.
-      </li>
-      <li>
-        GTK1 and GTK2 GUIs were brought in sync feature-wise, as much as 
-        possible.
-      </li>
-      <li>
-        Gnet pane will now show leaf nodes and normal nodes in light gray.
-      </li>
-      <li>
-        Fixed memory leak problems in the GTK2 interface that slipped into 
-        0.93.1.
-      </li>
-    </ul>
+	<li>
+  	GTK1 now supports grouped searches and grouped downloads, like GTK2
+    did.
   </li>
   <li>
-    Bandwidth requirements to become an ultranode were lowered significantly. 
-    This is due to the filtering of SHA1 queries through QRP now, instead of
-    systematically forwarding them: gtk-gnutella assumes all servents out 
-    there include the SHA1 URNs in their QRP tables.
+    Reduced bandwidth requirements.
   </li>
-  <li>
-    As a result of the above, default amount of leaf nodes was increased. 
-  </li>
-  <li>
-    Added a special fix for BearShare: the HTTP headers which gtk-gnutella 
-    emitted used continuations, and were well-formed, but BearShare was
-    misparsing those, causing it to enter an endless loop...
-  </li>
-  <li>
-    Search results are now buffered by the GUI for burst updates, which 
-    reduces CPU usage and the amount of redrawing significantly.  The 
-    buffering time is configurable from the GUI.
-  </li>
-  <li>
-    Gtk-gnutella is now fully compliant with LimeWire regarding I18N queries, 
-    provided you have the ICU library.  Otherwise, it should be OK for roman 
-    charsets only.
-  </li>
+	<li>
+		Reduced CPU usage.
+	</li>
+	<li>
+		Full compliance with LimeWire's I18N queries if the ICU library is used.
+	</li>
 </ul>
+<p>
+	For more changes go <a href="<?php echo BASEURL ?>?page=release_history#0.93.2">here</a>.
+</p>
 <p>
   <em>gtk-gnutella team</em>
 </p>

@@ -1,9 +1,5 @@
 <!-- $Id$ -->
 <h4>25. May 2003, Version 0.92 candidate released</h4>
-<p>
-  You can get versions for GTK1 from our download section, for GTK2 you need 
-  to get the sources from CVS.
-</p>
 <ul>
   <li>
     PARQ is now fully implemented.

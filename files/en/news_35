@@ -1,12 +1,16 @@
 <!-- $Id$ -->
-<h4>12 January 2004, Bugfix release coming soon</h4>
+<div class="warning">
+	Some serious bugs have been found in 0.93.1 and 0.93.2.  A feature freeze is
+	in place and a bugfix 0.93.3 release is expected in a week or so.
+</div>
+
+<h4>12. January 2004, Bugfix release coming soon</h4>
 <p>
-  Some serious bugs have been found in 0.93.1 and 0.93.2.  A feature freeze is 
-  in place and a bugfix 0.93.3 release is expected in a week or so.  It is 
-  recommended that you either wait for this release or compile from the 
+	It is
+  recommended that you either wait for this release or compile from the
   <a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella-current.tar.bz2">
-    <strong>Official CVS snapshot</strong></a>, which should be at least as 
-  stable as the releases and has fixes for most of the known bugs.  If you want 
+    <strong>Official CVS snapshot</strong></a>, which should be at least as
+  stable as the releases and has fixes for most of the known bugs.  If you want
   to help stamp out bugs for this release please read the 
   <a href="<?php echo BASEURL ?>?page=bugreport_howto"> Bug Report Howto</a> 
   and report your bugs to the 

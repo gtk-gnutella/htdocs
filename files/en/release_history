@@ -1,0 +1,444 @@
+<!-- $Id$ -->
+<h1>Release history</h1>
+<ul>
+	<li><a href="#0.93.2">0.93.2</a></li>
+	<li><a href="#0.93.1">0.93.1</a></li>
+	<li><a href="#0.93">0.93</a></li>
+	<li><a href="#0.92.1">0.92.1</a></li>
+	<li><a href="#0.92">0.92</a></li>
+</ul>
+
+
+
+<h4><a name="0.93.2"></a>5. January 2004, Version 0.93.2 released</a></h4>
+<p>
+  <strong>These are changes made since 0.93.1 stable:</strong>
+</p>
+<ul>
+  <li>
+    Numerous GUI updates:
+    <ul>
+      <li>
+        GTK1 now supports grouped searches and grouped downloads, like GTK2
+        did.
+      </li>
+      <li>
+        GTK1 and GTK2 GUIs were brought in sync feature-wise, as much as 
+        possible.
+      </li>
+      <li>
+        Gnet pane will now show leaf nodes and normal nodes in light gray.
+      </li>
+      <li>
+        Fixed memory leak problems in the GTK2 interface that slipped into 
+        0.93.1.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Bandwidth requirements to become an ultranode were lowered significantly.
+    This is due to the filtering of SHA1 queries through QRP now, instead of
+    systematically forwarding them: gtk-gnutella assumes all servents out 
+    there include the SHA1 URNs in their QRP tables.
+  </li>
+  <li>
+    As a result of the above, default amount of leaf nodes was increased. 
+  </li>
+  <li>
+    Added a special fix for BearShare: the HTTP headers which gtk-gnutella
+    emitted used continuations, and were well-formed, but BearShare was
+    misparsing those, causing it to enter an endless loop...
+  </li>
+  <li>
+    Search results are now buffered by the GUI for burst updates, which
+    reduces CPU usage and the amount of redrawing significantly.  The 
+    buffering time is configurable from the GUI.
+  </li>
+  <li>
+    Gtk-gnutella is now fully compliant with LimeWire regarding I18N queries, 
+    provided you have the ICU library.  Otherwise, it should be OK for roman
+    charsets only.
+  </li>
+</ul>
+
+<div class="scroll boxed">
+	<p>
+		<strong>Source Code: gtk-gnutella-0.93.2.tar.bz2</strong><br>
+		MD5Sum: <tt>a89c3bc8e94a9bc63d0d7e1a9573e104</tt><br>
+		urn:sha1:<tt>5S76TMCQFNEMAXM5Z4R3BMYECK7HLFUB</tt>
+	</p>
+	<p>
+		<strong>Debian-3.0 (stable) Package: gtk-gnutella.gtk1_0.93.2-0_i386.deb</strong><br>
+		MD5Sum: <tt>fe69d3b0f65fdf473d9b40983c422fba</tt><br>
+		urn:sha1:<tt>XRDW4SQTYWXTOYEGCV7HVQ5KOG7FTXEI</tt>
+	</p>
+</div>
+
+
+<h4><a name="0.93.1">28. December 2003, Version 0.93.1 released</a></h4>
+<p>
+  <strong>These are changes made since 0.93 stable:</strong>
+</p>
+<ul>
+  <li>
+    Simplified the GUI for non-experts.  Beginners will now see less curious
+    things on the screen, until they become more acquainted and turn on
+    "expert" mode.
+  </li>
+  <li>
+    Many improvements in the GUI:
+    <ul>
+      <li>
+        The Gnutella node information displayed can now be configured in
+        detail, and is by default reduced to four statistics only.
+      </li>
+      <li>
+        It is possible to hide the handshaking version and the Uptime column
+        from the Gnutella pane.
+      </li>
+      <li>
+        When running in auto mode, show the criteria for becoming an ultranode.
+      </li>
+      <li>
+        The leaf node bandwidth odometers are by default automatically hidden
+        when running as a leaf node.
+      </li>
+      <li>
+        GUI refreshing has been optimized so we don't unnecessarily refresh
+        screens that the user is not looking at.  The downside is that when
+        moving to that screen, stale data is presented for about 1 second
+        until the refreshing takes place.
+      </li>
+    </ul>
+  </li>
+  <li>
+    0.93 was not reporting uploaded partial files as such to downloading peers.
+  </li>
+  <li>
+    Remote control "shell" is now compiled in by default but needs to be
+    explicitly enabled in the GUI to become operational.
+  </li>
+  <li>
+    Improved connectivity between ultrapeers to avoid frequent disconnection 
+    due to "activity timeout".
+  </li>
+  <li>
+    Bugfixes:
+    <ul>
+      <li>
+        Was misparsing query hits bearing alt-locs attached to each hit,
+        causing GTKG to possibly drop those hits and close the connection when
+        coming from an immediate neighbour.
+      </li>
+      <li>
+        When restarting a search from menu, re-enable it automatically if it
+        was disabled (fixes bug #864348).
+      </li>
+      <li>
+        Upon restart, a disabled search will now be shown in gray in the
+        search list (fixes bug #857972) -- feature only implemented for GTK1.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Many other little changes that we'll let you discover...
+  </li>
+</ul>
+
+<div class="scroll boxed">
+	<p>
+		<strong>Source Code: gtk-gnutella-0.93.1.tar.bz2</strong><br>
+		MD5Sum: <tt>75840de7a45dbceff0ba045749e7afec</tt><br>
+		urn:sha1:<tt>ITUMBC5X2VE4QDWFBNS7GUHIPLVIXVCS</tt>
+	</p>
+	<p>
+		<strong>Debian-3.0 (stable) Package: gtk-gnutella_0.93.1-0_i386.deb</strong><br>
+		MD5Sum: <tt>8203ed9c53f297dcb73798657f927610</tt><br>
+		urn:sha1:<tt>FQ2XETJTTMO6HNQPGNOBGOVVJTHPJUVI</tt>
+	</p>
+	<p>
+		<strong>Redhat-9 RPM: gtk-gnutella-0.93.1-1.gtk1.i586.rpm</strong><br>
+		MD5Sum: <tt>2701fc8709490142229ea4e13a2d2d90</tt><br>
+		urn:sha1:<tt>OOWWW4W5AKE4XVRW76RKG5THP4OPMUBN</tt>
+	</p>
+	<p>
+		<strong>Redhat-9 SRPM: gtk-gnutella-0.93.1-1.gtk1.src.rpm</strong><br>
+		MD5Sum: <tt>2c07b845f41bc9c8ab1d0aafa413aad0</tt><br>
+		urn:sha1:<tt>FUUG6D7LALRZJ3WV7OKWY3FX6BRMDQD2</tt>
+	</p>
+	<p>
+		<strong>Mandrake-9.2 RPM: gtk-gnutella-0.93.1-0.gtk1.1mdk.i586.rpm</strong><br>
+		MD5Sum: <tt>652a4fa75417d150e8710a5ed56c9e9c</tt><br>
+		urn:sha1:<tt>55O6LQ6ULFDR76ZX2J5KSRSRUC32NLT3</tt>
+	</p>
+	<p>
+		<strong>Mandrake-9.2 SRPM: gtk-gnutella-0.93.1-0.gtk1.1mdk.src.rpm</strong><br>
+		MD5Sum: <tt>1872a475124c2fe4f035e4bae2639c7e</tt><br>
+		urn:sha1:<tt>Z4IE43GH5QAB6EIIH7R3JEWACCBAAASS</tt>
+	</p>
+	<p>
+		<strong>Slackware-9.1 Package: gtk-gnutella-gtk1-0.93.1-i586-1.tgz</strong><br>
+		MD5Sum: <tt>ef31284ecf1dd7eb54b94b09444a4a31</tt><br>
+		urn:sha1:<tt>XHE4Y337KHN3LF4ZIXPYLESLQXUANBOO</tt>
+	</p>
+</div>
+
+<h4><a name="0.93"></a>2. November 2003, Version 0.93 released</a></h4>
+<p>
+  <strong>These are changes made since 0.92.1 stable:</strong>
+</p>
+<ul>
+  <li>
+    GTK-Gnutella now supports Partial File serving, both as a client and as a
+    server. As soon as a download is started, it can be used as an alternate
+    source for others even though the download is not completed yet.
+  </li>
+  <li>
+    When a mismatch happens during downloading, the file can now be
+    automatically removed and restarted again.
+  </li>
+  <li>
+    Improved GUI to specify better which downloads should be cleared from the
+    list (completed, failed, unavailable).
+  </li>
+  <li>
+    Collects alternate download locations acquired from query hits.
+  </li>
+  <li>
+    Support for hostname instead of only an ip. If you have a dynamic ip but
+    got a static hostname, for example a .dyndns.org address, gtk-gnutella can
+    try to connect to the ip associated with the hostname.
+  </li>
+  <li>
+    Sends out alternate locations which should not be tried.
+  </li>
+  <li>
+    Won't send full headers when short on bandwith.
+  </li>
+  <li>
+    Any changes in settings are now automatically saved, there is no need to
+    quit the client anymore to make sure the settings are saved.
+  </li>
+  <li>
+    Running gtk-gnutella in Auto peermode should no longer cause a crash.
+  </li>
+  <li>
+    New addresses in hostiles.txt to protect against malicious hosts.
+  </li>
+  <li>
+    gwcache.boot was cleaned up. Dead links were removed.
+  </li>
+  <li>
+    Remote control should actually work without crashing gtk-gnutella.
+  </li>
+  <li>
+    The build problems which occured in 0.92.1 due to the switch to metaconfig
+    should be (mostly) gone.
+  </li>
+  <li>
+    Code cleanup to build on more platforms.
+  </li>
+  <li>
+    GTK2 interface currently does not have a maintainer, not all options which
+    are available in the GTK1 interface might have made it in the GTK2
+    interface.
+  </li>
+</ul>
+<div class="scroll boxed">
+	<p>
+		<strong>Source Code: gtk-gnutella-0.93.tar.bz2</strong><br>
+		MD5Sum: <tt>78d099392a61064ca30fac84c888550b</tt><br>
+		SHA1: <tt>QJPA5JMD2GIN4ECZAPQCUMCBX7COQLZN</tt>
+	</p>
+	<p>
+		<strong>Redhat-9 Package: gtk-gnutella-0.93-1.i586.rpm</strong><br>
+		MD5Sum: <tt>4a0806582db9450460385f88dbc99b8d</tt><br>
+		SHA1: <tt>ZHP2THYXSIHBEI4JY7UGYLUKEQ5PW646</tt>
+	</p>
+	<p>
+	<strong>Debian-3.0 (stable) Package: gtk-gnutella_0.93.0-0_i386.deb</strong><br>
+		MD5Sum: <tt>ae30cb81a204af6ae991acdb9bd299b6</tt><br>
+		SHA1: <tt>AY2YEINNFCX4WIQ56I6R6KJBGGF7C565</tt>
+	</p>
+	<p>
+		<strong>Suse-8.2 Package: gtk-gnutella-0.93-1suse82.i386.rpm</strong><br>
+		MD5Sum: <tt>25cc509d68d7cd8ef84ca7ce572505e9</tt><br>
+		SHA1: <tt>R2FKRZXOITLLKWF7SJ5FC6WS5MU5IW2U</tt>
+	</p>
+	<p>
+		<strong>Slackware-9.1 Package: gtk-gnutella-0.93-i586-1.tgz</strong><br>
+		MD5Sum: <tt>90d051de62452b2ded991fa330515250</tt><br>
+		SHA1: <tt>QJPA5JMD2GIN4ECZAPQCUMCBX7COQLZN</tt>
+	</p>
+</div>
+
+
+
+<h4><a name="0.92.1"></a>15. August 2003, Version 0.92.1 released</a></h4>
+<p>
+  <strong>These are changes made since 0.92 stable:</strong>
+</p>
+<ul>
+  <li>
+    Support for push proxies was added which reduces problems with firewalled
+    servents.
+  </li>
+  <li>
+    Support for pre-0.90 configuration files has been dropped.
+  </li>
+  <li>
+    Improved PARQ and fixed some problems with it.
+  </li>
+  <li>
+    The default directories for downloads are now set to $HOME.
+  </li>
+  <li>
+    A lot of minor bugfixes and code clean-ups so that it compiles on even
+    more platforms and with other (C99) compilers.
+  </li>
+  <li>
+    GTKG can now monitor unstable IP addresses and unstable servents, to avoid
+    keeping connecting to bad nodes.
+  </li>
+  <li>
+    The download pane now shows how many items are actively and passively
+    queued.
+  </li>
+  <li>
+    The search pane allows one to hide hits that are either ignored or which
+    have been already queued up by the core due to a matching SHA1 or filename.
+  </li>
+  <li>
+    The "Purge" button could be hidden due to long filenames (#770625).
+  </li>
+  <li>
+    A duplicate free() problem was fixed in _search_send_packet() (#706014).
+  </li>
+  <li>
+    The "Purge" button no longer cause crashes (#757276).
+  </li>
+  <li>
+    A bug which could cause a crash when resuming a download was fixed
+    (#739262).
+  </li>
+</ul>
+<p>
+  The following changes affect only the GTK+ 2.x front-end:
+</p>
+<ul>
+  <li>
+    XFT support is not turned off by default.
+  </li>
+  <li>
+    The node and the uploads panel have been tuned (a little).
+  </li>
+  <li>
+    No more crashes if the uploads are sorted by status.
+  </li>
+  <li>
+    Non-UTF-8 encoded were passed to GTK+ 2.x causing warnings (#769342)
+  </li>
+</ul>
+<p>
+  The following changes affect the build system:
+</p>
+<ul>
+  <li>
+    Switched to metaconfig, and abandoned autoconf/automake.  There may be
+    some portability issues introduced on non-linux system since there are 
+    lots of new metaconfig units that had to be developed for the 
+    configuration of GTKG.  In the long run, it will catch up.
+  </li>
+  <li>
+    The "intl" directory containing GNU gettext() is no longer supported,
+    because it is currently only configurable via autoconf.  If you don't have
+    proper GNU gettext() support on your system, you might have to disable NLS
+    support to be able to compile.
+  </li>
+</ul>
+
+
+
+<h4><a name="0.92"></a>15. June 2003, Version 0.92 released</a></h4>
+<p>
+  Here are some of the changes since 0.91.1:
+</p>
+<ul>
+  <li>
+    Now supports Ultrapeers, which means GTKG can work as an ultra node or as
+    a leaf node.  You can still run as a normal node, although this is not
+    something wise to do, because that will likely relegate you to a small
+    part of the Gnutella network.
+  </li>
+  <li>
+    New icons for showing node state (leaf or ultra mode).
+  </li>
+  <li>
+    The GTK2 front-end is no longer experimental, albeit it is slower than
+    the GTK1.2 front-end.  This is due to the somewhat inefficient
+    implementation of the underlying GTK library.  Don't use GTK2 unless you
+    have the equivalent of a 1 GHz Intel chip.
+  </li>
+  <li>
+    Added client-side PFSP support (partial file sharing). GTKG can download
+    from servers holding partial files.
+  </li>
+  <li>
+    Added full PARQ support (Passive / Active Remote Queuing), both for
+    upload and downloads.
+  </li>
+  <li>
+    New Gnet statistics: flow-controlled packets per TTL and hops.
+  </li>
+  <li>
+    The "Type" column in the Gnet connection pane was turned into "Flags".
+  </li>
+  <li>
+    Added support for GGEP in pings/pongs/pushes: those packets are now
+    accepted and forwarded to connections advertising GGEP support.
+  </li>
+  <li>
+    New "use surplus bandwidth" setting: all unused bandwidth for Gnet or
+    HTTP can be stolen by the other in case it needs some.
+  </li>
+  <li>
+    Added count for total bytes uploaded and downloaded.
+  </li>
+  <li>
+    Added support for vendor-specific messages.
+  </li>
+  <li>
+    New hops-flow support: remote flow-controlled connections can now warn
+    us that they are flow-controlling us, and so we can drop queries
+    immediately instead of sending them, saving outgoing bandwidth.
+  </li>
+  <li>
+    Will now show the GTKG version in query hits.
+  </li>
+  <li>
+    The queue now shows the count of alive downloads, as well as the queue
+    count.  An "alive" download is an entry for which the remote server
+    replies.
+  </li>
+  <li>
+    Changed the connection algorithm: will now attempt to connect to more
+    nodes than really configured, dropping the surplus connections later,
+    when needed at all.
+  </li>
+  <li>
+    Filters out hostile IP addresses.
+  </li>
+  <li>
+    New "Fileinfo" pane in the download screen.  Not finished, but will show
+    the currently registered downloads and their status.
+  </li>
+  <li>
+    Domain name resolution for Gnutella web cache are now done
+    asynchronously.  The GUI will no longer freeze due to a DNS request.
+  </li>
+  <li>
+    Some performance improvements: removed the most important bottlenecks.
+  </li>
+</ul>
+
+<!-- end news_[32] -->

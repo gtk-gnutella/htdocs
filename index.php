@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /* $Id$ */
 /*
@@ -19,110 +19,61 @@ include("files/common.php");
   <html>
     <head>
       <title>
-        Gtk-Gnutella - The Graphical Unix Gnutella Client 
+        Gtk-Gnutella - The Graphical Unix Gnutella Client
       </title>
       <link rel="stylesheet" type="text/css" href="default.css">
       <link rel="icon" href="images/favicon.png" type="image/png">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     </head>
     <body>
-      <table border="0" cellpadding="0" cellspacing="10" width="100%">
-        <tr>
-          <td valign="middle">
-            <table width="100%" border="0" cellpadding="2" cellspacing="0">
-              <tr bgcolor="black">
-                <td>
-                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
-                    <tr bgcolor="white">
-                      <td class="nav" align="center">
-                        <a href="<?php echo BASEURL ?>?page=index">
-                          <img src="images/gtk-gnutella.png" width="408" height="44" alt="GTK-GNUTELLA" border="0"></a><br>
-                          Current version: <?php echo VERSION ?>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-      <table border="0" cellpadding="0" cellspacing="10" width="100%">
-        <tr>
-          <td width="140" align="center" valign="top">
-            <table width="100%" border="0" cellpadding="2" cellspacing="0">
-              <tr bgcolor="black">
-                <td>
-                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
-                    <tr bgcolor="white">
-                      <td>
-                        <?php iceinclude("sidenav", 0) ?>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table><br>
-            <table width="100%" border="0" cellpadding="2" cellspacing="0">
-              <tr bgcolor="black">
-                <td>
-                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
-                    <tr bgcolor="white">
-                      <td>
-                        Gtk-Gnutella &copy;&nbsp;2000-03 by Yann Grossel, Raphael Manfredi
-                        and Various Contributors.
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table><br>
-              <table width="100%" border="0" cellpadding="2" cellspacing="0">
-                <tr bgcolor="black">
-                  <td>
-                    <table width="100%" border="0" cellpadding="5" cellspacing="0">
-                      <tr bgcolor="white">
-                        <td>
-                          Gtk-Gnutella development hosted&nbsp;by
-                          <a href="http://sourceforge.net/">
-                            <img src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1" alt="SourceForge" border="0" width="88" height="31"></a>
-                          <br><br>
-                          User interface designed with
-                          <a href="http://glade.gnome.org/">
-                            <img src="images/glade-banner.png" alt="Glade" border="0" width="100" height="45"></a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table><br>
-              <table width="100%" border="0" cellpadding="2" cellspacing="0">
-                <tr bgcolor="black">
-                  <td>
-                    <table width="100%" border="0" cellpadding="5" cellspacing="0">
-                      <tr bgcolor="white">
-                        <td>
-                          This Webpage conforms to:
-                          <br><br>
-                          <a href="http://validator.w3.org/check/referer">
-                            <img src="images/valid-html401.png" alt="Valid HTML 4.01!" border="0" width="88" height="31"></a>
-                          <br><br>
-                          <a href="http://jigsaw.w3.org/css-validator/">
-                            <img src="images/valid-css.png" alt="Valid CSS!" border="0" width="88" height="31"></a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
+			<div class="boxed" style="text-align:center">
+				<div>
+					<a href="<?php echo BASEURL ?>?page=index">
+						<img src="images/gtk-gnutella.png" width="408" height="44" alt="GTK-GNUTELLA" border="0"></a>
+				</div>
+				<div>
+					Current version: <?php echo VERSION ?>
+				</div>
+			</div>
 
-          </td>
-          <td rowspan="2" valign="top" width="100%">
-            <!-- end header -->
-            <?php maincontent() ?>
-            <!-- footer -->
-          </td>
-        </tr>
-      </table>
+			<div class="sidebar">
+				<div class="boxed">
+					<?php iceinclude("sidenav", 0) ?>
+				</div>
+				<div class="boxed">
+					Gtk-Gnutella &copy;&nbsp;2000-03 by Yann Grossel, Raphael Manfredi
+					and Various Contributors.
+				</div>
+				<div class="boxed">
+				  <div>
+						Gtk-Gnutella development hosted&nbsp;by
+					</div>
+					<div>
+						<a href="http://sourceforge.net">
+							<img src="http://sourceforge.net/sflogo.php?group_id=4467&type=1"
+								width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
+					</div>
+					<div>
+						User interface designed with
+					</div>
+					<div>
+						<a href="http://glade.gnome.org/">
+							<img src="images/glade-banner.png" alt="Glade" border="0" width="100" height="45"></a>
+					</div>
+				</div>
+				<div class="boxed">
+					This Webpage conforms to:
+					<br><br>
+					<a href="http://validator.w3.org/check/referer">
+						<img src="images/valid-html401.png" alt="Valid HTML 4.01!" border="0" width="88" height="31"></a>
+					<br><br>
+					<a href="http://jigsaw.w3.org/css-validator/">
+						<img src="images/valid-css.png" alt="Valid CSS!" border="0" width="88" height="31"></a>
+				</div>
+			</div>
+
+			<div class="content">
+				<?php maincontent() ?>
+			</div>
     </body>
   </html>

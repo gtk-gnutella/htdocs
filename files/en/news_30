@@ -4,91 +4,25 @@
   You can get this new version from our download section.
 </p>
 <p>
-  <strong>Source Code: gtk-gnutella-0.93.tar.bz2</strong><br>
-  MD5Sum: <tt>78d099392a61064ca30fac84c888550b</tt><br>
-  SHA1: <tt>QJPA5JMD2GIN4ECZAPQCUMCBX7COQLZN</tt>
-</p>
-<p>
-  <strong>Redhat-9 Package: gtk-gnutella-0.93-1.i586.rpm</strong><br>
-  MD5Sum: <tt>4a0806582db9450460385f88dbc99b8d</tt><br>
-  SHA1: <tt>ZHP2THYXSIHBEI4JY7UGYLUKEQ5PW646</tt>
-</p>
-<p>
-<strong>Debian-3.0 (stable) Package: gtk-gnutella_0.93.0-0_i386.deb</strong><br>
-  MD5Sum: <tt>ae30cb81a204af6ae991acdb9bd299b6</tt><br>
-  SHA1: <tt>AY2YEINNFCX4WIQ56I6R6KJBGGF7C565</tt>
-</p>
-<p>
-  <strong>Suse-8.2 Package: gtk-gnutella-0.93-1suse82.i386.rpm</strong><br>
-  MD5Sum: <tt>25cc509d68d7cd8ef84ca7ce572505e9</tt><br>
-  SHA1: <tt>R2FKRZXOITLLKWF7SJ5FC6WS5MU5IW2U</tt>
-</p>
-<p>
-  <strong>Slackware-9.1 Package: gtk-gnutella-0.93-i586-1.tgz</strong><br>
-  MD5Sum: <tt>90d051de62452b2ded991fa330515250</tt><br>
-  SHA1: <tt>QJPA5JMD2GIN4ECZAPQCUMCBX7COQLZN</tt>
-</p>
-<p>
   <strong>These are some of the changes made since 0.92.1 stable:</strong>
 </p>
 <ul>
   <li>
-    GTK-Gnutella now supports Partial File serving, both as a client and as a 
-    server. As soon as a download is started, it can be used as an alternate 
-    source for others even though the download is not completed yet.
-  </li>
-  <li>
-    When a mismatch happens during downloading, the file can now be 
-    automatically removed and restarted again. 
-  </li>
-  <li>
-    Improved GUI to specify better which downloads should be cleared from the 
-    list (completed, failed, unavailable). 
-  </li>
-  <li>
-    Collects alternate download locations acquired from query hits.
-  </li>
-  <li>
-    Support for hostname instead of only an ip. If you have a dynamic ip but 
-    got a static hostname, for example a .dyndns.org address, gtk-gnutella can 
-    try to connect to the ip associated with the hostname.  
-  </li>
-  <li>
-    Sends out alternate locations which should not be tried.
-  </li>
-  <li>
-    Won't send full headers when short on bandwith.
-  </li>
-  <li>
-    Any changes in settings are now automatically saved, there is no need to 
-    quit the client anymore to make sure the settings are saved.
-  </li>
-  <li>
-    Running gtk-gnutella in Auto peermode should no longer cause a crash.
+		Support for sharing downloading files (Partial File Sharing).
   </li>
   <li>
     New addresses in hostiles.txt to protect against malicious hosts.
   </li>
   <li>
-    gwcache.boot was cleaned up. Dead links were removed.
+    Collects alternate download locations acquired from query hits.
   </li>
   <li>
-    Remote control should actually work without crashing gtk-gnutella.
-  </li>
-  <li>
-    The build problems which occured in 0.92.1 due to the switch to metaconfig 
-    should be (mostly) gone. 
-  </li>
-  <li>
-    Code cleanup to build on more platforms.
-  </li>
-  <li>
-    GTK2 interface currently does not have a maintainer, not all options which 
-    are available in the GTK1 interface might have made it in the GTK2 
-    interface.
+    Automatically save settings from time to time.
   </li>
 </ul>
 <p>
+	For more changes go <a href="<?php echo BASEURL ?>?page=release_history#0.93">here</a>.
+</p><p>
   <em>gtk-gnutella team</em>
 </p>
 <!-- end news_[30] -->
