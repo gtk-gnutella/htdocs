@@ -71,12 +71,12 @@
     /support-glade2.c/1.5/Sat Jun 14 17:54:28 2003// 
   </blockquote>
   <p>
-    If you compiled it yourself, say which <code>./configure </code> options 
-    you used and any CFLAGS you passed to it.  For example:
+	If you compiled it yourself, say which <code>./Configure </code> options 
+	you used.  For example:
   </p>
   <blockquote>
     <code>
-      CFLAGS="-g3 -O0" ./configure --prefix=/usr --enable-gtk2 --disable-tos
+			./Configure -Dprefix=/usr -Dccflags="-g -Wall" -Doptimize="-O2" -Dgtkversion=2 -ders
     </code>
   </blockquote>
   <p>
@@ -197,7 +197,7 @@
   </p>
   <blockquote>
     <code>
-      CFLAGS="-g3 -O0" ./configure
+			./Configure -Dccflags="-g3 -Wall" -Doptimize="-O0"
     </code>
   </blockquote>
   <p>
