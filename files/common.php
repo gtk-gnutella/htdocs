@@ -26,6 +26,7 @@ $pages = array(
   "donate",
   "shots", 
   "shots090", 
+  "shots092",
   "devel", 
   "mailing", 
   "links", 

@@ -27,9 +27,9 @@
   <a href="images/shots/090/uploads.png">
     <img src="images/shots/090/small_uploads.jpg" width="200" height="150" alt="Uploads"></a>
   <a href="images/shots/090/upload_stats.png">
-    <img src="images/shots/090/small_upload_stats.jpg" width="200" height="150" alt="Downloads and queue"></a>
+    <img src="images/shots/090/small_upload_stats.jpg" width="200" height="150" alt="Uploads statistics"></a>
   <a href="images/shots/090/downloads.png">
-    <img src="images/shots/090/small_downloads.jpg" width="200" height="150" alt="Searches"></a>
+    <img src="images/shots/090/small_downloads.jpg" width="200" height="150" alt="Downloads and queue"></a>
 </p>
 <hr>
 <h4>Search and filter</h4>
@@ -49,14 +49,14 @@
 <hr>
 <p>
   <a href="images/shots/090/config_net.png">
-    <img src="images/shots/090/small_config_net.jpg" width="200" height="150" alt="Searches"></a>
+    <img src="images/shots/090/small_config_net.jpg" width="200" height="150" alt="Network settings"></a>
   <a href="images/shots/090/config_bw.png">
-    <img src="images/shots/090/small_config_bw.jpg" width="200" height="150" alt="Searches"></a>
+    <img src="images/shots/090/small_config_bw.jpg" width="200" height="150" alt="Bandwidth control"></a>
   <a href="images/shots/090/config_gnet.png">
-    <img src="images/shots/090/small_config_gnet.jpg" width="200" height="150" alt="Searches"></a>
+    <img src="images/shots/090/small_config_gnet.jpg" width="200" height="150" alt="GnutellaNet settings"></a>
   <a href="images/shots/090/config_download.png">
-    <img src="images/shots/090/small_config_download.jpg" width="200" height="150" alt="Searches"></a>
+    <img src="images/shots/090/small_config_download.jpg" width="200" height="150" alt="Download settings"></a>
   <a href="images/shots/090/config_upload.png">
-    <img src="images/shots/090/small_config_upload.jpg" width="200" height="150" alt="Searches"></a>
+    <img src="images/shots/090/small_config_upload.jpg" width="200" height="150" alt="Upload settings"></a>
 </p>
-<!-- end shots90 -->
+<!-- end shots090 -->

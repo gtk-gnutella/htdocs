@@ -1,7 +1,7 @@
 <!-- $Id$ -->
 <a href="<?php echo BASEURL ?>?page=news">
   News</a><br>
-<a href="<?php echo BASEURL ?>?page=shots090">
+<a href="<?php echo BASEURL ?>?page=shots092">
   Screenshots</a><br>
 <a href="<?php echo BASEURL ?>?page=features">
   Features</a><br>
