@@ -44,6 +44,15 @@
   More packages coming soon.
 </p>
 <p>
+  <strong>GTK2 UI warning:</strong> The gtk2 version still has no maintainer, 
+  although patches are being contributed.  It is known to have bugs, including 
+  a serious memory leak.  If you want to see the gtk2 version improve, please 
+  read the <a href="<?php echo BASEURL ?>?page=bugreport_howto">
+    Bug Report HOWTO</a> and submit bug reports to the 
+  <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+  Bug Tracker</a>.  Most people should stick with the gtk1 version.
+</p>
+<p>
   <strong>These are some of the changes made since 0.93 stable:</strong>
 </p>
 <ul>
