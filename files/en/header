@@ -26,7 +26,7 @@ end bad picture code -->
 <a href="<?php echo BASEURL ?>?page=index"><img src="images/gtk-gnutella.gif" width=408 height=44 alt="" border=0></a><br><br>
 
 &nbsp;&nbsp;<a
-  class=navlink href="http://sourceforge.net/project/showfiles.php?group_id=4467">Download 0.17</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+  class=navlink href="http://sourceforge.net/project/showfiles.php?group_id=4467">Download <?php echo VERSION ?></a>&nbsp;&nbsp;&nbsp;&nbsp;<a
   class=navlink href="<?php echo BASEURL ?>?page=shots">Screenshots</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
   class=navlink href="<?php echo BASEURL ?>?page=devel">Development</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
   class=navlink href="<?php echo BASEURL ?>?page=mailing">Getting&nbsp;Help</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
