@@ -16,32 +16,29 @@
   urn:sha1:<tt>FQ2XETJTTMO6HNQPGNOBGOVVJTHPJUVI</tt>
 </p>
 <p>
-  <strong>Redhat-9 Packages:</strong>
+  <strong>Redhat-9 RPM: gtk-gnutella-0.93.1-1.gtk1.i586.rpm</strong><br>
+  MD5Sum: <tt>2701fc8709490142229ea4e13a2d2d90</tt><br>
+  urn:sha1:<tt>OOWWW4W5AKE4XVRW76RKG5THP4OPMUBN</tt>
 </p>
-<ul>
-  <li>
-    <strong>gtk-gnutella-0.93.1-1.gtk1.i586.rpm</strong><br>
-    MD5Sum: <tt>2701fc8709490142229ea4e13a2d2d90</tt><br>
-    urn:sha1:<tt>OOWWW4W5AKE4XVRW76RKG5THP4OPMUBN</tt>
-  </li>
-  <li>
-    <strong>gtk-gnutella-0.93.1-1.gtk1.src.rpm</strong><br>
-    MD5Sum: <tt>2c07b845f41bc9c8ab1d0aafa413aad0</tt><br>
-    urn:sha1:<tt>FUUG6D7LALRZJ3WV7OKWY3FX6BRMDQD2</tt>
-  </li>
-  <li>
-    <strong>gtk-gnutella-0.93.1-1.gtk2.i586.rpm</strong><br>
-    MD5Sum: <tt>eb30bf2a0fe15f5a1373830919baf0c1</tt><br>
-    urn:sha1:<tt>QNN74JIYJPTPXRLQ7LUQ77ARTIRFBBIG</tt>
-  </li>
-  <li>
-    <strong>gtk-gnutella-0.93.1-1.gtk2.src.rpm</strong><br>
-    MD5Sum: <tt>ab4a310a20602911d84c673e2d6b0e04</tt><br>
-    urn:sha1:<tt>W6B2ZW5KJTCAE4TNJ5EYINSL5U7M63R6</tt>
-  </li>
-</ul>
 <p>
-  More packages coming soon.
+  <strong>Redhat-9 SRPM: gtk-gnutella-0.93.1-1.gtk1.src.rpm</strong><br>
+  MD5Sum: <tt>2c07b845f41bc9c8ab1d0aafa413aad0</tt><br>
+  urn:sha1:<tt>FUUG6D7LALRZJ3WV7OKWY3FX6BRMDQD2</tt>
+</p>
+<p>
+  <strong>Mandrake-9.2 RPM: gtk-gnutella-0.93.1-0.gtk1.1mdk.i586.rpm</strong><br>
+  MD5Sum: <tt>652a4fa75417d150e8710a5ed56c9e9c</tt><br>
+  urn:sha1:<tt>55O6LQ6ULFDR76ZX2J5KSRSRUC32NLT3</tt>
+</p>
+<p>
+  <strong>Mandrake-9.2 SRPM: gtk-gnutella-0.93.1-0.gtk1.1mdk.src.rpm</strong><br>
+  MD5Sum: <tt>1872a475124c2fe4f035e4bae2639c7e</tt><br>
+  urn:sha1:<tt>Z4IE43GH5QAB6EIIH7R3JEWACCBAAASS</tt>
+</p>
+<p>
+  <strong>Slackware-9.1 Package: gtk-gnutella-gtk1-0.93.1-i586-1.tgz</strong><br>
+  MD5Sum: <tt>ef31284ecf1dd7eb54b94b09444a4a31</tt><br>
+  urn:sha1:<tt>XHE4Y337KHN3LF4ZIXPYLESLQXUANBOO</tt>
 </p>
 <p>
   <strong>GTK2 UI warning:</strong> The gtk2 version still has no maintainer, 
