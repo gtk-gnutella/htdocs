@@ -18,7 +18,7 @@
                     <tr bgcolor=white>
                       <td class=nav align=center>
                         <a href="<?php echo BASEURL ?>?page=index">
-                          <img src="images/gtk-gnutella.gif" width=408 height=44 alt="" border=0></a><br>
+                          <img src="images/gtk-gnutella.gif" width="408" height="44" alt="" border="0"></a><br>
                           Current version: <?php echo VERSION ?>
                       </td>
                     </tr>
@@ -67,7 +67,7 @@
                         <td>
                           Gtk-Gnutella development hosted&nbsp;by
                           <a href="http://sourceforge.net/">
-                            <img src="http://sourceforge.net/sflogo.php?group_id=4467&type=1" alt="SourceForge" border=0></a>
+                            <img src="http://sourceforge.net/sflogo.php?group_id=4467&type=1" alt="SourceForge" border="0" width="88" height="31"></a>
                           <br><br>
                               User interface designed with
                               <a href="http://glade.gnome.org/">
