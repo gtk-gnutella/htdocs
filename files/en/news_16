@@ -1,0 +1,14 @@
+<!-- $Id$ -->
+<h4>01. July 2002, Version 0.90 beta2 released</h4>
+<p>
+A bug-fixing and minor enhancement release, correcting small problems.
+</p>
+<ul compact>
+<li>Greatly enhanced auto-selection in searches to use far less CPU.
+<li>Will now warn user when encountering a newer version of gtk-gnutella.
+<li>URN searches now supported, by typing "urn:sha1:" in search text, followed
+by the base32 value.
+</ul>
+<p>
+<i>Rapha&euml;l Manfredi &amp; Richard Eckart</i>
+</p>
