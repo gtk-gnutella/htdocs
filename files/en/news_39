@@ -2,11 +2,11 @@
 <h4>9 June 2004, Version 0.93.4 Released</h4>
 <p>
   gtk-gnutella-0.93.4 is released. This is a maintenance release:
+</p>
 <ul>
   <li> Improved stability. Memory corruption issues should be resolved.</li>
    <li> Better gwebcache support, will parse up to 150 host in a reply.</li>
 </ul>
-</p>
 
 <p>
   <em>gtk-gnutella team</em>

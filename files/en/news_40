@@ -2,6 +2,7 @@
 <h4>10 July 2004, Version 0.94 Released</h4>
 <p>
   While 0.93 was improved for stability with the 0.93.4 release, the just released 0.94 contains some nice new features, while it should be at least as stable as 0.93.4:
+</p>
   <ul>
   	<li> GUI updates:
 		<ul>
@@ -26,6 +27,7 @@
 	<li>French translation updated.</li>
 	<li>Hungarian translation updated.</li>
   </ul>
+<p>
   md5sum: 8319ff7b8a5a5a7be995894c2ad3280f gtk-gnutella-0.94.tar.bz2
 </p>
 
