@@ -97,9 +97,9 @@
 <p>
   An Ultrapeer shields modem users or users that otherwise can't dedicate their 
   bandwidth to gnet traffic from the network traffic by behaving as their "router".  
-  For the modem users connected (called leaves/leafs or ultraleaves/ultraleafs) 
+  For the modem users connected (called leaf nodes or ultraleaves/ultraleafs) 
   it looks like they are connected to some kind of server. <br>
-  gtk-gnutella support ultrapeers and leaves since version 0.92.  
+  gtk-gnutella support ultrapeers and leaf nodes since version 0.92.  
 </p>
 
 <h2>Gnutella connections</h2>
@@ -109,9 +109,9 @@
   Short answer: in legacy mode, 4/5 (minumum/maximum), in 
   <a href="#general-leaf">leaf</a> mode 3 ultrapeers, in 
   <a href="#general-ultrapeer">ultrapeer</a> mode 8/10 (minimum/maximum) 
-  ultrapeers and at least 20 leaves.  You can calculate a bandwidth 
+  ultrapeers and at least 20 leaf nodes.  You can calculate a bandwidth 
   consumption of 1kb/s per connection in legacy mode, however, this will be 
-  much less for leaves and somewhat higher for ultrapeer-ultrapeer 
+  much less for leaf nodes and somewhat higher for ultrapeer-ultrapeer 
   connections.  If you have set "Prefer compressed connections," bandwidth 
   used will be much lower.  You should never use up all your bandwidth with 
   gnet connections.  Especially on an asymmetric cable/DSL connection you can 
@@ -127,11 +127,12 @@
   outdegree," 8/10 connections is better, if you have the bandwidth.  This 
   will rise even more when gtk-gnutella implements high outdegree.  The number 
   of leaf connections to use depends on your bandwidth and the speed of your 
-  cpu.  As an absolute minimum an ultrapeer should connect to 20 leaves and 
-  it's much better to connect to 100 or more.  Watch the bandwidth odometers on 
-  the lower left of the gui and use the top command to keep track of cpu 
-  usage.  Increase the number of leaf connections until you reach the maximum 
-  amount of bandwidth and system resources you wish to devote to this purpose.
+  cpu.  As an absolute minimum an ultrapeer should connect to 20 leaf nodes 
+  and it's much better to connect to 100 or more.  Watch the bandwidth 
+  odometers on the lower left of the gui and use the top command to keep track 
+  of cpu usage.  Increase the number of leaf connections until you reach the 
+  maximum amount of bandwidth and system resources you wish to devote to this 
+  purpose.
 </p>
 <p>
   The bandwidth control settings will help you further fine-tune 
