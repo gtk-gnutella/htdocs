@@ -260,12 +260,9 @@ See also,
 
 <h3><a name="gnet-udp">Does gtk-gnutella use UDP?</a></h3>
 <p>
-  No, gtk-gnutella does not use
-  <a href="http://www.faqs.org/rfcs/rfc768.html">UDP</a>.  The Gnutella
-  Protocol uses only
-  <a href="http://www.faqs.org/rfcs/rfc793.html">TCP</a>.  However, proposals
-  are occasionally made to make use of UDP on the gnutella network so this may
-  change at some point in the future.
+  Yes, starting with version 0.95 gtk-gnutella can also use 
+  <a href="http://www.faqs.org/rfcs/rfc768.html">UDP</a> in addition
+  to <a href="http://www.faqs.org/rfcs/rfc793.html">TCP</a>.  
 </p>
 
 <h3><a name="gnet2">What does "[FC]" mean?</a></h3>
@@ -296,18 +293,19 @@ See also,
   push-proxies are implemented in 0.92.1c and later.
 </p>
 <pre>
-     0123456789 (offset)
-     UIrwQTRPFh
-     |||||||||+ hops flow triggered (<strong>h</strong>), or total query flow control (<strong>f</strong>)
-     ||||||||+- flow control (<strong>F</strong>), or pending data in queue (<strong>d</strong>)
-     |||||||+-- we are push-proxy for node (<strong>P</strong>) or node is our push-proxy (<strong>p</strong>)
-     ||||||+--- indicates whether <strong>R</strong>X is compressed
-     |||||+---- indicates whether <strong>T</strong>X is compressed
-     ||||+----- we sent/received a <strong>Q</strong>RT, or are sending/receiving one (<strong>q</strong>)
-     |||+------ indicates whether node is <strong>w</strong>ritable
-     ||+------- indicates whether node is <strong>r</strong>eadable
-     |+-------- connection type: (<strong>I</strong>ncoming, <strong>O</strong>utgoing, <strong>P</strong>onging)
-     +--------- peer mode: <strong>U</strong>ltra, <strong>L</strong>eaf, or Legacy (a.k.a. <strong>N</strong>ormal)
+  012345678AB (offset)
+  NIrwqxZPFhT
+  ||||||||||+ indicates a <strong>T</strong>LS-tunneled connection
+  |||||||||+- hops flow triggered (<strong>h</strong>), or total query flow control (<strong>f</strong>)
+  ||||||||+-- flow control (<strong>F</strong>), or pending data in queue (<strong>d</strong>)
+  |||||||+--- we are push-proxy for node (<strong>P</strong>) or node is our push-proxy (<strong>p</strong>)
+  ||||||+---- indicates whether <strong>R</strong>x, <strong>T</strong>x or both (<strong>Z</strong>) are compressed
+  |||||+----- we sent our last-hop QRT to remote UP (<strong>X</strong>), or are sending one  (<strong>x</strong>)
+  ||||+------ we sent/received a <strong>Q</strong>RT, or are sending/receiving one (<strong>q</strong>)
+  |||+------- indicates whether node is <strong>w</strong>ritable
+  ||+-------- indicates whether node is <strong>r</strong>eadable
+  |+--------- connection type: (<strong>I</strong>ncoming, <strong>O</strong>utgoing, <strong>P</strong>onging)
+  +---------- peer mode: <strong>U</strong>ltra, <strong>L</strong>eaf, or Legacy (a.k.a. <strong>N</strong>ormal)
 </pre>
 
 <h3><a name="gnet5">What does "Harmful version banned, upgrade required" mean?</a></h3>
@@ -528,7 +526,7 @@ See also,
 <h3><a name="down9">In the downloads pane, what does it mean if the color of the text
 is grey instead of black?</a></h3>
 <p>
-	It means that the file is recieved over a <a href="#down_push">push route</a>.
+	It means that the file is received over a <a href="#down_push">push route</a>.
 </p>
 
 <h2>Uploads</h2>
