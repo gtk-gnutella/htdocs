@@ -180,7 +180,7 @@
 <p>
   Versions of gtk-gnutella more than one year old are banned, since they 
   lack features that are important to the rapidly evolving gnet's health and 
-  scalability.  In addition, unstable (cvs) versions are banned after 90 days.  
+  scalability.  In addition, unstable versions are banned after 90 days.  
 </p>
 
 <h3><a name="gnet7">Why doesn't my HTTP proxy work?</a></h3>
