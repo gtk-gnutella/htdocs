@@ -8,15 +8,16 @@
  * general configuration variables are in here
  *
  */
-include("files/VERSION");
 
-define(BASEDIR,	"/var/www/gtk-gnutella/files/");
+define(BASEDIR,	"/home/groups/g/gt/gtk-gnutella/htdocs/files/");
 define(NEWSMIN, 6);
 define(NEWSMAX, 19);
 
 define(BASEURL, "$PHP_SELF");
 define(GENDIR,  "general/");
 define(LANG,    getlang());
+
+include(BASEDIR . "VERSION");
 
 $pages = array(
   "shots", 
