@@ -17,3 +17,5 @@
   Download</a><br>
 <a href="<?php echo BASEURL ?>?page=links">
   Links</a><br>
+<a href="<?php echo BASEURL ?>?page=donate">
+  Donate</a><br>

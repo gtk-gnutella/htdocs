@@ -23,6 +23,7 @@ include(BASEDIR . "VERSION");
 
 $pages = array(
   "gwebcache",
+  "donate",
   "shots", 
   "shots090", 
   "devel", 
