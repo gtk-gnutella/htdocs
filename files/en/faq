@@ -62,11 +62,7 @@
   it will not show any <a href="#down3">"push"</a> results since you wouldn't be
   able to download those anyway.<br>
   Even people can not connect directly to you, they can still download files from
-  your node using a <a href="#down3">push request</a>.
-</p>
-
-<h3><a name="gnet2">Which port do I need to forward on my firewall?</a></h3>
-<p>
+  your node using a <a href="#down3">push request</a>.<br>
   You can configure the port gtk-gnutella listens on. The setting "listen port" is 
   located on the "Network settings" tab on the config page.
 </p>
@@ -77,8 +73,8 @@
 <h3><a name="search0">How can I get more results?</a></h3>
 <p>
   The number of results you get depends heavily on wether people are able to
-  connect to you (see <a href="#gnet1">here</a> and <a href="#gnet2">here</a>)
-  and on the number connections to other hosts (see <a href="#gnet0">here</a>).
+  connect to you (see <a href="#gnet1">port forwarding</a>)
+  and on the <a href="#gnet0">number of connections</a> to other hosts.
 </p>
 
 
@@ -146,5 +142,5 @@
   tell a remote host to connect to your host so that you can download
   a file from the remote host you send a push request to it.<br>
   You can't make use the the push requests when you are behind a firewall
-  (see <a href="#gnet1">here</a> and <a href="#gnet2">here</a>).
+  (see <a href="#gnet1">port forwarding</a>).
 </p>
