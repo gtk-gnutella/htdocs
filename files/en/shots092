@@ -3,9 +3,9 @@
 
 <p>
   Here you can browse the user interface of gtk-gnutella 0.92.1c.  Click on 
-  the images to get a larger view.<br>
-  These screenshots feature the Metal gtk-engine with some tweaking of the 
-  font and colors.
+  the images to get a larger view.  There are screenshots of both the 
+  <a href="#shots092-gtk1">GTK1</a> and the 
+  <a href="#shots092-gtk2">GTK2</a> GUI's.
 </p>
 
 <p>
@@ -14,6 +14,13 @@
   (released April 5, 2002) and 
   <a class=navlink href="<?php echo BASEURL ?>?page=shots090">0.90</a> 
   (released July 7, 2002) versions.  
+</p>
+
+<h2>GTK1 Screenshots</h2><a name="shots092-gtk1"></a>
+
+<p>  
+  These screenshots feature the Metal gtk-engine with some tweaking of the 
+  font and colors.
 </p>
 
 <hr>
@@ -92,6 +99,92 @@
   </a>
   <a href="images/shots/092/Debugging-GTK1.png">
     <img src="images/shots/092/small_Debugging-GTK1.png" width="200" height="157" alt="Debugging">
+  </a>
+</p>
+
+<h2>GTK2 screenshots</h2><a name="shots092-gtk2"></a>
+
+<hr>
+<h4>Gnutella network status</h4>
+<hr>
+
+<p>
+  <a href="images/shots/092/gnutellaNet-GTK2.png">
+    <img src="images/shots/092/small_gnutellaNet-GTK2.png" width="200" height="155" alt="Gnutella network status">
+  </a>
+  <a href="images/shots/092/gnutellaNet-Stats-GTK2.png">
+    <img src="images/shots/092/small_gnutellaNet-Stats-GTK2.png" width="200" height="155" alt="Gnutella network statistics">
+  </a>
+</p>
+  
+<hr>
+<h4>Uploads and downloads</h4>
+<hr>
+
+<p>
+  <a href="images/shots/092/Uploads-GTK2.png">
+  <img src="images/shots/092/small_Uploads-GTK2.png" width="200" height="155" alt="Uploads">
+  </a>
+  <a href="images/shots/092/Uploads-Stats-GTK2.png">
+    <img src="images/shots/092/small_Uploads-Stats-GTK2.png" width="200" height="155" alt="Upload statistics">
+  </a>
+  <a href="images/shots/092/Downloads-GTK2.png">
+    <img src="images/shots/092/small_Downloads-GTK2.png" width="200" height="155" alt="Downloads">
+  </a>
+  <a href="images/shots/092/Fileinfo-GTK2.png">
+    <img src="images/shots/092/small_Fileinfo-GTK2.png" width="200" height="155" alt="Fileinfo">
+  </a>
+</p>
+
+<hr>
+<h4>Search</h4>
+<hr>
+
+<p>
+  <a href="images/shots/092/Search-GTK2.png">
+    <img src="images/shots/092/small_Search-GTK2.png" width="200" height="155" alt="Searches">
+  </a>
+  <a href="images/shots/092/Search-Monitor-GTK2.png">
+    <img src="images/shots/092/small_Search-Monitor-GTK2.png" width="200" height="155" alt="Search monitor">
+  </a>
+  <a href="images/shots/092/Search-Stats-GTK2.png">
+    <img src="images/shots/092/small_Search-Stats-GTK2.png" width="200" height="155" alt="Search stats">
+  </a>
+  <!-- FIXME - Forgot to do a filter shot, dammit.
+  <a href="images/shots/092/Filters-GTK2.png">
+    <img src="images/shots/092/small_Filters-GTK2.png" width="200" height="155" alt="Filter dialog">
+  </a>
+  -->
+</p>
+
+<hr>
+<h4>Settings</h4>
+<hr>
+
+<p>
+  <a href="images/shots/092/Config-GTK2.png">
+    <img src="images/shots/092/small_Config-GTK2.png" width="200" height="155" alt="Configuration">
+  </a>
+  <a href="images/shots/092/Config-Network-GTK2.png">
+    <img src="images/shots/092/small_Config-Network-GTK2.png" width="200" height="155" alt="Network settings">
+  </a>
+  <a href="images/shots/092/Config-GnutellaNet-GTK2.png">
+    <img src="images/shots/092/small_Config-GnutellaNet-GTK2.png" width="200" height="155" alt="GnutellaNet settings">
+  </a>
+  <a href="images/shots/092/Config-Bandwidth-GTK2.png">
+    <img src="images/shots/092/small_Config-Bandwidth-GTK2.png" width="200" height="155" alt="Bandwidth control">
+  </a>
+  <a href="images/shots/092/Config-Downloads-GTK2.png">
+    <img src="images/shots/092/small_Config-Downloads-GTK2.png" width="200" height="155" alt="Download settings">
+  </a>
+  <a href="images/shots/092/Config-Uploads-GTK2.png">
+    <img src="images/shots/092/small_Config-Uploads-GTK2.png" width="200" height="155" alt="Upload settings">
+  </a>
+  <a href="images/shots/092/Config-User-Interface-GTK2.png">
+    <img src="images/shots/092/small_Config-User-Interface-GTK2.png" width="200" height="155" alt="User interface">
+  </a>
+  <a href="images/shots/092/Config-Debugging-GTK2.png">
+    <img src="images/shots/092/small_Config-Debugging-GTK2.png" width="200" height="155" alt="Debugging">
   </a>
 </p>
 <!-- end shots092 -->
