@@ -1,0 +1,13 @@
+<!-- $Id$ -->
+<h4>12. January 2002, Lots of Major Changes in CVS</h4>
+<p>
+Much of the underlying code has been changed and brought up to date
+with newer versions of the Gnutella protocol (e.g. 0.6 handshaking support),
+although the GUI still looks pretty the same as before. Everyone should try
+it out (see our <a href="?page=devel">Development</a> page about CVS) in
+order to catch those hidden bugs.<br>
+It's planned to release a 1.0 version soon and then to begin working on
+a completely new core and GUI, with a total separation of the two parts
+which will allow for different GUIs (think kde, ncurses, etc.) to work
+with the gnutella core of Gtk-Gnutella.
+</p>
