@@ -1,24 +1,25 @@
-<!-- $Id -->
+<!-- $Id$ -->
 <h1 align="center">Development</h1>
 
 <h2>Call for help</h2>
 <p>
-The current version of gtk-gnutella is running well, but it is in no way up to 
-date with the latest gnutella standards. The "major players" of gnutella
-(Limewire, BearShare, Shareaza, Gnucleus, Xolox) implement features like
-Queueing, Ultrapeers, Partial File Sharing, Tree Hashing and soon a UDP-query
-method called GUESS. Other possibly interesting features are XML-Query schemes
-(e.g. searching by title, size, genre of files), magnet:-Links, Download 
-Proxies and Push Proxies. GTKG lacks all of them right now.
+  The current version of gtk-gnutella is running well, but it is in no way 
+  up to date with the latest gnutella standards. The "major players" of 
+  gnutella (Limewire, BearShare, Shareaza, Gnucleus, Xolox) implement 
+  features like Partial File Sharing (gtk-gnutella has client side, but not 
+  server side), Tree Hashing and soon a UDP-query method called GUESS. 
+  Other possibly interesting features are XML-Query schemes (e.g. searching 
+  by title, size, genre of files), magnet:-Links, Download Proxies and Push 
+  Proxies. GTKG lacks all of them right now.
 </p>
 <p>
-Raphael Manfredi and Richard Eckart, the current lead developers, are doing a
-great job, however Richard is busy with university and Raphael has job and 
-family, so their time for coding is limited. Since GTKG is open source, it
-depends on people improving it.
+  Raphael Manfredi and Richard Eckart, the current lead developers, are 
+  doing a great job, however Richard is busy with university and Raphael 
+  has job and family, so their time for coding is limited. Since GTKG is 
+  open source, it depends on people improving it.
 </p>
 <p>
-Now to the important questions:<br>
+  Now to the important questions:<br>
 <ul>
   <li>
     Do you know C well enough to start helping to code new functionalities
@@ -35,22 +36,24 @@ Now to the important questions:<br>
 </ul>
 </p>
 <p>
-If yes, subscribe yourself to the developers 
-<a href="http://gtk-gnutella.sourceforge.net/index.php?page=mailing">mailing list</a> 
-and send a message to it. Don't start to code right now, let's see if there are other 
-people that want to help implementing the same thing and make a team with 
-them. Please also read the <a href="index.php?page=developers_howto">"Developers Howto"</a>.
+  If yes, subscribe yourself to the developers 
+  <a href="http://gtk-gnutella.sourceforge.net/index.php?page=mailing">
+  mailing list</a> and send a message to it. Don't start to code right now, 
+  let's see if there are other people that want to help implementing the 
+  same thing and make a team with them. Please also read the 
+  <a href="index.php?page=developers_howto">"Developers Howto"</a>.
 </p>
 
 <hr>
 
-<p>
-To get the latest development version, you can always use the CVS repository of Gtk-Gnutella.
-<B>Warning</B>: As a development version, the current version may be unstable or even not compile right
-on your machine. If you're just interested in getting an overview of the
-different files you can browse the repository <a
-href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/">on
-the web</a>.
+<p><a name="devel-cvs"></a>
+  To get the latest development version, you can always use the CVS 
+  repository of Gtk-Gnutella.  <B>Warning</B>: As a development version, 
+  the current version may be unstable or even not compile right on your 
+  machine. If you're just interested in getting an overview of the 
+  different files you can browse the repository 
+  <a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/">
+  on the web</a>.
 </p>
 
 <p>To get the files from CVS just type in the following commands:<br><br>
@@ -61,26 +64,28 @@ cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co gtk-gnutella-cu
 </tt>
 
 <br><br>
-When prompted for a password for anonymous, simply press the Enter key. 
+  When prompted for a password for anonymous, simply press the Enter key. 
 </p>
 
 <p>
-If you want to contribute to the development of Gtk-Gnutella please visit
-our <a href="http://sourceforge.net/projects/gtk-gnutella/">SourceForge
-Project Page</a> where you can subscribe to the gtk-gnutella-devel mailing
-list and post your patches, bug reports and feature requests to <a
-href="http://sourceforge.net/tracker/?group_id=4467">our bug tracker</a>,
-thank you.
+  If you want to contribute to the development of Gtk-Gnutella please visit
+  our <a href="http://sourceforge.net/projects/gtk-gnutella/">SourceForge
+  Project Page</a> where you can subscribe to the gtk-gnutella-devel mailing
+  list and post your patches, bug reports and feature requests to 
+  <a href="http://sourceforge.net/tracker/?group_id=4467">our bug tracker</a>,
+  thank you.
 </p>
 
 <hr>
 
 <p>
-You can get cvs snapshots from these places:
+  You can get CVS snapshots from these places:
 <ul>
- <li><a 
-href="http://gtk-gnutella.asselman.com/">MrJoe</a> (Sponsored by <a 
-href="http://www.asselman.com/">Jeroen Asselman</a>)
- <li><a href="http://gtkg.guruz.de/">guruz</a> (Sponsored by <a href="http://www.bawue.de">bawue.net</a>)
+  <li><a href="http://gtk-gnutella.asselman.com/">MrJoe</a> (Sponsored by 
+    <a href="http://www.asselman.com/">Jeroen Asselman</a>)
+  </li>
+  <li><a href="http://gtkg.guruz.de/">guruz</a> (Sponsored by 
+    <a href="http://www.bawue.de">bawue.net</a>)
+  </li>
 </ul>
 </p>
