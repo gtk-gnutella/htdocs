@@ -9,7 +9,8 @@
  *
  */
 
-define(BASEDIR,	"/home/groups/g/gt/gtk-gnutella/htdocs/files/");
+#define(BASEDIR,	"/home/groups/g/gt/gtk-gnutella/htdocs/files/");
+define(BASEDIR,	"/var/www/gtk-gnutella/files/");
 define(NEWSMIN, 6);
 define(NEWSMAX, 19);
 
@@ -103,8 +104,12 @@ function iceinclude($file, $box) {
  */
 function maincontent() {
   global $page, $pages; /* so the included files know about it */
-  $incfile = BASEDIR . LANG . "/$page";
-  if (in_array($page, $pages) && file_exists($incfile)) {
+  if (
+    in_array($page, $pages) && (
+      file_exists(BASEDIR . LANG . "/$page") ||
+      file_exists(BASEDIR . "en/$page")
+    )
+  ) {
     icecontent("$page");
   } else {
     iceinclude("news", 0);
