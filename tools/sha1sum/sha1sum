@@ -1,0 +1,121 @@
+# feed this into perl
+	eval 'exec perl -S $0 ${1+"$@"}'
+		if $running_under_some_shell;
+
+#
+# Copyright (c) 2002, Raphael Manfredi <Raphael_Manfredi@pobox.com>
+#
+# You may redistribute under the same terms as Perl itself.
+#
+# Mimics "md5sum", only for sha1.
+#
+# Options:
+#   -b: assumes binary (no effect on Unix)
+#   -c: check files, input being the command's regular output
+#   -v: print filenames when checking
+#
+
+use strict;
+
+(my $me = $0) =~ s|.*/(.*)|$1|;
+
+use Getopt::Std;
+use Digest::SHA1;
+use Convert::Base32;
+
+use vars qw/$opt_b $opt_c $opt_v/;
+
+&usage unless getopts("bc:v");
+
+if ($opt_c) {
+	local *MANIFEST;
+	open(MANIFEST, $opt_c) || die "$me: can't open $opt_c: $!\n";
+	my $failed = 0;
+	while (<MANIFEST>) {
+		my ($b32digest, $file) = split(/\s+/, $_, 2);
+		chomp $file;
+		$file =~ s/^\*//;
+		my $digest = digest_file($file);
+		if (fmt($digest) eq $b32digest) {
+			print "OK     $file\n" if $opt_v;
+		} else {
+			print "FAILED $file\n";
+			$failed++;
+		}
+	}
+	close MANIFEST;
+	exit $failed ? 1 : 0;
+}
+
+if (@ARGV == 0) {
+	my $digest = digest_fd(\*STDIN);
+	print fmt($digest), "\n";
+} else {
+	foreach my $file (@ARGV) {
+		my $digest = digest_file($file);
+		next unless defined $digest;
+		print fmt($digest);
+		print "  ";
+		print "*" if $opt_b;
+		print "$file\n";
+	}
+}
+
+#
+# fmt
+#
+# Formats digest to base32.
+#
+sub fmt {
+	my ($digest) = @_;
+	return uc(encode_base32($digest));
+}
+
+#
+# digest_file
+#
+# Compute file digest of $file.
+# Returns binary digest, or undef on error.
+#
+sub digest_file {
+	my ($file) = @_;
+	local *FILE;
+	unless (open(FILE, $file)) {
+		warn "$me: can't open $file: $!\n";
+		return undef;
+	}
+	my $digest = digest_fd(\*FILE);
+	close FILE;
+	return $digest;
+}
+
+#
+# digest_fd
+#
+# Computes digest of already opened file.
+#
+sub digest_fd {
+	my ($fd) = @_;
+	my $ctx = Digest::SHA1->new;
+	binmode $fd if $opt_b;
+	$ctx->addfile($fd);
+	return $ctx->digest;
+}
+
+#
+# usage
+#
+# Print out usage and exit.
+#
+sub usage {
+	die <<EOM;
+Usage: $me [-bv] [-c file] | [file...]
+Generates or checks SHA1 Message Digests
+    -c  check message digests (default is generate)
+    -v  verbose, print file names when checking
+    -b  read files in binary mode
+The input for -c should be the list of message digests and file names
+that is printed on stdout by this program when it generates digests.
+EOM
+}
+

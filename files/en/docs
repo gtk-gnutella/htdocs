@@ -1,8 +1,10 @@
 <!-- $Id$ -->
+<h1 align="center">gtk-gnutella documentation</h1>
 <p>
-  So far we can only point you to the excellent 
-  <a href="http://vidar.gimp.org/gtkg/filtering-howto.html">filtering mini-howto</a> 
-  by Vidar.
+  <ul>
+    <li><a href="index.php?page=filtering_howto">filtering mini-howto</a> by Vidar
+    <li><a href="index.php?page=searching_by_hash">Searching by hash and by magnet-link</a> by guruz
+  <ul>
 </p>
 <p align="center">
   More to come...

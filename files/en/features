@@ -1,0 +1,29 @@
+<h1 align="center">Features</h1>
+<p>
+<ul>
+	<li>Share files on the gnutella network (Limewire, BearShare, Xolox, Gnucleus, Shareaza ...)
+	<li>Compressed GNet connections
+	<li>Simultaneous downloading of files from multiple hosts (swarming)
+	<li>Passive searches
+	<li>Searching by urn:sha1: and magnet:
+	<li>Automatic aquiring of additonal sources via download mesh and watching searches
+	<li>Powerful filtering engine
+	<li>Bandwidth managment/limiting
+	<li>A lot of settings
+	<li>A lot of statistics
+	<li>Compliant to:
+		<ul>
+		<li><a href="http://www.w3.org/Protocols/">HTTP/1.1</a>
+		<li><a href="http://rfc-gnutella.sourceforge.net/Proposals/Handshake_06/Gnutella06.txt">Gnutella 0.6</a> (Vendor Code GTKG and soon GNTD)
+		<li>GNet compression
+		<li><a href="http://groups.yahoo.com/group/the_gdf/files/Proposals/BYE/Bye.txt">BYE</a> packet
+		<li><a href="http://www.gnucleus.net/gwebcache">GWebCache</a> Proposal
+		<li><a href="http://groups.yahoo.com/group/the_gdf/files/Proposals/HUGE/draft-gdf-huge-0_94.html">HUGE</a> (Hash/URN Gnutella Extensions)
+		<li>Ping/Pong reduction
+		<li><a href="http://groups.yahoo.com/group/the_gdf/files/Proposals/QueryMesh/querymesh.txt">Download/Query Mesh</a> Proposal
+		</ul>
+</ul>
+<br><br>
+
+However there is still a lot of stuff to be done. If you want to help, go to our <a href="index.php?page=devel">development page</a>
+</p>

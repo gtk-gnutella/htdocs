@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<h1 align="center">gtk-gnutella FAQ</h1>
+<h1 align="center">FAQ</h1>
 
 <!--
   --
@@ -7,10 +7,17 @@
   --
   -->
 
+<h2>General</h2>
+<ul>
+  <li><a href="#general0">What is gnutella anyway?</a></li>
+  <li><a href="#general1">This eats up too much bandwidth!</a></li>
+</ul>
+
 <h2>Gnutella connections</h2>
 <ul>
   <li><a href="#gnet0">What is a good number of connections?</a></li>
   <li><a href="#gnet1">Do I need to forward a port on my firewall?</a></li>
+  <li><a href="#gnet2">What does "[FC]" mean?</a></li>
 </ul>
 
 
@@ -39,6 +46,30 @@
 
 <hr>
 
+<h2>General</h2>
+
+<h3><a name="general0">What is gnutella anyway?</a></h3>
+<p>
+  Gnutella is a decentralized Peer to Peer information exchanging network. At the moment you can publish and download files
+  of any kind using the Gnutella network. For more information, visit the <a href="http://www.infoanarchy.org/wiki/wiki.pl?Gnutella">definition
+  of gnutella</a> on the infoAnarchy wiki.
+</p>
+
+<h3><a name="general1">This eats up too much bandwidth!</a></h3>
+<p>
+  At the moment you can try one or more of the following things if you are a user on a slow line (modem):
+  <ul>
+    <li>Limit the number of GNet connections you have.
+    <li>If you are able to receive incoming connections, enable "prefer compressed connections"
+    in the GnutellaNet options (expert mode needs to be enabled)
+    <li>Depress the lower-left button in the GUI after your downloads have started.
+    This will disconnect from the Gnutella network.
+    We strongly advise you to NOT doing that. You won't
+    be able to get more alternate locations from the net and people won't be able
+    to search your files.
+  </ul>
+</p>
+
 <h2>Gnutella connections</h2>
 
 <h3><a name="gnet0">What is a good number of connections?</a></h3>
@@ -46,7 +77,7 @@
   A good number is 4/5 (minimum/maximum). You can calculate a bandwidth
   consumption of 1kb/s per connection. You should never use up all your
   bandwidth with those. Especially on an asymetric cable/DSL connection you
-  can easily starve your incoming traffic by producing too much outgoing 
+  can easily starve your incoming traffic by producing too much outgoing
   traffic (TCP/IP issue). Use at most half of your outgoing bandwidth with
   gNet connections. E.g. on a line with 128kbit/s upstream set up at most
   8 connections.<br>
@@ -62,10 +93,20 @@
   able to download those anyway.<br>
   Even people can not connect directly to you, they can still download files from
   your node using a <a href="#down3">push request</a>.<br>
-  You can configure the port gtk-gnutella listens on. The setting "listen port" is 
+  You can configure the port gtk-gnutella listens on. The setting "listen port" is
   located on the "Network settings" tab on the config page.
 </p>
 
+<h3><a name="gnet2">What does "[FC]" mean?</a></h3>
+<p>
+  The FC means "flow control".<br>
+  In general, you should make sure that servents to which you are connected do not flow control.
+  Watch for the trailing "[FC]" indication at the end of the Info string (you may need to drag the
+  right edge past the window to trigger the underlying scroll bar)
+  As a rule of thumb, if you have more than one node flow-controlling at a given time,
+  you don't have enough outgoing bandwidth dedicated to Gnet, and therefore you are harming the network:
+  either decrease the amount of connections, enable the compression preferance, or raise the outgoing bandwidth limit.
+</p>
 
 <h2>Searches</h2>
 

@@ -1,4 +1,5 @@
 <!-- $Id$ -->
+<h1>Getting help</a>
 <h4>Mailing Lists</h4>
 
 <p>
@@ -22,7 +23,7 @@ For releases announcements only<br>
 <h4>IRC Chat</h4>
 
 <p>
-On the <a href="http://www.openprojects.net/">Open Projects Network</a> (short OPN) we meet in the
+On the <a href="http://www.freenode.net/">freenode network</a> (formerly Open Projects Network / OPN) we meet in the
 channel <a href="http://www.maol.ch/irc/egg2html.php?channel=gtk-gnutella">#gtk-gnutella</a>. There's always someone there, but not
-everytime someone who knows the answer to your question.
+everytime someone who knows the answer to your question. You need a IRC client <a href="http://www.xchat.org">like xchat</a> to visit us.
 </p>

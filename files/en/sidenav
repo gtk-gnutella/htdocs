@@ -3,6 +3,8 @@
   News</a><br>
 <a href="<?php echo BASEURL ?>?page=shots090">
   Screenshots</a><br>
+<a href="<?php echo BASEURL ?>?page=features">
+  Features</a><br>
 <a href="<?php echo BASEURL ?>?page=faq">
   FAQ</a><br>
 <a href="<?php echo BASEURL ?>?page=docs">

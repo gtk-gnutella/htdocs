@@ -9,10 +9,11 @@
  *
  */
 
-if (!defined(BASEDIR))
-	define(BASEDIR,	"/home/groups/g/gt/gtk-gnutella/htdocs/files/");
-define(NEWSMIN, 6);
-define(NEWSMAX, 19);
+if (!defined(BASEDIR)) {
+  define(BASEDIR, "/home/groups/g/gt/gtk-gnutella/htdocs/files/");
+}
+define(NEWSMIN, 7);
+define(NEWSMAX, 20);
 
 define(BASEURL, "$PHP_SELF");
 define(GENDIR,  "general/");
@@ -27,7 +28,11 @@ $pages = array(
   "mailing", 
   "links", 
   "docs",
-  "faq");
+  "faq",
+  "features",
+  "filtering_howto",
+  "searching_by_hash"
+);
 
 /* ** hack ** fscking damn php won't use LANG in header() ** hack ** */
 $ru = $CHARSET[ru] = 'koi8-r';

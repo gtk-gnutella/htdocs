@@ -1,0 +1,11 @@
+I've sown together a gtkg-compatible sha1 calculator;
+  http://vidar.gimp.org/gtkg/sha1.c
+
+Compiled with:
+  gcc -Wall -g -O2 -o sha1 sha1.c
+
+I might have violated some licences doing it, but mixing public domain
+with a pinch of GPL never hurt anyone, right? ;)
+
+Vidar
+
