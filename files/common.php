@@ -71,17 +71,17 @@ function getlang() {
 /*
  * icecontent:
  *
- * include the content files including pre and post files 
+ * include the content files including pre and post files
  */
 function icecontent($content) {
   global $page; /* so the included files know about it */
   iceinclude($content, 1);
 }
 
-/* 
- * iceinclude: 
+/*
+ * iceinclude:
  *
- * checks whether a file is available in the desired language 
+ * checks whether a file is available in the desired language
  */
 function iceinclude($file, $box) {
   global $page; /* so the included files know about it */
@@ -89,21 +89,21 @@ function iceinclude($file, $box) {
   if (!file_exists($incfile)) {
     $incfile = BASEDIR . "en/$file";
     if (file_exists($incfile)) {
-      if ($box) { 
-        include(BASEDIR . GENDIR . "/cheader"); 
+      if ($box) {
+        include(BASEDIR . GENDIR . "/cheader");
       }
       include("$incfile");
-      if ($box) { 
-        include(BASEDIR . GENDIR . "/cfooter"); 
+      if ($box) {
+        include(BASEDIR . GENDIR . "/cfooter");
       }
     }
   } else {
-    if ($box) { 
-      include(BASEDIR . GENDIR . "/cheader"); 
+    if ($box) {
+      include(BASEDIR . GENDIR . "/cheader");
     }
     include("$incfile");
-    if ($box) { 
-      include(BASEDIR . GENDIR . "/cfooter"); 
+    if ($box) {
+      include(BASEDIR . GENDIR . "/cfooter");
     }
   }
 }
@@ -126,3 +126,12 @@ function maincontent() {
     iceinclude("news", 0);
   }
 }
+
+/*
+ * sf_bug:
+ *
+ * create a link for gtk-gnutella bug with given number.
+ */
+ function sf_bug($number) {
+   print("<a href=\"http://sourceforge.net/tracker/index.php?func=detail&amp;aid=$number&amp;group_id=4467&amp;atid=104467\">#$number</a>");
+ }

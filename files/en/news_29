@@ -8,7 +8,7 @@
     Improved PARQ and fixed some problems with it.
   </li>
   <li>
-    Several crashes have been fixed. (#706014, #757276 #739262)
+    Several crashes have been fixed. (<?php sf_bug("706014");?>, <?php sf_bug("757276");?>, <?php sf_bug("739262");?>)
   </li>
   <li>
     Switched to metaconfig, and abandoned autoconf/automake.

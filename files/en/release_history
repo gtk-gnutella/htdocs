@@ -132,11 +132,11 @@
       </li>
       <li>
         When restarting a search from menu, re-enable it automatically if it
-        was disabled (fixes bug #864348).
+        was disabled (fixes bug <?php sf_bug("864348");?>).
       </li>
       <li>
         Upon restart, a disabled search will now be shown in gray in the
-        search list (fixes bug #857972) -- feature only implemented for GTK1.
+        search list (fixes bug <?php sf_bug("857972");?>) -- feature only implemented for GTK1.
       </li>
     </ul>
   </li>
@@ -309,17 +309,17 @@
     have been already queued up by the core due to a matching SHA1 or filename.
   </li>
   <li>
-    The "Purge" button could be hidden due to long filenames (#770625).
+    The "Purge" button could be hidden due to long filenames (<?php sf_bug("770625");?>).
   </li>
   <li>
-    A duplicate free() problem was fixed in _search_send_packet() (#706014).
+    A duplicate free() problem was fixed in _search_send_packet() (<?php sf_bug("706014");?>).
   </li>
   <li>
-    The "Purge" button no longer cause crashes (#757276).
+    The "Purge" button no longer cause crashes (<?php sf_bug("757276");?>).
   </li>
   <li>
     A bug which could cause a crash when resuming a download was fixed
-    (#739262).
+    (<?php sf_bug("739262");?>).
   </li>
 </ul>
 <p>
@@ -336,7 +336,7 @@
     No more crashes if the uploads are sorted by status.
   </li>
   <li>
-    Non-UTF-8 encoded were passed to GTK+ 2.x causing warnings (#769342)
+    Non-UTF-8 encoded were passed to GTK+ 2.x causing warnings (<?php sf_bug("769342");?>)
   </li>
 </ul>
 <p>
