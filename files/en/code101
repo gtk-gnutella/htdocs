@@ -16,8 +16,8 @@
 	The code below extracts the user agent from the headers of an upload. The
 	gui displays the useragent string or "..." if <code>u->user_agent</code> is
 	<code>NULL</code>.
-	Unfortunately there is must be a bug in that piece of code that caused
-	the GUI of our test user to always display "...". Can you locate it?
+	Unfortunately there is a bug in that piece of code that caused the GUI of 
+	our test user to always display "...". Can you locate it?
 </p>
 <pre>
  1: /*
