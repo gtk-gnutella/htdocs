@@ -1,22 +1,34 @@
-<h4>25. May 2003, Version 0.92 canidate released</h4>
+<h4>25. May 2003, Version 0.92 candidate released</h4>
 <p>
-You can get versions for GTK1 from our download section, for GTK2
-you need to get the sources from CVS.
+  You can get versions for GTK1 from our download section, for GTK2 you need 
+  to get the sources from CVS.
+</p>
 <ul>
-<li> PARQ is now fully implemented.
-<li> Filters out hostile IP addresses.
-<li> New icons for showing node state (leaf or ultra mode).
-<li> New "fileinfo" pane in the download screen.  Not finished, but will show
-  the currently registered downloads and their status.
-<li> Minor bugs fixed.
-<li> GTK2 version has grouping of same files in the search pane
+  <li>
+    PARQ is now fully implemented.
+  </li>
+  <li>
+    Filters out hostile IP addresses.
+  </li>
+  <li>
+    New icons for showing node state (leaf or ultra mode).
+  </li>
+  <li>
+    New "Fileinfo" pane in the download screen.  Not finished, but will show
+    the currently registered downloads and their status.
+  </li>
+  <li>
+    Minor bugs fixed.
+  </li>
+  <li>
+    GTK2 version has grouping of same files in the search pane.
+  </li>
 </ul>
-WARNING: Leaf node bandwidth is now stolen from HTTP when running in ultra
-mode.  If that brings outgoing HTTP bandwidth to 0, sharing is disabled.
-</p>
-
 <p>
-<i>gtk-gnutella team</i>
+  WARNING: Leaf node bandwidth is now stolen from HTTP when running in ultra
+  mode.  If that brings outgoing HTTP bandwidth to 0, sharing is disabled.
+</p>
+<p>
+  <em>gtk-gnutella team</em>
 </p>
 
-</p>

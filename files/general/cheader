@@ -1,5 +1,10 @@
 
 <!-- content header -->
-<table width=100% border=0 cellpadding=2 cellspacing=0><tr bgcolor=black><td>
-<table width=100% border=0 cellpadding=5 cellspacing=0><tr bgcolor=white><td>
+<!-- $Id$ -->
+<table width="100%" border="0" cellpadding="2" cellspacing="0">
+  <tr bgcolor="black">
+    <td>
+      <table width="100%" border="0" cellpadding="5" cellspacing="0">
+        <tr bgcolor="white">
+          <td>
 <!-- end content header -->

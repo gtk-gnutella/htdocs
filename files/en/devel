@@ -19,7 +19,8 @@
   open source, it depends on people improving it.
 </p>
 <p>
-  Now to the important questions:<br>
+  Now to the important questions:
+</p>
 <ul>
   <li>
     Do you know C well enough to start helping to code new functionalities
@@ -34,7 +35,6 @@
     Do you want to contribute, but do not know exactly what to do?
   </li>
 </ul>
-</p>
 <p>
   If yes, subscribe yourself to the developers 
   <a href="http://gtk-gnutella.sourceforge.net/index.php?page=mailing">
@@ -56,14 +56,14 @@
   on the web</a>.
 </p>
 
-<p>To get the files from CVS just type in the following commands:<br><br>
-
-<tt>
-cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<BR>
-cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co gtk-gnutella-current
-</tt>
-
-<br><br>
+<p>To get the files from CVS just type in the following commands:<br>
+  <br>
+  <tt>
+  cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<BR>
+  cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co gtk-gnutella-current
+  </tt>
+  <br>
+  <br>
   When prompted for a password for anonymous, simply press the Enter key. 
 </p>
 
@@ -80,6 +80,7 @@ cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co gtk-gnutella-cu
 
 <p>
   You can get CVS snapshots from these places:
+</p>
 <ul>
   <li><a href="http://gtk-gnutella.asselman.com/">MrJoe</a> (Sponsored by 
     <a href="http://www.asselman.com/">Jeroen Asselman</a>)
@@ -88,4 +89,4 @@ cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co gtk-gnutella-cu
     <a href="http://www.bawue.de">bawue.net</a>)
   </li>
 </ul>
-</p>
+

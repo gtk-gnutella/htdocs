@@ -3,7 +3,7 @@
 <p>
 A bug-fixing and minor enhancement release, correcting small problems.
 </p>
-<ul compact>
+<ul>
 <li>Greatly enhanced auto-selection in searches to use far less CPU.
 <li>Will now warn user when encountering a newer version of gtk-gnutella.
 <li>URN searches now supported, by typing "urn:sha1:" in search text, followed

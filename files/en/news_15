@@ -5,7 +5,7 @@ After nearly 3 months of development efforts, we are proud to present the
 new 0.90 beta version. It features <i>many</i> changes since the latest stable
 0.85 release.  Among them:
 </p>
-<ul compact>
+<ul>
 <li>All configuration can now be made from the GUI.
 <li>Fully redesigned search filters to work like ipchains/iptable on Linux.
 <li>Obsoleted experimental "auto-download", superseded by the new filtering

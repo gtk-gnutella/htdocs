@@ -4,32 +4,37 @@
 <h3>The Graphical Gnutella Client for Unix</h3>
 
 <p>
-Gtk-Gnutella is a clone of Gnutella (see <A HREF="http://gnutella.wego.com/">gnutella.wego.com</A>).
-It runs on every Unix which supports <A HREF="http://www.gtk.org/">GTK+</A> (1.2 or above). 
-Gnome is not needed but <a href="http://www.libxml.org">libxml</a> should be available for best
-performance.
-It is currently developed and tested under Linux (Debian 2.2) and is known to run at least on Linux,
-<a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>,
-<a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
-<a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
-<a href="http://fink.sourceforge.net/pdb/package.php/gtk-gnutella">Darwin/PowerPC</a>,
-Solaris 8/SPARC, Tru64 Unix/Alpha, SGI IRIX 6.2/mips. 
-<br><br>
-It is released under the GNU Public License (GPL).
+  Gtk-Gnutella is a clone of Gnutella (see 
+  <a href="http://gnutella.wego.com/">gnutella.wego.com</a>).
+  It runs on every Unix which supports <a href="http://www.gtk.org/">GTK+</a> 
+  (1.2 or above).  Gnome is not needed but 
+  <a href="http://www.libxml.org">libxml</a> should be available for best 
+  performance.  It is currently developed and tested under Linux (Debian 2.2) 
+  and is known to run at least on Linux,
+  <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>,
+  <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
+  <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
+  <a href="http://fink.sourceforge.net/pdb/package.php/gtk-gnutella">Darwin/PowerPC</a>,
+  Solaris 8/SPARC, Tru64 Unix/Alpha, SGI IRIX 6.2/mips. 
+  <br><br>
+  It is released under the GNU Public License (GPL).
 </p>
 
 <p>
-Gtk-Gnutella is not finished yet, but it is fully functional: you may share, search, and download.
-And it is stable too, users usually just leave it run unattended for days.
+  Gtk-Gnutella is not finished yet, but it is fully functional: you may share, 
+  search, and download.  And it is stable too, users usually just leave it run 
+  unattended for days.
 </p>
 
 <p>
-All ideas, comments, bug reports are welcome to <I>rmanfredi at users dot sourceforge dot net</I>, or to the gtk-gnutella-devel mailing list.
+  All ideas, comments, bug reports are welcome to 
+  <em>rmanfredi at users dot sourceforge dot net</em>, or to the 
+  gtk-gnutella-devel mailing list.
 </p>
 
 <p align="center">
-<a href="index.php?page=devel">We need additional contributors for C development and 
-documentation</a>
+  <a href="index.php?page=devel">We need additional contributors for C 
+  development and documentation</a>
 </p>
 
 <!-- end content -->

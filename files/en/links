@@ -3,11 +3,26 @@
 <h3>Gnutella Links</h3>
 
 <ul>
-<li><A HREF="http://gnutella.wego.com">gnutella.wego.com</A>: the official unofficial homepage of Gnutella.</li>
-<li><A HREF="http://www.gnutella.co.uk">www.gnutella.co.uk</A>: the most resources about all things Gnutella.</li>
-<li><a href="http://freshmeat.net/search/?q=gnutella">Freshmeat Gnutella</a>: many other Unix Gnutella Clients.</li>
-<li><a href="http://www.gnutellaforums.com">Gnutella Forums</a>: a place to talk about gnutella.</li>
-<!-- <li><a href="http://www.guruz.de/gnutella.php">Gnutella on Linux Howto</a>: guruz about Gtk-Gnutella.</li> //-->
-<li><a href="http://groups.yahoo.com/group/the_gdf">The Gnutella Developer Forum (GDF)</a>: the place where the big players sit. Please ONLY developers.</li>
-
+  <li>
+    <a href="http://gnutella.wego.com">gnutella.wego.com</a>: the official 
+    unofficial homepage of Gnutella.
+  </li>
+  <li>
+  <a href="http://www.infoanarchy.org/wiki/wiki.pl?Gnutella">infoAnarchy's 
+    Gnutella Wiki</a>: good general information about all things Gnutella.
+  </li>
+  <li>
+    <a href="http://freshmeat.net/search/?q=gnutella">Freshmeat Gnutella</a>: 
+    many other Unix Gnutella Clients.
+  </li>
+  <li>
+    <a href="http://www.gnutellaforums.com">Gnutella Forums</a>: a place to 
+    talk about gnutella.
+  </li>
+  <!-- <li><a href="http://www.guruz.de/gnutella.php">Gnutella on Linux Howto</a>: guruz about Gtk-Gnutella.</li> //-->
+  <li>
+    <a href="http://groups.yahoo.com/group/the_gdf">The Gnutella Developer 
+      Forum (GDF)</a>: the place where the big players sit. Please ONLY 
+    developers.
+  </li>
 </ul>

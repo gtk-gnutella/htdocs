@@ -2,9 +2,9 @@
 <h1 align="center">FAQ</h1>
 
 <!--
-  --
-  -- TOC
-  --
+  **
+  ** TOC
+  **
   -->
 
 <h2>General</h2>
@@ -57,9 +57,9 @@
 </ul>
 
 <!--
-  --
-  -- Questions and anwers below
-  --
+  **
+  ** Questions and anwers below
+  **
   -->
 
 <hr>
@@ -78,19 +78,19 @@
 <p>
   At the moment you can try one or more of the following things if you are a user 
   on a slow line (modem):
-  <ul>
-    <li>Run as a leaf node. You change the peermode setting in the configuration 
-      panel under GnutellaNet. An icon in the statusbar indicates in which mode
-      you are running.</li>
-    <li>Limit the number of GNet connections you have.</li>
-    <li>If you are able to receive incoming connections, enable "prefer compressed 
-      connections" in the GnutellaNet options (expert mode needs to be enabled.)</li>
-    <li>Depress the lower-left button in the GUI after your downloads have started.
-      This will disconnect from the Gnutella network.  We strongly advise you to NOT 
-      do that. You won't be able to get more alternate locations from the net and 
-      people won't be able to search your files.</li>
-  </ul>
 </p>
+<ul>
+  <li>Run as a leaf node. You change the peermode setting in the configuration 
+    panel under GnutellaNet. An icon in the statusbar indicates in which mode
+    you are running.</li>
+  <li>Limit the number of GNet connections you have.</li>
+  <li>If you are able to receive incoming connections, enable "prefer compressed 
+    connections" in the GnutellaNet options (expert mode needs to be enabled.)</li>
+  <li>Depress the lower-left button in the GUI after your downloads have started.
+    This will disconnect from the Gnutella network.  We strongly advise you to NOT 
+    do that. You won't be able to get more alternate locations from the net and 
+    people won't be able to search your files.</li>
+</ul>
 
 <h3><a name="general2">What is an Ultrapeer?</a></h3>
 <p>
@@ -154,7 +154,8 @@
 <h3><a name="gnet4">What does the stuff in the Flags column mean?</a></h3>
 <p>
   You can see the type and some of the settings of a connection here.
-  <pre>
+</p>
+<pre>
      012345678 (offset)
      NIrwqTRFh
      ^^^^^^^^^
@@ -167,8 +168,7 @@
      ||+       indicates whether node is readable
      |+        indicates connection type (Incoming, Outgoing, Ponging)
      +         indicates peer mode (Normal, Ultra, Leaf)
-  </pre>
-</p>
+</pre>
 
 <h3><a name="gnet5">What does "Harmful version banned, upgrade required" mean?</a></h3>
 <p>

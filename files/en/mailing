@@ -1,35 +1,40 @@
 <!-- $Id$ -->
-<h1>Getting help</a>
+<h1>Getting help</h1>
 <h4>Mailing Lists</h4>
 
 <p>
-Just click on the links to subscribe or unsubscribe. There's a link to the
-list archive on the subscribe/unsubscribe pages. We don't link the archives
-here because the link is going to change shortly (SourceForge will switch to
-a new mail archiving system, ditching Geocrawler in the process).
+  Just click on the links to subscribe or unsubscribe. There's a link to the
+  list archive on the subscribe/unsubscribe pages. We don't link the archives
+  here because the link is going to change shortly (SourceForge will switch to
+  a new mail archiving system, ditching Geocrawler in the process).
 </p>
 
 <p>
-<A HREF="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-users/">gtk-gnutella-users</A>
-Main list for Gtk-Gntuella users<br>
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-users/">
+    gtk-gnutella-users</a> Main list for Gtk-Gntuella users<br>
 
-<A HREF="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-devel/">gtk-gnutella-devel</A>
-If you're interested in contributing to Gtk-Gnutella<br>
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-devel/">
+    gtk-gnutella-devel</a> If you're interested in contributing to Gtk-Gnutella<br>
 
-<A HREF="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-announce/">gtk-gnutella-announce</A>
-For release announcements only<br>
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-announce/">
+    gtk-gnutella-announce</a> For release announcements only<br>
 </p>
 
 <h4>IRC Chat</h4>
 
 <p>
-On the <a href="http://www.freenode.net/">freenode network</a> (formerly Open Projects Network / OPN) we meet in the
-channel <a href="http://www.maol.ch/irc/egg2html.php?channel=gtk-gnutella">#gtk-gnutella</a>. There's always someone there, but not
-always someone who knows the answer to your question. You need a IRC client <a href="http://www.xchat.org">like xchat</a> to visit us.
+  On the <a href="http://www.freenode.net/">freenode network</a> (formerly 
+  Open Projects Network / OPN) we meet in the channel 
+  <a href="http://www.maol.ch/irc/egg2html.php?channel=gtk-gnutella">
+    #gtk-gnutella</a>. There's always someone there, but not always someone 
+  who knows the answer to your question. You need an IRC client like 
+  <a href="http://www.xchat.org">xchat</a> to visit us.
 </p>
 
 <h4>Forums</h4>
 
 <p>
-We have a <a href="http://www.gnutellaforums.com/forumdisplay.php?s=&forumid=63">forum at gnutellaforums.com</a>. Attention, it is not very well-visited.
+  We have a 
+  <a href="http://www.gnutellaforums.com/forumdisplay.php?s=&amp;forumid=63">
+    forum at gnutellaforums.com</a>. Attention, it is not very well-visited.
 </p>

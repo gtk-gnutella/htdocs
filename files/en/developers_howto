@@ -2,48 +2,70 @@
 <p>
   What I'm going to tell you applies to really anyone who wishes to start
   working on GTKG:
-  <ul>
-    <li>Read the source code: take one functionality you'd like to understand,
+</p>
+<ul>
+  <li>
+    Read the source code: take one functionality you'd like to understand,
     and follow the execution path.  Use the "tags" mode of your favorite
-    editor to navigate, and tools like "cscope" to cross-reference things.</li>
-
-    <li>Learn the doc/devguide/STYLE by heart, before making any change to the
+    editor to navigate, and tools like "cscope" to cross-reference things.
+  </li>
+  <li>
+    Learn the doc/devguide/STYLE by heart, before making any change to the
     code.  It is important that we all use a uniform coding style to make
     the source pleasant to read.  The coding style we picked (mine, mostly)
-    is not arbitrary: it is the one used most commonly in the industry.</li>
-
-    <li>Learn basics of Glib: lists and hash tables.  They're used everywhere.
+    is not arbitrary: it is the one used most commonly in the industry.
+  </li>
+  <li>
+    Learn basics of Glib: lists and hash tables.  They're used everywhere.
     You can also learn the I/O stuff, but it is less important to master
-    at first.</li>
-
-    <li>Last but not least, if you wish to work on the Gnutella core, you need
+    at first.
+  </li>
+  <li>
+    Last but not least, if you wish to work on the Gnutella core, you need
     to learn and understand the Gnutella protocol itself, but also master
-    HTTP/1.1 specs.</li>
-
-    <li>Start with small features / bug fixes.  The code is not that complex, but
-    the data structures are, and their relationships are quite tricky.</li>
-  </ul>
-</p>
+    HTTP/1.1 specs.
+  </li>
+  <li>
+    Start with small features / bug fixes.  The code is not that complex, but
+    the data structures are, and their relationships are quite tricky.
+  </li>
+</ul>
 
 <p>
   We have quite big projects ahead of us:
-  <ol>
-    <li>Tiger tree hash integration.</li>
-    <li>Metadata collection for shared files (e.g. for audio, the type, length and
-    the bitrate, for videos: the type of codec, length, resolution on screen.
-    For images, type (jpg, gif) and size. etc...).</li>
-    <li>Support for XML queries, so that people can search for various types of
-    characteristics on the collected metadata.</li>
-    <li>magnet: URI support: make GTKG a magnet: handler.</li>
-    <li>Separation of the core process and the GUI processes.</li>
-    <li>Redesign of the logging layer, to separate different logs of the
-    various subsystems.  Present to the users only the warnings he can
-    understand or do something about.</li>
-    <li>Skim through all the recorded "feature request" on sourceforge to see
-    whether we have forgotten something. ;-)</li>
-    <li>Documentation.  We lack documentation.</li>
-  </ol>
 </p>
+<ol>
+  <li>
+    Tiger tree hash integration.
+  </li>
+  <li>
+    Metadata collection for shared files (e.g. for audio, the type, length and
+    the bitrate, for videos: the type of codec, length, resolution on screen.
+    For images, type (jpg, gif) and size. etc...).
+  </li>
+  <li>
+    Support for XML queries, so that people can search for various types of
+    characteristics on the collected metadata.
+  </li>
+  <li>
+    magnet: URI support: make GTKG a magnet: handler.
+  </li>
+  <li>
+    Separation of the core process and the GUI processes.
+  </li>
+  <li>
+    Redesign of the logging layer, to separate different logs of the
+    various subsystems.  Present to the users only the warnings he can
+    understand or do something about.
+  </li>
+  <li>
+    Skim through all the recorded "feature request" on sourceforge to see
+    whether we have forgotten something. ;-)
+  </li>
+  <li>
+    Documentation.  We lack documentation.
+  </li>
+</ol>
 
 <p>
   If you wish to participate to Gnutella core development, you also need
@@ -78,7 +100,7 @@
 </p>
 
 <p>
-I should add that until now, I have enjoyed working with the other developers:
+  I should add that until now, I have enjoyed working with the other developers:
 </p>
 
 <p>
@@ -108,6 +130,8 @@ I should add that until now, I have enjoyed working with the other developers:
 <p>
   I'm looking forward to a bigger development team that will enable us to
   do more in less time, for the benefit of our end users!<br>
-  <br>
-  Raphael
+</p>
+  
+<p>
+  <em>Raphael</em>
 </p>

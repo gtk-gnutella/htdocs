@@ -2,14 +2,19 @@
 <h3>Gtk-Gnutella Screenshots</h3>
 
 <p>
-These screenshots were with the PHOENIX IceWM theme. See
-<a href="http://icewm.themes.org/">themes.org</a> if you want to download them or other themes.
+  These screenshots were with the PHOENIX IceWM theme. See
+  <a href="http://icewm.themes.org/">themes.org</a> if you want to download 
+  them or other themes.
 </p>
 
 <p>
-<IMG SRC="images/shots/gnet.png" width=728 height=544 alt="Gnutella Network Status"><br><br>
-<IMG SRC="images/shots/upload.png" width=728 height=544 alt="Uploads"><br>
-<IMG SRC="images/shots/download.png" width=728 height=544 alt="Downloads and Queue"><br><br>
-<IMG SRC="images/shots/search.png" width=728 height=544 alt="Searches"><br>
-<IMG SRC="images/shots/config.png" width=728 height=544 alt="Configuration Page">
+  <img src="images/shots/gnet.png" width="728" height="544" alt="Gnutella Network Status"><br>
+  <br>
+  <img src="images/shots/upload.png" width="728" height="544" alt="Uploads"><br>
+  <br>
+  <img src="images/shots/download.png" width="728" height="544" alt="Downloads and Queue"><br>
+  <br>
+  <img src="images/shots/search.png" width="728" height="544" alt="Searches"><br>
+  <br>
+  <img src="images/shots/config.png" width="728" height="544" alt="Configuration Page">
 </p>

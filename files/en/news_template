@@ -1,5 +1,9 @@
 <!-- $Id$ -->
 <h4>date, headline</h4>
 <p>
-text
+  text
+</p>
+
+<p>
+  <em>gtk-gnutella team</em>
 </p>

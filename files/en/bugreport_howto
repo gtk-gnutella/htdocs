@@ -94,7 +94,7 @@
   <p>
     If gtk-gnutella is acting the way its programmers intended but you would 
     prefer it behaved differently, then you should probably file a 
-    <a href="http://sourceforge.net/tracker/?atid=354467&group_id=4467&func=browse">
+    <a href="http://sourceforge.net/tracker/?atid=354467&amp;group_id=4467&amp;func=browse">
     feature request</a> rather than a bug report.  Of course, there are 
     exceptions - the behavior could be harmful in some unforseen way or not 
     conform to standards.  Besides, it's hard to know what the developer 
@@ -146,9 +146,9 @@
     your X error log is.  The whole error message and preferably about 10 
     lines leading up to the error should be pasted into your bug report.  If 
     you're paranoid (after all, they <strong>are</strong> out to get you)
-	you could obfuscate filenames.  You'll only find the error if
-	gtk-gnutella <q>abort</q>s, not if it has a <q>segmentation fault</q> so
-	you should say which case applies.  
+    you could obfuscate filenames.  You'll only find the error if
+    gtk-gnutella <q>abort</q>s, not if it has a <q>segmentation fault</q> so
+    you should say which case applies.  
   </p>
   <p>
     The most common reason for a gtk-gnutella crash is an "assertion" failure. 
@@ -213,9 +213,9 @@
     move them to a safe place.  The core file will be in your home directory 
     or in the current directory if you called gtk-gnutella from a terminal.  
     If you're serious about bug hunting for gtk-gnutella you might want to use 
-		something like the following shell script to start it.  You'll have to 
-		modify it to suit your system, of course.  For instance, the core file 
-		could be named "core", "gtk-gnutella.core", "core.[PID]", etc.  
+    something like the following shell script to start it.  You'll have to 
+    modify it to suit your system, of course.  For instance, the core file 
+    could be named "core", "gtk-gnutella.core", "core.[PID]", etc.  
   </p>
   <blockquote>
     <code>
@@ -448,7 +448,7 @@
 <h3><a name="bugreport-where">Where's the best place to submit my bug report?</a></h3>
   <p>
     You can report your bug using the 
-    <a href="http://sourceforge.net/tracker/?atid=104467&group_id=4467&func=browse">
+    <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
     SourceForge.net Bug Tracker</a> or you can email your report to the
     <a href="http://lists.sourceforge.net/lists/listinfo/gtk-gnutella-devel/">
     gtk-gnutella-devel</a> mailing list.  You can also find a developer on IRC 

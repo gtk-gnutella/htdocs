@@ -1,13 +1,24 @@
 <!-- $Id$ -->
 <h1 align="center">gtk-gnutella documentation</h1>
-<p>
-  <ul>
-    <li><a href="index.php?page=filtering_howto">filtering mini-howto</a> <small> by Vidar</small></li>
-    <li><a href="index.php?page=searching_by_hash">Searching by hash and by magnet-link</a> <small>by guruz</small></li>
-    <li><a href="index.php?page=gwebcache">Helping the network by running a GWebCache</a> <small>by guruz</small></li>
-    <li><a href="index.php?page=bugreport_howto">Bug Report Howto</a> <small>by eqom14</small></li>
-  <ul>
-</p>
+<ul>
+  <li>
+    <a href="index.php?page=filtering_howto">filtering mini-howto</a> 
+    <small> by Vidar</small>
+  </li>
+  <li>
+    <a href="index.php?page=searching_by_hash">Searching by hash and by 
+    magnet-link</a> <small>by guruz</small>
+  </li>
+  <li>
+    <a href="index.php?page=gwebcache">Helping the network by running a 
+    GWebCache</a> <small>by guruz</small>
+  </li>
+  <li>
+    <a href="index.php?page=bugreport_howto">Bug Report Howto</a> <small>by 
+    eqom14</small>
+  </li>
+</ul>
+
 <p align="center">
   More to come...
 </p>

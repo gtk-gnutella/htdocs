@@ -1,52 +1,88 @@
+<!-- $Id$ -->
 <h4>15. June 2003, Version 0.92 released</h4>
 <p>
-You can get this new version from our download section.
-Here are the changes since 0.91.1, the latest stable release:
-
-<ul>
-<li> Now supports Ultrapeers, which means GTKG can work as an ultra node or as
-  a leaf node.  You can still run as a normal node, although this is not
-  something wise to do, because that will likely relagate you to a small part
-  of the Gnutella network.
-<li> New icons for showing node state (leaf or ultra mode).
-<li> The GTK2 front-end is no longer experimental, albeit it is slower than
-  the GTK1.2 front-end.  This is due to the somewhat inefficient
-  implementation of the underlying GTK library.  Don't use GTK2 unless you
-  have the equivalent of a 1 GHz Intel chip.
-<li> Added client-side PFSP support (partial file sharing). GTKG can download
-  from servers holding partial files.
-<li> Added full PARQ support (Passive / Active Remote Queuing), both for upload
-  and downloads.
-<li> New Gnet statistics: flow-controlled packets per TTL and hops.
-<li> The "Type" column in the Gnet connection pane was turned into "Flags".
-<li> Added support for GGEP in pings/pongs/pushes: those packets are now
-  accepted and forwarded to connections advertising GGEP support.
-<li> New "use surplus bandwidth" setting: all unused bandwidth for Gnet or HTTP
-  can be stolen by the other in case it needs some.
-<li> Added count for total bytes uploaded and downloaded.
-<li> Added support for vendor-specific messages.
-<li> New hops-flow support: remote flow-controlled connections can now warn us
-  that they are flow-controlling us, and so we can drop queries immediately
-  instead of sending them, saving outgoing bandwidth.
-<li> Will now show the GTKG version in query hits.
-<li> The queue now shows the count of alive downloads, as well as the queue count.
-  An "alive" download is an entry for which the remote server replies.
-<li> Changed the connection algorithm: will now attempt to connect to more
-  nodes than really configured, dropping the surplus connections later, when
-  needed at all.
-<li> Filters out hostile IP addresses.
-<li> New "fileinfo" pane in the download screen.  Not finished, but will show
-  the currently registered downloads and their status.
-<li> Domain name resolution for Gnutella web cache are now done asynchronously.
-  The GUI will no longer freeze due to a DNS request.
-<li> Some performance improvements: removed the most important bottlenecks.
-
-
-</ul>
+  You can get this new version from our download section.  Here are the 
+  changes since 0.91.1, the latest stable release:
 </p>
+<ul>
+  <li>
+    Now supports Ultrapeers, which means GTKG can work as an ultra node or as
+    a leaf node.  You can still run as a normal node, although this is not
+    something wise to do, because that will likely relegate you to a small 
+    part of the Gnutella network.
+  </li>
+  <li>
+    New icons for showing node state (leaf or ultra mode).
+  </li>
+  <li>
+    The GTK2 front-end is no longer experimental, albeit it is slower than
+    the GTK1.2 front-end.  This is due to the somewhat inefficient
+    implementation of the underlying GTK library.  Don't use GTK2 unless you
+    have the equivalent of a 1 GHz Intel chip.
+  </li>
+  <li>
+    Added client-side PFSP support (partial file sharing). GTKG can download
+    from servers holding partial files.
+  </li>
+  <li>
+    Added full PARQ support (Passive / Active Remote Queuing), both for 
+    upload and downloads.
+  </li>
+  <li>
+    New Gnet statistics: flow-controlled packets per TTL and hops.
+  </li>
+  <li>
+    The "Type" column in the Gnet connection pane was turned into "Flags".
+  </li>
+  <li>
+    Added support for GGEP in pings/pongs/pushes: those packets are now
+    accepted and forwarded to connections advertising GGEP support.
+  </li>
+  <li>
+    New "use surplus bandwidth" setting: all unused bandwidth for Gnet or 
+    HTTP can be stolen by the other in case it needs some.
+  </li>
+  <li>
+    Added count for total bytes uploaded and downloaded.
+  </li>
+  <li>
+    Added support for vendor-specific messages.
+  </li>
+  <li>
+    New hops-flow support: remote flow-controlled connections can now warn 
+    us that they are flow-controlling us, and so we can drop queries 
+    immediately instead of sending them, saving outgoing bandwidth.
+  </li>
+  <li>
+    Will now show the GTKG version in query hits.
+  </li>
+  <li>
+    The queue now shows the count of alive downloads, as well as the queue 
+    count.  An "alive" download is an entry for which the remote server 
+    replies.  
+  </li>
+  <li>
+    Changed the connection algorithm: will now attempt to connect to more
+    nodes than really configured, dropping the surplus connections later, 
+    when needed at all.
+  </li>
+  <li>
+    Filters out hostile IP addresses.
+  </li>
+  <li>
+    New "Fileinfo" pane in the download screen.  Not finished, but will show
+    the currently registered downloads and their status.
+  </li>
+  <li>
+    Domain name resolution for Gnutella web cache are now done 
+    asynchronously.  The GUI will no longer freeze due to a DNS request.
+  </li>
+  <li>
+    Some performance improvements: removed the most important bottlenecks.
+  </li>
+</ul>
 
 <p>
-<i>gtk-gnutella team</i>
+  <em>gtk-gnutella team</em>
 </p>
 
-</p>

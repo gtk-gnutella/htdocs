@@ -2,54 +2,60 @@
 <h1>Screenshots</h1>
 
 <p>
-Here you can browse the user interface of gtk-gnutella 0.90 stable.
-Click on the images to get a larger view.<br>
-These screenshots feature the IceGradient gtk-engine with some tweaking
-of the colors.
+  Here you can browse the user interface of gtk-gnutella 0.90 stable.  Click 
+  on the images to get a larger view.<br>
+  These screenshots feature the IceGradient gtk-engine with some tweaking of 
+  the colors.
 </p>
 
 <p>
-You can see screenshots of the older 0.85 version 
-<a class=navlink href="<?php echo BASEURL ?>?page=shots">here</a>.
+  You can see screenshots of the older 0.85 version 
+  <a class=navlink href="<?php echo BASEURL ?>?page=shots">here</a>.
 </p>
 
+<hr>
+<h4>Gnutella network status</h4>
+<hr>
 <p>
+  <a href="images/shots/090/gnutellanet.png">
+    <img src="images/shots/090/small_gnutellanet.jpg" width="200" height="150" alt="Gnutella network status"></a>
+</p>
 <hr>
-<center><h4>Gnutella network status</h4></center>
+<h4>Uploads and downloads</h4>
 <hr>
-<A HREF="images/shots/090/gnutellanet.png">
-    <IMG SRC="images/shots/090/small_gnutellanet.jpg" width="200" height="150" alt="Gnutella network status"></A>
+<p>
+  <a href="images/shots/090/uploads.png">
+    <img src="images/shots/090/small_uploads.jpg" width="200" height="150" alt="Uploads"></a>
+  <a href="images/shots/090/upload_stats.png">
+    <img src="images/shots/090/small_upload_stats.jpg" width="200" height="150" alt="Downloads and queue"></a>
+  <a href="images/shots/090/downloads.png">
+    <img src="images/shots/090/small_downloads.jpg" width="200" height="150" alt="Searches"></a>
+</p>
 <hr>
-<center><h4>Uploads and downloads</h4></center>
+<h4>Search and filter</h4>
 <hr>
-<A HREF="images/shots/090/uploads.png">
-    <IMG SRC="images/shots/090/small_uploads.jpg" width="200" height="150" alt="Uploads"></A>
-<A HREF="images/shots/090/upload_stats.png">
-    <IMG SRC="images/shots/090/small_upload_stats.jpg" width="200" height="150" alt="Downloads and queue"></A>
-<A HREF="images/shots/090/downloads.png">
-    <IMG SRC="images/shots/090/small_downloads.jpg" width="200" height="150" alt="Searches"></A>
+<p>
+  <a href="images/shots/090/search.png">
+    <img src="images/shots/090/small_search.jpg" width="200" height="150" alt="Searches"></a>
+  <a href="images/shots/090/search_monitor.png">
+    <img src="images/shots/090/small_search_monitor.jpg" width="200" height="150" alt="Search monitor"></a>
+  <a href="images/shots/090/search_stats.png">
+    <img src="images/shots/090/small_search_stats.jpg" width="200" height="150" alt="Search stats"></a>
+  <a href="images/shots/090/filter.png">
+    <img src="images/shots/090/small_filter.jpg" width="200" height="106" alt="Filter dialog"></a>
+</p>
 <hr>
-<center><h4>Search and filter</h4></center>
+<h4>Settings</h4>
 <hr>
-<A HREF="images/shots/090/search.png">
-    <IMG SRC="images/shots/090/small_search.jpg" width="200" height="150" alt="Searches"></A>
-<A HREF="images/shots/090/search_monitor.png">
-    <IMG SRC="images/shots/090/small_search_monitor.jpg" width="200" height="150" alt="Search monitor"></A>
-<A HREF="images/shots/090/search_stats.png">
-    <IMG SRC="images/shots/090/small_search_stats.jpg" width="200" height="150" alt="Search stats"></A>
-<A HREF="images/shots/090/filter.png">
-    <IMG SRC="images/shots/090/small_filter.jpg" width="200" height="106" alt="Filter dialog"></A>
-<hr>
-<center><h4>Settings</h4></center>
-<hr>
-<A HREF="images/shots/090/config_net.png">
-    <IMG SRC="images/shots/090/small_config_net.jpg" width="200" height="150" alt="Searches"></A>
-<A HREF="images/shots/090/config_bw.png">
-    <IMG SRC="images/shots/090/small_config_bw.jpg" width="200" height="150" alt="Searches"></A>
-<A HREF="images/shots/090/config_gnet.png">
-    <IMG SRC="images/shots/090/small_config_gnet.jpg" width="200" height="150" alt="Searches"></A>
-<A HREF="images/shots/090/config_download.png">
-    <IMG SRC="images/shots/090/small_config_download.jpg" width="200" height="150" alt="Searches"></A>
-<A HREF="images/shots/090/config_upload.png">
-    <IMG SRC="images/shots/090/small_config_upload.jpg" width="200" height="150" alt="Searches"></A>
+<p>
+  <a href="images/shots/090/config_net.png">
+    <img src="images/shots/090/small_config_net.jpg" width="200" height="150" alt="Searches"></a>
+  <a href="images/shots/090/config_bw.png">
+    <img src="images/shots/090/small_config_bw.jpg" width="200" height="150" alt="Searches"></a>
+  <a href="images/shots/090/config_gnet.png">
+    <img src="images/shots/090/small_config_gnet.jpg" width="200" height="150" alt="Searches"></a>
+  <a href="images/shots/090/config_download.png">
+    <img src="images/shots/090/small_config_download.jpg" width="200" height="150" alt="Searches"></a>
+  <a href="images/shots/090/config_upload.png">
+    <img src="images/shots/090/small_config_upload.jpg" width="200" height="150" alt="Searches"></a>
 </p>

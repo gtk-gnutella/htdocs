@@ -3,6 +3,7 @@
 This is a bugfix release. If you used beta1, please update to this beta. Also
 note that precompiled versions only exist for GTK1 as GTK2 is too slow for most
 users right now.
+</p>
 <ul> 
 <li> Fixed Gnutella web cache hammering.  A buggy test caused GTKG to query
   the caches each time it was establishing an outgoing connection!
@@ -17,10 +18,8 @@ users right now.
   added to the HTTP connections when not in leaf mode, regardless of whether
   "use surplus bandwidth" is activated.  This will change in the release.
 </ul>  
-</p>
 
 <p>
 <i>gtk-gnutella team</i>
 </p>
 
-</p>

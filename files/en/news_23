@@ -2,6 +2,7 @@
 <p>
 We are proud to release the beta version of our upcoming 0.92 release. It features many changes,
 so please test it as thoroughly as possible and report any bugs to the IRC channel or the mailing lists :)
+</p>
 <ul> 
 <li> Now supports Ultrapeers, which means GTKG can work as an ultra node or as
   a leaf node.  You can still run as a normal node, although this is not
@@ -35,7 +36,6 @@ so please test it as thoroughly as possible and report any bugs to the IRC chann
   nodes than really configured, dropping the surplus connections later, when
   needed at all.
 </ul>
-</p>
 
 <p>
 <i>gtk-gnutella team</i>

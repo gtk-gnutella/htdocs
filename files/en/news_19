@@ -4,7 +4,7 @@
 A minor bug-fixing release, which also happens to contain all the working
 new features that have been already added in the 0.92u version.
 </p>
-<ul compact>
+<ul>
 <li>Will now verify the SHA1 of downloaded files in the background.
 <li>New configuration parameter for the directory where "bad files" not
   matching their advertised SHA1 should be put (don't forget to configure
