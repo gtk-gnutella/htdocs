@@ -80,8 +80,8 @@
 
 <h3><a name="general-gtkg">What is "GTKG?"</a></h3>
 <p>
-  We often refer to gtk-gnutella as GTKG (because it's shorter.)  GTK comes 
-  from GTK+ which is the graphical toolkit used by gtk-gnutella.
+  We often refer to gtk-gnutella as GTKG or gtkg (because it's shorter.)  GTK 
+  comes from GTK+ which is the graphical toolkit used by gtk-gnutella.
 </p>
 
 <h3><a name="general1">This eats up too much bandwidth!</a></h3>
@@ -90,16 +90,34 @@
   on a slow line (modem):
 </p>
 <ul>
-  <li>Run as a leaf node. You change the peermode setting in the configuration 
+  <li>
+    Run as a leaf node. You change the peermode setting in the configuration 
     panel under GnutellaNet. An icon in the statusbar indicates in which mode
-    you are running.</li>
-  <li>Limit the number of GNet connections you have.</li>
-  <li>If you are able to receive incoming connections, enable "prefer compressed 
-    connections" in the GnutellaNet options (expert mode needs to be enabled.)</li>
-  <li>Depress the lower-left button in the GUI after your downloads have started.
+    you are running.
+  </li>
+  <li>
+    Limit the number of gnet connections you have.
+  </li>
+  <li>
+    If you are able to receive incoming connections, enable <q><em>Prefer 
+    compressed connections</em></q> in the <q><em>Bandwidth control</em></q> 
+    options. 
+  </li>
+  <li>
+    Even if you are on a slow connection, it's still important to share 
+    files.  With <a href="#down3">swarming</a>, people can upload small chunks 
+    of files from you, so even a slow connection, multiplied by many sources on 
+    the gnet, makes a tremendous contribution.  If you have a 56K modem, you 
+    can set <q><em>Bandwidth for HTTP traffic</em></q> - <q><em>Limit 
+    bandwidth for outgoing traffic</em></q> to 1K/s so you still have the 
+    majority of your bandwidth for downloading.  
+  </li>
+  <li>
+    Depress the lower-left button in the GUI after your downloads have started.
     This will disconnect from the Gnutella network.  We strongly advise you to NOT 
     do that. You won't be able to get more alternate locations from the net and 
-    people won't be able to search your files.</li>
+    people won't be able to search your files.
+  </li>
 </ul>
 
 <h3><a name="general-ultrapeer">What are Ultrapeers and Leaf nodes?</a></h3>
@@ -117,9 +135,10 @@
   hashes of keywords that will match files shared by the leaf.  When an 
   ultrapeer gets a hit on a query routing table, it relays the query to the 
   corresponding leaf node.  The result is very low gnet traffic for each leaf 
-  node, which frees bandwidth for sharing and downloading.  Ultrapeers can 
-  also act as <a href="<?php echo BASEURL ?>?page=features">push-proxies</a> 
-  for firewalled leaf nodes.  
+  node, freeing bandwidth for sharing and downloading, which still occur 
+  directly p2p.  Ultrapeers can also act as 
+  <a href="<?php echo BASEURL ?>?page=features">push-proxies</a> for 
+  firewalled leaf nodes.  
 </p>
 
 <h2>Gnutella connections</h2>
@@ -162,13 +181,14 @@
 <h3><a name="gnet1">Do I need to forward a port on my firewall?</a></h3>
 <p>
   You don't need to forward any ports for gtk-gnutella to work, but it
-  will perform much better if you do. If gtk-gnutella thinks you are firewalled,
-  it will not show any <a href="#down3">"push"</a> results since you wouldn't be
-  able to download those anyway.<br>
-  Even when people cannot connect directly to you, they can still download files from
-  your node using a <a href="#down3">push request</a>.<br>
-  You can configure the port gtk-gnutella listens on. The setting "listen port" is
-  located on the "Network settings" tab on the config page.
+  will perform much better if you do. If gtk-gnutella thinks you are 
+  firewalled, it will not show any <a href="#down3">"push"</a> results since 
+  you wouldn't be able to download those anyway.<br>
+  Even when people cannot connect directly to you, they can still download 
+  files from your node using a <a href="#down3">push request</a>.<br>
+  You can configure the port gtk-gnutella listens on. The setting 
+  <q><em>Listen port</em></q> is located on the 
+  <q><em>Network settings</em></q> tab on the config page.
 </p>
 
 <h3><a name="gnet-udp">Does gtk-gnutella use UDP?</a></h3>
@@ -185,14 +205,15 @@
 <p>
   The FC means "flow control".<br>
   In general, you should make sure that servents to which you are connected do 
-  not flow control.  Watch for the trailing "[FC]" indication at the end of the 
-  Info string (you may need to drag the right edge past the window to trigger 
-  the underlying scroll bar), or look at the FC state in the <a href="#gnet4">Flags</a> 
-  column. As a rule of thumb, if you have more than one node flow-controlling 
-  at a given time, you don't have enough outgoing bandwidth dedicated to Gnet, 
-  and therefore you are harming the network: either decrease the amount of 
-  connections, enable the compression preferance, or raise the outgoing bandwidth 
-  limit. 
+  not flow control.  Watch for the trailing <q><em>[FC]</em></q> indication at 
+  the end of the <q><em>Info</q></em> string (you may need to drag the right 
+  edge past the window to trigger the underlying scroll bar), or look at the 
+  FC state in the <a href="#gnet4">Flags</a> column. As a rule of thumb, if 
+  you have more than one node flow-controlling at a given time, you don't have 
+  enough outgoing bandwidth dedicated to gnet, and therefore you are harming 
+  the network: either decrease the amount of connections, enable the 
+  <q><em>Prefer compressed connections</em></q> option or raise the outgoing 
+  bandwidth limit. 
 </p>
 
 <h3><a name="gnet3">Why do I lose gnet connections when I have an upload?</a></h3>
@@ -209,18 +230,17 @@
 </p>
 <pre>
      0123456789 (offset)
-     NIrwqTRPFh
-     ^^^^^^^^^
-     |||||||||+ hops flow triggerd (<strong>h</strong>), or total query flow control (<strong>f</strong>)
-     ||||||||+  flow control (<strong>F</strong>), or pending data in queue (<strong>d</strong>)
-     |||||||+   we are push-proxy for node (<strong>P</strong>) or node is our push-proxy (<strong>p</strong>)
-     ||||||+    indicates whether <strong>R</strong>X is compressed
-     |||||+     indicates whether <strong>T</strong>X is compressed
-     ||||+      indicates whether we sent/received a <strong>Q</strong>RT, or send/receive one
-     |||+       indicates whether node is <strong>w</strong>ritable
-     ||+        indicates whether node is <strong>r</strong>eadable
-     |+         indicates connection type (<strong>I</strong>ncoming, <strong>O</strong>utgoing, <strong>P</strong>onging)
-     +          indicates peer mode: <strong>U</strong>ltra, <strong>L</strong>eaf, Legacy (a.k.a. <strong>N</strong>ormal)
+     UIrwQTRPFh 
+     |||||||||+ hops flow triggered (<strong>h</strong>), or total query flow control (<strong>f</strong>)
+     ||||||||+- flow control (<strong>F</strong>), or pending data in queue (<strong>d</strong>)
+     |||||||+-- we are push-proxy for node (<strong>P</strong>) or node is our push-proxy (<strong>p</strong>)
+     ||||||+--- indicates whether <strong>R</strong>X is compressed
+     |||||+---- indicates whether <strong>T</strong>X is compressed
+     ||||+----- we sent/received a <strong>Q</strong>RT, or are sending/receiving one (<strong>q</strong>)
+     |||+------ indicates whether node is <strong>w</strong>ritable
+     ||+------- indicates whether node is <strong>r</strong>eadable
+     |+-------- connection type: (<strong>I</strong>ncoming, <strong>O</strong>utgoing, <strong>P</strong>onging)
+     +--------- peer mode: <strong>U</strong>ltra, <strong>L</strong>eaf, or Legacy (a.k.a. <strong>N</strong>ormal)
 </pre>
 
 <h3><a name="gnet5">What does "Harmful version banned, upgrade required" mean?</a></h3>
@@ -286,10 +306,11 @@
 
 <h3><a name="down0">What does the status "Ignoring requested [SHA1|name & size]" mean?</a></h3>
 <p>
-  This means that gtk-gnutella has that file recorded as complete in its fileinfo 
-  database. This database is usually located in ~/.gtk-gnutella/fileinfo. At the 
-  moment, there is no way to remove or modify an entry of that database from the 
-  gui, but you can edit the file with any text editor while gtk-gnutella is not 
+  This means that gtk-gnutella has that file recorded as complete in its 
+  fileinfo database. This database is usually located in 
+  ~/.gtk-gnutella/fileinfo. At the moment, there is no way to remove or modify 
+  an entry of that database from the gui, but you can edit the file with any 
+  text editor while gtk-gnutella is not 
   running. 
 </p>
 
@@ -299,18 +320,20 @@
   that host does not provide a SHA1 hash for the file. Since the file is new
   (not yet partially downloaded), gtk-gnutella cannot do an overlap check to
   verify that the file on the host is really the file you want. In such a case
-  it relies on the SHA1 provided by the remote host, but if no SHA1 is supplied,
-  then gtk-gnutella has no way of assuring that the file it wants to download
-  and the file on the remote server are really the same.<br>
-  If you get annoyed by those messages you can activate the "optimistic first
-  chunk" option on the "download settings" tab in the config page.
+  it relies on the SHA1 provided by the remote host, but if no SHA1 is
+  supplied, then gtk-gnutella has no way of assuring that the file it wants to 
+  download and the file on the remote server are really the same.<br>
+  If you get annoyed by those messages you can activate the <q><em>Optimistic 
+  first chunk</q></em> option on the <q><em>Download settings</q></em> tab in 
+  the config page.
 </p>
 
 <h3><a name="down2">Why is the same file downloaded X times?</a></h3>
 <p>
-  Check the "Range" column. This is called <a href="#down3">swarming</a>.
-  Gtk-gnutella tries to get the file in <a href="#down4">chunks</a> and will
-  get it from multiple hosts in parallel, if possible.
+  Check the <q><em>Range</em></q> column. This is called 
+  <a href="#down3">swarming</a>.  Gtk-gnutella tries to get the file in 
+  <a href="#down4">chunks</a> and will get it from multiple hosts in parallel, 
+  if possible.
 </p>
 
 <h3><a name="down3">What is "swarming"?</a></h3>
@@ -325,8 +348,9 @@
 <p>
   A chunk is another word for "part of a file". When gtk-gnutella runs in
   <a href="#down4">swarming mode</a> it will retrieve multiple chunks of a
-  downloading file until it has downloaded the complete file. The "Range"
-  column shows you which chunk you are currently downloading.
+  downloading file until it has downloaded the complete file. The 
+  <q><em>Range</em></q> column shows you which chunk you are currently 
+  downloading.
 </p>
 
 <h3><a name="down5">What is the "download mesh"?</a></h3>
@@ -358,7 +382,8 @@
 
 <h3><a name="up0">What does "Normalized" mean?</a></h3>
 <p>
-  This shows the total amount of bytes uploaded for the file divided by the file size.
+  This shows the total amount of bytes uploaded for the file divided by the 
+  file size.
 </p>
 
 <h2>GTK+ 2.x</h2>
