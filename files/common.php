@@ -45,7 +45,8 @@ $pages = array(
 	"news_bridge",
 	"news_old_header",
 	"code101",
-	"code101a"
+	"code101a",
+	"banners"
 );
 
 /* ** hack ** fscking damn php won't use LANG in header() ** hack ** */

@@ -1,0 +1,41 @@
+<h1>Banners</h1>
+<p>
+  Here are the submissions to our banner contest. These will be rated by the
+	developers now and the 5 favourites will remain to be voted by the users.
+	I can't say yet exactly when one of us will have a proper voting script up
+	and running. I hope it will be soon.
+</p>
+<p>
+	Some of the banners will have to be resized before they can be used on the
+	homepage.
+</p>
+<p>
+  <b>Note:</b> Some of the images use transparency. PNG transparency may not
+	be properly displayed by any Internet Explorer version available. If you want
+	to see the images as they were intended to be seen by their creators, use
+	Mozilla, Konqueror, Opera or probably anything except the IE.
+</p>
+
+<div style="text-align:center">
+<div><img src="images/banner_eqom14.png"/></div>
+<hr>
+<div><img src="images/banner_chags.png"/></div>
+<hr>
+<div><img src="images/banner_dnar.png"/></div>
+<hr>
+<div><img src="images/banner_dnar1.png"/></div>
+<hr>
+<div><img src="images/banner_dnar2.png"/></div>
+<hr>
+<div><img src="images/banner_dnar3.png"/></div>
+<hr>
+<div><img src="images/banner_dnar4.png"/></div>
+<hr>
+<div><img src="images/banner_dnar6.png"/></div>
+<hr>
+<div><img src="images/banner_dnar7.png"/></div>
+<hr>
+<div><img src="images/banner_dnar8.png"/></div>
+<hr>
+<div><img src="images/banner_dnar9.png"/></div>
+</div>

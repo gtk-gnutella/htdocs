@@ -110,8 +110,8 @@
     Limit the number of gnet connections you have.
   </li>
   <li>
-    If you are able to receive incoming connections, enable <q><em>Prefer
-    compressed connections</em></q> in the <q><em>Bandwidth control</em></q>
+    If you are able to receive incoming connections, enable <em>Prefer
+    compressed connections</em> in the <em>Bandwidth control</em>
     options.
   </li>
   <li>
@@ -119,8 +119,8 @@
     files.  With <a href="#down3">swarming</a>, people can upload small chunks
     of files from you, so even a slow connection, multiplied by many sources on
     the gnet, makes a tremendous contribution.  If you have a 56K modem, you
-    can set <q><em>Bandwidth for HTTP traffic</em></q> - <q><em>Limit
-    bandwidth for outgoing traffic</em></q> to 1K/s so you still have the
+    can set <em>Bandwidth for HTTP traffic</em> - <em>Limit
+    bandwidth for outgoing traffic</em> to 1K/s so you still have the
     majority of your bandwidth for downloading.
   </li>
   <li>
@@ -238,8 +238,8 @@
   Even when people cannot connect directly to you, they can still download
   files from your node using a <a href="#down_push">push request</a>.<br>
   You can configure the port gtk-gnutella listens on. The setting
-  <q><em>Listen port</em></q> is located on the
-  <q><em>Network settings</em></q> tab on the config page.
+  <em>Listen port</em> is located on the
+  <em>Network settings</em> tab on the config page.
 </p>
 
 <h3><a name="gnet-udp">Does gtk-gnutella use UDP?</a></h3>
@@ -256,14 +256,14 @@
 <p>
   The <em>FC</em> means "flow control".<br>
   In general, you should make sure that servents to which you are connected do
-	not flow control.  Watch for the trailing <q><em>[FC]</em></q> indication at
-	the end of the <q><em>Info</em></q> string (you may need to drag the right
+  not flow control.  Watch for the trailing <em>[FC]</em> indication at
+  the end of the <em>Info</em> string (you may need to drag the right
   edge past the window to trigger the underlying scroll bar), or look at the
   FC state in the <a href="#gnet4">Flags</a> column. As a rule of thumb, if
   you have more than one node flow-controlling at a given time, you don't have
   enough outgoing bandwidth dedicated to gnet, and therefore you are harming
   the network: either decrease the amount of connections, enable the
-	<q><em>Prefer compressed connections</em></q> option or raise the outgoing
+  <em>Prefer compressed connections</em> option or raise the outgoing
   bandwidth limit.
 </p>
 
@@ -324,10 +324,10 @@
 <h3><a name="gnet8">How can I increase the timeouts?</a></h3>
 <p>
   If your internet connection suffers from high latency it might help to
-  increase the timeouts. Go to <q><em>Config->User Interface</em></q>
-  and tick <q><em>allow experimenting with low-level settings</em></q>.
+  increase the timeouts. Go to <em>Config->User Interface</em>
+  and tick <em>Expert mode</em>.
   Now, you'll find a lot more settings to change when you go to
-  <q><em>Config->GnutellaNet Settings</em></q>.
+  <em>Config->GnutellaNet Settings</em>.
 </p>
 
 <h3><a name="gnet-auto">How does auto mode decide between ultra and leaf?</a></h3>
@@ -379,7 +379,7 @@
 <p>
 	A <q><em>passive</em></q> search will return all the search results that 
 	pass through gtk-gnutella.  By 
-	<a href="index.php?page=filtering_howto">filtering</a> these results, 
+	<a href="index.php?page=filtering_howto">filtering</a> these results,
 	passive searches can be useful.  
 </p>
 <p>
@@ -401,7 +401,7 @@
 	filter it to display only mp3 files, then all mp3 files from all your open 
 	searches will be conveniently aggregated in one search window.  By opening 
 	more passive searches with different filters, you can display different 
-	file types in each. 
+	file types in each.
 </p>
 
 <h2>Downloads</h2>
