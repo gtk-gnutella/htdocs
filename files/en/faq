@@ -19,6 +19,7 @@
 <ul>
   <li><a href="#gnet0">What is a good number of connections?</a></li>
   <li><a href="#gnet1">Do I need to forward a port on my firewall?</a></li>
+  <li><a href="#gnet-udp">Does gtk-gnutella use UDP?</a></li>
   <li><a href="#gnet2">What does "[FC]" mean?</a></li>
   <li><a href="#gnet3">Why do I lose gnet connections when i have an upload?</a></li>
   <li><a href="#gnet4">What does this stuff in the Flags column mean?</a></li>
@@ -168,6 +169,16 @@
   your node using a <a href="#down3">push request</a>.<br>
   You can configure the port gtk-gnutella listens on. The setting "listen port" is
   located on the "Network settings" tab on the config page.
+</p>
+
+<h3><a name="gnet-udp">Does gtk-gnutella use UDP?</a></h3>
+<p>
+  No, gtk-gnutella does not use 
+  <a href="http://www.faqs.org/rfcs/rfc768.html">UDP</a>.  The Gnutella 
+  Protocol uses only 
+  <a href="http://www.faqs.org/rfcs/rfc793.html">TCP</a>.  However, proposals 
+  are occasionally made to make use of UDP on the gnutella network so this may 
+  change at some point in the future.  
 </p>
 
 <h3><a name="gnet2">What does "[FC]" mean?</a></h3>
