@@ -13,7 +13,7 @@ if (!defined(BASEDIR)) {
   define(BASEDIR, "/home/groups/g/gt/gtk-gnutella/htdocs/files/");
 }
 define(NEWSMIN, 16);
-define(NEWSMAX, 25);
+define(NEWSMAX, 26);
 
 define(BASEURL, "$PHP_SELF");
 define(GENDIR,  "general/");
