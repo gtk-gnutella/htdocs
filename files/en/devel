@@ -30,10 +30,6 @@ Now to the important questions:<br>
     developing, to be precise.
   </li>
   <li>
-    Do you have any web skills and would like to take over the maintenance of
-    the GTKG website?
-  </li>
-  <li>
     Do you want to contribute, but do not know exactly what to do?
   </li>
 </ul>
@@ -82,7 +78,9 @@ thank you.
 <p>
 You can get cvs snapshots from these places:
 <ul>
- <li><a href="http://linuxserver.nonamer.dyndns.org/~jeroen/gtk-gnutella-current/">MrJoe</a> (Sponsored by <a href="http://www.asselman.com/">Jeroen Asselman</a>)
+ <li><a 
+href="http://gtk-gnutella.asselman.com/">MrJoe</a> (Sponsored by <a 
+href="http://www.asselman.com/">Jeroen Asselman</a>)
  <li><a href="http://gtkg.guruz.de/">guruz</a> (Sponsored by <a href="http://www.bawue.de">bawue.net</a>)
 </ul>
 </p>

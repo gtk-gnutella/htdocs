@@ -28,8 +28,6 @@
 <p>
   We have quite big projects ahead of us:
   <ol>
-    <li>Ultrapeer support (I've started working on that).</li>
-    <li>PARQ: passive/active remote queueing.</li>
     <li>Tiger tree hash integration.</li>
     <li>Metadata collection for shared files (e.g. for audio, the type, length and
     the bitrate, for videos: the type of codec, length, resolution on screen.
