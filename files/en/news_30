@@ -1,0 +1,67 @@
+<!-- $Id$ -->
+<h4>2. November 2003, Version 0.93 released</h4>
+<p>
+  You can get this new version from our download section.
+  MD5Sum: 78d099392a61064ca30fac84c888550b gtk-gnutella-0.93.tar.bz2
+</p>
+<p>
+  <strong>These are some of the changes made since 0.92.1 stable:</strong>
+</p>
+<ul>
+  <li>
+    GTK-Gnutella now support both Partial File serving, as a client as well as 
+    a server. As soon as a download is started, can be used as an alternate 
+    source for others even though the download is not completed yet.
+  </li>
+  <li>
+    When a mismatch happens during downloading the file can now be 
+    automatically   removed and restarted again. 
+  </li>
+  <li>
+    Improved GUI to specify better which downloads should be cleared from the 
+    list (completed, failed, unavailable) - Collects alternate download 
+    locations aquired from query hits.
+  </li>
+  <li>
+    Support for hostname instead of only an ip. If you have a dynamic ip but 
+    got a static hostname, for example a .dyndns.org address, gtk-gnutella can 
+    try to connect to the ip associated with the hostname.  
+  </li>
+  <li>
+    Sends out alternate locations which should not be tried.
+  </li>
+  <li>
+    Won't send full headers when short on bandwith.
+  </li>
+  <li>
+    Any changes in settings are now automatically saved, there is no need to 
+    quit the client anymore to make sure the settings are saved.
+  </li>
+  <li>
+    Running gtk-gnutella in Auto peermode should no longer cause a crash.
+  </li>
+  <li>
+    New addresses in hostiles.txt to protected against malicious hosts.
+  </li>
+  <li>
+    gwcache.boot was cleaned up. Dead links were removed.
+  </li>
+  <li>
+    Remote control should actually work without crashing gtk-gnutella.
+  </li>
+  <li>
+    The build problems which occured in 0.92.1 due to the switch to metaconfig 
+    should be (mostly) gone. 
+  </li>
+  <li>
+    Code cleanup to build on more platforms.
+  </li>
+  <li>
+    GTK2 interface currently does not have a maintainer, not all options which 
+    are available in the GTK1 interface might have made it in the GTK2 
+    interface.
+  </li>
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_[30] -->
