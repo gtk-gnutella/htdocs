@@ -16,8 +16,8 @@
  */
 define(VERSION,	"@@VERSION@@");
 define(BASEDIR,	"/home/groups/g/gt/gtk-gnutella/htdocs/files/");
-define(NEWSMIN, 0);
-define(NEWSMAX, 9);
+define(NEWSMIN, 6);
+define(NEWSMAX, 19);
 /*
  * end of user changeable variables
  *
