@@ -22,6 +22,7 @@ include("files/common.php");
         Gtk-Gnutella - The Graphical Unix Gnutella Client 
       </title>
       <link rel="stylesheet" type="text/css" href="default.css">
+      <link rel="icon" href="images/favicon.png" type="image/png">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     </head>
     <body>
