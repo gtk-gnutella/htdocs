@@ -52,7 +52,7 @@
 
 <h2>GTK+ 2.x</h2>
 <ul>
-  <li><a href="#gtk2_fonts">I have problems with the fonts.</a></li>
+  <li><a href="#gtk2_slow">Gtk2 is way sloooow.</a></li>
   <li><a href="#gtk2_ctype">Non-ASCII characters show up as _ (underscore).</a></li>
 </ul>
 
@@ -79,6 +79,9 @@
   At the moment you can try one or more of the following things if you are a user 
   on a slow line (modem):
   <ul>
+    <li>Run as a leaf node. You change the peermode setting in the configuration 
+      panel under GnutellaNet. An icon in the statusbar indicates in which mode
+      you are running.</li>
     <li>Limit the number of GNet connections you have.</li>
     <li>If you are able to receive incoming connections, enable "prefer compressed 
       connections" in the GnutellaNet options (expert mode needs to be enabled.)</li>
@@ -95,12 +98,12 @@
   bandwidth to gnet traffic from the network traffic by behaving as their "router".  
   For the modem users connected (called leaves/leafs or ultraleaves/ultraleafs) 
   it looks like they are connected to some kind of server. <br>
-  gtk-gnutella will support ultrapeers and leaves with version 0.92.  
+  gtk-gnutella support ultrapeers and leaves since version 0.92.  
 </p>
 
 <h2>Gnutella connections</h2>
 
-<h3><a name="gnet0">What is a good number of connections?</a></h3>
+<h3><a name="gnet0">What is a good number of connections in legacy mode?</a></h3>
 <p>
   A good number is 4/5 (minimum/maximum). You can calculate a bandwidth
   consumption of 1kb/s per connection. You should never use up all your
@@ -298,13 +301,12 @@
 
 <h2>GTK+ 2.x</h2>
 
-<h3><a name="gtk2_fonts">I have problems with the fonts.</a></h3>
+<h3><a name="gtk2_slow">Gtk2 is way sloooow.</a></h3>
 <p>
-  Set the environment variable GDK_USE_XFT to 0 or 1 and see whether
-  this helps. You can also define which font should be used by putting
-  the following line into your ~/.gtkrc-2.0 file:<br>
-  gtk-font-name = "Sans 12"<br>
-  Sans is the name of the font and 12 the size. Don't miss the whitespace.
+  Set the environment variable GDK_USE_XFT to 0 and see whether
+  this helps. This turns off anti aliasing in Gtk2 which can use a lot of cpu.
+  The Gtk2 frontend is much slower than the Gtk1 frontend. So on a slow machine,
+  you should consider using the Gtk1 frontend.
 </p>
 
  
