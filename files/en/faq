@@ -11,6 +11,7 @@
 <ul>
   <li><a href="#general0">What is gnutella anyway?</a></li>
   <li><a href="#general1">This eats up too much bandwidth!</a></li>
+  <li><a href="#general2">What is an Ultrapeer?</a></li>
 </ul>
 
 <h2>Gnutella connections</h2>
@@ -73,6 +74,16 @@
   </ul>
 </p>
 
+<h3><a name="general2">What is an Ultrapeer?</a></h3>
+<p>
+  An Ultrapeer shields modem users or users that otherwise can't dedicate their bandwidth to gnet traffic
+  from the network traffic by behaving as their "router".
+  For the modem users connected (called leaves/leafs or ultraleaves/ultraleafs) it looks like they are connected
+  to some kind of server. <br>gtk-gnutella will support ultrapeers and leaves with version 0.92.
+</p>
+
+
+
 <h2>Gnutella connections</h2>
 
 <h3><a name="gnet0">What is a good number of connections?</a></h3>
@@ -124,16 +135,18 @@
 <p>
   You can see the type and some of the settings of a connection here.
   <pre>
-     0123456 (offset)
-     NIrwTRF (example)
-     ^^^^^^^
-     ||||||+ flow control
-     |||||+  indicates whether RX is compressed
-     ||||+   indicates whether TX is compressed
-     |||+    indicates whether node is writable
-     ||+     indicates whether node is readable
-     |+      indicates connection type (Incoming, Outgoing, Ponging)
-     +       indicates peer mode (Normal, Ultra, Leaf)
+     012345678 (offset)
+     NIrwqTRFh
+     ^^^^^^^^^
+     ||||||||+ hops flow triggerd (h), or total query flow control (f)
+     |||||||+  flow control
+     ||||||+   indicates whether RX is compressed
+     |||||+    indicates whether TX is compressed
+     ||||+     indicates whether we sent/received a QRT, or send/receive one
+     |||+      indicates whether node is writable
+     ||+       indicates whether node is readable
+     |+        indicates connection type (Incoming, Outgoing, Ponging)
+     +         indicates peer mode (Normal, Ultra, Leaf)
   </pre>
 </p>
 
