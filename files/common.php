@@ -9,8 +9,7 @@
  *
  */
 
-#define(BASEDIR,	"/home/groups/g/gt/gtk-gnutella/htdocs/files/");
-define(BASEDIR,	"/var/www/gtk-gnutella/files/");
+define(BASEDIR,	"/home/groups/g/gt/gtk-gnutella/htdocs/files/");
 define(NEWSMIN, 6);
 define(NEWSMAX, 19);
 
