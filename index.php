@@ -30,8 +30,7 @@ include("files/common.php");
       <div>
         <a href="<?php echo BASEURL ?>?page=index">
           <img src="images/gtk-gnutella.png" 
-            width="408" height="44" alt="GTK-GNUTELLA" border="0">
-        </a>
+            width="408" height="44" alt="GTK-GNUTELLA" border="0"></a>
       </div>
       <div>
         Current version: <?php echo VERSION ?>
@@ -61,8 +60,7 @@ include("files/common.php");
         <div>
           <a href="http://glade.gnome.org/">
             <img src="images/glade-banner.png" 
-              alt="Glade" border="0" width="100" height="45">
-          </a>
+              alt="Glade" border="0" width="100" height="45"></a>
         </div>
       </div>
       <div class="boxed">
@@ -70,13 +68,11 @@ include("files/common.php");
         <br><br>
         <a href="http://validator.w3.org/check/referer">
           <img src="images/valid-html401.png" 
-            alt="Valid HTML 4.01!" border="0" width="88" height="31">
-        </a>
+            alt="Valid HTML 4.01!" border="0" width="88" height="31"></a>
         <br><br>
         <a href="http://jigsaw.w3.org/css-validator/">
           <img src="images/valid-css.png" 
-            alt="Valid CSS!" border="0" width="88" height="31">
-        </a>
+            alt="Valid CSS!" border="0" width="88" height="31"></a>
       </div>
     </div>
 
