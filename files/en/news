@@ -1,6 +1,8 @@
 <!-- the news items -->
 <!-- $Id$ -->
 <?php
+icecontent("intro");
+
 for($i = NEWSMAX; $i >= NEWSMIN; $i--) {
 	icecontent("news_$i");	
 }
