@@ -10,8 +10,9 @@
 <h2>General</h2>
 <ul>
   <li><a href="#general0">What is gnutella anyway?</a></li>
+  <li><a href="#general-gtkg">What is GTKG?</a></li>
   <li><a href="#general1">This eats up too much bandwidth!</a></li>
-  <li><a href="#general2">What is an Ultrapeer?</a></li>
+  <li><a href="#general-ultrapeer">What are Ultrapeers and Leaf nodes?</a></li>
 </ul>
 
 <h2>Gnutella connections</h2>
@@ -69,10 +70,17 @@
 
 <h3><a name="general0">What is gnutella anyway?</a></h3>
 <p>
-  Gnutella is a decentralized Peer to Peer information exchanging network. At the 
-  moment you can publish and download files of any kind using the Gnutella network. 
-  For more information, visit the <a href="http://www.infoanarchy.org/wiki/wiki.pl?Gnutella"> 
-  definition of gnutella</a> on the infoAnarchy wiki.
+  Gnutella is a decentralized Peer to Peer information exchanging network. At 
+  the moment you can publish and download files of any kind using the Gnutella 
+  network.  For more information, visit the 
+  <a href="http://www.infoanarchy.org/wiki/wiki.pl?Gnutella">  definition of 
+    gnutella</a> on the infoAnarchy wiki.
+</p>
+
+<h3><a name="general-gtkg">What is "GTKG?"</a></h3>
+<p>
+  We often refer to gtk-gnutella as GTKG (because it's shorter.)  GTK comes 
+  from GTK+ which is the graphical toolkit used by gtk-gnutella.
 </p>
 
 <h3><a name="general1">This eats up too much bandwidth!</a></h3>
@@ -93,13 +101,24 @@
     people won't be able to search your files.</li>
 </ul>
 
-<h3><a name="general-ultrapeer">What is an Ultrapeer?</a></h3>
+<h3><a name="general-ultrapeer">What are Ultrapeers and Leaf nodes?</a></h3>
 <p>
-  An Ultrapeer shields modem users or users that otherwise can't dedicate their 
-  bandwidth to gnet traffic from the network traffic by behaving as their "router".  
-  For the modem users connected (called leaf nodes or ultraleaves/ultraleafs) 
-  it looks like they are connected to some kind of server. <br>
-  gtk-gnutella support ultrapeers and leaf nodes since version 0.92.  
+  Since version 0.92, gtk-gnutella has implemented 
+  <a href="?php echo BASEURL ?>?page=features">ultrapeers</a> and leaf nodes. 
+  This divides servents on the gnet into leaf nodes, which connect only to 
+  ultrapeers, and ultrapeers, which connect to many leaf nodes and a small 
+  number of other ultrapeers.  (see 
+  <a href="#gnet0">What is a good number of connections?</a>)  Ultrapeers are 
+  not firewalled, have long expected uptimes (more than two hours), and have 
+  sufficient surplus bandwidth to donate to the gnet.  Ultrapeers forward 
+  queries from their leaf nodes and leaf nodes upload to their ultrapeers
+  <a href="?php echo BASEURL ?>?page=features">QRP</a> tables which contain 
+  hashes of keywords that will match files shared by the leaf.  When an 
+  ultrapeer gets a hit on a query routing table, it relays the query to the 
+  corresponding leaf node.  The result is very low gnet traffic for each leaf 
+  node, which frees bandwidth for sharing and downloading.  Ultrapeers can 
+  also act as <a href="?php echo BASEURL ?>?page=features">push-proxies</a> 
+  for firewalled leaf nodes.  
 </p>
 
 <h2>Gnutella connections</h2>
@@ -107,7 +126,7 @@
 <h3><a name="gnet0">What is a good number of connections?</a></h3>
 <p>
   Short answer: in legacy mode, 4/5 (minumum/maximum), in 
-  <a href="#general-leaf">leaf</a> mode 3 ultrapeers, in 
+  <a href="#general-ultrapeer">leaf</a> mode 3 ultrapeers, in 
   <a href="#general-ultrapeer">ultrapeer</a> mode 8/10 (minimum/maximum) 
   ultrapeers and at least 20 leaf nodes.  You can calculate a bandwidth 
   consumption of 1kb/s per connection in legacy mode, however, this will be 
@@ -178,19 +197,19 @@
   push-proxies are implemented in 0.92.1c and later.  
 </p>
 <pre>
-     012345678 (offset)
+     0123456789 (offset)
      NIrwqTRPFh
      ^^^^^^^^^
-     |||||||||+ hops flow triggerd (<b>h</b>), or total query flow control (<b>f</b>)
-     ||||||||+  flow control (<b>F</b>), or pending data in queue (<b>d</b>)
-     |||||||+   we are push-proxy for node (<b>P</b>) or node is our push-proxy (<b>p</b>)
-     ||||||+    indicates whether <b>R</b>X is compressed
-     |||||+     indicates whether <b>T</b>X is compressed
-     ||||+      indicates whether we sent/received a <b>Q</b>RT, or send/receive one
-     |||+       indicates whether node is <b>w</b>ritable
-     ||+        indicates whether node is <b>r</b>eadable
-     |+         indicates connection type (<b>I</b>ncoming, <b>O</b>utgoing, <b>P</b>onging)
-     +          indicates peer mode: <b>U</b>ltra, <b>L</b>eaf, Legacy (a.k.a. <b>N</b>ormal)
+     |||||||||+ hops flow triggerd (<strong>h</strong>), or total query flow control (<strong>f</strong>)
+     ||||||||+  flow control (<strong>F</strong>), or pending data in queue (<strong>d</strong>)
+     |||||||+   we are push-proxy for node (<strong>P</strong>) or node is our push-proxy (<strong>p</strong>)
+     ||||||+    indicates whether <strong>R</strong>X is compressed
+     |||||+     indicates whether <strong>T</strong>X is compressed
+     ||||+      indicates whether we sent/received a <strong>Q</strong>RT, or send/receive one
+     |||+       indicates whether node is <strong>w</strong>ritable
+     ||+        indicates whether node is <strong>r</strong>eadable
+     |+         indicates connection type (<strong>I</strong>ncoming, <strong>O</strong>utgoing, <strong>P</strong>onging)
+     +          indicates peer mode: <strong>U</strong>ltra, <strong>L</strong>eaf, Legacy (a.k.a. <strong>N</strong>ormal)
 </pre>
 
 <h3><a name="gnet5">What does "Harmful version banned, upgrade required" mean?</a></h3>
