@@ -1,0 +1,16 @@
+<a href="<?php echo BASEURL ?>?page=news">
+  News</a><br>
+<a href="<?php echo BASEURL ?>?page=shots090">
+  Screenshots</a><br>
+<a href="<?php echo BASEURL ?>?page=faq">
+  FAQ</a><br>
+<a href="<?php echo BASEURL ?>?page=docs">
+  Documentation</a><br>
+<a href="<?php echo BASEURL ?>?page=mailing">
+  Getting help</a><br>
+<a href="<?php echo BASEURL ?>?page=devel">
+  Development</a><br>
+<a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
+  Download</a><br>
+<a href="<?php echo BASEURL ?>?page=links">
+  Links</a><br>

@@ -1,0 +1,14 @@
+<h1 align="center">gtk-gnutella FAQ</h1>
+<h3>Downloads</h3>
+<ul>
+  <li><a href="#down0">What does the status "ignore by [SHA1|name & size]" mean</a></li>
+</ul>
+
+<h4><a name="down0">What does the status "ignore by [SHA1|name & size]" mean</a></h4>
+<p>
+  This means that gtk-gnutella has that file recorded as complete in its 
+  fileinfo database. This database is usually located in 
+  ~/.gtk-gnutella/fileinfo. At the moment there is no way to remove or
+  modify an entry of that database from the gui, but you can edit the file
+  with any text editor while gtk-gnutella is not running. 
+</p>
