@@ -1,11 +1,18 @@
-<!-- the news items -->
 <!-- $Id$ -->
 <?php
+
+/* The site intro */
 icecontent("intro");
 
-for($i = NEWSMAX; $i >= NEWSMIN; $i--) {
-	icecontent("news_$i");	
+/* Recent news */
+icecontent("news_header");
+newsfiles();
+for($i = 0; $i < NEWSNUM; $i++) {
+	icecontent("$news_items[$i]");
 }
+
+/* Link to older news */
+icecontent("news_bridge");
 ?>
-<!-- end news items -->
+<!-- end news -->
 
