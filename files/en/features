@@ -21,10 +21,10 @@
 		<li><a href="http://www.gnucleus.net/gwebcache">GWebCache</a> Proposal
 		<li><a href="http://groups.yahoo.com/group/the_gdf/files/Proposals/HUGE/draft-gdf-huge-0_94.html">HUGE</a> (Hash/URN Gnutella Extensions)
 		<li>Ping/Pong reduction
-		<li>PARQ (client side, only in 0.92b)
-		<li>PFSP (client side, only in 0.92b)
-		<li>Vendor Messages (only in 0.92b)
-		<li>Ultrapeers & QRP (only in 0.92b)
+		<li>PARQ (client side, only in 0.92b2)
+		<li>PFSP (client side, only in 0.92b2)
+		<li>Vendor Messages (only in 0.92b2)
+		<li>Ultrapeers & QRP (only in 0.92b2)
 		</ul>
 </ul>
 <br><br>

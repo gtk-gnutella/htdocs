@@ -19,8 +19,10 @@
   <li><a href="#gnet0">What is a good number of connections?</a></li>
   <li><a href="#gnet1">Do I need to forward a port on my firewall?</a></li>
   <li><a href="#gnet2">What does "[FC]" mean?</a></li>
-  <li><a href="#gnet3">Why do i loose gnet connections when i have an upload?</a></li>
+  <li><a href="#gnet3">Why do I lose gnet connections when i have an upload?</a></li>
   <li><a href="#gnet4">What does this stuff in the type column mean?</a></li>
+  <li><a href="#gnet5">What does "Harmful version banned, upgrade required" mean?</a></li>
+  <li><a href="#gnet6">What does "Outdated version, please upgrade" mean?</a></li>
 </ul>
 
 
@@ -157,7 +159,21 @@
   </pre>
 </p>
 
+<h3><a name="gnet5">What does "Harmful version banned, upgrade required" mean?</a></h3>
+<p>
+  Sometimes, servents are discovered to have a bug or behaviour that is harmful 
+  to the gnet.  For example, gtk-gnutella-0.92b had a bug that generated excessive 
+  queries which hammered on the <a href="index.php?page=gwebcache">GWebCache system</a>.  
+  Such banning is exceptional, usually restricted to specific versions, and the 
+  servent's author is informed about the banning.   
+</p>
 
+<h3><a name="gnet6">What does "Outdated version, please upgrade" mean?</a></h3>
+<p>
+  Versions of gtk-gnutella more than one year old are banned, since they 
+  lack features that are important to the rapidly evolving gnet's health and 
+  scalability.  In addition, unstable (cvs) versions are banned after 90 days.  
+</p>
 
 <h2>Searches</h2>
 

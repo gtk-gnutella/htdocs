@@ -1,91 +1,115 @@
+<h2>Developers Howto</h2>
 <p>
-<h2>"Developers Howto"</h2>
-<pre>
-What I'm going to tell you applies to really anyone who wishes to start
-working on GTKG:
+  What I'm going to tell you applies to really anyone who wishes to start
+  working on GTKG:
+  <ul>
+    <li>Read the source code: take one functionality you'd like to understand,
+    and follow the execution path.  Use the "tags" mode of your favorite
+    editor to navigate, and tools like "cscope" to cross-reference things.</li>
 
-* Read the source code: take one functionality you'd like to understand,
-  and follow the execution path.  Use the "tags" mode of your favorite
-  editor to navigate, and tools like "cscope" to cross-reference things.
+    <li>Learn the doc/devguide/STYLE by heart, before making any change to the
+    code.  It is important that we all use a uniform coding style to make
+    the source pleasant to read.  The coding style we picked (mine, mostly)
+    is not arbitrary: it is the one used most commonly in the industry.</li>
 
-* Learn the doc/devguide/STYLE by heart, before making any change to the
-  code.  It is important that we all use a uniform coding style to make
-  the source pleasant to read.  The coding style we picked (mine, mostly)
-  is not arbitrary: it is the one used most commonly in the industry.
+    <li>Learn basics of Glib: lists and hash tables.  They're used everywhere.
+    You can also learn the I/O stuff, but it is less important to master
+    at first.</li>
 
-* Learn basics of Glib: lists and hash tables.  They're used everywhere.
-  You can also learn the I/O stuff, but it is less important to master
-  at first.
+    <li>Last but not least, if you wish to work on the Gnutella core, you need
+    to learn and understand the Gnutella protocol itself, but also master
+    HTTP/1.1 specs.</li>
 
-* Last but not least, if you wish to work on the Gnutella core, you need
-  to learn and understand the Gnutella protocol itself, but also master
-  HTTP/1.1 specs.
+    <li>Start with small features / bug fixes.  The code is not that complex, but
+    the data structures are, and their relationships are quite tricky.</li>
+  </ul>
+</p>
 
-* Start with small features / bug fixes.  The code is not that complex, but
-  the data structures are, and their relationships are quite tricky.
+<p>
+  We have quite big projects ahead of us:
+  <ol>
+    <li>Ultrapeer support (I've started working on that).</li>
+    <li>PARQ: passive/active remote queueing.</li>
+    <li>Tiger tree hash integration.</li>
+    <li>Metadata collection for shared files (e.g. for audio, the type, length and
+    the bitrate, for videos: the type of codec, length, resolution on screen.
+    For images, type (jpg, gif) and size. etc...).</li>
+    <li>Support for XML queries, so that people can search for various types of
+    characteristics on the collected metadata.</li>
+    <li>magnet: URI support: make GTKG a magnet: handler.</li>
+    <li>Separation of the core process and the GUI processes.</li>
+    <li>Redesign of the logging layer, to separate different logs of the
+    various subsystems.  Present to the users only the warnings he can
+    understand or do something about.</li>
+    <li>Skim through all the recorded "feature request" on sourceforge to see
+    whether we have forgotten something. ;-)</li>
+    <li>Documentation.  We lack documentation.</li>
+  </ol>
+</p>
 
-We have quite big projects ahead of us:
+<p>
+  If you wish to participate to Gnutella core development, you also need
+  to register to the <a href="http://groups.yahoo.com/group/the_gdf/">
+  GDF (Gnutella Developer Forum)</a>.
+</p>
 
-1. Ultrapeer support (I've started working on that).
-2. PARQ: passive/active remote queueing.
-3. Tiger tree hash integration.
-4. Metadata collection for shared files (e.g. for audio, the type, length and
-   the bitrate, for videos: the type of codec, length, resolution on screen.
-   For images, type (jpg, gif) and size. etc...).
-5. Support for XML queries, so that people can search for various types of
-   characteristics on the collected metadata.
-6. magnet: URI support: make GTKG a magnet: handler.
-7. Separation of the core process and the GUI processes.
-8. Redesign of the logging layer, to separate different logs of the
-   various subsystems.  Present to the users only the warnings he can
-   understand or do something about.
-9. Skim through all the recorded "feature request" on sourceforge to see
-   whether we have forgotten something. ;-)
-a. Documentation.  We lack documentation.
+<p>
+  Also, get familiar with ALL the documentation available in the "Files" section
+  of the GDF, and in the doc/ directory of the gtk-gnutella sources.  You don't
+  need to do that in one weekend though ;-)  But at least browse it once.
+</p>
 
-If you wish to participate to Gnutella core development, you also need
-to register to the GDF (Gnutella Developer Forum), which you may find
-at http://groups.yahoo.com/group/the_gdf/.
+<p>
+  At first, changes you make should be sent via e-mail for integration.
+  The preferred way to make those diffs is via "cvs diff -u".  After a few
+  successful patches, when you get used to the code, you will be granted direct
+  CVS access in write mode.
+</p>
 
-Also, get familiar with ALL the documentation available in the "Files" section
-of the GDF, and in the doc/ directory of the gtk-gnutella sources.  You don't
-need to do that in one weekend though ;-)  But at least browse it once.
+<p>
+  You should be aware that our quality standards are quite high.  We do not
+  usually commit something that does not work to CVS.  Here, "work" means
+  that it has been tested reasonably for a few days, to make sure nothing is
+  wrong.
+</p>
 
-At first, changes you make should be sent via e-mail for integration.
-The preferred way to make those diffs is via "cvs diff -u".  After a few
-successful patches, when you get used to the code, you will be granted direct
-CVS access in write mode.
+<p>
+  If after all this you're still willing to help, then I'm sure you have all
+  it takes to be able to do wonders.  True wonders.  And of course you're most
+  welcome in the "developer's team".
+</p>
 
-You should be aware that our quality standards are quite high.  We do not
-usually commit something that does not work to CVS.  Here, "work" means
-that it has been tested reasonably for a few days, to make sure nothing is
-wrong.
-
-If after all this you're still willing to help, then I'm sure you have all
-it takes to be able to do wonders.  True wonders.  And of course you're most
-welcome in the "developer's team".
-
+<p>
 I should add that until now, I have enjoyed working with the other developers:
+</p>
 
-Richard, of course, is a truly amazing contributor, who always surprises me with
-the quality of his implementation.  Richard has been promoted "co-admin" on
-the project recently (not that *I* care about those hierarchical distinctions,
-but they're always nice on a resume).
+<p>
+  Richard, of course, is a truly amazing contributor, who always surprises me with
+  the quality of his implementation.  Richard has been promoted "co-admin" on
+  the project recently (not that *I* care about those hierarchical distinctions,
+  but they're always nice on a resume).
+</p>
 
-Vidar, who contributed the swarming code.  It took me a whole month to be
-able to master it and make it evolve, so it says a lot about the complexity
-and the value of his contribution.  Truly impressive work.
+<p>
+  Vidar, who contributed the swarming code.  It took me a whole month to be
+  able to master it and make it evolve, so it says a lot about the complexity
+  and the value of his contribution.  Truly impressive work.
+</p>
 
-Christope Biere, who recently joined, has produced very useful patches.
-He may be able to comment further on what I said here, and tell you more
-about his experience, how he managed to learn from the source code, whatever.
+<p>
+  Christope Biere, who recently joined, has produced very useful patches.
+  He may be able to comment further on what I said here, and tell you more
+  about his experience, how he managed to learn from the source code, whatever.
+</p>
 
-All developers join on the #gtk-gnutella of IRC (freenode.net), and, as a
-matter of fact, we're all Europeans in the same time zone!
+<p>
+  All developers join on the #gtk-gnutella of IRC (freenode.net), and, as a
+  matter of fact, we're all Europeans in the same time zone!
+</p>
 
-I'm looking forward to a bigger development team that will enable us to
-do more in less time, for the benefit of our end users!
-
-Raphael
-</pre>
+<p>
+  I'm looking forward to a bigger development team that will enable us to
+  do more in less time, for the benefit of our end users!<br>
+  <br>
+  Raphael
 </p>
