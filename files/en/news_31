@@ -1,5 +1,26 @@
 <!-- $Id$ -->
 <h4>28. December 2003, Version 0.93.1 released</h4>
+<p>
+  You can get this new version from our 
+  <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
+  Download</a> section.
+</p>
+<p>
+  <strong>Source Code: gtk-gnutella-0.93.1.tar.bz2</strong><br>
+  MD5Sum: <tt>5d9d313f1363be13a1c4e2abac085f1c</tt><br>
+  urn:sha1:<tt>JLRVX2VNN64WXFMOCU7H5FFNNZPB2AWS</tt>
+</p>
+<p>
+  <strong>Debian-3.0 (stable) Package: gtk-gnutella_0.93.1-0_i386.deb</strong><br>
+  MD5Sum: <tt>8203ed9c53f297dcb73798657f927610</tt><br>
+  urn:sha1:<tt>FQ2XETJTTMO6HNQPGNOBGOVVJTHPJUVI</tt>
+</p>
+<p>
+  More packages coming soon.
+</p>
+<p>
+  <strong>These are some of the changes made since 0.93 stable:</strong>
+</p>
 <ul>
   <li>
     Simplified the GUI for non-experts.  Beginners will now see less curious 
@@ -64,7 +85,7 @@
   <li>
     Many other little changes that we'll let you discover...
   </li>
-  </ul>
+</ul>
 <p>
   <em>gtk-gnutella team</em>
 </p>
