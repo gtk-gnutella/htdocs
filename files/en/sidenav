@@ -19,17 +19,24 @@
  	Getting help</a><br>
 <div class="indent">
 	<a href="<?php echo BASEURL ?>?page=bugreport_howto">
-  	Bug Reports</a><br>
+    Bug Report Howto</a><br>
+  <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+    Bug Tracker</a><br>
+  <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
+    Feature Requests</a><br>
 </div>
 
 <a href="<?php echo BASEURL ?>?page=devel">
   Development</a><br>
-
+<div class="indent">
+  <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=304467">
+    Patch Tracker</a><br>
+</div>
 <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
   <strong>Download</strong></a><br>
 <div class="indent">
 	<a href="<?php echo BASEURL ?>?page=devel#devel-snapshots">
-		Snapshots</a>
+		CVS Snapshots</a>
 </div>
 
 <a href="<?php echo BASEURL ?>?page=links">
