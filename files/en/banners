@@ -1,4 +1,39 @@
 <h1>Banners</h1>
+
+<h2>Intermediate results</h2>
+<p>
+	Here are the results so far. I'm still missing votes from three developers. If
+	they don't vote until I put up the polling script, I'll have to ignore thier votes.
+</p>
+
+<center>
+<table>
+	<tr><th>Rank</th> <th>Candidate</th> <th>Votes</th> <th>Points</th></tr>
+	<tr><td>1</td>    <td>17</td>        <td>5</td>     <td>17</td></tr>
+	<tr><td>2</td>    <td>13</td>        <td>3</td>     <td>12</td></tr>
+	<tr><td>3</td>    <td>15</td>        <td>3</td>     <td>11</td></tr>
+	<tr><td>4</td>    <td>16</td>        <td>2</td>     <td>9</td></tr>
+	<tr><td>5</td>    <td>6</td>         <td>3</td>     <td>6</td></tr>
+</table>
+</center>
+
+<p>
+	The developers had 5 votes, the first one being worth 5 points, the second 4 and so on.
+	Currently 5 developers submitted thier votes. Three developers did not submit thier
+	votes yet. The people listed as developers on the project page on SourceForge were
+	allowed to vote in this round. The next round will be public. The five favourite
+	candidates from the developers voting round will enter the public round.
+</p>
+<p>
+	<b>Note:</b> Some of the candidates require to be changed before we will use
+	them on the website. E.g. the aspect ratio or text has to be changed, which
+	may also affect the layout of the image. We vote for the concept and style now,
+	not for the absolute image.
+</p>
+
+<hr>
+
+<h2>Complete overview</h2>
 <p>
   Here are the submissions to our banner contest. These will be rated by the
 	developers now and the 5 favourites will remain to be voted by the users.
