@@ -41,12 +41,12 @@ $pages = array(
   "developers_howto",
   "bugreport_howto",
   "release_history",
-	"news_header",
-	"news_bridge",
-	"news_old_header",
-	"code101",
-	"code101a",
-	"banners"
+  "news_header",
+  "news_bridge",
+  "news_old_header",
+  "code101",
+  "code101a",
+  "banners"
 );
 
 /* ** hack ** fscking damn php won't use LANG in header() ** hack ** */

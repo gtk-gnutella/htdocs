@@ -1,49 +1,93 @@
 <!-- $Id$ -->
-<a href="<?php echo BASEURL ?>?page=news">
-  News</a><br>
 
-<a href="<?php echo BASEURL ?>?page=docs">
- 	Documentation</a><br>
-<div class="indent">
-	<a href="<?php echo BASEURL ?>?page=features">
-  	Features</a><br>
-	<a href="<?php echo BASEURL ?>?page=faq">
-  	FAQ</a><br>
-	<a href="<?php echo BASEURL ?>?page=shots092">
-  	Screenshots</a><br>
-	<a href="<?php echo BASEURL ?>?page=release_history">
-  	History</a><br>
+<!--
+  -- NEWS
+  -->
+<div class="sb_section">
+<a href="<?php echo BASEURL ?>?page=news"
+    class="sb_section_header"
+  >News</a><br>
+</DIV>
+
+<!--
+  -- DOCUMENTATION
+  -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>?page=docs"
+    class="sb_section_header"
+    >Documentation</a>
+
+  <div class="indent">
+    <a href="<?php echo BASEURL ?>?page=features">Features</a><br>
+    <a href="<?php echo BASEURL ?>?page=faq">FAQ</a><br>
+    <a href="<?php echo BASEURL ?>?page=shots092">Screenshots</a><br>
+    <a href="<?php echo BASEURL ?>?page=release_history">History</a><br>
+  </div>
 </div>
 
-<a href="<?php echo BASEURL ?>?page=mailing">
- 	Getting help</a><br>
-<div class="indent">
-	<a href="<?php echo BASEURL ?>?page=bugreport_howto">
-    Bug Report Howto</a><br>
-  <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
-    Bug Tracker</a><br>
-  <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
-    Feature Requests</a><br>
+<!--
+  -- Getting help
+  -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>?page=mailing"
+    class="sb_section_header"
+    >Getting help</a>
+
+  <div class="sb_section_content">
+    <a href="<?php echo BASEURL ?>?page=bugreport_howto">
+      Bug Report Howto</a><br>
+    <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+      Bug Tracker</a><br>
+    <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
+      Feature Requests</a><br>
+  </div>
 </div>
 
-<a href="<?php echo BASEURL ?>?page=devel">
-  Development</a><br>
-<div class="indent">
-  <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=304467">
-    Patch Tracker</a><br>
-	<a href="<?php echo BASEURL ?>?page=code101">
-		Code 101</a>
-</div>
-<a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
-  <strong>Download</strong></a><br>
-<div class="indent">
-	<a href="<?php echo BASEURL ?>?page=devel#devel-snapshots">
-		CVS Snapshots</a>
+<!--
+  -- DEVELOPERS
+  -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>?page=devel"
+    class="sb_section_header"
+    >Developers</a>
+
+  <div class="sb_section_content">
+    <a href="http://sourceforge.net/projects/gtk-gnutella/">
+      SF Project page</a><br>
+    <a href="<?php echo BASEURL ?>?page=code101">
+      Code 101</a>
+  </div>
 </div>
 
-<a href="<?php echo BASEURL ?>?page=links">
-  Links</a><br>
+<!--
+  -- DOWNLOAD
+  -->
+<div class="sb_section">
+  <a href="http://sourceforge.net/project/showfiles.php?group_id=4467"
+    class="sb_section_header"
+    >Download</a>
+   
+  <div class="sb_section_content">
+    <a href="<?php echo BASEURL ?>?page=devel#devel-snapshots">
+      CVS Snapshots</a>
+  </div>
+</div>
 
-<a href="<?php echo BASEURL ?>?page=donate">
-  Donate</a><br>
+<!--
+  -- LINKS
+  -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>?page=links"
+    class="sb_section_header"
+    >Links</a>
+</div>
+
+<!--
+  -- DONATE
+  -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>?page=donate"
+    class="sb_section_header"
+    >Donate</a>
+</div>
 <!-- end sidenav -->

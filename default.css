@@ -72,3 +72,21 @@ div.scroll {
 	overflow:auto;
 	max-height:10em;
 }
+
+div.sb_section {
+	margin-top:0.5em;
+	margin-bottom: 0.5em;
+	padding:0.3em;
+	border-left: solid 2px lightgray;
+	border-top: solid 2px lightgray;
+}
+
+
+a.sb_section_header {
+	font-size:large;
+	font-weight:bold;
+}
+
+div.sb_section_content {
+	margin-left:1em;
+}
