@@ -30,8 +30,9 @@
 </p>
 <ul>
   <li>
-    Support for push proxies was added.  Push proxies allow firewalled 
-    servents to upload to each other. 
+    Push Proxies have been implemented, a direct way to transfer push requests 
+    for firewalled servents over the gnutella network and increase the success 
+    rate of push'ed downloads.
   </li>
   <li>
     Support for pre-0.90 configuration files has been dropped.
