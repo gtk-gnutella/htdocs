@@ -25,6 +25,7 @@
 <ul>
   <li><a href="#down0">What does the status "ignore by [SHA1|name & size]" mean?</a></li>
   <li><a href="#down1">What does the status "No URN on server" mean?</a></li>
+  <li><a href="#down6">Why is the same file downloaded X times?</a></li>
   <li><a href="#down4">What is "swarming"?</a></li>
   <li><a href="#down2">What is a "chunk"?</a></li>
   <li><a href="#down5">What is the "download mesh"?</a></li>
@@ -104,6 +105,13 @@
   and the file on the remote server are really the same.<br> 
   If you get annoyed by those messages you can activate the "optimistic first 
   chunk" option on the "download settings" tab in the config page.
+</p>
+
+<h3><a name="down6">Why is the same file downloaded X times?</a></h3>
+<p>
+  Check the "Range" column. This is called <a href="#down4">swarming</a>.
+  Gtk-gnutella tries to get the file in <a href"#down2">chunks</a> and will
+  get it from multiple hosts in parallel if possible.
 </p>
 
 <h3><a name="down4">What is "swarming"?</a></h3>
