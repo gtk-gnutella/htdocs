@@ -1,0 +1,6 @@
+<!-- $Id$ -->
+<p>
+	<a href="<?php echo BASEURL ?>?page=news_old"><strong>Older news...</strong>
+	</a>
+</p>
+<!-- end news_bridge -->
