@@ -31,15 +31,15 @@
 <div class="sb_section">
   <a href="<?php echo BASEURL ?>?page=mailing"
     class="sb_section_header"
-    >Getting help</a>
+    >Getting&nbsp;help</a>
 
   <div class="sb_section_content">
     <a href="<?php echo BASEURL ?>?page=bugreport_howto">
-      Bug Report Howto</a><br>
+      Bug&nbsp;Report&nbsp;Howto</a><br>
     <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
-      Bug Tracker</a><br>
+      Bug&nbsp;Tracker</a><br>
     <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
-      Feature Requests</a><br>
+      Feature&nbsp;Requests</a><br>
   </div>
 </div>
 
@@ -69,7 +69,7 @@
    
   <div class="sb_section_content">
     <a href="<?php echo BASEURL ?>?page=devel#devel-snapshots">
-      CVS Snapshots</a>
+      CVS&nbsp;Snapshots</a>
   </div>
 </div>
 
