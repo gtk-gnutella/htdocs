@@ -5,7 +5,4 @@ Today Raphael completed the first implementation of the gtk-gntuella
 traffic compression stack. The whole thing is brand new and compression
 is not yet tested very much and will still have it's edges. But the more
 people get the code from CVS and file bug reports, the faster it will be stable.
-<br>
-Note that during the upgrade to this version, your socks username and password
-will be lost, but after all this is unstable. 
 </p>
