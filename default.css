@@ -32,3 +32,8 @@ a.navlink:link,a.navlink:visited {
 a.navlink:active,a.navlink:hover {
         text-decoration: underline
         }
+
+code {
+	font-weight: bold
+	}
+
