@@ -15,7 +15,7 @@
   <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
   <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
   <a href="http://fink.sourceforge.net/pdb/package.php/gtk-gnutella">Darwin/PowerPC</a>,
-  Solaris 8/SPARC, Solaris 8 and 9/x86, Tru64 Unix/Alpha, SGI IRIX 6.2/mips. 
+  Solaris 8/SPARC, Solaris 8 and 9/x86, Tru64 Unix/Alpha, SGI IRIX 6.2/MIPS. 
   <br><br>
   It is released under the GNU Public License (GPL).
 </p>
