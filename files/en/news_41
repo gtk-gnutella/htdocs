@@ -78,8 +78,12 @@ healthy.</p>
   <li>French and German translation updated.</li>
 </ul>
 
-<p>md5sum:de2ff4973c975ee16cdd69ca72c06bcd  gtk-gnutella-0.95.tar.bz2<br />
-urn:sha1:38BE3ABCED5ADD254F7A0FFF88B7E7E1D0E47FA8
+<p>Checksums of the source tarball:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.95.tar.bz2) = de2ff4973c975ee16cdd69ca72c06bcd</li>
+  <li>SHA1 (gtk-gnutella-0.95.tar.bz2) = 38be3abced5add254f7a0fff88b7e7e1d0e47fa8</li>
+  <li>urn:sha1:HC7DVPHNLLOSKT32B77YRN7H4HIOI75I</li>
+  
 </p>
 
 
