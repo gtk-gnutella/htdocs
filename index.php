@@ -1,5 +1,18 @@
-<?php include("files/common.php") ?>
-<!-- $Id$ -->
+<?php 
+
+/*
+ * For local testing for website maintainers
+ * Define your personal BASEDIR in this file.
+ *
+ *		Markus Goetz <guruz@guruz.de>
+ */
+if (file_exists("files/maintainer_include.php")) {
+  include("files/maintainer_include.php");
+}
+
+include("files/common.php");
+
+?>
   <html>
     <head>
       <title>
