@@ -1,7 +1,7 @@
 /* $Id$ */
-a:link    { color: #fc9000; }
-a:visited { color: #fc9000; }
-a:active  { color: #323267; }
+a:link    { color: #4444BB; }
+a:visited { color: #BB4444; }
+a:active  { color: #4444BB; }
 
 body,th,td,h3,h4,h5,p,ul {
 	font-family: helvetica, sans-serif;
@@ -13,7 +13,7 @@ p,pre,ul {
 	}
 
 body {
-	background-color: #bfe3ff;
+	background-color: #AAAAEE;
 	}
 
 h3,h4,h5 {
