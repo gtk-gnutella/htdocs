@@ -153,21 +153,23 @@
 
 <h3><a name="gnet4">What does the stuff in the Flags column mean?</a></h3>
 <p>
-  You can see the type and some of the settings of a connection here.
+  You can see the type and some of the settings of a connection here.  Note 
+  push-proxies are implemented in 0.92.1c and later.  
 </p>
 <pre>
      012345678 (offset)
-     NIrwqTRFh
+     NIrwqTRPFh
      ^^^^^^^^^
-     ||||||||+ hops flow triggerd (h), or total query flow control (f)
-     |||||||+  flow control (F), or pending data in queue (d)
-     ||||||+   indicates whether RX is compressed
-     |||||+    indicates whether TX is compressed
-     ||||+     indicates whether we sent/received a QRT, or send/receive one
-     |||+      indicates whether node is writable
-     ||+       indicates whether node is readable
-     |+        indicates connection type (Incoming, Outgoing, Ponging)
-     +         indicates peer mode (Normal, Ultra, Leaf)
+     |||||||||+ hops flow triggerd (h), or total query flow control (f)
+     ||||||||+  flow control (F), or pending data in queue (d)
+     |||||||+   we are push-proxy for node (P) or node is our push-proxy (p)
+     ||||||+    indicates whether RX is compressed
+     |||||+     indicates whether TX is compressed
+     ||||+      indicates whether we sent/received a QRT, or send/receive one
+     |||+       indicates whether node is writable
+     ||+        indicates whether node is readable
+     |+         indicates connection type (Incoming, Outgoing, Ponging)
+     +          indicates peer mode (Normal, Ultra, Leaf)
 </pre>
 
 <h3><a name="gnet5">What does "Harmful version banned, upgrade required" mean?</a></h3>
