@@ -88,7 +88,7 @@ href="http://wiki.ael.be/index.php/OnlineDemoPartnersWebsites">Numerous
 websites</a> will be shut down or redirected on August 27th just like 
 this one. We think this is a good way to make people more aware of the 
 problem.  The regular gtk-gnutella website will return after the EU 
-parliment vote on Sept.1.
+parliament vote on Sept.1.
 
 </p>
 
