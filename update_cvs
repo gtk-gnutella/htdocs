@@ -16,9 +16,9 @@ cd ${ROOT}
 echo "---->> cvs checkout ${WEB}          <<----"
 cvs -z3 -q -d:pserver:anonymous@cvs1:/cvsroot/gtk-gnutella co ${WEB}
 
-echo "---->> substituting version number  <<----"
-source ${WEB}/VERSION
-sed -e "s|@@VERSION@@|${VERSION}|" ${WEB}/index.php.in > ${WEB}/index.php
+#echo "---->> substituting version number  <<----"
+#source ${WEB}/VERSION
+#sed -e "s|@@VERSION@@|${VERSION}|" ${WEB}/index.php.in > ${WEB}/index.php
 
 echo "---->> chmod -R g+w V2              <<----"
 chmod -R g+w ${ROOT}/${WEB}
