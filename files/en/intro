@@ -5,7 +5,7 @@
 
 <p>
   Gtk-Gnutella is a clone of Gnutella (see 
-  <a href="http://gnutella.wego.com/">gnutella.wego.com</a>).
+  <a href="http://www.gnutella.com/">www.gnutella.com</a>).
   It runs on every Unix which supports <a href="http://www.gtk.org/">GTK+</a> 
   (1.2 or above).  Gnome is not needed but 
   <a href="http://www.libxml.org">libxml</a> should be available for best 
