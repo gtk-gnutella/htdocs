@@ -5,16 +5,18 @@
   <ul>
   	<li> GUI updates:
 		<ul>
-			<li>File info pane renamed to downloads</li>
-    			<li>Downloads pane renamed to sources</li>
-     			<liProgress of a download can now visually be showed. This will show which fragment of a file was downloaded, which fragment gtkg currently is downloading and which fragments are availalbe on the gnutella network.</li>
+			<li>File info pane renamed to "Downloads".</li>
+    			<li>Downloads pane renamed to "Sources".</li>
+     			<li>Progress of a download can now visualized. This will show which fragment of a file was downloaded, which fragment gtk-gnutella is currently downloading and which fragments are availalbe on the Gnutella network.</li>
 	   		<li>Uploads and download sources pane now contain a visual progressbar.</li>
-			<li>GTK2 can now be resized smaller then 933 pixels width.</li>
-			<li>Search results now include an extension column so you can sort by extension if needed.</li>
+			<li>The GTK2 GUI can now be resized smaller than a width of 933 pixels.</li>
+			<li>Search results now include an extension column, so you can sort by file extension if needed.</li>
+			<li>The gNet stats panel and the statusbar now include horizon statistics.</li>
 		</ul>
 	</li>
-	<li>HSEP included, this will give you an estimation of the horizon size. This includes the number of files and the total size of all files on the network.</li>
-	<li>If no default port was specified, gtkg will now bind to a random port and will use that port from that point.<br />
+	<li>New GGEP extension HSEP included. This will give you an estimation of the horizon size. This includes the number of reachable nodes, files and the total size of all files on the network.</li>
+	<li>The remote shell now includes a command "HORIZON", which will output horizon stats.</li>
+	<li>If no default port was specified, gtk-gnutella will now bind to a random port and will use that port from then on.<br />
 	    If you are behind a firewall and routed a port to gtk-gnutella, please check gtk-gnutella still runs at the port you want it to run!</li>
 	<li>Will parse up to 150 hosts in a gwebcache reply to bootstrap from.</li>
 	<li>New hostcache to make gtk-gutella faster connect to the network.</li>
