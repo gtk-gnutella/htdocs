@@ -140,7 +140,7 @@
      NIrwqTRFh
      ^^^^^^^^^
      ||||||||+ hops flow triggerd (h), or total query flow control (f)
-     |||||||+  flow control
+     |||||||+  flow control (F), or pending data in queue (d)
      ||||||+   indicates whether RX is compressed
      |||||+    indicates whether TX is compressed
      ||||+     indicates whether we sent/received a QRT, or send/receive one
