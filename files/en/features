@@ -1,33 +1,49 @@
+<!-- $Id$ -->
 <p>
 <h1 align="center">Features</h1>
 
 <ul>
-	<li>Share files on the gnutella network (Limewire, BearShare, Xolox, Gnucleus, Shareaza, Morpheus ...)
-	<li>Compressed GNet connections
-	<li>Simultaneous downloading of files from multiple hosts (swarming)
-	<li>Passive searches
-	<li>Searching by urn:sha1: and magnet:
-	<li>Automatic aquisition of additional sources via download mesh and watching searches
-	<li>Powerful filtering engine
-	<li>Bandwidth management/limiting
-	<li>A lot of settings
-	<li>A lot of statistics
-	<li>Compliant to:
-		<ul>
-		<li><a href="http://www.w3.org/Protocols/">HTTP/1.1</a>
-		<li><a href="http://rfc-gnutella.sourceforge.net/Proposals/Handshake_06/Gnutella06.txt">Gnutella 0.6</a> (Vendor Code GTKG and soon GNTD)
-		<li>GNet compression
-		<li><a href="http://groups.yahoo.com/group/the_gdf/files/Proposals/BYE/Bye.txt">BYE</a> packet
-		<li><a href="http://www.gnucleus.net/gwebcache">GWebCache</a> Proposal
-		<li><a href="http://groups.yahoo.com/group/the_gdf/files/Proposals/HUGE/draft-gdf-huge-0_94.html">HUGE</a> (Hash/URN Gnutella Extensions)
-		<li>Ping/Pong reduction
-		<li><a href="http://groups.yahoo.com/group/the_gdf/files/Proposals/QUEUE/PARQ.txt">PARQ</a>
-		<li><a href="http://groups.yahoo.com/group/the_gdf/files/Proposals/PFSP">PFSP</a>
-		<li><a href="http://groups.yahoo.com/group/the_gdf/files/Proposals/Vendor-Messages/">Vendor Messages</a>
-		<li><a href="http://groups.yahoo.com/group/the_gdf/files/Proposals/Ultrapeer/">Ultrapeers & QRP</a>
-		</ul>
+  <li>Share files on the gnutella network (Limewire, BearShare, Xolox, Gnucleus, Shareaza, Morpheus ...)</li>
+  <li>Compressed GNet connections</li>
+  <li>Simultaneous downloading of files from multiple hosts (swarming)</li>
+  <li>Passive searches</li>
+  <li>Searching by urn:sha1: and magnet:</li>
+  <li>Automatic aquisition of additional sources via download mesh and watching searches</li>
+  <li>Powerful filtering engine</li>
+  <li>Bandwidth management/limiting</li>
+  <li>A lot of settings</li>
+  <li>A lot of statistics</li>
+  <li>Compliant to:
+    <ul>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/http/http-1.1.txt?rev=HEAD&content-type=text/vnd.viewcvs-markup">
+        HTTP/1.1</a></li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/handshaking_0.6?rev=HEAD&content-type=text/vnd.viewcvs-markup">
+        Gnutella 0.6</a> (Vendor Code GTKG and soon GNTD)</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/compression?rev=HEAD&content-type=text/vnd.viewcvs-markup">
+        GNet compression</a></li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/bye?rev=HEAD&content-type=text/vnd.viewcvs-markup">
+        BYE</a> packet</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/gwcache?rev=HEAD&content-type=text/vnd.viewcvs-markup">
+        GWebCache</a> Proposal</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/huge?rev=HEAD&content-type=text/vnd.viewcvs-markup">
+        HUGE</a> (Hash/URN Gnutella Extensions)</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ping-pong?rev=HEAD&content-type=text/vnd.viewcvs-markup">
+        Ping/Pong reduction</a></li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/PARQ?rev=HEAD&content-type=text/vnd.viewcvs-markup">
+        PARQ</a> (Passive/Active Remote Queueing)</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/PFSP?rev=HEAD&content-type=text/vnd.viewcvs-markup">
+        PFSP</a> (Partial File Sharing Protocol)</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/vendor_msg?rev=HEAD&content-type=text/vnd.viewcvs-markup">
+        Vendor Messages</a></li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ultra-peers?rev=HEAD&content-type=text/vnd.viewcvs-markup">
+        Ultrapeers</a></li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/QRP?rev=HEAD&content-type=text/vnd.viewcvs-markup">
+        QRP</a> (Query Routing Proposal)</li>
+    </ul>
+  </li>
 </ul>
-<br><br>
-
-However there is still a lot of stuff to be done. If you want to help, go to our <a href="index.php?page=devel">development page</a>
+<br>
+<br>
+  However there is still a lot of stuff to be done. If you want to help, go to our 
+  <a href="index.php?page=devel">development page</a>
 </p>
