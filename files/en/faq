@@ -24,6 +24,7 @@
 <h2>Searches</h2>
 <ul>
   <li><a href="#search0">How can I get more results?</a></li>
+  <li><a href="#search1">Where did the filters go?</a></li>
 </ul>
 
 
@@ -117,6 +118,10 @@
   and on the <a href="#gnet0">number of connections</a> to other hosts.
 </p>
 
+<h3><a name="search1">Where did the filters go??</a></h3>
+<p>
+  If you don't see the filter button in your gtk-gnutella you probaly should enable the toolbar in the menu :)
+</p>
 
 
 <h2>Downloads</h2>
