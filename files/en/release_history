@@ -65,7 +65,14 @@
   <strong>Debian-3.0 (stable) Package: gtk-gnutella_0.93.3-0_i386.deb</strong><br>
     MD5Sum: <tt>447148a79ed57890a90f6d1d8d2bafcc</tt><br>
     urn:sha1:<tt>KG7KDQ7NTFBUT7LGJNGFWPMA5D66SAOE</tt>
-	</p>
+  </p>
+  <p>
+    <strong>Unofficial Redhat-9, Mandrake-9.2, and Slackware-9.1 packages are 
+      available</strong> on 
+    <a href="http://gtkg.swimmingnoodle.com/pkg/">eqom14's web site</a>. See 
+    the README file there for instructions on how to verify these gpg-signed 
+    packages.
+  </p>
 </div>
 
 <h4><a name="0.93.2"></a>5. January 2004, Version 0.93.2 released</h4>
