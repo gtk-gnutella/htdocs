@@ -33,18 +33,20 @@
 </p>
 <ul>
   <li>
-    GTK-Gnutella now support both Partial File serving, as a client as well as 
-    a server. As soon as a download is started, can be used as an alternate 
+    GTK-Gnutella now supports Partial File serving, both as a client and as a 
+    server. As soon as a download is started, it can be used as an alternate 
     source for others even though the download is not completed yet.
   </li>
   <li>
-    When a mismatch happens during downloading the file can now be 
-    automatically   removed and restarted again. 
+    When a mismatch happens during downloading, the file can now be 
+    automatically removed and restarted again. 
   </li>
   <li>
     Improved GUI to specify better which downloads should be cleared from the 
-    list (completed, failed, unavailable) - Collects alternate download 
-    locations aquired from query hits.
+    list (completed, failed, unavailable). 
+  </li>
+  <li>
+    Collects alternate download locations aquired from query hits.
   </li>
   <li>
     Support for hostname instead of only an ip. If you have a dynamic ip but 
@@ -65,7 +67,7 @@
     Running gtk-gnutella in Auto peermode should no longer cause a crash.
   </li>
   <li>
-    New addresses in hostiles.txt to protected against malicious hosts.
+    New addresses in hostiles.txt to protect against malicious hosts.
   </li>
   <li>
     gwcache.boot was cleaned up. Dead links were removed.
