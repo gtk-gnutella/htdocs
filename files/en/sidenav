@@ -1,3 +1,4 @@
+<!-- $Id$ -->
 <a href="<?php echo BASEURL ?>?page=news">
   News</a><br>
 <a href="<?php echo BASEURL ?>?page=shots090">
