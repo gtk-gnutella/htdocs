@@ -5,7 +5,10 @@
   weeks. It should be very stable and just as fine as a release. Due to some 
   problems with the toolchain, it's a source-only release. 
 </p>
-<ul>Here are the checksums:
+<p>
+  Here are the checksums:
+</p>
+<ul>
   <li>
     SHA1 (gtk-gnutella-0.92.1c.tar.bz2) = 41ea9104b4fe407139005d60d689a7bde044ebd7
   </li>
