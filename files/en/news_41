@@ -2,12 +2,12 @@
 <h4>27 November 2004, Version 0.95 Released</h4>
 
 <p>
-With the release of version 0.95 Gtk-Gnutella supports the
-state-of-the-art features of the Gnutella network. In terms of
-Gnutella features version 0.94 is now considered a deprecated
-servent. Every Gtk-Gnutella user must upgrade to 0.95 as soon as
-possible to get the expected performance from the network and keep it
-healthy.
+  With the release of version 0.95 Gtk-Gnutella supports the
+  state-of-the-art features of the Gnutella network. In terms of
+  Gnutella features version 0.94 is now considered a deprecated
+  servent. Every Gtk-Gnutella user must upgrade to 0.95 as soon as
+  possible to get the expected performance from the network and keep it
+  healthy.
 </p>
 
 <ul>
@@ -86,7 +86,6 @@ healthy.
   <li>SHA1 (gtk-gnutella-0.95.tar.bz2) = 38be3abced5add254f7a0fff88b7e7e1d0e47fa8</li>
   <li>urn:sha1:HC7DVPHNLLOSKT32B77YRN7H4HIOI75I</li>
 </ul>
-</p>
 
 <p>
   <em>gtk-gnutella team</em>
