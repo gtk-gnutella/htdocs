@@ -1,0 +1,10 @@
+<!-- $Id$ -->
+<h4>15. May 2002, Traffic compression in action</h4>
+<p>
+After some more bug-fixing we now have a better working traffic compression
+and even some added stats. The percentages in the first say 0% for 'no gain'
+and 100% for 'no traffic generated'.
+</p>
+<p>
+<img src="images/compression.jpg">
+</p>
