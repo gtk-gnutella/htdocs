@@ -1,6 +1,6 @@
-<h1>Gtk-Gnutella Development</h1>
+<h1 align="center">Gtk-Gnutella Development</h1>
 
-<h3 align="center">Call for help</h3>
+<h2>Call for help</h2>
 <p>
 The current version of gtk-gnutella is running well, but it is in no way up to 
 date with the latest gnutella standards. The "major players" of gnutella
@@ -8,15 +8,16 @@ date with the latest gnutella standards. The "major players" of gnutella
 Queueing, Ultrapeers, Partial File Sharing, Tree Hashing and soon a UDP-query
 method called GUESS. Other possibly interesting features are XML-Query schemes
 (e.g. searching by title, size, genre of files), magnet:-Links, Download 
-Proxies and Push Proxies. GTKG lacks all of them right now.<br>
-<br>
+Proxies and Push Proxies. GTKG lacks all of them right now.
+</p>
+<p>
 Raphael Manfredi and Richard Eckart, the current lead developers, are doing a
 great job, however Richard is busy with university and Raphael has job and 
 family, so their time for coding is limited. Since GTKG is open source, it
-depends on people improving it.<br>
-<br>
+depends on people improving it.
+</p>
+<p>
 Now to the important questions:<br>
-<br>
 <ul>
   <li>
     Do you know C well enough to start helping to code new functionalities
@@ -33,15 +34,18 @@ Now to the important questions:<br>
   </li>
   <li>
     Do you want to contribute, but do not know exactly what to do?
-  <li>
+  </li>
 </ul>
-<br>	
+</p>
+<p>
 If yes, subscribe yourself to the developers 
 <a href="http://gtk-gnutella.sourceforge.net/index.php?page=mailing">mailing list</a> 
 and send a message to it. Don't start to code right now, let's see if there are other 
 people that want to help implementing the same thing and make a team with 
 them.
 </p>
+
+<hr>
 
 <p>
 To get the latest development version, you can always use the CVS repository of Gtk-Gnutella.
