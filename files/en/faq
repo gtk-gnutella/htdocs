@@ -180,10 +180,10 @@
 			(<code>-Dccflags="-march=pentium -mmmx"</code>).
 		</li>
 		<li>
-		compile in debugging information while turning off all compiler optimizations
-		(<code>-Doptimize="-g -O0"</code>).
+			compile in debugging information while turning off all compiler optimizations
+			(<code>-Doptimize="-g -O0"</code>).
 		</li>
-	<</ul>
+	</ul>
 </p>
 <p>
 	<code>$ ./Configure -ders -O -D gtkversion=1 -D remotectrl=y -Dccflags="-march=pentium -mmmx" -Doptimize="-g -O0"</code>
