@@ -11,7 +11,6 @@
 <ul>
   <li><a href="#gnet0">What is a good number of connections?</a></li>
   <li><a href="#gnet1">Do I need to forward a port on my firewall?</a></li>
-  <li><a href="#gnet2">Which port do I need to forward on my firewall?</a></li>
 </ul>
 
 
