@@ -214,24 +214,17 @@ See also,
 <p>
   In <a href="#general-ultrapeer">leaf</a> mode 3 ultrapeers, in
   <a href="#general-ultrapeer">ultrapeer</a> mode 32/40 (minimum/maximum)
-  ultrapeers and around 200 leaf nodes. The actual number should depend on the 
-  available bandwidth.  You can calculate a bandwidth
-  consumption of 1kb/s per connection in legacy mode, however, this will be
-  much less for leaf nodes and somewhat higher for ultrapeer-ultrapeer
-  connections.  If you have set "Prefer compressed connections," bandwidth
-  used will be much lower.  You should never use up all your bandwidth with
-  gnet connections.  Especially on an asymmetric cable/DSL connection you can
+  ultrapeers and around 100 leaf nodes. The actual number should depend on the 
+  available bandwidth. If you have set "Prefer compressed connections," bandwidth
+  used will be much lower. You should never use up all your bandwidth with
+  gnet connections. Especially on an asymmetric cable/DSL connection you can
   easily starve your incoming traffic by producing too much outgoing traffic
-  (TCP/IP issue).  Use at most half of your outgoing bandwidth for gnet
-  connections.  E.g. on a line with 128kbit/s upstream set up at most 8
-  connections.  By using more than 10 connections you harm the gnutella
-  network so avoid setting the max connections to a high value!
+  (TCP/IP issue). Use at most half of your outgoing bandwidth for gnet
+  connections.
 </p>
 <p>
-  In ultrapeer mode you should have a minimum of 4/5 connections to other
-  ultrapeers and because of the adoption by other servents of "high
-  outdegree," 8/10 connections is better, if you have the bandwidth.  This
-  will rise even more when gtk-gnutella implements high outdegree.  The number
+  Since the adoption of "high outdegree" in version 0.95 you should have 
+  32/40 connections to other ultrapeers. The number
   of leaf connections to use depends on your bandwidth and the speed of your
   cpu.  As an absolute minimum an ultrapeer should connect to 20 leaf nodes
   and it's much better to connect to 100 or more.  Watch the bandwidth
