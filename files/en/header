@@ -27,7 +27,7 @@ end bad picture code -->
 
 &nbsp;&nbsp;<a
   class=navlink href="http://sourceforge.net/project/showfiles.php?group_id=4467">Download <?php echo VERSION ?></a>&nbsp;&nbsp;&nbsp;&nbsp;<a
-  class=navlink href="<?php echo BASEURL ?>?page=shots">Screenshots</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+  class=navlink href="<?php echo BASEURL ?>?page=shots090">Screenshots</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
   class=navlink href="<?php echo BASEURL ?>?page=devel">Development</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
   class=navlink href="<?php echo BASEURL ?>?page=mailing">Getting&nbsp;Help</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
   class=navlink href="<?php echo BASEURL ?>?page=links">Gnutella&nbsp;Links</a>&nbsp;&nbsp;
