@@ -21,3 +21,4 @@
   Links</a><br>
 <a href="<?php echo BASEURL ?>?page=donate">
   Donate</a><br>
+<!-- end sidenav -->

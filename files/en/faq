@@ -318,3 +318,4 @@
   Operating System; see setlocale(3) for details. Ideally, everyone would
   use UTF-8 encoding which covers nearly all languages.
 </p>
+<!-- end faq -->
