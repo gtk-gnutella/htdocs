@@ -1,0 +1,8 @@
+<!-- $Id$ -->
+<h4>5. April 2002, Version 0.85 With Traffic Priorization and GUI Changes</h4>
+<p>
+Some changes to the GUI, many changes in what's displayed in what way
+(search, upload statistics, servent names, intantaneous transfer rates, etc.)
+and the possibility to connect through http proxies. Automatically
+detects changes to local IP. And many more changes.
+</p>
