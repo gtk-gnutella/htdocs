@@ -13,6 +13,7 @@
   <li><a href="#general-gtkg">What is GTKG?</a></li>
   <li><a href="#general1">This eats up too much bandwidth!</a></li>
   <li><a href="#general-ultrapeer">What are Ultrapeers and Leaf nodes?</a></li>
+  <li><a href="#general-firewall">Why does GTK-Gnutella claim it's firewalled when it's not?</a>
 </ul>
 
 <h2>Building from source</h2>
@@ -153,6 +154,21 @@
 	still occur directly p2p.)  Ultrapeers can also act as
   <a href="<?php echo BASEURL ?>?page=features">push-proxies</a> for
   firewalled leaf nodes.
+</p>
+
+<h3><a name="general-firewall">Why does GTK-Gnutella claim it's firewalled when it's not?<a></h3>
+<p>
+GTK-Gnutella needs to receive an incoming connection to determine if you
+can be reached from the outside. Until then, it's assumed that there's
+a firewall which blocks the configured listening TCP port.
+If you want to speed up the detection, use a web browser, telnet or similar
+and connect to the listening port from the outside. If the connection is
+refused or dropped, then you are very probably really unreachable due to a
+firewall which blocks the port, a misconfigured NAT or similar. You might
+want to try a different listening TCP port because some ISPs block the
+default Gnutella port (6346).
+See also,
+<a href="#gnet1"><q>Do I need to forward a port on my firewall?</q></a>.
 </p>
 
 <h2>Building from source</h2>
