@@ -43,7 +43,9 @@ $pages = array(
   "release_history",
 	"news_header",
 	"news_bridge",
-	"news_old_header"
+	"news_old_header",
+	"code101",
+	"code101a"
 );
 
 /* ** hack ** fscking damn php won't use LANG in header() ** hack ** */

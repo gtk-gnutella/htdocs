@@ -1,0 +1,45 @@
+<h1>Code 101 - Answers</h1>
+
+<h2>Test 1</h2>
+<p>
+	Author: Richard Eckart
+</p>
+<h3>Answer</h3>
+<p>
+	The downloaders always provided the header "User-Agent" and not "Server".
+	Thus the wrong test in line 13 always overwrote the extracted useragent
+	string from the "User-Agent" header with <code>NULL</code> because the "Server" header
+	was not available.
+</p>
+<p>
+	Line 13 should have read
+</p>
+<pre>
+13: if (user_agent == NULL)
+</pre>
+<p>
+	That bug was in CVS on 17/01/2004 in uploads.c line 2088.
+</p>
+
+<h2>Test 2</h2>
+<p>
+	Author: Richard Eckart
+</p>
+<h3>Answer</h3>
+<p>
+	The <code>for</code>-loop iterates over <code>data_list</code> directly, instead
+	of using a helper variable. Because of this at the end of the loop <code>data_list</code>
+	points to <code>NULL</code>. Calling <code>g_list_free()</code> on <code>NULL</code>
+	has exactly no effect and we don't even have a pointer to the list left at the
+	end of the procedure.
+</p>
+<p>
+	To fix the problem, I changed to code to use a helper variable to iterate over
+	<code>data_list</code>, so that I still have the pointer to the beginning of the
+	list in <code>data_list</code>.
+</p>
+<p>
+	That bug was in CVS on 17/01/2004 in downloads_cb.c line 144. We had the same problem
+	in a few other places too and we could measure a leak of about 1MB size after gtkg
+	had been in regular usage for 3 hours.<br>
+</p>
