@@ -20,12 +20,11 @@
   <li><a href="#gnet1">Do I need to forward a port on my firewall?</a></li>
   <li><a href="#gnet2">What does "[FC]" mean?</a></li>
   <li><a href="#gnet3">Why do I lose gnet connections when i have an upload?</a></li>
-  <li><a href="#gnet4">What does this stuff in the type column mean?</a></li>
+  <li><a href="#gnet4">What does this stuff in the Flags column mean?</a></li>
   <li><a href="#gnet5">What does "Harmful version banned, upgrade required" mean?</a></li>
   <li><a href="#gnet6">What does "Outdated version, please upgrade" mean?</a></li>
   <li><a href="#gnet7">Why doesn't my HTTP proxy work?</a></li>
 </ul>
-
 
 <h2>Searches</h2>
 <ul>
@@ -34,10 +33,9 @@
   <li><a href="#search3">How can I ignore files with no SHA1?</a></li>
 </ul>
 
-
 <h2>Downloads</h2>
 <ul>
-  <li><a href="#down0">What does the status "ignore by [SHA1|name & size]" mean?</a></li>
+  <li><a href="#down0">What does the status "Ignoring requested [SHA1|name & size]" mean?</a></li>
   <li><a href="#down1">What does the status "No URN on server" mean?</a></li>
   <li><a href="#down2">Why is the same file downloaded X times?</a></li>
   <li><a href="#down3">What is "swarming"?</a></li>
@@ -70,35 +68,35 @@
 
 <h3><a name="general0">What is gnutella anyway?</a></h3>
 <p>
-  Gnutella is a decentralized Peer to Peer information exchanging network. At the moment you can publish and download files
-  of any kind using the Gnutella network. For more information, visit the <a href="http://www.infoanarchy.org/wiki/wiki.pl?Gnutella">definition
-  of gnutella</a> on the infoAnarchy wiki.
+  Gnutella is a decentralized Peer to Peer information exchanging network. At the 
+  moment you can publish and download files of any kind using the Gnutella network. 
+  For more information, visit the <a href="http://www.infoanarchy.org/wiki/wiki.pl?Gnutella"> 
+  definition of gnutella</a> on the infoAnarchy wiki.
 </p>
 
 <h3><a name="general1">This eats up too much bandwidth!</a></h3>
 <p>
-  At the moment you can try one or more of the following things if you are a user on a slow line (modem):
+  At the moment you can try one or more of the following things if you are a user 
+  on a slow line (modem):
   <ul>
-    <li>Limit the number of GNet connections you have.
-    <li>If you are able to receive incoming connections, enable "prefer compressed connections"
-    in the GnutellaNet options (expert mode needs to be enabled)
+    <li>Limit the number of GNet connections you have.</li>
+    <li>If you are able to receive incoming connections, enable "prefer compressed 
+      connections" in the GnutellaNet options (expert mode needs to be enabled.)</li>
     <li>Depress the lower-left button in the GUI after your downloads have started.
-    This will disconnect from the Gnutella network.
-    We strongly advise you to NOT do that. You won't
-    be able to get more alternate locations from the net and people won't be able
-    to search your files.
+      This will disconnect from the Gnutella network.  We strongly advise you to NOT 
+      do that. You won't be able to get more alternate locations from the net and 
+      people won't be able to search your files.</li>
   </ul>
 </p>
 
 <h3><a name="general2">What is an Ultrapeer?</a></h3>
 <p>
-  An Ultrapeer shields modem users or users that otherwise can't dedicate their bandwidth to gnet traffic
-  from the network traffic by behaving as their "router".
-  For the modem users connected (called leaves/leafs or ultraleaves/ultraleafs) it looks like they are connected
-  to some kind of server. <br>gtk-gnutella will support ultrapeers and leaves with version 0.92.
+  An Ultrapeer shields modem users or users that otherwise can't dedicate their 
+  bandwidth to gnet traffic from the network traffic by behaving as their "router".  
+  For the modem users connected (called leaves/leafs or ultraleaves/ultraleafs) 
+  it looks like they are connected to some kind of server. <br>
+  gtk-gnutella will support ultrapeers and leaves with version 0.92.  
 </p>
-
-
 
 <h2>Gnutella connections</h2>
 
@@ -132,22 +130,25 @@
 <h3><a name="gnet2">What does "[FC]" mean?</a></h3>
 <p>
   The FC means "flow control".<br>
-  In general, you should make sure that servents to which you are connected do not flow control.
-  Watch for the trailing "[FC]" indication at the end of the Info string (you may need to drag the
-  right edge past the window to trigger the underlying scroll bar)
-  As a rule of thumb, if you have more than one node flow-controlling at a given time,
-  you don't have enough outgoing bandwidth dedicated to Gnet, and therefore you are harming the network:
-  either decrease the amount of connections, enable the compression preferance, or raise the outgoing bandwidth limit.<br>
-  By the way, you also see FC state in the type column
+  In general, you should make sure that servents to which you are connected do 
+  not flow control.  Watch for the trailing "[FC]" indication at the end of the 
+  Info string (you may need to drag the right edge past the window to trigger 
+  the underlying scroll bar), or look at the FC state in the <a href="#gnet4">Flags</a> 
+  column. As a rule of thumb, if you have more than one node flow-controlling 
+  at a given time, you don't have enough outgoing bandwidth dedicated to Gnet, 
+  and therefore you are harming the network: either decrease the amount of 
+  connections, enable the compression preferance, or raise the outgoing bandwidth 
+  limit. 
 </p>
 
 <h3><a name="gnet3">Why do I lose gnet connections when I have an upload?</a></h3>
 <p>
-  Try to do bandwidth limiting. If that doesn't help, maybe your provider throttles gnutella traffic. Try changing your
-  gnutella port in the network settings of gtk-gnutella.
+  Try to do bandwidth limiting. If that doesn't help, maybe your provider throttles 
+  gnutella traffic. Try changing your gnutella port in the network settings of 
+  gtk-gnutella.  
 </p>
 
-<h3><a name="gnet4">What does the stuff in the type column mean?</a></h3>
+<h3><a name="gnet4">What does the stuff in the Flags column mean?</a></h3>
 <p>
   You can see the type and some of the settings of a connection here.
   <pre>
@@ -184,13 +185,13 @@
 
 <h3><a name="gnet7">Why doesn't my HTTP proxy work?</a></h3>
 <p>
- Your HTTP proxy must support the method CONNECT because a normal GET
- doesn't work with Gnutella connections. This is an extension to the HTTP
- protocoal and mainly supported by SQUID proxies. It's also often deactivated
- because it might be considered as a security problem by your provider. At the
- moment, the proxy support - also for SOCKS - isn't very good. The developers
- don't use proxies but if you think you can fix it, we would appreciate
- your patches.  
+  Your HTTP proxy must support the method CONNECT because a normal GET
+  doesn't work with Gnutella connections. This is an extension to the HTTP
+  protocol and mainly supported by SQUID proxies. It's also often deactivated
+  because it might be considered a security problem by your provider. At the
+  moment, the proxy support - also for SOCKS - isn't very good. The developers
+  don't use proxies but if you think you can fix it, we would appreciate
+  your patches.  
 </p>
 
 <h2>Searches</h2>
@@ -204,26 +205,27 @@
 
 <h3><a name="search1">Where did the filters go??</a></h3>
 <p>
-  If you don't see the filter button in your gtk-gnutella you should probably enable the toolbar in the menu :)
+  If you don't see the filter button in your gtk-gnutella you should probably 
+  enable the toolbar in the menu :)
 </p>
 
 <h3><a name="search3">How can I ignore files with no SHA1?</a></h3>
 <p>
- Click with right mouse button on a search result without a SHA1 and
- select "Drop results with urn:sha1" from the popup menu. That will drop
- all results with this SHA1 - in this case none - from your results. You'll
- miss a lot of spam.
+  Click with right mouse button on a search result without a SHA1 and
+  select "Drop results with urn:sha1" from the popup menu. That will drop
+  all results with this SHA1 - in this case none - from your results. You'll
+  miss a lot of spam.
 </p>
 
 <h2>Downloads</h2>
 
-<h3><a name="down0">What does the status "ignore by [SHA1|name & size]" mean?</a></h3>
+<h3><a name="down0">What does the status "Ignoring requested [SHA1|name & size]" mean?</a></h3>
 <p>
-  This means that gtk-gnutella has that file recorded as complete in its 
-  fileinfo database. This database is usually located in 
-  ~/.gtk-gnutella/fileinfo. At the moment, there is no way to remove or
-  modify an entry of that database from the gui, but you can edit the file
-  with any text editor while gtk-gnutella is not running. 
+  This means that gtk-gnutella has that file recorded as complete in its fileinfo 
+  database. This database is usually located in ~/.gtk-gnutella/fileinfo. At the 
+  moment, there is no way to remove or modify an entry of that database from the 
+  gui, but you can edit the file with any text editor while gtk-gnutella is not 
+  running. 
 </p>
 
 <h3><a name="down1">What does the status "No URN on server" mean?</a></h3>
@@ -242,7 +244,7 @@
 <h3><a name="down2">Why is the same file downloaded X times?</a></h3>
 <p>
   Check the "Range" column. This is called <a href="#down3">swarming</a>.
-  Gtk-gnutella tries to get the file in <a href"#down4">chunks</a> and will
+  Gtk-gnutella tries to get the file in <a href="#down4">chunks</a> and will
   get it from multiple hosts in parallel, if possible.
 </p>
 
@@ -298,19 +300,19 @@
 
 <h3><a name="gtk2_fonts">I have problems with the fonts.</a></h3>
 <p>
- Set the environment variable GDK_USE_XFT to 0 or 1 and see whether
- this helps. You can also define which font should be used by putting
- the following line into your ~/.gtkrc-2.0 file:<br>
- gtk-font-name = "Sans 12"<br>
- Sans is the name of the font and 12 the size. Don't miss the whitespace.
+  Set the environment variable GDK_USE_XFT to 0 or 1 and see whether
+  this helps. You can also define which font should be used by putting
+  the following line into your ~/.gtkrc-2.0 file:<br>
+  gtk-font-name = "Sans 12"<br>
+  Sans is the name of the font and 12 the size. Don't miss the whitespace.
 </p>
 
  
 <h3><a name="gtk2_ctype">Non-ASCII characters show up as _ (underscore).</a></h3>
 <p>
- Set the environment variable LC_CTYPE or LC_ALL to an appropriate value
- for the encoding you use. For example, if you use special German characters
- in your filenames, set it to de_DE.ISO8859-1. The valid values depend on your
- Operating System; see setlocale(3) for details. Ideally, everyone would
- use UTF-8 encoding which covers nearly all languages.
+  Set the environment variable LC_CTYPE or LC_ALL to an appropriate value
+  for the encoding you use. For example, if you use special German characters
+  in your filenames, set it to de_DE.ISO8859-1. The valid values depend on your
+  Operating System; see setlocale(3) for details. Ideally, everyone would
+  use UTF-8 encoding which covers nearly all languages.
 </p>
