@@ -1,25 +1,25 @@
 <!-- $Id$ -->
-<h4>10 Juli 2004, Version 0.94 Released</h4>
+<h4>10 July 2004, Version 0.94 Released</h4>
 <p>
-  While 0.93 was improved for stability with the 0.93.4 release. The just released 0.94 contains some nice new features, while it should be at least as stable as 0.93.4:
+  While 0.93 was improved for stability with the 0.93.4 release, the just released 0.94 contains some nice new features, while it should be at least as stable as 0.93.4:
   <ul>
   	<li> GUI updates:
 		<ul>
 			<li>File info pane renamed to "Downloads".</li>
     			<li>Downloads pane renamed to "Sources".</li>
-     			<li>Progress of a download can now visualized. This will show which fragment of a file was downloaded, which fragment gtk-gnutella is currently downloading and which fragments are availalbe on the Gnutella network.</li>
+     			<li>Progress of a download can now be visualized. This will show which fragment of a file has been downloaded, which fragment gtk-gnutella is currently downloading and which fragments are availalbe on the Gnutella network.</li>
 	   		<li>Uploads and download sources pane now contain a visual progressbar.</li>
 			<li>The GTK2 GUI can now be resized smaller than a width of 933 pixels.</li>
 			<li>Search results now include an extension column, so you can sort by file extension if needed.</li>
-			<li>The gNet stats panel and the statusbar now include horizon statistics.</li>
+			<li>The Gnet stats panel and the statusbar now include horizon statistics.</li>
 		</ul>
 	</li>
-	<li>New GGEP extension HSEP included. This will give you an estimation of the horizon size. This includes the number of reachable nodes, files and the total size of all files on the network.</li>
+	<li>New Gnutella extension HSEP/0.2 included. This will give you an estimation of the horizon size. This includes the number of reachable nodes, files and the total size of all files on the network.</li>
 	<li>The remote shell now includes a command "HORIZON", which will output horizon stats.</li>
-	<li>If no default port was specified, gtk-gnutella will now bind to a random port and will use that port from then on.<br />
-	    If you are behind a firewall and routed a port to gtk-gnutella, please check gtk-gnutella still runs at the port you want it to run!</li>
+	<li>If no default port is specified, gtk-gnutella will now bind to a random port and will use that port from then on.<br />
+	    If you are behind a firewall and have routed a port to gtk-gnutella, please check that gtk-gnutella is still running on the port you want it to!</li>
 	<li>Will parse up to 150 hosts in a gwebcache reply to bootstrap from.</li>
-	<li>New hostcache to make gtk-gutella faster connect to the network.</li>
+	<li>New hostcache to make gtk-gutella connect to the network more quickly.</li>
 	<li>Dutch translation updated.</li>
 	<li>German translation updated.</li>
 	<li>Spanish translation updated.</li>
