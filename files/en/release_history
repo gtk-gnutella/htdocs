@@ -1,6 +1,7 @@
 <!-- $Id$ -->
 <h1>Release history</h1>
 <ul>
+  <li><a href="#0.93.3">0.93.3</a></li>
 	<li><a href="#0.93.2">0.93.2</a></li>
 	<li><a href="#0.93.1">0.93.1</a></li>
 	<li><a href="#0.93">0.93</a></li>
@@ -11,6 +12,61 @@
 	<li><a href="#0.90">0.90</a></li>
 	<li><a href="#0.85">0.85</a></li>
 </ul>
+
+<h4><a name="0.93.3"></a>25. January 2004, Version 0.93.3 released</h4>
+<p>
+  <strong>These are changes made since 0.93.2 stable:</strong>
+</p>
+<ul>
+  <li>
+    GUI updates:
+    <ul>
+      <li>
+        New node info display configuration: show library size / number of 
+        files shared, configurable from the Config / User interface pane.
+      </li>
+      <li>
+        Number of file descriptors currently used for banning is now shown.
+      </li>
+      <li>
+        Increased search results sorting speed for GTK1.
+      </li>
+      <li>
+        Moved "close" button for searches to a more convenient position, in 
+        the upper right corner.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Default number of node connections raised to 12 now that many servents 
+    support high outdegree.
+  </li>
+  <li>
+    Eradication of memory leaks.
+  </li>
+  <li>
+    Enhanced flow-control algorithm that will more aggressively drop packets 
+    (including query hits) when the connection remains clogged for too long. 
+    This new "swift" mode is indicated by the 'S' flag instead of 'F'.
+  </li>
+  <li>
+    Bug fixes: <?php sf_bug("846755");?>, <?php sf_bug("876011");?>, 
+    <?php sf_bug("857075");?>, <?php sf_bug("874596");?>, 
+    <?php sf_bug("859761");?>, <?php sf_bug("762121");?>.
+  </li>
+</ul>
+<div class="scroll boxed">
+	<p>
+  <strong>Source Code: gtk-gnutella-0.93.3.tar.bz2</strong><br>
+    MD5Sum: <tt>34e357c768e6bbecd267d04b95e9c380</tt><br>
+    urn:sha1:<tt>GWLS2F7SW7MCMZYNG7HM2BO3O5MQJFH2</tt>
+	</p>
+	<p>
+  <strong>Debian-3.0 (stable) Package: gtk-gnutella_0.93.3-0_i386.deb</strong><br>
+    MD5Sum: <tt>447148a79ed57890a90f6d1d8d2bafcc</tt><br>
+    urn:sha1:<tt>KG7KDQ7NTFBUT7LGJNGFWPMA5D66SAOE</tt>
+	</p>
+</div>
 
 <h4><a name="0.93.2"></a>5. January 2004, Version 0.93.2 released</h4>
 <p>
