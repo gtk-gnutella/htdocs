@@ -31,7 +31,7 @@ include("files/common.php");
                     <tr bgcolor=white>
                       <td class=nav align=center>
                         <a href="<?php echo BASEURL ?>?page=index">
-                          <img src="images/gtk-gnutella.gif" width="408" height="44" alt="" border="0"></a><br>
+                          <img src="images/gtk-gnutella.png" width="408" height="44" alt="" border="0"></a><br>
                           Current version: <?php echo VERSION ?>
                       </td>
                     </tr>
@@ -84,7 +84,7 @@ include("files/common.php");
                           <br><br>
                               User interface designed with
                               <a href="http://glade.gnome.org/">
-                                <img src="images/glade-banner.gif" alt="Glade" border="0" width="100" height="45"></a>
+                                <img src="images/glade-banner.png" alt="Glade" border="0" width="100" height="45"></a>
                         </td>
                       </tr>
                     </table>
