@@ -1,15 +1,142 @@
 <!-- $Id$ -->
 <h1 align="center">gtk-gnutella FAQ</h1>
-<h3>Downloads</h3>
+
+<!--
+  --
+  -- TOC
+  --
+  -->
+
+<h2>Gnutella connections</h2>
 <ul>
-  <li><a href="#down0">What does the status "ignore by [SHA1|name & size]" mean</a></li>
+  <li><a href="#gnet0">What is a good number of connections?</a></li>
+  <li><a href="#gnet1">Do I need to forward a port on my firewall?</a></li>
+  <li><a href="#gnet2">Which port do I need to forward on my firewall?</a></li>
 </ul>
 
-<h4><a name="down0">What does the status "ignore by [SHA1|name & size]" mean</a></h4>
+
+<h2>Searches</h2>
+<ul>
+  <li><a href="#search0">How can I get more results?</a></li>
+</ul>
+
+
+<h2>Downloads</h2>
+<ul>
+  <li><a href="#down0">What does the status "ignore by [SHA1|name & size]" mean?</a></li>
+  <li><a href="#down1">What does the status "No URN on server" mean?</a></li>
+  <li><a href="#down4">What is "swarming"?</a></li>
+  <li><a href="#down2">What is a "chunk"?</a></li>
+  <li><a href="#down5">What is the "download mesh"?</a></li>
+  <li><a href="#down3">What is a "push request"?</a></li>
+</ul>
+
+<!--
+  --
+  -- Questions and anwers below
+  --
+  -->
+
+<hr>
+
+<h2>Gnutella connections</h2>
+
+<h3><a name="gnet0">What is a good number of connections?</a></h3>
+<p>
+  A good number is 4/5 (minimum/maximum). You can calculate a bandwidth
+  consumption of 1kb/s per connection. You should never use up all your
+  bandwidth with those. Especially on an asymetric cable/DSL connection you
+  can easily starve your incoming traffic by producing too much outgoing 
+  traffic (TCP/IP issue). Use at most half of your outgoing bandwidth with
+  gNet connections. E.g. on a line with 128kbit/s upstream set up at most
+  8 connections.<br>
+  The bandwidth control settings will help you further finetuning gtk-gnutella's
+  bandwidth usage.
+</p>
+
+<h3><a name="gnet1">Do I need to forward a port on my firewall?</a></h3>
+<p>
+  You don't need to forward any port for gtk-gnutella to work, but it
+  will perform much better if you do. If gtk-gnutella thinks you are firewalled,
+  it will not show any <a href="#down3">"push"</a> results since you wouldn't be
+  able to download those anyway.<br>
+  Even people can not connect directly to you, they can still download files from
+  your node using a <a href="#down3">push request</a>.
+</p>
+
+<h3><a name="gnet2">Which port do I need to forward on my firewall?</a></h3>
+<p>
+  You can configure the port gtk-gnutella listens on. The setting "listen port" is 
+  located on the "Network settings" tab on the config page.
+</p>
+
+
+<h2>Searches</h2>
+
+<h3><a name="search0">How can I get more results?</a></h3>
+<p>
+  The number of results you get depends heavily on wether people are able to
+  connect to you (see <a href="#gnet1">here</a> and <a href="#gnet2">here</a>)
+  and on the number connections to other hosts (see <a href="#gnet0">here</a>).
+</p>
+
+
+
+<h2>Downloads</h2>
+
+<h3><a name="down0">What does the status "ignore by [SHA1|name & size]" mean?</a></h3>
 <p>
   This means that gtk-gnutella has that file recorded as complete in its 
   fileinfo database. This database is usually located in 
   ~/.gtk-gnutella/fileinfo. At the moment there is no way to remove or
   modify an entry of that database from the gui, but you can edit the file
   with any text editor while gtk-gnutella is not running. 
+</p>
+
+<h3><a name="down1">What does the status "No URN on server" mean?</a></h3>
+<p>
+  This means that gtk-gnutella wants to download a new file from a host, but 
+  that host does not provide a SHA1 hash for the file. Since the file is new
+  (not yet partially downloaded), gtk-gnutella can not do an overlap check to
+  verify that the file on the host is really the file you want. In such a case
+  it relies on the SHA1 provided by the remote host, but if no SHA1 is supplied,
+  then gtk-gnutella has no way of assuring that the file it wants to download
+  and the file on the remote server are really the same.<br> 
+  If you get annoyed by those messages you can activate the "optimistic first 
+  chunk" option on the "download settings" tab in the config page.
+</p>
+
+<h3><a name="down4">What is "swarming"?</a></h3>
+<p>
+  Swarming describes the ability to download a single file from multiple hosts
+  in parallel. Gtk-gnutella will automatically try to find additional sources
+  for any queued file using the <a href="#down5">download mesh</a> and by
+  monitoring routed results.
+</p>
+
+<h3><a name="down2">What is a "chunk"?</a></h3>
+<p>
+  A chunk is another word for "part of a file". When gtk-gnutella runs in
+  <a href="#down4">swarming mode</a> it will retrieve multiple chunks of a
+  downloading file until it has downloaded the complete file. The "Range"
+  column shows you which chunk you are currently downloading.
+</p>
+
+<h3><a name="down5">What is the "download mesh"?</a></h3>
+<p>
+  When you download a file from a host that supports the download mesh,
+  it will tell you about additional sources for the requested file
+  (provided it know any). Those will then be used for
+  <a href="#down4">swarming</a>
+</p>
+
+<h3><a name="down3">What is a "push request"?</a></h3>
+<p>
+  The "push request" is a facility to download files from hosts you can
+  not connect to directly (because they are firewalled). Well, you can 
+  not connect to those hosts, but they probably can connect to you. To
+  tell a remote host to connect to your host so that you can download
+  a file from the remote host you send a push request to it.<br>
+  You can't make use the the push requests when you are behind a firewall
+  (see <a href="#gnet1">here</a> and <a href="#gnet2">here</a>).
 </p>
