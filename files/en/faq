@@ -46,7 +46,7 @@
 <h2>Uploads</h2>
 <ul>
   <li><a href="#up0">What does "Normalized" mean?</a></li>
-<li>
+</ul>
 
 
 <!--
@@ -252,3 +252,4 @@
 <p>
   This shows the total amount of bytes uploaded for the file divided by the file size.
 </p>
+
