@@ -4,8 +4,8 @@
 <h3>The Graphical Gnutella Client for Unix</h3>
 
 <p>
-  Gtk-Gnutella is a clone of Gnutella (see 
-  <a href="http://www.gnutella.com/">www.gnutella.com</a>).
+  Gtk-Gnutella is a server/client for
+  <a href="http://www.gnutella.com/">Gnutella</a>.
   It runs on every Unix which supports <a href="http://www.gtk.org/">GTK+</a> 
   (1.2 or above).  Gnome is not needed but 
   <a href="http://www.libxml.org">libxml</a> should be available for best 
