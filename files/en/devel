@@ -1,3 +1,4 @@
+<!-- $Id -->
 <h1 align="center">Development</h1>
 
 <h2>Call for help</h2>
@@ -59,8 +60,8 @@ the web</a>.
 <p>To get the files from CVS just type in the following commands:<br><br>
 
 <tt>
-cvs -d:pserver:anonymous@cvs.gtk-gnutella.sourceforge.net:/cvsroot/gtk-gnutella login<BR>
-cvs -z3 -d:pserver:anonymous@cvs.gtk-gnutella.sourceforge.net:/cvsroot/gtk-gnutella co gtk-gnutella-current
+cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<BR>
+cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co gtk-gnutella-current
 </tt>
 
 <br><br>
