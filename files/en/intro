@@ -8,8 +8,13 @@ Gtk-Gnutella is a clone of Gnutella (see <A HREF="http://gnutella.wego.com/">gnu
 It runs on every Unix which supports <A HREF="http://www.gtk.org/">GTK+</A> (1.2 or above). 
 Gnome is not needed but <a href="http://www.libxml.org">libxml</a> should be available for best
 performance.
-It is currently developed and tested under Linux (Debian 2.2) and is known to run at least on Linux and FreeBSD (on 80x86 machines). 
-Rumor has it that some people even run it under XDarwin on MacOS.<br><br>
+It is currently developed and tested under Linux (Debian 2.2) and is known to run at least on Linux,
+<a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>,
+<a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
+<a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
+<a href="http://fink.sourceforge.net/pdb/package.php/gtk-gnutella">Darwin/PowerPC</a>,
+Solaris 8/SPARC, Tru64 Unix/Alpha, SGI IRIX 6.2/mips. 
+<br><br>
 It is released under the GNU Public License (GPL).
 </p>
 
