@@ -101,7 +101,7 @@
 <div class="scroll boxed">
   <table>
     <tr>
-      <th row-span="3">gtk-gnutella-0.95.tar.bz2</th>
+      <th rowspan="3">gtk-gnutella-0.95.tar.bz2</th>
       <td>MD5: <tt>de2ff4973c975ee16cdd69ca72c06bcd</tt></td>
     </tr>
     <tr>
@@ -112,9 +112,6 @@
     </tr>
   </table>
 </div>
-
-
-
 
 
 <h4 id="0.94">10. July 2004, Version 0.94 released</h4>
@@ -146,9 +143,16 @@
 	<li>French translation updated.</li>
 	<li>Hungarian translation updated.</li>
   </ul>
-<p>
-  md5sum: 8319ff7b8a5a5a7be995894c2ad3280f gtk-gnutella-0.94.tar.bz2
-</p>
+
+<h5>Checksums</h5>
+<div class="scroll boxed">
+  <table>
+    <tr>
+      <th>gtk-gnutella-0.94.tar.bz2</th>
+      <td>MD5: <tt>8319ff7b8a5a5a7be995894c2ad3280f</tt></td>
+    </tr>
+  </table>
+</div>
 
 
 <h4><a name="0.93.3"></a>25. January 2004, Version 0.93.3 released</h4>
