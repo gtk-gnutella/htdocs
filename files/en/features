@@ -14,36 +14,35 @@
   <li>A lot of statistics</li>
   <li>Compliant to:
     <ul>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/http/http-1.1.txt?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup">
-        HTTP/1.1</a></li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/handshaking_0.6?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup">
-        Gnutella 0.6</a> (Vendor Code GTKG and soon GNTD)</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/compression?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup">
-        GNet compression</a></li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/bye?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup">
-        BYE</a> packet</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/gwcache?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup">
-        GWebCache</a> Proposal</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/huge?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup">
-        HUGE</a> (Hash/URN Gnutella Extensions)</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ping-pong?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup">
-        Ping/Pong reduction</a></li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/PARQ?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup">
-        PARQ</a> (Passive/Active Remote Queueing)</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/PFSP?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup">
-        PFSP</a> (Partial File Sharing Protocol)</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/vendor_msg?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup">
-        Vendor Messages</a></li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ultra-peers?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup">
-        Ultrapeers</a></li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/QRP?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup">
-        QRP</a> (Query Routing Proposal)</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/push_proxy?rev=HEAD&content-type=text/vnd.viewcvs-markup">
-        Push Proxies</a></li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/http/http-1.1.txt?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+		>HTTP/1.1</a></li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/handshaking_0.6?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+        >Gnutella 0.6</a> (Vendor Code GTKG and soon GNTD)</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/compression?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+        >GNet compression</a></li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/bye?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+        >BYE</a> packet</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/gwcache?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+        >GWebCache</a> Proposal</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/huge?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+        >HUGE</a> (Hash/URN Gnutella Extensions)</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ping-pong?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+        >Ping/Pong reduction</a></li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/PARQ?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+        >PARQ</a> (Passive/Active Remote Queueing)</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/PFSP?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+        >PFSP</a> (Partial File Sharing Protocol)</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/vendor_msg?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+        >Vendor Messages</a></li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ultra-peers?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+        >Ultrapeers</a></li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/QRP?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+        >QRP</a> (Query Routing Proposal)</li>
+      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/push_proxy?rev=HEAD&content-type=text/vnd.viewcvs-markup"
+        >Push Proxies</a></li>
     </ul>
   </li>
 </ul>
-<br>
 <p>
   However there is still a lot of stuff to be done. If you want to help, go to our 
   <a href="index.php?page=devel">development page</a>
