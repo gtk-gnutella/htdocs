@@ -648,12 +648,12 @@
   </li>
 </ul>
 
-<h4><a name="0.85"></a>07. July 2002, Version 0.85 stable released</h4>
+<h4><a name="0.85"></a>04. April 2002, Version 0.85 stable released</h4>
 <p>
   <strong>Summary of changes (user-visible) since 0.80:</strong>
 </p>
 <ul>
-  </li>
+  <li>
     Now support Gnutella traffic prioritization and flow-control for enhanced 
     stability of connections.
   </li>
@@ -694,5 +694,7 @@
     Hidden useless gnutellaNet stats window.
   </li>
 </ul>
+
+
 
 <!-- end release_history -->
