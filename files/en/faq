@@ -19,6 +19,7 @@
   <li><a href="#gnet1">Do I need to forward a port on my firewall?</a></li>
   <li><a href="#gnet2">What does "[FC]" mean?</a></li>
   <li><a href="#gnet3">Why do i loose gnet connections when i have an upload?</a></li>
+  <li><a href="#gnet4">What does this stuff in the type column mean?</a></li>
 </ul>
 
 
@@ -109,7 +110,8 @@
   right edge past the window to trigger the underlying scroll bar)
   As a rule of thumb, if you have more than one node flow-controlling at a given time,
   you don't have enough outgoing bandwidth dedicated to Gnet, and therefore you are harming the network:
-  either decrease the amount of connections, enable the compression preferance, or raise the outgoing bandwidth limit.
+  either decrease the amount of connections, enable the compression preferance, or raise the outgoing bandwidth limit.<br>
+  By the way, you also see FC state in the type column
 </p>
 
 <h3><a name="gnet3">Why do i loose gnet connections when i have an upload?</a></h3>
@@ -117,6 +119,24 @@
   Try to do bandwidth limiting. If that didn't help maybe your provider throttles gnutella traffic. Try changing your
   gnutella port in the network settings of gtk-gnutella.
 </p>
+
+<h3><a name="gnet4">What does the stuff in the type column mean?</a></h3>
+<p>
+  You can see the type and some of the settings of a connection here.
+  <pre>
+     0123456 (offset)
+     NIrwTRF (example)
+     ^^^^^^^
+     ||||||+ flow control
+     |||||+  indicates whether RX is compressed
+     ||||+   indicates whether TX is compressed
+     |||+    indicates whether node is writable
+     ||+     indicates whether node is readable
+     |+      indicates connection type (Incoming, Outgoing, Ponging)
+     +       indicates peer mode (Normal, Ultra, Leaf)
+  </pre>
+</p>
+
 
 
 <h2>Searches</h2>
