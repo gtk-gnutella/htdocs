@@ -1,0 +1,34 @@
+<!-- $Id$ -->
+<h4>24. June 2002, Version 0.90 beta released</h4>
+<p>
+After nearly 3 months of development efforts, we are proud to present the
+new 0.90 beta version. It features <i>many</i> changes since the latest stable
+0.85 release.  Among them:
+</p>
+<ul>
+<li><p>All configuration can now be made from the GUI.
+<li><p>Fully redesigned search filters to work like ipchains/iptable on Linux.
+<li><p>Obsoleted experimental "auto-download", superseded by the new filtering
+code.
+<li><p>Added Gnutella bandwidth management (0.85 already had HTTP bandwidth
+management, but it was not configurable via the GUI).
+<li><p>Both HTTP and Gnet bandwidth is now displayed real time.
+<li><p>Added full HUGE support (Hash/URN Gnutella Extensions).
+<li><p>Added support for local host preference.
+<li><p>Gtk-gnutella can do traffic compression when connecting to a node that
+  also supports it.
+<li><p>Upload and downloads will now show User-Agent/Server information.
+<li><p>Added status to the download queue.
+<li><p>You can now freeze the download queue whilst manipulating it.
+<li><p>Searches can now be listed on the left side of the screen, or as tabs
+like in the previous versions.
+<li><p>Added automatic banning of servents that are hammering us.
+<li><p>Many more cool new features that you'll discover whilst playing with it.
+</ul>
+<p>
+We hope you will like this version.  We believe gtk-gnutella is one of the
+most advanced and efficient Gnutella servent available on Unix today.
+</p>
+<p>
+<i>Rapha&euml;l Manfredi &amp; Richard Eckart</i>
+</p>
