@@ -37,7 +37,8 @@
 <h2>Searches</h2>
 <ul>
   <li><a href="#search0">How can I get more results?</a></li>
-  <li><a href="#search3">How can I ignore files with no SHA1?</a></li>
+	<li><a href="#search3">How can I ignore files with no SHA1?</a></li>
+	<li><a href="#search-entry">Where did the search entry box go?</a></li>
 </ul>
 
 <h2>Downloads</h2>
@@ -318,7 +319,7 @@
   your patches.
 </p>
 
-<h3><a name="#gnet8">How can I increase the timeouts?</a></h3>
+<h3><a name="gnet8">How can I increase the timeouts?</a></h3>
 <p>
   If your internet connection suffers from high latency it might help to
   increase the timeouts. Go to <q><em>Config->User Interface</em></q>
@@ -342,6 +343,11 @@
   select "Drop results with urn:sha1" from the popup menu. That will drop
   all results with this SHA1 - in this case none - from your results. You'll
   miss a lot of spam.
+</p>
+
+<h3><a name="search-entry">Where did the search entry box go?</a></h3>
+<p>
+	Searches are now entered in the <q><em>Search:</em></q> box in the sidebar.
 </p>
 
 <h2>Downloads</h2>
