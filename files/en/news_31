@@ -1,0 +1,70 @@
+<!-- $Id$ -->
+<h4>28. December 2003, Version 0.93.1 released</h4>
+<ul>
+  <li>
+    Simplified the GUI for non-experts.  Beginners will now see less curious 
+    things on the screen, until they become more acquainted and turn on 
+    "expert" mode.
+  </li>
+  <li>
+    Many improvements in the GUI:
+    <ul>
+      <li>
+        The Gnutella node information displayed can now be configured in 
+        detail, and is by default reduced to four statistics only.
+      </li>
+      <li>
+        It is possible to hide the handshaking version and the Uptime column 
+        from the Gnutella pane.
+      </li>
+      <li>
+        When running in auto mode, show the criteria for becoming an ultranode.
+      </li>
+      <li>
+        The leaf node bandwidth odometers are by default automatically hidden 
+        when running as a leaf node.
+      </li>
+      <li>
+        GUI refreshing has been optimized so we don't unnecessarily refresh 
+        screens that the user is not looking at.  The downside is that when 
+        moving to that screen, stale data is presented for about 1 second 
+        until the refreshing takes place.
+      </li>
+    </ul>
+  </li>
+  <li>
+    0.93 was not reporting uploaded partial files as such to downloading peers.
+  </li>
+  <li>
+    Remote control "shell" is now compiled in by default but needs to be 
+    explicitly enabled in the GUI to become operational.
+  </li>
+  <li>
+    Improved connectivity between ultrapeers to avoid frequent disconnection 
+    due to "activity timeout".
+  </li>
+  <li>
+    Bugfixes:
+    <ul>
+      <li>
+        Was misparsing query hits bearing alt-locs attached to each hit, 
+        causing GTKG to possibly drop those hits and close the connection when 
+        coming from an immediate neighbour.
+      </li>
+      <li>
+        When restarting a search from menu, re-enable it automatically if it 
+        was disabled (fixes bug #864348).
+      </li>
+      <li>
+        Upon restart, a disabled search will now be shown in gray in the 
+        search list (fixes bug #857972) -- feature only implemented for GTK1.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Many other little changes that we'll let you discover...
+  </li>
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_[31] -->
