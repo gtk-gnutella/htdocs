@@ -15,6 +15,29 @@
   MD5Sum: <tt>8203ed9c53f297dcb73798657f927610</tt><br>
   urn:sha1:<tt>FQ2XETJTTMO6HNQPGNOBGOVVJTHPJUVI</tt>
 </p>
+<h4>Redhat-9 Packages:</h4>
+<ul>
+  <li>
+    <strong>gtk-gnutella-0.93.1-1.gtk1.i586.rpm</strong><br>
+    MD5Sum: <tt>2701fc8709490142229ea4e13a2d2d90</tt><br>
+    urn:sha1:<tt>OOWWW4W5AKE4XVRW76RKG5THP4OPMUBN</tt>
+  </li>
+  <li>
+    <strong>gtk-gnutella-0.93.1-1.gtk1.src.rpm</strong><br>
+    MD5Sum: <tt>2c07b845f41bc9c8ab1d0aafa413aad0</tt><br>
+    urn:sha1:<tt>FUUG6D7LALRZJ3WV7OKWY3FX6BRMDQD2</tt>
+  </li>
+  <li>
+    <strong>gtk-gnutella-0.93.1-1.gtk2.i586.rpm</strong><br>
+    MD5Sum: <tt>eb30bf2a0fe15f5a1373830919baf0c1</tt><br>
+    urn:sha1:<tt>QNN74JIYJPTPXRLQ7LUQ77ARTIRFBBIG</tt>
+  </li>
+  <li>
+    <strong>gtk-gnutella-0.93.1-1.gtk2.src.rpm</strong><br>
+    MD5Sum: <tt>ab4a310a20602911d84c673e2d6b0e04</tt><br>
+    urn:sha1:<tt>W6B2ZW5KJTCAE4TNJ5EYINSL5U7M63R6</tt>
+  </li>
+</ul>
 <p>
   More packages coming soon.
 </p>
