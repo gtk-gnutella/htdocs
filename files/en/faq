@@ -43,6 +43,12 @@
   <li><a href="#down7">Why does gtk-gnutella append a .OK to my filenames?</a></li>
 </ul>
 
+<h2>Uploads</h2>
+<ul>
+  <li><a href="#up0">What does "Normalized" mean?</a></li>
+<li>
+
+
 <!--
   --
   -- Questions and anwers below
@@ -238,5 +244,11 @@
 <p>
   You probably haven't set up different directories for downloaded files, 
   temporary files and bad files.
+</p>
 
+<h2>Uploads</h2>
+
+<h3><a name="up0">What does "Normalized" mean?</a></h3>
+<p>
+  This shows the total amount of bytes uploaded for the file divided by the file size.
 </p>
