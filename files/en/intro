@@ -6,7 +6,8 @@
 <p>
   Gtk-Gnutella is a server/client for
   <a href="http://www.gnutella.com/">Gnutella</a>.
-  It runs on every Unix which supports <a href="http://www.gtk.org/">GTK+</a> 
+  It runs on every Unix-like system which supports
+<a href="http://www.gtk.org/">GTK+</a> 
   (1.2 or above).  Gnome is not needed but 
   <a href="http://www.libxml.org">libxml</a> should be available for best 
   performance.  It is currently developed and tested under Linux (Debian 2.2) 
@@ -15,7 +16,7 @@
   <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
   <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
   <a href="http://fink.sourceforge.net/pdb/package.php/gtk-gnutella">Darwin</a>,
-Solaris, Tru64 Unix (OSF1), SGI IRIX, BeOS whereas CPU architectures include
+Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS whereas CPU architectures include
 x86, AMD64, PowerPC, SPARC, MIPS.
   <br><br>
   It is released under the GNU General Public License (GPL).
