@@ -166,25 +166,25 @@
 <p>
 	You can set compile options on the command line too. Here is an example that will
 	configure gtkg to
-	<ul>
-		<li>
-			accept custom settings (<code>-O</code>). Without this all the parameters below
-			won't have an effect.
-		</li>
-		<li>
-			use the Gtk1 frontend, activate the remote shell
-			(<code>-D gtkversion=1 -D remotectrl=y</code>)
-		</li>
-		<li>
-			compile for a pentium with MMX support
-			(<code>-Dccflags="-march=pentium -mmmx"</code>).
-		</li>
-		<li>
-			compile in debugging information while turning off all compiler optimizations
-			(<code>-Doptimize="-g -O0"</code>).
-		</li>
-	</ul>
 </p>
+<ul>
+	<li>
+		accept custom settings (<code>-O</code>). Without this all the parameters below
+		won't have an effect.
+	</li>
+	<li>
+		use the Gtk1 frontend, activate the remote shell
+		(<code>-D gtkversion=1 -D remotectrl=y</code>)
+	</li>
+	<li>
+		compile for a pentium with MMX support
+		(<code>-Dccflags="-march=pentium -mmmx"</code>).
+	</li>
+	<li>
+		compile in debugging information while turning off all compiler optimizations
+		(<code>-Doptimize="-g -O0"</code>).
+	</li>
+</ul>
 <p>
 	<code>$ ./Configure -ders -O -D gtkversion=1 -D remotectrl=y -Dccflags="-march=pentium -mmmx" -Doptimize="-g -O0"</code>
 </p>
@@ -253,14 +253,14 @@
 <p>
   The <em>FC</em> means "flow control".<br>
   In general, you should make sure that servents to which you are connected do
-  not flow control.  Watch for the trailing <q><em>[FC]</em></q> indication at
-  the end of the <q><em>Info</q></em> string (you may need to drag the right
+	not flow control.  Watch for the trailing <q><em>[FC]</em></q> indication at
+	the end of the <q><em>Info</em></q> string (you may need to drag the right
   edge past the window to trigger the underlying scroll bar), or look at the
   FC state in the <a href="#gnet4">Flags</a> column. As a rule of thumb, if
   you have more than one node flow-controlling at a given time, you don't have
   enough outgoing bandwidth dedicated to gnet, and therefore you are harming
   the network: either decrease the amount of connections, enable the
-  <q><em>Prefer compressed connections</em></q> option or raise the outgoing
+	<q><em>Prefer compressed connections</em></q> option or raise the outgoing
   bandwidth limit.
 </p>
 
@@ -433,20 +433,22 @@
 <p>
 	Otherwise if gtkg says it has only a few sources for the file (best seen
 	in the fileinfo subtab in the downloads pane) then this can have two reasons:
-	<ul>
-		<li>the file is a rare one</li>
-		<li>
-			you selected a version of the file that is unique. Chances are that there
-			may be a more common version. A file can become unique e.g. when somebody
-			changes the mp3info on an mp3 file or otherwise does some custom modification
-			to the file.
-		</li>
-	</ul>
+</p>
+<ul>
+	<li>the file is a rare one</li>
+	<li>
+		you selected a version of the file that is unique. Chances are that there
+		may be a more common version. A file can become unique e.g. when somebody
+		changes the mp3info on an mp3 file or otherwise does some custom modification
+		to the file.
+	</li>
+</ul>
+<p>
 	You can try to search for the file again and see if you find another version which
 	is more common. It's usually a good indication if the "#" shows a number for a file.
-	The largner the number, the better are the chances that you can get it quickly.
+	The larger the number, the better are the chances that you can get it quickly.
 </p>
-
+	
 <h3><a name="down9">In the downloads pane, what does it mean if the color of the text
 is grey instead of black?</a></h3>
 <p>
