@@ -14,11 +14,10 @@
  * general configuration variables are in here
  *
  */
-//define(VERSION,	"@@VERSION@@");
-define(VERSION,	"0.17");
-define(BASEDIR,	"/home/groups/g/gt/gtk-gnutella/htdocs/V2/files/");
+define(VERSION,	"@@VERSION@@");
+define(BASEDIR,	"/home/groups/g/gt/gtk-gnutella/htdocs/files/");
 define(NEWSMIN, 0);
-define(NEWSMAX, 3);
+define(NEWSMAX, 9);
 /*
  * end of user changeable variables
  *

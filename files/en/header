@@ -8,11 +8,17 @@
 <body>
 
 <table border=0 cellpadding=0 cellspacing=10 width=100%>
-<tr><td width=140 align=center valign=middle>
+<tr>
+
+<!-- leave it out - bad picture
+<td width=140 align=center valign=middle>
 
 <a href="<?php echo BASEURL ?>?page=index"><img src="images/gg.gif" width=128 height=128 alt="Gtk-Gnutella Home" border=0></a>
 
-</td><td valign=middle>
+</td>
+end bad picture code -->
+
+<td valign=middle>
 
 <table width=100% border=0 cellpadding=2 cellspacing=0><tr bgcolor=black><td>
 <table width=100% border=0 cellpadding=5 cellspacing=0><tr bgcolor=white><td class=nav align=center>
@@ -20,10 +26,10 @@
 <a href="<?php echo BASEURL ?>?page=index"><img src="images/gtk-gnutella.gif" width=408 height=44 alt="" border=0></a><br><br>
 
 &nbsp;&nbsp;<a
-  class=navlink href="http://sourceforge.net/project/showfiles.php?group_id=4467">Download 0.17</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+  class=navlink href="http://sourceforge.net/project/showfiles.php?group_id=4467">Download <?php echo VERSION ?></a>&nbsp;&nbsp;&nbsp;&nbsp;<a
   class=navlink href="<?php echo BASEURL ?>?page=shots">Screenshots</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
   class=navlink href="<?php echo BASEURL ?>?page=devel">Development</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
-  class=navlink href="<?php echo BASEURL ?>?page=mailing">Mailing&nbsp;Lists</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+  class=navlink href="<?php echo BASEURL ?>?page=mailing">Getting&nbsp;Help</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
   class=navlink href="<?php echo BASEURL ?>?page=links">Gnutella&nbsp;Links</a>&nbsp;&nbsp;
 
 <!-- language selection - now unused -->
@@ -55,7 +61,7 @@ and Various Contributors.
 
 Gtk-Gnutella development hosted&nbsp;by<br>
 <center>
-<img src="http://sourceforge.net/sflogo.php?group_id=4467&type=1" alt=SourceForge width=88 height=31>
+<a href="http://sourceforge.net/"><img src="http://sourceforge.net/sflogo.php?group_id=4467&type=1" alt=SourceForge width=88 height=31 border=0></a>
 </center>
 
 </td></tr></table>
