@@ -46,7 +46,7 @@
     list (completed, failed, unavailable). 
   </li>
   <li>
-    Collects alternate download locations aquired from query hits.
+    Collects alternate download locations acquired from query hits.
   </li>
   <li>
     Support for hostname instead of only an ip. If you have a dynamic ip but 
