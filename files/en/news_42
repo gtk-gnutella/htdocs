@@ -12,7 +12,7 @@
 	<li>Bitzi tickets are now persistently cached so that tickets are
       available again after restarting GTKG.</li>
 	<li>Improved Unicode support:</li>
-	<ul>
+	<li><ul>
 	  <li>The use of Unicode in queries now matches that of other Gnutella
 		clients. This will make it easier to search for file names which
 		contain non-Latin characters. At the time of release only
@@ -22,17 +22,17 @@
 		downloads are stored with UTF-8 file names.</li>
 	  <li>Unicode support is now built-in, we no longer depend on the ICU
 		library.</li>
-	</ul>
+	</ul></li>
 	<li>Search improvements:</li>
-	<ul>
+	<li><ul>
 	  <li>It is now possible to enter negative matches in search strings. If
 		you enter "blah -blubb -nada" as search string, results matching
 		"blubb" or "nada" are automagically filtered.</li>
 	  <li>The search filter allows filtering for files larger than 4 GiB and
 		you can also use suffixes like KB, KiB, MB, MiB etc.</li>
-	</ul>
+	</ul><li>
 	<li>[GTK2] GUI updates:</li>
-	<ul>
+	<li><ul>
 	  <li>You can drag & drop items under Downloads->Files e.g., to pass
 		them to a audio/video player, picture viewer etc. Drag & drop is
 		dangerous when used on files from unknown sources. You have been
@@ -44,16 +44,16 @@
 	  <li>The search edit field has been moved to the top.</li>
 	  <li>The Downloads pane was split into "Active Sources" and "Queue".</li>
 	  <li>Compatible with GTK 2.6.x and older versions.</li>
-	</ul>
+	</ul></li>
 	<li>The GUI uses SI prefixes according to IEC 60027-2 (2000-11) Ed. 2.0
 	  everywhere, so hard disk vendors won't fool you any longer.</li>
 	<li>Compatibility fixes to allow compilation on more architectures,
 	  including 64 bit architectures.</li>
-	<ul>
+	<li><ul>
 	  <li>Systems with a sendfile() that is not largefile compatible work
 		again. On platforms without sendfile() we now use mmap() for
 		improved efficiency.</li>
-	</ul>
+	</ul></li>
 	<li>There are now two hostiles.txt, a system-wide ("global") and one in
 	  the ~/.gtk-gnutella directory. So you only need to put private
 	  additions into ~/.gtk-gnutella/hostiles.txt. These files are also
@@ -63,12 +63,12 @@
 	  spam sites.</li>
 	<li>Greatly enhanced stability as compared to 0.95 due to many bug
 	  fixes. Other noteworthy bugs fixed are:</li>
-	<ul>
+	<li><ul>
 	  <li>Gtk-Gnutella as ultrapeer was not routing any searches iff uploads
 		had been disabled.</li>
 	  <li>Problems with the UDP/TCP port setting have been fixed (bug
 	  #1091827).</li>
-	</ul>
+	</ul></li>
 	<li>German, Japanese, and Spanish translation updated.</li>
 </ul>
 
