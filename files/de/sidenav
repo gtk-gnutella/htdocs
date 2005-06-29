@@ -19,7 +19,7 @@
 
   <div class="indent">
     <a href="<?php echo BASEURL ?>?page=features">Features</a><br>
-    <a href="<?php echo BASEURL ?>?page=faq">Fragen&nbsp;&amp;&nbsp;Antworten</a><br>
+    <a href="<?php echo BASEURL ?>?page=faq">H&auml;ufige&nbsp;Fragen</a><br>
     <a href="<?php echo BASEURL ?>?page=shots092">So&nbsp;siehts&nbsp;aus</a><br>
     <a href="<?php echo BASEURL ?>?page=release_history">Alte Meldungen</a><br>
   </div>
