@@ -1,0 +1,53 @@
+<!-- $Id$ -->
+<h1>Benutzerhilfe</h1>
+<h4>Mailing-Listen</h4>
+
+<p>
+  Die folgenden Mailing-Listen stehen für Anfragen bzw. Informationen zur
+  Verfügung. Primäre Sprache ist Englisch, allerdings sind Anfragen auf
+  Deutsch auch kein Problem.
+</p>
+
+<ul>
+
+<li>
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-users/">gtk-gnutella-users</a>
+  Mailing-Liste für Benutzer von Gtk-Gnutella
+  (<a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-users">Archiv</a>)
+</li>
+
+<li>
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-devel/">gtk-gnutella-devel</a>
+  Mailing-Liste für Entwickler und Mitwirkende
+  (<a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-devel">Archiv</a>)
+</li>
+
+<li>
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-announce/">gtk-gnutella-announce</a>
+  Mailing-Liste nur für Bekanntgabe neuer Versionen
+  (<a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-announce">Archiv</a>)
+</li>
+
+</ul>
+
+<h4>IRC Chat</h4>
+
+<p>
+  Wir treffen uns oft im IRC-Raum
+  <a href="http://www.maol.ch/irc/egg2html.php?channel=gtk-gnutella">#gtk-gnutella</a> des <a href="http://www.freenode.net/">freenode network</a> (früher
+  Open Projects Network / OPN). Meist sind dort Entwickler oder Benutzer
+  anzutreffen, die Fragen beantworten können. Falls nicht, sei auf die
+  Mailing-Listen verwiesen. Zur Nutzung von IRC ist ein
+  IRC-Client wie z.B. <a href="http://www.xchat.org/">xchat</a> notwendig.
+</p>
+
+<h4>Foren</h4>
+
+<p>
+  Es gibt außerdem ein
+  <a href="http://www.gnutellaforums.com/forumdisplay.php?s=&amp;forumid=63">
+    Web-Forum bei gnutellaforums.com</a>. Es ist allerdings nicht gut besucht.
+  Eine Anfrage auf einer der Mailing-Listen verspricht daher die besten
+  Aussichten auf Erfolg.
+</p>
+<!-- end mailing -->
