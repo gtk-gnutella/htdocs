@@ -43,10 +43,16 @@ include("files/common.php");
         <form action="/" method="GET">
           Select your language:&nbsp;<SELECT name="lang"
 		onchange="submit();">
-            <OPTION selected value="en">English</OPTION>
-            <OPTION value="de">Deutsch</OPTION>
-            <OPTION value="ja">日本語</OPTION>
-          </SELECT>&nbsp;<noscript><input type="submit" value="Go"></noscript>
+            <OPTION
+		<?php if ($_GET["lang"] eq 'en') 'selected' ?>
+		value="en">English</OPTION>
+            <OPTION
+		<?php if ($_GET["lang"] eq 'de') 'selected' ?>
+		value="de">Deutsch</OPTION>
+            <OPTION
+		<?php if ($_GET["lang"] eq 'ja') 'selected' ?>
+		value="ja">日本語</OPTION>
+          </SELECT>&nbsp;<input type="submit" value="Go">
         </form>
 
       </div>
