@@ -28,8 +28,8 @@ x86, AMD64, PowerPC, SPARC, MIPS.
 </p>
 
 <p>
-  All ideas and comments are welcome to <em><a href="mailto:jeroen@asselman.com">jeroen@asselman.com</a></em>, 
-  or to the gtk-gnutella-devel mailing list. Bugs should be reported to the 
+  All ideas and comments are welcome to the gtk-gnutella-devel mailing list.
+  Bugs should be reported to the 
   <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
   SourceForge.net Bug Tracker</a>
 </p>
