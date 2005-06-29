@@ -1,0 +1,42 @@
+<!-- content -->
+<!-- $Id$ -->
+
+<h3>Unix のためのグラフィカルな Gnutella クライアント</h3>
+
+<p>
+  Gtk-Gnutella は
+  <a href="http://www.gnutella.com/">Gnutella</a>
+  用のサーバ/クライアントで、
+  <a href="http://www.gtk.org/">GTK+</a> (1.2 またはそれ以上)
+  および <a href="http://www.libxml.org">libxml</a> をサポートする
+  全ての Unix およびそれに類似するシステム上で動作します。
+  GNOME デスクトップ環境は必要ではありません。現在 Linux (Debian 2.2)
+  で開発およびテストされていて、最低でも Linux,
+  <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>,
+  <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
+  <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
+  <a href="http://fink.sourceforge.net/pdb/package.php/gtk-gnutella">Darwin</a>,
+Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS 上で動作することが確認されています。
+CPU アーキテクチャには x86, AMD64, PowerPC, SPARC, MIPS が含まれます。
+  <br><br>
+  Gtk-Gnutella は GNU 一般公有使用許諾書 (GPL) の元でリリースされています。
+</p>
+
+<p>
+  Gtk-Gnutella はまだ完全ではありませんが、十分に機能的なものになっています:
+  共有、検索およびダウンロードをすることができるでしょう。また安定していますので、
+  通常、利用者は数日間作動させたままにしておけます。
+</p>
+
+<p>
+  アイデアや感想等がありましたら gtk-gnutella-devel メーリングリストまでお寄せ下さい。
+  バグは SourceForge のバグ追跡システム
+  <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+  に報告して下さい。</a>
+</p>
+
+<p align="center">
+  <a href="index.php?page=devel">C での開発や文書作成で手伝って下さる方を随時募集しています</a>
+</p>
+
+<!-- end intro -->
