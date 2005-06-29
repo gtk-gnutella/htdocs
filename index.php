@@ -44,17 +44,15 @@ include("files/common.php");
         <p>
           <SELECT name="lang">
             <OPTION selected value="en">English</OPTION>
-            <OPTION selected value="de">Deutsch</OPTION>
-            <OPTION selected value="ja">Japanese</OPTION>
+            <OPTION value="de">Deutsch</OPTION>
+            <OPTION value="ja">Japanese</OPTION>
           </SELECT>
           <input type="submit" value="Go">
         </p>
         </form>
 
       </div>
-    </div>
 
-    <div class="sidebar">
       <div class="boxed">
         <?php iceinclude("sidenav", 0) ?>
       </div>
