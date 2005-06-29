@@ -1,0 +1,32 @@
+<!-- $Id$ -->
+<h4>22. Mai 2005, Version 0.95.3 veröffentlicht</h4>
+
+<p>
+  In Version 0.95.3 wurden hauptsächlich Fehler behoben. Wir raten jedem auf
+  diese neue Version umzusteigen, da diese Fehler sehr leicht Probleme
+  (z.B. Programmabsturz) verursachen können.
+</p>
+
+<p>
+  Die wichtigsten Änderungen in Stichworten:
+</p>
+<ul>
+  <li>Potentielles Denial-of-Service-Problem behoben</li>
+  <li>Fehler im <i>OOB reply code</i> behoben, der Abstürze verursachen konnte</li>
+  <li>[GTK1] Zwei verschwundene Schaltflächen des Filter-Editors wurden wiederhergestellt</li>
+  <li>Beim Download sehr großer Dateien (über 4 GiB) kann es zu Datenverlust kommen</li>
+  <li>Einige Korrekturen für 64-bit Plattformen</li>
+</ul>
+
+<p>PrÃ¼fsummen des Quellcode-Archivs:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.95.3.tar.bz2) = bde94b95622f895294bffac8cecbe67a</li>
+  <li>SHA1 (gtk-gnutella-0.95.3.tar.bz2) = 1efeb54c8637f785e3a67e093c27fdf96974318b</li>
+  <li>urn:sha1:D37LKTEGG73YLY5GPYETYJ757FUXIMML</li>
+  
+</ul>
+
+<p>
+  <em>Das Gtk-Gnutella-Team</em>
+</p>
+<!-- end news_[nn] -->
