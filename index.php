@@ -41,14 +41,13 @@ include("files/common.php");
     <div class="sidebar">
       <div class="boxed">
         <form action="/" method="GET">
-        <p>
-          Select your language:
-          <SELECT name="lang">
+          Select your language:&nbsp;<SELECT name="lang"
+		onchange="self.location=this.options[this.selectedIndex].value;
+		return true;">
             <OPTION selected value="en">English</OPTION>
             <OPTION value="de">Deutsch</OPTION>
             <OPTION value="ja">日本語</OPTION>
-          </SELECT>&nbsp;<input type="submit" value="Go">
-        </p>
+          </SELECT>&nbsp;<noscript><input type="submit" value="Go"></noscript>
         </form>
 
       </div>
