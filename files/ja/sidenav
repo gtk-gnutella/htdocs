@@ -1,0 +1,94 @@
+<!-- $Id$ -->
+
+<!--      -->
+<!-- NEWS -->
+<!--      -->
+<div class="sb_section">
+<a href="<?php echo BASEURL ?>?page=news"
+    class="sb_section_header"
+  >ニュース</a><br>
+</DIV>
+
+<!--               -->
+<!-- DOCUMENTATION -->
+<!--               -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>?page=docs"
+    class="sb_section_header"
+    >文書</a>
+
+  <div class="indent">
+    <a href="<?php echo BASEURL ?>?page=features">機能</a><br>
+    <a href="<?php echo BASEURL ?>?page=faq">FAQ</a><br>
+    <a href="<?php echo BASEURL ?>?page=shots092">スクリーンショット</a><br>
+    <a href="<?php echo BASEURL ?>?page=release_history">履歴</a><br>
+  </div>
+</div>
+
+<!--              -->
+<!-- Getting help -->
+<!--              -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>?page=mailing"
+    class="sb_section_header"
+    >Getting&nbsp;help</a>
+
+  <div class="sb_section_content">
+    <a href="<?php echo BASEURL ?>?page=bugreport_howto">
+      バグ報告の方法</a><br>
+    <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+      バグ追跡システム</a><br>
+    <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
+      新機能のリクエスト</a><br>
+  </div>
+</div>
+
+<!--            -->
+<!-- DEVELOPERS -->
+<!--            -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>?page=devel"
+    class="sb_section_header"
+    >開発者</a>
+
+  <div class="sb_section_content">
+    <a href="http://sourceforge.net/projects/gtk-gnutella/">
+      SF プロジェクトのページ</a><br>
+    <a href="<?php echo BASEURL ?>?page=code101">
+      Code 101</a>
+  </div>
+</div>
+
+<!--          -->
+<!-- DOWNLOAD -->
+<!--          -->
+<div class="sb_section">
+  <a href="http://sourceforge.net/project/showfiles.php?group_id=4467"
+    class="sb_section_header"
+    >ダウンロード</a>
+
+  <div class="sb_section_content">
+    <a href="<?php echo BASEURL ?>?page=devel#devel-snapshots">
+      CVS&nbsp;スナップショット</a>
+  </div>
+</div>
+
+<!--        -->
+<!--  LINKS -->
+<!--        -->
+
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>?page=links"
+    class="sb_section_header"
+    >リンク</a>
+</div>
+
+<!--        -->
+<!-- DONATE -->
+<!--        -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>?page=donate"
+    class="sb_section_header"
+    >寄付</a>
+</div>
+<!-- end sidenav -->
