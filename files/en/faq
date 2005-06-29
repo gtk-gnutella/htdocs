@@ -29,6 +29,7 @@
 <ul>
   <li><a href="#gnet0">What is a good number of connections?</a></li>
   <li><a href="#gnet1">Do I need to forward a port on my firewall?</a></li>
+  <li><a href="#gnet-forward-howto">How do I configure port forwarding?</a></li>
   <li><a href="#gnet-udp">Does gtk-gnutella use UDP?</a></li>
   <li><a href="#gnet2">What does "[FC]" mean?</a></li>
   <li><a href="#gnet3">Why do I lose gnet connections when i have an upload?</a></li>
@@ -258,6 +259,14 @@ See also,
   You can configure the port gtk-gnutella listens on. The setting
   <em>Listen port</em> is located on the
   <em>Network settings</em> tab on the config page.
+
+ 
+<h3><a name="gnet-forward-howto">How do I configure port forwarding</a></h3>
+<p>
+  You can find instructions for most popular routers at
+  <a href="http://www.portforward.com/routers.htm">http://www.portforward.com/routers.htm</a>. Try
+  <a href="http://www.canyouseeme.org/">http://www.canyouseeme.org/</a>
+  to check your port forwarding.
 </p>
 
 <h3><a name="gnet-udp">Does gtk-gnutella use UDP?</a></h3>
