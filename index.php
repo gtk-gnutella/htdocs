@@ -42,8 +42,7 @@ include("files/common.php");
       <div class="boxed">
         <form action="/" method="GET">
           Select your language:&nbsp;<SELECT name="lang"
-		onchange="self.location=this.options[this.selectedIndex].value;
-		return true;">
+		onchange="submit();">
             <OPTION selected value="en">English</OPTION>
             <OPTION value="de">Deutsch</OPTION>
             <OPTION value="ja">日本語</OPTION>
