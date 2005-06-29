@@ -42,12 +42,12 @@ include("files/common.php");
       <div class="boxed">
         <form action="/" method="GET">
         <p>
+          Select your language:
           <SELECT name="lang">
             <OPTION selected value="en">English</OPTION>
             <OPTION value="de">Deutsch</OPTION>
-            <OPTION value="ja">Japanese</OPTION>
-          </SELECT>
-          <input type="submit" value="Go">
+            <OPTION value="ja">日本語</OPTION>
+          </SELECT>&nbsp;<input type="submit" value="Go">
         </p>
         </form>
 
