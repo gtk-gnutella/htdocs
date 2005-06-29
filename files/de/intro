@@ -1,44 +1,45 @@
 <!-- content -->
 <!-- $Id$ -->
 
-<h3>Der grafische Gnutella Client für Unix</h3>
+<h3>Der grafische Gnutella Client f&uuml;r Unix</h3>
 
 <p>
-  Gtk-Gnutella ist ein Server/Client für
+  Gtk-Gnutella ist ein Server/Client f&uuml;r
   <a href="http://www.gnutella.com/">Gnutella</a>.
-  Es läuft auf jedem Unix-ähnlichen System sofern
+  Es l&auml;uft auf jedem Unix-&auml;hnlichen System sofern
 <a href="http://www.gtk.org/">GTK+</a> 
   (1.2 oder neuer) und <a href="http://www.libxml.org">libxml</a>
   installiert sind.
-  Gnome wird nicht benötigt. Gtk-Gnutella wird derzeit hauptsächlich unter
-  Linux (Debian 2.2) entwickelt und getestet. Es ist unter Linux,
+  Gnome wird nicht ben&ouml;tigt. Gtk-Gnutella wird derzeit haupts&auml;chlich
+  unter Linux (Debian 2.2) entwickelt und getestet. Es ist unter Linux,
   <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>,
   <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
   <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
   <a href="http://fink.sourceforge.net/pdb/package.php/gtk-gnutella">Darwin</a>,
-Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS nutzbar; zu den unterstützten CPU-Architekturen gehören unter anderem x86, AMD64, PowerPC, SPARC, MIPS.
+Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS nutzbar; zu den unterst&uuml;tzten
+CPU-Architekturen geh&ouml;ren unter anderem x86, AMD64, PowerPC, SPARC, MIPS.
   <br><br>
-  Gtk-Gnutella wird unter GNU General Public License (GPL) veröffentlicht.
+  Gtk-Gnutella wird unter GNU General Public License (GPL) ver&ouml;ffentlicht.
 </p>
 
 <p>
   Die Entwicklung von Gtk-Gnutella ist noch nicht abgeschlossen, aber es ist
-  vollständig nutzbar: Sowohl die Suche als auch das Herunterladen und Anbieten
-  eigener Dateien ist möglich. Es läuft stabil und kann normalerweise
-  tagelang unbeaufsichtigt betrieben werden.
+  vollst&auml;ndig nutzbar: Sowohl die Suche als auch das Herunterladen und
+  Anbieten eigener Dateien ist m&ouml;glich. Es l&auml;uft stabil und kann
+  normalerweise tagelang unbeaufsichtigt betrieben werden.
 </p>
 
 <p>
-  Vorschläge und Kommentare sind auf der gtk-gnutella-devel
-  Mailing-Liste willkommen. Programmfehler sollten möglichst per
+  Vorschl&auml;ge und Kommentare sind auf der gtk-gnutella-devel
+  Mailing-Liste willkommen. Programmfehler sollten m&ouml;glichst per
   <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
   SourceForge.net Bug Tracker</a> gemeldet werden.
 </p>
 
 <p align="center">
-  <a href="index.php?page=devel">Wer sich an der Entwicklung in C 
-  oder der Dokumentation beteiligen möchte und etwas Erfahrung mitbringt,
-  ist herzlich willkommen!</a>
+  <a href="index.php?page=devel">Wer sich an der Entwicklung in C, der
+  &Uuml;bersetzung oder der Dokumentation beteiligen m&ouml;chte und etwas
+  Erfahrung mitbringt, ist herzlich willkommen!</a>
 </p>
 
 <!-- end intro -->
