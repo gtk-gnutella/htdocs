@@ -1,0 +1,190 @@
+<!-- $Id$ -->
+<h1>スクリーンショット</h1>
+
+<p>
+  ここにあるのは gtk-gnutella 0.92.1c のユーザインターフェイスです。拡大する
+  にはその画像上でクリックして下さい。<a href="#shots092-gtk1">GTK1</a> と
+  <a href="#shots092-gtk2">GTK2</a> の両方のスクリーンショットがあります。
+</p>
+
+<p>
+  昔のインターフェイスに興味があるのでしたら、古いバージョンのスクリーン
+  ショットを見ることができます。バージョン
+  <a class=navlink href="<?php echo BASEURL ?>?page=shots">0.85</a>
+  (2002年4月5日にリリース) と
+  <a class=navlink href="<?php echo BASEURL ?>?page=shots090">0.90</a> 
+  (2002年7月7日にリリース) があります。
+</p>
+
+<h2>GTK1 スクリーンショット</h2><a name="shots092-gtk1"></a>
+
+<p>
+  これらのスクリーンショットでは一部のフォントと色を変えた Metal gtk-engine を
+  使っています。
+</p>
+
+<hr>
+<h4>Gnutella ネットワークのステータス</h4>
+<hr>
+
+<p>
+  <a href="images/shots/092/gnutellaNet-GTK1.png">
+    <img src="images/shots/092/small_gnutellaNet-GTK1.png" width="200" height="157" alt="Gnutella network status">
+  </a>
+  <a href="images/shots/092/gnutellaNet-Stats-GTK1.png">
+    <img src="images/shots/092/small_gnutellaNet-Stats-GTK1.png" width="200" height="157" alt="Gnutella network statistics">
+  </a>
+</p>
+
+<hr>
+<h4>アップロードとダウンロード</h4>
+<hr>
+
+<p>
+  <a href="images/shots/092/Uploads-GTK1.png">
+    <img src="images/shots/092/small_Uploads-GTK1.png" width="200" height="157" alt="Uploads">
+  </a>
+  <a href="images/shots/092/Uploads-Stats-GTK1.png">
+    <img src="images/shots/092/small_Uploads-Stats-GTK1.png" width="200" height="157" alt="Upload statistics">
+  </a>
+  <a href="images/shots/092/Downloads-GTK1.png">
+    <img src="images/shots/092/small_Downloads-GTK1.png" width="200" height="157" alt="Downloads">
+  </a>
+  <a href="images/shots/092/Fileinfo-GTK1.png">
+    <img src="images/shots/092/small_Fileinfo-GTK1.png" width="200" height="157" alt="Fileinfo">
+  </a>
+</p>
+
+<hr>
+<h4>検索とフィルター</h4>
+<hr>
+
+<p>
+  <a href="images/shots/092/Search-GTK1.png">
+    <img src="images/shots/092/small_Search-GTK1.png" width="200" height="157" alt="Searches">
+  </a>
+  <a href="images/shots/092/Search-Monitor-GTK1.png">
+    <img src="images/shots/092/small_Search-Monitor-GTK1.png" width="200" height="157" alt="Search monitor">
+  </a>
+  <a href="images/shots/092/Search-Stats-GTK1.png">
+    <img src="images/shots/092/small_Search-Stats-GTK1.png" width="200" height="157" alt="Search stats">
+  </a>
+  <a href="images/shots/092/Filters-GTK1.png">
+    <img src="images/shots/092/small_Filters-GTK1.png" width="200" height="157" alt="Filter dialog">
+  </a>
+</p>
+
+<hr>
+<h4>各種設定</h4>
+<hr>
+
+<p>
+  <a href="images/shots/092/Network-settings-GTK1.png">
+    <img src="images/shots/092/small_Network-settings-GTK1.png" width="200" height="157" alt="Network settings">
+  </a>
+  <a href="images/shots/092/Bandwidth-control-GTK1.png">
+    <img src="images/shots/092/small_Bandwidth-control-GTK1.png" width="200" height="157" alt="Bandwidth control">
+  </a>
+  <a href="images/shots/092/GnutellaNet-settings-GTK1.png">
+    <img src="images/shots/092/small_GnutellaNet-settings-GTK1.png" width="200" height="157" alt="GnutellaNet settings">
+    </a>
+  <a href="images/shots/092/Download-settings-GTK1.png">
+    <img src="images/shots/092/small_Download-settings-GTK1.png" width="200" height="157" alt="Download settings">
+  </a>
+  <a href="images/shots/092/Upload-settings-GTK1.png">
+    <img src="images/shots/092/small_Upload-settings-GTK1.png" width="200" height="157" alt="Upload settings">
+  </a>
+  <a href="images/shots/092/User-interface-GTK1.png">
+    <img src="images/shots/092/small_User-interface-GTK1.png" width="200" height="157" alt="User interface">
+  </a>
+  <a href="images/shots/092/Debugging-GTK1.png">
+    <img src="images/shots/092/small_Debugging-GTK1.png" width="200" height="157" alt="Debugging">
+  </a>
+</p>
+
+<h2>GTK2 スクリーンショット</h2><a name="shots092-gtk2"></a>
+
+<hr>
+<h4>Gnutella ネットワークのステータス</h4>
+<hr>
+
+<p>
+  <a href="images/shots/092/gnutellaNet-GTK2.png">
+    <img src="images/shots/092/small_gnutellaNet-GTK2.png" width="200" height="155" alt="Gnutella network status">
+  </a>
+  <a href="images/shots/092/gnutellaNet-Stats-GTK2.png">
+    <img src="images/shots/092/small_gnutellaNet-Stats-GTK2.png" width="200" height="155" alt="Gnutella network statistics">
+  </a>
+</p>
+
+<hr>
+<h4>アップロードとダウンロード</h4>
+<hr>
+
+<p>
+  <a href="images/shots/092/Uploads-GTK2.png">
+  <img src="images/shots/092/small_Uploads-GTK2.png" width="200" height="155" alt="Uploads">
+  </a>
+  <a href="images/shots/092/Uploads-Stats-GTK2.png">
+    <img src="images/shots/092/small_Uploads-Stats-GTK2.png" width="200" height="155" alt="Upload statistics">
+  </a>
+  <a href="images/shots/092/Downloads-GTK2.png">
+    <img src="images/shots/092/small_Downloads-GTK2.png" width="200" height="155" alt="Downloads">
+  </a>
+  <a href="images/shots/092/Fileinfo-GTK2.png">
+    <img src="images/shots/092/small_Fileinfo-GTK2.png" width="200" height="155" alt="Fileinfo">
+  </a>
+</p>
+
+<hr>
+<h4>検索</h4>
+<hr>
+
+<p>
+  <a href="images/shots/092/Search-GTK2.png">
+    <img src="images/shots/092/small_Search-GTK2.png" width="200" height="155" alt="Searches">
+  </a>
+  <a href="images/shots/092/Search-Monitor-GTK2.png">
+    <img src="images/shots/092/small_Search-Monitor-GTK2.png" width="200" height="155" alt="Search monitor">
+  </a>
+  <a href="images/shots/092/Search-Stats-GTK2.png">
+    <img src="images/shots/092/small_Search-Stats-GTK2.png" width="200" height="155" alt="Search stats">
+  </a>
+  <!-- FIXME - Forgot to do a filter shot, dammit.
+  <a href="images/shots/092/Filters-GTK2.png">
+    <img src="images/shots/092/small_Filters-GTK2.png" width="200" height="155" alt="Filter dialog">
+  </a>
+  -->
+</p>
+
+<hr>
+<h4>各種設定</h4>
+<hr>
+
+<p>
+  <a href="images/shots/092/Config-GTK2.png">
+    <img src="images/shots/092/small_Config-GTK2.png" width="200" height="155" alt="Configuration">
+  </a>
+  <a href="images/shots/092/Config-Network-GTK2.png">
+    <img src="images/shots/092/small_Config-Network-GTK2.png" width="200" height="155" alt="Network settings">
+  </a>
+  <a href="images/shots/092/Config-GnutellaNet-GTK2.png">
+    <img src="images/shots/092/small_Config-GnutellaNet-GTK2.png" width="200" height="155" alt="GnutellaNet settings">
+  </a>
+  <a href="images/shots/092/Config-Bandwidth-GTK2.png">
+    <img src="images/shots/092/small_Config-Bandwidth-GTK2.png" width="200" height="155" alt="Bandwidth control">
+  </a>
+  <a href="images/shots/092/Config-Downloads-GTK2.png">
+    <img src="images/shots/092/small_Config-Downloads-GTK2.png" width="200" height="155" alt="Download settings">
+  </a>
+  <a href="images/shots/092/Config-Uploads-GTK2.png">
+    <img src="images/shots/092/small_Config-Uploads-GTK2.png" width="200" height="155" alt="Upload settings">
+  </a>
+  <a href="images/shots/092/Config-User-Interface-GTK2.png">
+    <img src="images/shots/092/small_Config-User-Interface-GTK2.png" width="200" height="155" alt="User interface">
+  </a>
+  <a href="images/shots/092/Config-Debugging-GTK2.png">
+    <img src="images/shots/092/small_Config-Debugging-GTK2.png" width="200" height="155" alt="Debugging">
+  </a>
+</p>
+<!-- end shots092 -->

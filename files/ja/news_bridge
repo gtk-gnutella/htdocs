@@ -1,0 +1,6 @@
+<!-- $Id$ -->
+<p>
+	<a href="<?php echo BASEURL ?>?page=news_old"><strong>古いニュース...</strong>
+	</a>
+</p>
+<!-- end news_bridge -->

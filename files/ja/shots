@@ -1,0 +1,20 @@
+<!-- $Id$ -->
+<h3>Gtk-Gnutella スクリーンショット</h3>
+
+<p>
+  スクリーンショットで使用されているテーマは POENIX IceWM です。これらをダウン
+  ロードしたければ <a href="http://icewm.themes.org/">themes.org</a> を御覧下さい。
+</p>
+
+<p>
+  <img src="images/shots/gnet.png" width="728" height="544" alt="Gnutella ネットワークのステータス"><br>
+  <br>
+  <img src="images/shots/upload.png" width="728" height="544" alt="アップロード"><br>
+  <br>
+  <img src="images/shots/download.png" width="728" height="544" alt="ダウンロードとキュー"><br>
+  <br>
+  <img src="images/shots/search.png" width="728" height="544" alt="検索"><br>
+  <br>
+  <img src="images/shots/config.png" width="728" height="544" alt="設定ページ">
+</p>
+<!-- end shots -->

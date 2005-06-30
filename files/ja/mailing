@@ -1,0 +1,52 @@
+<!-- $Id$ -->
+<h1>Getting help</h1>
+<h4>メーリングリスト</h4>
+
+<p>
+  購読または購読を止めるにはリンクをクリックして下さい。
+</p>
+
+<p>
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-users/">
+    gtk-gnutella-users</a> Gtk-Gntuella 利用者のためのメインリストです (
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-users">
+    アーカイブ</a>)<br>
+
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-devel/">
+    gtk-gnutella-devel</a> Gtk-Gnutella の開発に興味があるのでしたら (
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-devel">
+    アーカイブ</a>)<br>
+
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-cvs/">
+    gtk-gnutella-cvs</a> CVS コミットログの配信専用です (
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-cvs">
+    アーカイブ</a>)<br>
+
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-announce/">
+    gtk-gnutella-announce</a> リリースの告知専用です (
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-announce">
+    アーカイブ</a>)<br>
+</p>
+
+<h4>IRC チャット</h4>
+
+<p>
+
+  <a href="http://www.freenode.net/">freenode ネットワーク</a> (以前は 
+  Open Projects Network / OPN でした) の
+  <a href="http://www.maol.ch/irc/egg2html.php?channel=gtk-gnutella">
+  #gtk-gnutella</a> チャンネルで話し合います。ここには常時誰かがいますが、
+  必ずしもあなたの質問に答えられる人がいる訳ではありません。訪れるには
+  <a href="http://www.xchat.org">xchat</a> のような IRC クライアントが
+  必要です。
+</p>
+
+<h4>フォーラム</h4>
+
+<p>
+  gnutellaforums.com に
+  <a href="http://www.gnutellaforums.com/forumdisplay.php?s=&amp;forumid=63">
+  フォーラム</a> があります。頻繁に訪れられるフォーラムではありません、
+  覚えておいて下さい。
+</p>
+<!-- end mailing -->

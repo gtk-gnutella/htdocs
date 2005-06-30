@@ -1,0 +1,32 @@
+<!-- $Id$ -->
+
+<h3>Gnutella 関連リンク</h3>
+
+<ul>
+  <li>
+    <a href="http://www.gnutella.com">www.gnutella.com</a>: Gnutella の非公式
+    ホームページ。
+  </li>
+  <li>
+    <a href="http://www.infoanarchy.org/wiki/wiki.pl?Gnutella">infoAnarchy の
+    Gnutella Wiki</a>: Gnutella の全てに関する良い一般情報があります。
+  </li>
+  <li>
+    <a href="http://freshmeat.net/search/?q=gnutella">Freshmeat Gnutella</a>: 
+    その他多くの Unix Gnutella クライアントに関する情報があります。
+  </li>
+  <li>
+    <a href="http://www.gnutellaforums.com">Gnutella フォーラム</a>: Gnutella
+    について話し合う場所です。
+  </li>
+  <!-- <li>
+         <a href="http://www.guruz.de/gnutella.php">Gnutella on Linux Howto</a>:
+          guruz about Gtk-Gnutella.
+       </li>
+  //-->
+  <li>
+    <a href="http://groups.yahoo.com/group/the_gdf">Gnutella 開発フォーラム (GDF)</a>: 
+    the place where the big players sit. 開発者専用です。Please ONLY developers.
+  </li>
+</ul>
+<!-- end links -->
