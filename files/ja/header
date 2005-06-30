@@ -49,8 +49,8 @@ end bad picture code -->
 
 <table width=100% border=0 cellpadding=2 cellspacing=0><tr bgcolor=black><td>
 <table width=100% border=0 cellpadding=5 cellspacing=0><tr bgcolor=white><td>
-Gtk-Gnutella &copy;&nbsp;2000-02 by Yann Grossel, Raphael Manfredi
-and Various Contributors.
+Gtk-Gnutella &copy;&nbsp;2000-2001 Yann Grossel, 2001-2005 Raphael Manfredi
+および様々な貢献者たち。
 <!-- Website &copy; GNU Copyleft 2000-2002 by Yann Grossel and Markus maol@symlink.ch Ackermann. -->
 </td></tr></table>
 </td></tr></table>
@@ -60,7 +60,7 @@ and Various Contributors.
 <table width=100% border=0 cellpadding=2 cellspacing=0><tr bgcolor=black><td>
 <table width=100% border=0 cellpadding=5 cellspacing=0><tr bgcolor=white><td>
 
-Gtk-Gnutella development hosted&nbsp;by<br>
+Gtk-Gnutella の開発がホストされているのは<br>
 <center>
 <a href="http://sourceforge.net/"><img src="http://sourceforge.net/sflogo.php?group_id=4467&type=1" alt=SourceForge width=88 height=31 border=0></a>
 </center>
