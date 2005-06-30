@@ -15,6 +15,10 @@
     <a href="http://freshmeat.net/search/?q=gnutella">Freshmeat Gnutella</a>: 
     その他多くの Unix Gnutella クライアントに関する情報があります。
   </li>
+    <a href="http://www.the-gdf.org/wiki/">Gnutella プロトコル開発 Wiki</a>: 
+    プロトコルそれ自身について知りたいならここを御覧下さい。
+  </li>
+  <li>
   <li>
     <a href="http://www.gnutellaforums.com">Gnutella フォーラム</a>: Gnutella
     について話し合う場所です。
@@ -26,7 +30,7 @@
   //-->
   <li>
     <a href="http://groups.yahoo.com/group/the_gdf">Gnutella 開発フォーラム (GDF)</a>: 
-    the place where the big players sit. 開発者専用です。Please ONLY developers.
+    各種のエキスパートが集う場所です。開発者の方のみ参加するようお願いします。
   </li>
 </ul>
 <!-- end links -->
