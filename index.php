@@ -40,7 +40,8 @@ include("files/common.php");
     <div class="sidebar">
       <div class="boxed">
         <form action="/" method="GET">
-        <p>Select your language:&nbsp;<select name="lang" onchange="submit();">
+        <p style="margin: 0;">Select your language:<br>
+	<select name="lang" onchange="submit();">
             <option
 		<?php if ('en' === LANG) echo 'selected' ?>
 		value="en">English</option>
