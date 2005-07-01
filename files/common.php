@@ -17,7 +17,7 @@ if (!defined(BASEDIR)) {
 }
 
 $pages = array(
-  "banners"
+  "banners",
   "bugreport_howto",
   "code101",
   "code101a",
@@ -39,7 +39,7 @@ $pages = array(
   "searching_by_hash",
   "shots",
   "shots090",
-  "shots092",
+  "shots092"
 );
 
 /* NEWSNUM is the number of news items that appear on the front page. */
