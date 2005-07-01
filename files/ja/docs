@@ -2,24 +2,24 @@
 <h1 align="center">Gtk-Gnutella 文書</h1>
 <ul>
   <li>
-    <a href="index.php?page=filtering_howto">filtering mini-howto</a> 
-    <small> by Vidar</small>
+    <a href="index.php?page=filtering_howto">フィルタの仕方に関する 
+    Mini-HOWTO</a> <small> 作成者 Vidar</small>
   </li>
   <li>
     <a href="index.php?page=searching_by_hash">ハッシュおよびマグネット
-    リンクでの検索</a> <small>作成者 guruz</small>
+    リンクでの検索</a> <small> 作成者 guruz</small>
   </li>
   <li>
-    <a href="index.php?page=gwebcache">Helping the network by running a 
-    GWebCache</a> <small>作成者 guruz</small>
+    <a href="index.php?page=gwebcache">GWebCache を実行することでの
+    ネットワークへの手助け</a> <small> 作成者 guruz</small>
   </li>
   <li>
-    <a href="index.php?page=bugreport_howto">バグ報告の方法</a> 
-    <small>作成者 eqom14</small>
+    <a href="index.php?page=bugreport_howto">バグ報告の方法</a>
+    <small> 作成者 eqom14</small>
   </li>
 </ul>
 
 <p align="center">
-  More to come...
+  さらに続く予定です...
 </p>
 <!-- end docs -->
