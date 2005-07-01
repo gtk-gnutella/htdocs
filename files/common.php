@@ -51,10 +51,16 @@ define("LANG",    getlang());
 
 include(BASEDIR . "VERSION");
 
-/* ** hack ** fscking damn php won't use LANG in header() ** hack ** */
+header("Content-Type: text/html; charset=utf-8");
+/*
+ * XXX: Please, explain why russian users should be given koi8-r instead
+ *      of utf-8 as encoding. Disabled for now. --cbiere, 2005-07-01
+ */
+/*** hack ** fscking damn php won't use LANG in header() ** hack **
 $ru = $CHARSET["ru"] = 'koi8-r';
 if (isset($CHARSET[LANG]))
   header("Content-Type: text/html; charset=$ru");
+*/
 
 function getpage() {
   global $pages; /* so the included files know about it */
