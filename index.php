@@ -73,27 +73,28 @@ include("files/common.php");
         <div>
           <a href="http://sourceforge.net">
             <img src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
-              width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
+	      style="border: 0;"
+              width="88" height="31" alt="SourceForge.net Logo"/></a>
         </div>
         <div>
           User interface designed with
         </div>
         <div>
           <a href="http://glade.gnome.org/">
-            <img src="images/glade-banner.png" 
-              alt="Glade" border="0" width="100" height="45"></a>
+            <img src="images/glade-banner.png" style="border: 0;"
+              alt="Glade" width="100" height="45"></a>
         </div>
       </div>
       <div class="boxed">
         This Webpage conforms to:
         <br><br>
         <a href="http://validator.w3.org/check/referer">
-          <img src="images/valid-html401.png" 
-            alt="Valid HTML 4.01!" border="0" width="88" height="31"></a>
+          <img src="images/valid-html401.png" style="border: 0;" 
+            alt="Valid HTML 4.01" width="88" height="31"></a>
         <br><br>
         <a href="http://jigsaw.w3.org/css-validator/">
-          <img src="images/valid-css.png" 
-            alt="Valid CSS!" border="0" width="88" height="31"></a>
+          <img src="images/valid-css.png" style="border: 0;"
+            alt="Valid CSS" width="88" height="31"></a>
       </div>
     </div>
 
