@@ -15,7 +15,7 @@
   <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>,
   <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
   <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
-  <a href="http://fink.sourceforge.net/pdb/package.php/gtk-gnutella">Darwin</a>,
+  <a href="http://gtk-gnutella.darwinports.com/">Darwin</a>,
 Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS nutzbar; zu den unterst&uuml;tzten
 CPU-Architekturen geh&ouml;ren unter anderem x86, AMD64, PowerPC, SPARC, MIPS.
   <br><br>

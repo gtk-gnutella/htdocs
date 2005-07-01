@@ -13,7 +13,7 @@
   <a href="http://www.freebsd.org/ja/ports/net.html">FreeBSD</a>,
   <a href="http://www.jp.netbsd.org/ja/JP/Documentation/Packages/list/net/gtk-gnutella/README.html">NetBSD</a>,
   <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
-  <a href="http://fink.sourceforge.net/pdb/package.php/gtk-gnutella">Darwin</a>,
+  <a href="http://gtk-gnutella.darwinports.com/">Darwin</a>,
 Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS 上で動作することが確認されています。
 CPU アーキテクチャには x86, AMD64, PowerPC, SPARC, MIPS が含まれます。
   <br><br>
