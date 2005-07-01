@@ -20,6 +20,7 @@ if (!defined(BASEDIR)) {
 define("NEWSNUM", 7);
 define("BASEURL", "$PHP_SELF");
 define("GENDIR",  "general/");
+define("PAGE",    getpage());
 define("LANG",    getlang());
 
 include(BASEDIR . "VERSION");
@@ -54,10 +55,20 @@ $ru = $CHARSET["ru"] = 'koi8-r';
 if (isset($CHARSET[LANG]))
   header("Content-Type: text/html; charset=$ru");
 
+function getpage() {
+  $page = $_GET["page"];
+  if (ereg("^[a-zA-Z0-9_]*$", $page) && in_array($page, $pages))
+    return $page;
+  else
+    return "";
+}
+
 /* getlang sub - check which language the visitor wants */
 function getlang() {
-  global $cooklang, $lang, $HTTP_ACCEPT_LANGUAGE;
+  global $cooklang, $HTTP_ACCEPT_LANGUAGE;
   $accept = $HTTP_ACCEPT_LANGUAGE;
+
+  $lang = $_GET["lang"];
 
   if (!isset ($lang)) {			/* no language selection in http request */
     if (isset ($cooklang)) {	/* but a cookie is set */
@@ -82,7 +93,6 @@ function getlang() {
  * include the content files including pre and post files
  */
 function icecontent($content) {
-  global $page; /* so the included files know about it */
   iceinclude($content, 1);
 }
 
@@ -92,7 +102,7 @@ function icecontent($content) {
  * checks whether a file is available in the desired language
  */
 function iceinclude($file, $box) {
-  global $page, $news_items; /* so the included files know about it */
+  global $news_items; /* so the included files know about it */
   $incfile = BASEDIR . LANG . "/$file";
   if (!file_exists($incfile)) {
     $incfile = BASEDIR . "en/$file";
@@ -122,16 +132,17 @@ function iceinclude($file, $box) {
  * include the content
  */
 function maincontent() {
-  global $page, $pages; /* so the included files know about it */
+  global $pages; /* so the included files know about it */
+  
   if (
-    in_array($page, $pages) && (
-      file_exists(BASEDIR . LANG . "/$page") ||
-      file_exists(BASEDIR . "en/$page")
+    in_array(PAGE, $pages) && (
+      file_exists(BASEDIR . LANG . '/' . PAGE) ||
+      file_exists(BASEDIR . 'en/' . PAGE)
     )
   ) {
-    icecontent("$page");
+    icecontent(PAGE);
   } 
-	elseif($page == "news_old") {
+	elseif(PAGE === 'news_old') {
 		iceinclude("news_old", 0);
 	}
 	else {
