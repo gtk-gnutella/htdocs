@@ -50,6 +50,9 @@ include("files/common.php");
 		<?php if ('de' === LANG) echo 'selected' ?>
 		value="de">Deutsch</option>
             <option
+		<?php if ('fr' === LANG) echo 'selected' ?>
+		value="fr">Fran&ccedil;ais</option>
+            <option
 		<?php if ('ja' === LANG) echo 'selected' ?>
 		value="ja">日本語</option>
           </select>&nbsp;<input type="submit" value="Go">
