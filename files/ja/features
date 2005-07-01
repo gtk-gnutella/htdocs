@@ -45,7 +45,7 @@
 </ul>
 <p>
   しかしながら、まだやるべき事はたくさんあります。手伝いたいという方は、
-  <a href="index.php?page=devel">開発に関するページ</a>
+  <a href="<?php echo BASEURL ?>&amp;page=devel">開発に関するページ</a>
   を御覧下さい。
 </p>
 <!-- end features -->

@@ -323,7 +323,7 @@ See also,
 <p>
   Sometimes, servents are discovered to have a bug or behaviour that is harmful
   to the gnet.  For example, gtk-gnutella-0.92b had a bug that generated excessive
-  queries which hammered on the <a href="index.php?page=gwebcache">GWebCache system</a>.
+  queries which hammered on the <a href="<?php echo BASEURL ?>&amp;page=gwebcache">GWebCache system</a>.
   Such banning is exceptional, usually restricted to specific versions, and the
   servent's author is informed about the banning.
 </p>
@@ -404,7 +404,7 @@ See also,
 <p>
   A <q><em>passive</em></q> search will return all the search results that 
   pass through gtk-gnutella.  By 
-  <a href="index.php?page=filtering_howto">filtering</a> these results,
+  <a href="<?php echo BASEURL ?>&amp;page=filtering_howto">filtering</a> these results,
   passive searches can be useful.  
 </p>
 <p>

@@ -46,6 +46,6 @@
 <p>
   Trotz allem gibt es noch viel zu tun. Wer helfen m&ouml;chte, lese bitte
   auf der
-  <a href="index.php?page=devel">Entwicklungsseite</a> weiter.
+  <a href="<?php echo BASEURL ?>&amp;page=devel">Entwicklungsseite</a> weiter.
 </p>
 <!-- end features -->

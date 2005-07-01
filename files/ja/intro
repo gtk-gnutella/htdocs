@@ -34,7 +34,7 @@ CPU アーキテクチャには x86, AMD64, PowerPC, SPARC, MIPS が含まれま
 </p>
 
 <p style="text-align: center;">
-  <a href="index.php?page=devel">C での開発や文書作成で手伝って下さる方を随時募集しています</a>
+  <a href="<?php echo BASEURL ?>&amp;page=devel">C での開発や文書作成で手伝って下さる方を随時募集しています</a>
 </p>
 
 <!-- end intro -->

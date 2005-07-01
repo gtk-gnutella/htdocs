@@ -37,7 +37,8 @@ CPU-Architekturen geh&ouml;ren unter anderem x86, AMD64, PowerPC, SPARC, MIPS.
 </p>
 
 <p style="text-align: center;">
-  <a href="index.php?page=devel">Wer sich an der Entwicklung in C, der
+  <a href="<?php echo BASEURL ?>&amp;page=devel">Wer sich an der
+  Entwicklung in C, der
   &Uuml;bersetzung oder der Dokumentation beteiligen m&ouml;chte und etwas
   Erfahrung mitbringt, ist herzlich willkommen!</a>
 </p>

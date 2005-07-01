@@ -45,6 +45,6 @@
 </ul>
 <p>
   However there is still a lot of stuff to be done. If you want to help, go to our 
-  <a href="index.php?page=devel">development page</a>
+  <a href="<?php echo BASEURL ?>&amp;page=devel">development page</a>
 </p>
 <!-- end features -->

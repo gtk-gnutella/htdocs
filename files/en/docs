@@ -2,19 +2,19 @@
 <h1 style="text-align: center;">gtk-gnutella documentation</h1>
 <ul>
   <li>
-    <a href="index.php?page=filtering_howto">filtering mini-howto</a> 
+    <a href="<?php echo BASEURL ?>&amp;page=filtering_howto">filtering mini-howto</a> 
     <small> by Vidar</small>
   </li>
   <li>
-    <a href="index.php?page=searching_by_hash">Searching by hash and by 
+    <a href="<?php echo BASEURL ?>&amp;page=searching_by_hash">Searching by hash and by 
     magnet-link</a> <small>by guruz</small>
   </li>
   <li>
-    <a href="index.php?page=gwebcache">Helping the network by running a 
+    <a href="<?php echo BASEURL ?>&amp;page=gwebcache">Helping the network by running a 
     GWebCache</a> <small>by guruz</small>
   </li>
   <li>
-    <a href="index.php?page=bugreport_howto">Bug Report Howto</a> <small>by 
+    <a href="<?php echo BASEURL ?>&amp;page=bugreport_howto">Bug Report Howto</a> <small>by 
     eqom14</small>
   </li>
 </ul>

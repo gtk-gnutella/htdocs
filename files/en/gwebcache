@@ -18,7 +18,7 @@
 
 <p>
   After your script is up and running, you can send a e-mail to our 
-  <a href="index.php?page=mailing">development mailing list</a> and to the 
+  <a href="<?php echo BASEURL ?>&amp;page=mailing">development mailing list</a> and to the 
   maintainer of the GWebCache Homepage (see his e-mail address at the bottom 
   of his page).<br>
   For more information, visit the <a href="http://www.gnucleus.com/gwebcache">

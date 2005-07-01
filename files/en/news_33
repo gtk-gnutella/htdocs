@@ -3,7 +3,7 @@
 <p>
   Think the banner logo at the top of this page is ugly?  Maybe you can do 
   better!  Send your images (or preferably a link to them) to the 
-  <a href="http://gtk-gnutella.sourceforge.net/index.php?page=mailing"> 
+  <a href="<?php echo BASEURL ?>&amp;page=mailing"> 
     -devel or -users mail list.</a>  If your logo is chosen you will win... um, 
   well, let's see - a place among the Hall of Fame of gtk-gnutella contributors 
   and a special notice on the webpage.
