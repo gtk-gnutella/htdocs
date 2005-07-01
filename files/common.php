@@ -16,15 +16,6 @@ if (!defined(BASEDIR)) {
   define(BASEDIR, "/home/groups/g/gt/gtk-gnutella/htdocs/files/");
 }
 
-/* NEWSNUM is the number of news items that appear on the front page. */
-define("NEWSNUM", 7);
-define("BASEURL", "$PHP_SELF");
-define("GENDIR",  "general/");
-define("PAGE",    getpage());
-define("LANG",    getlang());
-
-include(BASEDIR . "VERSION");
-
 $pages = array(
   "gwebcache",
   "donate",
@@ -49,6 +40,15 @@ $pages = array(
   "code101a",
   "banners"
 );
+
+/* NEWSNUM is the number of news items that appear on the front page. */
+define("NEWSNUM", 7);
+define("BASEURL", "$PHP_SELF");
+define("GENDIR",  "general/");
+define("PAGE",    getpage());
+define("LANG",    getlang());
+
+include(BASEDIR . "VERSION");
 
 /* ** hack ** fscking damn php won't use LANG in header() ** hack ** */
 $ru = $CHARSET["ru"] = 'koi8-r';
