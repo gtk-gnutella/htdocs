@@ -1,0 +1,65 @@
+<!-- $Id$ -->
+<h1>So siehts aus</h1>
+
+<p>
+  Hier sind einige Bilder die <b>Gtk-Gnutella 0.90 stable</b> im Einsatz
+  zeigen.
+  Eine größere Darstellung wird durch Anklicken der Bilder erreicht.
+  Diese Bilder wurden unter Verwendung der <i>gtk-engine</i>
+  <q>IeceGradient</q> und manuell angepassten Farben gemacht. In diesen
+  Beispielen ist Gtk-Gnutella auf Englisch eingestellt.
+</p>
+
+<p>
+  Bilder der alten Version 0.85 kann man 
+  <a class=navlink href="<?php echo BASEURL ?>?page=shots">hier</a>
+  bewundern.
+</p>
+
+<hr>
+<h4>Gnutella Netzwerkstatus</h4>
+<hr>
+<p>
+  <a href="images/shots/090/gnutellanet.png">
+    <img src="images/shots/090/small_gnutellanet.jpg" width="200" height="150" alt="Gnutella Netzwerkstatus"></a>
+</p>
+<hr>
+<h4>Uploads und Downloads</h4>
+<hr>
+<p>
+  <a href="images/shots/090/uploads.png">
+    <img src="images/shots/090/small_uploads.jpg" width="200" height="150" alt="Uploads"></a>
+  <a href="images/shots/090/upload_stats.png">
+    <img src="images/shots/090/small_upload_stats.jpg" width="200" height="150" alt="Upload-Statistiken"></a>
+  <a href="images/shots/090/downloads.png">
+    <img src="images/shots/090/small_downloads.jpg" width="200" height="150" alt="Downloads und Warteschlange"></a>
+</p>
+<hr>
+<h4>Suche und Filter</h4>
+<hr>
+<p>
+  <a href="images/shots/090/search.png">
+    <img src="images/shots/090/small_search.jpg" width="200" height="150" alt="Suchen"></a>
+  <a href="images/shots/090/search_monitor.png">
+    <img src="images/shots/090/small_search_monitor.jpg" width="200" height="150" alt="Suchmonitor"></a>
+  <a href="images/shots/090/search_stats.png">
+    <img src="images/shots/090/small_search_stats.jpg" width="200" height="150" alt="Suchstatistiken"></a>
+  <a href="images/shots/090/filter.png">
+    <img src="images/shots/090/small_filter.jpg" width="200" height="106" alt="Filterdialog"></a>
+</p>
+<hr>
+<h4>Einstellungen</h4>
+<hr>
+<p>
+  <a href="images/shots/090/config_net.png">
+    <img src="images/shots/090/small_config_net.jpg" width="200" height="150" alt="Netzwerkeinstellungen"></a>
+  <a href="images/shots/090/config_bw.png">
+    <img src="images/shots/090/small_config_bw.jpg" width="200" height="150" alt="Bandbreitenregler"></a>
+  <a href="images/shots/090/config_gnet.png">
+    <img src="images/shots/090/small_config_gnet.jpg" width="200" height="150" alt="GnutellaNet-Einstellungen"></a>
+  <a href="images/shots/090/config_download.png">
+    <img src="images/shots/090/small_config_download.jpg" width="200" height="150" alt="Download-Einstellungen"></a>
+  <a href="images/shots/090/config_upload.png">
+    <img src="images/shots/090/small_config_upload.jpg" width="200" height="150" alt="Upload-Einstellungen"></a>
+</p>
+<!-- end shots090 -->

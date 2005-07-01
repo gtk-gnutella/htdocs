@@ -1,0 +1,22 @@
+<!-- $Id$ -->
+<h3>Gtk-Gnutella - So siehts aus</h3>
+
+<p>
+  Diese Bilder zeigen Gtk-Gnutella unter dem IceWM <i>theme</i> PHOENIX. Dieses
+  und andere <i>themes</i> ist auf
+  <a href="http://icewm.themes.org/">themes.org</a> zu finden. Gtk-Gnutella
+  ist in diesem Beispiel auf Englisch eingestellt.
+</p>
+
+<p>
+  <img src="images/shots/gnet.png" width="728" height="544" alt="Gnutella Netzwerk Status"><br>
+  <br>
+  <img src="images/shots/upload.png" width="728" height="544" alt="Uploads"><br>
+  <br>
+  <img src="images/shots/download.png" width="728" height="544" alt="Downloads und Warteschlange"><br>
+  <br>
+  <img src="images/shots/search.png" width="728" height="544" alt="Suchen"><br>
+  <br>
+  <img src="images/shots/config.png" width="728" height="544" alt="Konfiguration">
+</p>
+<!-- end shots -->

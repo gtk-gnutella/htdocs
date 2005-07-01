@@ -1,0 +1,41 @@
+<!-- $Id$ -->
+<h1>Suche per Hash und Magnet-Link</h1>
+
+<h2>Suche per urn:sha1:</h2>
+
+<p>
+  Um eine Datei mithilfe seines SHA-1-Hashs zu suchen, muss man diesen
+  einfach als Suchtext eingeben und mit &lt;Enter&gt; best&auml;tigen.
+  Die offizielle Datei <em>gtk-gnutella-0.91.tar.gz</em> hat beispielsweise
+  den SHA-1-Hash <em>urn:sha1:3OYPL2DQ3C6VFCWZZCB3GAZGBEQVIPSO</em>.
+  Um nach eigenen freigegebenen Dateien in Gnutella zu suchen, kann man
+  folgendes machen:
+</p>
+<pre>
+  $ cat ~/.gtk-gnutella/sha1_cache | grep gtk-gnutella-0.91.tar.gz
+  <strong>3OYPL2DQ3C6VFCWZZCB3GAZGBEQVIPSO</strong>   649623  1037522542  /my/shared/files/gtk-gnutella-0.91.tar.gz
+</pre>
+<p>
+  Der erste Teil ist der Base32-kodierte SHA-1-Hash der Datei. Um danach
+  zu suchen, muss diesem noch <em>urn:sha1:</em> vorangestellt werden.
+  Der SHA-1-Hash l&auml;sst sich nat&uuml;rlich nicht nur mit Gtk-Gnutella
+  selbst ermitteln. Im <a href="/tools/">tools</a> Verzeichnis findet sich
+  ein Werkzeug daf&uuml;r.
+</p>
+  
+<h2>Suche per Magnet-Link</h2>
+
+<p>
+  <a href="http://magnet-uri.sf.net">Magnet-Links</a> sind derzeit nur
+  teilweise unterst&uuml;tzt. Um Magnet-Links von einer Webseite zu nutzen,
+  muss der Link entweder per <i>Drag & Drop</i> vom Web-Browser auf das Fenster
+  von Gtk-Gnutella gezogen werden oder per Zwischenablage kopiert und als
+  Suchtext eingegeben werden. Gtk-Gnutella startet dann die Suche nach der
+  Datei.
+</p>
+
+<p>
+  <br>
+  <em>Markus "guruz" Goetz &lt;guruz at guruz dot de&gt;</em>
+</p>
+<!-- end searching_by_hash -->
