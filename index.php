@@ -14,8 +14,7 @@ if (file_exists("files/maintainer_include.php")) {
 include("files/common.php");
 
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-            "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
   <head>
     <title>
@@ -41,7 +40,7 @@ include("files/common.php");
     <div class="sidebar">
       <div class="boxed">
         <form action="/" method="GET">
-          Select your language:&nbsp;<select name="lang" onchange="submit();">
+        <p>Select your language:&nbsp;<select name="lang" onchange="submit();">
             <option
 		<?php if ('en' === LANG) echo 'selected' ?>
 		value="en">English</option>
@@ -53,6 +52,7 @@ include("files/common.php");
 		value="ja">日本語</option>
           </select>&nbsp;<input type="submit" value="Go">
           <input type="hidden" name="page" value="<?php echo PAGE ?>">
+        </p>
         </form>
 
       </div>
