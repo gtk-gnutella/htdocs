@@ -18,7 +18,7 @@ include("files/common.php");
 <html>
   <head>
     <title>
-      Gtk-Gnutella - The Graphical Unix Gnutella Client
+      <?php iceinclude("title", 0) ?>
     </title>
     <link rel="stylesheet" type="text/css" href="default.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
@@ -66,12 +66,11 @@ include("files/common.php");
         <?php iceinclude("sidenav", 0) ?>
       </div>
       <div class="boxed">
-        Gtk-Gnutella &copy;&nbsp;2000-2005 by Yann Grossel,
-        Rapha&euml;l Manfredi and various contributors.
+        <?php iceinclude("sidenav_copyright", 0) ?>
       </div>
       <div class="boxed">
         <div>
-          Gtk-Gnutella development hosted&nbsp;by
+          <?php iceinclude("sidenav_hosted", 0) ?>
         </div>
         <div>
           <a href="http://sourceforge.net">
@@ -80,7 +79,7 @@ include("files/common.php");
               width="88" height="31" alt="SourceForge.net Logo"/></a>
         </div>
         <div>
-          User interface designed with
+          <?php iceinclude("sidenav_glade", 0) ?>
         </div>
         <div>
           <a href="http://glade.gnome.org/">
@@ -89,7 +88,7 @@ include("files/common.php");
         </div>
       </div>
       <div class="boxed">
-        This Webpage conforms to:
+        <?php iceinclude("sidenav_conform", 0) ?>
         <br><br>
         <a href="http://validator.w3.org/check/referer">
           <img src="images/valid-html401.png" style="border: 0;" 
