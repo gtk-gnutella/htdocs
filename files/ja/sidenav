@@ -31,7 +31,7 @@
 <div class="sb_section">
   <a href="<?php echo BASEURL ?>&amp;page=mailing"
     class="sb_section_header"
-    >Getting&nbsp;help</a>
+    >サポート</a>
 
   <div class="sb_section_content">
     <a href="<?php echo BASEURL ?>&amp;page=bugreport_howto">
