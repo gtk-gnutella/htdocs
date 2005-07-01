@@ -17,7 +17,7 @@
 Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS 上で動作することが確認されています。
 CPU アーキテクチャには x86, AMD64, PowerPC, SPARC, MIPS が含まれます。
   <br><br>
-  Gtk-Gnutella は GNU 一般公有使用許諾書 (GPL) の元でリリースされています。
+  Gtk-Gnutella は GNU 一般公有使用許諾書 (GPL) の下でリリースされています。
 </p>
 
 <p>
