@@ -52,7 +52,7 @@ include("files/common.php");
 		<?php if ('ja' === LANG) echo 'selected' ?>
 		value="ja">日本語</option>
           </select>&nbsp;<input type="submit" value="Go">
-          <input type="hidden" name="page" value="<?php echo $page ?>">
+          <input type="hidden" name="page" value="<?php echo PAGE ?>">
         </form>
 
       </div>
