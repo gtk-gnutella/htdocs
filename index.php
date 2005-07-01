@@ -30,10 +30,10 @@ include("files/common.php");
       <div>
         <a href="<?php echo BASEURL ?>?page=index">
           <img src="images/gtk-gnutella.png" 
-            width="408" height="44" alt="GTK-GNUTELLA" border="0"></a>
+            width="408" height="44" alt="Gtk-Gnutella" border="0"></a>
       </div>
       <div>
-        Current version: <?php echo VERSION ?>
+        <?php iceinclude("current_version", 0); echo VERSION ?>
       </div>
     </div>
 
@@ -41,18 +41,18 @@ include("files/common.php");
     <div class="sidebar">
       <div class="boxed">
         <form action="/" method="GET">
-          Select your language:&nbsp;<SELECT name="lang"
-		onchange="submit();">
-            <OPTION
-		<?php if (0 == strcmp($_GET["lang"],'en')) echo 'selected' ?>
-		value="en">English</OPTION>
-            <OPTION
-		<?php if (0 == strcmp($_GET["lang"],'de')) echo 'selected' ?>
-		value="de">Deutsch</OPTION>
-            <OPTION
-		<?php if (0 == strcmp($_GET["lang"],'ja')) echo 'selected' ?>
-		value="ja">日本語</OPTION>
-          </SELECT>&nbsp;<input type="submit" value="Go">
+          Select your language:&nbsp;<select name="lang" onchange="submit();">
+            <option
+		<?php if ('en' === LANG) echo 'selected' ?>
+		value="en">English</option>
+            <option
+		<?php if ('de' === LANG) echo 'selected' ?>
+		value="de">Deutsch</option>
+            <option
+		<?php if ('ja' === LANG) echo 'selected' ?>
+		value="ja">日本語</option>
+          </select>&nbsp;<input type="submit" value="Go">
+          <input type="hidden" name="lang" value="<?php echo LANG ?>">
         </form>
 
       </div>
@@ -61,8 +61,8 @@ include("files/common.php");
         <?php iceinclude("sidenav", 0) ?>
       </div>
       <div class="boxed">
-        Gtk-Gnutella &copy;&nbsp;2000-04 by Yann Grossel, Rapha&euml;l Manfredi and 
-        Various Contributors.
+        Gtk-Gnutella &copy;&nbsp;2000-2005 by Yann Grossel,
+        Rapha&euml;l Manfredi and various contributors.
       </div>
       <div class="boxed">
         <div>
