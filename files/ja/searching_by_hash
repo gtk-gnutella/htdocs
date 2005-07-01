@@ -1,0 +1,28 @@
+<!-- $Id$ -->
+<h1>ハッシュおよびマグネットリンクでの検索</h1>
+
+<h2>urn:sha1: での検索</h2>
+
+<p>
+  ファイルをその SHA1 ハッシュで検索したいのでしたら、それをただ検索ボックスに入力してエンターを押して下さい、例えば <em>urn:sha1:3OYPL2DQ3C6VFCWZZCB3GAZGBEQVIPSO</em> を入れると、<em>gtk-gnutella-0.91.tar.gz</em> にマッチします。<br>
+  共有しているファイルの SHA1 を知りたければ、以下のようにしてみて下さい:
+</p>
+<pre>
+  $ cat ~/.gtk-gnutella/sha1_cache | grep gtk-gnutella-0.91.tar.gz
+  <strong>3OYPL2DQ3C6VFCWZZCB3GAZGBEQVIPSO</strong>   649623  1037522542  /my/shared/files/gtk-gnutella-0.91.tar.gz
+</pre>
+<p>
+  太字で表示されているものがそのファイルの符号化 SHA1 ハッシュです。この前に <em>urn:sha1:</em> を付けて、さあ検索してみましょう。
+</p>
+
+<h2> magnet: リンクでの検索</h2>
+
+<p>
+  <a href="http://magnet-uri.sf.net">マグネットリンク</a>での検索は今のところ完全にはサポートされていません (ブラウザからリンクをクリックできません) が、Gtk-Gnutella の検索ボックスにコピーしたリンクを貼り付けることができます。これで、そのファイルの新しい検索が開かれます。
+</p>
+
+<p>
+  <br>
+  <em>Markus "guruz" Goetz &lt;guruz at guruz dot de&gt;</em>
+</p>
+<!-- end searching_by_hash -->
