@@ -11,7 +11,7 @@
   類似するシステム上で動作します。GNOME デスクトップ環境は必要ありません。
   現在 Linux (Debian 2.2) で開発・テストされていて、少なくとも Linux,
   <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>,
-  <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
+  <a href="http://www.jp.netbsd.org/ja/JP/Documentation/Packages/list/net/gtk-gnutella/README.html">NetBSD</a>,
   <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
   <a href="http://fink.sourceforge.net/pdb/package.php/gtk-gnutella">Darwin</a>,
 Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS 上で動作することが確認されています。
