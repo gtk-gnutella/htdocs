@@ -17,28 +17,29 @@ if (!defined(BASEDIR)) {
 }
 
 $pages = array(
-  "gwebcache",
-  "donate",
-  "shots",
-  "shots090",
-  "shots092",
+  "banners"
+  "bugreport_howto",
+  "code101",
+  "code101a",
+  "current_version",
   "devel",
-  "mailing",
-  "links",
+  "developers_howto",
   "docs",
+  "donate",
   "faq",
   "features",
   "filtering_howto",
-  "searching_by_hash",
-  "developers_howto",
-  "bugreport_howto",
-  "release_history",
-  "news_header",
+  "gwebcache",
+  "links",
+  "mailing",
   "news_bridge",
+  "news_header",
   "news_old_header",
-  "code101",
-  "code101a",
-  "banners"
+  "release_history",
+  "searching_by_hash",
+  "shots",
+  "shots090",
+  "shots092",
 );
 
 /* NEWSNUM is the number of news items that appear on the front page. */
