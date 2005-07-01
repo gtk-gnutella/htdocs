@@ -2,9 +2,9 @@
 <h1 style="text-align: center;">Bug Report HOWTO</h1>
 <ul>
   <li><a href="#bugreport-intro">How do I file a useful bug report?</a></li>
-  <li><a href="#bugreport-wrong">Gtk-gnutella is doing something wrong or unexpected.</a></li>
-  <li><a href="#bugreport-compile">Gtk-gnutella won't compile!</a></li>
-  <li><a href="#bugreport-crash">Gtk-gnutella crashed!  Now what?</a></li>
+  <li><a href="#bugreport-wrong">Gtk-Gnutella is doing something wrong or unexpected.</a></li>
+  <li><a href="#bugreport-compile">Gtk-Gnutella won't compile!</a></li>
+  <li><a href="#bugreport-crash">Gtk-Gnutella crashed!  Now what?</a></li>
   <li><a href="#bugreport-where">Where's the best place to submit my bug report?</a></li>
 </ul>
 <h3><a name="bugreport-intro">How do I file a useful bug report?</a></h3>
@@ -93,7 +93,7 @@
     Include the relevant version information in every bug report.  
   </p>
 
-<h3><a name="bugreport-wrong">Gtk-gnutella is doing something wrong or unexpected.</a></h3>
+<h3><a name="bugreport-wrong">Gtk-Gnutella is doing something wrong or unexpected.</a></h3>
   <p>
     If gtk-gnutella is acting the way its programmers intended but you would 
     prefer it behaved differently, then you should probably file a 
@@ -112,7 +112,7 @@
     notes before you forget.
   </p>
     
-<h3><a name="bugreport-compile">Gtk-gnutella won't compile!</a></h3>
+<h3><a name="bugreport-compile">Gtk-Gnutella won't compile!</a></h3>
   <p>
     Not many compilation problems are reported for gtk-gnutella.  It's known 
     to compile on Linux, OS X, and FreeBSD with gcc.  If you have problems, 
@@ -130,7 +130,7 @@
     and configuration options described above. 
   </p>
   
-<h3><a name="bugreport-crash">Gtk-gnutella crashed!  Now what?</a></h3>
+<h3><a name="bugreport-crash">Gtk-Gnutella crashed!  Now what?</a></h3>
   <p>
     In order to debug a crash, the executable needs to have its debugging 
     symbols intact.  Unfortunately, to save space on the hard drive and in 

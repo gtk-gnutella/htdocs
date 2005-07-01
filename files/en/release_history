@@ -262,7 +262,7 @@
     buffering time is configurable from the GUI.
   </li>
   <li>
-    Gtk-gnutella is now fully compliant with LimeWire regarding I18N queries, 
+    Gtk-Gnutella is now fully compliant with LimeWire regarding I18N queries, 
     provided you have the ICU library.  Otherwise, it should be OK for roman
     charsets only.
   </li>
@@ -829,7 +829,7 @@
     Added support for local host preference.
   </li>
   <li>
-    Gtk-gnutella can do traffic compression when connecting to a node that 
+    Gtk-Gnutella can do traffic compression when connecting to a node that 
     also supports it.
   </li>
   <li>
