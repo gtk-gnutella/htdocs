@@ -16,6 +16,8 @@ if (!defined(BASEDIR)) {
   define(BASEDIR, "/home/groups/g/gt/gtk-gnutella/htdocs/files/");
 }
 
+$news_items = null;
+
 $pages = array(
   "banners",
   "bugreport_howto",
@@ -74,9 +76,8 @@ function getpage() {
 
 /* getlang sub - check which language the visitor wants */
 function getlang() {
-  global $cooklang, $HTTP_ACCEPT_LANGUAGE;
-  $accept = $HTTP_ACCEPT_LANGUAGE;
-
+  $cooklang = $_COOKIE["cooklang"];
+  $accept = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
   $lang = $_GET["lang"];
 
   if (!isset ($lang)) {			/* no language selection in http request */
