@@ -141,7 +141,7 @@
 <h3><a name="general-ultrapeer">What are Ultrapeers and Leaf nodes?</a></h3>
 <p>
   Since version 0.92, gtk-gnutella has implemented
-  <a href="<?php echo BASEURL ?>?page=features"><em>ultrapeers</em></a> and
+  <a href="<?php echo BASEURL ?>&amp;page=features"><em>ultrapeers</em></a> and
   <em>leaf nodes</em>.
   This divides servents on the gnet into leaf nodes, which connect only to
   ultrapeers, and ultrapeers, which connect to many leaf nodes and a small
@@ -153,13 +153,13 @@
   (more than two hours), and have sufficient surplus bandwidth to donate to
   the gnet.  Ultrapeers forward queries from their leaf nodes and leaf nodes
   upload to their ultrapeers
-  <a href="<?php echo BASEURL ?>?page=features">QRP</a>
+  <a href="<?php echo BASEURL ?>&amp;page=features">QRP</a>
   tables which contain hashes of keywords that will match files shared by the 
   leaf.  When an ultrapeer gets a hit on a query routing table, it relays the 
   query to the corresponding leaf node.  The result is very low gnet traffic 
   for each leaf node, freeing bandwidth for sharing and downloading (which 
   still occur directly p2p.)  Ultrapeers can also act as
-  <a href="<?php echo BASEURL ?>?page=features">push-proxies</a> for
+  <a href="<?php echo BASEURL ?>&amp;page=features">push-proxies</a> for
   firewalled leaf nodes.
 </p>
 

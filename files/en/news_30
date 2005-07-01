@@ -21,7 +21,7 @@
   </li>
 </ul>
 <p>
-	For more changes go <a href="<?php echo BASEURL ?>?page=release_history#0.93">here</a>.
+	For more changes go <a href="<?php echo BASEURL ?>&amp;page=release_history#0.93">here</a>.
 </p><p>
   <em>gtk-gnutella team</em>
 </p>

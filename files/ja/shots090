@@ -9,7 +9,7 @@
 </p>
 
 <p>
-  <a class=navlink href="<?php echo BASEURL ?>?page=shots">ここ</a> で
+  <a class="navlink" href="<?php echo BASEURL ?>&amp;page=shots">ここ</a> で
   バージョン 0.85 より古いスクリーンショットを見られます。
 </p>
 

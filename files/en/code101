@@ -103,7 +103,7 @@
 
 <h2>Answers</h2>
 <p>
-	The <a href="<?php echo BASEURL ?>?page=code101a">answers</a> are here on a
+	The <a href="<?php echo BASEURL ?>&amp;page=code101a">answers</a> are here on a
 	separate page. Don't cheat yourself by reading a answer before trying the test.
 </p>
 

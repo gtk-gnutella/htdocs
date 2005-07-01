@@ -4,7 +4,7 @@
 <!-- NEWS -->
 <!--      -->
 <div class="sb_section">
-<a href="<?php echo BASEURL ?>?page=news"
+<a href="<?php echo BASEURL ?>&amp;page=news"
     class="sb_section_header"
   >ニュース</a><br>
 </DIV>
@@ -13,15 +13,15 @@
 <!-- DOCUMENTATION -->
 <!--               -->
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>?page=docs"
+  <a href="<?php echo BASEURL ?>&amp;page=docs"
     class="sb_section_header"
     >文書</a>
 
   <div class="indent">
-    <a href="<?php echo BASEURL ?>?page=features">特徴</a><br>
-    <a href="<?php echo BASEURL ?>?page=faq">FAQ</a><br>
-    <a href="<?php echo BASEURL ?>?page=shots092">スクリーンショット</a><br>
-    <a href="<?php echo BASEURL ?>?page=release_history">リリース履歴</a><br>
+    <a href="<?php echo BASEURL ?>&amp;page=features">特徴</a><br>
+    <a href="<?php echo BASEURL ?>&amp;page=faq">FAQ</a><br>
+    <a href="<?php echo BASEURL ?>&amp;page=shots092">スクリーンショット</a><br>
+    <a href="<?php echo BASEURL ?>&amp;page=release_history">リリース履歴</a><br>
   </div>
 </div>
 
@@ -29,12 +29,12 @@
 <!-- Getting help -->
 <!--              -->
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>?page=mailing"
+  <a href="<?php echo BASEURL ?>&amp;page=mailing"
     class="sb_section_header"
     >Getting&nbsp;help</a>
 
   <div class="sb_section_content">
-    <a href="<?php echo BASEURL ?>?page=bugreport_howto">
+    <a href="<?php echo BASEURL ?>&amp;page=bugreport_howto">
       バグ報告の方法</a><br>
     <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
       バグ追跡システム</a><br>
@@ -47,14 +47,14 @@
 <!-- DEVELOPERS -->
 <!--            -->
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>?page=devel"
+  <a href="<?php echo BASEURL ?>&amp;page=devel"
     class="sb_section_header"
     >開発</a>
 
   <div class="sb_section_content">
     <a href="http://sourceforge.net/projects/gtk-gnutella/">
       SF プロジェクトのページ</a><br>
-    <a href="<?php echo BASEURL ?>?page=code101">
+    <a href="<?php echo BASEURL ?>&amp;page=code101">
       コード 101</a>
   </div>
 </div>
@@ -68,7 +68,7 @@
     >ダウンロード</a>
 
   <div class="sb_section_content">
-    <a href="<?php echo BASEURL ?>?page=devel#devel-snapshots">
+    <a href="<?php echo BASEURL ?>&amp;page=devel#devel-snapshots">
       CVS&nbsp;スナップショット</a>
   </div>
 </div>
@@ -78,7 +78,7 @@
 <!--        -->
 
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>?page=links"
+  <a href="<?php echo BASEURL ?>&amp;page=links"
     class="sb_section_header"
     >リンク</a>
 </div>
@@ -87,7 +87,7 @@
 <!-- DONATE -->
 <!--        -->
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>?page=donate"
+  <a href="<?php echo BASEURL ?>&amp;page=donate"
     class="sb_section_header"
     >寄付</a>
 </div>
