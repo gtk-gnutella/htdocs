@@ -1,0 +1,110 @@
+<h1>コード 101</h1>
+<p>
+    ここで、あなたが gtk-gnutella のコードを触れるだけ C に馴染んで
+    いるかどうかを確認するため、少しばかりのテストを行ってみたいと
+    思います。私達がプロジェクトで経験したコード実装の落し穴からの
+    出題となります。
+</p>
+
+<h2>テスト 1</h2>
+<p>
+  作成者: Richard Eckart<br>
+	難易度: 普通
+</p>
+
+<h3>問題</h3>
+<p>
+    以下のコードはアップロードのヘッダからユーザ・エージェントを取り出します。
+    GUI はユーザ・エージェントの文字列を表示するか、<code>u->user_agent</code>
+    が <code>NULL</code> なら "..." を表示します。
+    残念ながら、ある場所にバグがあるのでテストするユーザの GUI には常に "..."
+    が表示されます。どこが誤っているか解かりますか?
+</p>
+<pre>
+ 1: /*
+ 2:  * User-Agent を取り出します.
+ 3:  *
+ 4:  * X-Token: GTKG トークン
+ 5:  * User-Agent: 何でも
+ 6:  * Server: 何でも (User-Agent が無い場合でも)
+ 7:  */
+ 8:
+ 9: token = header_get(header, "X-Token");
+10: user_agent = header_get(header, "User-Agent");
+11:
+12: /* Maybe they sent a Server: line, thinking they're a server? */
+13: if (user_agent != NULL)
+14:     user_agent = header_get(header, "Server");
+15:
+16: if (user_agent != NULL)
+17:     faked = !version_check(user_agent, token, u->ip);
+18:
+19: if (u->user_agent == NULL && user_agent != NULL) {
+20:     if (faked) {
+21:         gchar *name = g_strdup_printf("!%s", user_agent);
+22:
+23:         u->user_agent = atom_str_get(name);
+24:         g_free(name);
+25:     } else
+26:	    u->user_agent = atom_str_get(user_agent);
+27: }
+</pre>
+
+<h2>テスト 2</h2>
+<p>
+  作成者: Richard Eckart<br>
+	難易度: 普通
+</p>
+
+<h3>問題</h3>
+<p>
+    GTK1 サポートでコンパイルされた Gtk-Gnutella を実行中に以下のコードがメモリリーク
+    を含んでいるのに気付きました。コード中には新しいメモリを割り当てる場所が二箇所
+    あります、18 および 19 行目です。どちらにメモリリークがあるか解かりますか?
+</p>
+<pre>
+ 1: /*
+ 2: * on_popup_downloads_push_activate
+ 3: *
+ 4: * All selected downloads fallback to push
+ 5: */
+ 6: void on_popup_downloads_push_activate(
+ 7:    GtkMenuItem * menuitem, gpointer user_data)
+ 8: {
+ 9:     struct download *d;
+10:     GList *node_list, *data_list = NULL;
+11:     GtkCTree *ctree_downloads = GTK_CTREE
+12:         (lookup_widget(main_window, "ctree_downloads"));
+13:     GtkCTree *ctree_downloads_queue = GTK_CTREE
+14:         (lookup_widget(main_window, "ctree_downloads_queue"));
+15:
+16:     gtk_clist_freeze(GTK_CLIST(ctree_downloads_queue));
+17:     gtk_clist_freeze(GTK_CLIST(ctree_downloads));
+18:     node_list = g_list_copy(GTK_CLIST(ctree_downloads)->selection);
+19:     data_list = downloads_gui_collect_ctree_data(ctree_downloads,
+20:         node_list, TRUE, TRUE);
+21:
+23:     for (; NULL != data_list; data_list = g_list_next(data_list)) {
+24:         d = (struct download *) data_list->data;
+25:
+26:         if (!d) {
+27:             g_warning(
+28:                 "on_popup_downloads_push_activate(): row has NULL data\n");
+29:             continue;
+30:         }
+31:         download_fallback_to_push(d, FALSE, TRUE);
+32:     }
+33:
+34:     gtk_clist_thaw(GTK_CLIST(ctree_downloads_queue));
+35:     gtk_clist_thaw(GTK_CLIST(ctree_downloads));
+36:     g_list_free(data_list);
+37:     g_list_free(node_list);
+38: }
+</pre>
+
+<h2>解答</h2>
+<p>
+    <a href="<?php echo BASEURL ?>?page=code101a">解答</a> は別のページにあります。
+    テストに挑戦する前に解答を読むような事はしないで下さいね。
+</p>
+
