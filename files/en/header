@@ -7,30 +7,30 @@
 
 <body>
 
-<table border=0 cellpadding=0 cellspacing=10 width=100%>
+<table border="0" cellpadding="0" cellspacing="10" width="100%">
 <tr>
 
 <!-- leave it out - bad picture
-<td width=140 align=center valign=middle>
+<td width="140" align="center" valign="middle">
 
-<a href="<?php echo BASEURL ?>&amp;page=index"><img src="images/gg.png" width=128 height=128 alt="Gtk-Gnutella Home" border=0></a>
+<a href="<?php echo BASEURL ?>&amp;page=index"><img src="images/gg.png" width="128" height="128" alt="Gtk-Gnutella Home" border="0"></a>
 
 </td>
 end bad picture code -->
 
-<td valign=middle>
+<td valign="middle">
 
-<table width=100% border=0 cellpadding=2 cellspacing=0><tr bgcolor=black><td>
-<table width=100% border=0 cellpadding=5 cellspacing=0><tr bgcolor=white><td class=nav align=center>
+<table width="100%" border="0" cellpadding="2" cellspacing="0"><tr bgcolor="black"><td>
+<table width="100%" border="0" cellpadding="5" cellspacing="0"><tr bgcolor="white"><td class="nav" align="center">
 
-<a href="<?php echo BASEURL ?>&amp;page=index"><img src="images/gtk-gnutella.png" width=408 height=44 alt="" border=0></a><br><br>
+<a href="<?php echo BASEURL ?>&amp;page="index""><img src="images/gtk-gnutella.png" width="408" height="44" alt="" border="0"></a><br><br>
 
 &nbsp;&nbsp;<a
-  class=navlink href="http://sourceforge.net/project/showfiles.php?group_id=4467">Download <?php echo VERSION ?></a>&nbsp;&nbsp;&nbsp;&nbsp;<a
-  class=navlink href="<?php echo BASEURL ?>&amp;page=shots090">Screenshots</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
-  class=navlink href="<?php echo BASEURL ?>&amp;page=devel">Development</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
-  class=navlink href="<?php echo BASEURL ?>&amp;page=mailing">Getting&nbsp;Help</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
-  class=navlink href="<?php echo BASEURL ?>&amp;page=links">Gnutella&nbsp;Links</a>&nbsp;&nbsp;
+  class="navlink" href="http://sourceforge.net/project/showfiles.php?group_id=4467">Download <?php echo VERSION ?></a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+  class="navlink" href="<?php echo BASEURL ?>&amp;page=shots090">Screenshots</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+  class="navlink" href="<?php echo BASEURL ?>&amp;page=devel">Development</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+  class="navlink" href="<?php echo BASEURL ?>&amp;page=mailing">Getting&nbsp;Help</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+  class="navlink" href="<?php echo BASEURL ?>&amp;page=links">Gnutella&nbsp;Links</a>&nbsp;&nbsp;
 
 <!-- language selection - now unused -->
 <!--
@@ -43,8 +43,8 @@ end bad picture code -->
 
 </td></tr></table>
 
-<table border=0 cellpadding=0 cellspacing=10 width=100%>
-<tr><td width=140 align=center valign=top>
+<table border="0" cellpadding="0" cellspacing="10" width="100%">
+<tr><td width="140" align="center" valign="top">
 
 <table width=100% border=0 cellpadding=2 cellspacing=0><tr bgcolor=black><td>
 <table width=100% border=0 cellpadding=5 cellspacing=0><tr bgcolor=white><td>

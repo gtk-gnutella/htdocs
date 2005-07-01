@@ -29,7 +29,8 @@ include("files/common.php");
       <div>
         <a href="<?php echo BASEURL ?>?page=index">
           <img src="images/gtk-gnutella.png" 
-            width="408" height="44" alt="Gtk-Gnutella" border="0"></a>
+            width="408" height="44" alt="Gtk-Gnutella"
+	    style="border: 0;"></a>
       </div>
       <div>
         <?php iceinclude("current_version", 0); echo VERSION ?>

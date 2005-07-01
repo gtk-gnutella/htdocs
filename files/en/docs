@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<h1 align="center">gtk-gnutella documentation</h1>
+<h1 style="text-align: center;">gtk-gnutella documentation</h1>
 <ul>
   <li>
     <a href="index.php?page=filtering_howto">filtering mini-howto</a> 
@@ -19,7 +19,7 @@
   </li>
 </ul>
 
-<p align="center">
+<p style="text-align: center;">
   More to come...
 </p>
 <!-- end docs -->

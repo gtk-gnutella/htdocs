@@ -1,13 +1,13 @@
 <!-- $Id$ -->
 
-<h1 align="center">寄付</h1>
+<h1 style="text-align: center;">寄付</h1>
 <p>
   Gtk-Gnutella メインプログラマーの Raphael Manfredi に寄付金を送付することで、
   開発をサポートできます。この寄付金は彼のホームマシン用のハードウェアを取り換え
   たり、コンピュータ関係の本を購入するのに当てられます。
 </p>
 <br>
-<p align="center">
+<p style="text-align: center;">
   <a href="https://www.paypal.com/xclick/business=Raphael.Manfredi%40pobox.com&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">
     <strong>PayPal 経由で寄付するにはここをクリックして下さい!</strong></a>
 </p>

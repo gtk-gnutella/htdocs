@@ -34,7 +34,7 @@ x86, AMD64, PowerPC, SPARC, MIPS.
   SourceForge.net Bug Tracker</a>
 </p>
 
-<p align="center">
+<p style="text-align: center;">
   <a href="index.php?page=devel">We need additional contributors for C 
   development and documentation</a>
 </p>

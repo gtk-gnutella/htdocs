@@ -1,6 +1,6 @@
 <!-- $Id$ -->
 
-<h1 align="center">Spenden</h1>
+<h1 style="text-align: center;">Spenden</h1>
 <p>
   Die Entwicklung von Gtk-Gnutella kann durch Geldspenden an den
   Hauptprogrammierer Rapha&euml;l Manfredi unterst&uuml;tzt werden. Das Geld
@@ -8,7 +8,7 @@
   Computerliteratur genutzt.
 </p>
 <br>
-<p align="center">
+<p style="text-align: center;">
   <a href="https://www.paypal.com/xclick/business=Raphael.Manfredi%40pobox.com&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">
     <strong>Hier kann via PayPal gespendet werden.</strong></a>
 </p>

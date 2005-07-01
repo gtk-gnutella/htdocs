@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<h1 align="center">Bug Report HOWTO</h1>
+<h1 style="text-align: center;">Bug Report HOWTO</h1>
 <ul>
   <li><a href="#bugreport-intro">How do I file a useful bug report?</a></li>
   <li><a href="#bugreport-wrong">Gtk-gnutella is doing something wrong or unexpected.</a></li>

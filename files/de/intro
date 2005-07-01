@@ -36,7 +36,7 @@ CPU-Architekturen geh&ouml;ren unter anderem x86, AMD64, PowerPC, SPARC, MIPS.
   SourceForge.net Bug Tracker</a> gemeldet werden.
 </p>
 
-<p align="center">
+<p style="text-aligen: center;">
   <a href="index.php?page=devel">Wer sich an der Entwicklung in C, der
   &Uuml;bersetzung oder der Dokumentation beteiligen m&ouml;chte und etwas
   Erfahrung mitbringt, ist herzlich willkommen!</a>

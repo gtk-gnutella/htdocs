@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<h1 align="center">Gtk-Gnutella 文書</h1>
+<h1 style="text-align: center;">Gtk-Gnutella 文書</h1>
 <ul>
   <li>
     <a href="index.php?page=filtering_howto">フィルタの仕方に関する 
@@ -19,7 +19,7 @@
   </li>
 </ul>
 
-<p align="center">
+<p style="text-align: center;">
   さらに続く予定です...
 </p>
 <!-- end docs -->
