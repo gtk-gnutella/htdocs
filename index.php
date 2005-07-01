@@ -15,11 +15,9 @@ include("files/common.php");
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
+<html lang="<?php echo LANG ?>">
   <head>
-    <title>
       <?php iceinclude("title", 0) ?>
-    </title>
     <link rel="stylesheet" type="text/css" href="default.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
