@@ -56,6 +56,8 @@ if (isset($CHARSET[LANG]))
   header("Content-Type: text/html; charset=$ru");
 
 function getpage() {
+  global $pages; /* so the included files know about it */
+
   $page = $_GET["page"];
   if (ereg("^[a-zA-Z0-9_]*$", $page) && in_array($page, $pages))
     return $page;
