@@ -18,7 +18,7 @@
     >Dokumentation</a>
 
   <div class="indent">
-    <a href="<?php echo BASEURL ?>?page=features">Features</a><br>
+    <a href="<?php echo BASEURL ?>?page=features">Eigenschaften</a><br>
     <a href="<?php echo BASEURL ?>?page=faq">H&auml;ufige&nbsp;Fragen</a><br>
     <a href="<?php echo BASEURL ?>?page=shots092">So&nbsp;siehts&nbsp;aus</a><br>
     <a href="<?php echo BASEURL ?>?page=release_history">Alte Meldungen</a><br>
@@ -39,7 +39,7 @@
     <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
       Fehlerberichte</a><br>
     <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
-      Feature&nbsp;vorschlagen</a><br>
+      W&uuml;nsche</a><br>
   </div>
 </div>
 
