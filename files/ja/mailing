@@ -4,6 +4,7 @@
 
 <p>
   購読または購読を止めるにはリンクをクリックして下さい。
+  <strong>これらのリストは英語専用です。</strong>
 </p>
 
 <p>
@@ -16,6 +17,9 @@
     gtk-gnutella-devel</a> Gtk-Gnutella の開発に興味があるのでしたら (
   <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-devel">
     アーカイブ</a> )<br>
+
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-cvs/">
+    gtk-gnutella-devel</a> Gtk-Gnutella のコミットログです ( アーカイブはありません )<br>
 
   <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-announce/">
     gtk-gnutella-announce</a> リリースの告知専用です (
