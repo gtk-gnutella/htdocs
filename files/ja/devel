@@ -1,0 +1,100 @@
+<!-- $Id$ -->
+<h1 align="center">開発</h1>
+
+<h2>お手伝い募集</h2>
+<p>
+  現在のバージョンの Gtk-Gnutella は良好に動作していますが、最新の Gnutella
+  規格には追い付いていません。Gnutella の "主要プレイヤー" (LimeWire, BearShare,
+  Shareaza, Gnucleus, Xolox) は Partial File Sharing (部分ファイル共有、
+  Gtk-Gnutella はクライアント側では実装されていますが、サーバ側ではまだです)、
+  ツリーハッシュや GUESS と呼ばれる UDP クエリ方式を実装しています。
+  他に可能性のある面白い機能には XML クエリ・スキーム (例えば、ファイルの題名や
+  サイズ、ジャンルでの検索)、magnet: リンクおよびダウンロード・プロキシがありますが、
+  今現在 Gtk-Gnutella はこれら全てが未実装です。
+</p>
+<p>
+  現在の中心開発者である Raphael Manfredi と Richard Eckart は実に多大な
+  作業を行っていますが、Richard は大学が忙しく Raphael には仕事と家族が
+  あります。従って彼らがコードを実装する時間は限られています。Gtk-Gnutella
+  はオープンソースですから、これを改良するには個々人に負っているという訳です。
+</p>
+<p>
+  さて、重要な質問があります:
+</p>
+<ul>
+  <li>
+    新しい機能を Gtk-Gnutella に実装する手伝いを始める、またこれを最高のネイティブ
+    Unix クライアントにするのを手伝えるだけ十分に C 言語を知っていますか?
+  </li>
+  <li>
+    文章に関する能力、(または) よい文書へのセンスがありますか? 今のところ
+    Gtk-Gnutella にはよい文書が足りません、しかも現在の開発者は忙しいのです...
+    正確に言うと開発に忙殺されています。
+  </li>
+  <li>
+    何かしたいけれども、実際に何をすればいいのか分からなかったりしますか?
+  </li>
+</ul>
+<p>
+  もしどれかに当てはまるなら、開発者向けの
+  <a href="http://gtk-gnutella.sourceforge.net/index.php?page=mailing">
+  メーリングリスト</a> へ登録してそこに何かメッセージを下さい。すぐに
+  コードを書き始めずに、他に同じ機能を実装するのを手伝いたい人がいるか
+  どうか確かめた上で、その人達とチームを組んで下さい。
+  <a href="index.php?page=developers_howto">"開発者への HOWTO"</a> も
+  御覧下さい。
+</p>
+
+<hr>
+
+<p><a name="devel-cvs"></a>
+  最新の開発版を手に入れるには、Gtk-Gnutella の CVS リポジトリーが利用できます。
+  <strong>警告</strong>: この開発版ですが、現在のバージョンは不安定であったり、
+  あなたのマシンではコンパイルすらできないかもしれません。ただファイルの差分に関して
+  興味があるならウェブ上のリポジトリー
+  <a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/">
+  を御覧下さい。
+</p>
+
+<p>CVS からファイルを取得するには以下のコマンドを打って下さい:<br>
+  <br>
+  <code>
+    cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<br>
+    cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co gtk-gnutella-current
+  </code>
+  <br>
+  <br>
+  匿名利用者用のパスワード入力が促されますが、単にエンターキーを押して下さい。
+</p>
+
+<p>
+  Gtk-Gnutella の開発を手伝いたいなら
+  <a href="http://sourceforge.net/projects/gtk-gnutella/">SourceForge プロジェクトのページ</a>
+  を尋ねて下さい、ここで gtk-gnutella-devel メーリングリストに登録してパッチをポストできます。
+  バグの報告や新機能の要望は
+  <a href="http://sourceforge.net/tracker/?group_id=4467">バグ追跡システム</a>
+  へ出して下さい、よろしくお願いします。
+</p>
+
+<hr>
+
+<a name="devel-snapshots"></a>
+<h3>CVS スナップショット:</h3>
+
+<p>
+  <a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella-current.tar.bz2">
+    <strong>公式 CVS スナップショット</strong></a> SourceForge では 6 時間毎に生成
+  されます。
+</p>
+<p>
+  スナップショットは以下の方々からも提供されています:
+</p>
+<ul>
+  <li><a href="http://gtk-gnutella.asselman.com/">MrJoe</a> <em>時間毎のスナップショット</em> (
+    <a href="http://www.asselman.com/">Jeroen Asselman</a> がスポンサーです)
+  </li>
+  <li><a href="http://gtkg.guruz.de/">guruz</a> <em>一日毎のスナップショット</em> (
+    <a href="http://www.bawue.de">bawue.net</a> がスポンサーです)
+  </li>
+</ul>
+<!-- end devel -->
