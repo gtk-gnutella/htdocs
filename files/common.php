@@ -36,6 +36,7 @@ $pages = array(
   "mailing",
   "news_bridge",
   "news_header",
+  "news_old",
   "news_old_header",
   "release_history",
   "searching_by_hash",
