@@ -42,7 +42,8 @@ $pages = array(
   "searching_by_hash",
   "shots",
   "shots090",
-  "shots092"
+  "shots092",
+  "special_news"
 );
 
 /* NEWSNUM is the number of news items that appear on the front page. */
