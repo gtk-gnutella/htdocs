@@ -1,0 +1,94 @@
+<!-- $Id$ -->
+
+<!--      -->
+<!-- NEWS -->
+<!--      -->
+<div class="sb_section">
+<a href="<?php echo BASEURL ?>&amp;page=news"
+    class="sb_section_header"
+  >Actualit&eacute;s</a><br>
+</DIV>
+
+<!--               -->
+<!-- DOCUMENTATION -->
+<!--               -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>&amp;page=docs"
+    class="sb_section_header"
+    >Documentation</a>
+
+  <div class="indent">
+    <a href="<?php echo BASEURL ?>&amp;page=features">Fonctionnalit&eacute;s</a><br>
+    <a href="<?php echo BASEURL ?>&amp;page=faq">FAQ</a><br>
+    <a href="<?php echo BASEURL ?>&amp;page=shots092">Captures d'&eacute;cran</a><br>
+    <a href="<?php echo BASEURL ?>&amp;page=release_history">Historique</a><br>
+  </div>
+</div>
+
+<!--              -->
+<!-- Getting help -->
+<!--              -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>&amp;page=mailing"
+    class="sb_section_header"
+    >Obtenir de l'aide</a>
+
+  <div class="sb_section_content">
+    <a href="<?php echo BASEURL ?>&amp;page=bugreport_howto">
+      Comment reporter un bug</a><br>
+    <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+      Gestion des Bugs</a><br>
+    <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
+      Demande de fonctionnalit&eacute;s suppl&eacute;mentaires</a><br>
+  </div>
+</div>
+
+<!--            -->
+<!-- DEVELOPERS -->
+<!--            -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>&amp;page=devel"
+    class="sb_section_header"
+    >D&eacute;veloppeurs</a>
+
+  <div class="sb_section_content">
+    <a href="http://sourceforge.net/projects/gtk-gnutella/">
+      Page du projet SF</a><br>
+    <a href="<?php echo BASEURL ?>&amp;page=code101">
+      Code 101</a>
+  </div>
+</div>
+
+<!--          -->
+<!-- DOWNLOAD -->
+<!--          -->
+<div class="sb_section">
+  <a href="http://sourceforge.net/project/showfiles.php?group_id=4467"
+    class="sb_section_header"
+    >Download</a>
+   
+  <div class="sb_section_content">
+    <a href="<?php echo BASEURL ?>&amp;page=devel#devel-snapshots">
+      CVS&nbsp;Snapshots</a>
+  </div>
+</div>
+
+<!--        -->
+<!--  LINKS -->
+<!--        -->
+
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>&amp;page=links"
+    class="sb_section_header"
+    >Liens</a>
+</div>
+
+<!--        -->
+<!-- DONATE -->
+<!--        -->
+<div class="sb_section">
+  <a href="<?php echo BASEURL ?>&amp;page=donate"
+    class="sb_section_header"
+    >Donner</a>
+</div>
+<!-- end sidenav -->
