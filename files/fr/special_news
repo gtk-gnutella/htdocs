@@ -4,8 +4,7 @@
 <!-- and -->
 <!-- Peter Gerwinski <peter_at_gerwinski_dot_de> http://www.peter.gerwinski.de -->
   
-<h1 style="background: red; color: white; text-align: center;">
-  ARR&Ecirc;TEZ les brevets&nbsp;logiciels&nbsp;!</h1>
+<h1 class="attention">ARR&Ecirc;TEZ les brevets&nbsp;logiciels&nbsp;!</h1>
 
    <p>
    Nous demandons &agrave; ce que nos repr&eacute;sentants au Parlement europ&eacute;en
