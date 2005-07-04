@@ -52,6 +52,7 @@
 	  everywhere, so hard disk vendors won't fool you any longer.</li>
 	<li>Compatibility fixes to allow compilation on more architectures,
 	  including 64 bit architectures.</li>
+	<li>
 	  <ul>
 	  <li>Systems with a sendfile() that is not largefile compatible work
 		again. On platforms without sendfile() we now use mmap() for
@@ -67,6 +68,7 @@
 	  spam sites.</li>
 	<li>Greatly enhanced stability as compared to 0.95 due to many bug
 	  fixes. Other noteworthy bugs fixed are:</li>
+	<li>
 	  <ul>
 	  <li>Gtk-Gnutella as ultrapeer was not routing any searches iff uploads
 		had been disabled.</li>
