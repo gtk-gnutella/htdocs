@@ -1,29 +1,8 @@
 <!-- $Id$ -->
 
-<script language="JavaScript" type="text/javascript">
-function time() {
-    var today = new Date();
-    var deadline = new Date( 2005, 6, 6, 12, 0, 0);
-    var difdate = new Date(deadline.getTime() - today.getTime());
-    var seconds_left = parseInt(difdate.getTime() / 1000);
-    var minutes_left = parseInt(seconds_left / 60);
-    var hours_left = parseInt(minutes_left / 60);
-    var days_left = parseInt(hours_left / 24);
-    seconds_left = seconds_left % 60;
-    minutes_left = minutes_left % 60;
-    hours_left = hours_left % 24;
-    document.getElementById("days-left").innerHTML = days_left;
-    document.getElementById("hours-left").innerHTML = hours_left;
-    document.getElementById("minutes-left").innerHTML = minutes_left;
-    document.getElementById("seconds-left").innerHTML = seconds_left;
-    clocktime=setTimeout("time()", "100");
-}
-</script>
-
-  <h1 style="background: red; color: white; text-align: center;">
+<h1 style="background: red; color: white; text-align: center;">
 	STOPPT Softwarepatente!</h1>
-  <div>
-   <p>
+<p>
     Wir bitten unsere Vertreter im Europaparlament,  dem
     <a href="http://europarl.ffii.org/amendments.en.html"> &Auml;nderungsantrag von Buzek-Rocard-Duff</a> zu folgen, um Europa vor Softwarepatenten zu sch&uuml;tzen.
    </p>
@@ -55,14 +34,8 @@ function time() {
     Software</strong> gerichtlich belangt werden. Das w&uuml;rde nicht nur <em>Ihren</em> Arbeitsplatz gef&auml;hrden, sondern den gesamten europ&auml;ischen Software-Sektor.  
     </p>
    <p>
-    Am Mittwoch, dem 6. Juli 2005, also in 
-    <span id="days-left">2</span> Tagen und 
-    <span id="hours-left">14</span>h
-    <span id="minutes-left">33</span>m
-    <span id="seconds-left">48</span>s
-    von jetzt an, wird das Europaparlament die letzte M&ouml;glichkeit
-    haben, dies zu verhindern. Hierf&uuml;r m&uuml;ssen 367 der insgesamt 732
-    Abgeordneten <strong>anwesend sein</strong> und <strong>f&uuml;r die
-    richtigen &Auml;nderungsantr&auml;ge stimmen</strong>.    
-   </p>
-   </div>
+    Am Mittwoch, dem 6. Juli 2005 wird das Europaparlament die letzte
+    M&ouml;glichkeit haben, dies zu verhindern. Hierf&uuml;r m&uuml;ssen 367
+    der insgesamt 732 Abgeordneten <strong>anwesend sein</strong> und
+    <strong>f&uuml;r die richtigen &Auml;nderungsantr&auml;ge stimmen</strong>.    
+</p>
