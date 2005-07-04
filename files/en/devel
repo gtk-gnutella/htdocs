@@ -83,8 +83,8 @@
 
 <p>
   <a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella-current.tar.bz2">
-    <strong>Official CVS snapshot</strong></a> Generated every 6 hours on 
-  sourceforge.
+    <strong>Official CVS snapshot</strong></a>
+    (Generated: <?php iceinclude("cvs_snapshot_date", 0) ?>)
 </p>
 <p>
   Snapshots also kindly donated by:

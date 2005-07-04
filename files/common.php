@@ -21,6 +21,7 @@ $news_items = null;
 $pages = array(
   "banners",
   "bugreport_howto",
+  "cvs_snapshot_date",
   "code101",
   "code101a",
   "current_version",
