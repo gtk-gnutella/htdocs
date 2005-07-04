@@ -17,7 +17,7 @@
 	</li>
     <li>新しい Gnutella の拡張規格 HSEP/0.2 が組み込まれました。これは水平サイズの推定量を提示します。到達可能なノードやファイルの数、ネットワーク上に存在するすべてのファイルの合計サイズが表示されます。</li>
     <li>
-	<li>The remote shell now includes a command "HORIZON", which will output horizon stats.</li>
+    <li>リモートシェルにコマンド "HORIZON" が加えられました、これは水平ステータスを出力します。</li>
     <li>標準ポートが指定されない場合は、無作為に選んで使用し続けます。<br>
         ファイアウォールの内側にいて Gtk-Gnutella にポートをルーティングさせているなら、まだそのポートを使用しているか確認して下さい!</li>
 
