@@ -1,0 +1,108 @@
+<!-- $Id$ -->
+<h2>開発者への HOWTO</h2>
+<p>
+  これからお伝えすることは、Gtk-Gnutella に関して何か作業を始めてみたいというどんな方にも当てはまります:
+</p>
+<ul>
+  <li>
+    ソースコードを御覧下さい: 理解してみたい機能を一つ選んで、その実行過程を追っていって下さい。コードを巡回するには、あなたのお好きなエディタの "tags" モードを使って下さい。相互参照させるには "cscope" のようなツールを使います。
+  </li>
+  <li>
+    コードに何らかの変更を加える前に、doc/devguide/STYLE を暗記して下さい。重要なことですが、私達はソースコードを読み易くするため統一されたコード記述様式を利用しています。私達 (ほとんど私ですが) が採用したコード記述様式は決して独断的なものではありません: この世界で最もよく使われているものです。
+  </li>
+  <li>
+    Glib の基本を学んで下さい: リストとハッシュテーブルがそうです。これらはあらゆる場所で使用されています。I/O 関係も知っておいた方がよいですが、最初に習得する程の重要性はありません。
+  </li>
+  <li>
+    最後に大事なことを言いますが、Gnutella の中核で作業したいと望むなら Gnutella プロトコル自体についての学習と理解、加えて HTTP/1.1 の仕様も習得する必要があります。
+  </li>
+  <li>
+    小さな機能の追加/バグ修復から始めて下さい。コード自体は複雑ではありませんが、データ構造はそうではありません、しかもそれらの関係は実にトリッキーです。
+  </li>
+</ul>
+
+<p>
+  私達の前には実に大きなプロジェクトが横たわっています:
+</p>
+<ol>
+  <li>
+    タイガーツリー・ハッシュの統合。
+  </li>
+  <li>
+    共有されているファイル (オーディオを例にすると、その種類、長さおよびビット速度、ビデオなら、そのコーデックの種類、長さ、画面での解像度。画像なら、種類 (jpg, gif) およびサイズ等...) のメタデータの収集。
+  </li>
+  <li>
+    集められたメタデータで多岐にわたる検索が可能になるように、XML クエリのサポート。
+  </li>
+  <li>
+    magnet: URI サポート: Gtk-Gnutella で magnet: を扱えるようにします。
+  </li>
+  <li>
+    中核プロセスと GUI プロセスの分割。
+  </li>
+  <li>
+    様々なサブシステムの異なるログを別けるため、ログ作成レイヤを再設計します。利用者が理解できたり、それに関して何をすればよいのか分かる警告のみを届けるようにします。
+  </li>
+  <li>
+    SourceForge に記載されている<a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">新機能のリクエスト</a>の箇所をざっと読んで、私達が何か忘れていないか確認して下さい。;-)
+  </li>
+  <li>
+    文書。とにかく文書が足りません。
+  </li>
+</ol>
+
+<p>
+  Gnutella の中核部分の開発に参加したいなら、<a href="http://groups.yahoo.com/group/the_gdf/">GDF (Gnutella 開発フォーラム)</a> にも登録する必要があります。
+</p>
+
+<p>
+  同様に GDF の "Files" の項目にある <strong>すべての</strong> 文書、および gtk-gnutella のソースの doc/ 以下にある文書に精通するようにして下さい。もっとも週末にそれをする必要はありません ;-) しかし最低一度は目を通して下さい。
+</p>
+
+<p>
+  まず初めに、あなたがした変更は E メールで送るようにして下さい。これらの差分を作成するには "cvs diff -u" が好まれます。何回か出来の良いパッチを送って、コードに馴れてきたのなら、書き込みモードで直接 CVS にアクセスすることが認められるでしょう。
+</p>
+
+<p>
+  もうお気付きでしょうが、私達が求める水準はかなり高いです。通常、動作しないものは CVS にコミットしません。ここで言う "動作" の意味とは、何も悪いことがないかを確認するために、何日かの妥当なテストがなされていることを指します。
+</p>
+
+<p>
+  これだけ書かれた後でなお、何かやってみたいと思うのでしたら、あなたは素晴らしい事をやってのけるのに必要なもの全てを備えているはずです。実に素晴らしい。また、言うまでもなく "開発者チーム" に大歓迎されるでしょう。
+</p>
+
+<p>
+  私は、現在まで、以下の開発者と共に作業を楽しんでいることを言い足すべきでしょう:
+</p>
+
+<p>
+  Richard, of course, is a truly amazing contributor, who always surprises me with
+  the quality of his implementation.  Richard has been promoted "co-admin" on
+  the project recently (not that *I* care about those hierarchical distinctions,
+  but they're always nice on a resume).
+</p>
+
+<p>
+  Vidar, who contributed the swarming code.  It took me a whole month to be
+  able to master it and make it evolve, so it says a lot about the complexity
+  and the value of his contribution.  Truly impressive work.
+</p>
+
+<p>
+  Christian Biere, who recently joined, has produced very useful patches.
+  He may be able to comment further on what I said here, and tell you more
+  about his experience, how he managed to learn from the source code, whatever.
+</p>
+
+<p>
+  すべての開発者は IRC (freenode.net) の #gtk-gnutella に参加しています、また、実を言うと私達はみんな同じタイムゾーンにいるヨーロッパ人です!
+</p>
+
+<p>
+  私達のエンドユーザの利益のためによりたくさんの事を少しの時間でできるよう、開発チームの人数が増えるのを楽しみにしています!<br>
+</p>
+
+<p>
+  <em>Raphael</em>
+</p>
+<!-- end developers_howto -->
