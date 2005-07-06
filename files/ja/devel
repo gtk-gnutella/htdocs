@@ -88,17 +88,15 @@
 <p>
   <a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella-current.tar.bz2">
     <strong>公式 CVS スナップショット</strong></a>
-    (<?php iceinclude("cvs_snapshot_date", 0) ?> 毎に作成されます)
+    (<?php iceinclude("cvs_snapshot_date", 0) ?> に作成されました)
 </p>
 <p>
   スナップショットは以下の方々からも提供されています:
 </p>
 <ul>
-  <li><a href="http://gtk-gnutella.asselman.com/">MrJoe</a> <em>時間毎のスナップショット</em> (
-    <a href="http://www.asselman.com/">Jeroen Asselman</a> がスポンサーです)
+  <li><a href="http://gtk-gnutella.asselman.com/">MrJoe</a> <em>時間毎のスナップショット</em> (提供者は <a href="http://www.asselman.com/">Jeroen Asselman</a> です)
   </li>
-  <li><a href="http://gtkg.guruz.de/">guruz</a> <em>一日毎のスナップショット</em> (
-    <a href="http://www.bawue.de">bawue.net</a> がスポンサーです)
+  <li><a href="http://gtkg.guruz.de/">guruz</a> <em>一日毎のスナップショット</em> (提供者は <a href="http://www.bawue.de">bawue.net</a> です)
   </li>
 </ul>
 <!-- end devel -->
