@@ -60,7 +60,7 @@
 </p>
 
 <p>
-  まず初めに、あなたがした変更は E メールで送るようにして下さい。これらの差分を作成するには "cvs diff -u" が好まれます。何回か出来の良いパッチを送って、コードに馴れてきたのなら、書き込みモードで直接 CVS にアクセスすることが認められるでしょう。
+  まず初めに、あなたがした変更はメールで送るようにして下さい。これらの差分を作成するには "cvs diff -u" が好まれます。何回か出来の良いパッチを送って、コードに馴れてきたのなら、書き込みモードで直接 CVS にアクセスすることが認められるでしょう。
 </p>
 
 <p>
@@ -76,30 +76,25 @@
 </p>
 
 <p>
-  Richard, of course, is a truly amazing contributor, who always surprises me with
-  the quality of his implementation.  Richard has been promoted "co-admin" on
-  the project recently (not that *I* care about those hierarchical distinctions,
-  but they're always nice on a resume).
+  Richard はもちろん実に驚くべき貢献者です。いつもその実装のレベルの高さで私を驚かせます。
+  彼は最近プロジェクトの "副管理者" に格上げされています (*私* はこれらの階級的な区別を気にしないんですが、彼らは常にレジュメに関して細かいんです)。
 </p>
 
 <p>
-  Vidar, who contributed the swarming code.  It took me a whole month to be
-  able to master it and make it evolve, so it says a lot about the complexity
-  and the value of his contribution.  Truly impressive work.
+  Vidar, 彼は分封 (swarming) 処理を行うコードを寄こしてくれました。マスターして進化させられるようになるのに、私には正味一ヶ月かかりました。
+  これがその複雑さと、彼の貢献度合いの多くを物語っています。本当にすごい仕事です。
 </p>
 
 <p>
-  Christian Biere, who recently joined, has produced very useful patches.
-  He may be able to comment further on what I said here, and tell you more
-  about his experience, how he managed to learn from the source code, whatever.
+  Christian Biere, 彼は最近参加しました、はとても便利なパッチを作成しています。ここで私が述べている事に関してもっと詳しいコメントを付けられるかもしれません。また彼のもっと多くの経験について、どのように何とかしてソースコードから学んだかを、何でもあなたに伝えられるかもしれません。
 </p>
 
 <p>
-  すべての開発者は IRC (freenode.net) の #gtk-gnutella に参加しています、また、実を言うと私達はみんな同じタイムゾーンにいるヨーロッパ人です!
+  すべての開発者は IRC (freenode.net) の #gtk-gnutella に参加しています、また、実を言うと私達はみんな同じ時間帯にいるヨーロッパ人です!
 </p>
 
 <p>
-  私達のエンドユーザの利益のためによりたくさんの事を少しの時間でできるよう、開発チームの人数が増えるのを楽しみにしています!<br>
+  私達のエンドユーザの利益のために、よりたくさんの事を少しの時間で出来るよう、開発チームの人数が増えるのを楽しみにしています!<br>
 </p>
 
 <p>
