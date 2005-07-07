@@ -184,16 +184,17 @@ function newsfiles() {
 	$news_items = array();
 	$handle = opendir(BASEDIR . "en");
 	while (false !== ($file = readdir($handle))) {
-		if (ereg("news_([0-9]{1,3})", $file)) {
+		if (ereg('^news_([0-9]{1,3})$', $file)) {
 			$news_items[] = $file;
 		}
 	}
 	closedir($handle);
 	usort($news_items, "strnatcmp");
 	$news_items = array_reverse($news_items);
-
+/*
 	for ($i = 0; $i < count($news_items); $i++) {
 		echo '<!-- ' . $news_items[$i] . ' -->';
 	}
+ */
 }
 
