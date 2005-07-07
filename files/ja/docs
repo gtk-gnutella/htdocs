@@ -5,13 +5,13 @@
     <a href="<?php echo BASEURL ?>&amp;page=filtering_howto">フィルタの仕方に関する Mini-HOWTO</a> <small>作成者 Vidar</small>
   </li>
   <li>
-    <a href="<?php echo BASEURL ?>&amp;page=searching_by_hash">ハッシュおよびマグネットリンクでの検索</a> <small>作成者 guruz</small>
+    <a href="<?php echo BASEURL ?>&amp;page=searching_by_hash">ハッシュおよびマグネットリンクでの検索</a> <small>&nbsp;作成者 guruz</small>
   </li>
   <li>
-    <a href="<?php echo BASEURL ?>&amp;page=gwebcache">GWebCache を実行することでのネットワークの支援</a> <small>作成者 guruz</small>
+    <a href="<?php echo BASEURL ?>&amp;page=gwebcache">GWebCache を実行することでのネットワークの支援</a> <small>&nbsp;作成者 guruz</small>
   </li>
   <li>
-    <a href="<?php echo BASEURL ?>&amp;page=bugreport_howto">バグ報告の方法</a> <small>作成者 eqom14</small>
+    <a href="<?php echo BASEURL ?>&amp;page=bugreport_howto">バグ報告の方法</a> <small>&nbsp;作成者 eqom14</small>
   </li>
 </ul>
 
