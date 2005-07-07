@@ -96,6 +96,6 @@
 
 <h2>解答</h2>
 <p>
-    <a href="<?php echo BASEURL ?>?page=code101a">解答</a> は別のページにあります。
+    <a href="<?php echo BASEURL ?>&amp;page=code101a">解答</a>は別のページにあります。
     テストに挑戦する前に解答を読むような事はしないで下さいね。
 </p>
