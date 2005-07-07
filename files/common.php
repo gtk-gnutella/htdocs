@@ -191,5 +191,9 @@ function newsfiles() {
 	closedir($handle);
 	usort($news_items, "strnatcmp");
 	$news_items = array_reverse($news_items);
+
+	for ($i = 0; $i < count($news_items); $i++) {
+		echo '<!-- ' . $news_items[$i] . ' -->';
+	}
 }
 
