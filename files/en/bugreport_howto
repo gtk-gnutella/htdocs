@@ -221,7 +221,7 @@
     distributions turn core dumps off by default.  You can turn on core dumps 
     with the shell command <code>ulimit -S -c unlimited</code>, which will 
     only affect that terminal, or you can put the command on your shell config 
-    file (e.g., <code>~/.profile</code> or <code>~/.cshrc</code> to allow core 
+    file (e.g., <code>~/.profile</code> or <code>~/.cshrc</code>) to allow core 
     dumps globally.  Newer core files will overwrite older ones so you should 
     move them to a safe place.  The core file will be in your home directory 
     or in the current directory if you called gtk-gnutella from a terminal.  
