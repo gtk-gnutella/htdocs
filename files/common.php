@@ -180,6 +180,8 @@ function maincontent() {
  */
 function newsfiles() {
 	global $news_items;
+
+	$news_items = null;
 	$handle = opendir(BASEDIR . "en");
 	while (false !== ($file = readdir($handle))) {
 		if (ereg("news_([0-9]{1,3})", $file)) {
