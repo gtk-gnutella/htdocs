@@ -1,8 +1,9 @@
 <!-- $Id$ -->
 <?php
 
-/* Only for very important news */
-icecontent("special_news");
+/* Only for very important news
+ * icecontent("special_news");
+ */
 
 /* The site intro */
 icecontent("intro");
