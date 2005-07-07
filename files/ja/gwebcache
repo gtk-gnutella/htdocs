@@ -1,0 +1,18 @@
+<!-- $Id$ -->
+<h1 align="center">GWebCache</h1>
+
+<p>
+  Gtk-Gnutella は <a href="http://www.gnucleus.com/gwebcache">GWebCache</a> システムをサポートします、これはブートストラップを行う方式で Gnutella クライアントを提供します。以前に一度も Gnutella ネットワーク (gnet) に接続した事のない Gnutella クライアントが、接続するホストを見つけるために必要になります。
+</p>
+
+<p>
+  安定運用されているウェブサーバをお持ちで、Gnutella を支援したければ、この機能を提供するスクリプトをそのサーバ上で実行できます。一月毎にトラフィックの 100 MB を費し、多くの人がこのスクリプトを走らせれば、皆が負担するトラフィックは減ります。このスクリプトには PHP, ASP および ColdFusion 用のものがあります。
+</p>
+
+<p>
+  スクリプトがサーバに上げられ実行されている後で、<a href="index.php?page=mailing">開発者用メーリングリスト</a>と GWebCache のホームページ (彼のページの一番下にあるメールアドレスを御覧下さい) にメールを送れます。<br>
+  詳細を知りたければ、<a href="http://www.gnucleus.com/gwebcache">GWebCache のページ</a> を訪れて下さい。
+  <br>
+  <br>
+</p>
+<!-- end gwebcache -->
