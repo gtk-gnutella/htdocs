@@ -99,7 +99,7 @@
     prefer it behaved differently, then you should probably file a 
     <a href="http://sourceforge.net/tracker/?atid=354467&amp;group_id=4467&amp;func=browse">
     feature request</a> rather than a bug report.  Of course, there are 
-    exceptions - the behavior could be harmful in some unforseen way or not 
+    exceptions - the behavior could be harmful in some unforeseen way or not 
     conform to standards.  Besides, it's hard to know what the developer 
     intended, so the traditional confusion about bug vs feature is inevitable.  
   </p>
