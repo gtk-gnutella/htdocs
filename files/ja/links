@@ -4,33 +4,27 @@
 
 <ul>
   <li>
-    <a href="http://www.gnutella.com">www.gnutella.com</a>: Gnutella の非公式
-    ホームページ。
+    <a href="http://www.gnutella.com">www.gnutella.com</a>: Gnutella の非公式ホームページです。
   </li>
   <li>
-    <a href="http://www.infoanarchy.org/wiki/wiki.pl?Gnutella">infoAnarchy の
-    Gnutella Wiki</a>: Gnutella の全てに関する良い一般情報があります。
+    <a href="http://www.infoanarchy.org/wiki/wiki.pl?Gnutella">infoAnarchy の Gnutella Wiki</a>: Gnutella の全てに関する良い一般情報があります。
   </li>
   <li>
-    <a href="http://freshmeat.net/search/?q=gnutella">Freshmeat Gnutella</a>: 
-    その他多くの Unix Gnutella クライアントに関する情報があります。
+    <a href="http://freshmeat.net/search/?q=gnutella">Freshmeat Gnutella</a>: その他多くの Unix Gnutella クライアントに関する情報があります。
   </li>
   <li>
-    <a href="http://www.the-gdf.org/wiki/">Gnutella プロトコル開発 Wiki</a>: 
-    プロトコルそれ自身について知りたいならここを御覧下さい。
+    <a href="http://www.the-gdf.org/wiki/">Gnutella プロトコル開発 Wiki</a>: プロトコル自体について知りたいならここを御覧下さい。
   </li>
   <li>
-    <a href="http://www.gnutellaforums.com">Gnutella フォーラム</a>: Gnutella
-    について話し合う場所です。
+    <a href="http://www.gnutellaforums.com">Gnutella フォーラム</a>: Gnutella について話し合う場所です。
   </li>
-  <!-- <li>
-         <a href="http://www.guruz.de/gnutella.php">Gnutella on Linux Howto</a>:
-          guruz about Gtk-Gnutella.
-       </li>
+  <!--
+  <li>
+    <a href="http://www.guruz.de/gnutella.php">Linux での Gnutella Howto</a>: guruz が Gtk-Gnutella について書きました。
+  </li>
   //-->
   <li>
-    <a href="http://groups.yahoo.com/group/the_gdf">Gnutella 開発フォーラム (GDF)</a>: 
-    各種のエキスパートが集う場所です。開発者の方のみ参加するようお願いします。
+    <a href="http://groups.yahoo.com/group/the_gdf">Gnutella 開発フォーラム (GDF)</a>: 各種のエキスパートが集う場所です。開発者の方のみ参加するようお願いします。
   </li>
 </ul>
 <!-- end links -->
