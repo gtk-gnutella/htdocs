@@ -54,6 +54,12 @@
   <div class="sb_section_content">
     <a href="http://sourceforge.net/projects/gtk-gnutella/">
       SF プロジェクトのページ</a><br>
+    <!-- TEST JAPANESE PAGE ONLY: where should these API references be located? -->
+    <a href="http://gtk-gnutella.sourceforge.net/doxygen/">
+      <!--
+      API References (Incomplete) </a><br>
+      -->
+      API リファレンス (未完成)</a><br>
     <a href="<?php echo BASEURL ?>&amp;page=code101">
       コード 101</a>
   </div>
