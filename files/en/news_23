@@ -7,7 +7,7 @@ so please test it as thoroughly as possible and report any bugs to the IRC chann
 <ul> 
 <li> Now supports Ultrapeers, which means GTKG can work as an ultra node or as
   a leaf node.  You can still run as a normal node, although this is not
-  something wise to do, because that will likely relagate you in a small part
+  something wise to do, because that will likely relegate you in a small part
   of the Gnutella network.
 <li> The GTK2 front-end is no longer experimental, albeit it is slower than
   the GTK1.2 front-end.  This is due to the somewhat inefficient
