@@ -2,7 +2,7 @@
 <h1 style="text-align: center;">特徴</h1>
 
 <ul>
-  <li>Gnutella ネットワーク (Limewire, BearShare, Xolox, Gnucleus, Shareaza, Morpheus ...) でのファイルの共有</li>
+  <li>Gnutella ネットワーク (LimeWire, BearShare, Xolox, Gnucleus, Shareaza, Morpheus ...) でのファイルの共有</li>
   <li>圧縮された Gnutella ネットワーク接続</li>
   <li>複数ホストからのファイルの同時ダウンロード (Swarming - 分封あるいはマルチソース・ダウンロード)</li>
   <li>受動検索</li>
@@ -25,19 +25,19 @@
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/gwcache?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >GWebCache</a> Proposal</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/huge?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
-        >HUGE</a> (Hash/URN Gnutella Extensions - ハッシュ/URN Gnutella 拡張)</li>
+        >HUGE</a> (<b>H</b>ash/<b>U</b>RN <b>G</b>nutella <b>E</b>xtensions - ハッシュ/URN Gnutella 拡張)</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ping-pong?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >Ping/Pong リダクション</a></li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/PARQ?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
-        >PARQ</a> (Passive/Active Remote Queueing - 受動/能動遠隔キューイング)</li>
+        >PARQ</a> (<b>P</b>assive/<b>A</b>ctive <b>R</b>emote <b>Q</b>ueueing - 受動/能動遠隔キューイング)</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/PFSP?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
-        >PFSP</a> (Partial File Sharing Protocol- 部分ファイル共有プロトコル)</li>
+        >PFSP</a> (<b>P</b>artial <b>F</b>ile <b>S</b>haring <b>P</b>rotocol - 部分ファイル共有プロトコル)</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/vendor_msg?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >ベンダーメッセージ</a></li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ultra-peers?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >ウルトラピア</a></li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/QRP?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
-        >QRP</a> (Query Routing Proposal)</li>
+        >QRP</a> (<b>Q</b>uery <b>R</b>outing <b>P</b>roposal)</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/push_proxy?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >Push プロキシ</a></li>
     </ul>
