@@ -4,7 +4,7 @@
     2004年の1月31日まで gtk-gnutella のバナー/ロゴとして提出されたものすべてが開発者レビューのためにサイト上にあります。これらの内 5 つが最終候補になります、その中であなたが最も良いと考えるバナーを決められるように投票システムを設置します。
 </p>
 <p>
-  画像は<a href="<?php echo BASEURL ?>?page=banners">ここ</a>にあります。
+  画像は<a href="<?php echo BASEURL ?>&amp;page=banners">ここ</a>にあります。
 </p>
 <p>
   <em>gtk-gnutella チーム</em>

@@ -23,7 +23,7 @@
 	</li>
 </ul>
 <p>
-	変更は<a href="<?php echo BASEURL ?>?page=release_history#0.93.1">ここ</a>にあります。
+	変更は<a href="<?php echo BASEURL ?>&amp;page=release_history#0.93.1">ここ</a>にあります。
 </p>
 
 <!-- end news_31 -->
