@@ -19,7 +19,7 @@
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/handshaking_0.6?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >Gnutella 0.6</a> (ベンダコード GTKG および近い将来 GNTD にも)</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/compression?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
-        >GNet 圧縮</a></li>
+        >Gnutella 圧縮トラフィック</a></li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/bye?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >BYE</a> パケット</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/gwcache?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
