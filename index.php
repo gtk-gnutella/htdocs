@@ -42,7 +42,7 @@ include("files/common.php");
       <div class="boxed">
         <form action="/" method="GET">
         <p style="margin: 0;">Select your language:<br>
-	<select name="lang" onchange="submit();">
+	<select name="lang" tabindex=1 onchange="submit();">
             <option
 		<?php if ('en' === LANG) echo 'selected' ?>
 		value="en">English</option>
@@ -55,7 +55,7 @@ include("files/common.php");
             <option
 		<?php if ('ja' === LANG) echo 'selected' ?>
 		value="ja">日本語</option>
-          </select>&nbsp;<input type="submit" value="Go">
+          </select>&nbsp;<input type="submit" value="Go" accesskey="G" tabindex=2>
           <input type="hidden" name="page" value="<?php echo PAGE ?>">
         </p>
         </form>
@@ -76,7 +76,7 @@ include("files/common.php");
           <a href="http://sourceforge.net">
             <img src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
 	      style="border: 0;"
-              width="88" height="31" alt="SourceForge.net Logo"/></a>
+              width="88" height="31" alt="SourceForge.net Logo"></a>
         </div>
         <div>
           <?php iceinclude("sidenav_glade", 0) ?>
