@@ -21,6 +21,7 @@ include("files/common.php");
     <link rel="stylesheet" type="text/css" href="default.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
   </head>
   <body>
     <div class="boxed" style="text-align:center">
