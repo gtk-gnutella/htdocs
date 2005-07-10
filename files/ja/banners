@@ -1,0 +1,79 @@
+<h1>サイトの横断幕</h1>
+
+<h2>中間結果</h2>
+<p>
+    ここにあるのがこれまでの結果です。まだ三人の開発者からの投票がありません。投票スクリプトを設置するまでに投票してくれないのであれば、彼らからの票を無視しなくてはいけない事になります。
+</p>
+
+<center>
+<table>
+    <tr><th>順位</th> <th>候補</th> <th>得票数</th> <th>得点数</th></tr>
+	<tr><td>1</td>    <td>17</td>   <td>5</td>      <td>17</td></tr>
+	<tr><td>2</td>    <td>13</td>   <td>3</td>      <td>12</td></tr>
+	<tr><td>3</td>    <td>15</td>   <td>3</td>      <td>11</td></tr>
+	<tr><td>4</td>    <td>16</td>   <td>2</td>      <td>9</td></tr>
+	<tr><td>5</td>    <td>6</td>    <td>3</td>      <td>6</td></tr>
+</table>
+</center>
+
+<p>
+    開発者には 5 票あります、最も良いとするものには 5 点、次には 4 点というように続きます。今のところ 5 人の開発者が投票を済ませています。3 人の開発者はまだです。SourceForge のプロジェクトページに開発者としてリストされている人達はこの回で投票することが認められています。その次の回は公開投票されます。開発者からの票が最も多かった 5 つの候補が、公開投票に提示されることになります。
+</p>
+<p>
+    <b>注意:</b> 候補の一部はウェブサイトで利用する前に変更が必要です。例えば、その縦横比や文字が変更される必要があります、これは画像のレイアウトに影響を与えるかもしれません。従って今はその画像そのものではなく、コンセプトおよびスタイルに投票します。
+</p>
+
+<hr>
+
+<h2>全ての概要</h2>
+<p>
+    ここにあるのが私達の横断幕コンテストに提出されたものです。これらは開発者によって評価され、上位 5 つが利用者からの投票のために残されます。いつ私達の内の誰かが適切な投票スクリプトをアップして動作させるのか、まだはっきりとは言えません。そう遅くならないことを願っています。
+</p>
+<p>
+    横断幕の一部はホームページで使用される前に大きさを変更する必要があるでしょう。
+</p>
+<p>
+  <b>注意:</b> 一部の画像は透過画像を使っています。PNG の透過画像は現在あるどのバージョンの Internet Explorer でも正しく表示されない可能性があります。これらの画像を製作者がそう見られるよう意図した通りの画像として見たければ、Mozilla, Konqueror, Opera あるいは多分 IE を除く何らかのウェブ・ブラウザを使って下さい。
+</p>
+<h3>アーティスト達:</h3>
+<ul>
+  <li><b>1)</b> Murphy またの名を Eqom14</li>
+	<li><b>2)</b> Chagas Chagas</li>
+	<li><b>3-11)</b> Wayne Osborn</li>
+	<li><b>12-17)</b> Cristina Irisarri R&uacute;iz</li>
+</ul>
+
+
+<div>1)</div><div style="text-align:center"><img src="images/banner_eqom14.png"/></div>
+<hr>
+<div>2)</div><div style="text-align:center"><img src="images/banner_chags.png"/></div>
+<hr>
+<div>3)</div><div style="text-align:center"><img src="images/banner_dnar.png"/></div>
+<hr>
+<div>4)</div><div style="text-align:center"><img src="images/banner_dnar1.png"/></div>
+<hr>
+<div>5)</div><div style="text-align:center"><img src="images/banner_dnar2.png"/></div>
+<hr>
+<div>6)</div><div style="text-align:center"><img src="images/banner_dnar3.png"/></div>
+<hr>
+<div>7)</div><div style="text-align:center"><img src="images/banner_dnar4.png"/></div>
+<hr>
+<div>8)</div><div style="text-align:center"><img src="images/banner_dnar6.png"/></div>
+<hr>
+<div>9)</div><div style="text-align:center"><img src="images/banner_dnar7.png"/></div>
+<hr>
+<div>10)</div><div style="text-align:center"><img src="images/banner_dnar8.png"/></div>
+<hr>
+<div>11)</div><div style="text-align:center"><img src="images/banner_dnar9.png"/></div>
+<hr>
+<div>12)</div><div style="text-align:center"><img src="images/banner_usuarios_balls.png"></div>
+<hr>
+<div>13)</div><div style="text-align:center"><img src="images/banner_usuarios_blue.png"></div>
+<hr>
+<div>14)</div><div style="text-align:center"><img src="images/banner_usuarios_leds_01.png"></div>
+<hr>
+<div>15)</div><div style="text-align:center"><img src="images/banner_usuarios_leds_02.png"></div>
+<hr>
+<div>16)</div><div style="text-align:center"><img src="images/banner_usuarios_planet.png"></div>
+<hr>
+<div>17)</div><div style="text-align:center"><img src="images/banner_usuarios_tree.png"></div>
