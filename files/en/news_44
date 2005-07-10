@@ -12,7 +12,7 @@
   <li>Fixed a potential denial-of-service problem.</li>
   <li>Fixed OOB reply code which would lead to failed assertions.</li>
   <li>[GTK1] Show Enable option and Remove button in Filter editor again.</li>
-  <li>Fixed inadvertent truncation of large files (> 4 GB).</li>
+  <li>Fixed inadvertent truncation of large files (&gt; 4 GB).</li>
   <li>Compatibility fixes for 64-bit platforms.</li>
 </ul>
 

@@ -35,8 +35,8 @@
 	</li>
 	<li>[GTK2] GUI updates:
 	  <ul>
-	  <li>You can drag & drop items under Downloads->Files e.g., to pass
-		them to a audio/video player, picture viewer etc. Drag & drop is
+	  <li>You can drag &amp; drop items under Downloads-&gt;Files e.g., to pass
+		them to a audio/video player, picture viewer etc. Drag &amp; drop is
 		dangerous when used on files from unknown sources. You have been
 		warned.</li>
 	  <li>GnutellaNet has a new item "Reverse DNS lookup" in its context

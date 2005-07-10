@@ -410,7 +410,7 @@
   <blockquote>
     <code>
       ** ERROR **: file parq.c: line 1138 (parq_upload_free): assertion failed: 
-      (parq_ul-&gt;by_ip-&gt;uploading <= parq_ul->by_ip-&gt;total)  
+      (parq_ul-&gt;by_ip-&gt;uploading &lt;= parq_ul-&gt;by_ip-&gt;total)  
     </code>
   </blockquote>
   <p>
@@ -422,7 +422,7 @@
     <code>
       (gdb) frame 5<br>
       #5  0x0814efda in parq_upload_free (parq_ul=0x8d62328) at parq.c:1138<br>
-      1138 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; g_assert(parq_ul-&gt;by_ip-&gt;uploading <= parq_ul->by_ip-&gt;total);
+      1138 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; g_assert(parq_ul-&gt;by_ip-&gt;uploading &lt;= parq_ul-&gt;by_ip-&gt;total);
     </code>
   </blockquote>
   <p>
@@ -453,7 +453,7 @@
   </blockquote>
   <p>There are the values the developer was looking for: 
     <code>parq_ul-&gt;by_ip-&gt;uploading</code> = 2 and 
-    <code>parq_ul-&gt;by_ip-&gt;total</code> = 1.  Since <code>2 <= 1</code> is 
+    <code>parq_ul-&gt;by_ip-&gt;total</code> = 1.  Since <code>2 &lt;= 1</code> is 
     false, the assertion failed.  Now the developer can try and figure out 
     what went wrong.
   </p>
