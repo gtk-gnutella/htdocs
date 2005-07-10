@@ -17,7 +17,7 @@
 	</li>
 	<li>New Gnutella extension HSEP/0.2 included. This will give you an estimation of the horizon size. This includes the number of reachable nodes, files and the total size of all files on the network.</li>
 	<li>The remote shell now includes a command "HORIZON", which will output horizon stats.</li>
-	<li>If no default port is specified, gtk-gnutella will now bind to a random port and will use that port from then on.<br>
+	<li>If no default port is specified, gtk-gnutella will now bind to a random port and will use that port from then on.<p>
 	    If you are behind a firewall and have routed a port to gtk-gnutella, please check that gtk-gnutella is still running on the port you want it to!</li>
 	<li>Will parse up to 150 hosts in a gwebcache reply to bootstrap from.</li>
 	<li>New hostcache to make gtk-gutella connect to the network more quickly.</li>
