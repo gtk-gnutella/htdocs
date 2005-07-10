@@ -3,36 +3,28 @@
 <h4>メーリングリスト</h4>
 
 <p>
-  購読または購読を止めるにはリンクをクリックして下さい。
-  <strong>これらのリストは英語専用です。</strong>
+  購読または購読を止めるにはリンクをクリックして下さい。これらのリストは<strong>英語専用</strong>です。
 </p>
 
 <p>
   <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-users/">
-    gtk-gnutella-users</a> Gtk-Gntuella 利用者のためのメインリストです (
-  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-users">
-    アーカイブ</a> )<br>
+    gtk-gnutella-users</a> Gtk-Gntuella 利用者のためのメインリストです (<a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-users">アーカイブ</a>)<br>
 
   <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-devel/">
-    gtk-gnutella-devel</a> Gtk-Gnutella の開発に興味があるのでしたら (
-  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-devel">
-    アーカイブ</a> )<br>
+    gtk-gnutella-devel</a> Gtk-Gnutella の開発に興味があるのでしたら (<a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-devel">アーカイブ</a>)<br>
 
   <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-cvs/">
-    gtk-gnutella-cvs</a> Gtk-Gnutella のコミットログです ( アーカイブはありません )<br>
+    gtk-gnutella-cvs</a> Gtk-Gnutella のコミットログです (アーカイブはありません)<br>
 
   <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-announce/">
-    gtk-gnutella-announce</a> リリースの告知専用です (
-  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-announce">
-    アーカイブ</a> )<br>
+    gtk-gnutella-announce</a> リリースの告知専用です (<a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-announce">アーカイブ</a>)<br>
 </p>
 
 <h4>IRC チャット</h4>
 
 <p>
 
-  <a href="http://www.freenode.net/">freenode ネットワーク</a> (以前は 
-  Open Projects Network / OPN でした) の
+  <a href="http://www.freenode.net/">freenode ネットワーク</a> (以前は Open Projects Network / OPN でした) の
   <a href="http://www.maol.ch/irc/egg2html.php?channel=gtk-gnutella">
   #gtk-gnutella</a> チャンネルで話し合います。ここには常時誰かがいますが、
   必ずしもあなたの質問に答えられる人がいる訳ではありません。訪れるには
