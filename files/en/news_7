@@ -5,6 +5,6 @@ There are many many <a href="http://sourceforge.net/project/shownotes.php?releas
 of the 0.6 handshaking protocol and a reduction of the bandwidth used through the implementation
 of a new ping/pong method.<br>
 Once the remaining important changes are implemented we will release a 0.90 version, which
-means <i>feature freeze</i>! So please check back often, test the CVS development version
+means <em>feature freeze</em>! So please check back often, test the CVS development version
 and report all bugs you may find.
 </p>
