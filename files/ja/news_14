@@ -3,6 +3,6 @@
 <p>
 いくつかのバグ修正後、トラフィック圧縮が良好に働くようになりました。いくつかのステータスさえ追加されています。最初の行にある割合 (TXc=...,62% RXc=...,39%) で、0% というのは '増加なし' を 100% は '発生トラフィックなし' を表します。
 </p>
-<p>
-<center><img src="images/compression.jpg" width="512" height="67" alt="Gnet ステータスでのトラフィック圧縮"></center>
+<p style="text-align: center;">
+<img src="images/compression.jpg" width="512" height="67" alt="Gnet ステータスでのトラフィック圧縮">
 </p>
