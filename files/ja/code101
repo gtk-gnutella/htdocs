@@ -11,7 +11,7 @@
 
 <h3>問題</h3>
 <p>
-    以下のコードはアップロードのヘッダからユーザ・エージェントを取り出します。GUI はユーザ・エージェントの文字列を表示するか、<code>u->user_agent</code> が <code>NULL</code> なら "..." を表示します。
+    以下のコードはアップロードのヘッダからユーザ・エージェントを取り出します。GUI はユーザ・エージェントの文字列を表示するか、<code>u-&gt;user_agent</code> が <code>NULL</code> なら "..." を表示します。
     残念ながら、ある場所にバグがあるのでテストするユーザの GUI には常に "..."が表示されます。どこが誤っているか解かりますか?
 </p>
 <pre>
@@ -72,12 +72,12 @@
 15:
 16:     gtk_clist_freeze(GTK_CLIST(ctree_downloads_queue));
 17:     gtk_clist_freeze(GTK_CLIST(ctree_downloads));
-18:     node_list = g_list_copy(GTK_CLIST(ctree_downloads)->selection);
+18:     node_list = g_list_copy(GTK_CLIST(ctree_downloads)-&gt;selection);
 19:     data_list = downloads_gui_collect_ctree_data(ctree_downloads,
 20:         node_list, TRUE, TRUE);
 21:
 23:     for (; NULL != data_list; data_list = g_list_next(data_list)) {
-24:         d = (struct download *) data_list->data;
+24:         d = (struct download *) data_list-&gt;data;
 25:
 26:         if (!d) {
 27:             g_warning(
