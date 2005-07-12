@@ -45,7 +45,7 @@
 23:         u-&gt;user_agent = atom_str_get(name);
 24:         g_free(name);
 25:     } else
-26:	    u-&gt;user_agent = atom_str_get(user_agent);
+26:         u-&gt;user_agent = atom_str_get(user_agent);
 27: }
 </pre>
 
