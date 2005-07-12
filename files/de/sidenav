@@ -54,6 +54,8 @@
   <div class="sb_section_content">
     <a href="http://sourceforge.net/projects/gtk-gnutella/">
       SF Projektseite</a><br>
+    <a href="http://gtk-gnutella.sourceforge.net/doxygen/">
+      API Reference</a><br>
     <a href="<?php echo BASEURL ?>&amp;page=code101">
       Code 101</a>
   </div>
