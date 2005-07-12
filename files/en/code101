@@ -14,7 +14,7 @@
 <h3>Question</h3>
 <p>
 	The code below extracts the user agent from the headers of an upload. The
-	gui displays the useragent string or "..." if <code>u->user_agent</code> is
+	gui displays the useragent string or "..." if <code>u-&gt;user_agent</code> is
 	<code>NULL</code>.
 	Unfortunately there is a bug in that piece of code that caused the GUI of 
 	our test user to always display "...". Can you locate it?
@@ -36,16 +36,16 @@
 14:     user_agent = header_get(header, "Server");
 15:
 16: if (user_agent != NULL)
-17:     faked = !version_check(user_agent, token, u->ip);
+17:     faked = !version_check(user_agent, token, u-&gt;ip);
 18:
-19: if (u->user_agent == NULL && user_agent != NULL) {
+19: if (u-&gt;user_agent == NULL &amp;&amp; user_agent != NULL) {
 20:     if (faked) {
 21:         gchar *name = g_strdup_printf("!%s", user_agent);
 22:
-23:         u->user_agent = atom_str_get(name);
+23:         u-&gt;user_agent = atom_str_get(name);
 24:         g_free(name);
 25:     } else
-26:	    u->user_agent = atom_str_get(user_agent);
+26:	    u-&gt;user_agent = atom_str_get(user_agent);
 27: }
 </pre>
 
@@ -79,12 +79,12 @@
 15:
 16:     gtk_clist_freeze(GTK_CLIST(ctree_downloads_queue));
 17:     gtk_clist_freeze(GTK_CLIST(ctree_downloads));
-18:     node_list = g_list_copy(GTK_CLIST(ctree_downloads)->selection);
+18:     node_list = g_list_copy(GTK_CLIST(ctree_downloads)-&gt;selection);
 19:     data_list = downloads_gui_collect_ctree_data(ctree_downloads,
 20:         node_list, TRUE, TRUE);
 21:
 23:     for (; NULL != data_list; data_list = g_list_next(data_list)) {
-24:         d = (struct download *) data_list->data;
+24:         d = (struct download *) data_list-&gt;data;
 25:
 26:         if (!d) {
 27:             g_warning(
