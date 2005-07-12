@@ -27,7 +27,7 @@ include("files/common.php");
   <body>
     <div class="boxed" style="text-align:center">
       <div>
-        <a href="<?php echo BASEURL ?>?page=index">
+        <a href="<?php echo BASEURL ?>&amp;page=index">
           <img src="images/gtk-gnutella.png" 
             width="408" height="44" alt="Gtk-Gnutella"
 	    style="border: 0;"></a>
