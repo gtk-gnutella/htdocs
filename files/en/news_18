@@ -49,7 +49,7 @@ stable 0.90 release.  Among them:
   and whether we are connected to Internet or not.
 </ul>
 <p>
-<b>KNOWN BUGS/PROBLEMS:</b>
+<strong>KNOWN BUGS/PROBLEMS:</strong>
 </p>
 <ul>
 <li>When changing the directory for incomplete/complete files, all 

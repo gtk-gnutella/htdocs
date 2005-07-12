@@ -15,7 +15,7 @@ users right now.
   could stall abruptly, no longer transmitting data.
 <li> Fixed assertion failure in PARQ client code.
 <li> Fixed incomplete clearing of downloads from a given host.
-<li> <b>Warning:</b> The amount of bandwidth configured for leaves is currently automatically
+<li> <strong>Warning:</strong> The amount of bandwidth configured for leaves is currently automatically
   added to the HTTP connections when not in leaf mode, regardless of whether
   "use surplus bandwidth" is activated.  This will change in the release.
 </ul>  
