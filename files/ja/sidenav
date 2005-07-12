@@ -75,7 +75,7 @@
 
   <div class="sb_section_content">
     <a href="<?php echo BASEURL ?>&amp;page=devel#devel-snapshots">
-      CVS&nbsp;スナップショット</a>
+      スナップショット</a>
   </div>
 </div>
 
