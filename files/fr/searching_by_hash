@@ -1,0 +1,30 @@
+<!-- $Id$ -->
+<h1>Recherche par hash et magnet-link</h1>
+
+<h2>Recherche par urn:sha1:</h2>
+
+<p>
+  Si vous voulez rechercher un fichier par son hash SHA1, introduisez le simplement dans la boite de recherche et appuyer sur enter, <em>gtk-gnutella-0.91.tar.gz</em> par exemple possède le hash suivant
+  <em>urn:sha1:3OYPL2DQ3C6VFCWZZCB3GAZGBEQVIPSO</em><br>
+  Si vous voulez trouver le SHA1 d'un des fichiers que vous partager, essayer quelque chose du genre:
+</p>
+<pre>
+  $ cat ~/.gtk-gnutella/sha1_cache | grep gtk-gnutella-0.91.tar.gz
+  <strong>3OYPL2DQ3C6VFCWZZCB3GAZGBEQVIPSO</strong>   649623  1037522542  /mes/fichiers/partag&eacute;s/gtk-gnutella-0.91.tar.gz
+</pre>
+<p>
+  Le truc en gras repr&eacute;sente le hash SHA1 du fichier. Pour faire une recherche sur ce dernier, mettez <em>urn:sha1:</em> devant et c'est tout.<br>
+  Il existe d'autres m&eacute;thodes pour obtenir le SHA1. Jetez un oeil dans notre r&eacute;pertoire <a href="/tools/">tools</a>.
+</p>
+  
+<h2>Recherche par magnet: link</h2>
+
+<p>
+  Rechercher par <a href="http://magnet-uri.sf.net">magnet link</a> n'est actuellement pas support&eacute; compl&egrave;tement (vous ne pouvez pas cliquer sur un lien depuis votre navigateur) mais vous pouvez copier-coller le lien dans la boite de recherche de gtk-gnutella et une nouvelle recherche s'ouvrira pour ce fichier.
+</p>
+
+<p>
+  <br>
+  <em>Markus "guruz" Goetz &lt;guruz at guruz dot de&gt;</em>
+</p>
+<!-- end searching_by_hash -->

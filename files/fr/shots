@@ -1,0 +1,20 @@
+<!-- $Id$ -->
+<h3>Captures d'&eacute;cran de Gtk-Gnutella</h3>
+
+<p>
+  Ces captures ont &eacute;t&eacute; prises avec le th&egrave;me PHOENIX pour IceWM. Voir
+  <a href="http://icewm.themes.org/">themes.org</a> si vous voulez les t&eacute;l&eacute;charger.
+</p>
+
+<p>
+  <img src="images/shots/gnet.png" width="728" height="544" alt="Status du r&eacute;seau Gnutella"><br>
+  <br>
+  <img src="images/shots/upload.png" width="728" height="544" alt="Envois"><br>
+  <br>
+  <img src="images/shots/download.png" width="728" height="544" alt="T&eacute;l&eacute;chargements et file d'attente"><br>
+  <br>
+  <img src="images/shots/search.png" width="728" height="544" alt="Recherches"><br>
+  <br>
+  <img src="images/shots/config.png" width="728" height="544" alt="Configuration">
+</p>
+<!-- end shots -->
