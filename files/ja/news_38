@@ -1,16 +1,18 @@
 <!-- $Id$ -->
 <h4>2004年2月6日, 0.93.x ブランチが作成されました</h4>
+
 <p>
     今日 Jeroen が CVS に <code>B-0-93</code> ブランチを作成しました。何らかの修復のみがここで行われることになります。0.93.3 はすでに安定していると考えていますが、0.93.4 以上に安定性が向上することを望んでいます。CVS の HEAD ブランチは 0.94 になります。
 </p>
+
 <p>
-    0.93.3 への最新の修正を手に入れるには、以下のコマンドを使用して <code>B-0-93</code> ブランチをチェックアウトできます:<br>
-  <br>
-  <code>
+    0.93.3 への最新の修正を手に入れるには、以下のコマンドを使用して <code>B-0-93</code> ブランチをチェックアウトできます:
+
+  <code style="text-align: center; margin-top: 2em; margin-bottom: 2em;">
     cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<br>
     cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co -r B-0-93 gtk-gnutella-current
-  </code><br>
-	<br>
+  </code>
+
   匿名ユーザ用のパスワード入力が促されますが、単にエンターキーを押して下さい。
 </p>
 

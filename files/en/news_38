@@ -7,13 +7,13 @@
 </p>
 <p>
 	To fetch the latest fixes for 0.93.3, you can check out the <code>B-0-93</code> branch
-	using the following commands:<br>
-  <br>
-  <code>
+	using the following commands:
+
+  <code style="text-align:center; margin-top: 2em; margin-bottom: 2em;">
     cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<br>
     cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co -r B-0-93 gtk-gnutella-current
-  </code><br>
-	<br>
+  </code>
+
   When prompted for a password for anonymous, simply press the Enter key.
 </p>
 
