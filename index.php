@@ -75,7 +75,7 @@ include("files/common.php");
         <div>
           <a href="http://sourceforge.net">
             <img src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
-	      style="border: 0;"
+	      style="border: 0; line-height:125%"
               width="88" height="31" alt="SourceForge.net Logo"></a>
         </div>
         <div>
