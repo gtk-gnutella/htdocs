@@ -102,13 +102,13 @@
   <table>
     <tr>
       <th rowspan="3">gtk-gnutella-0.95.tar.bz2</th>
-      <td>MD5: <tt>de2ff4973c975ee16cdd69ca72c06bcd</tt></td>
+      <td>MD5: <kbd>de2ff4973c975ee16cdd69ca72c06bcd</kbd></td>
     </tr>
     <tr>
-      <td>SHA1: <tt>38be3abced5add254f7a0fff88b7e7e1d0e47fa8</tt></td>
+      <td>SHA1: <kbd>38be3abced5add254f7a0fff88b7e7e1d0e47fa8</kbd></td>
     </tr>
     <tr>
-      <td><tt>urn:sha1:HC7DVPHNLLOSKT32B77YRN7H4HIOI75I</tt></td>
+      <td><kbd>urn:sha1:HC7DVPHNLLOSKT32B77YRN7H4HIOI75I</kbd></td>
     </tr>
   </table>
 </div>
@@ -149,7 +149,7 @@
   <table>
     <tr>
       <th>gtk-gnutella-0.94.tar.bz2</th>
-      <td>MD5: <tt>8319ff7b8a5a5a7be995894c2ad3280f</tt></td>
+      <td>MD5: <kbd>8319ff7b8a5a5a7be995894c2ad3280f</kbd></td>
     </tr>
   </table>
 </div>
@@ -200,13 +200,13 @@
 <div class="scroll boxed">
 	<p>
   <strong>Source Code: gtk-gnutella-0.93.3.tar.bz2</strong><br>
-    MD5Sum: <tt>34e357c768e6bbecd267d04b95e9c380</tt><br>
-    urn:sha1:<tt>GWLS2F7SW7MCMZYNG7HM2BO3O5MQJFH2</tt>
+    MD5Sum: <kbd>34e357c768e6bbecd267d04b95e9c380</kbd><br>
+    urn:sha1:<kbd>GWLS2F7SW7MCMZYNG7HM2BO3O5MQJFH2</kbd>
 	</p>
 	<p>
   <strong>Debian-3.0 (stable) Package: gtk-gnutella_0.93.3-0_i386.deb</strong><br>
-    MD5Sum: <tt>447148a79ed57890a90f6d1d8d2bafcc</tt><br>
-    urn:sha1:<tt>KG7KDQ7NTFBUT7LGJNGFWPMA5D66SAOE</tt>
+    MD5Sum: <kbd>447148a79ed57890a90f6d1d8d2bafcc</kbd><br>
+    urn:sha1:<kbd>KG7KDQ7NTFBUT7LGJNGFWPMA5D66SAOE</kbd>
   </p>
   <p>
     <strong>Unofficial Redhat-9, Mandrake-9.2, and Slackware-9.1 packages are 
@@ -271,13 +271,13 @@
 <div class="scroll boxed">
 	<p>
 		<strong>Source Code: gtk-gnutella-0.93.2.tar.bz2</strong><br>
-		MD5Sum: <tt>a89c3bc8e94a9bc63d0d7e1a9573e104</tt><br>
-		urn:sha1:<tt>5S76TMCQFNEMAXM5Z4R3BMYECK7HLFUB</tt>
+		MD5Sum: <kbd>a89c3bc8e94a9bc63d0d7e1a9573e104</kbd><br>
+		urn:sha1:<kbd>5S76TMCQFNEMAXM5Z4R3BMYECK7HLFUB</kbd>
 	</p>
 	<p>
 		<strong>Debian-3.0 (stable) Package: gtk-gnutella.gtk1_0.93.2-0_i386.deb</strong><br>
-		MD5Sum: <tt>fe69d3b0f65fdf473d9b40983c422fba</tt><br>
-		urn:sha1:<tt>XRDW4SQTYWXTOYEGCV7HVQ5KOG7FTXEI</tt>
+		MD5Sum: <kbd>fe69d3b0f65fdf473d9b40983c422fba</kbd><br>
+		urn:sha1:<kbd>XRDW4SQTYWXTOYEGCV7HVQ5KOG7FTXEI</kbd>
 	</p>
 </div>
 
@@ -355,38 +355,38 @@
 <div class="scroll boxed">
 	<p>
 		<strong>Source Code: gtk-gnutella-0.93.1.tar.bz2</strong><br>
-		MD5Sum: <tt>75840de7a45dbceff0ba045749e7afec</tt><br>
-		urn:sha1:<tt>ITUMBC5X2VE4QDWFBNS7GUHIPLVIXVCS</tt>
+		MD5Sum: <kbd>75840de7a45dbceff0ba045749e7afec</kbd><br>
+		urn:sha1:<kbd>ITUMBC5X2VE4QDWFBNS7GUHIPLVIXVCS</kbd>
 	</p>
 	<p>
 		<strong>Debian-3.0 (stable) Package: gtk-gnutella_0.93.1-0_i386.deb</strong><br>
-		MD5Sum: <tt>8203ed9c53f297dcb73798657f927610</tt><br>
-		urn:sha1:<tt>FQ2XETJTTMO6HNQPGNOBGOVVJTHPJUVI</tt>
+		MD5Sum: <kbd>8203ed9c53f297dcb73798657f927610</kbd><br>
+		urn:sha1:<kbd>FQ2XETJTTMO6HNQPGNOBGOVVJTHPJUVI</kbd>
 	</p>
 	<p>
 		<strong>Redhat-9 RPM: gtk-gnutella-0.93.1-1.gtk1.i586.rpm</strong><br>
-		MD5Sum: <tt>2701fc8709490142229ea4e13a2d2d90</tt><br>
-		urn:sha1:<tt>OOWWW4W5AKE4XVRW76RKG5THP4OPMUBN</tt>
+		MD5Sum: <kbd>2701fc8709490142229ea4e13a2d2d90</kbd><br>
+		urn:sha1:<kbd>OOWWW4W5AKE4XVRW76RKG5THP4OPMUBN</kbd>
 	</p>
 	<p>
 		<strong>Redhat-9 SRPM: gtk-gnutella-0.93.1-1.gtk1.src.rpm</strong><br>
-		MD5Sum: <tt>2c07b845f41bc9c8ab1d0aafa413aad0</tt><br>
-		urn:sha1:<tt>FUUG6D7LALRZJ3WV7OKWY3FX6BRMDQD2</tt>
+		MD5Sum: <kbd>2c07b845f41bc9c8ab1d0aafa413aad0</kbd><br>
+		urn:sha1:<kbd>FUUG6D7LALRZJ3WV7OKWY3FX6BRMDQD2</kbd>
 	</p>
 	<p>
 		<strong>Mandrake-9.2 RPM: gtk-gnutella-0.93.1-0.gtk1.1mdk.i586.rpm</strong><br>
-		MD5Sum: <tt>652a4fa75417d150e8710a5ed56c9e9c</tt><br>
-		urn:sha1:<tt>55O6LQ6ULFDR76ZX2J5KSRSRUC32NLT3</tt>
+		MD5Sum: <kbd>652a4fa75417d150e8710a5ed56c9e9c</kbd><br>
+		urn:sha1:<kbd>55O6LQ6ULFDR76ZX2J5KSRSRUC32NLT3</kbd>
 	</p>
 	<p>
 		<strong>Mandrake-9.2 SRPM: gtk-gnutella-0.93.1-0.gtk1.1mdk.src.rpm</strong><br>
-		MD5Sum: <tt>1872a475124c2fe4f035e4bae2639c7e</tt><br>
-		urn:sha1:<tt>Z4IE43GH5QAB6EIIH7R3JEWACCBAAASS</tt>
+		MD5Sum: <kbd>1872a475124c2fe4f035e4bae2639c7e</kbd><br>
+		urn:sha1:<kbd>Z4IE43GH5QAB6EIIH7R3JEWACCBAAASS</kbd>
 	</p>
 	<p>
 		<strong>Slackware-9.1 Package: gtk-gnutella-gtk1-0.93.1-i586-1.tgz</strong><br>
-		MD5Sum: <tt>ef31284ecf1dd7eb54b94b09444a4a31</tt><br>
-		urn:sha1:<tt>XHE4Y337KHN3LF4ZIXPYLESLQXUANBOO</tt>
+		MD5Sum: <kbd>ef31284ecf1dd7eb54b94b09444a4a31</kbd><br>
+		urn:sha1:<kbd>XHE4Y337KHN3LF4ZIXPYLESLQXUANBOO</kbd>
 	</p>
 </div>
 
@@ -454,28 +454,28 @@
 <div class="scroll boxed">
 	<p>
 		<strong>Source Code: gtk-gnutella-0.93.tar.bz2</strong><br>
-		MD5Sum: <tt>78d099392a61064ca30fac84c888550b</tt><br>
-		SHA1: <tt>QJPA5JMD2GIN4ECZAPQCUMCBX7COQLZN</tt>
+		MD5Sum: <kbd>78d099392a61064ca30fac84c888550b</kbd><br>
+		SHA1: <kbd>QJPA5JMD2GIN4ECZAPQCUMCBX7COQLZN</kbd>
 	</p>
 	<p>
 		<strong>Redhat-9 Package: gtk-gnutella-0.93-1.i586.rpm</strong><br>
-		MD5Sum: <tt>4a0806582db9450460385f88dbc99b8d</tt><br>
-		SHA1: <tt>ZHP2THYXSIHBEI4JY7UGYLUKEQ5PW646</tt>
+		MD5Sum: <kbd>4a0806582db9450460385f88dbc99b8d</kbd><br>
+		SHA1: <kbd>ZHP2THYXSIHBEI4JY7UGYLUKEQ5PW646</kbd>
 	</p>
 	<p>
 	<strong>Debian-3.0 (stable) Package: gtk-gnutella_0.93.0-0_i386.deb</strong><br>
-		MD5Sum: <tt>ae30cb81a204af6ae991acdb9bd299b6</tt><br>
-		SHA1: <tt>AY2YEINNFCX4WIQ56I6R6KJBGGF7C565</tt>
+		MD5Sum: <kbd>ae30cb81a204af6ae991acdb9bd299b6</kbd><br>
+		SHA1: <kbd>AY2YEINNFCX4WIQ56I6R6KJBGGF7C565</kbd>
 	</p>
 	<p>
 		<strong>Suse-8.2 Package: gtk-gnutella-0.93-1suse82.i386.rpm</strong><br>
-		MD5Sum: <tt>25cc509d68d7cd8ef84ca7ce572505e9</tt><br>
-		SHA1: <tt>R2FKRZXOITLLKWF7SJ5FC6WS5MU5IW2U</tt>
+		MD5Sum: <kbd>25cc509d68d7cd8ef84ca7ce572505e9</kbd><br>
+		SHA1: <kbd>R2FKRZXOITLLKWF7SJ5FC6WS5MU5IW2U</kbd>
 	</p>
 	<p>
 		<strong>Slackware-9.1 Package: gtk-gnutella-0.93-i586-1.tgz</strong><br>
-		MD5Sum: <tt>90d051de62452b2ded991fa330515250</tt><br>
-		SHA1: <tt>QJPA5JMD2GIN4ECZAPQCUMCBX7COQLZN</tt>
+		MD5Sum: <kbd>90d051de62452b2ded991fa330515250</kbd><br>
+		SHA1: <kbd>QJPA5JMD2GIN4ECZAPQCUMCBX7COQLZN</kbd>
 	</p>
 </div>
 

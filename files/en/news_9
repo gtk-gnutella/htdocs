@@ -7,8 +7,8 @@ features. It's really worth downloading current Gtk-Gnutella from CVS and
 giving it a try. One of the most important enhancements had been the inclusion
 of bandwidth management. GG can now be configured to not use more than 
 x&nbsp;bytes/sec, this works really great over modem or slow DSL lines.<br>
-To configure bandwidth management you have to change the values for <tt>output_bandwidth</tt>
-and <tt>input_bandwidth</tt> in your ~/.gtk-gnutella/config file.
+To configure bandwidth management you have to change the values for <kbd>output_bandwidth</kbd>
+and <kbd>input_bandwidth</kbd> in your ~/.gtk-gnutella/config file.
 I have mine set to 10240 and 40960, this still leaves some room on
 my 512/128kbit/sec line.
 </p>
