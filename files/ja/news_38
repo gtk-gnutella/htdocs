@@ -14,6 +14,7 @@
     cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<br>
     cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co -r B-0-93 gtk-gnutella-current
   </code>
+  <br><br>
 
   匿名ユーザ用のパスワード入力が促されますが、単にエンターキーを押して下さい。
 </p>
