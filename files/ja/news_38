@@ -8,7 +8,7 @@
 <p>
     0.93.3 への最新の修正を手に入れるには、以下のコマンドを使用して <code>B-0-93</code> ブランチをチェックアウトできます:
 
-  <div style="text-align: center; margin-top: 2em; margin-bottom: 2em">
+  <div style="margin-top: 2em; margin-bottom: 2em">
   <code>
     cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<br>
     cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co -r B-0-93 gtk-gnutella-current
