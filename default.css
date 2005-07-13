@@ -101,9 +101,7 @@ div.sb_section_content {
 }
 
 .image {
-	border-style: none;
-	border-width:2px;
-	border-color:white;
+	border:0;
 	text-align: center;
 	margin:0.5em;
 	padding:0.5em;
