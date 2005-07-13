@@ -58,10 +58,12 @@
 
 <p>To get the files from CVS just type in the following commands:
 
-  <code style="text-align: center; margin-top: 2em; margin-bottom: 2em;">
+  <div style="text-align: center">
+  <code>
     cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<br>
     cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co gtk-gnutella-current
   </code>
+  </div>
 
   When prompted for a password for anonymous, simply press the Enter key. 
 </p>
