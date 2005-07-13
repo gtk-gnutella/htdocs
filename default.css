@@ -66,6 +66,7 @@ div.boxed {
 div.image-box {
     border-style: none;
     border-width:2px;
+    border-color:white;
     text-align: center;
     margin:0.5em;
     padding:0.5em;
