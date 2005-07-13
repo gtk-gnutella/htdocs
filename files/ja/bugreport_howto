@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<h1 align="center">バグ報告の方法</h1>
+<h1>バグ報告の方法</h1>
 <ul>
   <li><a href="#bugreport-intro">どのようにして役立つバグレポートを提出するのですか?</a></li>
   <li><a href="#bugreport-wrong">Gtk-Gnutella の挙動がおかしい、または想定外の動作をします。</a></li>

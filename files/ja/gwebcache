@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<h1 align="center">GWebCache</h1>
+<h1>GWebCache</h1>
 
 <p>
   Gtk-Gnutella は <a href="http://www.gnucleus.com/gwebcache">GWebCache</a> システムをサポートします、これはブートストラップを行う方式で Gnutella クライアントを提供します。以前に一度も Gnutella ネットワーク (gnet) に接続した事のない Gnutella クライアントが、接続するホストを見つけるために必要になります。
