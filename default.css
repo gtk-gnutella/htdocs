@@ -16,9 +16,8 @@ body {
 	background-color: #AAAAEE;
 }
 
-h3,h4,h5 {
-	font-size: medium;
-	margin: 0em 1em;
+h1 {
+	text-align: center;
 }
 
 h1.attention {
@@ -28,6 +27,11 @@ h1.attention {
 	background: red;
 	color: white;
 	text-align: center;
+}
+
+h3,h4,h5 {
+	font-size: medium;
+	margin: 0em 1em;
 }
 
 .nav {
@@ -47,61 +51,61 @@ code {
 }
 
 div.sidebar {
-	width:14em;
-	float:left;
+	width: 14em;
+	float: left;
 }
 
 div.content {
-	margin-left:14em;
+	margin-left: 14em;
 }
 
 div.boxed {
-	border-style:solid;
-	border-width:2px;
-	background-color:white;
-	margin:0.5em;
-	padding:0.5em;
+	border-style: solid;
+	border-width: 2px;
+	background-color: white;
+	margin: 0.5em;
+	padding: 0.5em;
 }
 
 div.indent {
-	margin-left:1em;
+	margin-left: 1em;
 }
 
 div.warning {
-	background-color:#FFCCCC;
-	text-align:center;
-	border-style:outset;
-	border-color:red;
-	margin:1em;
-	padding:0.5em;
-	font-weight:bold;
+	background-color: #FFCCCC;
+	text-align: center;
+	border-style: outset;
+	border-color: red;
+	margin: 1em;
+	padding: 0.5em;
+	font-weight: bold;
 }
 
 div.scroll {
-	overflow:auto;
-	max-height:10em;
+	overflow: auto;
+	max-height: 10em;
 }
 
 div.sb_section {
-	margin-top:0.5em;
+	margin-top: 0.5em;
 	margin-bottom: 0.5em;
-	padding:0.3em;
+	padding: 0.3em;
 	border-left: solid 2px lightgray;
 	border-top: solid 2px lightgray;
 }
 
 
 a.sb_section_header {
-	font-size:large;
-	font-weight:bold;
+	font-size: large;
+	font-weight: bold;
 }
 
 div.sb_section_content {
-	margin-left:1em;
+	margin-left: 1em;
 }
 
 .image {
-	border:0;
+	border: 0;
 	text-align: center;
-	margin:0.5em;
+	margin: 0.5em;
 }
