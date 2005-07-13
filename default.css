@@ -64,9 +64,11 @@ div.boxed {
 }
 
 div.image-box {
+    border-style: none;
+    border-width:2px;
+    text-align: center;
     margin:0.5em;
     padding:0.5em;
-    border:0;
 }
 
 div.indent {
