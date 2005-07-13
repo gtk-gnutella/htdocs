@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<h1 style="text-align: center;">gtk-gnutella documentation</h1>
+<h1>gtk-gnutella documentation</h1>
 <ul>
   <li>
     <a href="<?php echo BASEURL ?>&amp;page=filtering_howto">filtering mini-howto</a> 
