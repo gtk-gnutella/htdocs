@@ -63,15 +63,6 @@ div.boxed {
 	padding:0.5em;
 }
 
-div.image-box {
-    border-style: none;
-    border-width:2px;
-    border-color:white;
-    text-align: center;
-    margin:0.5em;
-    padding:0.5em;
-}
-
 div.indent {
 	margin-left:1em;
 }
@@ -107,4 +98,13 @@ a.sb_section_header {
 
 div.sb_section_content {
 	margin-left:1em;
+}
+
+.image {
+	border-style: none;
+	border-width:2px;
+	border-color:white;
+	text-align: center;
+	margin:0.5em;
+	padding:0.5em;
 }
