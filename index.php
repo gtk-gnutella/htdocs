@@ -26,11 +26,10 @@ include("files/common.php");
   </head>
   <body>
     <div class="boxed" style="text-align:center">
-      <div>
+      <div class="image-box">
         <a href="<?php echo BASEURL ?>&amp;page=index">
           <img src="images/gtk-gnutella.png" 
-            width="408" height="44" alt="Gtk-Gnutella"
-	    style="border: 0;"></a>
+            width="408" height="44" alt="Gtk-Gnutella"></a>
       </div>
       <div>
         <?php iceinclude("current_version", 0); echo VERSION ?>
@@ -72,31 +71,30 @@ include("files/common.php");
         <div>
           <?php iceinclude("sidenav_hosted", 0) ?>
         </div>
-        <div>
+        <div class="image-box">
           <a href="http://sourceforge.net">
             <img src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
-	      style="border: 0; line-height:125%"
               width="88" height="31" alt="SourceForge.net Logo"></a>
         </div>
         <div>
           <?php iceinclude("sidenav_glade", 0) ?>
         </div>
-        <div>
+        <div class="image-box">
           <a href="http://glade.gnome.org/">
-            <img src="images/glade-banner.png" style="border: 0;"
+            <img src="images/glade-banner.png"
               alt="Glade" width="100" height="45"></a>
         </div>
       </div>
       <div class="boxed">
         <?php iceinclude("sidenav_conform", 0) ?>
-        <br><br>
+        <div class="image-box">
         <a href="http://validator.w3.org/check/referer">
-          <img src="images/valid-html401.png" style="border: 0;" 
+          <img src="images/valid-html401.png"
             alt="Valid HTML 4.01" width="88" height="31"></a>
-        <br><br>
         <a href="http://jigsaw.w3.org/css-validator/">
-          <img src="images/valid-css.png" style="border: 0;"
+          <img src="images/valid-css.png"
             alt="Valid CSS" width="88" height="31"></a>
+        </div>
       </div>
     </div>
 
