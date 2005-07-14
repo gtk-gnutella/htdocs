@@ -204,8 +204,8 @@
   default filter pulldown directly.
 </p>
 <div style="padding: 10pt 50pt;">
-  <table border="1" cellspacing="0" cellpadding="2">
-    <tr bgcolor="#e0e0e0">
+  <table summary="A sample filter 1" border="1" cellspacing="0" cellpadding="2">
+    <tr style="background-color: #E0E0E0">
 	    <td align="center">!</td>
 	    <td align="center">Condition</td>
 	    <td align="center">Target</td>
@@ -240,8 +240,8 @@
   DOWNLOAD.
 </p>
 <div style="padding: 10pt 50pt;">
-  <table border="1" cellspacing="0" cellpadding="2">
-    <tr bgcolor="#e0e0e0">
+  <table summary="A sample filter 2" border="1" cellspacing="0" cellpadding="2">
+    <tr style="background-color: #E0E0E0">
 	    <td align="center">!</td>
 	    <td align="center">Condition</td>
 	    <td align="center">Target</td>
