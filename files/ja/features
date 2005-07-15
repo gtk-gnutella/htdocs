@@ -1,14 +1,14 @@
 <!-- $Id$ -->
-<h1 style="text-align: center;">特徴</h1>
+<h1>特徴</h1>
 
 <ul>
   <li>Gnutella ネットワーク (LimeWire, BearShare, Xolox, Gnucleus, Shareaza, Morpheus ...) でのファイルの共有</li>
   <li>圧縮された Gnutella ネットワーク接続</li>
-  <li>複数ホストからのファイルの同時ダウンロード (Swarming - 分封あるいはマルチソース・ダウンロード)</li>
+  <li>複数ホストからのファイルの同時ダウンロード (Swarming - 分封あるいは多段ソース・ダウンロード)</li>
   <li>受動検索</li>
   <li>urn:sha1: および magnet: での検索</li>
   <li>ダウンロードメッシュおよび検索を見張る事による、さらなる送信元の自動的な取得</li>
-  <li>強力なフィルターエンジン</li>
+  <li>強力な条件検索エンジン</li>
   <li>帯域幅の管理/制限</li>
   <li>数多くの設定項目</li>
   <li>数多くの統計項目</li>
@@ -23,27 +23,27 @@
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/bye?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >BYE</a> パケット</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/gwcache?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
-        >GWebCache</a> Proposal</li>
+        ><abbr title="Gnutella Web Cache">GWebCache</abbr></a> Proposal (Gnutella ウェブキャッシュ提議)</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/huge?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
-        >HUGE</a> (<strong>H</strong>ash/<strong>U</strong>RN <strong>G</strong>nutella <strong>E</strong>xtensions - ハッシュ/URN Gnutella 拡張)</li>
+        >HUGE</a> (<span style="font-weight: bold">H</span>ash/<span style="font-weight: bold">U</span>RN <span span style="font-weight: bold">G</span>nutella <span style="font-weight: bold">E</span>xtensions - ハッシュ/URN Gnutella 拡張)</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ping-pong?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >Ping/Pong リダクション</a></li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/PARQ?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
-        >PARQ</a> (<strong>P</strong>assive/<strong>A</strong>ctive <strong>R</strong>emote <strong>Q</strong>ueueing - 受動/能動遠隔キューイング)</li>
+        ><abbr title="Passive/Active Remote Queueing - 受動/能動遠隔キューイング">PARQ</abbr></a> (Passive/Active Remote Queueing)</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/PFSP?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
-        >PFSP</a> (<strong>P</strong>artial <strong>F</strong>ile <strong>S</strong>haring <strong>P</strong>rotocol - 部分ファイル共有プロトコル)</li>
+        >PFSP</a> (<b>P</b>artial <b>F</b>ile <b>S</b>haring <b>P</b>rotocol - 部分ファイル共有プロトコル)</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/vendor_msg?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >ベンダーメッセージ</a></li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ultra-peers?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >ウルトラピア</a></li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/QRP?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
-        >QRP</a> (<strong>Q</strong>uery <strong>R</strong>outing <strong>P</strong>roposal)</li>
+        >QRP</a> (<strong>Q</strong>uery <strong>R</strong>outing <strong>P</strong>roposal- クエリルート設定提議)</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/push_proxy?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >Push プロキシ</a></li>
     </ul>
   </li>
 </ul>
 <p>
-  しかしながら、まだやるべき事は数多くあります。手伝いたいという方は、<a href="<?php echo BASEURL ?>&amp;page=devel">開発に関するページ</a>を御覧下さい。
+  しかしながらやるべき事はまだ数多くあります。手伝いたいという方は<a href="<?php echo BASEURL ?>&amp;page=devel">開発に関するページ</a>を御覧下さい。
 </p>
 <!-- end features -->
