@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<h1 style="text-align: center;">Gtk-Gnutella 文書</h1>
+<h1>Gtk-Gnutella 文書</h1>
 <ul>
   <li>
     <a href="<?php echo BASEURL ?>&amp;page=filtering_howto">条件検索に関する Mini-HOWTO</a> <small>&nbsp;作成者 Vidar</small>
