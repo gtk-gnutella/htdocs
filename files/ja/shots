@@ -6,14 +6,10 @@
 </p>
 
 <p>
-  <img src="images/shots/gnet.png" width="728" height="544" alt="Gnutella ネットワークのステータス"><br>
-  <br>
-  <img src="images/shots/upload.png" width="728" height="544" alt="アップロード"><br>
-  <br>
-  <img src="images/shots/download.png" width="728" height="544" alt="ダウンロードおよびキュー"><br>
-  <br>
-  <img src="images/shots/search.png" width="728" height="544" alt="検索"><br>
-  <br>
-  <img src="images/shots/config.png" width="728" height="544" alt="設定のページ">
+  <img src="images/shots/gnet.png" width="728" height="544" alt="Gnutella ネットワークのステータス" class="image">
+  <img src="images/shots/upload.png" width="728" height="544" alt="アップロード" class="image">
+  <img src="images/shots/download.png" width="728" height="544" alt="ダウンロードおよびキュー" class="image">
+  <img src="images/shots/search.png" width="728" height="544" alt="検索" class="image">
+  <img src="images/shots/config.png" width="728" height="544" alt="設定のページ" class="image">
 </p>
 <!-- end shots -->
