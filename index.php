@@ -20,6 +20,7 @@ include("files/common.php");
       <?php iceinclude("title", 0) ?>
     <link rel="stylesheet" type="text/css" href="default.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="start" href="/">
     <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Style-Type" content="text/css">
