@@ -7,7 +7,7 @@
   Gtk-Gnutella is een server/client voor
   <a href="http://www.gnutella.com/">Gnutella</a>.
   Het draait op elke Unix-achtig systeem dat
-  <a href="http://www.gtk.org/">GTK+</a> en
+  <a href="http://www.gtk.org/">GTK+</a>
   (1.2 of beter) en <a href="http://www.libxml.org">libxml</a>
   ondersteunt.
   Gnome is niet vereist. Het wordt momenteel ontwikkeld en getest
@@ -23,7 +23,7 @@ x86, AMD64, PowerPC, SPARC, MIPS.
 </p>
 
 <p>
-  Gtk-Gnutella wordt uitgevracht onder de
+  Gtk-Gnutella wordt uitgebracht onder de
   GNU General Public License (GPL).
 </p>
 
@@ -34,7 +34,7 @@ x86, AMD64, PowerPC, SPARC, MIPS.
 </p>
 
 <p>
-  Alle ideeën en commentaar zijn welkom op de gtk-gnutella-devel mailng lijst.
+  Alle ideeën en commentaar zijn welkom op de gtk-gnutella-devel maiing lijst.
   Bugs kunnen worden vermeld op de 
   <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
   SourceForge.net Bug Tracker</a>
