@@ -282,16 +282,13 @@ a はリーフモードに戻されます。</li>
     バグの修正:
     <ul>
       <li>
-        Was misparsing query hits bearing alt-locs attached to each hit,
-        causing GTKG to possibly drop those hits and close the connection when
-        coming from an immediate neighbour.
+        "Alternate-Location (代わりのダウンロード場所)" を持つ検索式 (クエリ) ヒットを誤って解析していました。これは GTKG にこれらのヒットを破棄させて、間にある隣のノードから来る場合、接続を閉じさせる可能性があります。
       </li>
       <li>
         メニューから検索を再開する時に、それが無効にされていた場合は自動的に再び有効にします (バグ <?php sf_bug("864348");?> の修正)。
       </li>
       <li>
-        Upon restart, a disabled search will now be shown in gray in the
-        search list (fixes bug <?php sf_bug("857972");?>) -- feature only implemented for GTK1.
+        再開の場合には、無効にされた検索は検索リストで灰色で表示されます (バグ <?php sf_bug("857972");?> の修正) -- この機能は GTK1 にのみ実装されています。
       </li>
     </ul>
   </li>
@@ -353,13 +350,13 @@ a はリーフモードに戻されます。</li>
     どのダウンロードをリスト (完了したもの、失敗したもの、利用不可なもの) から消去するかをよりうまく指定するために GUI が改良されました。
   </li>
   <li>
-    検索式 (クエリ) ヒットから取得した別のダウンロード場所を集めます。
+    検索式 (クエリ) ヒットから取得した "代わりのダウンロード場所 (Alternate-Location)" を集めます。
   </li>
   <li>
     IP のみの代わりにホスト名もサポートします。あなたのマシンのホスト名は固定されていて IP のみが動的に変わるなら、例えばアドレス .dyndns.org, gtk-gnutella はそのホスト名に関連付けられた IP へ接続するようにすることが可能です。
   </li>
   <li>
-    Sends out alternate locations which should not be tried.
+    試すべきではない "代わりのダウンロード場所 (Alternate-Location)" を送信するようになります。
   </li>
   <li>
     帯域幅が不足している時は完全なヘッダを送信しません。
@@ -446,11 +443,10 @@ a はリーフモードに戻されます。</li>
     ダウンロード・ペインは、現在いくつの項目が活発に、そして受動的に待機列に入れられているを示します。
   </li>
   <li>
-    The search pane allows one to hide hits that are either ignored or which
-    have been already queued up by the core due to a matching SHA1 or filename.
+    検索ペインでは無視されるヒットを隠したり、SHA1 かファイル名が一致するため、すでにコアによってキューに入れられているヒットを隠せるようになります。
   </li>
   <li>
-    The "Purge" button could be hidden due to long filenames (<?php sf_bug("770625");?>).
+    "撤去" ボタンが長すぎるファイル名のために隠されてしまう場合がありました (<?php sf_bug("770625");?>)。
   </li>
   <li>
     _search_send_packet() における二重 free() の問題が修正されました (<?php sf_bug("706014");?>)。
