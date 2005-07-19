@@ -1,0 +1,30 @@
+<!-- $Id$ -->
+<h4>22 Mei 2005, Versie 0.95.3 vrijgegeven</h4>
+
+<p>
+  Versie 0.95.3 is een bug fix uitgave. Een aantal fouten zijn opgelost.
+  We raden iedereen aan om naar deze versie te upgraden, de kans is
+  aanwezig dat de fouten die we opgelost hebben anders ook bij jou 
+  een keer zullen optreden.
+</p>
+
+<ul>
+  <li>Opgelost: Een potentieel Denial-Of-Service.</li>
+  <li>Opgelost: OOB antwoord code welke kon leiden tot een assertie fout.</li>
+  <li>[GTK1] Toon opnieuw de actief optie en de Verwijder knop in de Regelset editor.</li>
+  <li>Opgelost: Het achteloos verkleinen van grote bestanden (&gt; 4 GB).</li>
+  <li>Opgelost: Compatabiliteit met 64-bit platformen.</li>
+</ul>
+
+<p>Controllesom van de bron tarball:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.95.3.tar.bz2) = bde94b95622f895294bffac8cecbe67a</li>
+  <li>SHA1 (gtk-gnutella-0.95.3.tar.bz2) = 1efeb54c8637f785e3a67e093c27fdf96974318b</li>
+  <li>urn:sha1:D37LKTEGG73YLY5GPYETYJ757FUXIMML</li>
+  
+</ul>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_44 -->
