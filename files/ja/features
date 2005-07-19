@@ -37,7 +37,7 @@
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ultra-peers?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >ウルトラピア</a></li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/QRP?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
-        >QRP</a> (<strong>Q</strong>uery <strong>R</strong>outing <strong>P</strong>roposal- クエリルート設定提議)</li>
+        >QRP</a> (<strong>Q</strong>uery <strong>R</strong>outing <strong>P</strong>roposal - クエリルート設定提議)</li>
       <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/push_proxy?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
         >Push プロキシ</a></li>
     </ul>
