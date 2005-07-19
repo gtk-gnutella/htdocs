@@ -60,16 +60,18 @@
   ウェブ上のリポジトリー</a>を御覧下さい。
 </p>
 
-<p>CVS からファイルを取得するには以下のコマンドを打って下さい:
+<p>
+  CVS からファイルを取得するには以下のコマンドを打って下さい:
+</p>
 
-  <!-- FIXME -->
-  <br><br>
+<p>
   <kbd>
     cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<br>
     cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co gtk-gnutella-current
   </kbd>
-  <br><br>
+</p>
 
+<p>
   匿名利用者用のパスワード入力が促されますが、単にエンターキーを押して下さい。
 </p>
 
