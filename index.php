@@ -56,6 +56,9 @@ include("files/common.php");
             <option
 		<?php if ('ja' === LANG) echo 'selected' ?>
 		value="ja">日本語</option>
+            <option
+		<?php if ('nl' === LANG) echo 'selected' ?>
+		value="nl">Nederlands</option>
           </select>&nbsp;<input type="submit" value="Go" accesskey="G" tabindex=2>
           <input type="hidden" name="page" value="<?php echo PAGE ?>">
         </p>
