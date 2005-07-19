@@ -9,12 +9,12 @@
     0.93.3 への最新の修正を手に入れるには、以下のコマンドを使用して <code>B-0-93</code> ブランチをチェックアウトできます:
 
   <!-- FIXME -->
-  <br><br>
-  <code>
+  <p>
+  <kbd>
     cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<br>
     cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co -r B-0-93 gtk-gnutella-current
-  </code>
-  <br><br>
+  </kbd>
+  </p>
 
   匿名ユーザ用のパスワード入力が促されますが、単にエンターキーを押して下さい。
 </p>
