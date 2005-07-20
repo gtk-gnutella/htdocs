@@ -475,7 +475,7 @@ See also,
 <h3><a name="down4">What is a "chunk"?</a></h3>
 <p>
   A <em>chunk</em> is another word for <em>part of a file</em>. When gtk-gnutella runs in
-  <a href="#down4">swarming mode</a> it will retrieve multiple chunks of a
+  <a href="#down3">swarming mode</a> it will retrieve multiple chunks of a
   downloading file until it has downloaded the complete file. The
   <em>Range</em> column shows you which chunk you are currently
   downloading.
