@@ -51,7 +51,7 @@
 
 <h2>Downloads</h2>
 <ul>
-  <li><a href="#down0">What does the status "Ignoring requested [SHA1|name & size]" mean?</a></li>
+  <li><a href="#down0">What does the status "Ignoring requested [SHA1|name &amp; size]" mean?</a></li>
   <li><a href="#down1">What does the status "No URN on server" mean?</a></li>
   <li><a href="#down2">Why is the same file downloaded X times?</a></li>
   <li><a href="#down3">What is "swarming"?</a></li>
@@ -252,14 +252,14 @@ See also,
 <p>
   You don't need to forward any ports for gtk-gnutella to work, but it
   will perform much better if you do. If gtk-gnutella thinks you are
-  firewalled, it will not show any <a href="#">"push"</a> results since
+  firewalled, it will not show any <a href="#down_push">"push"</a> results since
   you wouldn't be able to download those anyway.<br>
   Even when people cannot connect directly to you, they can still download
   files from your node using a <a href="#down_push">push request</a>.<br>
   You can configure the port gtk-gnutella listens on. The setting
   <em>Listen port</em> is located on the
   <em>Network settings</em> tab on the config page.
-
+</p>
  
 <h3><a name="gnet-forward-howto">How do I configure port forwarding?</a></h3>
 <p>
@@ -349,10 +349,10 @@ See also,
 <h3><a name="gnet8">How can I increase the timeouts?</a></h3>
 <p>
   If your internet connection suffers from high latency it might help to
-  increase the timeouts. Go to <em>Config->User Interface</em>
+  increase the timeouts. Go to <em>Settings-&gt;Preferences-&gt;User Interface</em>
   and tick <em>Expert mode</em>.
   Now, you'll find a lot more settings to change when you go to
-  <em>Config->GnutellaNet Settings</em>.
+  <em>Settings-&gt;Preferences-&gt;GnutellaNet</em>.
 </p>
 
 <h3><a name="gnet-auto">How does auto mode decide between ultra and leaf?</a></h3>
@@ -431,7 +431,7 @@ See also,
 
 <h2>Downloads</h2>
 
-<h3><a name="down0">What does the status "Ignoring requested [SHA1|name & size]" mean?</a></h3>
+<h3><a name="down0">What does the status "Ignoring requested [SHA1|name &amp; size]" mean?</a></h3>
 <p>
   This means that gtk-gnutella has that file recorded as complete in its
   database. This database is usually located in
@@ -486,7 +486,7 @@ See also,
   When you download a file from a host that supports the download mesh,
   it will tell you about additional sources for the requested file
   (provided it knows of any). Those will then be used for
-  <a href="#down4">swarming</a>
+  <a href="#down3">swarming</a>
 </p>
 
 <h3><a name="down_push">What is a "push request"?</a></h3>
