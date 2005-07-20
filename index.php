@@ -43,7 +43,7 @@ include("files/common.php");
       <div class="boxed">
         <form action="/" method="GET">
         <p style="margin: 0;">Select your language:<br>
-	<select name="lang" tabindex=1 onchange="submit();">
+          <select name="lang" tabindex=1 onchange="submit();">
             <option
 		<?php if ('en' === LANG) echo 'selected' ?>
 		value="en">English</option>
@@ -78,27 +78,28 @@ include("files/common.php");
         </div>
         <div>
           <a href="http://sourceforge.net">
-            <img src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
-              width="88" height="31" alt="SourceForge.net Logo" class="image"></a>
+            <img class="image"
+              src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
+              alt="SourceForge.net Logo" width="88" height="31"></a>
         </div>
         <div>
           <?php iceinclude("sidenav_glade", 0) ?>
         </div>
         <div>
           <a href="http://glade.gnome.org/">
-            <img src="images/glade-banner.png"
-              alt="Glade" width="100" height="45" class="image"></a>
+            <img class="image" src="images/glade-banner.png"
+              alt="Glade" width="100" height="45"></a>
         </div>
       </div>
       <div class="boxed">
         <?php iceinclude("sidenav_conform", 0) ?>
         <div>
-        <a href="http://validator.w3.org/check/referer">
-          <img src="images/valid-html401.png"
-            alt="Valid HTML 4.01" width="88" height="31" class="image"></a>
-        <a href="http://jigsaw.w3.org/css-validator/">
-          <img src="images/valid-css.png"
-            alt="Valid CSS" width="88" height="31" class="image"></a>
+          <a href="http://validator.w3.org/check/referer">
+            <img class="image" src="images/valid-html401.png"
+              alt="Valid HTML 4.01" width="88" height="31"></a>
+          <a href="http://jigsaw.w3.org/css-validator/">
+            <img class="image" src="images/valid-css.png"
+              alt="Valid CSS" width="88" height="31"></a>
         </div>
       </div>
     </div>
