@@ -6,12 +6,12 @@
 </p>
 
 <table summary="順位とその得点数" style="margin-left: auto; margin-right: auto">
-    <tr><th>順位</th> <th>候補</th> <th>得票数</th> <th>得点数</th></tr>
-	<tr><td>1</td>    <td>17</td>   <td>5</td>      <td>17</td></tr>
-	<tr><td>2</td>    <td>13</td>   <td>3</td>      <td>12</td></tr>
-	<tr><td>3</td>    <td>15</td>   <td>3</td>      <td>11</td></tr>
-	<tr><td>4</td>    <td>16</td>   <td>2</td>      <td>9</td></tr>
-	<tr><td>5</td>    <td>6</td>    <td>3</td>      <td>6</td></tr>
+    <tr><th>順位</th>   <th>候補</th>   <th>得票数</th> <th>得点数</th></tr>
+    <tr><td>1</td>      <td>17</td>     <td>5</td>      <td>17</td></tr>
+    <tr><td>2</td>      <td>13</td>     <td>3</td>      <td>12</td></tr>
+    <tr><td>3</td>      <td>15</td>     <td>3</td>      <td>11</td></tr>
+    <tr><td>4</td>      <td>16</td>     <td>2</td>      <td>9</td></tr>
+    <tr><td>5</td>      <td>6</td>      <td>3</td>      <td>6</td></tr>
 </table>
 
 <p>
@@ -35,43 +35,111 @@
 </p>
 <h3>アーティスト達:</h3>
 <ul>
-  <li><strong>1)</strong> Murphy またの名を Eqom14</li>
-	<li><strong>2)</strong> Chagas Chagas</li>
-	<li><strong>3-11)</strong> Wayne Osborn</li>
-	<li><strong>12-17)</strong> Cristina Irisarri R&uacute;iz</li>
+    <li><strong>1)</strong> Murphy またの名を Eqom14</li>
+    <li><strong>2)</strong> Chagas Chagas</li>
+    <li><strong>3-11)</strong> Wayne Osborn</li>
+    <li><strong>12-17)</strong> Cristina Irisarri R&uacute;iz</li>
 </ul>
 
 
-<div>1)</div><div style="text-align:center"><img src="images/banner_eqom14.png"/></div>
+<div>1)</div>
+<div>
+  <img class="image" src="images/banner_eqom14.png" width="397" height="64"
+    alt="GTK-GNUTELLA Performance Peer to Peer for Unix by Murphy">
+</div>
 <hr>
-<div>2)</div><div style="text-align:center"><img src="images/banner_chags.png"/></div>
+<div>2)</div>
+<div>
+  <img class="image" src="images/banner_chags.png" width="640" height="133"
+    alt="GTK-GNUTELLA by Chagas Chagas">
+</div>
 <hr>
-<div>3)</div><div style="text-align:center"><img src="images/banner_dnar.png"/></div>
+<div>3)</div>
+<div>
+  <img class="image" src="images/banner_dnar.png" width="774" height="125"
+    alt="GTK-GNUTELLA by Wayne Osborn">
+</div>
 <hr>
-<div>4)</div><div style="text-align:center"><img src="images/banner_dnar1.png"/></div>
+<div>4)</div>
+<div>
+  <img class="image" src="images/banner_dnar1.png" width="602" height="100"
+    alt="GTK-GNUTELLA Performance Peer to Peer for Unix by Wayne Osborn">
+</div>
 <hr>
-<div>5)</div><div style="text-align:center"><img src="images/banner_dnar2.png"/></div>
+<div>5)</div>
+<div>
+  <img class="image" src="images/banner_dnar2.png" width="1024" height="170"
+    alt="GTK-GNUTELLA Performance Peer to Peer for Unix by Wayne Osborn">
+</div>
 <hr>
-<div>6)</div><div style="text-align:center"><img src="images/banner_dnar3.png"/></div>
+<div>6)</div>
+<div>
+  <img class="image" src="images/banner_dnar3.png" width="602" height="100"
+    alt="GTK-GNUTELLA Performance Peer to Peer for Unix by Wayne Osborn">
+</div>
 <hr>
-<div>7)</div><div style="text-align:center"><img src="images/banner_dnar4.png"/></div>
+<div>7)</div>
+<div>
+  <img class="image" src="images/banner_dnar4.png" width="901" height="181"
+    alt="GTK-GNUTELLA Performance Peer to Peer for Unix by Wayne Osborn">
+</div>
 <hr>
-<div>8)</div><div style="text-align:center"><img src="images/banner_dnar6.png"/></div>
+<div>8)</div>
+<div>
+  <img class="image" src="images/banner_dnar6.png" width="951" height="191"
+    alt="GTK-GNUTELLA Performance Peer to Peer for Unix by Wayne Osborn">
+</div>
 <hr>
-<div>9)</div><div style="text-align:center"><img src="images/banner_dnar7.png"/></div>
+<div>9)</div>
+<div>
+  <img class="image" src="images/banner_dnar7.png" width="950" height="191"
+    alt="GTK-GNUTELLA Performance Peer to Peer for Unix by Wayne Osborn">
+</div>
 <hr>
-<div>10)</div><div style="text-align:center"><img src="images/banner_dnar8.png"/></div>
+<div>10)</div>
+<div>
+  <img class="image" src="images/banner_dnar8.png" width="950" height="198"
+    alt="GTK-GNUTELLA Performance Peer to Peer for Unix by Wayne Osborn">
+</div>
 <hr>
-<div>11)</div><div style="text-align:center"><img src="images/banner_dnar9.png"/></div>
+<div>11)</div>
+<div>
+  <img class="image" src="images/banner_dnar9.png" width="900" height="183"
+    alt="GTK-GNUTELLA Performance Peer to Peer for Unix by Wayne Osborn">
+</div>
 <hr>
-<div>12)</div><div style="text-align:center"><img src="images/banner_usuarios_balls.png"></div>
+<div>12)</div>
+<div>
+  <img class="image" src="images/banner_usuarios_balls.png" width="400" height="221"
+    alt="gtkGnutella (Balls) by Cristina Irisarri R&uacute;iz">
+</div>
 <hr>
-<div>13)</div><div style="text-align:center"><img src="images/banner_usuarios_blue.png"></div>
+<div>13)</div>
+<div>
+  <img class="image" src="images/banner_usuarios_blue.png" width="479" height="300"
+    alt="GTK Gnutella (Blue) by Cristina Irisarri R&uacute;iz">
+</div>
 <hr>
-<div>14)</div><div style="text-align:center"><img src="images/banner_usuarios_leds_01.png"></div>
+<div>14)</div>
+<div>
+  <img class="image" src="images/banner_usuarios_leds_01.png" width="500" height="143"
+    alt="G  T K GNUTELLA (LEDs 01) by Cristina Irisarri R&uacute;iz">
+</div>
 <hr>
-<div>15)</div><div style="text-align:center"><img src="images/banner_usuarios_leds_02.png"></div>
+<div>15)</div>
+<div>
+  <img class="image" src="images/banner_usuarios_leds_02.png" width="500" height="143"
+    alt="G  T K GNUTELLA (LEDs 02) by Cristina Irisarri R&uacute;iz">
+</div>
 <hr>
-<div>16)</div><div style="text-align:center"><img src="images/banner_usuarios_planet.png"></div>
+<div>16)</div>
+<div>
+  <img class="image" src="images/banner_usuarios_planet.png" width="475" height="278"
+    alt="GTK Gnutella (Planet) by Cristina Irisarri R&uacute;iz">
+</div>
 <hr>
-<div>17)</div><div style="text-align:center"><img src="images/banner_usuarios_tree.png"></div>
+<div>17)</div>
+<div>
+  <img class="image" src="images/banner_usuarios_tree.png" width="545" height="437"
+    alt="GTK GNUTELLA (Tree) by Cristina Irisarri R&uacute;iz">
+</div>
