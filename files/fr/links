@@ -1,0 +1,29 @@
+<!-- $Id$ -->
+
+<h3>Liens Gnutella</h3>
+
+<ul>
+  <li>
+    <a href="http://www.the-gdf.org/wiki/">Gnutella Protocol Development Wiki</a>: 
+    Pour apprendre plus sur le protocol en lui-m&ecirc;me.
+  </li>  
+  <li>
+    <a href="http://www.gnutella.com">www.gnutella.com</a>: Page non-officielle de Gnutella.
+  </li>
+  <li>
+  <a href="http://www.infoanarchy.org/wiki/wiki.pl?Gnutella">infoAnarchy's 
+    Gnutella Wiki</a>: Informations g&eacute;n&eacute;rale sur ce qui tourne autour de Gnutella.
+  </li>
+  <li>
+    <a href="http://freshmeat.net/search/?q=gnutella">Freshmeat Gnutella</a>: 
+    d'autres clients Gnutella pour Unix.
+  </li>
+  <li>
+    <a href="http://www.gnutellaforums.com">Gnutella Forums</a>: Lieu pour parler de gnutella.
+  </li>
+  <li>
+    <a href="http://groups.yahoo.com/group/the_gdf">The Gnutella Developer 
+      Forum (GDF)</a>: L'endroit o&ugrave; les acteurs principaux de Gnutella discuttent. R&eacute;serv&eacute; aux d&eacute;veloppeurs seulement.
+  </li>
+</ul>
+<!-- end links -->

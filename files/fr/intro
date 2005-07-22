@@ -1,0 +1,40 @@
+<!-- content -->
+<!-- $Id$ -->
+
+<h3>Le Client Gnutella Graphique pour Unix</h3>
+
+<p>
+  Gtk-Gnutella est un serveur/client pour
+  <a href="http://www.gnutella.com/">Gnutella</a>.
+  Il tourne sur tous les syst&egrave;mes Unix qui supportent
+<a href="http://www.gtk.org/">GTK+</a> 
+  (1.2 ou sup&eacute;rieur) et <a href="http://www.libxml.org">libxml</a>.
+  Gnome n'est pas n&eacute;c&eacute;ssaire. Le d&eacute;veloppement du programme se d&eacute;roule actuellement sous Linux (Debian 2.2) et fonctionne au moins sous Linux,
+  <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>,
+  <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
+  <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
+  <a href="http://gtk-gnutella.darwinports.com/">Darwin</a>,
+Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS tout comme sur les architectures CPU x86, AMD64, PowerPC, SPARC, MIPS.
+</p>
+
+<p>
+  Ce programme est sous la GNU General Public License (GPL).
+</p>
+
+<p>
+  Gtk-Gnutella n'est pas encore termin&eacute;, mais est entierement fonctionnel: vous pouvez partager, effectuer des recherches, et t&eacute;l&eacute;charger. Et il est tout aussi stable, les utilisateurs le laissent tourner des jours durant sans probl&egrave;s.
+</p>
+
+<p>
+  Toutes id&eacute;es et remarques sont les bienvenus sur la liste de diffusion gtk-gnutella-devel (en anglais).
+  Les Bugs doivent &ecirc;tre report&eacute;s sur le 
+  <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+  Bug Tracker de SourceForge.net</a>
+</p>
+
+<p style="text-align: center;">
+  <a href="<?php echo BASEURL ?>&amp;page=devel">Nous avons besoin de contribuants pour le d&eacute;veloppement en C et la documentation</a>
+</p>
+
+<!-- end intro -->
+

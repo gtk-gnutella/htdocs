@@ -1,0 +1,42 @@
+<!-- $Id$ -->
+<h1>Obtenir de l'aide</h1>
+<h4>Listes de diffusion</h4>
+
+<p>
+  Cliquez pour vous abonner ou d&eacute;sabonner. 
+</p>
+
+<p>
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-users/">
+    gtk-gnutella-users</a> Liste principale des utilisateurs de Gtk-Gntuella (en anglais) ( 
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-users">
+    les archives</a> )<br>
+
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-devel/">
+    gtk-gnutella-devel</a> Si vous voulez contribuer &agrave; Gtk-Gnutella (en anglais) ( 
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-devel">
+    les archives</a> )<br>
+
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-announce/">
+    gtk-gnutella-announce</a> Les annonces des nouvelles versions ( 
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-announce">
+    les archives</a> )<br>
+</p>
+
+<h4>Chat IRC</h4>
+
+<p>
+  Sur le <a href="http://www.freenode.net/">r&eacute;seau freenode</a> (connu pr&eacute;c&eacute;demment sous le nom de Open Projects Network / OPN) nous sommes sur le canal 
+  <a href="http://www.maol.ch/irc/egg2html.php?channel=gtk-gnutella">
+    #gtk-gnutella</a>. Il y a toujours quelqu'un, mais pas forcement toujours quelqu'un qui connait la r&eacute;ponse &agrave; votre question. Vous aurez besoin d'un client IRC comme 
+  <a href="http://www.xchat.org">xchat</a> pour nous rendre visite.
+</p>
+
+<h4>Forums</h4>
+
+<p>
+  Nous avonz un 
+  <a href="http://www.gnutellaforums.com/forumdisplay.php?s=&amp;forumid=63">
+    forum sur gnutellaforums.com</a>. Mais il n'est pas souvent visit&eacute;.
+</p>
+<!-- end mailing -->
