@@ -257,8 +257,7 @@ See also,
   Even when people cannot connect directly to you, they can still download
   files from your node using a <a href="#down_push">push request</a>.<br>
   You can configure the port gtk-gnutella listens on. The setting
-  <em>Listen port</em> is located on the
-  <em>Network settings</em> tab on the config page.
+  <em>Listen port</em> is located in the <em>Settings-&gt;Preferences-&gt;Network</em>.
 </p>
  
 <h3><a name="gnet-forward-howto">How do I configure port forwarding?</a></h3>
@@ -390,9 +389,9 @@ See also,
 <h3><a name="search3">How can I ignore files with no SHA1?</a></h3>
 <p>
   Click with right mouse button on a search result without a SHA1 and
-  select "Drop results with urn:sha1" from the popup menu. That will drop
-  all results with this SHA1 - in this case none - from your results. You'll
-  miss a lot of spam.
+  select "Drop results...-&gt;with the same urn:sha1" from the popup menu.
+  That will drop all results with this SHA1 - in this case none - from your
+  results. You'll miss a lot of spam.
 </p>
 
 <h3><a name="search-entry">Where did the search entry box go?</a></h3>
@@ -452,8 +451,7 @@ See also,
   supplied, then gtk-gnutella has no way of assuring that the file it wants to
   download and the file on the remote server are really the same.<br>
   If you get annoyed by those messages you can activate the <em>Optimistic
-  first chunk</em> option on the <em>Download settings</em> tab in
-  the config page.
+  first chunk</em> option in the <em>Settings-&gt;Preferences-&gt;Download</em>.
 </p>
 
 <h3><a name="down2">Why is the same file downloaded X times?</a></h3>
