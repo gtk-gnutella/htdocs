@@ -35,15 +35,15 @@ include("files/common.php");
     <link rel="alternate"
           href="/?lang=fr&page=<?php echo PAGE ?>"
           hreflang="fr"
-          title="French translation">
+          title="Traduction fran&ccedil;aise">
     <link rel="alternate"
           href="/?lang=ja&page=<?php echo PAGE ?>"
           hreflang="ja"
-          title="Japanese translation">
+          title="日本翻訳">
     <link rel="alternate"
           href="/?lang=nl&page=<?php echo PAGE ?>"
           hreflang="nl"
-          title="Dutch translation">
+          title="Nederlandse vertaling">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Style-Type" content="text/css">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
