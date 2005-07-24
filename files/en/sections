@@ -1,5 +1,4 @@
-<!-- $Id -->
-
+<!-- $Id$ -->
 <link rel="section" title="News" href="/?lang=en&page=news">
 <link rel="section" title="Documentation" href="/?lang=en&amp;page=docs">
 <link rel="section" title="Features" href="/?lang=en&amp;page=features">
@@ -7,6 +6,7 @@
 <link rel="section" title="Screenshots" href="/?lang=en&amp;page=shots092">
 <link rel="section" title="History" href="/?lang=en&amp;page=history">
 <link rel="section" title="Getting help" href="/?lang=en&amp;page=mailing">
+<link rel="section" title="Bug&nbsp;Report&nbsp;Howto"
       href="/?lang=en&amp;page=bugreport_howto">
 <link rel="section" title="Developers" href="/?lang=en&amp;page=devel">
 <link rel="section" title="Code 101" href="/?lang=en&amp;page=code">
@@ -14,5 +14,4 @@
       href="/?lang=en&amp;page=devel#devel-snapshots">
 <link rel="section" title="Links" href="/?lang=en&amp;page=links">
 <link rel="section" title="Donate" href="/?lang=en&amp;page=donate">
-
 <!-- End of $RCSfile$ -->
