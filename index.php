@@ -22,6 +22,8 @@ include("files/common.php");
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="start" href="/">
     <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net">
+    <link rev="alternate" href="/?lang=de" hreflang="de"
+          title="Deutsche &Uuml;bersetzung">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Style-Type" content="text/css">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
