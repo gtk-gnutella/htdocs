@@ -21,8 +21,10 @@ include("files/common.php");
     <link rel="stylesheet" type="text/css" href="default.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="start" href="/">
+    <link rel="home" href="/">
     <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net">
     <link rev="alternate"
+          type="text/html"
           href="/?lang=en&page=<?php echo PAGE ?>"
           hreflang="en"
           title="English version">
