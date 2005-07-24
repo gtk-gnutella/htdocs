@@ -127,9 +127,9 @@
     files.  With <a href="#down3">swarming</a>, people can upload small chunks
     of files from you, so even a slow connection, multiplied by many sources on
     the gnet, makes a tremendous contribution.  If you have a 56K modem, you
-    can set <em>Bandwidth for HTTP traffic</em> - <em>Limit
-    bandwidth for outgoing traffic</em> to 1K/s so you still have the
-    majority of your bandwidth for downloading.
+    can set <em>Bandwidth limits for HTTP traffic</em> - <em>Cumulative upload
+    rate</em> to 1K/s so you still have the majority of your bandwidth for
+    downloading.
   </li>
   <li>
     Depress the lower-left button in the GUI after your downloads have started.
