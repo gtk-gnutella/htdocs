@@ -44,6 +44,7 @@ include("files/common.php");
           href="/?lang=nl&page=<?php echo PAGE ?>"
           hreflang="nl"
           title="Nederlandse vertaling">
+      <?php iceinclude("sections", 0) ?>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Style-Type" content="text/css">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
