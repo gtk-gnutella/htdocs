@@ -23,24 +23,24 @@ include("files/common.php");
     <link rel="start" href="/">
     <link rel="home" href="/">
     <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net">
-    <link rev="alternate"
+    <link rel="alternate"
           type="text/html"
           href="/?lang=en&page=<?php echo PAGE ?>"
           hreflang="en"
           title="English version">
-    <link rev="alternate"
+    <link rel="alternate"
           href="/?lang=de&page=<?php echo PAGE ?>"
           hreflang="de"
           title="Deutsche &Uuml;bersetzung">
-    <link rev="alternate"
+    <link rel="alternate"
           href="/?lang=fr&page=<?php echo PAGE ?>"
           hreflang="fr"
           title="French translation">
-    <link rev="alternate"
+    <link rel="alternate"
           href="/?lang=ja&page=<?php echo PAGE ?>"
           hreflang="ja"
           title="Japanese translation">
-    <link rev="alternate"
+    <link rel="alternate"
           href="/?lang=nl&page=<?php echo PAGE ?>"
           hreflang="nl"
           title="Dutch translation">
