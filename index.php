@@ -27,7 +27,12 @@ if (0 != strcmp(LANG, $dir)) {
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="<?php echo LANG ?>">
   <head>
-      <?php iceinclude("title", 0) ?>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+
+    <?php iceinclude("title", 0) ?>
+
     <link rel="stylesheet" type="text/css" href="/default.css">
     <link rel="icon" href="/images/favicon.png" type="image/png">
     <link rel="start" href="/">
@@ -58,11 +63,11 @@ if (0 != strcmp(LANG, $dir)) {
           href="/nl/?page=<?php echo PAGE ?>"
           hreflang="nl"
           title="Nederlandse vertaling">
-      <?php iceinclude("sections", 0) ?>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Style-Type" content="text/css">
-    <meta http-equiv="Content-Script-Type" content="text/javascript">
+
+    <?php iceinclude("sections", 0) ?>
+
   </head>
+
   <body>
     <div class="boxed" style="text-align: center">
       <div>
