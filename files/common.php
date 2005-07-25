@@ -51,7 +51,7 @@ define("NEWSNUM", 7);
 define("GENDIR",  "general/");
 define("PAGE",    getpage());
 define("LANG",    getlang());
-define("BASEURL", "$PHP_SELF" . '?lang=' . LANG);
+define("BASEURL", $_SERVER['PHP_SELF'] . '?dummy=1');
 
 include(BASEDIR . "VERSION");
 
@@ -69,16 +69,16 @@ if (isset($CHARSET[LANG]))
 function getpage() {
   global $pages; /* so the included files know about it */
 
-  $page = $_GET["page"];
-  if (ereg("^[a-zA-Z0-9_]*$", $page) && in_array($page, $pages))
+  $page = $_GET['page'];
+  if (ereg('^[a-zA-Z0-9_]*$', $page) && in_array($page, $pages))
     return $page;
   else
-    return "news";
+    return 'news';
 }
 
 /* getdirlang sub - check the script path for a language hint */
 function getdirlang() {
-  $script = $_SERVER['SCRIPT_NAME'];
+  $script = $_SERVER['PHP_SELF'];
 
   if (isset($script) && ereg('^/[a-z][a-z]/', $script)) {
     $lang = substr($script, 1, 2);
@@ -87,30 +87,42 @@ function getdirlang() {
   }
 
   /* Return "en" (English) by default just like getlang() */
-  return 'en';
+  return null;
 }
 
 /* getlang sub - check which language the visitor wants */
 function getlang() {
-  $cooklang = $_COOKIE["cooklang"];
-  $accept = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
-  $lang = $_GET["lang"];
+  $cooklang = $_COOKIE['cooklang'];
+  $accept = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+  $lang = $_GET['lang'];
 
-  if (!isset ($lang)) {			/* no language selection in http request */
-    if (isset ($cooklang)) {	/* but a cookie is set */
+  if (!isset ($lang)) {
+    /* no language selection in http request */
+
+    $lang = getdirlang();
+    if (isset($lang)) {
+      /* Language taken from path e.g., /fr/index.php -> fr */
+    } else if (isset($cooklang)) {
+      /* Language taken from cookie */
       $lang = $cooklang;
-    } else {					/* not even a cookie. Choose from http_accept_language */
-      while ((empty($lang)) && (ereg("([a-z][a-z](-[A-Z][A-Z])?)",$accept,$res))) {
+    } else {
+      /* not even a cookie. Choose from http_accept_language */
+      while (
+        empty($lang) &&
+        ereg('([a-z][a-z](-[A-Z][A-Z])?)', $accept, $res)
+      ) {
         $lang = $res[1];
-        $accept = ereg_replace("$lang","",$accept);
-      }
-      if (!isset($lang))
-	/* still no lang selected? take english */
-        $lang = 'en';
+        $accept = ereg_replace("$lang", '', $accept);
       }
     }
   }
-  setcookie("cooklang", $lang, time()+31536000);
+
+  if (!isset($lang) || !file_exists('/' . $lang . '/index.php')) {
+    /* Use English as default */
+    $lang = 'en';
+  }
+
+  setcookie('cooklang', $lang, time() + 31536000);
   return $lang;
 }
 
