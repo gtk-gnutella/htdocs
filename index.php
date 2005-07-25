@@ -25,23 +25,23 @@ include("files/common.php");
     <link rev="copyright" href="http://sourceforge.net/projects/gtk-gnutella">
     <link rel="alternate"
           type="text/html"
-          href="/?lang=en&page=<?php echo PAGE ?>"
+          href="/?lang=en&amp;page=<?php echo PAGE ?>"
           hreflang="en"
           title="English version">
     <link rel="alternate"
-          href="/?lang=de&page=<?php echo PAGE ?>"
+          href="/?lang=de&amp;page=<?php echo PAGE ?>"
           hreflang="de"
           title="Deutsche &Uuml;bersetzung">
     <link rel="alternate"
-          href="/?lang=fr&page=<?php echo PAGE ?>"
+          href="/?lang=fr&amp;page=<?php echo PAGE ?>"
           hreflang="fr"
           title="Traduction fran&ccedil;aise">
     <link rel="alternate"
-          href="/?lang=ja&page=<?php echo PAGE ?>"
+          href="/?lang=ja&amp;page=<?php echo PAGE ?>"
           hreflang="ja"
           title="日本翻訳">
     <link rel="alternate"
-          href="/?lang=nl&page=<?php echo PAGE ?>"
+          href="/?lang=nl&amp;page=<?php echo PAGE ?>"
           hreflang="nl"
           title="Nederlandse vertaling">
       <?php iceinclude("sections", 0) ?>
