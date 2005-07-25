@@ -14,11 +14,17 @@ if (file_exists("files/maintainer_include.php")) {
 include("files/common.php");
 
 $dir = getdirlang();
+if (!isset($dir)) {
+  $dir = 'en';
+}
+
 if (0 != strcmp(LANG, $dir)) {
-	if (0 == $strcmp($dir, 'en'))
-          $dir = '';
-	header('Location: /' . $dir . '?page=' . PAGE);
-	exit;
+  if (0 == $strcmp(LANG, 'en'))
+    $dir = '/';
+  else
+    $dir = LANG;
+  header('Location: /' . $dir . '/index.php?page=' . PAGE);
+  exit;
 }
 
 ?>
