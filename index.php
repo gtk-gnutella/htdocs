@@ -19,7 +19,7 @@ if (!isset($dir)) {
 }
 
 if (0 != strcmp(LANG, $dir)) {
-  if (0 == $strcmp(LANG, 'en'))
+  if (0 == strcmp(LANG, 'en'))
     $dir = '/';
   else
     $dir = LANG;
