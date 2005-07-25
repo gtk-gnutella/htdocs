@@ -14,7 +14,8 @@ newsfiles();
 
 for($i = 0; $i < NEWSNUM; $i++) {
 	/* Insert an anchor name for fragment references */
-	echo '<a name="#news_' . (count($news_items) - $i) . '"></a>' . "\n";
+        $id = (count($news_items) - $i - 1);
+	echo '<a name="#news_' . $id . '"></a>' . "\n";
 	icecontent("$news_items[$i]");
 }
 
