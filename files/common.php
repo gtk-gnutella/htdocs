@@ -82,7 +82,7 @@ function getdirlang() {
 
   if (isset($script) && ereg('^/[a-z][a-z]/', $script)) {
     $lang = substr($script, 1, 2);
-    if (file_exists('/' . $lang . '/index.php'))
+    if (file_exists(BASEDIR . '/../' . $lang . '/index.php'))
       return $lang;
   }
 
@@ -117,7 +117,7 @@ function getlang() {
     }
   }
 
-  if (!isset($lang) || !file_exists('/' . $lang . '/index.php')) {
+  if (!isset($lang) || !file_exists(BASEDIR . '/../' . $lang . '/index.php')) {
     /* Use English as default */
     $lang = 'en';
   }
