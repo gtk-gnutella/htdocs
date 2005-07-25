@@ -32,7 +32,7 @@ if (0 != strcmp(LANG, $dir)) {
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="start" href="/">
     <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net">
-    <link rel="copyright" href="http://sourceforge.net/projects/gtk-gnutella">
+    <link rel="copyright" href="https://sourceforge.net/projects/gtk-gnutella">
     <link rel="alternate"
           type="application/rss+xml"
           title="RSS"
