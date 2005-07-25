@@ -19,7 +19,7 @@
 <h2>GTK2 screenshots</h2>
 
 <hr>
-<h4>Gnutella network status</h4>
+<h3>Gnutella network status</h3>
 <hr>
 
 <p class="image">
@@ -32,7 +32,7 @@
 </p>
   
 <hr>
-<h4>Search</h4>
+<h3>Search</h3>
 <hr>
 
 <p class="image">
@@ -43,4 +43,8 @@
     <img src="/images/shots/096u/small_Search2-GTK2.jpg" width="250" height="175" alt="Another Searches">
   </a>
 </p>
+
+<!-- The following is a dummy to cause some free space at the bottom -->
+<p>&nbsp;</p>
+
 <!-- end shots096u -->
