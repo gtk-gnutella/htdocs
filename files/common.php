@@ -73,7 +73,7 @@ function getpage() {
   if (ereg("^[a-zA-Z0-9_]*$", $page) && in_array($page, $pages))
     return $page;
   else
-    return "";
+    return "news";
 }
 
 /* getlang sub - check which language the visitor wants */
@@ -153,11 +153,7 @@ function maincontent() {
     )
   ) {
     icecontent(PAGE);
-  } 
-	elseif(PAGE === 'news_old') {
-		iceinclude("news_old", 0);
-	}
-	else {
+  } else {
     iceinclude("news", 0);
   }
 }
