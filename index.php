@@ -23,7 +23,7 @@ include("files/common.php");
     <link rel="start" href="/">
     <link rel="home" href="/">
     <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net">
-    <link rev="author" href="http://sourceforge.net/projects/gtk-gnutella">
+    <link rev="copyright" href="http://sourceforge.net/projects/gtk-gnutella">
     <link rel="alternate"
           type="text/html"
           href="/?lang=en&page=<?php echo PAGE ?>"
