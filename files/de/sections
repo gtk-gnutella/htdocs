@@ -2,14 +2,11 @@
 <link rel="section" title="Neuigkeiten" href="?page=news">
 <link rel="section" title="Dokumentation" href="?page=docs">
 <link rel="section" title="Eigenschaften" href="?page=features">
-<link rel="section" title="H&auml;ufige&nbsp;Fragen"
-      href="?page=faq">
-<link rel="section" title="So&nbsp;siehts&nbsp;aus<"
-      href="?page=shots092">
+<link rel="section" title="H&auml;ufige&nbsp;Fragen" href="?page=faq">
+<link rel="section" title="So&nbsp;siehts&nbsp;aus" href="?page=shots092">
 <link rel="section" title="Alte Meldungen" href="?page=history">
 <link rel="section" title="Benutzerhilfe" href="?page=mailing">
-<link rel="section" title="Fehler&nbsp;melden"
-      href="?page=bugreport_howto">
+<link rel="section" title="Fehler&nbsp;melden" href="?page=bugreport_howto">
 <link rel="section" title="Entwickler" href="?page=devel">
 <link rel="section" title="Code 101" href="?page=code">
 <link rel="section" title="CVS&nbsp;Schnapschuss"
