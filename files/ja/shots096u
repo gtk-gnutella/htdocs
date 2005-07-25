@@ -35,18 +35,23 @@
 <h3>Search</h3>
 <hr>
 
-<p class="image">
-  <a href="/images/shots/096u/Search1-GTK2.png">
-    <img src="/images/shots/096u/small_Search1-GTK2.jpg" width="250" height="175" alt="Searches">
-  </a>
-  <a href="/images/shots/096u/Search2-GTK2.png">
-    <img src="/images/shots/096u/small_Search2-GTK2.jpg" width="250" height="175" alt="Another Searches">
-  </a>
-</p>
+<table width="100%">
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+      <a href="/images/shots/096u/Search1-GTK2.png">
+        <img src="/images/shots/096u/small_Search1-GTK2.jpg"
+             width="250" height="175" alt="Searches">
+      </a>
+      <a href="/images/shots/096u/Search2-GTK2.png">
+        <img src="/images/shots/096u/small_Search2-GTK2.jpg"
+             width="250" height="175" alt="Another Searches">
+      </a>
+    </td>
+    <td>&nbsp;</td>
+</table>
 
 <!-- The following is a dummy to cause some free space at the bottom -->
-<div> 
-&nbsp; 
-</div>
+<table><tr><td>&nbsp;</td></tr></table>
 
 <!-- end shots096u -->
