@@ -66,7 +66,7 @@ if (0 != strcmp(LANG, $dir)) {
   <body>
     <div class="boxed" style="text-align: center">
       <div>
-        <a href="/?page=index">
+        <a class="image" href="/?page=index">
           <img src="images/gtk-gnutella.png" 
             width="408" height="44" alt="Gtk-Gnutella"></a>
       </div>
