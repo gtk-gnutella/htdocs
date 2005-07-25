@@ -12,7 +12,7 @@
 <h4>Gnutella network status</h4>
 <hr>
 
-<p>
+<p class="image">
   <a href="/images/shots/096u/GnutellaNet-Leaf-GTK2.png">
     <img src="/images/shots/096u/small_GnutellaNet-Leaf-GTK2.jpg" width="250" height="175" alt="Gnet Leaf mode status">
   </a>
@@ -25,7 +25,7 @@
 <h4>Search</h4>
 <hr>
 
-<p>
+<p class="image">
   <a href="/images/shots/096u/Search1-GTK2.png">
     <img src="/images/shots/096u/small_Search1-GTK2.jpg" width="250" height="175" alt="Searches">
   </a>
