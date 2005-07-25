@@ -22,8 +22,8 @@ if (0 != strcmp(LANG, $dir)) {
   if (0 == strcmp(LANG, 'en'))
     $dir = '';
   else
-    $dir = '/ ' . LANG . '';
-  header('Location: ' $dir . '/?page=' . PAGE);
+    $dir = '/' . LANG . '';
+  header('Location: ' . $dir . '/?page=' . PAGE);
   exit;
 }
 
