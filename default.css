@@ -114,7 +114,6 @@ div.sb_section_content {
 }
 
 .image {
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0.5em;
 	border: 0;
 }
