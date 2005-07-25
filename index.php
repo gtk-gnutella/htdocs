@@ -39,23 +39,23 @@ if (0 != strcmp(LANG, $dir)) {
     <link rel="copyright" href="http://sourceforge.net/projects/gtk-gnutella">
     <link rel="alternate"
           type="text/html"
-          href="/?lang=en&amp;page=<?php echo PAGE ?>"
+          href="/en/?page=<?php echo PAGE ?>"
           hreflang="en"
           title="English version">
     <link rel="alternate"
-          href="/?lang=de&amp;page=<?php echo PAGE ?>"
+          href="/de/?page=<?php echo PAGE ?>"
           hreflang="de"
           title="Deutsche &Uuml;bersetzung">
     <link rel="alternate"
-          href="/?lang=fr&amp;page=<?php echo PAGE ?>"
+          href="/fr/?page=<?php echo PAGE ?>"
           hreflang="fr"
           title="Traduction fran&ccedil;aise">
     <link rel="alternate"
-          href="/?lang=ja&amp;page=<?php echo PAGE ?>"
+          href="/ja/?page=<?php echo PAGE ?>"
           hreflang="ja"
           title="日本翻訳">
     <link rel="alternate"
-          href="/?lang=nl&amp;page=<?php echo PAGE ?>"
+          href="/nl/?page=<?php echo PAGE ?>"
           hreflang="nl"
           title="Nederlandse vertaling">
       <?php iceinclude("sections", 0) ?>
@@ -66,7 +66,7 @@ if (0 != strcmp(LANG, $dir)) {
   <body>
     <div class="boxed" style="text-align:center">
       <div>
-        <a href="<?php echo BASEURL ?>&amp;page=index">
+        <a href=/?page=index">
           <img src="images/gtk-gnutella.png" 
             width="408" height="44" alt="Gtk-Gnutella" class="image"></a>
       </div>
@@ -138,6 +138,9 @@ if (0 != strcmp(LANG, $dir)) {
             <img class="image" src="images/valid-css.png"
               alt="Valid CSS" width="88" height="31"></a>
         </div>
+      </div>
+      <div class="boxed">
+          <a href="rss.xml" class="rss">RSS</a>
       </div>
     </div>
 
