@@ -41,7 +41,7 @@ x86, AMD64, PowerPC, SPARC, MIPS.
 </p>
 
 <p style="text-align: center;">
-  <a href="<?php echo BASEURL ?>&amp;page=devel">We hebben hulp nodig in de ontwikkeling.
+  <a href="?page=devel">We hebben hulp nodig in de ontwikkeling.
   In C, dan wel voor de documentatie.</a>
 </p>
 

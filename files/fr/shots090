@@ -8,7 +8,7 @@
 
 <p>
   Vous pouvez voir la version plus ancienne 0.85
-  <a class="navlink" href="<?php echo BASEURL ?>&amp;page=shots">ici</a>.
+  <a class="navlink" href="?page=shots">ici</a>.
 </p>
 
 <hr>

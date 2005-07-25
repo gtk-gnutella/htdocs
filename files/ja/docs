@@ -2,16 +2,16 @@
 <h1>Gtk-Gnutella 文書</h1>
 <ul>
   <li>
-    <a href="<?php echo BASEURL ?>&amp;page=filtering_howto">条件検索に関する Mini-HOWTO</a> <small>&nbsp;作成者 Vidar</small>
+    <a href="?page=filtering_howto">条件検索に関する Mini-HOWTO</a> <small>&nbsp;作成者 Vidar</small>
   </li>
   <li>
-    <a href="<?php echo BASEURL ?>&amp;page=searching_by_hash">ハッシュおよびマグネットリンクでの検索</a> <small>&nbsp;作成者 guruz</small>
+    <a href="?page=searching_by_hash">ハッシュおよびマグネットリンクでの検索</a> <small>&nbsp;作成者 guruz</small>
   </li>
   <li>
-    <a href="<?php echo BASEURL ?>&amp;page=gwebcache">GWebCache を実行することでのネットワークの支援</a> <small>&nbsp;作成者 guruz</small>
+    <a href="?page=gwebcache">GWebCache を実行することでのネットワークの支援</a> <small>&nbsp;作成者 guruz</small>
   </li>
   <li>
-    <a href="<?php echo BASEURL ?>&amp;page=bugreport_howto">バグ報告の方法</a> <small>&nbsp;作成者 eqom14</small>
+    <a href="?page=bugreport_howto">バグ報告の方法</a> <small>&nbsp;作成者 eqom14</small>
   </li>
 </ul>
 

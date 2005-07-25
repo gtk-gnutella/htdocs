@@ -7,7 +7,7 @@
 	like best.
 </p>
 <p>
-  The images are <a href="<?php echo BASEURL ?>&amp;page=banners">here</a>.
+  The images are <a href="?page=banners">here</a>.
 </p>
 <p>
   <em>gtk-gnutella team</em>

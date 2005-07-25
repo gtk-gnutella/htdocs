@@ -15,9 +15,9 @@
     ideal bug report would contain exactly the information needed - no more, 
     no less - and a lovingly crafted patch to correct the problem.  If you'd 
     like to contribute a patch, please read the 
-<a href="<?php echo BASEURL ?>&amp;page=devel">
+<a href="?page=devel">
     development</a> page and the 
-<a href="<?php echo BASEURL ?>&amp;page=developers_howto">
+<a href="?page=developers_howto">
     Developers Howto</a>.  Most of us, however, don't have the skills and/or 
     time to fix gtk-gnutella for ourselves.  That's OK, we can still help.  
   </p>
@@ -26,7 +26,7 @@
     the latest 
     <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
     released version</a> or from versions built from 
-    <a href="<?php echo BASEURL ?>&amp;page=devel#devel-cvs">current CVS</a>.
+    <a href="?page=devel#devel-cvs">current CVS</a>.
    The developers 
     code gtk-gnutella not for profit, but because they find it an interesting 
     hobby and because they want to give something back to the open source 

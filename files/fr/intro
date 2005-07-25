@@ -33,7 +33,7 @@ Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS tout comme sur les architectures CPU
 </p>
 
 <p style="text-align: center;">
-  <a href="<?php echo BASEURL ?>&amp;page=devel">Nous avons besoin de contribuants pour le d&eacute;veloppement en C et la documentation</a>
+  <a href="?page=devel">Nous avons besoin de contribuants pour le d&eacute;veloppement en C et la documentation</a>
 </p>
 
 <!-- end intro -->

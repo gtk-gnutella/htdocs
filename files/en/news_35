@@ -7,7 +7,7 @@
     <strong>Official CVS snapshot</strong></a>, which should be at least as
   stable as the releases and has fixes for most of the known bugs.  If you want
   to help stamp out bugs for this release please read the 
-  <a href="<?php echo BASEURL ?>&amp;page=bugreport_howto">Bug Report Howto</a>
+  <a href="?page=bugreport_howto">Bug Report Howto</a>
   and report your bugs to the
   <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
     Bug Tracker</a>.  I think it should be well worth the

@@ -12,7 +12,7 @@
 
 <p>
   Bilder der alten Version 0.85 kann man 
-  <a class=navlink href="<?php echo BASEURL ?>&amp;page=shots">hier</a>
+  <a class=navlink href="?page=shots">hier</a>
   bewundern.
 </p>
 

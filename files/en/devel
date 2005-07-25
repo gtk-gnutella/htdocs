@@ -37,11 +37,11 @@
 </ul>
 <p>
   If yes, subscribe yourself to the developers 
-  <a href="<?php echo BASEURL ?>&amp;page=mailing">
+  <a href="?page=mailing">
   mailing list</a> and send a message to it. Don't start to code right now, 
   let's see if there are other people that want to help implementing the 
   same thing and make a team with them. Please also read the 
-  <a href="<?php echo BASEURL ?>&amp;page=developers_howto">"Developers Howto"</a>.
+  <a href="?page=developers_howto">"Developers Howto"</a>.
 </p>
 
 <hr>

@@ -9,9 +9,9 @@
 <p>
   昔のインターフェイスに興味があるのでしたら、古いバージョンのスクリーン
   ショットを見ることができます。バージョン
-  <a class="navlink" href="<?php echo BASEURL ?>&amp;page=shots">0.85</a>
+  <a class="navlink" href="?page=shots">0.85</a>
   (2002年4月5日にリリース) と
-  <a class="navlink" href="<?php echo BASEURL ?>&amp;page=shots090">0.90</a>
+  <a class="navlink" href="?page=shots090">0.90</a>
   (2002年7月7日にリリース) があります。
 </p>
 

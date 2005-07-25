@@ -1,19 +1,19 @@
 <!-- $Id$ -->
-<link rel="section" title="Neuigkeiten" href="/?lang=de&amp;page=news">
-<link rel="section" title="Dokumentation" href="/?lang=de&amp;page=docs">
-<link rel="section" title="Eigenschaften" href="/?lang=de&amp;page=features">
+<link rel="section" title="Neuigkeiten" href="?page=news">
+<link rel="section" title="Dokumentation" href="?page=docs">
+<link rel="section" title="Eigenschaften" href="?page=features">
 <link rel="section" title="H&auml;ufige&nbsp;Fragen"
-      href="/?lang=de&amp;page=faq">
+      href="?page=faq">
 <link rel="section" title="So&nbsp;siehts&nbsp;aus<"
-      href="/?lang=de&amp;page=shots092">
-<link rel="section" title="Alte Meldungen" href="/?lang=de&amp;page=history">
-<link rel="section" title="Benutzerhilfe" href="/?lang=de&amp;page=mailing">
+      href="?page=shots092">
+<link rel="section" title="Alte Meldungen" href="?page=history">
+<link rel="section" title="Benutzerhilfe" href="?page=mailing">
 <link rel="section" title="Fehler&nbsp;melden"
-      href="/?lang=de&amp;page=bugreport_howto">
-<link rel="section" title="Entwickler" href="/?lang=de&amp;page=devel">
-<link rel="section" title="Code 101" href="/?lang=de&amp;page=code">
+      href="?page=bugreport_howto">
+<link rel="section" title="Entwickler" href="?page=devel">
+<link rel="section" title="Code 101" href="?page=code">
 <link rel="section" title="CVS&nbsp;Schnapschuss"
-      href="/?lang=de&amp;page=devel#devel-snapshots">
-<link rel="section" title="Links" href="/?lang=de&amp;page=links">
-<link rel="section" title="Spenden" href="/?lang=de&amp;page=donate">
+      href="?page=devel#devel-snapshots">
+<link rel="section" title="Links" href="?page=links">
+<link rel="section" title="Spenden" href="?page=donate">
 <!-- End of $RCSfile$ -->

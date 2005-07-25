@@ -4,24 +4,20 @@
 <!-- NEWS -->
 <!--      -->
 <div class="sb_section">
-<a href="<?php echo BASEURL ?>&amp;page=news"
-    class="sb_section_header"
-  >ニュース</a><br>
+<a href="?page=news" class="sb_section_header">ニュース</a><br>
 </DIV>
 
 <!--               -->
 <!-- DOCUMENTATION -->
 <!--               -->
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>&amp;page=docs"
-    class="sb_section_header"
-    >文書</a>
+  <a href="?page=docs" class="sb_section_header">文書</a>
 
   <div class="indent">
-    <a href="<?php echo BASEURL ?>&amp;page=features">特徴</a><br>
-    <a href="<?php echo BASEURL ?>&amp;page=faq">FAQ</a><br>
-    <a href="<?php echo BASEURL ?>&amp;page=shots092">スクリーンショット</a><br>
-    <a href="<?php echo BASEURL ?>&amp;page=release_history">リリース履歴</a><br>
+    <a href="?page=features">特徴</a><br>
+    <a href="?page=faq">FAQ</a><br>
+    <a href="?page=shots092">スクリーンショット</a><br>
+    <a href="?page=release_history">リリース履歴</a><br>
   </div>
 </div>
 
@@ -29,13 +25,10 @@
 <!-- Getting help -->
 <!--              -->
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>&amp;page=mailing"
-    class="sb_section_header"
-    >サポート</a>
+  <a href="?page=mailing" class="sb_section_header">サポート</a>
 
   <div class="sb_section_content">
-    <a href="<?php echo BASEURL ?>&amp;page=bugreport_howto">
-      バグ報告の方法</a><br>
+    <a href="?page=bugreport_howto">バグ報告の方法</a><br>
     <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
       バグ追跡システム</a><br>
     <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
@@ -47,7 +40,7 @@
 <!-- DEVELOPERS -->
 <!--            -->
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>&amp;page=devel"
+  <a href="?page=devel"
     class="sb_section_header"
     >開発</a>
 
@@ -57,8 +50,7 @@
     <!-- TEST JAPANESE PAGE ONLY: where should these API references be located? -->
     <a href="http://gtk-gnutella.sourceforge.net/doxygen/">
       API リファレンス</a><br>
-    <a href="<?php echo BASEURL ?>&amp;page=code101">
-      Code 101</a>
+    <a href="?page=code101">Code 101</a>
   </div>
 </div>
 
@@ -71,8 +63,7 @@
     >ダウンロード</a>
 
   <div class="sb_section_content">
-    <a href="<?php echo BASEURL ?>&amp;page=devel#devel-snapshots">
-      スナップショット</a>
+    <a href="?page=devel#devel-snapshots">スナップショット</a>
   </div>
 </div>
 
@@ -81,17 +72,13 @@
 <!--        -->
 
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>&amp;page=links"
-    class="sb_section_header"
-    >リンク</a>
+  <a href="?page=links" class="sb_section_header">リンク</a>
 </div>
 
 <!--        -->
 <!-- DONATE -->
 <!--        -->
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>&amp;page=donate"
-    class="sb_section_header"
-    >寄付</a>
+  <a href="?page=donate" class="sb_section_header">寄付</a>
 </div>
 <!-- end sidenav -->

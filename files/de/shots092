@@ -14,11 +14,11 @@
   Bilder finden, die &auml;ltere Versionen im Einsatz zeigen:
   <ul>
     <li>
-    <a class="navlink" href="<?php echo BASEURL ?>&amp;page=shots">0.85</a>
+    <a class="navlink" href="?page=shots">0.85</a>
     (Ver&ouml;ffentlicht am 5. April 2002)
     </li>
     <li>
-    <a class="navlink" href="<?php echo BASEURL ?>&amp;page=shots090">0.90</a> 
+    <a class="navlink" href="?page=shots090">0.90</a> 
     (Ver&ouml;ffentlicht am 7. Juni 2002)
     </li>
   </ul>

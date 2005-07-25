@@ -142,7 +142,7 @@
 <h3><a name="general-ultrapeer">What are Ultrapeers and Leaf nodes?</a></h3>
 <p>
   Since version 0.92, gtk-gnutella has implemented
-  <a href="<?php echo BASEURL ?>&amp;page=features"><em>ultrapeers</em></a> and
+  <a href="?page=features"><em>ultrapeers</em></a> and
   <em>leaf nodes</em>.
   This divides servents on the gnet into leaf nodes, which connect only to
   ultrapeers, and ultrapeers, which connect to many leaf nodes and a small
@@ -154,13 +154,13 @@
   (more than two hours), and have sufficient surplus bandwidth to donate to
   the gnet.  Ultrapeers forward queries from their leaf nodes and leaf nodes
   upload to their ultrapeers
-  <a href="<?php echo BASEURL ?>&amp;page=features">QRP</a>
+  <a href="?page=features">QRP</a>
   tables which contain hashes of keywords that will match files shared by the 
   leaf.  When an ultrapeer gets a hit on a query routing table, it relays the 
   query to the corresponding leaf node.  The result is very low gnet traffic 
   for each leaf node, freeing bandwidth for sharing and downloading (which 
   still occur directly p2p.)  Ultrapeers can also act as
-  <a href="<?php echo BASEURL ?>&amp;page=features">push-proxies</a> for
+  <a href="?page=features">push-proxies</a> for
   firewalled leaf nodes.
 </p>
 
@@ -329,7 +329,7 @@ See also,
 <p>
   Sometimes, servents are discovered to have a bug or behaviour that is harmful
   to the gnet.  For example, gtk-gnutella-0.92b had a bug that generated excessive
-  queries which hammered on the <a href="<?php echo BASEURL ?>&amp;page=gwebcache">GWebCache system</a>.
+  queries which hammered on the <a href="?page=gwebcache">GWebCache system</a>.
   Such banning is exceptional, usually restricted to specific versions, and the
   servent's author is informed about the banning.
 </p>
@@ -410,7 +410,7 @@ See also,
 <p>
   A <q><em>passive</em></q> search will return all the search results that 
   pass through gtk-gnutella.  By 
-  <a href="<?php echo BASEURL ?>&amp;page=filtering_howto">filtering</a> these results,
+  <a href="?page=filtering_howto">filtering</a> these results,
   passive searches can be useful.  
 </p>
 <p>

@@ -1,19 +1,16 @@
 <!-- $Id$ -->
-<link rel="section" title="Actualit&eacute;s" href="/?lang=fr&amp;page=news">
-<link rel="section" title="Documentation" href="/?lang=fr&amp;page=docs">
-<link rel="section" title="Fonctionnalit&eacute;s"
-      href="/?lang=fr&amp;page=features">
-<link rel="section" title="FAQ" href="/?lang=fr&amp;page=faq">
-<link rel="section" title="Captures d'&eacute;cran"
-      href="/?lang=fr&amp;page=shots092">
-<link rel="section" title="Historique" href="/?lang=fr&amp;page=history">
-<link rel="section" title="Obtenir de l'aide" href="/?lang=fr&amp;page=mailing">
+<link rel="section" title="Actualit&eacute;s" href="?page=news">
+<link rel="section" title="Documentation" href="?page=docs">
+<link rel="section" title="Fonctionnalit&eacute;s" href="?page=features">
+<link rel="section" title="FAQ" href="?page=faq">
+<link rel="section" title="Captures d'&eacute;cran" href="?page=shots092">
+<link rel="section" title="Historique" href="?page=history">
+<link rel="section" title="Obtenir de l'aide" href="?page=mailing">
 <link rel="section" title="Comment reporter un bug"
-      href="/?lang=fr&amp;page=bugreport_howto">
-<link rel="section" title="D&eacute;veloppeurs" href="/?lang=fr&amp;page=devel">
-<link rel="section" title="Code 101" href="/?lang=fr&amp;page=code">
-<link rel="section" title="CVS Snapshots"
-      href="/?lang=fr&amp;page=devel#devel-snapshots">
-<link rel="section" title="Liens" href="/?lang=fr&amp;page=links">
-<link rel="section" title="Donner" href="/?lang=fr&amp;page=donate">
+      href="?page=bugreport_howto">
+<link rel="section" title="D&eacute;veloppeurs" href="?page=devel">
+<link rel="section" title="Code 101" href="?page=code">
+<link rel="section" title="CVS Snapshots" href="?page=devel#devel-snapshots">
+<link rel="section" title="Liens" href="?page=links">
+<link rel="section" title="Donner" href="?page=donate">
 <!-- End of $RCSfile$ -->

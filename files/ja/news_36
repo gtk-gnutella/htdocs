@@ -4,7 +4,7 @@
   これは主にバグ修正リリースです、利用者に分かる変更点はほとんどありません。複数のバグが潰されてメモリ漏洩が一掃されています。<strong>このバージョンにアップグレードするようお願いします。</strong>
 </p>
 <p>
-  さらなる変更点や、ファイルの MD5 チェックサム等は<a href="<?php echo BASEURL ?>&amp;page=release_history#0.93.3">ここ</a>にあります。
+  さらなる変更点や、ファイルの MD5 チェックサム等は<a href="?page=release_history#0.93.3">ここ</a>にあります。
 </p>
 <p>
   <em>gtk-gnutella チーム</em>

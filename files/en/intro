@@ -37,7 +37,7 @@ x86, AMD64, PowerPC, SPARC, MIPS.
 </p>
 
 <p style="text-align: center;">
-  <a href="<?php echo BASEURL ?>&amp;page=devel">We need additional
+  <a href="?page=devel">We need additional
   contributors for C development and documentation</a>
 </p>
 

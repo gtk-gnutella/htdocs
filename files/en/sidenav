@@ -4,24 +4,20 @@
 <!-- NEWS -->
 <!--      -->
 <div class="sb_section">
-<a href="<?php echo BASEURL ?>&amp;page=news"
-    class="sb_section_header"
-  >News</a><br>
+<a href="?page=news" class="sb_section_header">News</a><br>
 </DIV>
 
 <!--               -->
 <!-- DOCUMENTATION -->
 <!--               -->
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>&amp;page=docs"
-    class="sb_section_header"
-    >Documentation</a>
+  <a href="?page=docs" class="sb_section_header">Documentation</a>
 
   <div class="indent">
-    <a href="<?php echo BASEURL ?>&amp;page=features">Features</a><br>
-    <a href="<?php echo BASEURL ?>&amp;page=faq">FAQ</a><br>
-    <a href="<?php echo BASEURL ?>&amp;page=shots092">Screenshots</a><br>
-    <a href="<?php echo BASEURL ?>&amp;page=release_history">History</a><br>
+    <a href="?page=features">Features</a><br>
+    <a href="?page=faq">FAQ</a><br>
+    <a href="?page=shots092">Screenshots</a><br>
+    <a href="?page=release_history">History</a><br>
   </div>
 </div>
 
@@ -29,12 +25,10 @@
 <!-- Getting help -->
 <!--              -->
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>&amp;page=mailing"
-    class="sb_section_header"
-    >Getting&nbsp;help</a>
+  <a href="?page=mailing" class="sb_section_header">Getting&nbsp;help</a>
 
   <div class="sb_section_content">
-    <a href="<?php echo BASEURL ?>&amp;page=bugreport_howto">
+    <a href="?page=bugreport_howto">
       Bug&nbsp;Report&nbsp;Howto</a><br>
     <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
       Bug&nbsp;Tracker</a><br>
@@ -47,17 +41,14 @@
 <!-- DEVELOPERS -->
 <!--            -->
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>&amp;page=devel"
-    class="sb_section_header"
-    >Developers</a>
+  <a href="?page=devel" class="sb_section_header">Developers</a>
 
   <div class="sb_section_content">
     <a href="http://sourceforge.net/projects/gtk-gnutella/">
       SF Project page</a><br>
     <a href="http://gtk-gnutella.sourceforge.net/doxygen/">
       API Reference</a><br>
-    <a href="<?php echo BASEURL ?>&amp;page=code101">
-      Code 101</a>
+    <a href="?page=code101">Code 101</a>
   </div>
 </div>
 
@@ -70,8 +61,7 @@
     >Download</a>
    
   <div class="sb_section_content">
-    <a href="<?php echo BASEURL ?>&amp;page=devel#devel-snapshots">
-      CVS&nbsp;Snapshots</a>
+    <a href="?page=devel#devel-snapshots">CVS&nbsp;Snapshots</a>
   </div>
 </div>
 
@@ -80,17 +70,13 @@
 <!--        -->
 
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>&amp;page=links"
-    class="sb_section_header"
-    >Links</a>
+  <a href="?page=links" class="sb_section_header">Links</a>
 </div>
 
 <!--        -->
 <!-- DONATE -->
 <!--        -->
 <div class="sb_section">
-  <a href="<?php echo BASEURL ?>&amp;page=donate"
-    class="sb_section_header"
-    >Donate</a>
+  <a href="?page=donate" class="sb_section_header">Donate</a>
 </div>
 <!-- end sidenav -->
