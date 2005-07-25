@@ -51,7 +51,7 @@ define("NEWSNUM", 7);
 define("GENDIR",  "general/");
 define("PAGE",    getpage());
 define("LANG",    getlang());
-define("BASEURL", $_SERVER['PHP_SELF'] . '?dummy=1');
+define("BASEURL", $_SERVER['PHP_SELF']);
 
 include(BASEDIR . "VERSION");
 
@@ -157,6 +157,10 @@ function iceinclude($file, $box) {
       include("$incfile");
       if ($box) {
         include(BASEDIR . GENDIR . "/cfooter");
+      }
+      /* Prepend an anchor for fragment references */
+      if (ereg("^news_[0-9]*$", $incfile)) {
+        echo '<a name=#' . $incfile . '></a>';
       }
     }
   } else {
