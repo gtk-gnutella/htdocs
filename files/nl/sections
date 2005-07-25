@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<link rel="section" title="Nieuws" href="/?lang=nl&page=news">
+<link rel="section" title="Nieuws" href="/?lang=nl&amp;page=news">
 <link rel="section" title="Documentatie" href="/?lang=nl&amp;page=docs">
 <link rel="section" title="Features" href="/?lang=nl&amp;page=features">
 <link rel="section" title="FAQ" href="/?lang=nl&amp;page=faq">
