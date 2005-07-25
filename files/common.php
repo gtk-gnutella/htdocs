@@ -43,7 +43,7 @@ $pages = array(
   "searching_by_hash",
   "shots",
   "shots090",
-  "shots092"
+  "shots092",
   "shots096u"
 );
 
