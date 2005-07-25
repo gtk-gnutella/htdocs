@@ -14,46 +14,46 @@
 <h4>Gnutella ネットワークのステータス</h4>
 <hr>
 <p>
-  <a href="images/shots/090/gnutellanet.png">
-    <img src="images/shots/090/small_gnutellanet.jpg" width="200" height="150" alt="Gnutella ネットワークのステータス"></a>
+  <a href="/images/shots/090/gnutellanet.png">
+    <img src="/images/shots/090/small_gnutellanet.jpg" width="200" height="150" alt="Gnutella ネットワークのステータス"></a>
 </p>
 <hr>
 <h4>アップロードとダウンロード</h4>
 <hr>
 <p>
-  <a href="images/shots/090/uploads.png">
-    <img src="images/shots/090/small_uploads.jpg" width="200" height="150" alt="アップロード"></a>
-  <a href="images/shots/090/upload_stats.png">
-    <img src="images/shots/090/small_upload_stats.jpg" width="200" height="150" alt="アップロード統計"></a>
-  <a href="images/shots/090/downloads.png">
-    <img src="images/shots/090/small_downloads.jpg" width="200" height="150" alt="ダウンロードおよびキュー"></a>
+  <a href="/images/shots/090/uploads.png">
+    <img src="/images/shots/090/small_uploads.jpg" width="200" height="150" alt="アップロード"></a>
+  <a href="/images/shots/090/upload_stats.png">
+    <img src="/images/shots/090/small_upload_stats.jpg" width="200" height="150" alt="アップロード統計"></a>
+  <a href="/images/shots/090/downloads.png">
+    <img src="/images/shots/090/small_downloads.jpg" width="200" height="150" alt="ダウンロードおよびキュー"></a>
 </p>
 <hr>
 <h4>検索とフィルター</h4>
 <hr>
 <p>
-  <a href="images/shots/090/search.png">
-    <img src="images/shots/090/small_search.jpg" width="200" height="150" alt="検索"></a>
-  <a href="images/shots/090/search_monitor.png">
-    <img src="images/shots/090/small_search_monitor.jpg" width="200" height="150" alt="検索モニター"></a>
-  <a href="images/shots/090/search_stats.png">
-    <img src="images/shots/090/small_search_stats.jpg" width="200" height="150" alt="検索ステータス"></a>
-  <a href="images/shots/090/filter.png">
-    <img src="images/shots/090/small_filter.jpg" width="200" height="106" alt="フィルターダイアログ"></a>
+  <a href="/images/shots/090/search.png">
+    <img src="/images/shots/090/small_search.jpg" width="200" height="150" alt="検索"></a>
+  <a href="/images/shots/090/search_monitor.png">
+    <img src="/images/shots/090/small_search_monitor.jpg" width="200" height="150" alt="検索モニター"></a>
+  <a href="/images/shots/090/search_stats.png">
+    <img src="/images/shots/090/small_search_stats.jpg" width="200" height="150" alt="検索ステータス"></a>
+  <a href="/images/shots/090/filter.png">
+    <img src="/images/shots/090/small_filter.jpg" width="200" height="106" alt="フィルターダイアログ"></a>
 </p>
 <hr>
 <h4>各種設定</h4>
 <hr>
 <p>
-  <a href="images/shots/090/config_net.png">
-    <img src="images/shots/090/small_config_net.jpg" width="200" height="150" alt="ネットワークの設定"></a>
-  <a href="images/shots/090/config_bw.png">
-    <img src="images/shots/090/small_config_bw.jpg" width="200" height="150" alt="帯域幅の管理"></a>
-  <a href="images/shots/090/config_gnet.png">
-    <img src="images/shots/090/small_config_gnet.jpg" width="200" height="150" alt="Gnutella ネットワークの設定"></a>
-  <a href="images/shots/090/config_download.png">
-    <img src="images/shots/090/small_config_download.jpg" width="200" height="150" alt="ダウンロードの設定"></a>
-  <a href="images/shots/090/config_upload.png">
-    <img src="images/shots/090/small_config_upload.jpg" width="200" height="150" alt="アップロードの設定"></a>
+  <a href="/images/shots/090/config_net.png">
+    <img src="/images/shots/090/small_config_net.jpg" width="200" height="150" alt="ネットワークの設定"></a>
+  <a href="/images/shots/090/config_bw.png">
+    <img src="/images/shots/090/small_config_bw.jpg" width="200" height="150" alt="帯域幅の管理"></a>
+  <a href="/images/shots/090/config_gnet.png">
+    <img src="/images/shots/090/small_config_gnet.jpg" width="200" height="150" alt="Gnutella ネットワークの設定"></a>
+  <a href="/images/shots/090/config_download.png">
+    <img src="/images/shots/090/small_config_download.jpg" width="200" height="150" alt="ダウンロードの設定"></a>
+  <a href="/images/shots/090/config_upload.png">
+    <img src="/images/shots/090/small_config_upload.jpg" width="200" height="150" alt="アップロードの設定"></a>
 </p>
 <!-- end shots090 -->

@@ -29,7 +29,7 @@ if (0 != strcmp(LANG, $dir)) {
   <head>
       <?php iceinclude("title", 0) ?>
     <link rel="stylesheet" type="text/css" href="/default.css">
-    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
     <link rel="start" href="/">
     <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net">
     <link rel="copyright" href="https://sourceforge.net/projects/gtk-gnutella">
@@ -67,7 +67,7 @@ if (0 != strcmp(LANG, $dir)) {
     <div class="boxed" style="text-align: center">
       <div>
         <a class="image" href="/?page=index">
-          <img src="images/gtk-gnutella.png" 
+          <img src="/images/gtk-gnutella.png" 
             width="408" height="44" alt="Gtk-Gnutella"></a>
       </div>
       <div>
@@ -124,7 +124,7 @@ if (0 != strcmp(LANG, $dir)) {
         </div>
         <div>
           <a class="image" href="http://glade.gnome.org/">
-            <img src="images/glade-banner.png"
+            <img src="/images/glade-banner.png"
               alt="Glade" width="100" height="45"></a>
         </div>
       </div>
@@ -132,10 +132,10 @@ if (0 != strcmp(LANG, $dir)) {
         <?php iceinclude("sidenav_conform", 0) ?>
         <div>
           <a class="image" href="http://validator.w3.org/check/referer">
-            <img src="images/valid-html401.png"
+            <img src="/images/valid-html401.png"
               alt="Valid HTML 4.01" width="88" height="31"></a>
           <a class="image" href="http://jigsaw.w3.org/css-validator/">
-            <img src="images/valid-css.png"
+            <img src="/images/valid-css.png"
               alt="Valid CSS" width="88" height="31"></a>
         </div>
       </div>

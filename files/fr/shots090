@@ -15,46 +15,46 @@
 <h4>Status du r&eacute;seau Gnutella</h4>
 <hr>
 <p>
-  <a href="images/shots/090/gnutellanet.png">
-    <img src="images/shots/090/small_gnutellanet.jpg" width="200" height="150" alt="Status du r&eacute;seau Gnutella"></a>
+  <a href="/images/shots/090/gnutellanet.png">
+    <img src="/images/shots/090/small_gnutellanet.jpg" width="200" height="150" alt="Status du r&eacute;seau Gnutella"></a>
 </p>
 <hr>
 <h4>Envoi et r&eacute;ception</h4>
 <hr>
 <p>
-  <a href="images/shots/090/uploads.png">
-    <img src="images/shots/090/small_uploads.jpg" width="200" height="150" alt="Envois"></a>
-  <a href="images/shots/090/upload_stats.png">
-    <img src="images/shots/090/small_upload_stats.jpg" width="200" height="150" alt="Stats d'envoi"></a>
-  <a href="images/shots/090/downloads.png">
-    <img src="images/shots/090/small_downloads.jpg" width="200" height="150" alt="T&eacute;l&eacute;chargements et file d'attente"></a>
+  <a href="/images/shots/090/uploads.png">
+    <img src="/images/shots/090/small_uploads.jpg" width="200" height="150" alt="Envois"></a>
+  <a href="/images/shots/090/upload_stats.png">
+    <img src="/images/shots/090/small_upload_stats.jpg" width="200" height="150" alt="Stats d'envoi"></a>
+  <a href="/images/shots/090/downloads.png">
+    <img src="/images/shots/090/small_downloads.jpg" width="200" height="150" alt="T&eacute;l&eacute;chargements et file d'attente"></a>
 </p>
 <hr>
 <h4>Recherches et filtres</h4>
 <hr>
 <p>
-  <a href="images/shots/090/search.png">
-    <img src="images/shots/090/small_search.jpg" width="200" height="150" alt="Recherches"></a>
-  <a href="images/shots/090/search_monitor.png">
-    <img src="images/shots/090/small_search_monitor.jpg" width="200" height="150" alt="Moniteur de recherche"></a>
-  <a href="images/shots/090/search_stats.png">
-    <img src="images/shots/090/small_search_stats.jpg" width="200" height="150" alt="Stats des recherches"></a>
-  <a href="images/shots/090/filter.png">
-    <img src="images/shots/090/small_filter.jpg" width="200" height="106" alt="Filtres"></a>
+  <a href="/images/shots/090/search.png">
+    <img src="/images/shots/090/small_search.jpg" width="200" height="150" alt="Recherches"></a>
+  <a href="/images/shots/090/search_monitor.png">
+    <img src="/images/shots/090/small_search_monitor.jpg" width="200" height="150" alt="Moniteur de recherche"></a>
+  <a href="/images/shots/090/search_stats.png">
+    <img src="/images/shots/090/small_search_stats.jpg" width="200" height="150" alt="Stats des recherches"></a>
+  <a href="/images/shots/090/filter.png">
+    <img src="/images/shots/090/small_filter.jpg" width="200" height="106" alt="Filtres"></a>
 </p>
 <hr>
 <h4>Configuration</h4>
 <hr>
 <p>
-  <a href="images/shots/090/config_net.png">
-    <img src="images/shots/090/small_config_net.jpg" width="200" height="150" alt="Config du r&eacute;seau"></a>
-  <a href="images/shots/090/config_bw.png">
-    <img src="images/shots/090/small_config_bw.jpg" width="200" height="150" alt="Contr&ocirc;le de la bande passante"></a>
-  <a href="images/shots/090/config_gnet.png">
-    <img src="images/shots/090/small_config_gnet.jpg" width="200" height="150" alt="Config GnutellaNet"></a>
-  <a href="images/shots/090/config_download.png">
-    <img src="images/shots/090/small_config_download.jpg" width="200" height="150" alt="Config des t&eacute;l&eacute;chargements"></a>
-  <a href="images/shots/090/config_upload.png">
-    <img src="images/shots/090/small_config_upload.jpg" width="200" height="150" alt="Config de l'envoi"></a>
+  <a href="/images/shots/090/config_net.png">
+    <img src="/images/shots/090/small_config_net.jpg" width="200" height="150" alt="Config du r&eacute;seau"></a>
+  <a href="/images/shots/090/config_bw.png">
+    <img src="/images/shots/090/small_config_bw.jpg" width="200" height="150" alt="Contr&ocirc;le de la bande passante"></a>
+  <a href="/images/shots/090/config_gnet.png">
+    <img src="/images/shots/090/small_config_gnet.jpg" width="200" height="150" alt="Config GnutellaNet"></a>
+  <a href="/images/shots/090/config_download.png">
+    <img src="/images/shots/090/small_config_download.jpg" width="200" height="150" alt="Config des t&eacute;l&eacute;chargements"></a>
+  <a href="/images/shots/090/config_upload.png">
+    <img src="/images/shots/090/small_config_upload.jpg" width="200" height="150" alt="Config de l'envoi"></a>
 </p>
 <!-- end shots090 -->
