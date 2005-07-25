@@ -53,7 +53,7 @@ if (0 != strcmp(LANG, $dir)) {
     <link rel="alternate"
           href="/ja/?page=<?php echo PAGE ?>"
           hreflang="ja"
-          title="日本翻訳">
+          title="日本語版">
     <link rel="alternate"
           href="/nl/?page=<?php echo PAGE ?>"
           hreflang="nl"
