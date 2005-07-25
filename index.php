@@ -66,7 +66,7 @@ if (0 != strcmp(LANG, $dir)) {
   <body>
     <div class="boxed" style="text-align:center">
       <div>
-        <a href=/?page=index">
+        <a href="/?page=index">
           <img src="images/gtk-gnutella.png" 
             width="408" height="44" alt="Gtk-Gnutella" class="image"></a>
       </div>
@@ -140,7 +140,7 @@ if (0 != strcmp(LANG, $dir)) {
         </div>
       </div>
       <div class="boxed">
-          <a href="rss.xml" class="rss">RSS</a>
+          <a href="rss.xml" class="rss" type="application/rss+xml">RSS</a>
       </div>
     </div>
 
