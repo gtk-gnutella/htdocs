@@ -42,6 +42,7 @@ $pages = array(
   "release_history",
   "searching_by_hash",
   "shots",
+  "shots085",
   "shots090",
   "shots092",
   "shots096u"
