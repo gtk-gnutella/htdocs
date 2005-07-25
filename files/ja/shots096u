@@ -22,14 +22,22 @@
 <h3>Gnutella network status</h3>
 <hr>
 
-<p class="image">
-  <a href="/images/shots/096u/GnutellaNet-Leaf-GTK2.png">
-    <img src="/images/shots/096u/small_GnutellaNet-Leaf-GTK2.jpg" width="250" height="175" alt="Gnet Leaf mode status">
-  </a>
-  <a href="/images/shots/096u/GnutellaNet-Ultra-GTK2.png">
-    <img src="/images/shots/096u/small_GnutellaNet-Ultra-GTK2.jpg" width="250" height="175" alt="Gnet Ultra mode status">
-  </a>
-</p>
+<table width="100%" style="text-align: center;" summary="layout">
+  <tr>
+    <td>&nbsp;</td>
+      <td>
+        <a href="/images/shots/096u/GnutellaNet-Leaf-GTK2.png">
+          <img src="/images/shots/096u/small_GnutellaNet-Leaf-GTK2.jpg"
+               width="250" height="175" alt="Gnet Leaf mode status">
+        </a>
+        <a href="/images/shots/096u/GnutellaNet-Ultra-GTK2.png">
+          <img src="/images/shots/096u/small_GnutellaNet-Ultra-GTK2.jpg"
+               width="250" height="175" alt="Gnet Ultra mode status">
+        </a>
+      </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
   
 <hr>
 <h3>Search</h3>
@@ -53,6 +61,6 @@
 </table>
 
 <!-- The following is a dummy to cause some free space at the bottom -->
-<table summary="dummy"><tr><td>&nbsp;</td></tr></table>
+<p>&nbsp;</p>
 
 <!-- end shots096u -->
