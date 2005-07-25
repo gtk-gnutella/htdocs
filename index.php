@@ -28,7 +28,7 @@ if (0 != strcmp(LANG, $dir)) {
 <html lang="<?php echo LANG ?>">
   <head>
       <?php iceinclude("title", 0) ?>
-    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" type="text/css" href="/default.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="start" href="/">
     <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net">
