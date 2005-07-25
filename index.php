@@ -20,10 +20,10 @@ if (!isset($dir)) {
 
 if (0 != strcmp(LANG, $dir)) {
   if (0 == strcmp(LANG, 'en'))
-    $dir = '/';
+    $dir = '';
   else
-    $dir = LANG;
-  header('Location: /' . $dir . '/index.php?page=' . PAGE);
+    $dir = '/ ' . LANG . '';
+  header('Location: ' $dir . '/?page=' . PAGE);
   exit;
 }
 
