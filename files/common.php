@@ -95,13 +95,15 @@ function getlang() {
   $cooklang = $_COOKIE['cooklang'];
   $accept = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
   $lang = $_GET['lang'];
+  $dirlang = getdirlang();
 
   if (!isset ($lang)) {
     /* no language selection in http request */
 
-    $lang = getdirlang();
-    if (isset($lang)) {
+    
+    if (isset($dirlang)) {
       /* Language taken from path e.g., /fr/index.php -> fr */
+      $lang = $dirlang;
     } else if (isset($cooklang)) {
       /* Language taken from cookie */
       $lang = $cooklang;
@@ -122,7 +124,10 @@ function getlang() {
     $lang = 'en';
   }
 
-  setcookie('cooklang', $lang, time() + 31536000);
+  /* Set the cookie only for the default path / but not e.g., /fr/ */
+  if (!isset($dirlang))
+    setcookie('cooklang', $lang, time() + 31536000);
+
   return $lang;
 }
 
