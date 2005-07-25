@@ -5,11 +5,11 @@
   スクリーンショットで使用されているテーマは POENIX IceWM です。これらをダウンロードしたければ <a href="http://icewm.themes.org/">themes.org</a> を御覧下さい。
 </p>
 
-<p>
-  <img class="image" src="/images/shots/085/gnet.png" width="728" height="544" alt="Gnutella ネットワークのステータス">
-  <img class="image" src="/images/shots/085/upload.png" width="728" height="544" alt="アップロード">
-  <img class="image" src="/images/shots/085/download.png" width="728" height="544" alt="ダウンロードおよびキュー">
-  <img class="image" src="/images/shots/085/search.png" width="728" height="544" alt="検索">
-  <img class="image" src="/images/shots/085/config.png" width="728" height="544" alt="設定のページ">
+<p class="image">
+  <img src="/images/shots/085/gnet.png" width="728" height="544" alt="Gnutella ネットワークのステータス">
+  <img src="/images/shots/085/upload.png" width="728" height="544" alt="アップロード">
+  <img src="/images/shots/085/download.png" width="728" height="544" alt="ダウンロードおよびキュー">
+  <img src="/images/shots/085/search.png" width="728" height="544" alt="検索">
+  <img src="/images/shots/085/config.png" width="728" height="544" alt="設定のページ">
 </p>
-<!-- end shots -->
+<!-- end shots085 -->
