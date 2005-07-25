@@ -76,6 +76,20 @@ function getpage() {
     return "news";
 }
 
+/* getdirlang sub - check the script path for a language hint */
+function getdirlang() {
+  $script = $_SERVER['SCRIPT_NAME'];
+
+  if (isset($script) && ereg('^/[a-z][a-z]/', $script)) {
+    $lang = substr($script, 1, 2);
+    if (file_exists('/' . $lang . '/index.php')
+      return $lang;
+  }
+
+  /* Return "en" (English) by default just like getlang() */
+  return 'en';
+}
+
 /* getlang sub - check which language the visitor wants */
 function getlang() {
   $cooklang = $_COOKIE["cooklang"];
@@ -90,8 +104,9 @@ function getlang() {
         $lang = $res[1];
         $accept = ereg_replace("$lang","",$accept);
       }
-      if (!isset($lang)) {		/* still no lang selected? take english */
-        $lang = "en";
+      if (!isset($lang))
+	/* still no lang selected? take english */
+        $lang = 'en';
       }
     }
   }
