@@ -44,6 +44,7 @@ $pages = array(
   "shots",
   "shots090",
   "shots092"
+  "shots096u"
 );
 
 /* NEWSNUM is the number of news items that appear on the front page. */
