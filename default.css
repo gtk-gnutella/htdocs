@@ -94,15 +94,6 @@ div.sb_section {
 	border-top: solid 2px lightgray;
 }
 
-a.image {
-	text-align: center;
-}
-
-a.image img {
-	margin: 0.5em;
-	border: 0;
-}
-
 a.sb_section_header {
 	font-size: large;
 	font-weight: bold;
@@ -119,5 +110,14 @@ a.rss {
 
 div.sb_section_content {
 	margin-left: 1em;
+}
+
+.image {
+        text-align: center
+}
+
+.image img {
+	margin: 0.5em;
+	border: 0;
 }
 
