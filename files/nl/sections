@@ -1,0 +1,18 @@
+<!-- $Id$ -->
+<link rel="section" title="Nieuws" href="/?lang=nl&page=news">
+<link rel="section" title="Documentatie" href="/?lang=nl&amp;page=docs">
+<link rel="section" title="Features" href="/?lang=nl&amp;page=features">
+<link rel="section" title="FAQ" href="/?lang=nl&amp;page=faq">
+<link rel="section" title="Schermafbeeldingen"
+      href="/?lang=nl&amp;page=shots092">
+<link rel="section" title="Geschiedenis" href="/?lang=nl&amp;page=history">
+<link rel="section" title="Ondersteuning" href="/?lang=nl&amp;page=mailing">
+<link rel="section" title="Bug&nbsp;Report&nbsp;Howto"
+      href="/?lang=nl&amp;page=bugreport_howto">
+<link rel="section" title="Ontwikkelaars" href="/?lang=nl&amp;page=devel">
+<link rel="section" title="Code 101" href="/?lang=nl&amp;page=code">
+<link rel="section" title="CVS Snapshots"
+      href="/?lang=nl&amp;page=devel#devel-snapshots">
+<link rel="section" title="Links" href="/?lang=nl&amp;page=links">
+<link rel="section" title="Doneren" href="/?lang=nl&amp;page=donate">
+<!-- End of $RCSfile$ -->

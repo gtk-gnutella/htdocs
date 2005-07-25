@@ -1,0 +1,17 @@
+<!-- $Id$ -->
+<link rel="section" title="ニュース" href="/?lang=ja&page=news">
+<link rel="section" title="文書" href="/?lang=ja&amp;page=docs">
+<link rel="section" title="特徴" href="/?lang=ja&amp;page=features">
+<link rel="section" title="FAQ" href="/?lang=ja&amp;page=faq">
+<link rel="section" title="スクリーンショット" href="/?lang=ja&amp;page=shots092">
+<link rel="section" title="リリース履歴" href="/?lang=ja&amp;page=history">
+<link rel="section" title="サポート" href="/?lang=ja&amp;page=mailing">
+<link rel="section" title=" バグ報告の方法"
+      href="/?lang=ja&amp;page=bugreport_howto">
+<link rel="section" title="開発" href="/?lang=ja&amp;page=devel">
+<link rel="section" title="Code 101" href="/?lang=ja&amp;page=code">
+<link rel="section" title=" スナップショット"
+      href="/?lang=ja&amp;page=devel#devel-snapshots">
+<link rel="section" title="リンク" href="/?lang=ja&amp;page=links">
+<link rel="section" title="寄付" href="/?lang=ja&amp;page=donate">
+<!-- End of $RCSfile$ -->
