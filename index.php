@@ -19,11 +19,7 @@ if (!isset($dir)) {
 }
 
 if (0 != strcmp(LANG, $dir)) {
-  if (0 == strcmp(LANG, 'en'))
-    $dir = '';
-  else
-    $dir = '/' . LANG . '';
-  header('Location: ' . $dir . '/?page=' . PAGE);
+  header('Location: /' . LANG . '/?page=' . PAGE);
   exit;
 }
 
@@ -37,6 +33,10 @@ if (0 != strcmp(LANG, $dir)) {
     <link rel="start" href="/">
     <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net">
     <link rel="copyright" href="http://sourceforge.net/projects/gtk-gnutella">
+    <link rel="alternate"
+          type="application/rss+xml"
+          title="RSS"
+          href="/<?php echo LANG ?>/rss.xml">
     <link rel="alternate"
           type="text/html"
           href="/en/?page=<?php echo PAGE ?>"
