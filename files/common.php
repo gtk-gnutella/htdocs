@@ -158,10 +158,6 @@ function iceinclude($file, $box) {
       if ($box) {
         include(BASEDIR . GENDIR . "/cfooter");
       }
-      /* Prepend an anchor for fragment references */
-      if (ereg("^news_[0-9]*$", $file)) {
-        echo '<a name=#' . $file . '></a>';
-      }
     }
   } else {
     if ($box) {
