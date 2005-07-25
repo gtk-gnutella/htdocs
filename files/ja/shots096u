@@ -13,16 +13,12 @@
 <hr>
 
 <p>
-  <div class="image"> 
-    <a href="/images/shots/096u/GnutellaNet-Leaf-GTK2.png">
-      <img src="/images/shots/096u/small_GnutellaNet-Leaf-GTK2.jpg" width="500" height="350" alt="Gnet Leaf mode status">
-    </a>
-  </div>
-  <div class="image"> 
-    <a href="/images/shots/096u/GnutellaNet-Ultra-GTK2.png">
-      <img src="/images/shots/096u/small_GnutellaNet-Ultra-GTK2.jpg" width="500" height="350" alt="Gnet Ultra mode status">
-    </a>
-  </div>
+  <a href="/images/shots/096u/GnutellaNet-Leaf-GTK2.png">
+    <img src="/images/shots/096u/small_GnutellaNet-Leaf-GTK2.jpg" width="250" height="175" alt="Gnet Leaf mode status">
+  </a>
+  <a href="/images/shots/096u/GnutellaNet-Ultra-GTK2.png">
+    <img src="/images/shots/096u/small_GnutellaNet-Ultra-GTK2.jpg" width="250" height="175" alt="Gnet Ultra mode status">
+  </a>
 </p>
   
 <hr>
@@ -30,15 +26,11 @@
 <hr>
 
 <p>
-  <div class="image">
-    <a href="/images/shots/096u/Search1-GTK2.png">
-      <img src="/images/shots/096u/small_Search1-GTK2.jpg" width="500" height="350" alt="Searches">
-    </a>
-  </div>
-  <div class="image">
-    <a href="/images/shots/096u/Search2-GTK2.png">
-      <img src="/images/shots/096u/small_Search2-GTK2.jpg" width="500" height="350" alt="Another Searches">
-    </a>
-  </div>
+  <a href="/images/shots/096u/Search1-GTK2.png">
+    <img src="/images/shots/096u/small_Search1-GTK2.jpg" width="250" height="175" alt="Searches">
+  </a>
+  <a href="/images/shots/096u/Search2-GTK2.png">
+    <img src="/images/shots/096u/small_Search2-GTK2.jpg" width="250" height="175" alt="Another Searches">
+  </a>
 </p>
 <!-- end shots096u -->
