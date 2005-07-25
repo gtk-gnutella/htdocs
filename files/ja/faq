@@ -213,7 +213,6 @@
   ||||||||||+ <strong>T</strong>LS トンネル接続であることを示します
   |||||||||+- Hops Flow が発生しているか (<strong>h</strong>)、あるいは全クエリがフロー制御されています (<strong>f</strong>)
   ||||||||+-- フロー制御 (<strong>F</strong>)、またはキューに未処理のデータ (<strong>d</strong>) があることを示します
-              we are push-proxy for node (<strong>P</strong>) or node is our push-proxy (<strong>p</strong>)
   |||||||+--- こちらが PUSH プロキシである (<strong>P</strong>) か、あちらが PUSH プロキシである (<strong>p</strong>) かを示します
   ||||||+---- <strong>R</strong>x (受信), <strong>T</strong>x (送信) または両方 (<strong>Z</strong>) が圧縮されているかどうかを示します
   |||||+----- 遠隔ウルトラピアに Last-Hop QRT を送信したか (<strong>X</strong>)、それを送信している (<strong>x</strong>) かを示します
