@@ -64,11 +64,11 @@ if (0 != strcmp(LANG, $dir)) {
     <meta http-equiv="Content-Script-Type" content="text/javascript">
   </head>
   <body>
-    <div class="boxed" style="text-align:center">
+    <div class="boxed" style="text-align: center">
       <div>
         <a href="/?page=index">
           <img src="images/gtk-gnutella.png" 
-            width="408" height="44" alt="Gtk-Gnutella" class="image"></a>
+            width="408" height="44" alt="Gtk-Gnutella"></a>
       </div>
       <div>
         <?php iceinclude("current_version", 0); echo VERSION ?>
@@ -114,8 +114,8 @@ if (0 != strcmp(LANG, $dir)) {
           <?php iceinclude("sidenav_hosted", 0) ?>
         </div>
         <div>
-          <a href="http://sourceforge.net">
-            <img class="image"
+          <a class="image" href="http://sourceforge.net">
+            <img
               src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
               alt="SourceForge.net Logo" width="88" height="31"></a>
         </div>
@@ -123,19 +123,19 @@ if (0 != strcmp(LANG, $dir)) {
           <?php iceinclude("sidenav_glade", 0) ?>
         </div>
         <div>
-          <a href="http://glade.gnome.org/">
-            <img class="image" src="images/glade-banner.png"
+          <a class="image" href="http://glade.gnome.org/">
+            <img src="images/glade-banner.png"
               alt="Glade" width="100" height="45"></a>
         </div>
       </div>
       <div class="boxed">
         <?php iceinclude("sidenav_conform", 0) ?>
         <div>
-          <a href="http://validator.w3.org/check/referer">
-            <img class="image" src="images/valid-html401.png"
+          <a class="image" href="http://validator.w3.org/check/referer">
+            <img src="images/valid-html401.png"
               alt="Valid HTML 4.01" width="88" height="31"></a>
-          <a href="http://jigsaw.w3.org/css-validator/">
-            <img class="image" src="images/valid-css.png"
+          <a class="image" href="http://jigsaw.w3.org/css-validator/">
+            <img src="images/valid-css.png"
               alt="Valid CSS" width="88" height="31"></a>
         </div>
       </div>
