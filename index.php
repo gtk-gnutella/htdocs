@@ -13,6 +13,14 @@ if (file_exists("files/maintainer_include.php")) {
 
 include("files/common.php");
 
+$dir = getdirlang();
+if (0 != strcmp(LANG, $dir)) {
+	if (0 == $strcmp($dir, 'en'))
+          $dir = '';
+	header('Location: /' . $dir . '?page=' . PAGE);
+	exit;
+}
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="<?php echo LANG ?>">
