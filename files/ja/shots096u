@@ -1,0 +1,44 @@
+<!-- $Id$ -->
+<h1>Screenshots</h1>
+
+<p>
+  Here you can browse the user interface of gtk-gnutella 0.96u.  Click on 
+  the images to get a larger view.
+</p>
+
+<h2>GTK2 screenshots</h2>
+
+<hr>
+<h4>Gnutella network status</h4>
+<hr>
+
+<p>
+  <div> 
+    <a href="/images/shots/096u/GnutellaNet-Leaf-GTK2.png">
+      <img src="/images/shots/096u/small_GnutellaNet-Leaf-GTK2.png" width="500" height="350" alt="Gnet Leaf mode status">
+    </a>
+  </div>
+  <div> 
+    <a href="/images/shots/096u/GnutellaNet-Ultra-GTK2.png">
+      <img src="/images/shots/096u/small_GnutellaNet-Ultra-GTK2.png" width="500" height="350" alt="Gnet Ultra mode status">
+    </a>
+  </div>
+</p>
+  
+<hr>
+<h4>Search</h4>
+<hr>
+
+<p>
+  <div>
+    <a href="/images/shots/096u/Search1-GTK2.png">
+      <img src="/images/shots/092/small_Search1-GTK2.png" width="500" height="350" alt="Searches">
+    </a>
+  </div>
+  <div>
+    <a href="/images/shots/096u/Search2-GTK2.png">
+      <img src="/images/shots/096u/small_Search2-GTK2.png" width="500" height="350" alt="Another Searches">
+    </a>
+  </div>
+</p>
+<!-- end shots096u -->
