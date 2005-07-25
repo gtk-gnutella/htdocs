@@ -100,6 +100,15 @@ a.sb_section_header {
 	font-weight: bold;
 }
 
+a.rss {
+	font-size:large;
+	font-weight:bold;
+	color: white;
+	background: #e60;
+	border: solid 2pt #f70;
+        text-decoration: none;
+}
+
 div.sb_section_content {
 	margin-left: 1em;
 }
