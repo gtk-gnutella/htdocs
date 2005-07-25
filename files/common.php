@@ -82,7 +82,7 @@ function getdirlang() {
 
   if (isset($script) && ereg('^/[a-z][a-z]/', $script)) {
     $lang = substr($script, 1, 2);
-    if (file_exists('/' . $lang . '/index.php')
+    if (file_exists('/' . $lang . '/index.php'))
       return $lang;
   }
 
