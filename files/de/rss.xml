@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>
+Gtk-Gnutella - Der grafische Gnutella-Client für Unix</title>
+    <link>http://gtk-gnutella.sourceforge.net/de/</link>
+    <description></description>
+    <copyright>http://sourceforge.net/projects/gtk-gnutella</copyright>
+    <lastBuildDate>Mon, 25 Jul 2005 07:26:18 GMT</lastBuildDate>
+    <generator>rss_gen.sh</generator>
+    <item>
+      <title>22. Mai 2005, Version 0.95.3 veröffentlicht</title>
+      <description> In Version 0.95.3 wurden hauptsächlich Fehler behoben. Wir raten jedem auf diese neue Version umzusteigen, da diese Fehler sehr leicht Probleme (z.B. Programmabsturz) verursachen können. Die wichtigsten Änderungen in Stichworten: Potentielles Denial-of-Service-Problem behoben Fehler im OOB reply code behoben, der Abstürze verursachen konnte [GTK1] Zwei verschwundene Schaltflächen des Filter-Editors wurden wiederhergestellt Beim Download sehr großer Dateien (über 4 GiB) kann es zu  [...]</description>
+      <author></author>
+      <link>http://gtk-gnutella.sourceforge.net/de/#news_44</link>
+      <guid isPermaLink="true">http://gtk-gnutella.sourceforge.net/de/#news_44</guid>
+      <pubDate>Wed, 29 Jun 2005 13:41:12 GMT</pubDate>
+    </item>
+
+</channel>
+</rss>

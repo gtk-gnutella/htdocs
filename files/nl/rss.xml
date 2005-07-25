@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>
+Gtk-Gnutella - The Graphical Unix Gnutella Client</title>
+    <link>http://gtk-gnutella.sourceforge.net/nl/</link>
+    <description></description>
+    <copyright>http://sourceforge.net/projects/gtk-gnutella</copyright>
+    <lastBuildDate>Mon, 25 Jul 2005 07:26:18 GMT</lastBuildDate>
+    <generator>rss_gen.sh</generator>
+    <item>
+      <title>22 Mei 2005, Versie 0.95.3 vrijgegeven</title>
+      <description> Versie 0.95.3 is een bug fix uitgave. Een aantal fouten zijn opgelost. We raden iedereen aan om naar deze versie te upgraden, de kans is aanwezig dat de fouten die we opgelost hebben anders ook bij jou een keer zullen optreden. Opgelost: Een potentieel Denial-Of-Service. Opgelost: OOB antwoord code welke kon leiden tot een assertie fout. [GTK1] Toon opnieuw de actief optie en de Verwijder knop in de Regelset editor. Opgelost: Het achteloos verkleinen van grote bestanden (&gt; 4 GB). Opgelost:  [...]</description>
+      <author></author>
+      <link>http://gtk-gnutella.sourceforge.net/nl/#news_44</link>
+      <guid isPermaLink="true">http://gtk-gnutella.sourceforge.net/nl/#news_44</guid>
+      <pubDate>Tue, 19 Jul 2005 17:47:16 GMT</pubDate>
+    </item>
+
+</channel>
+</rss>
