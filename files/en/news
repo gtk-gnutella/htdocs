@@ -13,7 +13,7 @@ icecontent("news_header");
 newsfiles();
 for($i = 0; $i < NEWSNUM; $i++) {
 	/* Insert an anchor name for fragment references */
-	echo '<a name=#"' . $i . '"></a>\n';
+	echo '<a name=#news_"' . $i . '"></a>" . '\n';
 	icecontent("$news_items[$i]");
 }
 
