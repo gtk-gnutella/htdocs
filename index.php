@@ -139,7 +139,8 @@ if (0 != strcmp(LANG, $dir)) {
           <a class="image" href="http://validator.w3.org/check/referer">
             <img src="/images/valid-html401.png"
               alt="Valid HTML 4.01" width="88" height="31"></a>
-          <a class="image" href="http://jigsaw.w3.org/css-validator/">
+          <a class="image"
+            href="http://jigsaw.w3.org/css-validator/?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
             <img src="/images/valid-css.png"
               alt="Valid CSS" width="88" height="31"></a>
         </div>
