@@ -112,6 +112,13 @@ div.sb_section_content {
 	margin-left: 1em;
 }
 
+div.hidden {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	font-size: 0pt;
+}
+
 .image {
         text-align: center
 }

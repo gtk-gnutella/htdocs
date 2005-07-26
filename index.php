@@ -115,19 +115,23 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
       <div class="boxed">
         <?php iceinclude("sidenav", 0) ?>
       </div>
+      <div class="hidden">&nbsp;</div>
       <div class="boxed">
         <?php iceinclude("sidenav_copyright", 0) ?>
       </div>
+      <div class="hidden">&nbsp;</div>
       <div class="boxed">
         <div>
           <?php iceinclude("sidenav_hosted", 0) ?>
         </div>
+        <div class="hidden">&nbsp;</div>
         <div>
           <a class="image" href="http://sourceforge.net">
             <img
               src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
               alt="SourceForge.net Logo" width="88" height="31"></a>
         </div>
+        <div class="hidden">&nbsp;</div>
         <div>
           <?php iceinclude("sidenav_glade", 0) ?>
         </div>
@@ -137,6 +141,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
               alt="Glade" width="100" height="45"></a>
         </div>
       </div>
+      <div class="hidden">&nbsp;</div>
       <div class="boxed">
         <?php iceinclude("sidenav_conform", 0) ?>
         <div>
@@ -149,6 +154,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
               alt="Valid CSS" width="88" height="31"></a>
         </div>
       </div>
+      <div class="hidden">&nbsp;</div>
       <div class="boxed">
           <a href="rss.xml" class="rss" type="application/rss+xml">RSS</a>
       </div>
