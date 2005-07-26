@@ -81,6 +81,10 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
     </div>
 
 
+    <table width="100%" summary="layout">
+    <tr>
+    <td valign="top">
+
     <div class="sidebar">
       <div class="boxed">
         <form action="/" method="GET">
@@ -150,9 +154,16 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
       </div>
     </div>
 
+    <td valign="top">
+
     <div class="content">
       <?php maincontent() ?>
     </div>
+
+    </td>
+    </tr>
+    </table>
+
   </body>
 </html>
 
