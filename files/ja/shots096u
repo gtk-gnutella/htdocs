@@ -2,8 +2,8 @@
 <h1>Screenshots</h1>
 
 <p>
-  Here you can browse the user interface of gtk-gnutella 0.96u.  Click on 
-  the images to get a larger view.
+  Here you can browse the user interface of gtk-gnutella 0.96u (July 4, 2005).
+  Click on the images to get a larger view.
 </p>
 
 <p>
@@ -34,6 +34,18 @@
           <img src="/images/shots/096u/small_GnutellaNet-Ultra-GTK2.jpg"
                width="250" height="175" alt="Gnet Ultra mode status">
         </a>
+        <a class="image" href="/images/shots/096u/GnutellaNet-Leaf-GTK2-ja.png">
+          <img src="/images/shots/096u/small_GnutellaNet-Leaf-GTK2-ja.jpg"
+               width="250" height="175"
+               alt="Gnet Leaf mode status (in Japanese interface)">
+        </a>
+        <!--
+        <a class="image" href="/images/shots/096u/GnutellaNet-Ultra-GTK2-ja.png">
+          <img src="/images/shots/096u/small_GnutellaNet-Ultra-GTK2-ja.jpg"
+               width="250" height="175"
+               alt="Gnet Leaf mode status (in Japanese interface)">
+        </a>
+        -->
       </td>
     <td>&nbsp;</td>
   </tr>
@@ -55,6 +67,18 @@
           <img src="/images/shots/096u/small_Search2-GTK2.jpg"
                width="250" height="175" alt="Another Searches">
         </a>
+        <a class="image" href="/images/shots/096u/Search1-GTK2-ja.png">
+          <img src="/images/shots/096u/small_Search1-GTK2-ja.jpg"
+               width="250" height="175"
+               alt="Searches (in Japanese interface)">
+        </a>
+        <!--
+        <a class="image" href="/images/shots/096u/Search2-GTK2-ja.png">
+          <img src="/images/shots/096u/small_Search2-GTK2-ja.jpg"
+               width="250" height="175"
+               alt="Another Searches (in Japanese interface)">
+        </a>
+        -->
       </td>
     <td>&nbsp;</td>
   </tr>
