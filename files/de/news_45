@@ -1,0 +1,42 @@
+<!-- $Id$ -->
+<h4>31 July 2005, Version 0.95.4 freigegeben</h4>
+
+<p>
+  In Version 0.95.4 wurden hauptsächlich Fehler behoben. Wir empfehlen
+  jedem auf diese neue Version zu wechseln, da es die derzeit stabilste
+  Version von Gtk-Gnutella ist.
+</p>
+
+<p>
+  Die wichtigsten Änderungen in Stichpunkten:
+</p>
+
+<ul>
+  <li>Der Fehler, der u. U. dazu führte, dass das letzte Byte einer Datei nicht
+      heruntergeladen werden konnte, ist behoben.</li>
+  <li>Vorläufiger <q>Browse-Host-Support</q>, der es anderen erlaubt, die
+      komplette Liste der freigegebenen Dateien einzusehen. Dies ist per
+      Voreinstellung deaktiviert.</li>
+  <li>Gtk-Gnutella erkennt die Netzwerkverfügbarkeit nach einem kurzzeitigen
+      Netzwerkausfall besser.</li>
+  <li>Die <q>.desktop</q>-Datei und die Anwendungssymbole werden nun
+      korrekt installiert.</li>
+  <li>Die Anzeige der Downloads ist jetzt logisch anstatt willkürlich
+      sortiert.</li>
+  <li>Fehler im UTF-8-Support behoben.</li>
+  <li>Update der Doxygen-Dokumentation.</li>
+  <li>Update der japanischen und spanischen Übersetzung.</li>
+</ul>
+
+<p>Die Prüfsummen des Quellarchivs:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.95.4.tar.bz2) = 4e6ea65149100c882f9b2c4ff7ca8dc1</li>
+  <li>SHA1 (gtk-gnutella-0.95.4.tar.bz2) = 1a1773a28d5bf4aa988468911f48787a28519aa0</li>
+  <li>urn:sha1:DILXHIUNLP2KVGEENCIR6SDYPIUFDGVA</li>
+  
+</ul>
+
+<p>
+  <em>Das Gtk-Gnutella-Team</em>
+</p>
+<!-- end news_45 -->
