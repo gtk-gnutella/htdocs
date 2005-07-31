@@ -1,0 +1,24 @@
+<!-- $Id$ -->
+<h1>Documentation de gtk-gnutella</h1>
+<ul>
+  <li>
+    <a href="?page=filtering_howto">mini-howto sur le filtrage</a> 
+    <small> by Vidar</small>
+  </li>
+  <li>
+    <a href="?page=searching_by_hash">Recherche par hash et par
+     magnet-link</a> <small>by guruz</small>
+  </li>
+  <li>
+    <a href="?page=gwebcache">Aider le r&eacute;seau en ayant un GWebCache</a> <small>by guruz</small>
+  </li>
+  <li>
+    <a href="?page=bugreport_howto">Comment reporter les bugs</a> <small>by 
+    eqom14</small>
+  </li>
+</ul>
+
+<p style="text-align: center;">
+  D'autres viendront...
+</p>
+<!-- end docs -->

@@ -1,0 +1,23 @@
+<!-- $Id$ -->
+<h1>GWebCache</h1>
+
+<p>
+  gtk-gnutella supporte le syst&egrave;me <a href="http://www.gnucleus.com/gwebcache">
+  GWebCache</a>, qui permet aux clients gnutella de se connecter au r&eacute;seau plus facilement lors du d&eacute;marage.
+  C'est n&eacute;c&eacute;ssaire aux clients gnutella pour trouver des h&ocir;tes auxquels ils vont se connecter quand ils ne se sont pas encore branch&eacute;s sur le r&eacute;seau gnutella auparavant.
+</p>
+  
+<p>
+  Si vous voulez aider le r&eacute;seau gnutella et que vous avez un serveur web stable, 
+  vous pouvez lancer un script qui remplit cette fonction. &Ccedil;a consomme environ 100MB par mois, 
+  et au plus il y a de gens qui l'utilisent, au plus le trafic se reduit pour tout le monde. 
+  Les scripts sont disponibles en PHP, ASP et ColdFusion.
+</p>
+
+<p>
+  D&egrave;s que votre script tourne, vous pouvez nous envoyez un email sur notre <a href="?page=mailing">liste de diffusion pour d&eacute;veloppeurs</a> (en anglais) et au responsable de la page GWebCache (voir son adresse email en bas de sa page).<br>
+  Pour plus d'information visitez la <a href="http://www.gnucleus.com/gwebcache">page GWebCache</a>
+  <br>
+  <br>
+</p>
+<!-- end gwebcache -->
