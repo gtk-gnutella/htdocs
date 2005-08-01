@@ -1,0 +1,37 @@
+<!-- $Id$ -->
+<h4>31 July 2005, Version 0.95.4 Released</h4>
+
+<p>
+  Versie 0.95.4 is een bug fix uitgave. Meerdere fouten zijn opgelost
+  en we raden iedereen aan om naar deze versie te upgraden aangezien
+  dit de meest stabiele versie tot nu toe is.
+</p>
+
+<ul>
+  <li>Opgelost: Een download werd soms niet afgerond doordat er nog 1
+      laatste byte nodig was. Dit werd niet goed afgehandeld.</li>
+  <li>Gedeeltelijke ondersteuning voor 'Browse-Host'. Het is mogelijk
+       voor andere servents om door de bestanden te bladeren die worden
+       gedeeld. Standaard staat dit uitgeschakeld.</li>
+  <li>GTKG detecteert weer correct de 'online' status na tijdelijke 
+      netwerk problemen.</li>
+  <li>Het .desktop bestand en de applicatie iconen worden nu correct
+      geinstalleerd.</li>
+  <li>Downloads worden nu logischer gesorteerd.</li>
+  <li>Problemen in de UTF-8 ondersteuning opgelost.</li>
+  <li>Doxygen documentatie bijgewerkt.</li>
+  <li>Japanse en Spaanse vertalingen zijn bijgewerkt.</li>
+</ul>
+
+<p>Controllesom van de bron tarball:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.95.4.tar.bz2) = 4e6ea65149100c882f9b2c4ff7ca8dc1</li>
+  <li>SHA1 (gtk-gnutella-0.95.4.tar.bz2) = 1a1773a28d5bf4aa988468911f48787a28519aa0</li>
+  <li>urn:sha1:DILXHIUNLP2KVGEENCIR6SDYPIUFDGVA</li>
+  
+</ul>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_45 -->
