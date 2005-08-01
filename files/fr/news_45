@@ -1,0 +1,37 @@
+<!-- $Id$ -->
+<h4>31 Juillet 2005, Version 0.95.4 Disponible</h4>
+
+<p>
+  La version 0.95.4 est une version de maintenance. Plusieurs bugs ont &eacute;t&eacute;
+   corrig&eacute;s. Il est recommand&eacute; que tout le monde se mette &agrave; jour
+   en passant &agrave; cette version de GTKG car elle est la plus stable actuellement.
+</p>
+
+<ul>
+  <li>Le bug concernant le t&eacute;l&eacute;chargement du dernier octet, qui avait
+   comme cons&eacute;quence qu'un t&eacute;l&eacute;chargement ne pouvait se terminer
+   s'il ne restait plus que le dernier octet &agrave; prendre, a &eacute;t&eacute;
+   corrig&eacute;.</li>
+  <li>Support pr&eacute;liminaire pour le parcours des h&ocirc;tes, permettant aux
+   autres clients de parcourir les fichiers partag&eacute;s. Cette fonctionnalit&eacute;
+    est d&eacute;sactiv&eacute; par d&eacute;faut</li>
+  <li>GTKG d&eacute;tectera &agrave; nouveau le status 'en ligne' apr&egrave;s une coupue temporaire du r&eacute;seau.</li>
+  <li>Le fichier .desktop et les ic&ocirc;nes sont maintenant correctement install&eacute;s</li>
+  <li>Les t&eacute;l&eacute;chargements sont maintenant tri&eacute;s d'une fa&ccedil;on plus logique.</li>
+  <li>Correction de bugs pour le support UTF-8.</li>
+  <li>Mise &agrave; jour de la documentation Doxygen.</li>
+  <li>Mise &agrave; jour des traductions japonaises et espagnoles</li>
+</ul>
+
+<p>Checksums du code source:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.95.4.tar.bz2) = 4e6ea65149100c882f9b2c4ff7ca8dc1</li>
+  <li>SHA1 (gtk-gnutella-0.95.4.tar.bz2) = 1a1773a28d5bf4aa988468911f48787a28519aa0</li>
+  <li>urn:sha1:DILXHIUNLP2KVGEENCIR6SDYPIUFDGVA</li>
+  
+</ul>
+
+<p>
+  <em>l'&eacute;quipe gtk-gnutella</em>
+</p>
+<!-- end news_45 -->
