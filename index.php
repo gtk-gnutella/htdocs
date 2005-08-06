@@ -48,6 +48,10 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
           hreflang="en"
           title="English version">
     <link rel="alternate"
+          href="/cn/?page=<?php echo PAGE ?>"
+          hreflang="cn"
+          title="Chinese version">
+    <link rel="alternate"
           href="/de/?page=<?php echo PAGE ?>"
           hreflang="de"
           title="Deutsche &Uuml;bersetzung">
@@ -94,6 +98,9 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 		<?php if ('en' === LANG) echo 'selected' ?>
 		value="en">English</option>
             <option
+		<?php if ('cn' === LANG) echo 'selected' ?>
+		value="cn">Chinese</option>
+		    <option
 		<?php if ('de' === LANG) echo 'selected' ?>
 		value="de">Deutsch</option>
             <option
