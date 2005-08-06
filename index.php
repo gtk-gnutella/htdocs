@@ -48,9 +48,9 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
           hreflang="en"
           title="English version">
     <link rel="alternate"
-          href="/cn/?page=<?php echo PAGE ?>"
-          hreflang="cn"
-          title="Chinese version">
+          href="/zh/?page=<?php echo PAGE ?>"
+          hreflang="zh"
+          title="中文">
     <link rel="alternate"
           href="/de/?page=<?php echo PAGE ?>"
           hreflang="de"
@@ -98,8 +98,8 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 		<?php if ('en' === LANG) echo 'selected' ?>
 		value="en">English</option>
             <option
-		<?php if ('cn' === LANG) echo 'selected' ?>
-		value="cn">Chinese</option>
+		<?php if ('zh' === LANG) echo 'selected' ?>
+		value="zh">中文</option>
 		    <option
 		<?php if ('de' === LANG) echo 'selected' ?>
 		value="de">Deutsch</option>
@@ -112,7 +112,8 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
             <option
 		<?php if ('nl' === LANG) echo 'selected' ?>
 		value="nl">Nederlands</option>
-          </select>&nbsp;<input type="submit" value="Go" accesskey="G" tabindex=2>
+          </select>&nbsp;<input type="submit" value="Go"
+                                accesskey="G" tabindex="2">
           <input type="hidden" name="page" value="<?php echo PAGE ?>">
         </p>
         </form>
