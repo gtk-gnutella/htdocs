@@ -1,0 +1,32 @@
+<!-- $Id$ -->
+<h4>2005年7月31日，0.95.4版释出</h4>
+
+<p>
+  0.95.4是Bug修正版，建议您将GTKG进行升级，这是目前
+  最稳定的版本。
+</p>
+
+<ul>
+  <li>下载末尾字节bug已修正，原来的版本对于需要下载末尾字节的文件总是提示没有下载完。</li>
+  <li>初步实现主机浏览，其他servents可以浏览本机共享的文件，默认禁用此功能；</li>
+  <li>GTKG会检测是否在线，以应对可能的网络中断；</li>
+  <li>添加了.desktop文件与软件的图标；</li>
+  <li>更合理地排列下载的文件</li>
+  <li>修正了UTF-8支援的Bug</li>
+  <li>Doxygen文档得到更新</li>
+  <li>更新了日语和西班牙语的翻译</li>
+</ul>
+
+<p>源码包的Checksums：</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.95.4.tar.bz2) = 4e6ea65149100c882f9b2c4ff7ca8dc1</li>
+  <li>SHA1 (gtk-gnutella-0.95.4.tar.bz2) = 1a1773a28d5bf4aa988468911f48787a28519aa0</li>
+  <li>urn:sha1:DILXHIUNLP2KVGEENCIR6SDYPIUFDGVA</li>
+  
+</ul>
+
+<p>
+  <em>gtk-gnutella 团队</em>
+</p>
+<!-- end news_45 -->
+

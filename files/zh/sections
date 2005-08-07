@@ -1,0 +1,17 @@
+<!-- $Id$ -->
+<link rel="section" title="新闻" href="?page=news">
+<link rel="section" title="文档" href="?page=docs">
+<link rel="section" title="功能介绍" href="?page=features">
+<link rel="section" title="有问有答" href="?page=faq">
+<link rel="section" title="界面展示" href="?page=shots096u">
+<link rel="section" title="历史记录" href="?page=history">
+<link rel="section" title="获取帮助" href="?page=mailing">
+<link rel="section" title="如何报告臭虫"
+      href="?page=bugreport_howto">
+<link rel="section" title="开发园地" href="?page=devel">
+<link rel="section" title="代码 101" href="?page=code">
+<link rel="section" title="CVS 快照" href="?page=devel#devel-snapshots">
+<link rel="section" title="链接" href="?page=links">
+<link rel="section" title="捐助" href="?page=donate">
+<!-- End of $RCSfile$ -->
+
