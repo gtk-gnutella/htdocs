@@ -67,6 +67,10 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
           href="/nl/?page=<?php echo PAGE ?>"
           hreflang="nl"
           title="Nederlandse vertaling">
+    <link rel="alternate"
+          href="/uk/?page=<?php echo PAGE ?>"
+          hreflang="uk"
+          title="Ukrainian version">
 
     <?php iceinclude("sections", 0) ?>
 
@@ -112,6 +116,9 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
             <option
 		<?php if ('nl' === LANG) echo 'selected' ?>
 		value="nl">Nederlands</option>
+            <option
+		<?php if ('uk' === LANG) echo 'selected' ?>
+		value="uk">Українська</option>
           </select>&nbsp;<input type="submit" value="Go"
                                 accesskey="G" tabindex="2">
           <input type="hidden" name="page" value="<?php echo PAGE ?>">
