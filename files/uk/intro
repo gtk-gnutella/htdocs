@@ -1,0 +1,41 @@
+<!-- content -->
+<!-- $Id$ -->
+
+<h3>Графічний Ґнутелла (Gnutella) Клієнт для Unix систем</h3>
+
+<p>
+  Gtk-Gnutella є сервером/клієнтом для
+  <a href="http://www.gnutella.com/">Gnutella</a>.
+  Вона може запускатись на любій Unix-подібній системі яка підтримує
+<a href="http://www.gtk.org/">GTK+</a> 
+  (1.2 або вище) і <a href="http://www.libxml.org">libxml</a>.
+  Gnome не обов'язковий. В даний момент програма розробляється і тестується на Linux (Debian 2.2) і відомо що вона працює на Лінуксі,
+  <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>,
+  <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
+  <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
+  <a href="http://gtk-gnutella.darwinports.com/">Darwin</a>,
+Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS не дивлячись на те що CPU архітектури включають x86, AMD64, PowerPC, SPARC, MIPS.
+</p>
+
+<p>
+  Програма випускається під ліцензією GNU General Public License (GPL).
+</p>
+
+<p>
+  Gtk-Gnutella поки що не закінчена, але вона повністю функіональна: ви можете ділитись (share), 
+  скачувати, і скачувати файлами.  Також, програма стабільна, користувачі можуть залишати її без нагляду на декілька днів.
+</p>
+
+<p>
+  Всі ідеї і коментарі будь ласка відсилайте на gtk-gnutella-devel список поштової розсилки.
+  Всі баги (bugs) відсилайте на 
+  <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+  SourceForge.net Bug Tracker</a>
+</p>
+
+<p style="text-align: center;">
+  <a href="?page=devel">Нам потрібні вкладники для розробки C і документації</a>
+</p>
+
+<!-- end intro -->
+
