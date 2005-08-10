@@ -118,7 +118,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 		value="nl">Nederlands</option>
             <option
 		<?php if ('uk' === LANG) echo 'selected' ?>
-		value="uk">Украинский</option>
+		value="uk">Українська</option>
           </select>&nbsp;<input type="submit" value="Go"
                                 accesskey="G" tabindex="2">
           <input type="hidden" name="page" value="<?php echo PAGE ?>">
