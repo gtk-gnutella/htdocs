@@ -88,7 +88,8 @@
 <p>
   <a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella-current.tar.bz2">
     <strong>Official CVS snapshot</strong></a>
-    (Generated: <?php iceinclude("cvs_snapshot_date", 0) ?>)
+    (Generated: <?php iceinclude("cvs_snapshot_date", 0) ?>;
+	SHA1 <TT><?php iceinclude("cvs_snapshot_sha1", 0) ?></TT>)
 </p>
 <p>
   Snapshots also kindly donated by:
