@@ -5,12 +5,17 @@
 <p>
   The current version of gtk-gnutella is running well, but it is in no way 
   up to date with the latest gnutella standards. The "major players" of 
-  gnutella (Limewire, BearShare, Shareaza, Gnucleus, Xolox) implement 
-  features like Partial File Sharing (gtk-gnutella has client side, but not 
-  server side), Tree Hashing and soon a UDP-query method called GUESS. 
+  gnutella (Limewire, BearShare, Shareaza, Gnucleus) implement 
+  features like Tiger Tree Hashing which gtk-gnutella still doesn't yet. 
   Other possibly interesting features are XML-Query schemes (e.g. searching 
   by title, size, genre of files), magnet:-Links, and Download Proxies. GTKG 
   lacks all of them right now.
+</p>
+<p>
+  On the other hand, gtk-gnutella has some features the major players lack,
+  such as PARQ for passive queuing and TLS support for encrypted connections.
+  Gtk-gnutella is also a very efficient C implementation with a low memory
+  footprint and low CPU usage.  It's probably among the fastest clients today.
 </p>
 <p>
   Raphael Manfredi and Richard Eckart, the current lead developers, are 
