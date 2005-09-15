@@ -4,10 +4,10 @@
 <ul>
   <li>Gnutella ネットワーク (LimeWire, BearShare, Xolox, Gnucleus, Shareaza, Morpheus ...) でのファイルの共有</li>
   <li>圧縮された Gnutella ネットワーク接続</li>
-  <li>複数ホストからのファイルの同時ダウンロード (Swarming - 多元ダウンロード)</li>
+  <li>複数ホストからのファイルの同時ダウンロード (Swarming - 多源ダウンロード)</li>
   <li>受動検索</li>
   <li>urn:sha1: および magnet: での検索</li>
-  <li>ダウンロードメッシュおよび検索を見張る事による、さらなる送信元の自動的な取得</li>
+  <li>ダウンロードメッシュおよび検索を見張る事による、さらなる送信源の自動的な取得</li>
   <li>強力な条件検索エンジン</li>
   <li>帯域幅の管理/制限</li>
   <li>数多くの設定項目</li>
