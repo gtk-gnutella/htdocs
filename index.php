@@ -48,13 +48,13 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
           hreflang="en"
           title="English version">
     <link rel="alternate"
-          href="/zh/?page=<?php echo PAGE ?>"
-          hreflang="zh"
-          title="中文">
-    <link rel="alternate"
           href="/de/?page=<?php echo PAGE ?>"
           hreflang="de"
           title="Deutsche &Uuml;bersetzung">
+    <link rel="alternate"
+          href="/el/?page=<?php echo PAGE ?>"
+          hreflang="el"
+          title="Ελληνικά">
     <link rel="alternate"
           href="/fr/?page=<?php echo PAGE ?>"
           hreflang="fr"
@@ -71,6 +71,10 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
           href="/uk/?page=<?php echo PAGE ?>"
           hreflang="uk"
           title="Ukrainian version">
+    <link rel="alternate"
+          href="/zh/?page=<?php echo PAGE ?>"
+          hreflang="zh"
+          title="中文">
 
     <?php iceinclude("sections", 0) ?>
 
@@ -101,12 +105,12 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
             <option
 		<?php if ('en' === LANG) echo 'selected' ?>
 		value="en">English</option>
-            <option
-		<?php if ('zh' === LANG) echo 'selected' ?>
-		value="zh">中文</option>
-		    <option
+	    <option
 		<?php if ('de' === LANG) echo 'selected' ?>
 		value="de">Deutsch</option>
+            <option
+		<?php if ('el' === LANG) echo 'selected' ?>
+		value="el">Ελληνικά</option>
             <option
 		<?php if ('fr' === LANG) echo 'selected' ?>
 		value="fr">Fran&ccedil;ais</option>
@@ -119,6 +123,9 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
             <option
 		<?php if ('uk' === LANG) echo 'selected' ?>
 		value="uk">Українська</option>
+            <option
+		<?php if ('zh' === LANG) echo 'selected' ?>
+		value="zh">中文</option>
           </select>&nbsp;<input type="submit" value="Go"
                                 accesskey="G" tabindex="2">
           <input type="hidden" name="page" value="<?php echo PAGE ?>">
