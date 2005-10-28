@@ -1,0 +1,521 @@
+<!-- $Id$ -->
+<h1>HOWTO Αναφοράς Σφαλμάτων</h1>
+<ul>
+  <li><a href="#bugreport-intro">Πως αρχειοθετώ μία χρήσιμη αναφορά σφάλματος;</a></li>
+  <li><a href="#bugreport-wrong">Το Gtk-Gnutella κάνει κάτι λάθος ή κάτι απρόβλεπτο.</a></li>
+  <li><a href="#bugreport-compile">ΤΟ Gtk-Gnutella δε γίνεται compile!</a></li>
+  <li><a href="#bugreport-crash">Το Gtk-Gnutella κατέρρευσε!  Τώρα τι γίνεται;</a></li>
+  <li><a href="#bugreport-where">Ποιό είναι το καλύτερο μέρος για την υποβολή της αναφοράς σφάλματός μου;</a></li>
+</ul>
+<h3><a name="bugreport-intro">Πως αρχειοθετώ μία χρήσιμη αναφορά σφάλματος;</a></h3>
+  <p>
+    Στους υπεύθυνους ανάπτυξης αρέσει πάρα πολύ να παίρνουν καλές αναφορές 
+    σφαλμάτων.  Δυστυχώς για διάφορους λόγους οι αναφορές που παίρνουν συνηθως 
+    είναι άχρηστες.  Να μερικές συμβουλές για τη δημιουργία αναφορών που θα 
+    βοηθήσουν να γίνει καλύτερο το gtk-gnutella. Η ιδανική αναφορά σφάλματος
+    περιέχει ακριβώς τις πληροφορίες που χρειάζονται - ούτε περισσότερες ούτε 
+    λιγότερες - και συνοδεύονται από ένα μπάλωμα που διορθώνει το πρόβλημα. Αν 
+    Θέλετε να συμβάλλετε στην ανάπτυξη ενός μπαλώματος διαβάστε τη σελίδα 
+<a href="?page=devel">
+    ανάπτυξης</a> και το 
+<a href="?page=developers_howto">
+    Howto Ανάπτυξης</a>.  Οι περισσότεροι από εμάς, βέβαια, δεν έχουμε τα προσόντα 
+    ή/και το χρόνο να διορθώσουμε το gtk-gnutella.  Δεν πειράζει όμως, ακόμα μπορούμε 
+    να βοηθήσουμε.  
+  </p>
+  <p>
+    Να θυμάστε ότι τους υπεύθυνους ανάπτυξης τους ενδιαφέρουν αναφορές μόνο για 
+    την τελευταία 
+    <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
+    έκδοση</a> ή εκδόσεις που δημιουργήθηκαν από το 
+    <a href="?page=devel#devel-cvs">τρέχον CVS</a>.
+   Οι υπεύθυνοι ανάπτυξης 
+    δημιουργούν τον κώδικα του gtk-gnutella όχι για χρήματα, αλλά επειδή το βρίσκουν 
+    μία ενδιαφέρουσα απασχόληση για τον ελεύθερο χρόνο και επειδή θέλεου να δώσουν 
+    κάτι στην κοινότητα ανοικτού κώδικα.  Παρακαλούμε μην τους συμπεριφέρεστε 
+    σαν να ήταν κάποια εταιρία στην οποία πληρώσατε χρήματα και τώρα περιμένετε 
+    να σας προσφέρει υπηρεσίες.   Η υποστήριξη των παλιών εκδόσεων είναι κάτι 
+    σαν "ήμουν εκεί, το έκανα, βαρετό" και οι νέες εκδόσεις είναι γενικά καλύτερες 
+    για εσάς και το gnet.  
+  </p>
+  <p>
+    Ένα συχνό σφάλμα είναι ότι πολλοί δε δίνουν αρκετές πληροφορίες στην αναφορά 
+    τους.  Οι υπεύθυνοι ανάπτυξης προτιμούν να ψάξουν τις αναφορές σφαλμάτων 
+    από το να μην πάρουν καθόλου αναφορές σφαλμάτων.  Δεν έχουν χρόνο να 
+    εξάγουν πληροφοριές bit με bit από το χρήστη.  Γι αυτό αν δεν είστε 
+    σίγουροι πείτε το.   Μόλις ολοκληρώσετε την αναφορά σιγουρευτείτε ότι 
+    μένετε ενημερωμένοι καθώς κάποιος υπεύθυνος ανάπτυξης μπορεί να ζητήσει
+    περισσότερες πληροφορίες.  Αν το κάνει σιγουρευτείτε όι απαντάτε σε 
+    <strong>όλες</strong> τιες ερωτήσεις, ακόμα και αν η απάντηση είναι 
+    "Δεν ξέρω". Δεν υπάρχει τίποτα πιο μεγάλη απογοήτευση από το να  
+    γνωρίζες ότι έχεις ένα σφάλμα στο πρόγραμμά σου αλλά δεν έχεις αρκετές 
+    πληροφορίες για να το διορθώσεις.   
+  </p>
+  <p>
+    Το πρώτο πράγμα που θέλουν να μάθουν οι υπύθυνοι ανάπτυξης είναι ποια 
+    είναι η έκδοση του gtk-gnutella που παρουσίασε το σφάλμα έτσι ώστε να 
+    γνωρίζουν ποια έκδοση του πηγαίου κώδικα έχει το πρόβλημα (και αν το 
+    σφάλμα έχει ήδη διορθωθεί.) Μπορείτε να αντιγράψετε αυτές τις πληροφορίες 
+    από το παράθυρο <strong>Σχετικά</strong>.  Για παράδειγμα: 
+  </p>
+  <blockquote style="font-weight: bold">
+    gtk-gnutella/0.92 (15/06/2003; X11; Linux 2.4.21 i586)
+  </blockquote> 
+  <p>
+    Αν είναι ένα πακέτο διανομής, αναφέρετε ποιας και από που το λάβατε.  Για 
+    παράδειγμα:  
+  </p>
+  <blockquote style="font-weight: bold">
+    I'm using the GTK2-gtk-gnutella_0.92.0-0_i386.deb package from the 
+    gtk-gnutella web site.  
+  </blockquote>
+  <p>
+    Αν είναι έκδοση CVS, χρησιμοποιήστε το
+    <code><a href="http://www.rocketaware.com/man/man1/ident.1.htm">ident</a>
+    </code> ή αναζητήστε στο <code>gtk-gnutella-current/src/CVS/Entries</code>
+    και κάντε επικόλληση την τελευταία υποβολή.  Για παράδειγμα:  
+  </p>
+  <blockquote style="font-weight: bold">
+    /support-glade2.c/1.5/Sat Jun 14 17:54:28 2003// 
+  </blockquote>
+  <p>
+	Αν το κάνατε compile μόνοι σας, αναφέρετε ποιες επιλογές <code>./Configure </code> 
+	χρησιμοποιήσατε.  Για παράδειγμα:
+  </p>
+  <blockquote>
+    <code>
+			./Configure -Dprefix=/usr -Dccflags="-g -Wall" -Doptimize="-O2" -Dgtkversion=2 -ders
+    </code>
+  </blockquote>
+  <p>
+    Αναφέρετε ποια διανομή τρέχετε και σε τι αρχιτεκτονική.  
+    Για παράδειγμα:  
+  </p>
+  <blockquote style="font-weight: bold">
+    debian 2.2.22 on compaq alpha
+  </blockquote>
+  <p>
+    Συμπεριλάβετε τις σχετικές πληροφορίες έκδοσης σε κάθε αναφορά.  
+  </p>
+
+<h3><a name="bugreport-wrong">Το Gtk-Gnutella κάνει κάτι λάθος ή απρόβλεπτο.</a></h3>
+  <p>
+    Αν το gtk-gnutella λειτουργεί όπως στόχευαν οι προγραμματιστές του αλλά εσείς 
+    επιθυμείτε κάτι διαφορετικό, τότε πρέπει να αρχειοθετήσετε ένα 
+    <a href="http://sourceforge.net/tracker/?atid=354467&amp;group_id=4467&amp;func=browse">
+    αίτημα χαρακτηριστικού</a> και όχι μια αναφορά σφάλματος.  Φυσικά, υπάρχουν και 
+    εξαιρέσεις - η λειτουργία μπορεί να είναι βλαβερή κατά απρόβλεπτο τρόπο ή να μην  
+    ανταποκρίνεται στα πρότυπα.  Παρόλα αυτά, είναι δύσκολο να γνωρίζουμε τι ακριβώς 
+    στόχευε ο υπεύθυνος ανάπτυξης, έτσι δεν υπάρχει σύγκριση χαρακτηριστικό ή σφάλμα.  
+  </p>
+  <p>
+    Αν αποφασίσετε ότι είναι σφάλμα, εξηγήστε ακριβώς τι κάνει λάθος το gtk-gnutella 
+    και τι πιστεύετε θα έπρεπε να κάνει. Η περιγραφή σας πρέπει να είναι αρκετά 
+    λεπτομερής ώστε να μπορεί κάποιος να αναπαράγει το σφάλμα που αναφέρετε. Σε ποιο 
+    παράθυρο ήσασταν και τι επιλογές είχατε επιλέξει;  Ποιες είναι οι ακριβείς 
+    ενέργειες που οδήγησαν στο σφάλματ; Θα ήταν χρήσιμο να κρατήσετε κάποιες σημειώσεις 
+    πριν τα ξεχάσετε.
+  </p>
+    
+<h3><a name="bugreport-compile">Το Gtk-Gnutella δε γίνεται compile!</a></h3>
+  <p>
+    Δεν αναφέρονται πολλά προβλήματα compile για το gtk-gnutella.  Είναι γνωστό ότι 
+    γίνεται compile σε Linux, OS X, και FreeBSD με gcc.  Αν έχετε προβλήματα, 
+    κάντε επικόλληση την τελευταία εντολή του compiler, για παράδειγμα:  
+  </p>
+  <blockquote>
+    <code>
+      gcc -DHAVE_CONFIG_H -I. -I. -I.. -I/usr/include/gtk-1.2 
+      -I/usr/include/glib-1.2 -I/usr/lib/glib/include -I/usr/X11R6/include 
+      -I/usr/include/libxml2 -g -O2 -Wall -c nodes.c
+    </code>
+  </blockquote>
+  <p>
+    και τα σφάλματα που προκάλεσε, μαζί με την έκδοση και τις επιλογές 
+    ρυθμίσεων που έχουν περιγραφεί. 
+  </p>
+  
+<h3><a name="bugreport-crash">Το Gtk-Gnutella κατέρρευσε!  Τώρα τι γίνεται;</a></h3>
+  <p>
+    Για να αποσφαλματώσετε μία κατάρρευση, θα πρέπει το εκτελέσιμο να έχει 
+    κρατήσει άθικτα τα σύμβολα αποσφαλμάτωσής του.  Δυστυχώς για την οικονομία
+    χώρου σε σκληρό δίσκο και σε μνήμη τα σύμβολα αποσφαλμάτωσης συμπιέζονται 
+    από το gtk-gnutella όταν δημιουργείται ένα πακέτο διανομής.  Τα πακέτα rpm, 
+    debian, και slackware στην ιστοσελίδα μεταφορτώσεων του gtk-gnutella είναι όλα 
+    συμπιεσμένα και δεν είναι ιδανικά για αποσφαλμάτωση.  Αν όμως έχετε μία κατάρρευση 
+    κατά τη χρήση ενός πακέτου πάλι πρέπει να αναφέρετε το σφάλμα και το 
+    <strong>ακριβές</strong> μήνυμα σφάλματος έτσι ώστε οι άλλοι να μπορούν 
+    να προσπαθήσουν να το αναπαράγουν με ένα ασυμπίεστο εκτελέσιμο.  
+  </p>
+  <p>
+    Αν τρέχετε το gtk-gnutella από xterm, θα βρείτε το μήνυμα σφάλματος στο 
+    παράθυρο τερματικό (ίσως χρειαστεί να το σύρετε προς τα πίσω.)  Αν εκκινήσετε 
+    το gtk-gnutella από ένα εικονίδιο ή μενού, τότε θα βρείτε το μήνυμα σφάλματος όπου 
+    βρίσκεται η καταγραφής σφαλμάτων X.  Ολόκληρο το μήνυμα σφάλματος και ειδικά οι 
+    τελευταίες 10 γραμμές που οδήγησαν στο σφάλμα θα πρέπει να επικολληθούν στην 
+    αναφορά σφάλματός σας.  Αν είστε παρανοϊκοί (άλλωστε, <strong>είναι</strong> 
+    εκεί έξω και θα σας πιάσουν) μπορείτε να συσκοτίσετε τα ονόματα των αρχείων.  
+    Το σφάλμα θα το βρείτε μόνο αν το gtk-gnutella <q>κλείσει</q>, και όχι αν υπάρχει
+    <q>σφάλμα κατάτμησης</q> έτσι θα πρέπει να πείτε σε ποια περίπτωση αναφέρεστε.  
+  </p>
+  <p>
+    Ο πιο συνήθης λόγος που καταρρέει το gtk-gnutella είναι μια αποτυχία "συνθήκης". 
+    Οι συνθήκες είναι λογικές δηλώσεις που τοποθετούνται στρατηγικά μέσα στον 
+    στον κώδικα για να βοηθήσουν τους προγραμματιστές να βρουν τα σφάλματα.  Θέτουν ότι 
+    πρέπει τη συνθήκη μια συνθήκη να ισχύει σε ένα συγκεκριμένο μέρος της εκτέλεσης του 
+    κώδικα πρέπει να ισχύει αλλιώς το πρόγραμμα δε συμπεριφέρεται όπως ο προγραμματιστής
+    πιστεύει ότι θα έπρεπε.  Για παράδειγμα μια συνθήκη θα μπορούσε να ισχυρίζεται 
+    ότι μία μεταβλητή θα πρέπει να έχει τουλάχιστον μία τιμή, π.χ. να μην έχει τιμή 
+    null: <code>g_assert(header != NULL);</code> ή ότι η τιμή της θα πρέπει να είναι 
+    σε κάποιο εύρος τιμών: <code>g_assert(parq_ul-&gt;position &gt; 0);</code>.  Αν η 
+    συνθήκη δεν ισχύει, το πρόγραμμα κλείνει με ένα μήνυμα σφάλματος που αναφέρει ποια
+    συνθήκη δεν ισχύει και που ακριβώς είναι τοποθετημένη στον κώδικα. Για παράδειγμα:  
+  </p>
+  <blockquote>
+    <code>
+      ** ΣΦΑΛΜΑ **: file parq.c: line 1138 (parq_upload_free): assertion failed: 
+      (parq_ul-&gt;by_ip-&gt;uploading &lt;= parq_ul-&gt;by_ip-&gt;total)  
+    </code>
+  </blockquote>
+  <p>
+    Οι προγραμματιστές μπορούν να εξετάσουν τις τιμές και κατ'ευχήν να καταλάβουν 
+    ποιο είναι το σφάλμα που οδήγησε στη λανθασμένη τιμή.  Ή μπορούν να προσθέσουν 
+    περισσότερες συνθήκες στον κώδικα μέχρι να απομονωθεί το πρόβλημα.  
+    Υπάρχουν περισσότερες από πεντακόσιες συνθήκες στον κώδικα του gtk-gnutella, οπότε 
+    καταλαβαίνετε γιατί οι προγραμματιστές θέλουν να αναφέρετε ολόκλητο το μήνυμα 
+    σφάλματος, συμπεριλαμβανομένου του αρχείου και του αριθμού γραμμής.  
+  </p>
+  <p>
+    Αν χρησιμοποιείτε ένα πακέτο ή έχετε περιορίσει μόνοι σας το εκτελέσιμο
+    gtk-gnutella δεν υπάρχουν πολλές πληροφορίες που μπορείτε να βρείτε από 
+    την κατάρρευση εκτός αν το κάνετε compile ξανά και αναπαράγετε το σφάλμα.  
+    Αν δε θέλετε να το κάνετε αυτό, αναφέρετε τις πληροφορίες που περιγράφηκαν 
+    μέχρι τώρα.  Συνηθως δεν είναι αρκετές για να διορθωθεί το πρόβλημα αλλά 
+    τουλάχιστον είναι μία ένδειξη ότι <em>υπάρχει</em> ένα σφάλμα.  Αν παρέχετε 
+    μία καθαρή περιγραφή, κάποιος άλλος ίσως μπορέσει να αναπαράγει το σφάλμα με 
+    μία έκδοση αποσφαλμάτωσης του gtk-gnutella.  
+  </p>
+  <p>
+    Αν κάνατε μόνοι σας compile το gtk-gnutella τότε προεπιλεγμένα, θα γίνει 
+    compile με την επιλογή <code>-O</code> στον compiler, ενώ η εντολή 
+    <code>make install</code> θα περιορίσει το εκτελέσιμο.  Για τη δυνατότητα 
+    αναφοράς σφαλμάτων πρέπει να το κάνετε compile με <code>-g3 -O0</code> για να 
+    λαμβάνετε σύμβολα αποσφαλμάτωσης για παράδειγμα:
+  </p>
+  <blockquote>
+    <code>
+      ./Configure -O -Dccflags="-g3 -Wall" -Doptimize="-O0" -ders
+    </code>
+  </blockquote>
+  <p>
+    Δεν υπάρχει τρόπος να πείτε στο <code>make install</code> να 
+    <strong>μην</strong> περιορίσει το εκτελέσιμο, έτσι πρέπει να αντιγράψετε 
+    μη περιορισμένη έκδοση πάνω από την εγκατεστειμένη.  Για παράδειγμα:
+  </p>
+  <blockquote>
+    <code>
+      su -c 'install -m 555 src/gtk-gnutella /usr/local/bin/gtk-gnutella'
+    </code>
+  </blockquote>
+
+  <p>
+    Όταν καταρρέει το gtk-gnutella, θα πετάξει ένα αρχείο "πυρήνα" που περιέχει μία 
+    εικόνα του πόση μνήμη χρησιμοποίησε, συμπεριλαμβανομένων όλων των τιμών που 
+    διατηρούνταν στη μνήμη τυχαίας προσπέλασης εκείνη τι στιγμή.  Το αρχείο έπειτα 
+    μπορεί να φορτωθεί στον αποσφαλματωτή gdb ώστε να ερευνηθεί η κατάσταση του 
+    gtk-gnutella τη στιγμή της κατάρρευσης.  Βέβαια, οι περισσότερες διανομές 
+    έχουν προεπιλεγμένα απενεργοποιημένες αυτές της αναφορές πυρήνα.  Μπορείτε να 
+    τις ενεργοποιήσετε με την εντολή κελύφους <code>ulimit -S -c unlimited</code>, 
+    η οποία θα επηρεάσει μόνο εκείνο το τερματικό, ή μπορείτε να τοποθετήσετε την 
+    εντολή στο αρχείο ρυθμίσεων του κελύφους σας (π.χ., <code>~/.profile</code> ή 
+    <code>~/.cshrc</code>) για να τις επιτρέπετε παγκόσμια.  Τα νέα αρχεία πυρήνα 
+    θα αντικαταστήσουν τα παλιότερα έτσι ίσως να θέλετε να τα μετακινήσετε σε ασφαλή 
+    τοποθεσία.  Το αρχείο πυρήνα θα βρίσκεται στον αρχικό σας κατάλογο ή στον κατάλογο 
+    από όπου καλέσατε το gtk-gnutella μέσω τερματικού.  Αν θέλετε να ασχοληθείτε σοβαρά 
+    με τα σφάλματα του gtk-gnutella ίσως θέλετε να χρησιμοποιήσετε κάτι σαν το 
+    ακόλουθο σενάριο για να το εκκινείτε.  Πρέπει να το τροποποιήσετε για να ταιριάζει 
+    στο σύστημά σας φυσικά.  Για παράδειγμα το αρχείο πυρήνα θα μπορούσε να ονομαστεί 
+    "core", "gtk-gnutella.core", "core.[PID]", κτλ.  
+  </p>
+  <blockquote>
+    <code>
+      #!/bin/sh<br>
+      <br>
+      # This is where the configuration stuff is stored.<br>
+      #export GTK_GNUTELLA_DIR=$HOME/.gtk gnutella<br>
+      <br>
+      # Turn on core dumps and delete old dump and log<br>
+      ulimit -S -c unlimited<br>
+      rm -f core gtk-gnutella.log<br>
+      <br>
+      # Run gtk-gnutella and redirect output to a log file<br>
+      # The log could get quite large if your uptime is long.<br>
+      # To just keep output in the terminal use:<br>
+      # gtk-gnutella<br>
+      # instead and remove the other log references.<br>
+      gtk-gnutella &gt;gtk-gnutella.log 2&gt;&amp;1<br>
+      <br>
+      # If a core is dumped, create a uniquely named directory<br>
+      # to save the core, log and executable<br>
+      if [ -e core ] ; then <br>
+      &nbsp;&nbsp;Core_Save_Dir=$(date "+core%Y.%m.%d.%H.%M.%S")<br>
+      &nbsp;&nbsp;mkdir $Core_Save_Dir<br>
+      &nbsp;&nbsp;cp $(which gtk-gnutella) $Core_Save_Dir<br>
+      &nbsp;&nbsp;cp core $Core_Save_Dir<br>
+      &nbsp;&nbsp;cp gtk-gnutella.log $Core_Save_Dir<br>
+      fi<br>
+    </code>
+  </blockquote>
+  <p>
+    Εντάξει, τώρα που έχετε ένα μη περιορισμένο εκτελέσιμο και ένα αρχείο πυρήνα, 
+    μπορείτε να χρησιμοποιήσετε τον αποσφαλματωτή <code>gdb</code> για την ανίχνευση του 
+    σφάλματος.  Σημειώστε ότι σε αυτό το παράδειγμα το εκτελέσιμο gtk-gnutella και ο πυρήνας 
+    αποθηκεύονται στον ίδιο κατάλογο. 
+  </p>
+  <blockquote>
+    <code>
+      ~/src/test/core2003.06.12.18.01.40&gt; gdb -c core ./gtk-gnutella<br>
+      GNU gdb 5.2<br>
+      Copyright 2002 Free Software Foundation, Inc.<br>
+      GDB is free software, covered by the GNU General Public License, and you are<br>
+      welcome to change it and/or distribute copies of it under certain conditions.<br>
+      Type "show copying" to see the conditions.<br>
+      There is absolutely no warranty for GDB.  Type "show warranty" for details.<br>
+      This GDB was configured as "i386-slackware-linux"...<br>
+      Core was generated by `gtk-gnutella'.<br>
+      Program terminated with signal 6, Aborted.<br>
+      Reading symbols from /usr/lib/libgtk-1.2.so.0...done.<br>
+      Loaded symbols for /usr/lib/libgtk-1.2.so.0<br>
+      Reading symbols from /usr/lib/libgdk-1.2.so.0...done.<br>
+      Loaded symbols for /usr/lib/libgdk-1.2.so.0<br>
+      Reading symbols from /usr/lib/libgmodule-1.2.so.0...done.<br>
+      Loaded symbols for /usr/lib/libgmodule-1.2.so.0<br>
+      Reading symbols from /usr/lib/libglib-1.2.so.0...done.<br>
+      Loaded symbols for /usr/lib/libglib-1.2.so.0<br>
+      Reading symbols from /lib/libdl.so.2...done.<br>
+      Loaded symbols for /lib/libdl.so.2<br>
+      Reading symbols from /usr/X11R6/lib/libXext.so.6...done.<br>
+      Loaded symbols for /usr/X11R6/lib/libXext.so.6<br>
+      Reading symbols from /usr/X11R6/lib/libX11.so.6...done.<br>
+      Loaded symbols for /usr/X11R6/lib/libX11.so.6<br>
+      Reading symbols from /lib/libm.so.6...done.<br>
+      Loaded symbols for /lib/libm.so.6<br>
+      Reading symbols from /usr/lib/libz.so.1...done.<br>
+      Loaded symbols for /usr/lib/libz.so.1<br>
+      Reading symbols from /usr/lib/libxml2.so.2...done.<br>
+      Loaded symbols for /usr/lib/libxml2.so.2<br>
+      Reading symbols from /lib/libc.so.6...done.<br>
+      Loaded symbols for /lib/libc.so.6<br>
+      Reading symbols from /lib/ld-linux.so.2...done.<br>
+      Loaded symbols for /lib/ld-linux.so.2<br>
+      Reading symbols from /usr/X11R6/lib/X11/locale/common/xlcDef.so.2...done.<br>
+      Loaded symbols for /usr/X11R6/lib/X11/locale/common/xlcDef.so.2<br>
+      Reading symbols from /usr/X11R6/lib/X11/locale/common/ximcp.so.2...done.<br>
+      Loaded symbols for /usr/X11R6/lib/X11/locale/common/ximcp.so.2<br>
+      Reading symbols from /lib/libnss_compat.so.2...done.<br>
+      Loaded symbols for /lib/libnss_compat.so.2<br>
+      Reading symbols from /lib/libnsl.so.1...done.<br>
+      Loaded symbols for /lib/libnsl.so.1<br>
+      Reading symbols from /lib/libnss_db.so.2...done.<br>
+      Loaded symbols for /lib/libnss_db.so.2<br>
+      Reading symbols from /lib/libnss_files.so.2...done.<br>
+      Loaded symbols for /lib/libnss_files.so.2<br>
+      Reading symbols from /lib/libdb-3.1.so...done.<br>
+      Loaded symbols for /lib/libdb-3.1.so<br>
+      #0  0x4036b2f1 in kill () from /lib/libc.so.6<br>
+      (gdb) <br>
+    </code>
+  </blockquote>
+  <p>
+    Εντάξει, τώρα ας κάνουμε μια πλήρη ανίχνευση:
+  </p>
+  <blockquote>
+    <code>
+      (gdb) bt full<br>
+      #0  0x4036b2f1 in kill () from /lib/libc.so.6<br>
+      No symbol table info available.<br>
+      #1  0x4036afbc in raise () from /lib/libc.so.6<br>
+      No symbol table info available.<br>
+      #2  0x4036c7cb in abort () from /lib/libc.so.6<br>
+      No symbol table info available.<br>
+      #3  0x4018f9de in g_logv () from /usr/lib/libglib-1.2.so.0<br>
+      No symbol table info available.<br>
+      #4  0x4018fa91 in g_log () from /usr/lib/libglib-1.2.so.0<br>
+      No symbol table info available.<br>
+      #5  0x0814efda in parq_upload_free (parq_ul=0x8d62328) at parq.c:1138<br>
+      No locals.<br>
+      #6  0x0814d696 in parq_close () at parq.c:416<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;queues = (GList *) 0x0<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dl = (GList *) 0x0<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sl = (GSList *) 0x8a20040<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;remove = (GSList *) 0x8a204b8<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;removeq = (GSList *) 0x8a204c0<br>
+      #7  0x0811f3a4 in gtk_gnutella_exit (n=0) at main.c:113<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;now = 1055466099<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tick = 143511256<br>
+      #8  0x080d7eba in quit (force=0) at main_cb.c:44<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;confirm = 0<br>
+      #9  0x080d7f04 in on_button_quit_clicked (button=0x8358d44, user_data=0x0) at main_cb.c:62<br>
+      No locals.<br>
+      #10 0x400b10d5 in gtk_marshal_NONE__NONE () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #11 0x400e091c in gtk_signal_remove_emission_hook () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #12 0x400dfd85 in gtk_signal_set_funcs () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #13 0x400dde63 in gtk_signal_emit () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #14 0x401149be in gtk_widget_activate () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #15 0x400b9534 in gtk_menu_shell_activate_item () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #16 0x400b87ba in gtk_menu_shell_deactivate () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #17 0x400b0d5f in gtk_marshal_BOOL__POINTER () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #18 0x400dfdc3 in gtk_signal_set_funcs () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #19 0x400dde63 in gtk_signal_emit () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #20 0x4011487b in gtk_widget_event () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #21 0x400b0ca5 in gtk_propagate_event () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #22 0x400afe0e in gtk_main_do_event () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #23 0x4015f047 in gdk_wm_protocols_filter () from /usr/lib/libgdk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #24 0x4018d258 in g_main_dispatch () from /usr/lib/libglib-1.2.so.0<br>
+      No symbol table info available.<br>
+      #25 0x4018d863 in g_main_iterate () from /usr/lib/libglib-1.2.so.0<br>
+      No symbol table info available.<br>
+      #26 0x4018d9fc in g_main_run () from /usr/lib/libglib-1.2.so.0<br>
+      No symbol table info available.<br>
+      #27 0x400af707 in gtk_main () from /usr/lib/libgtk-1.2.so.0<br>
+      No symbol table info available.<br>
+      #28 0x080d7cf2 in main_gui_run () at main_gui.c:650<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coord = {0, 0, 1276, 965}<br>
+      #29 0x0811fc2b in main (argc=1, argv=0xbffff924, env=0xbffff92c) at main.c:463<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i = 256<br>
+      #30 0x4035a17d in __libc_start_main () from /lib/libc.so.6<br>
+      No symbol table info available.<br>
+    </code>
+  </blockquote>
+  <p>
+    Επικολλήστε την ανίχνευση στην αναφορά σφάλματος σας.
+  </p>
+  <p>
+    Οι υπεύθυνοι ανάπτυξης πιθανώς να χρειάζονται και άλλες πληροφορίες αλλά 
+    εφόσον έχουν την ανίχνευση και άλλες πληροφορίες, μπορούν να κάνουν μια καλή 
+    αρχή.  Ίσως να σας ζητήσουν να χρησιμοποιήσετε το gdb ξανά ώστε να τυπώσετε 
+    κάποιες συγκεκριμένες τιμές που θέλουν.  Βέβαια, για επιπλέον πόντους μπορείτε 
+    να προλάβετε τις ανάγκες τους.  Αν γνωρίζετε C, μπορείτε να ρίξετε μια 
+    ματιά στον κώδικα και να αποφασίσετε τις να συμπεριλάβετε αλλά και χωρίς 
+    να γνωρίζετε C, μπορείτε να μαντέψετε βλέποντας τη συνθήκη.  Σε αυτό το 
+    παράδειγμα το μήνυμα σφάλματος ήταν:
+  </p>
+  <blockquote>
+    <code>
+      ** ΣΦΑΛΜΑ **: file parq.c: line 1138 (parq_upload_free): assertion failed: 
+      (parq_ul-&gt;by_ip-&gt;uploading &lt;= parq_ul-&gt;by_ip-&gt;total)  
+    </code>
+  </blockquote>
+  <p>
+    Κοιτώντας την ανίχνευση, ψάχνετε στο #5 <code>parq.c:1138</code>, την ίδια 
+    σειρά όπου είναι τοποθετημένη η συνθήκη, έτσι ας εξετάσουμε μερικές τιμές σε 
+    αυτή την περιοχή:
+  </p>
+  <blockquote>
+    <code>
+      (gdb) frame 5<br>
+      #5  0x0814efda in parq_upload_free (parq_ul=0x8d62328) at parq.c:1138<br>
+      1138 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; g_assert(parq_ul-&gt;by_ip-&gt;uploading &lt;= parq_ul-&gt;by_ip-&gt;total);
+    </code>
+  </blockquote>
+  <p>
+    Πρώτα, ας τυπώσουμε τις τιμές των μελών του <code>parq_ul</code>.
+  </p>
+  <blockquote>
+    <code>
+      (gdb) p * parq_ul<br>
+      $1 = {magic = 1782120609, flags = 10, position = 1735, relative_position = 1, has_slot = 0, had_slot = 0, eta = 81, <br>
+      &nbsp;&nbsp;expire = 1055465788, retry = 1055465787, enter = 1055465787, updated = 1055465787, ban_timeout = 1055466387, <br>
+      &nbsp;&nbsp;disc_timeout = 0, last_queue_sent = 0, queue_sent = 0, queue_refused = 0, is_alive = 0, <br>
+      &nbsp;&nbsp;id = 0x8a15af8 "6cad90dc1f0edd94f5d0e991cc89f25e", <br>
+      &nbsp;&nbsp;ip_and_name = 0x8a16578 "3521280541 Somethingorother.mp3", <br>
+      &nbsp;&nbsp;name = 0x8a16583 "Somethingorother.mp3", remote_ip = 3521280541, file_size = 2652639, <br>
+      &nbsp;&nbsp;chunk_size = 1005329, ip = 0, port = 0, major = 0, minor = 0, queue = 0x84f85c8, by_ip = 0x86259e8}
+    </code>
+  </blockquote>
+  <p>
+    Κοιτάξτε ότι το τελευταίο μέλος της λίστας είναι το <code>by_ip = 0x86259e8</code>.  
+    Η συνθήκη εξετάζει δύο μέλη του <code>parq_ul-&gt;by_ip</code> 
+    οπότε ας τυπώσουμε τις τιμές τους.
+  </p>
+  <blockquote>
+    <code>
+      (gdb) p * parq_ul-&gt;by_ip<br>
+      $2 = {uploading = 2, total = 1, ip = 3521280551, list = 0x8bb639c}
+    </code>
+  </blockquote>
+  <p>Εκεί βρίσκονται οι τιμές που ο υπεύθυνος ανάπτυξης ψάχνει: 
+    <code>parq_ul-&gt;by_ip-&gt;uploading</code> = 2 και 
+    <code>parq_ul-&gt;by_ip-&gt;total</code> = 1.  Επειδή το <code>2 &lt;= 1</code> είναι 
+    λάθος, η συνθήκη δεν ισχύει.  Τώρα ο υπεύθυνος ανάπτυξης μπορεί να προσπαθήσει 
+    να καταλάβει τι πήγε λάθος.
+  </p>
+  
+<h3><a name="bugreport-where">Ποιό είναι το καλύτερο μέρος για την υποβολής της αναφοράς σφάλματός μου;</a></h3>
+  <p>
+    Μπορείτε να αναφέρετε το σφάλμα σας χρησιμοποιώντας το 
+    <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+    SourceForge.net Bug Tracker</a> ή μπορείτε να στείλετε την αναφορά σας με email στην ταχυδρομική λίστα 
+    <a href="http://lists.sourceforge.net/lists/listinfo/gtk-gnutella-devel/">
+    gtk-gnutella-devel</a>.  Επίσης μπορείτε να βρείτε έναν υπεύθυνο ανάπτυξης 
+    στο IRC στο δίκτυο <a href="http://www.freenode.net/">Freenode network</a> στο 
+    κανάλι #gtk-gnutella.  
+  </p>
+  <p>
+    ΤΟ IRC μπορεί να αποδειχθεί χρήσιμο για μια γρήγορη απάντηση αν πετύχετε έναν 
+    υπεύθυνο ανάπτυξης στο κανάλι, αλλά είναι εύκολο να ξεχαστούν τα σφάλματα αν
+    αναφερθούν μόνο εκεί.  Είναι ένα καλό μέρος όμως να πάτε αν δεν είστε σίγουροι 
+    αν το πρόβλημά σας είναι σφάλμα ή όχι.  Είναι το τέλειο μέρος να πάτε αν 
+    έχετε ήδη κάνει αναφορά σφάλματος στη λίστα ή το bug tracker και θέλετε να 
+    μάθετε αν οι υπεύθυνοι ανάπτυξης θέλουν περισσότερες πληροφορίες από εσάς.  Τη 
+    στιγμή συγγραφής αυτών των γραμμών, όλοι υ υπεύθυνοι ανάπτυξης ζούσαν στη ζώνη 
+    ώρας Κεντρικής Ευρώπης (CET)(UTC+1). Μπορείτε να τους βρείτε για μια γρήγορη 
+    ερώτηση το πρωί πριν τη δουλειά αλλά η καλύτερη ώρα είναι τα απογεύματα ή 
+    τα σαββατοκύριακα.  Μπορείτε να δείτε την
+    <a href="http://www.maol.ch/irc/?channel=gtk-gnutella">καταγραφή IRC</a> για να πάρετε μια  
+    μια ιδέα του πότε θα βρείτε άτομα στο κανάλι.  Οι ώρες που είναι στη λίστα 
+   καταγραφής είναι επίσης σε UTC+1.
+  </p>
+  <p>
+    Η ταχυδρομική λίστα υπευθύνων ανάπτυξης είναι ένα καλό μέρος για την τοποθέτηση κρίσιμων
+    σφαλμάτων όπως οι καταρρεύσεις, αν και μπορείτε να χρησιμοποιήσετε και το bug tracker.  
+    Περισσότεροι θα διαβάσουν την αναφορά σφάλματος στη λίστα από ότι στο bug tracker 
+    και ίσως είναι λίγο πιο βολικό για την ανάγνωση ανιχνεύσεων κτλ.  Από την άλλη 
+    Τα σφάλματα που αναφέρονται στη λίστα μπορούν να ξεχαστούν πιο εύκολα από αν 
+    υποβληθούν στο bug tracker.  Πρέπει να κάνετε εγγραφή στο για να SourceForge 
+    εγγραφείτε στο gtk-gnutella-devel, αλλά δε χρειάζετα να είστε εγγεγραμμένοι για 
+    να στείλετε ένα μήνυμα. Αν στείλετε ένα μήνυμα στην ταχυδρομική λίστα, ή προσθέστε 
+    την ηλεκτρονική σας διεύθυνση στην κεφαλίδα Απάντηση-σε: 
+    ή αναφέρετε ότι δεν είστε εγγεγραμμένοι.
+  </p>
+  <p>
+    Το καλύτερο μέρος υποβολής σφαλμάτων είναι το SourceForge bug tracker.  Άλλωστε, 
+    αυτός είναι και ο λόγος ύπαρξής του.  Ψάξτε το λίγο για να δείτε μήπως το σφάλμα 
+    σας έχει ήδη αναφερθεί, και αν ναι, προσθέστε την αναφορά σας ως σχόλιο και 
+    όχι ως υποβολή νέου σφάλματος.  Πρέπει να εγγραφείτε στο SourceForge και να έχετε 
+    εισέλθει για να μπορείτε να υποβάλλετε ένα σφάλμα.  
+  </p>
+  <p>
+    Μόλις υποβάλλετε την αναφορά σας μην την ξεχάσετε.  Η αναφορά σφάλματός σας δεν 
+    έχει ολοκληρωθεί μέχρι να απαντήσετε όλες της ερωτήσεις των υπευθύνων ανάπτυξης 
+    που θα ακολουθήσουν.  Αυτοί που υποβάλλουν αναφορές σφαλμάτων χωρίς να απαντούν 
+    στις ερωτήσεις που ακολουθούν είναι άκρως εκνευριστικοί για τους υπεύθυνους 
+    ανάπτυξης.  Μπορεί η χρήση λογισμικού αποσφαλμάτωσης να απογοητεύει του υπεύθυνους 
+    αποσφαλμάτωσης αλλά η λήψη καλών αναφορών σφαλμάτων μπορεί να βοηθήσει στο να 
+    γίνει η δημιουργία δωρεάν λογισμικού πιο ικανοποιητική.  
+  </p>
+<!-- end bugreport_howto -->

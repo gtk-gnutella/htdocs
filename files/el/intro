@@ -1,0 +1,45 @@
+<!-- content -->
+<!-- $Id$ -->
+
+<h3>Ο Γραφικός Πελάτης Gnutella για Unix</h3>
+
+<p>
+  Το Gtk-Gnutella είναι ένας εξυπηρετητής/πελάτης για το 
+  <a href="http://www.gnutella.com/">Gnutella</a>.
+  Τρέχει σε όλα τα Unix-like συστήματα που υποστηρίζουν
+<a href="http://www.gtk.org/">GTK+</a> 
+  (1.2 ή νεότερο) και <a href="http://www.libxml.org">libxml</a>.
+  Δεν απαιτείται Gnome. Προς το παρόν αναπτύσσεται και δοκιμάζεται σε 
+  Linux (Debian 2.2) και είναι γνωστό ότι τρέχει τουλάχιστον σε Linux,
+  <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>,
+  <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
+  <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
+  <a href="http://gtk-gnutella.darwinports.com/">Darwin</a>,
+Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS ενώ οι αρχιτεκτονικές υπολογιστή περιλαμβάνουν 
+x86, AMD64, PowerPC, SPARC, MIPS.
+</p>
+
+<p>
+  Εκδίδεται υπό τους όρους της άδειας GNU General Public (GPL).
+</p>
+
+<p>
+  Το Gtk-Gnutella δεν έχει τελειώσει ακόμα, αλλά είναι πλήρως λειτουργικό: μπορείτε να μοιραστείτε, 
+  να αναζητήσετε, και να κατεβάσετε.  Επίσης είναι σταθερό, οι χρήστες συνήθως το αφήνουν  
+  να τρέχει μόνο του για μέρες.
+</p>
+
+<p>
+  Όλες οι ιδέες και τα σχόλια είναι καλοδεχούμενα στην ταχυδρομική λίστα gtk-gnutella-devel.
+  Τα σφάλματα πρέπει να αναφέρονται στο 
+  <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+  SourceForge.net Bug Tracker</a>
+</p>
+
+<p style="text-align: center;">
+  <a href="?page=devel">Χρειαζόμαστε άτομα που θα συμβάλλουν
+  σε ανάπτυξη C και στη συγγραφή εγχειριδίων.</a>
+</p>
+
+<!-- end intro -->
+

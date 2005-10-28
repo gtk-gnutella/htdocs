@@ -1,0 +1,62 @@
+<!-- $Id$ -->
+<h1>Screenshots</h1>
+
+<p>
+  Εδώ μπορείτε να εξερευνήσετε το γραφικό περιβάλλον του gtk-gnutella 0.90 stable.  Κάντε 
+  κλικ στις εικόνες για μεγαλύτερο μέγεθος.<br>
+  Αυτά τα screenshots είναι με το IceGradient gtk-engine με μία μικρή αλλαγή 
+  χρωμάτων.
+</p>
+
+<p>
+  Μπορείτε να δείτε screenshots της παλιότερης έκδοσης 0.85 
+  <a class=navlink href="?page=shots085">here</a>.
+</p>
+
+<hr>
+<h4>Κατάσταση δικτύου Gnutella</h4>
+<hr>
+<p>
+  <a href="/images/shots/090/gnutellanet.png">
+    <img src="/images/shots/090/small_gnutellanet.jpg" width="200" height="150" alt="Gnutella network status"></a>
+</p>
+<hr>
+<h4>Αποστολές και λήψεις</h4>
+<hr>
+<p>
+  <a href="/images/shots/090/uploads.png">
+    <img src="/images/shots/090/small_uploads.jpg" width="200" height="150" alt="Uploads"></a>
+  <a href="/images/shots/090/upload_stats.png">
+    <img src="/images/shots/090/small_upload_stats.jpg" width="200" height="150" alt="Uploads statistics"></a>
+  <a href="/images/shots/090/downloads.png">
+    <img src="/images/shots/090/small_downloads.jpg" width="200" height="150" alt="Downloads and queue"></a>
+</p>
+<hr>
+<h4>Αναζήτηση και φιλτράρισμα</h4>
+<hr>
+<p>
+  <a href="/images/shots/090/search.png">
+    <img src="/images/shots/090/small_search.jpg" width="200" height="150" alt="Searches"></a>
+  <a href="/images/shots/090/search_monitor.png">
+    <img src="/images/shots/090/small_search_monitor.jpg" width="200" height="150" alt="Search monitor"></a>
+  <a href="/images/shots/090/search_stats.png">
+    <img src="/images/shots/090/small_search_stats.jpg" width="200" height="150" alt="Search stats"></a>
+  <a href="/images/shots/090/filter.png">
+    <img src="/images/shots/090/small_filter.jpg" width="200" height="106" alt="Filter dialog"></a>
+</p>
+<hr>
+<h4>Ρυθμίσεις</h4>
+<hr>
+<p>
+  <a href="/images/shots/090/config_net.png">
+    <img src="/images/shots/090/small_config_net.jpg" width="200" height="150" alt="Network settings"></a>
+  <a href="/images/shots/090/config_bw.png">
+    <img src="/images/shots/090/small_config_bw.jpg" width="200" height="150" alt="Bandwidth control"></a>
+  <a href="/images/shots/090/config_gnet.png">
+    <img src="/images/shots/090/small_config_gnet.jpg" width="200" height="150" alt="GnutellaNet settings"></a>
+  <a href="/images/shots/090/config_download.png">
+    <img src="/images/shots/090/small_config_download.jpg" width="200" height="150" alt="Download settings"></a>
+  <a href="/images/shots/090/config_upload.png">
+    <img src="/images/shots/090/small_config_upload.jpg" width="200" height="150" alt="Upload settings"></a>
+</p>
+<!-- end shots090 -->

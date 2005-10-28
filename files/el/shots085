@@ -1,0 +1,21 @@
+<!-- $Id$ -->
+<h3>Gtk-Gnutella Screenshots</h3>
+
+<p>
+  Τα ακόλουθα screenshots είναι με το θέμα PHOENIX IceWM. Δείτε το
+  <a href="http://icewm.themes.org/">themes.org</a> αν θέλετε να κατεβάσετε
+  αυτό ή άλλα θέματα.
+</p>
+
+<p>
+  <img src="/images/shots/085/gnet.png" width="728" height="544" alt="Gnutella Network Status"><br>
+  <br>
+  <img src="/images/shots/085/upload.png" width="728" height="544" alt="Uploads"><br>
+  <br>
+  <img src="/images/shots/085/download.png" width="728" height="544" alt="Downloads and Queue"><br>
+  <br>
+  <img src="/images/shots/085/search.png" width="728" height="544" alt="Searches"><br>
+  <br>
+  <img src="/images/shots/085/config.png" width="728" height="544" alt="Configuration Page">
+</p>
+<!-- end shots085 -->

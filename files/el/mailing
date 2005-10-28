@@ -1,0 +1,44 @@
+<!-- $Id$ -->
+<h1>Ζητώντας βοήθεια</h1>
+<h4>Ταχυδρομικές Λίστες</h4>
+
+<p>
+  Απλώς κάντε κλικ σε ένα σύνδεσμο για να εγγραφείτε ή να διαγραφείτε. 
+</p>
+
+<p>
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-users/">
+    gtk-gnutella-users</a> Κύρια λίστα για τους χρήστες του Gtk-Gnutella ( 
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-users">
+    αρχείο</a> )<br>
+
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-devel/">
+    gtk-gnutella-devel</a> Αν θέλετε να συμβάλλετε στην ανάπτυξη του Gtk-Gnutella ( 
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-devel">
+    αρχείο</a> )<br>
+
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-announce/">
+    gtk-gnutella-announce</a> Μόνο για ανακοινώσεις εκδόσεων ( 
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-announce">
+    αρχείο</a> )<br>
+</p>
+
+<h4>Συζήτηση στο IRC</h4>
+
+<p>
+  Στο δίκτυο <a href="http://www.freenode.net/">freenode network</a> (πρώην 
+  Open Projects Network / OPN) συναντιόμαστε στο κανάλι 
+  <a href="http://www.maol.ch/irc/egg2html.php?channel=gtk-gnutella">
+    #gtk-gnutella</a>. Εκεί είναι πάντα κάποιος, αλλά όχι πάντα κάποιος που 
+  ξέρει να απαντήσει στην ερώτησή σας. Χρειάζεστε έναν πελάτη IRC όπως το 
+  <a href="http://www.xchat.org">xchat</a> για να μας επισκεφτείτε.
+</p>
+
+<h4>Κοινότητες Συζητήσεων</h4>
+
+<p>
+  Έχουμε μία 
+  <a href="http://www.gnutellaforums.com/forumdisplay.php?s=&amp;forumid=63">
+    κοινότητα συζητήσεων στο gnutellaforums.com</a>. Προσοχή, δε γίνονται πολύ συχνές επισκέψεις.
+</p>
+<!-- end mailing -->

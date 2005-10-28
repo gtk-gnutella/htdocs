@@ -1,0 +1,109 @@
+<h1>Κώδικας 101</h1>
+<p>
+	Εδώ θέλουμε να βάλουμε μερικές μικρές δοκιμασίες της γλώσσας C για 
+	να δούμε αν μπορείτε να παίξετε με τον κώδικα του gtk-gnutella. 
+	Προέρχονται από τις εμπειρίες μας με κατά τη διάρκεια προγραμματισμού του έργου.
+</p>
+
+<h2>Test 1</h2>
+<p>
+  Συντάκτης: Richard Eckart<br>
+	Δυσκολία: μέτρια
+</p>
+
+<h3>Ερώτηση</h3>
+<p>
+	The code below extracts the user agent from the headers of an upload. The
+	gui displays the useragent string or "..." if <code>u-&gt;user_agent</code> is
+	<code>NULL</code>.
+	Unfortunately there is a bug in that piece of code that caused the GUI of 
+	our test user to always display "...". Can you locate it?
+</p>
+<pre>
+ 1: /*
+ 2:  * Extract User-Agent.
+ 3:  *
+ 4:  * X-Token: GTKG token
+ 5:  * User-Agent: whatever
+ 6:  * Server: whatever (in case no User-Agent)
+ 7:  */
+ 8:
+ 9: token = header_get(header, "X-Token");
+10: user_agent = header_get(header, "User-Agent");
+11:
+12: /* Maybe they sent a Server: line, thinking they're a server? */
+13: if (user_agent != NULL)
+14:     user_agent = header_get(header, "Server");
+15:
+16: if (user_agent != NULL)
+17:     faked = !version_check(user_agent, token, u-&gt;ip);
+18:
+19: if (u-&gt;user_agent == NULL &amp;&amp; user_agent != NULL) {
+20:     if (faked) {
+21:         gchar *name = g_strdup_printf("!%s", user_agent);
+22:
+23:         u-&gt;user_agent = atom_str_get(name);
+24:         g_free(name);
+25:     } else
+26:         u-&gt;user_agent = atom_str_get(user_agent);
+27: }
+</pre>
+
+<h2>Test 2</h2>
+<p>
+  Συντάκτης: Richard Eckart<br>
+	Δυσκολία: μέτρια
+</p>
+
+<h3>Ερώτηση</h3>
+<p>
+	While running gtkg compiled with Gtk1 support we found that the code below contains
+	a memory leak. There are two places in the code where new memory is allocated.
+	Those are on the lines 18 and 19. Can you find out where the leak is?
+</p>
+<pre>
+ 1: /*
+ 2: * on_popup_downloads_push_activate
+ 3: *
+ 4: * All selected downloads fallback to push
+ 5: */
+ 6: void on_popup_downloads_push_activate(
+ 7:    GtkMenuItem * menuitem, gpointer user_data)
+ 8: {
+ 9:     struct download *d;
+10:     GList *node_list, *data_list = NULL;
+11:     GtkCTree *ctree_downloads = GTK_CTREE
+12:         (lookup_widget(main_window, "ctree_downloads"));
+13:     GtkCTree *ctree_downloads_queue = GTK_CTREE
+14:         (lookup_widget(main_window, "ctree_downloads_queue"));
+15:
+16:     gtk_clist_freeze(GTK_CLIST(ctree_downloads_queue));
+17:     gtk_clist_freeze(GTK_CLIST(ctree_downloads));
+18:     node_list = g_list_copy(GTK_CLIST(ctree_downloads)-&gt;selection);
+19:     data_list = downloads_gui_collect_ctree_data(ctree_downloads,
+20:         node_list, TRUE, TRUE);
+21:
+23:     for (; NULL != data_list; data_list = g_list_next(data_list)) {
+24:         d = (struct download *) data_list-&gt;data;
+25:
+26:         if (!d) {
+27:             g_warning(
+28:                 "on_popup_downloads_push_activate(): row has NULL data\n");
+29:             continue;
+30:         }
+31:         download_fallback_to_push(d, FALSE, TRUE);
+32:     }
+33:
+34:     gtk_clist_thaw(GTK_CLIST(ctree_downloads_queue));
+35:     gtk_clist_thaw(GTK_CLIST(ctree_downloads));
+36:     g_list_free(data_list);
+37:     g_list_free(node_list);
+38: }
+</pre>
+
+<h2>Απαντήσεις</h2>
+<p>
+	Οι <a href="?page=code101a">απαντήσεις</a> βρίσκονται σε ξεχωριστή 
+	σελίδα. Μην αυτοεξαπατάστε διαβάζοντας την απάντηση πριν την ερώτηση.
+</p>
+

@@ -1,0 +1,140 @@
+<!-- $Id$ -->
+<h1>Screenshots</h1>
+
+<p>
+  Εδώ μπορείτε να εξερευνήσετε το γραφικό περιβάλλον του gtk-gnutella 0.96u (29 Ιουλίου, 2005).
+  Κάντε κλικ στις εικόνες για μεγαλύτερο μέγεθος.  Αυτά είναι screenshots και του
+  <a href="#shots096u-gtk1">GTK1</a> και του <a href="#shots096u-gtk2">GTK2</a>.
+</p>
+
+<p>
+  Για ιστορικούς λόγους, μπορείτε να δείτε screenshots των παλιότερων εκδόσεων
+  <a class="navlink" href="?page=shots085">0.85</a>
+  (εκδόθηκε στις 5 Απριλίου, 2002),
+  <a class="navlink" href="?page=shots090">0.90</a>
+  (εκδόθηκε στις 7 Ιουλίου, 2002) και
+  <a class="navlink" href="?page=shots092">0.92</a>
+  (εκδόθηκε στις 15 Ιουνίου , 2003).
+</p>
+
+<h2>GTK1 screenshots</h2><a name="shots096u-gtk1"></a>
+
+<p>
+  Αυτά τα screenshots είναι με το 'pixmap' gtk-engine με μικρή αλλαγή του γραμματοσειρών
+  και των χρωμάτων.
+</p>
+
+<hr>
+<h3>Κατάσταση δικτύου Gnutella</h3>
+<hr>
+
+<table width="100%" style="text-align: center;" summary="layout">
+  <tr>
+    <td>&nbsp;</td>
+      <td>
+        <a class="image" href="/images/shots/096u/GnutellaNet-Leaf-GTK1-fr.png">
+          <img src="/images/shots/096u/small_GnutellaNet-Leaf-GTK1-fr.jpg"
+               width="256" height="187"
+               alt="Gnet Leaf mode status (in French interface)">
+        </a>
+        <a class="image" href="/images/shots/096u/GnutellaNet-Ultra-GTK1-fr.png">
+          <img src="/images/shots/096u/small_GnutellaNet-Ultra-GTK1-fr.jpg"
+               width="256" height="187"
+               alt="Gnet Ultra mode status (in French interface)">
+        </a>
+      </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<hr>
+<h3>Αναζήτηση</h3>
+<hr>
+
+<table width="100%" style="text-align: center;" summary="layout">
+  <tr>
+    <td>&nbsp;</td>
+      <td>
+        <a class="image" href="/images/shots/096u/Search-GTK1-fr.png">
+          <img src="/images/shots/096u/small_Search-GTK1-fr.jpg"
+               width="256" height="187"
+               alt="Searches (in French interface)">
+        </a>
+      </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<h2>GTK2 screenshots</h2><a name="shots096u-gtk2"></a>
+
+<p>
+  Αυτά τα screenshots είναι με το <a href="http://www.xfce.org/">Xfce</a>
+  gtk-engine με το θέμα Xfce-4.2.
+</p>
+
+<hr>
+<h3>Κατάσταση δικτύου Gnutella</h3>
+<hr>
+
+<table width="100%" style="text-align: center;" summary="layout">
+  <tr>
+    <td>&nbsp;</td>
+      <td>
+        <a class="image" href="/images/shots/096u/GnutellaNet-Leaf-GTK2.png">
+          <img src="/images/shots/096u/small_GnutellaNet-Leaf-GTK2.jpg"
+               width="252" height="181" alt="Gnet Leaf mode status">
+        </a>
+        <a class="image" href="/images/shots/096u/GnutellaNet-Ultra-GTK2.png">
+          <img src="/images/shots/096u/small_GnutellaNet-Ultra-GTK2.jpg"
+               width="252" height="181" alt="Gnet Ultra mode status">
+        </a>
+        <a class="image" href="/images/shots/096u/GnutellaNet-Leaf-GTK2-ja.png">
+          <img src="/images/shots/096u/small_GnutellaNet-Leaf-GTK2-ja.jpg"
+               width="252" height="181"
+               alt="Gnet Leaf mode status (in Japanese interface)">
+        </a>
+        <a class="image" href="/images/shots/096u/GnutellaNet-Ultra-GTK2-ja.png">
+          <img src="/images/shots/096u/small_GnutellaNet-Ultra-GTK2-ja.jpg"
+               width="252" height="181"
+               alt="Gnet Ultra mode status (in Japanese interface)">
+        </a>
+      </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<hr>
+<h3>Αναζήτηση</h3>
+<hr>
+
+<table width="100%" style="text-align: center;" summary="layout">
+  <tr>
+    <td>&nbsp;</td>
+      <td>
+        <a class="image" href="/images/shots/096u/Search1-GTK2.png">
+          <img src="/images/shots/096u/small_Search1-GTK2.jpg"
+               width="252" height="181" alt="Searches">
+        </a>
+        <a class="image" href="/images/shots/096u/Search2-GTK2.png">
+          <img src="/images/shots/096u/small_Search2-GTK2.jpg"
+               width="252" height="181" alt="Another Searches">
+        </a>
+        <a class="image" href="/images/shots/096u/Search1-GTK2-ja.png">
+          <img src="/images/shots/096u/small_Search1-GTK2-ja.jpg"
+               width="252" height="181"
+               alt="Searches (in Japanese interface)">
+        </a>
+        <a class="image" href="/images/shots/096u/Search2-GTK2-ja.png">
+          <img src="/images/shots/096u/small_Search2-GTK2-ja.jpg"
+               width="252" height="181"
+               alt="Another Searches (in Japanese interface)">
+        </a>
+      </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<!-- The following is a dummy to cause some free space at the bottom -->
+<p>&nbsp;</p>
+
+<!-- end shots096u -->

@@ -1,0 +1,82 @@
+<!-- $Id$ -->
+
+<!--      -->
+<!-- NEWS -->
+<!--      -->
+<div class="sb_section">
+<a href="?page=news" class="sb_section_header">Νέα</a><br>
+</DIV>
+
+<!--               -->
+<!-- DOCUMENTATION -->
+<!--               -->
+<div class="sb_section">
+  <a href="?page=docs" class="sb_section_header">Εγχειρίδιο</a>
+
+  <div class="indent">
+    <a href="?page=features">Χαρακτηριστικά</a><br>
+    <a href="?page=faq">Συχνές Ερωτήσεις</a><br>
+    <a href="?page=shots096u">Screenshots</a><br>
+    <a href="?page=release_history">Ιστορικό</a><br>
+  </div>
+</div>
+
+<!--              -->
+<!-- Getting help -->
+<!--              -->
+<div class="sb_section">
+  <a href="?page=mailing" class="sb_section_header">Ζητώντας&nbsp;βοήθεια</a>
+
+  <div class="sb_section_content">
+    <a href="?page=bugreport_howto">
+      Howto&nbsp;αναφοράς&nbsp;σφαλμάτων</a><br>
+    <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+      Bug&nbsp;Tracker</a><br>
+    <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
+      Αιτήματα&nbsp;Χαρακτηριστικών</a><br>
+  </div>
+</div>
+
+<!--            -->
+<!-- DEVELOPERS -->
+<!--            -->
+<div class="sb_section">
+  <a href="?page=devel" class="sb_section_header">Υπεύθυνοι Ανάπτυξης</a>
+
+  <div class="sb_section_content">
+    <a href="http://sourceforge.net/projects/gtk-gnutella/">
+      Σελίδα έργου SF</a><br>
+    <a href="http://gtk-gnutella.sourceforge.net/doxygen/">
+      Παραπομπές API</a><br>
+    <a href="?page=code101">Κώδικας 101</a>
+  </div>
+</div>
+
+<!--          -->
+<!-- DOWNLOAD -->
+<!--          -->
+<div class="sb_section">
+  <a href="http://sourceforge.net/project/showfiles.php?group_id=4467"
+    class="sb_section_header"
+    >Download</a>
+   
+  <div class="sb_section_content">
+    <a href="?page=devel#devel-snapshots">CVS&nbsp;Snapshots</a>
+  </div>
+</div>
+
+<!--        -->
+<!--  LINKS -->
+<!--        -->
+
+<div class="sb_section">
+  <a href="?page=links" class="sb_section_header">Σύνδεσμοι</a>
+</div>
+
+<!--        -->
+<!-- DONATE -->
+<!--        -->
+<div class="sb_section">
+  <a href="?page=donate" class="sb_section_header">Δωρεά</a>
+</div>
+<!-- end sidenav -->
