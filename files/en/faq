@@ -48,6 +48,7 @@
   <li><a href="#search3">How can I ignore files with no SHA1?</a></li>
   <li><a href="#search-entry">Where did the search entry box go?</a></li>
   <li><a href="#search-passive">What are "Passive" searches?</a></li>
+  <li><a href="#encoding">Why are there unreadable results?</a></li>
 </ul>
 
 <h2>Downloads</h2>
@@ -63,6 +64,7 @@
   <li><a href="#down8">I got a file that just won't download!</a></li>
   <li><a href="#down9">In the downloads pane, what does it mean if the color
   of the text is grey instead of black?</a></li>
+  <li><a href="#filenames">What is the filename encoding?</a></li>
 </ul>
 
 <h2>Uploads</h2>
@@ -73,7 +75,6 @@
 <h2>GTK+ 2.x</h2>
 <ul>
   <li><a href="#gtk2_slow">Gtk2 is way sloooow.</a></li>
-  <li><a href="#gtk2_ctype">Non-ASCII characters show up as _ (underscore).</a></li>
 </ul>
 
 <!--
@@ -90,7 +91,9 @@
 <p>
   Gnutella is a decentralized Peer to Peer information exchanging network. At
   the moment you can publish and download files of any kind using the Gnutella
-  network.  For more information, visit the
+  network. The modern Gnutella protocol is officially documented at the
+  <a href="http://www.the-gdf.org/">GDF wiki</a>. For more information,
+  visit the
   <a href="http://www.wikipedia.org/wiki/Gnutella"
   >Wikipedia definition of Gnutella</a>
   or the <a href="http://www.infoanarchy.org/wiki/wiki.pl?Gnutella">definition
@@ -435,6 +438,18 @@ See also,
   file types in each.
 </p>
 
+<h3><a name="encoding">Why are there unreadable results?</a></h3>
+<p>
+  The standard encoding in the modern Gnutella network is UTF-8. All queries
+  and results should be encoded this way. Unfortunately, there is still
+  many legacy software that does not convert textual data (like filenames
+  and queries) to UTF-8 but uses arbitrary character sets instead. Gtk-Gnutella
+  tries to detect the used character set but this cannot be perfect. It may
+  also replace characters with underscores if they cannot be converted to
+  UTF-8.
+</p>
+
+
 <h2>Downloads</h2>
 
 <h3><a name="down0">What does the status "Ignoring requested [SHA1|name &amp; size]" mean?</a></h3>
@@ -549,6 +564,55 @@ See also,
   It means that the file is received over a <a href="#down_push">push route</a>.
 </p>
 
+<h3><a name="filenames">What is the filename encoding?</a></h3>
+<p>
+  Gtk-Gnutella use UTF-8 as default encoding for filenames. If your locale
+  setting does not use UTF-8, other applications may not display these
+  filenames correctly or may have problems accessing them in the worst case.
+  You can change the encoding using the environment variable
+  G_FILENAME_ENCODING. This affects most applications that use Gtk+ or GLib.
+</p>
+
+<p>
+  If your system does not use UTF-8, it is recommend to use either
+
+  <kbd>
+   G_FILENAME_ENCODING="UTF-8,@locale,ISO-8859-1"
+  </kbd>
+  or
+  <kbd>
+  G_FILENAME_ENCODING="@locale,UTF-8,ISO-8859-1"
+  </kbd>.
+
+  <p>
+  The first item in the list is the encoding used to store files. Following
+  items are character sets used to convert existing filenames as found on
+  the disk to UTF-8 for display purposes and information exchange. For people
+  from Western Europe it is recommendable to add ISO-8859-1 as shown above to
+  the list if you share any files that contain non-ASCII characters and which
+  are encoded as ISO-8859-1 characters. For people from other regions of the
+  world, other character sets might be more appropriate.
+  </p>
+
+  <!-- Translators: Feel free to change the ISO-8859-1 example to whatever
+       character set is likely used by the audience. !-->
+
+  In most cases, the special item "@locale" takes care of this. This stands for
+  the encoding used by the current locale and it's very likely that filenames
+  are encoded with it. You can list multiple secondary filename
+  character sets. When converting filenames to UTF-8, the first successful
+  conversion will be used. The character sets are tried in the listed order.
+  Non-convertible characters are replaced with underscores. This means if
+  you download a file with mostly Arabic or Japanese characters in it, 
+  converting the filename to ASCII or ISO-8859-1 strips most or all information
+  from the filename. Therefore it's best to stick with UTF-8.
+</p>
+
+<p>
+  Gtk-Gnutella supports G_FILENAME_ENCODING since version 0.96 regardless
+  whether you use Gtk+ 1.2 or Gtk+ 2.x as front-end.
+</p>
+
 <h2>Uploads</h2>
 
 <h3><a name="up0">What does "Normalized" mean?</a></h3>
@@ -557,26 +621,18 @@ See also,
   file size.
 </p>
 
+
 <h2>GTK+ 2.x</h2>
 
 <h3><a name="gtk2_slow">Gtk2 is way sloooow.</a></h3>
 <p>
-  Set the environment variable <code>GDK_USE_XFT</code> to 0 and see whether
-  this helps. This turns off anti aliasing in Gtk2 which can use a lot of cpu.
-  The Gtk2 frontend is much slower than the Gtk1 frontend. So on a slow machine,
-  you should consider using the Gtk1 frontend.
+  Gtk+ 2.x has complex and powerful font-rendering. There's hope that future
+  versions will be much more optimized. If the performance is unacceptable,
+  you should consider using Gtk+ 1.2 instead. However, if you switch to a
+  pane with little action and minimize the window, the performance difference
+  is negligible.
 </p>
 
-
-<h3><a name="gtk2_ctype">Non-ASCII characters show up as _ (underscore).</a></h3>
-<p>
-  Set the environment variable <code>LC_CTYPE</code> or <code>LC_ALL</code> to
-  an appropriate value for the encoding you use. For example, if you use
-  special German characters in your filenames, set it to
-  <code>de_DE.ISO8859-1</code>. The valid values depend on your operating
-  system; see the manpage setlocale(3) for details. Ideally, everyone would
-  use UTF-8 encoding which covers nearly all languages.
-</p>
 
 <!-- end faq -->
 <!-- vi: set et ts=2 sw=2: -->
