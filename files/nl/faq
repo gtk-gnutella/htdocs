@@ -12,9 +12,9 @@
   <li><a href="#general0">Wat is gnutella?</a></li>
   <li><a href="#general-gtkg">Wat is GTKG?</a></li>
   <li><a href="#general1">Het gebruikt teveel bandbreedte!</a></li>
-  <li><a href="#general-ultrapeer">What are Ultrapeers and Leaf nodes?</a></li>
-  <li><a href="#general-firewall">Why does Gtk-Gnutella claim it's firewalled
-    when it's not?</a>
+  <li><a href="#general-ultrapeer">Wat zijn Ultrapeers en Leaf nodes?</a></li>
+  <li><a href="#general-firewall">Waarom geeft Gtk-Gnutella aan dat het
+  firewalled is, ookal is dat niet zo?</a>
   </li>
 </ul>
 
@@ -144,47 +144,52 @@
   </li>
 </ul>
 
-<h3><a name="general-ultrapeer">What are Ultrapeers and Leaf nodes?</a></h3>
+<h3><a name="general-ultrapeer">Wat zijn Ultrapeers en Leaf nodes?</a></h3>
 <p>
-  Since version 0.92, gtk-gnutella has implemented
-  <a href="?page=features"><em>ultrapeers</em></a> and
-  <em>leaf nodes</em>.
-  This divides servents on the gnet into leaf nodes, which connect only to
-  ultrapeers, and ultrapeers, which connect to many leaf nodes and a small
-  number of other ultrapeers (see
-  <a href="#gnet0">What is a good number of connections?</a>).
+  Gtk-gnutella heeft vanaf versie 0.92 
+  <a href="?page=features"><em>ultrapeers</em></a> en
+  <em>leaf nodes</em> geïmplementeerd.
+  Hierdoor worden servents op het gnet verdeeld in leaf nodes, welke alleen met
+  ultrapeers verbinden, en ultrapeers, welke alleen verbinden met veel 
+  leaf nodes an een aantal andere ultrapeers (zie ook, <a href="#gnet0">
+  Wat is een goed aantal verbindingen?</a>
+  
 </p>
 <p>
-  Ultrapeers must not be not firewalled, are expected to have long uptimes
-  (more than two hours), and have sufficient surplus bandwidth to donate to
-  the gnet.  Ultrapeers forward queries from their leaf nodes and leaf nodes
-  upload to their ultrapeers
-  <a href="?page=features">QRP</a>
-  tables which contain hashes of keywords that will match files shared by the 
-  leaf.  When an ultrapeer gets a hit on a query routing table, it relays the 
-  query to the corresponding leaf node.  The result is very low gnet traffic 
-  for each leaf node, freeing bandwidth for sharing and downloading (which 
-  still occur directly p2p.)  Ultrapeers can also act as
-  <a href="?page=features">push-proxies</a> for
-  firewalled leaf nodes.
+  Ultrapeers mogen niet firewalled zijn, er wordt van verwacht dat een
+  hoge uptime (meer dan 2 uur) hebben, en ze moeten genoeg bandbreedte ter
+  beschikking stellen aan het gnet.
+  Ultrapeers sturen zoek opdrachten van leaf nodes door, leaf nodes geven
+  hun zoekopdrachten alleen door naar hun ultrapeer
+  <a href="?page=features">QRP</a>tabellen, welk de hashes bevat van zoektermen
+  van de door de leaf node gedeelde bestanden.
+  Wanneer een ultrapeer een overeenkomst vind in een Query Routing Tabel,
+  dan stuurt het de zoekopdracht door naar de bijbehorende leaf node. Hierdoor
+  is het netwerk verkeer voor elke leaf node zeer laag, dit geeft extra
+  ruimte voor het delen en downloaden (wat nog steeds direct gebeurt op p2p)
+  van bestanden.
+  Een ultrapeer kan ook als een <a href="?page=features">push-proxies</a>
+  fungeren voor een firewalled leaf node.
 </p>
 
-<h3><a name="general-firewall">Why does Gtk-Gnutella claim it's firewalled
-  when it's not?</a>
+<h3><a name="general-firewall">Waarom geeft Gtk-Gnutella aan dat het
+  firewalled is, ookal is dat niet zo?</a>
 </h3>
 
 <p>
-Gtk-Gnutella needs to receive an incoming connection to determine if you
-can be reached from the outside. Until then, it's assumed that there's
-a firewall which blocks the configured listening TCP port.
-If you want to speed up the detection, use a web browser, telnet or similar
-and connect to the listening port from the outside. If the connection is
-refused or dropped, then you are very probably really unreachable due to a
-firewall which blocks the port, a misconfigured NAT or similar. You might
-want to try a different listening TCP port because some ISPs block the
-default Gnutella port (6346).
-See also,
-<a href="#gnet1"><q>Do I need to forward a port on my firewall?</q></a>.
+  Gtk-Gnutella moet eerst een inkomende verbinding krijgen om te bepalen
+  of het van buiten af kan worden benaderd. Zolang dat niet gebuert
+  dan gaat gtk-gnutella er van uit dat er een firewall is welke de 
+  geconfigureerde luisterende TCP poort blokkeert.
+  Indien je deze detectie wilt versnellen, gebruik dan een internet browser,
+  telnet of iets soortgelijks, en verbind op de luisterende poort van buitenaf.
+  Als de verbinding wordt geweigerd of wordt genegeerd, dan ben je
+  waarschijnlijk niet bereikbaar door een firewall dat de poort blokkeert,
+  een NAT die niet correct is geconfigureerd of iets soort gelijks.
+  Je kan ook proberen een andere luisterende TCP poort in te stellen, sommige
+  ISP's blokkeren de standaard Gnutella poort (6346).
+  Ziek ook 
+  <a href="#gnet1"><q>Moet ik een poort forwarden op mijn firewall?</q></a>.
 </p>
 
 <h2>Building from source</h2>
