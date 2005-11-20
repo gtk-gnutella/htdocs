@@ -3,7 +3,7 @@
 
 <h2>お手伝い募集</h2>
 <p>
-  現在のバージョンの Gtk-Gnutella は良好に動作していますが、最新の Gnutella 規格には追い付いていません。Gnutella の "主要プレイヤー" (LimeWire, BearShare, Shareaza, Gnucleus, Xolox) は Partial File Sharing (部分ファイル共有、Gtk-Gnutella はクライアント側では実装されていますが、サーバ側ではまだです)、ツリーハッシュや GUESS と呼ばれる UDP クエリ方式を実装しています。他に可能性のある面白い機能には XML クエリ・スキーム (例えば、ファイルの題名やサイズ、ジャンルでの検索)、magnet: リンクおよびダウンロード・プロキシがありますが、今現在 Gtk-Gnutella はこれら全てが未実装です。<em>訳者註</em>: これらの内容は古くなっています。実装済みの機能を確認するには、ニュースページの変更履歴を御覧下さい。
+  現在のバージョンの Gtk-Gnutella は良好に動作していますが、最新の Gnutella 規格には追い付いていません。Gnutella の "主要プレイヤー" (LimeWire, BearShare, Shareaza, Gnucleus, Xolox) は Partial File Sharing (部分ファイル共有、Gtk-Gnutella はクライアント側では実装されていますが、サーバ側ではまだです)、ツリーハッシュや GUESS と呼ばれる UDP クエリー方式を実装しています。他に可能性のある面白い機能には XML クエリー・スキーム (例えば、ファイルの題名やサイズ、ジャンルでの検索)、magnet: リンクおよびダウンロード・プロキシがありますが、今現在 Gtk-Gnutella はこれら全てが未実装です。<em>訳者註</em>: これらの内容は古くなっています。実装済みの機能を確認するには、ニュースページの変更履歴を御覧下さい。
 </p>
 <p>
   現在の中心開発者である Raphael Manfredi と Richard Eckart は実に多大な作業を行っていますが、Richard は大学が忙しく Raphael には仕事と家族があります。従って彼らがコードを実装する時間は限られています。Gtk-Gnutellaはオープンソースですから、これを改良するには個々人に負っているという訳です。
@@ -52,7 +52,7 @@
 </p>
 
 <p>
-  Gtk-Gnutella の開発を手伝いたいなら <a href="http://sourceforge.net/projects/gtk-gnutella/">SourceForge プロジェクトのページ</a>を訪ねて下さい、ここで gtk-gnutella-devel メーリングリストに登録してパッチをポストできます。バグの報告や新機能の要望は<a href="http://sourceforge.net/tracker/?group_id=4467">バグ追跡システム</a>へ出して下さい、よろしくお願いします。
+  Gtk-Gnutella の開発を手伝いたいなら <a href="http://sourceforge.net/projects/gtk-gnutella/">SourceForge プロジェクトのページ</a>を訪ねて下さい、ここで gtk-gnutella-devel メーリングリストに登録してパッチをポストできます。バグの報告や機能の要望は<a href="http://sourceforge.net/tracker/?group_id=4467">バグ追跡システム</a>へ出して下さい、よろしくお願いします。
 </p>
 
 <hr>

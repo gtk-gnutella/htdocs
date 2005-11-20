@@ -386,7 +386,7 @@
   または
   <kbd>
   G_FILENAME_ENCODING="@locale,UTF-8,EUC-JP"
-  </kbd>.
+  </kbd>
 
   のどちらかを使用することを勧めます。
 
