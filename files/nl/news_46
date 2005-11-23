@@ -1,0 +1,53 @@
+<!-- $Id$ -->
+<h4>22 November 2005, Version 0.96b Uitgegeven</h4>
+
+<p>
+  Versie 0.95b is een beta versie van de binnenkort uit te komen
+  versie 0.96. Het is <b>verplicht</b> deze beta versie te gebruiken
+  aangezien de 0.95.x versies zullen verstrijken op 26 november.
+</p>
+
+<h5>Nieuwe ondersteuningen</h5>
+<ul>
+  <li>Host bladeren (Browse Host) zowel HTML als Gnutella, TLS en
+      IPv6 ondersteuning.</li>
+  <li>Vertaling van de gebruikers interface naar het Chinees en Grieks.</li>
+  <li>D-BUS ondersteuning.</li>
+  <li>Toegevoegd sneltoetsen: F2, F8 and F9 (zie menu Beeld->...).</li>
+  <li>Zoek opdrachten worden aangemaakt met een configureerbare verval
+      datum.<li>
+</ul>
+
+<h5>Verbeteringen</h5>
+<ul>
+  <li>UTF-8 verwerking geoptimaliseerd.<li>
+  <li>Betere bestandsnaam conversie naar een lokale karakter set, met
+      automatische detectie.</li>
+  <li>Algehele verbetering van prestaties in QRP en zoek filters.<li>
+  <li>Volledige Nederlandse vertaling.</li>
+  <li>Sorteer volgorde kan worden bewaard.</li>
+</ul>
+
+<h5>Onder de motorkap</h5>
+<ul>
+  <li>Ondersteuning voor <tt>epoll()</tt> / <tt>kqueue()</tt> system calls.</li>
+  <li>Optimischere PARQ ETA, en PARQ back-off als een QUEUE onbeantwoord blijft.
+  </li>
+  <li>NFS-compatible sessie locking.</li>
+  <li>Eigenschappen browser.</li>
+</ul>
+
+<p>Controllesom van de bron tarball:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.96b.tar.bz2) =
+	<tt>5ecd6baa91a19250217fd6911c6a932f</tt></li>
+  <li>SHA1 (gtk-gnutella-0.96b.tar.bz2) =
+	<tt>f9664cdc08639b7455b5e14f05cb891176404296</tt></li>
+  <li><tt>urn:sha1:7FTEZXAIMONXIVNV4FHQLS4JCF3EAQUW</tt></li>
+  
+</ul>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_46 -->
