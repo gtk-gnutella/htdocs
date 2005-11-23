@@ -1,0 +1,56 @@
+<!-- $Id$ -->
+<h4>22. November 2005, Version 0.96b ist verfügbar</h4>
+
+<p>
+  Eine Beta-Version für das in Kürze erscheinende Gtk-Gnutella 0.96
+  ist nun verfügbar. Diese Beta-Version muss <b>notwendigerweise</b>
+  genutzt werden, weil die 0.95.x-Serie zum 26. November ausläuft.
+</p>
+
+<h5>Neue Fähigkeiten</h5>
+<ul>
+  <li><q>Browse Host</q> ist nun auch client-seitig
+   nutzbar und auf der Serverseite stark verbessert worden.</li>
+  <li>Verbindungen werden optional per TLS verschlüsselt.</li>
+  <li>IPv6 wird unterstützt.</li>
+  <li>Das User-Interface ist ins Chinesische, Griechische und Ukrainische übersetzt.
+	</li>
+  <li><a href="http://www.freedesktop.org/Software/dbus">D-BUS</a>-Unterstützung.</li>
+  <li>Hotkeys: F2, F8 und F9 (Siehe den Menüpunkt <q>Anzeige->...</q>).</li>
+  <li>Suchvorgänge werden nach einer wählbaren Frist abgebrochen.</li>
+</ul>
+
+<h5>Weitere Verbesserungen</h5>
+<ul>
+  <li>Die Verarbeitung von UTF-8 wurde korrigiert und optimiert.</li>
+  <li>Verbesserte Konvertierung von Dateinamen sowie automagische Erkennung
+	der verwendeten Zeichensätzen.</li>
+  <li>Allgemeine Verbesserung der Performanz bezüglich QRP und der Suchfilter.</li>
+  <li>Komplette Übersetzung ins Niederländische.</li>
+  <li>Die gewählte Sortierung für Suchergebnisse wird gespeichert, zudem kann
+     eine Voreinstellung gewählt werden.</li>
+</ul>
+
+<h5>Unter der Haube</h5>
+<ul>
+  <li>Nutzung der Interfaces <tt>epoll()</tt> und <tt>kqueue()</tt>.</li>
+  <li>Optimistischere Einschätzung der PARQ-Parameter, und Rückzug durch PARQ, wenn
+	<q>QUEUE</q> nicht beantwortet wird.</li>
+  <li>NFS-kompatibles Session-Locking.</li>
+  <li>Ein schicker Browser für die internen Eigenschaften.</li>
+</ul>
+
+<p>Prüfsummen der Quellarchive:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.96b.tar.bz2) =
+	<tt>5ecd6baa91a19250217fd6911c6a932f</tt></li>
+  <li>SHA1 (gtk-gnutella-0.96b.tar.bz2) =
+	<tt>f9664cdc08639b7455b5e14f05cb891176404296</tt></li>
+  <li><tt>urn:sha1:7FTEZXAIMONXIVNV4FHQLS4JCF3EAQUW</tt></li>
+  
+</ul>
+
+<p>
+  <em>Das Gtk-Gnutella-Team</em>
+</p>
+<!-- end news_45 -->
