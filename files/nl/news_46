@@ -20,10 +20,10 @@
 
 <h5>Verbeteringen</h5>
 <ul>
-  <li>UTF-8 verwerking geoptimaliseerd.<li>
+  <li>UTF-8 verwerking geoptimaliseerd.</li>
   <li>Betere bestandsnaam conversie naar een lokale karakter set, met
       automatische detectie.</li>
-  <li>Algehele verbetering van prestaties in QRP en zoek filters.<li>
+  <li>Algehele verbetering van prestaties in QRP en zoek filters.</li>
   <li>Volledige Nederlandse vertaling.</li>
   <li>Sorteer volgorde kan worden bewaard.</li>
 </ul>
