@@ -7,10 +7,10 @@
 
 <h5>新機能</h5>
 <ul>
-  <li>前回より始められたホストの(HTML および Gnutella プロトコルでの) 閲覧機能が取り敢えず完成しました。こちらからも相手のホストを閲覧できます。</li>
-  <li><a href="http://www.gnutls.org/">TLS</a> および <a href="http://www.ipv6.org">IPv6</a> がサポートされました。</li>
+  <li>前回より始められたホストの (HTML および Gnutella プロトコルでの) 閲覧機能が取り敢えず完成しました。こちらからも相手のホストを閲覧できます。</li>
+  <li><a href="http://www.gnutls.org/">TLS</a> および <a href="http://www.ipv6.org/">IPv6</a> がサポートされました。</li>
   <li>ギリシャ語、ウクライナ語、簡体字中国語の翻訳が加わりました。</li>
-  <li><a href="http://www.freedesktop.org/Software/dbus">D-BUS</a> がサポートされました、アプリケーション間での通信が可能になります。</li>
+  <li><a href="http://www.freedesktop.org/Software/dbus/">D-BUS</a> がサポートされました、アプリケーション間での通信が可能になります。</li>
   <li>ホットキーが追加されました: F2, F8 および F9 (メニューの「表示」以下を御覧下さい) です。</li>
   <li>検索はこれより有効期限が与えられ、これを過ぎると打ち切られます。この期限は変更可能です。</li>
 </ul>
