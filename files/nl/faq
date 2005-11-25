@@ -18,22 +18,23 @@
   </li>
 </ul>
 
-<h2>Building from source</h2>
+<h2>De broncode compileren</h2>
 <ul>
-  <li><a href="#build1">
-    How do I make Configure stop asking me all those questions?</a>
+  <li><a href="#build1">Hoe zorg ik dat Configure me niet al die vragen 
+    stelt?</a>
   </li>
 </ul>
 
 <h2>Gnutella connections</h2>
 <ul>
-  <li><a href="#gnet0">What is a good number of connections?</a></li>
-  <li><a href="#gnet1">Do I need to forward a port on my firewall?</a></li>
-  <li><a href="#gnet-forward-howto">How do I configure port forwarding?</a></li>
-  <li><a href="#gnet-udp">Does gtk-gnutella use UDP?</a></li>
-  <li><a href="#gnet2">What does "[FC]" mean?</a></li>
-  <li><a href="#gnet3">Why do I lose gnet connections when i have an upload?</a></li>
-  <li><a href="#gnet4">What does this stuff in the Flags column mean?</a></li>
+  <li><a href="#gnet0">Wat is een goed aantal verbindingen?</a></li>
+  <li><a href="#gnet1">Moet ik een poort "forwarden" op mijn firewall?</a></li>
+  <li><a href="#gnet-forward-howto">Hoe stel ik poort "forwarding" in?</a></li>
+  <li><a href="#gnet-udp">Gebruikt gtk-gnutella UDP?</a></li>
+  <li><a href="#gnet2">Wat betekent "[FC]"?</a></li>
+  <li><a href="#gnet3">Waarom verlies ik gnet verbindingen zodra ik een upload
+					   heb?</a></li>
+  <li><a href="#gnet4">Wat betekent dat spul in de Vlaggen kolom?</a></li>
   <li><a href="#gnet-user-agent">What's the meaning of a leading "!" in the User-Agent name?</a></li>
   <li><a href="#gnet5">What does "Harmful version banned, upgrade required" mean?</a></li>
   <li><a href="#gnet6">What does "Outdated version, please upgrade" mean?</a></li>
@@ -192,37 +193,39 @@
   <a href="#gnet1"><q>Moet ik een poort forwarden op mijn firewall?</q></a>.
 </p>
 
-<h2>Building from source</h2>
+<h2>De broncode compileren</h2>
 
-<h3><a name="build1">How do I make Configure stop asking me all those questions?</a></h3>
+<h3><a name="build1">Hoe zorg ik dat Configure me niet al die vragen 
+    stelt?</a></h3>
 <p>
-  You can run the <code>Configure</code> script in the following way to make it
-  use the default settings. It then behaves as calling the old
-  <code>configure</code> script from autoconf did back in the old days.
+  Het <code>Configure</code> script kan op de volgende manier worden gedraaid,
+  zodat het de standaard waardes gebruikt. Het gedraagd zich dan zoals de
+  oude <code>configure</code> script van autoconf van vroeger.
 </p>
 <p>
   <code>$ ./Configure -ders</code>
 </p>
 <p>
-  You can set compile options on the command line too. Here is an example
-  that will configure gtk-gnutella to
+  Je kan ook compileer opties op de commando regel meegeven. Hier is een
+  voorbeeld dat gtk-gnutella configureert om
 </p>
 <ul>
   <li>
-    accept custom settings (<code>-O</code>). Without this all the
-    parameters below won't have an effect.
+    andere instellingen te gebruiken (<code>-O</code>). Zonder deze parameter
+    hebben alle parameters hieronder geen effect.
   </li>
   <li>
-     use the Gtk1 frontend, activate the remote shell
+    de Gtk1 voorkant en de remote shell te activeren
      (<code>-D gtkversion=1 -D remotectrl=y</code>)
   </li>
   <li>
-    compile for a pentium with MMX support
+    te compileren voor een pentium met MMX ondersteuning
     (<code>-Dccflags="-march=pentium -mmmx"</code>).
   </li>
   <li>
-    compile in debugging information while turning off all compiler
-    optimizations (<code>-Doptimize="-g -O0"</code>).
+    te debug informatie mee te compileren en alle andere compileer
+    optimalisaties uit te schakelen
+    (<code>-Doptimize="-g -O0"</code>).
   </li>
 </ul>
 <p>
@@ -231,101 +234,108 @@
 
 <h2>Gnutella connections</h2>
 
-<h3><a name="gnet0">What is a good number of connections?</a></h3>
+<h3><a name="gnet0">Wat is een goed aantal verbindingen?</a></h3>
 <p>
   In <a href="#general-ultrapeer">leaf</a> mode 3 ultrapeers, in
   <a href="#general-ultrapeer">ultrapeer</a> mode 32/40 (minimum/maximum)
-  ultrapeers and around 100 leaf nodes. The actual number should depend on the 
-  available bandwidth. If you have set "Prefer compressed connections," bandwidth
-  used will be much lower. You should never use up all your bandwidth with
-  gnet connections. Especially on an asymmetric cable/DSL connection you can
-  easily starve your incoming traffic by producing too much outgoing traffic
-  (TCP/IP issue). Use at most half of your outgoing bandwidth for gnet
-  connections.
+  ultrapeers en ongeveer 100 leaf nodes. 
+  Het werkelijke nummer zou moeten afhangen van de beschikbare bandbreedte.
+  Als je "Geef voorkeur aan gecomprimeerde verbindingen" aan hebt staan,
+  dan zal de gebruikte bandbreedte een stuk lager zijn. Je moet nooit al je
+  bandbreedte gebruiken voor gnet verbindingen. Vooral op een asymetrische
+  verbinding zoals kabel/dsl kunnen inkomende verbinden worden verbroken op
+  het moment dat er teveel uitgaand verkeer is (TCP/IP probleem). Gebruik
+  maximaal de helf van je uitgaande bandbreedte voor gnet verbinden.
 </p>
 <p>
-  Since the adoption of "high outdegree" in version 0.95 you should have 
-  32/40 connections to other ultrapeers. The number
-  of leaf connections to use depends on your bandwidth and the speed of your
-  cpu.  As an absolute minimum an ultrapeer should connect to 20 leaf nodes
-  and it's much better to connect to 100 or more.  Watch the bandwidth
-  odometers on the lower left of the gui and use the top command to keep track
-  of cpu usage.  Increase the number of leaf connections until you reach the
-  maximum amount of bandwidth and system resources you wish to devote to this
-  purpose.
+  Sinds versie 0.95 wordt "high outdegree" gebruikt. Je zou rond de 
+  32/40 verbinden naar andere ultrapeers moeten hebben. Het aantal
+  leaf verbindingen is afhankelijk van je bandbreedte en de snelheid van je
+  CPU. Een ultrapeer moet minimaal verbonden zijn met 20 leaf nodes en 
+  het is veel beter om verbonden te zijn met 100 of zelf meer. Gebruik
+  de bandbreedte meters links onder in de GUI en het top commando om het
+  CPU en het bandbreedte vebruik in de gaten te houden. Verhoog het aantal
+  leaf verbindingen totdat je de maximale bandbreedte en systeem bronnen hebt
+  gebruikt die je hiervoor wilt gebruiken.
 </p>
 <p>
-  The bandwidth control settings will help you further fine-tune
-  gtk-gnutella's bandwidth usage.
+  De bandbreedte instellingen kunnen je helper om het bandbreedte verbruik
+  van gtk-gnutella verder bij te stellen.
 </p>
 
-<h3><a name="gnet1">Do I need to forward a port on my firewall?</a></h3>
+<h3><a name="gnet1">Moet ik een poort "forwarden" op mijn firewall?</a></h3>
 <p>
-  You don't need to forward any ports for gtk-gnutella to work, but it
-  will perform much better if you do. If gtk-gnutella thinks you are
-  firewalled, it will not show any <a href="#down_push">"push"</a> results since
-  you wouldn't be able to download those anyway.<br>
-  Even when people cannot connect directly to you, they can still download
-  files from your node using a <a href="#down_push">push request</a>.<br>
-  You can configure the port gtk-gnutella listens on. The setting
-  <em>Listen port</em> is located in the <em>Settings-&gt;Preferences-&gt;Network</em>.
+  Je hoeft niet persé een poort naar gtk-gnutella te "forwarden", maar
+  gtk-gnutella zal beter werken als je het wel doet. Als gtk-gnutella
+  denkt dat je afgeschermd bent zal het geen <a href="#down_push">"push"</a> 
+  resultaten tonen omdat het denkt dat het je toch niet zal lukken deze te 
+  downloaden.
+  Zelfs als mensen niet direct met je kunnen verbinden kunnen ze nog steeds
+  bestanden van je node downloaden door gebruik te maken van een 
+  <a href="#down_push">push request</a>.<br/>
+  De instelling voor de <em>Luisterende poort</em> is te vinden in
+  <em>Instellingen-&gt;Voorkeuren-&gt;Netwerk</em>
 </p>
  
-<h3><a name="gnet-forward-howto">How do I configure port forwarding?</a></h3>
+<h3><a name="gnet-forward-howto">Hoe stel ik poort "forwarding" in?</a></h3>
 <p>
-  You can find instructions for most popular routers at
-  <a href="http://www.portforward.com/routers.htm">http://www.portforward.com/routers.htm</a>. Try
-  <a href="http://www.canyouseeme.org/">http://www.canyouseeme.org/</a>
-  to check your port forwarding.
+  Je kan instructies voor de meeste bekende routers vinden op
+  <a href="http://www.portforward.com/routers.htm">http://www.portforward.com/routers.htm</a>.
+  Probeer <a href="http://www.canyouseeme.org/">http://www.canyouseeme.org/</a>
+  om je poort "forward" te testen.
 </p>
 
-<h3><a name="gnet-udp">Does gtk-gnutella use UDP?</a></h3>
+<h3><a name="gnet-udp">Gebruikt gtk-gnutella UDP?</a></h3>
 <p>
-  Yes, starting with version 0.95 gtk-gnutella can also use 
-  <a href="http://www.faqs.org/rfcs/rfc768.html">UDP</a> in addition
-  to <a href="http://www.faqs.org/rfcs/rfc793.html">TCP</a>.  
+  Ja, vanaf versie 0.96 kan je 
+  <a href="http://www.faqs.org/rfcs/rfc768.html">UDP</a> gebruiken
+  aanvullend op <a href="http://www.faqs.org/rfcs/rfc793.html">TCP</a>.  
 </p>
 
-<h3><a name="gnet2">What does "[FC]" mean?</a></h3>
+<h3><a name="gnet2">Wat betekent "[FC]"?</a></h3>
 <p>
-  The <em>FC</em> means "flow control".<br>
-  In general, you should make sure that servents to which you are connected do
-  not flow control.  Watch for the trailing <em>[FC]</em> indication at
-  the end of the <em>Info</em> string (you may need to drag the right
-  edge past the window to trigger the underlying scroll bar), or look at the
-  FC state in the <a href="#gnet4">Flags</a> column. As a rule of thumb, if
-  you have more than one node flow-controlling at a given time, you don't have
-  enough outgoing bandwidth dedicated to gnet, and therefore you are harming
-  the network: either decrease the amount of connections, enable the
-  <em>Prefer compressed connections</em> option or raise the outgoing
-  bandwidth limit.
+  De <em>FC</em> staat voor "flow control".<br/>
+  Dit betekent dat de hoeveelheid verkeer die naar een servent gaat
+  wordt verminder door minder belangrijke data weg te gooien.
+  Over het algemeen moet je ervoor zorgen dat servents waarme je bent
+  verbonden niet in "flow control" komen. Let op de <em>[FC]</em> aan het
+  einde van de <em>Info</em> tekst (mogelijk moet je de kolom naar rechts
+  uitrekken voorbij het venster om de scrollbar tezien te krijgen), of kijk
+  naar de FC status in de <a href="#gnet4">Vlaggen</a> kolom. Een basis
+  regel is, als je op 1 moment meer dan 1 node in flow-control hebt dan
+  heb je niet genoeg uitgaande bandbreedte voor het gnet beschikbaar gezet.
+  Hierdoor ben je schadelijk bezig voor het netwerk; of verlaag het aantal
+  verbindingen, activeer "Geef voorkeur aan gecomprimeerde verbindingen"
+  of verhoog de bandbreedte limiet voor uitgaande verkeer.
 </p>
 
-<h3><a name="gnet3">Why do I lose gnet connections when I have an upload?</a></h3>
+<h3><a name="gnet3">Waarom verlies ik gnet verbindingen zodra ik een upload
+					heb?</a></h3>
 <p>
-  Try to do bandwidth limiting. If that doesn't help, maybe your provider throttles
-  gnutella traffic. Try changing your gnutella port in the network settings of
-  gtk-gnutella.
+  Probeer de bandbreedte te limiteren. Als dat niet helpt, dan kan het zijn
+  dat je provider gnutella verkeer afkapt.  Probeer je gnutella poort
+  te veranderen in Netwerk instellingen van gtk-gnutella.
 </p>
 
-<h3><a name="gnet4">What does the stuff in the Flags column mean?</a></h3>
+<h3><a name="gnet4">Wat betekent dat spul in de Vlaggen kolom?</a></h3>
 <p>
-  You can see the type and some of the settings of a connection here.  Note
-  push-proxies are implemented in 0.92.1c and later.
+  Je kan het type verbinding zien, en een aantal instellingen voor die
+  verbinding. 
+  Opmerking, push-proxies zijn geimplementeerd in 0.92.1c en hoger.
 </p>
 <pre>
   012345678AB (offset)
   NIrwqxZPFhT
-  ||||||||||+ indicates a <strong>T</strong>LS-tunneled connection
-  |||||||||+- hops flow triggered (<strong>h</strong>), or total query flow control (<strong>f</strong>)
-  ||||||||+-- flow control (<strong>F</strong>), or pending data in queue (<strong>d</strong>)
-  |||||||+--- we are push-proxy for node (<strong>P</strong>) or node is our push-proxy (<strong>p</strong>)
-  ||||||+---- indicates whether <strong>R</strong>x, <strong>T</strong>x or both (<strong>Z</strong>) are compressed
-  |||||+----- we sent our last-hop QRT to remote UP (<strong>X</strong>), or are sending one  (<strong>x</strong>)
-  ||||+------ we sent/received a <strong>Q</strong>RT, or are sending/receiving one (<strong>q</strong>)
-  |||+------- indicates whether node is <strong>w</strong>ritable
-  ||+-------- indicates whether node is <strong>r</strong>eadable
-  |+--------- connection type: (<strong>I</strong>ncoming, <strong>O</strong>utgoing, <strong>P</strong>onging)
+  ||||||||||+ <strong>T</strong>LS-tunneled verbinding
+  |||||||||+- hops flow triggered (<strong>h</strong>), of totale opdrachten flow control (<strong>f</strong>)
+  ||||||||+-- flow control (<strong>F</strong>), of wachtende gegevens (<strong>d</strong>)
+  |||||||+--- we zijn een push-proxy voor node (<strong>P</strong>) of node is onze push-proxy (<strong>p</strong>)
+  ||||||+---- Of <strong>R</strong>x, <strong>T</strong>x of beide (<strong>Z</strong>) gecomprimeerd zijn
+  |||||+----- we sturen onze laatste-hop QRT naar remote UP (<strong>X</strong>), of we sturen er één (<strong>x</strong>)
+  ||||+------ we sturen/ontvangen een <strong>Q</strong>RT, of sturen/ontvangen er één (<strong>q</strong>)
+  |||+------- of de node schrijfbaar (<strong>w</strong>ritable) is
+  ||+-------- of de node leesbaar (<strong>r</strong>eadable) is
+  |+--------- verbindings type: (<strong>I</strong>nkomend, Uitgaand <strong>O</strong>utgoing), <strong>P</strong>onging)
   +---------- peer mode: <strong>U</strong>ltra, <strong>L</strong>eaf, or Legacy (a.k.a. <strong>N</strong>ormal)
 </pre>
 
