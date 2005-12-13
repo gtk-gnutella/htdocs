@@ -28,11 +28,11 @@
   <a href="?page=mailing" class="sb_section_header">サポート</a>
 
   <div class="sb_section_content">
-    <a href="?page=bugreport_howto">バグ報告の方法</a><br>
+    <a href="?page=bugreport_howto">バグの報告に関して</a><br>
     <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
       バグ追跡システム</a><br>
     <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
-      機能のリクエスト</a><br>
+      要望</a><br>
   </div>
 </div>
 
@@ -46,10 +46,9 @@
 
   <div class="sb_section_content">
     <a href="http://sourceforge.net/projects/gtk-gnutella/">
-      SF プロジェクト</a><br>
-    <!-- TEST JAPANESE PAGE ONLY: where should these API references be located? -->
+      SFプロジェクト</a><br>
     <a href="http://gtk-gnutella.sourceforge.net/doxygen/">
-      API リファレンス</a><br>
+      APIリファレンス</a><br>
     <a href="?page=code101">Code 101</a>
   </div>
 </div>
@@ -67,9 +66,9 @@
   </div>
 </div>
 
-<!--        -->
-<!--  LINKS -->
-<!--        -->
+<!--       -->
+<!-- LINKS -->
+<!--       -->
 
 <div class="sb_section">
   <a href="?page=links" class="sb_section_header">リンク</a>
