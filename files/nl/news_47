@@ -1,0 +1,57 @@
+<!-- $Id$ -->
+<h4>24 Januari 2006, Versie 0.96 Uitgegeven</h4>
+
+<p>
+  Versie 0.96 is een <b>stabiele</b> versie. Het is <b>verplicht</b>
+  deze versie te gebruiken, aangezien alle vorige versies zijn
+  <i>verlopen</i>. Dit betekent dat deze worden verbannen van alle
+  nieuwe <tt>gtk-gnutella</tt>clients en niet langer gebruik maken van
+  de Gnutella Web Caches.
+</p>
+<p>
+  Hieronder een overzicht van de veranderingen in deze versie sinds
+  de laatste stabiele 0.95.x versie.
+</p>
+<h5>Nieuwe ondersteuningen</h5>
+<ul>
+  <li>Host bladeren (Browse Host) zowel HTML als Gnutella, TLS en IPv6.<li>
+  <li>Vertaling van de gebruikers interface naar het 
+   Chinees (vereenvoudigd), Grieks, Norweegs (Bokmal) en Ukranees.</li>
+  <li>D-BUS ondersteuning.</li>
+  <li>Sneltoetsen toegevoegd: F2, F8 and F9 (zie menu Beeld->...).</li>
+  <li>Zoek opdrachten worden aangemaakt met een configureerbare verval
+      datum.</li>
+</ul>
+
+<h5>Verbeteringen</h5>
+<ul>
+  <li>UTF-8 verwerking geoptimaliseerd.</li>
+  <li>Betere bestandsnaam conversie naar een lokale karakter set, met automatische detectie.</li>
+  <li>Algehele verbetering van prestaties in QRP en zoek filters.</li>
+  <li>Nederlandse, Duitse and Japanse vertalingen bijgewerkt.</li>
+  <li>Sorteer volgorde kan worden bewaard.</li>
+</ul>
+
+<h5>Onder de motorkap.</h5>
+<ul>
+  <li>Downloads worden gebufferd om overmatige disk fragmentatie te voorkomen.</li>
+  <li>Ondersteuning voor <tt>epoll()</tt> / <tt>kqueue()</tt> system calls.</li>
+  <li>Optimischere PARQ ETA en PARQ back-off als QUEUE
+	onbeantwoord blijft.</li>
+  <li>NFS-compatible sessie locking.</li>
+  <li>Eigenschappen browser.</li>
+</ul>
+
+<p>Controllesom van de bron tarball:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.96.tar.bz2) =
+	<tt>4e1cd518ac2995f29952274e880cd6ec</tt></li>
+  <li>SHA1 (gtk-gnutella-0.96.tar.bz2) =
+	<tt>29628c5a88d2e2e4167ec85cdc72ca4cf5108b7d</tt></li>
+  <li><tt>urn:sha1:FFRIYWUI2LROIFT6ZBONY4WKJT2RBC35</tt></li>
+</ul>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_47 -->
