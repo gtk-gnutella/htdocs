@@ -1,0 +1,49 @@
+<!-- $Id$ -->
+<h4>22 Novembre 2005, Version 0.96b Disponible</h4>
+
+<p>
+  La version 0.96b est une version beta de la prochaine version 0.96.
+  Il est maintenant <b>imp&eacute;ratif</b> d'utiliser cette version beta
+  car les versions de la s&eacute;rie 0.95.x vont expirer le 26 Novembre.
+</p>
+
+<h5>Nouvelles Fonctionnali&eacute;s</h5>
+<ul>
+  <li>Parcours de l'h&ocirc;te (HTML et Gnutella), support TLS et IPv6.</li>
+  <li>Traduction en chinois (simplifi&eacute;), grec and ukr&eacute;nien de l'interface utilisateur.</li>
+  <li>Incorporation du support D-BUS.</li>
+  <li>Ajout de raccourcis : F2, F8 et F9 (voir Menu View->...).</li>
+  <li>Les recherches sont maintenant cr&eacute;&eacute;es avec une date d'expiration ajustable.</li>
+</ul>
+
+<h5>Am&eacute;liorations</h5>
+<ul>
+  <li>Optimisation du tra&icirc;tement UTF-8.</li>
+  <li>Une meilleur conversion des noms de fichiers dans la locale, avec d&eacute;tection automatique du jeu de caract&egrave;res.</li>
+  <li>Am&eacute;lioration des performances g&eacute;n&eacute;rales dans QRP et pour les filtres de recherches.</li>
+  <li>Mise-&agrave;-jour des traductions n&eacute;&eacute;rlandaise, allemande et japonaise.</li>
+  <li>Tris persistant.</li>
+</ul>
+
+<h5>Structure interne</h5>
+<ul>
+  <li>Support des appels syst&egrave;mes <tt>epoll()</tt> / <tt>kqueue()</tt>.</li>
+  <li>Temps restant PARQ plus optimiste, et PARQ back-off quand les QUEUE sont sans r&eacute;ponse.</li>
+  <li>Bloquage de sessions compatible NFS.</li>
+  <li>Browser astucieux pour les propri&eacute;t&eacute;s.</li>
+</ul>
+
+<p>Checksums du code source:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.96b.tar.bz2) =
+	<tt>5ecd6baa91a19250217fd6911c6a932f</tt></li>
+  <li>SHA1 (gtk-gnutella-0.96b.tar.bz2) =
+	<tt>f9664cdc08639b7455b5e14f05cb891176404296</tt></li>
+  <li><tt>urn:sha1:7FTEZXAIMONXIVNV4FHQLS4JCF3EAQUW</tt></li>
+
+</ul>
+
+<p>
+  <em>l'&eacute;quipe gtk-gnutella</em>
+</p>
+<!-- end news_46 -->
