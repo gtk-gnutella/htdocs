@@ -1,0 +1,79 @@
+<!-- $Id$ -->
+<h4>22 februari 2006, Versie 0.96.1 Uitgegeven</h4>
+
+<p>
+  Versie 0.96.1 is een <b>stabiele</b>versie, hierin zijn voornamelijk
+  een aantal fouten opgelost die recentelijk zijn ontdekt.
+</p>
+<p>
+Hieronder een overzicht van de verandering voor deze versie.
+</p>
+<h5>Opgeloste fouten</h5>
+<ul>
+  <li>
+    Fout opgelost waarbij een host bladeren (browse host) de enige
+	zoekopdracht is in de lijst (bug #1421196).
+  </li>
+  <li>
+  	Download buffers worden gereset bij een incomplete schrijf opdracht
+	( bug #1429981).
+  </li>
+  <li>
+    Fout opgelost waarbij het zijpanneel elke keer bleef groeien na elke
+	start onder GTK1 (bug #1421940).
+  </li>
+  <li>
+    Fout opgelost waarbij downloads vroegtijdig werden afgebroken door een fout
+	in de detectie of een brok gereed was.
+  </li>
+  <li>
+    Fout opgelost waarbij de download snelheid twee keer zo hoog werd weergegeven
+	dan werkelijk het geval was.
+  </li>
+  <li>
+    Soms werd het verkeerde bereik getoond bij downloads.
+  </li>
+</ul>
+
+<h5>Verbeteringen</h5>
+<ul>
+  <li>
+    PFS (delen van gedeeltelijk gedownloade bestanden) indicatie voor actief in de
+	wacht gezette downloads worden nu ook getoond.
+  </li>
+  <li>
+    Gebufferde data wordt nu ook meegenomen als de download voortgang wordt getoond.
+  </li>
+  <li>
+    Er wordt nu per download getoond hoeveel HTTP verzoeken er zijn gestuurd over
+	eenzelfde verbinding.
+  </li>
+  <li>
+    Probeer het hoofd venster correct the positioneren.
+  </li>
+</ul>
+
+<h5>Configuratie veranderingen</h5>
+<ul>
+  <li>
+    Minimum tijd voor dat een connectie verbindinen verstrijkt verhoogd naar 15
+	seconden.
+  </li>
+  <li>
+    Standaard waarde voor "maximum % of slots / vendor" verhoogd naar 90.
+  </li>
+</ul>
+
+<p>Controllesom van de bron tarball:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.96.1.tar.bz2) =
+	<tt>6529379cc105c1e98f501a67e8e875fd</tt></li>
+  <li>SHA1 (gtk-gnutella-0.96.1.tar.bz2) =
+	<tt>28540c4e78f4c3513ac15b95228a98d17ace2091</tt></li>
+  <li><tt>urn:sha1:FBKAYTTY6TBVCOWBLOKSFCUY2F5M4IER</tt></li>
+</ul>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_48 -->
