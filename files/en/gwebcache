@@ -4,7 +4,7 @@
 <p>
   Gtk-Gnutella supports the <a href="http://www.gnucleus.com/gwebcache/">
   GWebCache</a> system which provides Gnutella clients with a bootstrapping 
-  method. Gnutella clients depend on bootstrap servera to find hosts to connect
+  method. Gnutella clients depend on bootstrap server to find hosts to connect
   to when they join the Gnutella network for the first time.
 </p>
   
@@ -42,7 +42,7 @@
   >Jon Atkins' GWebCache Scan Report site</a>.
   <br>
   For more information, visit the <a href="http://www.gnucleus.com/gwebcache/">
-    GWebCache page</a> or read about it in the GDF wiki
+    GWebCache page</a> or read about it in the
     <a href="http://www.the-gdf.org/wiki/index.php?title=The_Webcache_System"
 	>GDF wiki</a>.
    </a>
