@@ -1,18 +1,30 @@
 <!-- $Id$ -->
-<h1>GWebCache</h1>
+
+<h1>Gnutella ホストのウェブ供給システム</h1>
 
 <p>
-  Gtk-Gnutella は <a href="http://www.gnucleus.com/gwebcache">GWebCache</a> システムをサポートします、これはブートストラップを行う方式で Gnutella クライアントを提供します。以前に一度も Gnutella ネットワーク (gnet) に接続した事のない Gnutella クライアントが、接続するホストを見つけるために必要になります。
+  Gtk-Gnutella は <a href="http://www.gnucleus.com/gwebcache/">GWebCache</a> システムをサポートします、これはブートストラップという方法で Gnutella クライアントを提供します。一番初めに Gnutella ネットワークに参加する時、Gnutella クライアントは接続するホストを見つけるために、このブートストラップサーバーが必要です。
 </p>
 
 <p>
-  安定運用されているウェブサーバをお持ちで、Gnutella を支援したければ、この機能を提供するスクリプトをそのサーバ上で実行できます。一月毎にトラフィックの 100 MB を費し、多くの人がこのスクリプトを走らせれば、皆が負担するトラフィックは減ります。このスクリプトには PHP, ASP および ColdFusion 用のものがあります。
+  Gnutella ネットワークを支援したいと考えていて、かつ安定運用されているサーバーをお持ちなら、これをブートストラップサーバーとして活用することができます。GWebCache は一月に 1-5 GB のトラフィックを消費しますが、より多くの方がこのサーバーを立てれば、全員にかかるトラフィックはより少なくなります。Perl, PHP, ASP および ColdFusion といったスクリプトを利用できはするのですが、これらは勧められません、サーバーに対する負荷が大きすぎるからです。残念なことに、一部例外はありますが、これらのスクリプト自体のできもあまり良くありません。したがって例えば <a href="http://www.ghostwhitecrab.de/crab/">GhostWhiteCrab</a> のように、この目的に特化された専用のサーバーを利用することを勧めます。
 </p>
 
 <p>
-  スクリプトがサーバに上げられ実行されている後で、<a href="index.php?page=mailing">開発者用メーリングリスト</a>と GWebCache のホームページ (彼のページの一番下にあるメールアドレスを御覧下さい) にメールを送れます。<br>
-  詳細を知りたければ、<a href="http://www.gnucleus.com/gwebcache">GWebCache のページ</a> を訪れて下さい。
+  UDP ホストキャッシュ、略して <a href="http://www.the-gdf.org/wiki/index.php?title=UHC">UHC</a> と呼ばれる、Gnutella 用の手軽なブートストラップ方法も別にあります。これは殆んどリソースを消費せずに、発生させるトラフィックも少なくて済みます。Gtk-Gnutella および GhostWhiteCrab はこのブートストラップ方法にも対応しています。ですから GhostWhiteCrab を使えば、GWebCache, UDP ホストキャッシュまたはその両方を提供することが可能となります。
+</p>
+
+<p>
+  <b>注意:</b> あなたが提供して下さるブートストラップサーバーのホスト名には専用のものを与えているかどうかを確認して下さい。このサービスの提供を打ち切ろうと思っても、DNS レコードを削除することでしかトラフィックを止められません。
+</p>
+
+<p>
+  ブートストラップサーバーを立ち上げて、ある程度の安定運用を行った後に<a href="?page=mailing">開発者向けのメーリングリスト</a>か、<a href="http://gcachescan.jonatkins.com/">Jon Atkins さんの GWebCache スキャンレポートのサイト</a>にあなたの GWebCache の URL を申告して下さい。
+  <br>
+  詳しい情報を知りたいのでしたら、<a href="http://www.gnucleus.com/gwebcache/">GWebCache に関するページ</a>か <a href="http://www.the-gdf.org/wiki/index.php?title=The_Webcache_System">GDF wiki</a> にある内容を御覧下さい。
+   </a>
   <br>
   <br>
 </p>
+
 <!-- end gwebcache -->
