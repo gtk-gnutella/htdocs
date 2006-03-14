@@ -62,7 +62,7 @@
 </p>
 
 <p>
-  To get the files from CVS just type in the following commands:
+  To get the files from SVN just type in the following command:
 </p>
 
 <p>
@@ -83,23 +83,9 @@
 <hr>
 
 <a name="devel-snapshots"></a>
-<h3>CVS snapshots:</h3>
+<h3>SVN snapshots:</h3>
 
 <p>
-  <a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella-current.tar.bz2">
-    <strong>Official CVS snapshot</strong></a>
-    (Generated: <?php iceinclude("cvs_snapshot_date", 0) ?>;
-	SHA1 <TT><?php iceinclude("cvs_snapshot_sha1", 0) ?></TT>)
+	Currently there are no SVN snapshots available
 </p>
-<p>
-  Snapshots also kindly donated by:
-</p>
-<ul>
-  <li><a href="http://gtk-gnutella.asselman.com/">MrJoe</a> <em>Hourly</em> (Sponsored by 
-    <a href="http://www.asselman.com/">Jeroen Asselman</a>)
-  </li>
-  <li><a href="http://gtkg.guruz.de/">guruz</a> <em>Daily</em> (Sponsored by 
-    <a href="http://www.bawue.de">bawue.net</a>)
-  </li>
-</ul>
 <!-- end devel -->
