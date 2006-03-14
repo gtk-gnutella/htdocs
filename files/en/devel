@@ -52,7 +52,7 @@
 <hr>
 
 <p><a name="devel-cvs"></a>
-  To get the latest development version, you can always use the CVS 
+  To get the latest development version, you can always use the SVN 
   repository of Gtk-Gnutella.  <strong>Warning</strong>: As a development 
   version, the current version may be unstable or even not compile right on 
   your machine. If you're just interested in getting an overview of the 
@@ -67,13 +67,8 @@
 
 <p>
   <kbd>
-    cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<br>
-    cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co gtk-gnutella-current
+    svn co https://svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella gtk-gnutella
   </kbd>
-</p>
-
-<p>
-  When prompted for a password for anonymous, simply press the Enter key. 
 </p>
 
 <p>
