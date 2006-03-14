@@ -1,0 +1,58 @@
+<!-- $Id: news_47 10477 2006-01-27 08:37:59Z daichik $ -->
+<h4>24. Januar 2006, Version 0.96 veröffentlicht</h4>
+
+<p>
+  Version 0.96 ist ein <b>stabiles</b> Release.
+  Die Nutzung dieser Version ist ab sofort <b>obligatorisch</b>, da
+  alle älteren Versionen <i>verfallen</i> sind. Das heißt, sie werden
+  von allen neuen Version von <tt>Gtk-Gnutella</tt> abgewiesen
+  und kontaktieren keinerlei Bootstrap-Server mehr.
+</p>
+<p>
+Es folgen die Änderungen seit dem letztem stabilen Release 0.95.4.
+</p>
+<h5>Neue Eigenschaften</h5>
+<ul>
+  <li>Browse Host (HTML und Gnutella), TLS- und IPv6-Unterstützung.</li>
+  <li>Chinesische (vereinfacht), griechische, norwegische (Bokmal) und
+    ukrainische Übersetzung des Benutzer-Interface.</li>
+  <li>D-BUS-Unterstützung.</li>
+  <li>Neue Hot-Keys: F2, F8 und F9 (siehe im Menü unter Zeige->...).</li>
+  <li>Suchvorgänge enden nun nach einer einstellbaren Frist.</li>
+</ul>
+
+<h5>Verbesserungen</h5>
+<ul>
+  <li>Optimierung der UTF-8-Verarbeitung.</li>
+  <li>Bessere Dateinamenumwandlung mit automagischer Erkennung des
+	Zeichensatzes.</li>
+  <li>Allgemeine erhöhte Performanz der QRP und der Suchfilter.</li>
+  <li>Aktualisierung der niederländische, deutschen und japanischen
+     Übersetzung.</li>
+  <li>Speicherung der Sortieroptionen.</li>
+</ul>
+
+<h5>Unter der Haube</h5>
+<ul>
+  <li>Pufferung heruntergeladener Daten zur Minimierung der 
+      Festplattenfragmentierung.</li>
+  <li>Unterstützung für <tt>epoll</tt> und <tt>kqueue</tt>.</li>
+  <li>Optimistischere PARQ-Einschätzungen und <i>PARQ-Back-Off</i> wenn
+      QUEUE-Anforderungen nicht beantwortet werden.</li>
+  <li>NFS-kompatibles Sitzung-Locking.</li>
+  <li>Hübscher Eigenschafts-Browser.</li>
+</ul>
+
+<p>Prüfsummen der Quellcode-Archive:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.96.tar.bz2) =
+	<tt>4e1cd518ac2995f29952274e880cd6ec</tt></li>
+  <li>SHA1 (gtk-gnutella-0.96.tar.bz2) =
+	<tt>29628c5a88d2e2e4167ec85cdc72ca4cf5108b7d</tt></li>
+  <li><tt>urn:sha1:FFRIYWUI2LROIFT6ZBONY4WKJT2RBC35</tt></li>
+</ul>
+
+<p>
+  <em>Das Gtk-Gnutella-Team</em>
+</p>
+<!-- end news_47 -->
