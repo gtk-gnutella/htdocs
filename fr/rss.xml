@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>
+Gtk-Gnutella - Le Client Gnutella Graphique pour Unix</title>
+    <link>http://gtk-gnutella.sourceforge.net/fr/</link>
+    <language>fr</language>
+    <description></description>
+    <copyright>https://sourceforge.net/projects/gtk-gnutella</copyright>
+    <lastBuildDate>Mon, 01 Aug 2005 13:34:32 GMT</lastBuildDate>
+    <generator>rss_gen.sh</generator>
+    <item>
+      <title>31 Juillet 2005, Version 0.95.4 Disponible</title>
+      <description> La version 0.95.4 est une version de maintenance. Plusieurs bugs ont &eacute;t&eacute; corrig&eacute;s. Il est recommand&eacute; que tout le monde se mette &agrave; jour en passant &agrave; cette version de GTKG car elle est la plus stable actuellement. Le bug concernant le t&eacute;l&eacute;chargement du dernier octet, qui avait comme cons&eacute;quence qu'un t&eacute;l&eacute;chargement ne pouvait se terminer s'il ne restait plus que le dernier octet &agrave; prendre, a &eacute;t&eacute;  [...]</description>
+      <author></author>
+      <link>http://gtk-gnutella.sourceforge.net/fr/#news_45</link>
+      <guid isPermaLink="true">http://gtk-gnutella.sourceforge.net/fr/#news_45</guid>
+      <pubDate>Mon, 01 Aug 2005 13:32:50 GMT</pubDate>
+    </item>
+
+</channel>
+</rss>

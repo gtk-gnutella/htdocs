@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>
+Gtk-Gnutella - Der grafische Gnutella-Client für Unix</title>
+    <link>http://gtk-gnutella.sourceforge.net/de/</link>
+    <language>de</language>
+    <description></description>
+    <copyright>https://sourceforge.net/projects/gtk-gnutella</copyright>
+    <lastBuildDate>Wed, 23 Nov 2005 21:34:57 GMT</lastBuildDate>
+    <generator>rss_gen.sh</generator>
+    <item>
+      <title>22. November 2005, Version 0.96b ist verfügbar</title>
+      <description> Eine Beta-Version für das in Kürze erscheinende Gtk-Gnutella 0.96 ist nun verfügbar. Diese Beta-Version muss notwendigerweise genutzt werden, weil die 0.95.x-Serie zum 26. November ausläuft. Neue Fähigkeiten Browse Host ist nun auch client-seitig nutzbar und auf der Serverseite stark verbessert worden. Verbindungen werden optional per TLS verschlüsselt. IPv6 wird unterstützt. Das User-Interface ist ins Chinesische, Griechische und Ukrainische übersetzt. D-BUS-Unterstützung. Hotkeys: F2, F8 und F9 (Siehe den Menüpunkt Anzeige->...). Suchvorgänge werden nach einer wählbaren Frist abgebrochen. Weitere Verbesserungen Die Verarbeitung von UTF-8 wurde korrigiert und optimiert. Verbesserte Konvertierung von Dateinamen sowie automagische Erkennung der verwendeten Zeichensätzen. Allgemeine Verbesserung der Performanz bezüglich QRP und der Suchfilter. Komplette Übersetzung ins Niederländische. Die gewählte Sortierung für Suchergebnisse wird gespeichert, zudem kann eine Voreinstellung gewählt werden. Unter der Haube Nutzung der Interfaces epoll() und kqueue(). Optimistischere Einschätzung der PARQ-Parameter, und Rückzug durch PARQ, wenn QUEUE nicht beantwortet wird. NFS-kompatibles Session-Locking. Ein schicker Browser für die internen Eigenschaften. Prüfsummen der Quellarchive: MD5 (gtk-gnutella-0.96b.tar.bz2) = 5ecd6baa91a19250217fd6911c6a932f SHA1 (gtk-gnutella-0.96b.tar.bz2) = f9664cdc08639b7455b5e14f05cb891176404296 urn:sha1:7FTEZXAIMONXIVNV4FHQLS4JCF3EAQUW Das  [...]</description>
+      <author></author>
+      <link>http://gtk-gnutella.sourceforge.net/de/#news_46</link>
+      <guid isPermaLink="true">http://gtk-gnutella.sourceforge.net/de/#news_46</guid>
+      <pubDate>Wed, 23 Nov 2005 21:30:29 GMT</pubDate>
+    </item>
+
+</channel>
+</rss>

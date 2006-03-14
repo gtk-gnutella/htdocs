@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>
+Gtk-Gnutella - グラフィカルな Unix Gnutella クライアント</title>
+    <link>http://gtk-gnutella.sourceforge.net/ja/</link>
+    <language>ja</language>
+    <description></description>
+    <copyright>https://sourceforge.net/projects/gtk-gnutella</copyright>
+    <lastBuildDate>Thu, 24 Nov 2005 19:58:26 GMT</lastBuildDate>
+    <generator>rss_gen.sh</generator>
+    <item>
+      <title>2005年11月22日, バージョン 0.96b がリリースされました</title>
+      <description> 0.96b は来たる 0.96 のβ版です。0.95x 系は11月26日に有効期限が切れようとしていますので、必ずこのβ版を使用するようにして下さい。 新機能 前回より始められたホストの (HTML および Gnutella プロトコルでの) 閲覧機能が取り敢えず完成しました。こちらからも相手のホストを閲覧できます。 TLS および IPv6 がサポートされました。 ギリシャ語、ウクライナ語、簡体字中国語の翻訳が加わりました。 D-BUS がサポートされました、アプリケーション間での通信が可能になります。 ホットキーが追加されました: F2, F8 および F9 (メニューの「表示」以下を御覧下さい) です。 検索はこれより有効期限が与えられ、これを過ぎると打ち切られます。この期限は変更可能です。 改善箇所 UTF-8 の処理が最適化されています。 ロケールに合わせてファイル名を変換することができるようになります、これにはエンコーディングの自動判別が利用されます。 QRP および検索フィルターにおいて、全般的に性能が改善されています。 ドイツ語、オランダ語および日本語の翻訳が更新されています。特にオランダ語の訳が完全なものになりました。 一部の表示欄で並べ替えがうまく働かない問題がありましたが、これが修正されました。 内部では システムコール epoll() / kqueue() がサポートされます。 PARQ の残り時間に関してより楽観的になります、また QUEUE の応答がない時は PARQ は一時退避します。 NFS 互換のセッションロック方式が採られました。 気の利いたプロパティ・ブラウザーが実装されました。環境設定ダイアログの「バグ解析」タブで、例えば「debug」を入力してみて下さい。 ソース tarball のチェックサムは: MD5 (gtk-gnutella-0.96b.tar.bz2) = 5ecd6baa91a19250217fd6911c6a932f SHA1 (gtk-gnutella-0.96b.tar.bz2) = f9664cdc08639b7455b5e14f05cb891176404296 urn:sha1:7FTEZXAIMONXIVNV4FHQLS4JCF3EAQUW gtk-gnutella  [...]</description>
+      <author></author>
+      <link>http://gtk-gnutella.sourceforge.net/ja/#news_46</link>
+      <guid isPermaLink="true">http://gtk-gnutella.sourceforge.net/ja/#news_46</guid>
+      <pubDate>Thu, 24 Nov 2005 11:09:11 GMT</pubDate>
+    </item>
+
+</channel>
+</rss>
