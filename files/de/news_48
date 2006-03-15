@@ -1,0 +1,78 @@
+<!-- $Id: news_48 10542 2006-02-22 17:40:09Z rmanfredi $ -->
+<h4>22. Februar 2006, Version 0.96.1 veröffentlicht</h4>
+
+<p>
+  Version 0.96.1 ist ein <b>stabiles</b> Release, das lediglich
+  signifikante Fehler behebt, die kürzlich gefunden und gemeldet wurden.
+</p>
+<p>
+Die folgenden Änderungen finden sich in diesem Release.
+</p>
+<h5>Behobene Fehler</h5>
+<ul>
+  <li>
+Eine Browse-Host-Anfrage, sofern einziger Suchvorgang, konnte nicht
+beendet werden (Fehler #1421196).
+  </li>
+  <li>
+Rücksetzen der Download-Puffer bei unvollständigem Schreibvorgang 
+(Fehler #1429981).
+  </li>
+  <li>
+Fehlerhafte Positionierung des Seitenpaneels unter GTK1 behoben
+(Fehler #1421940).
+  </li>
+  <li>
+Fehler, der zu unangemessenem Abbruch des Downloads führte, behoben,
+  </li>
+  <li>
+Die Download-Geschwindigkeit wurde fälschlicherweise doppelt angezeigt.
+  </li>
+  <li>
+Die Anzeige in der <i>Range</i>-Spalte unter <q>Downloads</q> war teilweise
+ungenau.
+  </li>
+</ul>
+
+<h5>Verbesserungen</h5>
+<ul>
+  <li>
+Zusätzliche PFS-Anzeige für aktive Einträge in der Warteschlange.
+  </li>
+  <li>
+Bereits im Puffer befindliche Daten werden bei der Anzeige des
+Download-Fortschitts berücksichtigt.
+  </li>
+  <li>
+Die Download-Anzeige zeigt nun auch wie viele HTTP-Anfragen bei jeder
+Verbindung abgeschickt wurden.
+  </li>
+  <li>
+Korrekte Wiederherstellung der Position des Hauptfensters.
+  </li>
+</ul>
+
+<h5>Konfigurationsänderungen</h5>
+<ul>
+  <li>
+Der minimale Verbindungs-Timeout wurde auf 15 Sekunden erhöht.
+  </li>
+  <li>
+Die Voreinstellung für "Maximaler Anteil an Slots pro Vendor" wurde
+auf 90 angehoben.
+  </li>
+</ul>
+
+<p>Prüfsummen der Quellcode-Archive:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.96.1.tar.bz2) =
+	<tt>6529379cc105c1e98f501a67e8e875fd</tt></li>
+  <li>SHA1 (gtk-gnutella-0.96.1.tar.bz2) =
+	<tt>28540c4e78f4c3513ac15b95228a98d17ace2091</tt></li>
+  <li><tt>urn:sha1:FBKAYTTY6TBVCOWBLOKSFCUY2F5M4IER</tt></li>
+</ul>
+
+<p>
+  <em>Das Gtk-Gnutella-Team</em>
+</p>
+<!-- end news_48 -->
