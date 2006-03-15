@@ -39,10 +39,6 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
     <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net">
     <link rel="copyright" href="https://sourceforge.net/projects/gtk-gnutella">
     <link rel="alternate"
-          type="application/rss+xml"
-          title="RSS"
-          href="/<?php echo LANG ?>/rss.xml">
-    <link rel="alternate"
           type="text/html"
           href="/en/?page=<?php echo PAGE ?>"
           hreflang="en"
@@ -177,9 +173,6 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
         </div>
       </div>
       <div class="hidden">&nbsp;</div>
-      <div class="boxed">
-          <a href="rss.xml" class="rss" type="application/rss+xml">RSS</a>
-      </div>
     </div>
 
     <td valign="top">
