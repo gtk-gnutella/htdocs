@@ -32,7 +32,7 @@
 <hr>
 
 <p><a name="devel-cvs"></a>
-  最新の開発版を手に入れるには、Gtk-Gnutella の CVS リポジトリーが利用できます。
+  最新の開発版を手に入れるには、Gtk-Gnutella の SVN リポジトリーが利用できます。
   <strong>警告</strong>: この開発版ですが、現在のバージョンは不安定であったり、あなたのマシンではコンパイルすらできないかもしれません。ただファイルの差分に関して興味があるなら<a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/">ウェブ上のリポジトリー</a>を御覧下さい。
 </p>
 
@@ -42,13 +42,8 @@
 
 <p>
   <kbd>
-    cvs -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella login<br>
-    cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/gtk-gnutella co gtk-gnutella-current
+    svn co https://svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella gtk-gnutella
   </kbd>
-</p>
-
-<p>
-  匿名利用者用のパスワード入力が促されますが、単にエンターキーを押して下さい。
 </p>
 
 <p>
@@ -58,11 +53,11 @@
 <hr>
 
 <a name="devel-snapshots"></a>
-<h3>CVS スナップショット:</h3>
+<h3>SVN スナップショット:</h3>
 
 <p>
   <a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella-current.tar.bz2">
-    <strong>公式 CVS スナップショット</strong></a>
+    <strong>公式 SVN スナップショット</strong></a>
     (<?php iceinclude("cvs_snapshot_date", 0) ?> に作成されました)
 </p>
 <p>
