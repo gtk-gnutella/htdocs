@@ -1,0 +1,13 @@
+<!-- $Id: news_48 10542 2006-02-22 17:40:09Z rmanfredi $ -->
+<h4>14 March 2006, Switched to subversion</h4>
+
+<p>
+  As of 14 march 2006, development takes place in sourceforge
+  subversion. If you are still using CVS to get the latest version
+  of gtk-gnutella please use the new SVN repository:<br/>
+  svn co https://svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella gtk-gnutella <br/>
+  To update your sources use:<br/>
+  svn update</br>
+  There is no delay between the anonymous SVN and the developers SVN.
+</p>
+<!-- end news_48 -->
