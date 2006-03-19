@@ -3,12 +3,13 @@
 
 <p>
   Sinds 14 maart 2006 worden de ontwikkelingen bijgehouden in 
-  sourceforge subversion. Als je nog steeds gebruik maakt van CVS
+  sourceforge <a href="http://subversion.tigris.org/">subversion</a>. 
+  Als je nog steeds gebruik maakt van CVS
   om de laatste versie op te halen, gebruik dan nu svn om de laatste
   versie op te halen:<br/>
-  svn co https://svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella gtk-gnutella <br/>
+  <kbd>svn co https://svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella gtk-gnutella </kbd>
   Om vervolgens de laatste versie op te halen, gebruik dan:<br/>
-  svn update</br>
+  <kbd>svn update</kbd>
   Tussen de anonieme SVN en de ontwikkelaars SVN zit geen vertraging.
 </p>
 <!-- end news_49 -->
