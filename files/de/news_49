@@ -2,7 +2,7 @@
 <h4>14. März 2006, Wechsel zu Subversion</h4>
 
 <p>
-  Seit dem 14. März 2006 wird <a href="subversion.tigris.org/">Subversion</a>
+  Seit dem 14. März 2006 wird <a href="http://subversion.tigris.org/">Subversion</a>
   für die weitere Entwicklung genutzt. Alle, die noch CVS nutzen um an die
   neueste Version von Gtk-Gnutella zu kommen, sollten ab sofort auf SVN
   umsteigen:
