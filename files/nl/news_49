@@ -1,0 +1,15 @@
+<!-- $Id: news_49 10542 2006-02-22 17:40:09Z rmanfredi $ -->
+<h4>14 maart 2006, overgestapt naar subversion</h4>
+
+<p>
+  Sinds 14 maart 2006 worden de ontwikkelingen bijgehouden in 
+  sourceforge subversion. Als je nog steeds gebruik maakt van CVS
+  om de laatste versie op te halen, gebruik dan nu svn om de laatste
+  versie op te halen:<br/>
+  svn co https://svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella gtk-gnutella <br/>
+  Om vervolgens de laatste versie op te halen, gebruik dan:<br/>
+  svn update</br>
+  Tussen de anonieme SVN en de ontwikkelaars SVN zit geen vertraging.
+</p>
+<!-- end news_49 -->
+
