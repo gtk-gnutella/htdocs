@@ -12,7 +12,7 @@
   Desktopumgebung <a href="http://www.gnome.org/">GNOME</a> wird nicht
   ben&ouml;tigt.  Gtk-Gnutella wird derzeit haupts&auml;chlich unter
   Linux (Debian 2.2) entwickelt und getestet. Es ist unter Linux, <a
-  href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>,
+  href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net-p2p/gtk-gnutella/">FreeBSD</a>,
   <a
   href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
   <a

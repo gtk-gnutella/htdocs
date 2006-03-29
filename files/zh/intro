@@ -11,7 +11,7 @@
 <a href="http://www.libxml.org">libxml</a>，但Gnome不是必须的。
 目前，Gtk-Gnutella主要在Linux(Debian 3.1)下进行开发与测试，
 至少支持如下操作系统：Linux、
-<a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>、
+<a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net-p2p/gtk-gnutella/">FreeBSD</a>、
 <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>、<a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>、
 <a href="http://gtk-gnutella.darwinports.com/">Darwin</a>、
 Solaris、Tru64 UNIX (OSF/1)、 SGI IRIX、BeOS等，

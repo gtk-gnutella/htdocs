@@ -11,7 +11,7 @@
   (1.2 ή νεότερο) και <a href="http://www.libxml.org">libxml</a>.
   Δεν απαιτείται Gnome. Προς το παρόν αναπτύσσεται και δοκιμάζεται σε 
   Linux (Debian 2.2) και είναι γνωστό ότι τρέχει τουλάχιστον σε Linux,
-  <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net/gtk-gnutella/">FreeBSD</a>,
+  <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net-p2p/gtk-gnutella/">FreeBSD</a>,
   <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
   <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
   <a href="http://gtk-gnutella.darwinports.com/">Darwin</a>,
