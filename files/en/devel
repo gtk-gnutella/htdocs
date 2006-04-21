@@ -51,7 +51,7 @@
 
 <hr>
 
-<p><a name="devel-cvs"></a>
+<p><a name="devel-svn"></a>
   To get the latest development version, you can always use the SVN 
   repository of Gtk-Gnutella.  <strong>Warning</strong>: As a development 
   version, the current version may be unstable or even not compile right on 
@@ -86,6 +86,9 @@
 <h3>SVN snapshots:</h3>
 
 <p>
-	Currently there are no SVN snapshots available
+<a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella-current.tar.bz2">
+    <strong>Official SVN snapshot</strong></a><br>
+    Generated: <?php iceinclude("cvs_snapshot_date", 0) ?><br>
+    SHA1 <TT><?php iceinclude("cvs_snapshot_sha1", 0) ?>
 </p>
 <!-- end devel -->

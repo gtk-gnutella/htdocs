@@ -10,7 +10,7 @@
       href="?page=bugreport_howto">
 <link rel="section" title="Developers" href="?page=devel">
 <link rel="section" title="Code 101" href="?page=code">
-<link rel="section" title="CVS Snapshots" href="?page=devel#devel-snapshots">
+<link rel="section" title="SVN Snapshots" href="?page=devel#devel-snapshots">
 <link rel="section" title="Links" href="?page=links">
 <link rel="section" title="Donate" href="?page=donate">
 <!-- End of $RCSfile$ -->

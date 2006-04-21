@@ -26,7 +26,7 @@
     the latest 
     <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
     released version</a> or from versions built from 
-    <a href="?page=devel#devel-cvs">current CVS</a>.
+    <a href="?page=devel#devel-svn">current SVN</a>.
    The developers 
     code gtk-gnutella not for profit, but because they find it an interesting 
     hobby and because they want to give something back to the open source 
@@ -65,14 +65,13 @@
     gtk-gnutella web site.  
   </blockquote>
   <p>
-    If it's a CVS version, use
+    If you compiled Gtk-Gnutella from SVN, you can use
     <code><a href="http://www.rocketaware.com/man/man1/ident.1.htm">ident</a>
-    </code> or look in <code>gtk-gnutella-current/src/CVS/Entries</code>
-    and paste the last commit entry into your report.  For example:  
+    </code>
+    to verify which revisions of which sources files your binary
+    was compiled with. This can be useful to verify whether you
+    really compiled against the latest revision.
   </p>
-  <blockquote style="font-weight: bold">
-    /support-glade2.c/1.5/Sat Jun 14 17:54:28 2003// 
-  </blockquote>
   <p>
 	If you compiled it yourself, say which <code>./Configure </code> options 
 	you used.  For example:

@@ -82,14 +82,14 @@
 
 <p>
   At first, changes you make should be sent via e-mail for integration.
-  The preferred way to make those diffs is via "cvs diff -u".  After a few
-  successful patches, when you get used to the code, you will be granted direct
-  CVS access in write mode.
+  The preferred way to make those diffs is via "svn diff".  After a few
+  successful patches, when you get used to the code, you will be granted
+  SVN write-access.
 </p>
 
 <p>
   You should be aware that our quality standards are quite high.  We do not
-  usually commit something that does not work to CVS.  Here, "work" means
+  usually commit something that does not work to SVN.  Here, "work" means
   that it has been tested reasonably for a few days, to make sure nothing is
   wrong.
 </p>
