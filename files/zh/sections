@@ -10,7 +10,7 @@
       href="?page=bugreport_howto">
 <link rel="section" title="开发园地" href="?page=devel">
 <link rel="section" title="代码 101" href="?page=code">
-<link rel="section" title="CVS 快照" href="?page=devel#devel-snapshots">
+<link rel="section" title="SVN 快照" href="?page=devel#devel-snapshots">
 <link rel="section" title="链接" href="?page=links">
 <link rel="section" title="捐助" href="?page=donate">
 <!-- End of $RCSfile$ -->

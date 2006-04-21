@@ -18,7 +18,7 @@
 13: if (user_agent == NULL)
 </pre>
 <p>
-	That bug was in CVS on 17/01/2004 in uploads.c line 2088.
+	That bug was in CVS on 2004-01-17 in uploads.c line 2088.
 </p>
 
 <h2>Test 2</h2>
@@ -39,7 +39,7 @@
 	list in <code>data_list</code>.
 </p>
 <p>
-	That bug was in CVS on 17/01/2004 in downloads_cb.c line 144. We had the same problem
+	That bug was in CVS on 2004-01-17 in downloads_cb.c line 144. We had the same problem
 	in a few other places too and we could measure a leak of about 1MB size after gtkg
 	had been in regular usage for 3 hours.<br>
 </p>
