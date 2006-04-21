@@ -88,7 +88,7 @@
 <p>
 <a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella-current.tar.bz2">
     <strong>Official SVN snapshot</strong></a><br>
-    Generated: <?php iceinclude("cvs_snapshot_date", 0) ?><br>
-    SHA1 <TT><?php iceinclude("cvs_snapshot_sha1", 0) ?>
+    Generated: <?php iceinclude("svn_snapshot_date", 0) ?><br>
+    SHA1 <TT><?php iceinclude("svn_snapshot_sha1", 0) ?>
 </p>
 <!-- end devel -->
