@@ -1,0 +1,25 @@
+<!-- $Id: news_49 10612 2006-03-19 16:01:47Z daichik $ -->
+<h4>14 Mai 2006, changement vers subversion</h4>
+
+<p>
+  Depuis le 14 mars 2006, le d&eacute;veloppement utilise le d&eacute;pot <a href="http://subversion.tigris.org/">Subversion</a>
+  de SourceForge. Si vous utilisez encore CVS pour obtenir la derni&egrave;re version
+  de Gtk-Gnutella, veuillez utiliser le nouveau d&eacute;pot SVN:
+</p>
+
+<p>
+<kbd>svn co https://svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella gtk-gnutella</kbd>
+</p>
+
+<p>
+  Pour mettre &agrave; jour les sources utilisez:
+</p>
+
+<p>
+  <kbd>svn update</kbd>
+</p>
+
+<p>
+  Il n'y a pas de d&eacute;lais entre l'acc&egrave;s SVN anonyme et celui des d&eacute;veloppeurs.
+</p>
+<!-- end news_49 -->
