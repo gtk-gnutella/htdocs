@@ -9,8 +9,10 @@
   It runs on every Unix-like system which supports
 <a href="http://www.gtk.org/">GTK+</a> 
   (1.2 or above) and <a href="http://www.libxml.org">libxml</a>.
-  Gnome is not required. It is currently developed and tested under
-  Linux (Debian 2.2) and is known to run at least on Linux,
+  The GNOME desktop environment is not required. It is currently developed
+  and tested under Linux (<a href="http://www.debian.org/">Debian</a>) as
+  well as <a href="http://www.NetBSD.org">NetBSD</a>. It is known to run at
+  least on Linux,
   <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net-p2p/gtk-gnutella/">FreeBSD</a>,
   <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
   <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
