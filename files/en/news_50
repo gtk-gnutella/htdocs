@@ -1,0 +1,178 @@
+<!-- $Id$ -->
+<h4>17 October 2006, Version 0.96.2 Released</h4>
+
+<p>
+  Version 0.96.2 is a <b>stable</b> release. Fixing important
+  bugs and adding a couple of improvements.
+</p>
+<p>
+Below is the changelog entry for the release.
+</p>
+<h5>Bug Fixes</h5>
+<ul>
+  <li>
+  Fixed bug #1467793 <q>uname() return value</q>.
+  </li>
+  <li>
+  Fixed bug #1467681 <q>weird HTTP acknowledgment</q>.
+  </li>
+  <li>
+  Fixed bug #1422526 <q>`Drop results' should prepend, not append, to filters</q>.
+  </li>
+  <li>
+  Fixed bugs in the dynamic querying logic that caused leaves to
+  receive very few results through Gtk-Gnutella ultrapeers.
+  </li>
+  <li>
+  Fixed crash on 64-bit platforms when using the navigation tree.
+  </li>
+  <li>
+  Fixed format mismatches in some translated message catalogs.
+  </li>
+</ul>
+
+<h5>Updates</h5>
+<ul>
+  <li>
+  Updated French, Japanese and Ukrainian translations.
+  </li>
+  <li>
+  Updated list of hostile IP ranges.
+  </li>
+  <li>
+  Updated list of bootstrap caches.
+  </li>
+  <li>
+  Updated list of country names and codes.
+  </li>
+</ul>
+
+<h5>Improvements</h5>
+<ul>
+  <li>
+  Italian translation.
+  </li>
+  <li>
+  Fairly complete support for magnet-links; magnets can be passed per
+  drag &amp; drop or entered via the search box. Magnets can be generated
+  from the search results display and the downloads display through
+  the context menu.
+  </li>
+  <li>
+  SHA-1 based spam filtering.
+  </li>
+  <li>
+  Built-in spam detection for certain kinds of spam.
+  </li>
+  <li>
+  [GTK2] Overhaul of the downloads display.
+  </li>
+  <li>
+  [GTK1] Downloads can be sorted albeit the sorting does not persist.
+  </li>
+  <li>
+  Compiling the topless is variant is now as easy as
+  <q>./Configure -Oders -Dd_headless</q>.
+  </li>
+  <li>
+  Support for several command-line options like <q>--help</q>.
+  </li>
+  <li>
+  A local shell interface accessible with <q>gtk-gnutella --shell</q>.
+  </li>
+  <li>
+  New shell commands <q>nodes</q> and <q>shutdown</q>.
+  </li>
+  <li>
+  All downloads are stopped now if the disk apparently filled up.
+  </li>
+  <li>
+  Caching of TLS-support allows automatic use of TLS.
+  </li>
+  <li>
+  ~/.gtk-gnutella/whitelist supports the <q>tls:</q> as well.
+  </li>
+  <li>
+  More search results columns for experts (hidden by default).
+  </li>
+  <li>
+  Diverse IPv6 settings can be configured in the GUI now.
+  </li>
+  <li>
+  The setting <q>IPv4 and IPv6</q> works now; the default is <q>IPv4 only</q>.
+  </li>
+  <li>
+  Results bearing no SHA-1 are suppressed by default.
+  </li>
+  <li>
+  Results from hostile IP ranges can be made visible; they are discarded
+  by default.
+  </li>
+  <li>
+  One's own shared files can be search by using the prefix <q>local:</q>
+  for searches. Local searches uses regex syntax unlike Gnutella searches.
+  <q>local:</q> alone will list all shared files. Local searches results
+  allow drag &amp; drop and generation of magnet links.
+  </li>
+  <li>
+  Support of Socker for access to privileged TCP and UDP ports below 1024.
+  </li>
+  <li>
+  Optionally bind sockets to a configured address instead of the wildcard       
+  address.
+  </li>
+  <li>
+  Support of IPv6-to-IPv4 Transport Relay Translators (RFC 3142).
+  </li>
+</ul>
+
+<h5>Under the hood</h5>
+<ul>
+  <li>
+  mmap()-based memory allocation to decrease fragmentation and
+  increase performance.
+  </li>
+  <li>
+  Support of socket option TCP_DEFER_ACCEPT (Linux).
+  </li>
+  <li>
+  Support of accept() filter <q>dataready</q> (FreeBSD).
+  </li>
+  <li>
+  Support of /dev/poll on Solaris and IRIX.
+  </li>
+  <li>
+  Sharing of file descriptors so that we don't require a file descriptor
+  per swarm source but only one per file.
+  </li>
+  <li>
+  Use of pwrite(), pwritev() for flushing download buffers.
+  </li>
+  <li>
+  Reopen log files on SIGHUP if the command-line options --log_stderr or
+   --log_stdout are specified which is useful for topless mode.
+  </li>
+  <li>
+  Disabled following of HTTP redirects.
+  </li>
+  <li>
+  Support of <q>deflate</q> transfer-encoding for all downloads.
+  </li>
+  <li>
+  Support for compression of UDP packets.
+  </li>
+</ul>
+
+<h5>Checksums of the source tarball:</h5>
+<ul>
+  <li>MD5 (gtk-gnutella-0.96.2.tar.bz2) =
+	<tt>a7c2db6223bbabff3581edc6f8b45106</tt></li>
+  <li>SHA1 (gtk-gnutella-0.96.2.tar.bz2) =
+	<tt>59baec3659ad40bb07ba50b29b942facf584043f</tt></li>
+  <li><tt>urn:sha1:LG5OYNSZVVALWB52KCZJXFBPVT2YIBB7</tt></li>
+</ul>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_48 -->
