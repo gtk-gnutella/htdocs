@@ -31,7 +31,6 @@ $pages = array(
   "faq",
   "features",
   "filtering_howto",
-  "gwebcache",
   "links",
   "mailing",
   "news_bridge",
