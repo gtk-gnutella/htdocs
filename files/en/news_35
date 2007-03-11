@@ -3,7 +3,7 @@
 <p>
 	It is
   recommended that you either wait for this release or compile from the
-  <a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella-current.tar.bz2">
+  <a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella.tar.bz2">
     <strong>Official CVS snapshot</strong></a>, which should be at least as
   stable as the releases and has fixes for most of the known bugs.  If you want
   to help stamp out bugs for this release please read the 
