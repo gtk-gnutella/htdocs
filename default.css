@@ -90,8 +90,8 @@ div.sb_section {
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	padding: 0.3em;
-	border-left: solid 2px lightgray;
-	border-top: solid 2px lightgray;
+	border-left: solid 2px #D3D3D3;
+	border-top: solid 2px #D3D3D3;
 }
 
 a.sb_section_header {
