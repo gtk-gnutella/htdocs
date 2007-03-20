@@ -14,29 +14,29 @@
   <li>Viele statistische Informationen</li>
   <li>Konform zu:
     <ul>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/http/http-1.1.txt?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/http/http-1.1.txt"
 		>HTTP/1.1</a></li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/handshaking_0.6?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/handshaking_0.6"
         >Gnutella 0.6</a> (Vendor Code GTKG and soon GNTD)</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/compression?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/compression"
         >Gnutella-Verbindungskompression</a></li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/bye?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/bye"
         >BYE</a>-Paket</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/huge?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/huge"
         >HUGE</a> (<b>H</b>ash/<b>U</b>RN <b>G</b>nutella <b>E</b>xtensions)</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ping-pong?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/ping-pong"
         >Ping/Pong-Reduktion</a></li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/PARQ?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/PARQ"
         >PARQ</a> (<b>P</b>assives/<b>A</b>ctive <b>R</b>emote <b>Q</b>ueueing)</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/PFSP?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/PFSP"
         >PFSP</a> (Partial File Sharing Protocol)</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/vendor_msg?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/vendor_msg"
         >Vendor Messages</a></li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/ultra-peers?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/ultra-peers"
         >Ultrapeers</a></li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/QRP?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/QRP"
         >QRP</a> (<b>Q</b>uery <b>R</b>outing <b>P</b>rotocol)</li>
-      <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/gtk-gnutella/gtk-gnutella-current/doc/gnutella/push_proxy?rev=HEAD&amp;content-type=text/vnd.viewcvs-markup"
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/push_proxy"
         >Push-Proxies</a></li>
     </ul>
   </li>
