@@ -1,7 +1,7 @@
 <!-- $Id$ -->
 <h4>2004年1月12日, 間もなくバグ修正版がリリースされます</h4>
 <p>
-  このリリースを待つか、<a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella-current.tar.bz2"><strong>公式 CVS スナップショット</strong></a>からコンパイルすることを勧めます。このスナップショットは少なくともリリース版と同程度に安定しています、またすでに報告されているバグの大半が修正されています。このリリースのバグを根絶する手助けをして下さるなら、<a href="?page=bugreport_howto">バグ報告の方法</a>を御覧になった上で、<a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">バグ追跡システム</a>へバグを報告して下さい。後で gtk-gnutella へのいくつか素晴らしい改良がなされますので、待つだけの価値はあると思います。
+  このリリースを待つか、<a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella.tar.bz2"><strong>公式 CVS スナップショット</strong></a>からコンパイルすることを勧めます。このスナップショットは少なくともリリース版と同程度に安定しています、またすでに報告されているバグの大半が修正されています。このリリースのバグを根絶する手助けをして下さるなら、<a href="?page=bugreport_howto">バグ報告の方法</a>を御覧になった上で、<a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">バグ追跡システム</a>へバグを報告して下さい。後で gtk-gnutella へのいくつか素晴らしい改良がなされますので、待つだけの価値はあると思います。
 </p>
 <p>
 	<strong>2004年1月14日付の更新:</strong>
