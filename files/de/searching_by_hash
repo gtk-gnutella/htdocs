@@ -18,7 +18,7 @@
 <p>
   Der erste Teil ist der Base32-kodierte SHA-1-Hash der Datei. Um danach
   zu suchen, muss diesem noch <em>urn:sha1:</em> vorangestellt werden.
-  Der SHA-1-Hash l&auml;sst sich nat&uuml;rlich nicht nur mit Gtk-Gnutella
+  Der SHA-1-Hash l&auml;sst sich nat&uuml;rlich nicht nur mit gtk-gnutella
   selbst ermitteln. Im <a href="/tools/">tools</a> Verzeichnis findet sich
   ein Werkzeug daf&uuml;r.
 </p>
@@ -29,8 +29,8 @@
   <a href="http://magnet-uri.sf.net">Magnet-Links</a> sind derzeit nur
   teilweise unterst&uuml;tzt. Um Magnet-Links von einer Webseite zu nutzen,
   muss der Link entweder per <i>Drag & Drop</i> vom Web-Browser auf das Fenster
-  von Gtk-Gnutella gezogen werden oder per Zwischenablage kopiert und als
-  Suchtext eingegeben werden. Gtk-Gnutella startet dann die Suche nach der
+  von gtk-gnutella gezogen werden oder per Zwischenablage kopiert und als
+  Suchtext eingegeben werden. gtk-gnutella startet dann die Suche nach der
   Datei.
 </p>
 

@@ -71,7 +71,7 @@ Below is the ChangeLog entry for the release.
   them now.
   </li>
   <li>
-  Added a tray icon to hide the Gtk-Gnutella application windows. This
+  Added a tray icon to hide the gtk-gnutella application windows. This
   feature requires Gtk+ 2.10 or newer.
   </li>
   <li>
@@ -83,7 +83,7 @@ Below is the ChangeLog entry for the release.
   showing bogus data.
   </li>
   <li>
-  Added README.Debian with instructions how to compile Gtk-Gnutella yourself
+  Added README.Debian with instructions how to compile gtk-gnutella yourself
   on Debian-derived systems.
   </li>
 </ul>

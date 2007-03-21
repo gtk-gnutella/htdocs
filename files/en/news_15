@@ -15,7 +15,7 @@ management, but it was not configurable via the GUI).
 <li>Both HTTP and Gnet bandwidth is now displayed real time.
 <li>Added full HUGE support (Hash/URN Gnutella Extensions).
 <li>Added support for local host preference.
-<li>Gtk-Gnutella can do traffic compression when connecting to a node that
+<li>gtk-gnutella can do traffic compression when connecting to a node that
 also supports it.
 <li>Upload and downloads will now show User-Agent/Server information.
 <li>Added status to the download queue.

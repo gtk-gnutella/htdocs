@@ -13,7 +13,7 @@
   <li><a href="#general-gtkg">Was ist GTKG?</a></li>
   <li><a href="#general1">This eats up too much bandwidth!</a></li>
   <li><a href="#general-ultrapeer">Was sind Ultrapeers und Blattknoten?</a></li>
-  <li><a href="#general-firewall">Wieso behauptet Gtk-Gnutella, es sei hinter
+  <li><a href="#general-firewall">Wieso behauptet gtk-gnutella, es sei hinter
     einer Firewall, obwohl das nicht der Fall ist?</a>
   </li>
 </ul>
@@ -30,7 +30,7 @@
   <li><a href="#gnet0">Wie viele Verbindungen sind ratsam?</a></li>
   <li><a href="#gnet1">Muss meine Firewall speziell konfiguriert werden?</a></li>
   <li><a href="#gnet-forward-howto">How do I configure port forwarding?</a></li>
-  <li><a href="#gnet-udp">Verwendet Gtk-Gnutella UDP?</a></li>
+  <li><a href="#gnet-udp">Verwendet gtk-gnutella UDP?</a></li>
   <li><a href="#gnet2">Was bedeutet "[FC]"?</a></li>
   <li><a href="#gnet3">Wieso verschwinden Gnutella-Verbindungen, während eines
     Uploads?</a></li>
@@ -62,7 +62,7 @@
   <li><a href="#down4">What is a "chunk"?</a></li>
   <li><a href="#down5">What is the "download mesh"?</a></li>
   <li><a href="#down_push">What is a "push request"?</a></li>
-  <li><a href="#down7">Wieso hängt Gtk-Gnutella Dateinamen ein <q>.OK</q> an?</a></li>
+  <li><a href="#down7">Wieso hängt gtk-gnutella Dateinamen ein <q>.OK</q> an?</a></li>
   <li><a href="#down8">I got a file that just won't download!</a></li>
   <li><a href="#down9">In the downloads pane, what does it mean if the color
   of the text is grey instead of black?</a></li>
@@ -106,9 +106,9 @@
 
 <h3><a name="general-gtkg">Was ist <q>GTKG</q>?</a></h3>
 <p>
-  Wir sprechen oft von GTKG anstatt Gtk-Gnutella, einfach weil es kürzer
+  Wir sprechen oft von GTKG anstatt gtk-gnutella, einfach weil es kürzer
   ist. GTK bezieht sich auf GTK+, das für die grafische Oberfläche
-  von Gtk-Gnutella benutzt wird.
+  von gtk-gnutella benutzt wird.
 </p>
 
 <h3><a name="general1">This eats up too much bandwidth!</a></h3>
@@ -149,7 +149,7 @@
 
 <h3><a name="general-ultrapeer">Was sind Ultrapeers und Blattknoten?</a></h3>
 <p>
-  Gtk-Gnutella unterstützt den Ultrapeer- und Leaf-Modus seit Version 0.92.
+  gtk-gnutella unterstützt den Ultrapeer- und Leaf-Modus seit Version 0.92.
   Dadurch werden Peers im Gnutella-Netwerk in Ultrapeers, die sich zu
   anderen Ultrapeers sowie Blattknoten verbinden, und Blattknoten
   (<q>Leaves</q>), die sich zu wenigen Ultrapeers verbinden, unterteilt.
@@ -173,12 +173,12 @@
 </p>
 
 <h3>
-  <a name="general-firewall">Wieso behauptet Gtk-Gnutella, es sei hinter
+  <a name="general-firewall">Wieso behauptet gtk-gnutella, es sei hinter
     einer Firewall, obwohl das nicht der Fall ist?</a>
 </h3>
 
 <p>
- Solange Gtk-Gnutella keine eingehende Verbindung sieht, wird davon
+ Solange gtk-gnutella keine eingehende Verbindung sieht, wird davon
  ausgegangen, dass der konfigurierte TCP-Port durch eine Firewall blockiert
  wird.
 
@@ -207,7 +207,7 @@ See also,
 </p>
 <p>
   Die Compile-Optionen können ebenfalls per Kommandozeile übergeben werden.
-  Hier ein Beispiel, das Gtk-Gnutella so konfiguriert, dass
+  Hier ein Beispiel, das gtk-gnutella so konfiguriert, dass
 </p>
 <ul>
   <li>
@@ -459,7 +459,7 @@ See also,
   The standard encoding in the modern Gnutella network is UTF-8. All queries
   and results should be encoded this way. Unfortunately, there is still
   many legacy software that does not convert textual data (like filenames
-  and queries) to UTF-8 but uses arbitrary character sets instead. Gtk-Gnutella
+  and queries) to UTF-8 but uses arbitrary character sets instead. gtk-gnutella
   tries to detect the used character set but this cannot be perfect. It may
   also replace characters with underscores if they cannot be converted to
   UTF-8.
@@ -495,7 +495,7 @@ See also,
 <h3><a name="down2">Why is the same file downloaded X times?</a></h3>
 <p>
   Check the <em>Range</em> column. This is called
-  <a href="#down3">swarming</a>.  Gtk-Gnutella tries to get the file in
+  <a href="#down3">swarming</a>.  gtk-gnutella tries to get the file in
   <a href="#down4">chunks</a> and will get it from multiple hosts in parallel,
   if possible.
 </p>
@@ -503,7 +503,7 @@ See also,
 <h3><a name="down3">What is "swarming"?</a></h3>
 <p>
   Swarming describes the ability to download a single file from multiple hosts
-  in parallel. Gtk-Gnutella will automatically try to find additional sources
+  in parallel. gtk-gnutella will automatically try to find additional sources
   for any queued file using the <a href="#down5">download mesh</a> and by
   monitoring routed results.
 </p>
@@ -554,7 +554,7 @@ See also,
   <a href="#gnet1">firewalls</a>.
 </p>
 <p>
-  Otherwise if Gtk-Gnutella says it has only a few sources for the file
+  Otherwise if gtk-gnutella says it has only a few sources for the file
   (best seen in the fileinfo subtab in the downloads pane) then this can have
   two reasons:
 </p>
@@ -582,7 +582,7 @@ See also,
 
 <h3><a name="filenames">Welche Kodierung wird für Dateinamen benutzt?</a></h3>
 <p>
-  Gtk-Gnutella kodiert Dateinamen als UTF-8 per Default. Manche Anwendungen
+  gtk-gnutella kodiert Dateinamen als UTF-8 per Default. Manche Anwendungen
   haben Darstellungsprobleme, wenn die locale-Einstellung nicht UTF-8
   verwendet. Im schlimmsten Fall koennen solche Anwendungen dann auch nicht
   auf die Dateien zugreifen. Die Kodierung bzw. der zu verwendende Zeichensatz
@@ -632,7 +632,7 @@ See also,
 </p>
 
 <p>
-  Gtk-Gnutella unterstützt G_FILENAME_ENCODING seit Version 0.96 unabhängig
+  gtk-gnutella unterstützt G_FILENAME_ENCODING seit Version 0.96 unabhängig
   davon ob Gtk+ 1.2 oder Gtk+ 2.x zum Einsatz kommt.
 </p>
 

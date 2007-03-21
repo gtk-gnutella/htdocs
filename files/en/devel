@@ -14,7 +14,7 @@
 <p>
   On the other hand, gtk-gnutella has some features the major players lack,
   such as PARQ for passive queuing and TLS support for encrypted connections.
-  Gtk-gnutella is also a very efficient C implementation with a low memory
+  gtk-gnutella is also a very efficient C implementation with a low memory
   footprint and low CPU usage.  It's probably among the fastest clients today.
 </p>
 <p>
@@ -53,7 +53,7 @@
 
 <p><a name="devel-svn"></a>
   To get the latest development version, you can always use the SVN 
-  repository of Gtk-Gnutella.  <strong>Warning</strong>: As a development 
+  repository of gtk-gnutella.  <strong>Warning</strong>: As a development 
   version, the current version may be unstable or even not compile right on 
   your machine. If you're just interested in getting an overview of the 
   different files you can browse the repository 
@@ -72,7 +72,7 @@
 </p>
 
 <p>
-  If you want to contribute to the development of Gtk-Gnutella please visit
+  If you want to contribute to the development of gtk-gnutella please visit
   our <a href="http://sourceforge.net/projects/gtk-gnutella/">SourceForge
   Project Page</a> where you can subscribe to the gtk-gnutella-devel mailing
   list and post your patches, bug reports and feature requests to 

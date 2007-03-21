@@ -22,7 +22,7 @@
   </li>
   <li>
    Fouten opgelost in het dynamisch zoeken waardoor leaves te 
-   weinig resultaten terug kregen via een Gtk-Gnutella ultrapeer.
+   weinig resultaten terug kregen via een gtk-gnutella ultrapeer.
   </li>
   <li>
     Crash opgelost op 64-bit systemen als de navigatie boom werd gebruikt.

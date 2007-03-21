@@ -2,15 +2,15 @@
 <h1>So siehts aus</h1>
 
 <p>
-  Hier sind einige Bilder die <b>Gtk-Gnutella 0.92c</b> im Einsatz
+  Hier sind einige Bilder die <b>gtk-gnutella 0.92c</b> im Einsatz
   unter <a href="#shots092-gtk1">Gtk+ 1.2</a> als auch
   <a href="#shots092-gtk2">Gtk+ 2.x</a> zeigen.
   Eine gr&ouml;&szlig;ere Darstellung wird durch Anklicken der Bilder erreicht.
-  In diesen Beispielen ist Gtk-Gnutella auf Englisch eingestellt.
+  In diesen Beispielen ist gtk-gnutella auf Englisch eingestellt.
 </p>
 
 <p>
-  Wer ein historisches Interesse an Gtk-Gnutella hat, kann hier
+  Wer ein historisches Interesse an gtk-gnutella hat, kann hier
   Bilder finden, die &auml;ltere Versionen im Einsatz zeigen:
   <ul>
     <li>
@@ -27,7 +27,7 @@
 <h2>Gtk+ 1.2</h2><a name="shots092-gtk1"></a>
 
 <p>
-  Auf diesen Bildern ist Gtk-Gnutella unter Verwendung der <i>gtk-engine</i>
+  Auf diesen Bildern ist gtk-gnutella unter Verwendung der <i>gtk-engine</i>
   <q>Metal</q> zu sehen, wobei die Fonts und Farben manuell angepasst wurden.
 </p>
 

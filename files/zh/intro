@@ -4,12 +4,12 @@
 <h3>Unix下的Gnutella软件</h3>
 
 <p>
-  Gtk-Gnutella是Unix类系统下 
+  gtk-gnutella是Unix类系统下 
 <a href="http://www.gnutella.com/">Gnutella</a>
 的服务端/客户端实现，该软件依赖于
 <a href="http://www.gtk.org/">GTK+</a>  (1.2版以上 ) 、 
 <a href="http://www.libxml.org">libxml</a>，但Gnome不是必须的。
-目前，Gtk-Gnutella主要在Linux(Debian 3.1)下进行开发与测试，
+目前，gtk-gnutella主要在Linux(Debian 3.1)下进行开发与测试，
 至少支持如下操作系统：Linux、
 <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net-p2p/gtk-gnutella/">FreeBSD</a>、
 <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>、<a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>、
@@ -22,8 +22,8 @@ Solaris、Tru64 UNIX (OSF/1)、 SGI IRIX、BeOS等，
 Gnutella按照GNU通用公共许可证(GPL)进行发布。
 </p>
 
-<p>Gtk-Gnutella尚未完工，但已经具有完整的功能，通过Gtk-Gnutella，
-可以分享、搜索、下载各种文件，Gtk-Gnutella的稳定性也很好，
+<p>gtk-gnutella尚未完工，但已经具有完整的功能，通过gtk-gnutella，
+可以分享、搜索、下载各种文件，gtk-gnutella的稳定性也很好，
 可以自觉地一天接一天地工作下去。
 </p>
 

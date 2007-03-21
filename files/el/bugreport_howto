@@ -2,9 +2,9 @@
 <h1>HOWTO Αναφοράς Σφαλμάτων</h1>
 <ul>
   <li><a href="#bugreport-intro">Πως αρχειοθετώ μία χρήσιμη αναφορά σφάλματος;</a></li>
-  <li><a href="#bugreport-wrong">Το Gtk-Gnutella κάνει κάτι λάθος ή κάτι απρόβλεπτο.</a></li>
-  <li><a href="#bugreport-compile">ΤΟ Gtk-Gnutella δε γίνεται compile!</a></li>
-  <li><a href="#bugreport-crash">Το Gtk-Gnutella κατέρρευσε!  Τώρα τι γίνεται;</a></li>
+  <li><a href="#bugreport-wrong">Το gtk-gnutella κάνει κάτι λάθος ή κάτι απρόβλεπτο.</a></li>
+  <li><a href="#bugreport-compile">ΤΟ gtk-gnutella δε γίνεται compile!</a></li>
+  <li><a href="#bugreport-crash">Το gtk-gnutella κατέρρευσε!  Τώρα τι γίνεται;</a></li>
   <li><a href="#bugreport-where">Ποιό είναι το καλύτερο μέρος για την υποβολή της αναφοράς σφάλματός μου;</a></li>
 </ul>
 <h3><a name="bugreport-intro">Πως αρχειοθετώ μία χρήσιμη αναφορά σφάλματος;</a></h3>
@@ -98,7 +98,7 @@
     Συμπεριλάβετε τις σχετικές πληροφορίες έκδοσης σε κάθε αναφορά.  
   </p>
 
-<h3><a name="bugreport-wrong">Το Gtk-Gnutella κάνει κάτι λάθος ή απρόβλεπτο.</a></h3>
+<h3><a name="bugreport-wrong">Το gtk-gnutella κάνει κάτι λάθος ή απρόβλεπτο.</a></h3>
   <p>
     Αν το gtk-gnutella λειτουργεί όπως στόχευαν οι προγραμματιστές του αλλά εσείς 
     επιθυμείτε κάτι διαφορετικό, τότε πρέπει να αρχειοθετήσετε ένα 
@@ -117,7 +117,7 @@
     πριν τα ξεχάσετε.
   </p>
     
-<h3><a name="bugreport-compile">Το Gtk-Gnutella δε γίνεται compile!</a></h3>
+<h3><a name="bugreport-compile">Το gtk-gnutella δε γίνεται compile!</a></h3>
   <p>
     Δεν αναφέρονται πολλά προβλήματα compile για το gtk-gnutella.  Είναι γνωστό ότι 
     γίνεται compile σε Linux, OS X, και FreeBSD με gcc.  Αν έχετε προβλήματα, 
@@ -135,7 +135,7 @@
     ρυθμίσεων που έχουν περιγραφεί. 
   </p>
   
-<h3><a name="bugreport-crash">Το Gtk-Gnutella κατέρρευσε!  Τώρα τι γίνεται;</a></h3>
+<h3><a name="bugreport-crash">Το gtk-gnutella κατέρρευσε!  Τώρα τι γίνεται;</a></h3>
   <p>
     Για να αποσφαλματώσετε μία κατάρρευση, θα πρέπει το εκτελέσιμο να έχει 
     κρατήσει άθικτα τα σύμβολα αποσφαλμάτωσής του.  Δυστυχώς για την οικονομία

@@ -4,7 +4,7 @@
 <h3>Le Client Gnutella Graphique pour Unix</h3>
 
 <p>
-  Gtk-Gnutella est un serveur/client pour
+  gtk-gnutella est un serveur/client pour
   <a href="http://www.gnutella.com/">Gnutella</a>.
   Il tourne sur tous les syst&egrave;mes Unix qui supportent
 <a href="http://www.gtk.org/">GTK+</a> 
@@ -22,7 +22,7 @@ Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS tout comme sur les architectures CPU
 </p>
 
 <p>
-  Gtk-Gnutella n'est pas encore termin&eacute;, mais est entierement fonctionnel: vous pouvez partager, effectuer des recherches, et t&eacute;l&eacute;charger. Et il est tout aussi stable, les utilisateurs le laissent tourner des jours durant sans probl&egrave;s.
+  gtk-gnutella n'est pas encore termin&eacute;, mais est entierement fonctionnel: vous pouvez partager, effectuer des recherches, et t&eacute;l&eacute;charger. Et il est tout aussi stable, les utilisateurs le laissent tourner des jours durant sans probl&egrave;s.
 </p>
 
 <p>

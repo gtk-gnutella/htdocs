@@ -18,10 +18,10 @@
 <h4 id="v0.95">27 November 2004, Version 0.95 Released</h4>
 
 <p>
-  With the release of version 0.95 Gtk-Gnutella supports the
+  With the release of version 0.95 gtk-gnutella supports the
   state-of-the-art features of the Gnutella network. In terms of
   Gnutella features version 0.94 is now considered a deprecated
-  servent. Every Gtk-Gnutella user must upgrade to 0.95 as soon as
+  servent. Every gtk-gnutella user must upgrade to 0.95 as soon as
   possible to get the expected performance from the network and keep it
   healthy.
 </p>
@@ -262,7 +262,7 @@
     buffering time is configurable from the GUI.
   </li>
   <li>
-    Gtk-Gnutella is now fully compliant with LimeWire regarding I18N queries, 
+    gtk-gnutella is now fully compliant with LimeWire regarding I18N queries, 
     provided you have the ICU library.  Otherwise, it should be OK for roman
     charsets only.
   </li>
@@ -396,7 +396,7 @@
 </p>
 <ul>
   <li>
-    GTK-Gnutella now supports Partial File serving, both as a client and as a
+    gtk-gnutella now supports Partial File serving, both as a client and as a
     server. As soon as a download is started, it can be used as an alternate
     source for others even though the download is not completed yet.
   </li>
@@ -829,7 +829,7 @@
     Added support for local host preference.
   </li>
   <li>
-    Gtk-Gnutella can do traffic compression when connecting to a node that 
+    gtk-gnutella can do traffic compression when connecting to a node that 
     also supports it.
   </li>
   <li>

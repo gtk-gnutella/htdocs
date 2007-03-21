@@ -5,7 +5,7 @@
   Version 0.96 ist ein <b>stabiles</b> Release.
   Die Nutzung dieser Version ist ab sofort <b>obligatorisch</b>, da
   alle älteren Versionen <i>verfallen</i> sind. Das heißt, sie werden
-  von allen neuen Version von <tt>Gtk-Gnutella</tt> abgewiesen
+  von allen neuen Version von <tt>gtk-gnutella</tt> abgewiesen
   und kontaktieren keinerlei Bootstrap-Server mehr.
 </p>
 <p>
@@ -53,6 +53,6 @@ Es folgen die Änderungen seit dem letztem stabilen Release 0.95.4.
 </ul>
 
 <p>
-  <em>Das Gtk-Gnutella-Team</em>
+  <em>Das gtk-gnutella-Team</em>
 </p>
 <!-- end news_47 -->

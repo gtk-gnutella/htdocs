@@ -4,7 +4,7 @@
 <p>
   In Version 0.95.4 wurden hauptsächlich Fehler behoben. Wir empfehlen
   jedem auf diese neue Version zu wechseln, da es die derzeit stabilste
-  Version von Gtk-Gnutella ist.
+  Version von gtk-gnutella ist.
 </p>
 
 <p>
@@ -17,7 +17,7 @@
   <li>Vorläufiger <q>Browse-Host-Support</q>, der es anderen erlaubt, die
       komplette Liste der freigegebenen Dateien einzusehen. Dies ist per
       Voreinstellung deaktiviert.</li>
-  <li>Gtk-Gnutella erkennt die Netzwerkverfügbarkeit nach einem kurzzeitigen
+  <li>gtk-gnutella erkennt die Netzwerkverfügbarkeit nach einem kurzzeitigen
       Netzwerkausfall besser.</li>
   <li>Die <q>.desktop</q>-Datei und die Anwendungssymbole werden nun
       korrekt installiert.</li>
@@ -37,6 +37,6 @@
 </ul>
 
 <p>
-  <em>Das Gtk-Gnutella-Team</em>
+  <em>Das gtk-gnutella-Team</em>
 </p>
 <!-- end news_45 -->

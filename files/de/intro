@@ -4,13 +4,13 @@
 <h3>Der grafische Gnutella-Client f&uuml;r Unix</h3>
 
 <p>
-  Gtk-Gnutella ist ein Server/Client f&uuml;r <a
+  gtk-gnutella ist ein Server/Client f&uuml;r <a
   href="http://www.gnutella.com/">Gnutella</a>. Es l&auml;uft auf jedem
   Unix-&auml;hnlichen System sofern <a
   href="http://www.gtk.org/">GTK+</a> (1.2 oder neuer) und <a
   href="http://www.libxml.org">libxml</a> installiert sind. Die
   Desktopumgebung <a href="http://www.gnome.org/">GNOME</a> wird nicht
-  ben&ouml;tigt.  Gtk-Gnutella wird derzeit haupts&auml;chlich unter
+  ben&ouml;tigt.  gtk-gnutella wird derzeit haupts&auml;chlich unter
   Linux (<a href="http://www.debian.org/">Debian</a>) sowie
   <a href="http://www.NetBSD.org/">NetBSD</a> entwickelt und getestet.
   Es ist unter Linux, <a
@@ -26,12 +26,12 @@
 </p>
 
 <p>
-  Gtk-Gnutella wird unter der GNU General Public License (GPL)
+  gtk-gnutella wird unter der GNU General Public License (GPL)
   ver&ouml;ffentlicht.
 </p>
 
 <p>
-  Die Entwicklung von Gtk-Gnutella ist noch nicht abgeschlossen, aber es
+  Die Entwicklung von gtk-gnutella ist noch nicht abgeschlossen, aber es
   ist vollst&auml;ndig nutzbar: Sowohl die Suche als auch das
   Herunterladen und Anbieten eigener Dateien ist m&ouml;glich. Es
   l&auml;uft stabil und kann normalerweise tagelang unbeaufsichtigt

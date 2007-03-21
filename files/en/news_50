@@ -21,7 +21,7 @@ Below is the changelog entry for the release.
   </li>
   <li>
   Fixed bugs in the dynamic querying logic that caused leaves to
-  receive very few results through Gtk-Gnutella ultrapeers.
+  receive very few results through gtk-gnutella ultrapeers.
   </li>
   <li>
   Fixed crash on 64-bit platforms when using the navigation tree.

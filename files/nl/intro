@@ -4,7 +4,7 @@
 <h3>De grafische gnutella client voor Unix</h3>
 
 <p>
-  Gtk-Gnutella is een server/client voor
+  gtk-gnutella is een server/client voor
   <a href="http://www.gnutella.com/">Gnutella</a>.
   Het draait op elke Unix-achtig systeem dat
   <a href="http://www.gtk.org/">GTK+</a>
@@ -23,12 +23,12 @@ x86, AMD64, PowerPC, SPARC, MIPS.
 </p>
 
 <p>
-  Gtk-Gnutella wordt uitgebracht onder de
+  gtk-gnutella wordt uitgebracht onder de
   GNU General Public License (GPL).
 </p>
 
 <p>
-  Gtk-Gnutella is nog niet gereed, het is echter wel volledig functioneel; je mag
+  gtk-gnutella is nog niet gereed, het is echter wel volledig functioneel; je mag
   delen, zoeken en downloaden. Bovendien is het stabiel, meestal laten gebruikers
   het voor dagen draaien zonder er naar om te kijken.
 </p>

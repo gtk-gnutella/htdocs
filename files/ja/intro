@@ -4,7 +4,7 @@
 <h3>Unix のためのグラフィカルな Gnutella クライアント</h3>
 
 <p>
-  Gtk-Gnutella は
+  gtk-gnutella は
   <a href="http://www.gnutella.com/">Gnutella</a> 用のサーバントです。
   <a href="http://www.gtk.org/">GTK+</a> (1.2 またはそれ以上) および
   <a href="http://www.libxml.org">libxml</a> をサポートする全ての Unix, それに類似するシステム上で動作します。GNOME デスクトップ環境は必要ありません。
@@ -18,11 +18,11 @@ CPU アーキテクチャには x86, AMD64, PowerPC, SPARC, MIPS が含まれま
 </p>
 
 <p>
-  Gtk-Gnutella は GNU 一般公衆利用許諾契約書 (GPL) の条件下でリリースされています。
+  gtk-gnutella は GNU 一般公衆利用許諾契約書 (GPL) の条件下でリリースされています。
 </p>
 
 <p>
-  Gtk-Gnutella はまだ完全ではありませんが、十分機能的なものになっています:
+  gtk-gnutella はまだ完全ではありませんが、十分機能的なものになっています:
   共有、検索およびダウンロードが可能です。また安定していますので、利用者は数日間そのままにしておけます。
 </p>
 

@@ -13,7 +13,7 @@
   <li><a href="#general-gtkg">Wat is GTKG?</a></li>
   <li><a href="#general1">Het gebruikt teveel bandbreedte!</a></li>
   <li><a href="#general-ultrapeer">Wat zijn Ultrapeers en Leaf nodes?</a></li>
-  <li><a href="#general-firewall">Waarom geeft Gtk-Gnutella aan dat het
+  <li><a href="#general-firewall">Waarom geeft gtk-gnutella aan dat het
   firewalled is, ookal is dat niet zo?</a>
   </li>
 </ul>
@@ -147,7 +147,7 @@
 
 <h3><a name="general-ultrapeer">Wat zijn Ultrapeers en Leaf nodes?</a></h3>
 <p>
-  Gtk-gnutella heeft vanaf versie 0.92 
+  gtk-gnutella heeft vanaf versie 0.92 
   <a href="?page=features"><em>ultrapeers</em></a> en
   <em>leaf nodes</em> geïmplementeerd.
   Hierdoor worden servents op het gnet verdeeld in leaf nodes, welke alleen met
@@ -173,12 +173,12 @@
   fungeren voor een firewalled leaf node.
 </p>
 
-<h3><a name="general-firewall">Waarom geeft Gtk-Gnutella aan dat het
+<h3><a name="general-firewall">Waarom geeft gtk-gnutella aan dat het
   firewalled is, ookal is dat niet zo?</a>
 </h3>
 
 <p>
-  Gtk-Gnutella moet eerst een inkomende verbinding krijgen om te bepalen
+  gtk-gnutella moet eerst een inkomende verbinding krijgen om te bepalen
   of het van buiten af kan worden benaderd. Zolang dat niet gebuert
   dan gaat gtk-gnutella er van uit dat er een firewall is welke de 
   geconfigureerde luisterende TCP poort blokkeert.
@@ -460,7 +460,7 @@
   The standard encoding in the modern Gnutella network is UTF-8. All queries
   and results should be encoded this way. Unfortunately, there is still
   many legacy software that does not convert textual data (like filenames
-  and queries) to UTF-8 but uses arbitrary character sets instead. Gtk-Gnutella
+  and queries) to UTF-8 but uses arbitrary character sets instead. gtk-gnutella
   tries to detect the used character set but this cannot be perfect. It may
   also replace characters with underscores if they cannot be converted to
   UTF-8.
@@ -496,7 +496,7 @@
 <h3><a name="down2">Why is the same file downloaded X times?</a></h3>
 <p>
   Check the <em>Range</em> column. This is called
-  <a href="#down3">swarming</a>.  Gtk-Gnutella tries to get the file in
+  <a href="#down3">swarming</a>.  gtk-gnutella tries to get the file in
   <a href="#down4">chunks</a> and will get it from multiple hosts in parallel,
   if possible.
 </p>
@@ -504,7 +504,7 @@
 <h3><a name="down3">What is "swarming"?</a></h3>
 <p>
   Swarming describes the ability to download a single file from multiple hosts
-  in parallel. Gtk-Gnutella will automatically try to find additional sources
+  in parallel. gtk-gnutella will automatically try to find additional sources
   for any queued file using the <a href="#down5">download mesh</a> and by
   monitoring routed results.
 </p>
@@ -555,7 +555,7 @@
   <a href="#gnet1">firewalls</a>.
 </p>
 <p>
-  Otherwise if Gtk-Gnutella says it has only a few sources for the file
+  Otherwise if gtk-gnutella says it has only a few sources for the file
   (best seen in the fileinfo subtab in the downloads pane) then this can have
   two reasons:
 </p>
@@ -583,7 +583,7 @@
 
 <h3><a name="filenames">What is the filename encoding?</a></h3>
 <p>
-  Gtk-Gnutella use UTF-8 as default encoding for filenames. If your locale
+  gtk-gnutella use UTF-8 as default encoding for filenames. If your locale
   setting does not use UTF-8, other applications may not display these
   filenames correctly or may have problems accessing them in the worst case.
   You can change the encoding using the environment variable
@@ -626,7 +626,7 @@
 </p>
 
 <p>
-  Gtk-Gnutella supports G_FILENAME_ENCODING since version 0.96 regardless
+  gtk-gnutella supports G_FILENAME_ENCODING since version 0.96 regardless
   whether you use Gtk+ 1.2 or Gtk+ 2.x as front-end.
 </p>
 
