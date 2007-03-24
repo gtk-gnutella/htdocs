@@ -1,0 +1,119 @@
+<!-- $Id: news_51 12296 2006-11-10 01:05:08Z cbiere $ -->
+<h4>2006年11月9日, バージョン 0.96.3 がリリースされました</h4>
+
+<p>
+ バージョン 0.96.3 は<b>安定版</b>としてリリースされます。いくつかのバグが修正され、改良されています。
+</p>
+<p>
+以下にあるのはこのリリースでの変更箇所です。
+</p>
+<h5>修正されたバグ</h5>
+<ul>
+  <li>
+  ARM アーキテクチャに影響する可搬性の問題が修正されました。
+  </li>
+  <li>
+  設定するピアモードが自動設定の場合、ウルトラピアが不要にリーフピアに戻されてしまう問題がありました。
+  </li>
+  <li>
+  [GTK2] 偽りのアサーション失敗やメモリ破損を引き起こす可能性のあったバグが修正されました。
+  </li>
+  <li>
+  特定の場所で表示される数字が、短く切り詰められてしまうかもしれないバグが修正されました。
+  </li>
+  <li>
+  履歴が消去された場合は upload_history ファイルをリライトします。
+  </li>
+  <li>
+  コンパイル時に IPv6 サポートが無効にされている場合、アサーション失敗によってクラッシュを起こす可能性がありましたが、これが修正されました。
+  </li>
+  <li>
+  問題のあった関数 utf8_is_valid_data() が修正されました。
+  </li>
+  <li>
+  訳文中の細かな間違いが修正されました。
+  </li>
+  <li>
+  IPv6 サポートが無い場合でも Cygwin でコンパイルできるようになりました。
+  </li>
+</ul>
+
+<h5>更新箇所</h5>
+<ul>
+  <li>
+  フランス語の翻訳が更新されました。
+  </li>
+  <li>
+  有害IPアドレスのリストが更新されました。
+  </li>
+  <li>
+  ブートストラップキャッシュのリストが更新されました。
+  </li>
+  <li>
+  セルビア共和国およびモンテネグロ共和国のための国 (地域) 名・コードが更新されました。
+  </li>
+</ul>
+
+<h5>改良箇所</h5>
+<ul>
+  <li>
+  トルコ語の翻訳。
+  </li>
+  <li>
+  新しいシェルコマンド: online, offline, props, status.
+  </li>
+  <li>
+  The search list allows selection of multiple items and applying actions to
+  them now.
+  </li>
+  <li>
+  Gtk-Gnutella のアプリケーション・ウィンドウを隠すトレイアイコンが追加されました。この機能を利用するには Gtk+ 2.10 またはそれより新しいバージョンが必要です。
+  </li>
+  <li>
+  不必要に多くの送信元を使うとのないように、ファイルごとのダウンロード数の既定値が 40 に制限されました。
+  </li>
+  <li>
+  Keep certain irrelevant columns empty for "local:" searches instead of
+  showing bogus data.
+  </li>
+  <li>
+  Debian 派生のシステムで、Gtk-Gnutella を自分でコンパイルするための方法を記載した README.Debian を追加しました。
+  </li>
+</ul>
+
+<h5>内部では</h5>
+<ul>
+  <li>
+  Rewrote "fast" assertions so that they are sufficiently portable and do
+  not mess with debugging. Thus they are always enabled now which reduces
+  code size signifcantly.
+  </li>
+  <li>
+  SQLite 無しでも TLS キャッシュが保存されるようになります。
+  </li>
+  <li>
+  現在の Gnutella ユーザの総人口からするとあまり有効ではないので、Gnutella スロットおよびベンダーの予約を無効にしました。
+  </li>
+  <li>
+  GWebCache の更新を行いません。
+  </li>
+  <li>
+  Configure bails out now if a mandatory dependency e.g., libxml2, GLib,
+  zlib isn't available.
+  </li>
+  <li>
+  コードをよりきれいにするため、GCC のコンパイル・フラッグに -Wshadow を追加しました。
+  </li>
+</ul>
+
+<h5>ソース tarball のチェックサムは:</h5>
+<ul>
+  <li><tt>SHA256 (gtk-gnutella-0.96.3.tar.bz2) = 6079661ffeb78ae480cf37cf9954d0c437d415363aa4133268b732700b52be80</tt></li>
+  <li><tt>SHA1 (gtk-gnutella-0.96.3.tar.bz2) = 7469d4ea685c387f38e927efeb8b9947a9ec72e3</tt></li>
+  <li><tt>urn:bitprint:ORU5J2TILQ4H6OHJE7X6XC4ZI6U6Y4XD.PE75OTYXNJILFDZFSWSHGSTLYNFKGLLHWPMG3DI</tt></li>
+</ul>
+
+<p>
+  <em>gtk-gnutella チーム</em>
+</p>
+<!-- end news_51 -->
