@@ -1,0 +1,116 @@
+<!-- $Id: news_50 12127 2006-10-17 17:15:09Z cbiere $ -->
+<h4>2006年10月17日, バージョン 0.96.2 がリリースされました</h4>
+
+<p>
+  バージョン 0.96.2 は<b>安定版</b>としてリリースされます。いくつかの重大なバグが修正され、改良されています。
+</p>
+<p>
+以下にあるのはこのリリースでの変更箇所です。
+</p>
+<h5>修正されたバグ</h5>
+<ul>
+  <li><q>uname() が不正な値を返す問題</q> (バグ #1467793) が修正されました。</li>
+  <li><q>おかしな HTTP 受信確認応答 (ACK)</q> (バグ #1467681) が修正されました。</li>
+  <li>Fixed bug #1422526 <q>`Drop results' should prepend, not append, to filters</q>.</li>
+  <li>動的検索クエリーのロジックのバグにより、他のリーフピアが Gtk-Gnutella のウルトラピアから殆ど検索結果を受信できない問題がありましたが、これが修正されました。</li>
+  <li>64ビットプラットフォームでナビゲーションツリーを使うとクラッシュするバグが修正されました。</li>
+  <li>一部の翻訳メッセージカタログでの書式ミスマッチが修正されました。</li>
+</ul>
+
+<h5>更新箇所</h5>
+<ul>
+  <li>フランス語、日本語およびウクライナ語の翻訳が更新されました。</li>
+  <li>有害IPアドレスのリストが更新されました。</li>
+  <li>ブートストラップキャッシュのリストが更新されました。</li>
+  <li>国 (地域) 名とコードのリストが更新されました。</li>
+</ul>
+
+<h5>改良箇所</h5>
+<ul>
+  <li>イタリア語の翻訳。</li>
+  <li>
+  マグネットリンクのサポートが完成に近付いてきました。マグネットはドラッグ &amp; ドロップまたは上部にある検索ボックスに入力することで Gtk-Gnutella に渡すことができます。また、検索結果画面やダウンロード画面の右クリックメニューからマグネットを生成できるようになりました。
+  </li>
+  <li>SHA-1を元にしたスパムフィルタリング。</li>
+  <li>特定のスパムに対しては内部機能で検出します。</li>
+  <li>[GTK2] ダウンロード画面が全面的に見直されました。</li>
+  <li>[GTK1] Downloads can be sorted albeit the sorting does not persist.</li>
+  <li>Compiling the topless is variant is now as easy as <q>./Configure -Oders -Dd_headless</q>.</li>
+  <li><q>--help</q> のようなコマンド行オプションがいくつかサポートされました。</li>
+  <li><q>gtk-gnutella --shell</q> でローカル・シェル・インターフェイスを実行します。</li>
+  <li>新しいシェルコマンド、<q>nodes</q> および <q>shutdown</q> が追加されました。</li>
+  <li>明らかにディスク容量が不足している場合はダウンロードを中止するようになります。</li>
+  <li>Caching of TLS-support allows automatic use of TLS.</li>
+  <li>~/.gtk-gnutella/whitelist では <q>tls:</q> もサポートします。</li>
+  <li>検索結果の画面でいくつかの表示欄が追加されました (デフォルトは非表示)。</li>
+  <li>
+  Diverse IPv6 settings can be configured in the GUI now.
+  </li>
+  <li><q>IPv4 および IPv6</q> の設定ができるようになります (デフォルトでは <q>IPv4 のみ</q>)。
+  <li>SHA-1の無い検索結果はデフォルトで表示されないようになります。</li>
+  <li>有害IPアドレスからの検索結果を表示しないようにする事が可能になります (デフォルトでは非表示)。
+  </li>
+  <li>
+  One's own shared files can be search by using the prefix <q>local:</q>
+  for searches. Local searches uses regex syntax unlike Gnutella searches.
+  <q>local:</q> alone will list all shared files. Local searches results
+  allow drag &amp; drop and generation of magnet links.
+  </li>
+  <li>
+  <a href="http://ghostwhitecrab.com/socker/">Socker</a> を使うことで 1-1024 の TCP および UDP ポートにアクセスできるようにします。
+  </li>
+  <li>
+  ワイルドカード・アドレスの代わりに、任意のアドレスに対してソケットをバインドできるようになります。
+  </li>
+  <li>
+  Support of IPv6-to-IPv4 Transport Relay Translators (RFC 3142).
+  </li>
+</ul>
+
+<h5>内部では</h5>
+<ul>
+  <li>
+  断片化を防ぎ、性能を向上するために mmap() を元にしたメモリ割り当てを行います。
+  </li>
+  <li>
+  ソケットオプション TCP_DEFER_ACCEPT をサポートします (Linux)。
+  </li>
+  <li>
+  Support of accept() filter <q>dataready</q> (FreeBSD).
+  </li>
+  <li>
+  /dev/poll をサポートします (Solaris および IRIX)。
+  </li>
+  <li>
+  多元 (マルチソース) ダウンロードを行うにあたって、その一つひとつの送信元ごとにファイル記述子が必要になるような事はせずに、ダウンロードする一つのファイルに対して使用するようファイル記述子を共有します。
+  </li>
+  <li>
+  ダウンロードバッファのフラッシュに pwrite(), pwritev() を使います。
+  </li>
+  <li>
+  コマンド行オプション --log_stderr または --log_stdout が指定されている場合、SIGHUP でログを再オープンします。これはトップレス (コンソール) モードで役立つかと思います。
+  </li>
+  <li>
+  Disabled following of HTTP redirects.
+  </li>
+  <li>
+  Support of <q>deflate</q> transfer-encoding for all downloads.
+  </li>
+  <li>
+  圧縮 UDP パケットをサポートします。
+  </li>
+</ul>
+
+<h5>ソース tarball のチェックサムは:</h5>
+<ul>
+  <li>MD5 (gtk-gnutella-0.96.2.tar.bz2) =
+	<tt>a7c2db6223bbabff3581edc6f8b45106</tt></li>
+  <li>SHA1 (gtk-gnutella-0.96.2.tar.bz2) =
+	<tt>59baec3659ad40bb07ba50b29b942facf584043f</tt></li>
+  <li><tt>urn:sha1:LG5OYNSZVVALWB52KCZJXFBPVT2YIBB7</tt></li>
+</ul>
+
+<p>
+  <em>gtk-gnutella チーム</em>
+</p>
+<!-- end news_50 -->
