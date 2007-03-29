@@ -9,18 +9,24 @@
 <p>
   <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-users/">
     gtk-gnutella-users</a> Main list for Gtk-Gntuella users ( 
-  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-users">
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gtk-gnutella-users">
     archives</a> )<br>
 
   <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-devel/">
     gtk-gnutella-devel</a> If you're interested in contributing to gtk-gnutella ( 
-  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-devel">
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gtk-gnutella-devel">
     archives</a> )<br>
 
   <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-announce/">
     gtk-gnutella-announce</a> For release announcements only ( 
-  <a href="http://sourceforge.net/mailarchive/forum.php?forum=gtk-gnutella-announce">
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gtk-gnutella-announce">
     archives</a> )<br>
+           
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-cvs">
+    gtk-gnutella-cvs</a> For way too much information on SVN commits ( 
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gtk-gnutella-cvs">
+    archives</a> )<br>
+
 </p>
 
 <h4>IRC Chat</h4>
