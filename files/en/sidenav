@@ -14,10 +14,8 @@
   <a href="?page=docs" class="sb_section_header">Documentation</a>
 
   <div class="indent">
-    <a href="?page=features">Features</a><br>
     <a href="?page=faq">FAQ</a><br>
-    <a href="?page=shots096u">Screenshots</a><br>
-    <a href="?page=release_history">History</a><br>
+    <a href="http://gtk-gnutella.sourceforge.net/manual/">Online Manual</a><br>
   </div>
 </div>
 
@@ -26,15 +24,6 @@
 <!--              -->
 <div class="sb_section">
   <a href="?page=mailing" class="sb_section_header">Getting&nbsp;help</a>
-
-  <div class="sb_section_content">
-    <a href="?page=bugreport_howto">
-      Bug&nbsp;Report&nbsp;Howto</a><br>
-    <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
-      Bug&nbsp;Tracker</a><br>
-    <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
-      Feature&nbsp;Requests</a><br>
-  </div>
 </div>
 
 <!--            -->
@@ -42,14 +31,6 @@
 <!--            -->
 <div class="sb_section">
   <a href="?page=devel" class="sb_section_header">Developers</a>
-
-  <div class="sb_section_content">
-    <a href="http://sourceforge.net/projects/gtk-gnutella/">
-      SF Project page</a><br>
-    <a href="http://gtk-gnutella.sourceforge.net/doxygen/">
-      API Reference</a><br>
-    <a href="?page=code101">Code 101</a>
-  </div>
 </div>
 
 <!--          -->

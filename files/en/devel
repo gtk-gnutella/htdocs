@@ -1,6 +1,15 @@
 <!-- $Id$ -->
 <h1>Development</h1>
 
+<h2>Links</h2>
+<ul>
+    <li><a href="http://sourceforge.net/projects/gtk-gnutella/">
+      SF Project page</a></li>
+    <li><a href="http://gtk-gnutella.sourceforge.net/doxygen/">
+      API Reference</a></li>
+    <li><a href="?page=code101">Code 101</a></li>
+</ul>
+
 <h2>Call for help</h2>
 <p>
   The current version of gtk-gnutella is running well, but it is in no way 
