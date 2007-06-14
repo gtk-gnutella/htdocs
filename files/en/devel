@@ -75,7 +75,7 @@
 </p>
 
 <p>
-  <kbd>
+  <kbd style="font-size:small">
     svn co https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella gtk-gnutella
   </kbd>
 </p>
