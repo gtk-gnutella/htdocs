@@ -135,6 +135,14 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
       </div>
       <div class="hidden">&nbsp;</div>
       <div class="boxed">
+	<a href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467">
+
+	<img src="http://images.sourceforge.net/images/xml.png"
+		alt="RSS Feed Available" width="36" height="14" />
+	</a> 
+      </div>
+      <div class="hidden">&nbsp;</div>
+      <div class="boxed">
         <?php iceinclude("sidenav_copyright", 0) ?>
       </div>
       <div class="hidden">&nbsp;</div>
