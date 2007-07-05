@@ -139,7 +139,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 		src="http://images.sourceforge.net/images/xml.png"
 		alt="RSS Feed Available" width="36" height="14" /></a> 
 	<a href="http://www.ohloh.net/projects/491"><img
-		border="0" src="http://www.ohloh.net/projects/491/badge.gif"
+		src="http://www.ohloh.net/projects/491/badge.gif"
 		width="100" height="16" alt="Ohloh Metrics" /></a>
       </div>
       <div class="hidden">&nbsp;</div>
