@@ -135,11 +135,12 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
       </div>
       <div class="hidden">&nbsp;</div>
       <div class="boxed">
-	<a href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467">
-
-	<img src="http://images.sourceforge.net/images/xml.png"
-		alt="RSS Feed Available" width="36" height="14" />
-	</a> 
+	<a href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467"><img
+		src="http://images.sourceforge.net/images/xml.png"
+		alt="RSS Feed Available" width="36" height="14" /></a> 
+	<a href="http://www.ohloh.net/projects/491"><img
+		border="0" src="http://www.ohloh.net/projects/491/badge.gif"
+		width="100" height="16" alt="Ohloh Metrics" /></a>
       </div>
       <div class="hidden">&nbsp;</div>
       <div class="boxed">
