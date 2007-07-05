@@ -119,12 +119,15 @@ div.hidden {
 	font-size: 0pt;
 }
 
+img {
+	border: 0;
+}
+
 .image {
         text-align: center
 }
 
 .image img {
 	margin: 0.5em;
-	border: 0;
 }
 
