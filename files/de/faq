@@ -617,6 +617,7 @@ See also,
   <!-- Translators: Feel free to change the ISO-8859-1 example to whatever
        character set is likely used by the audience. !-->
 
+  <p>
   In den meisten Fällen, erledigt sich dies durch "@locale". Dies steht für
   den Zeichensatz der von den <i>locale</i>-Eingestellungen genutzt wird. In
   der Regel sind Dateinamen mit diesem Zeichensatz kodiert. Die Liste kann

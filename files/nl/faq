@@ -614,6 +614,7 @@
   <!-- Translators: Feel free to change the ISO-8859-1 example to whatever
        character set is likely used by the audience. !-->
 
+  <p>
   In most cases, the special item "@locale" takes care of this. This stands for
   the encoding used by the current locale and it's very likely that filenames
   are encoded with it. You can list multiple secondary filename
