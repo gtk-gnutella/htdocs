@@ -56,7 +56,7 @@
 <h3>SVN スナップショット:</h3>
 
 <p>
-  <a href="http://sourceforge.net/project/showfiles.php?group_id=4467&package_id=4479&release_id=520160">
+  <a href="http://sourceforge.net/project/showfiles.php?group_id=4467&amp;package_id=4479&amp;release_id=520160">
     <strong>公式 SVN スナップショット</strong></a>
     (<?php iceinclude("svn_snapshot_date", 0) ?> に作成されました)
 </p>
