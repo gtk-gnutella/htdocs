@@ -12,17 +12,17 @@
 
 <h2>Call for help</h2>
 <p>
-  The current version of gtk-gnutella is running well, but it is in no way 
-  up to date with the latest gnutella standards. The "major players" of 
-  gnutella (Limewire, BearShare, Shareaza, Gnucleus) implement 
-  features like Tiger Tree Hashing which gtk-gnutella still doesn't yet. 
-  Other possibly interesting features are XML-Query schemes (e.g. searching 
-  by title, size, genre of files), magnet:-Links, and Download Proxies. GTKG 
-  lacks all of them right now.
+  The current version of gtk-gnutella is running well, but it is not up to date
+  with all features of the latest Gnutella standards. The "major players" of
+  Gnutella (Limewire, BearShare, Shareaza, Gnucleus) implement features like
+  Tiger Tree Hashing. gtk-gnutella supports this only server-side as of yet.
+  Other possibly interesting features are XML-Query schemes (e.g. searching by
+  title, size, genre of files), and Download Proxies.
 </p>
 <p>
   On the other hand, gtk-gnutella has some features the major players lack,
-  such as PARQ for passive queuing and TLS support for encrypted connections.
+  such as PARQ for passive queuing, TLS support for encrypted connections
+  and IPv6 support.
   gtk-gnutella is also a very efficient C implementation with a low memory
   footprint and low CPU usage.  It's probably among the fastest clients today.
 </p>
@@ -95,9 +95,9 @@
 <h3>SVN snapshots:</h3>
 
 <p>
-<a href="http://sourceforge.net/project/showfiles.php?group_id=4467&package_id=4479&release_id=520160">
+<a href="http://sourceforge.net/project/showfiles.php?group_id=4467&amp;package_id=4479&amp;release_id=520160">
     <strong>Official SVN snapshot</strong></a><br>
     Generated: <?php iceinclude("svn_snapshot_date", 0) ?><br>
-    SHA1 <TT><?php iceinclude("svn_snapshot_sha1", 0) ?>
+    SHA1 <tt><?php iceinclude("svn_snapshot_sha1", 0) ?></tt>
 </p>
 <!-- end devel -->
