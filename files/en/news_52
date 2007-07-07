@@ -71,6 +71,10 @@ bug fixed and improvements since the previous release.</p>
 <li>Implemented for Out-of-Band result delivery protocol v3 which protects
    against certain kinds of forged results.
 </li>
+<li>Improved aggressive swarming logic so that files are completed more
+   quickly and efficiently when nearing completion.
+</li>
+</ul>
 </ul>
 
 <h5>Checksums of the source tarball</h5>
