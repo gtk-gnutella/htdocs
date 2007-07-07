@@ -73,17 +73,17 @@ bug fixed and improvements since the previous release.</p>
 </li>
 </ul>
 
-<p>
-Thanks to everyone who contributed to this release in form of feedback,
-bug reports, patches or translations!
-</p>
-
 <h5>Checksums of the source tarball</h5>
 <ul>
   <li><tt>SHA256 (gtk-gnutella-0.96.4.tar.bz2) = 543ead5b650cb18cecd8148b7683f2fb057d26c665ac74214714c2caa7baa726</tt></li>
   <li><tt>SHA1 (gtk-gnutella-0.96.4.tar.bz2) = 03893f83b44f677a6cc8af277115f40b6d208a18</tt></li>
   <li><tt>urn:bitprint:AOET7A5UJ5TXU3GIV4TXCFPUBNWSBCQY.OX2JFS62JOD35RHOIZJ6EJ6VNRAODGMMBL3KALQ</tt></li>
 </ul>
+
+<p>
+Thanks to everyone who contributed to this release in form of feedback,
+bug reports, patches or translations!
+</p>
 
 <p>
   <em>gtk-gnutella team</em>
