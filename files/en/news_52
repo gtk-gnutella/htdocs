@@ -38,9 +38,11 @@ bug fixed and improvements since the previous release.</p>
 <li>Added workaround for the issue that on Solaris only the file descriptors
    0..255 can be used for stdio.
 </li>
+</ul>
 
 <h5>Improvements</h5>
 
+<ul>
 <li>Finished downloads are now seeded for the whole session or until
    they are manually purged, if partial file-sharing is enabled.
 </li>
@@ -59,14 +61,17 @@ bug fixed and improvements since the previous release.</p>
 </li>
 <li>Added a simple query syntax for easier creation of result filters.
 </li>
+</ul>
 
 <h5>Under the hood</h5>
 
+<ul>
 <li>Added support for HEAD Pings and Pongs which improves the download mesh.
 </li>
 <li>Implemented for Out-of-Band result delivery protocol v3 which protects
    against certain kinds of forged results.
 </li>
+</ul>
 
 <p>
 Thanks to everyone who contributed to this release in form of feedback,
