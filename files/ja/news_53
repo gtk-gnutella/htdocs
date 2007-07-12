@@ -1,0 +1,25 @@
+<!-- $Id: news_53 13188 2007-03-21 21:12:04Z cbiere $ -->
+<h4>2007年7月11日, Subversion リポジトリーの場所が変更されています</h4>
+
+<p>
+SourceForge にホストされている全プロジェクトのSubversionリポジトリーの場所が<a href="https://sourceforge.net/docs/E09#notice">変更</a>されています。svnで既にgtk-gnutellaをチェックアウトされているのでしたら、以下のコマンドをご利用ください:
+</p>
+
+<pre>
+svn switch --relocate \
+	https://svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella \
+	https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella
+</pre>
+
+<p>
+この後、<kbd>svn update</kbd> を再び行えるようになります。
+</p>
+
+<p>
+Subversion を使ってチェックアウトされたことがないのでしたら、以下のコマンドでリポジトリーからソースコードを取得できます:
+</p>
+<p>
+<kbd>svn co https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella</kbd>
+</p>
+
+<!-- end news_53 -->

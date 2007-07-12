@@ -1,0 +1,92 @@
+<!-- $Id: news_52 13188 2007-03-21 21:12:04Z cbiere $ -->
+<h4>2007年7月7日, バージョン 0.96.2 がリリースされました</h4>
+
+<p>
+  バージョン 0.96.4 は<b>安定版</b>としてリリースされます。以下にあるのは前回のリリース以降に修正されたバグや改良点です。
+</p>
+
+
+<h5>修正されたバグ</h5>
+
+<ul>
+<li>ミスマッチを検出した時にはダウンロードを再実行しますが、その時のオーバーラップの確認が不正確でした。
+</li>
+<li>ネットワークキューが頻繁にクラッシュを引き起こすバグ (バグ #1601523) が修正されました。
+</li>
+<li>25日以上連続稼働させている場合に、イベントのタイミングにより失敗するバグがありましたが、これが修正されました。
+</li>
+<li>TLSを利用した接続でストールが発生するバグが修正されました。
+</li>
+<li>検索のリトライがタイムアウトしないバグ (バグ #1568205) が修正されました。
+</li>
+<li>検索履歴にある項目の順序が誤っているバグ (バグ #1568206) が修正されました。
+</li>
+<li>起動時の簡易接続の制限が守られずに、頻繁に接続を繰り返す問題がありましたが、これが修正されました。
+</li>
+<li>FreeBSD での関数 sendfile() に対する SF_NODISKIO フラグの使用法が誤っていました。
+</li>
+<li>現在使用中のポートを 0 に変更するとクラッシュする可能性がありましたが、これが修正されました。
+</li>
+<li>関数 iconv() の誤って使用していたために、長い文字列の誤変換を引き起こす可能性がありましたが、これが修正されました。
+</li>
+<li>生成されるファイル名の長さが正しく制限されずにクラッシュを引き起こす問題がありましたが、これが修正されました。
+</li>
+<li>名前空間の問題により起こる NetBSD でのコンパイル時の問題が修正されました。
+</li>
+<li>Solaris での標準入出力に使用されるファイル記述子の数が0から255になるような対応策が施されました。
+</li>
+</ul>
+
+<h5>改良箇所</h5>
+
+<ul>
+<li>Finished downloads are now seeded for the whole session or until
+   they are manually purged, if partial file-sharing is enabled.
+</li>
+<li>Martijn van Oosterhout氏から提供されたパッチにより、TigertreeハッシュおよびTHEXがサーバー側でサポートされました。
+</li>
+<li>スパムフィルターが改良されました。
+</li>
+<li>ドラッグ＆ドロップへのサポートが若干よくなりました。
+</li>
+<li>起動時にUHCのみが使用されるようにGWebCacheが取り除かれました。
+</li>
+<li>シェルインターフェイスが改良されました。
+</li>
+<li>これよりダウンロードを一旦停止できるようになります。
+</li>
+<li>Added a simple query syntax for easier creation of result filters.
+</li>
+</ul>
+
+<h5>Under the hood</h5>
+
+<ul>
+
+<li>Added support for HEAD Pings and Pongs which improves the download mesh.
+</li>
+<li>Implemented for Out-of-Band result delivery protocol v3 which protects
+   against certain kinds of forged results.
+</li>
+<li>Improved aggressive swarming logic so that files are completed more
+   quickly and efficiently when nearing completion.
+</li>
+
+</ul>
+
+<h5>ソース tarball のチェックサムは:</h5>
+<ul>
+  <li><tt>SHA256 (gtk-gnutella-0.96.4.tar.bz2) = 543ead5b650cb18cecd8148b7683f2fb057d26c665ac74214714c2caa7baa726</tt></li>
+  <li><tt>SHA1 (gtk-gnutella-0.96.4.tar.bz2) = 03893f83b44f677a6cc8af277115f40b6d208a18</tt></li>
+  <li><tt>urn:bitprint:AOET7A5UJ5TXU3GIV4TXCFPUBNWSBCQY.OX2JFS62JOD35RHOIZJ6EJ6VNRAODGMMBL3KALQ</tt></li>
+</ul>
+
+<p>
+Thanks to everyone who contributed to this release in form of feedback,
+bug reports, patches or translations!
+</p>
+
+<p>
+  <em>gtk-gnutella チーム</em>
+</p>
+<!-- end news_52 -->
