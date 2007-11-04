@@ -27,6 +27,7 @@
 
 <h2>Gnutella connections</h2>
 <ul>
+  <li><a href="#gnet4">gtk-gnutella does not connect!</a></li>
   <li><a href="#gnet0">What is a good number of connections?</a></li>
   <li><a href="#gnet1">Do I need to forward a port on my firewall?</a></li>
   <li><a href="#gnet-forward-howto">How do I configure port forwarding?</a></li>
@@ -92,9 +93,8 @@
   Gnutella is a decentralized Peer to Peer information exchanging network. At
   the moment you can publish and download files of any kind using the Gnutella
   network. The modern Gnutella protocol is officially documented at the
-  <a href="http://www.the-gdf.org/">GDF wiki</a>. For more information,
-  visit the <a href="http://en.wikipedia.org/wiki/Gnutella"> Wikipedia 
-  definition of Gnutella</a> or the 
+  <a href="http://gnutella-specs.rakjar.de/">GDF wiki</a>. For more information,
+  visit the
   <a href="http://www.infoanarchy.org/en/Gnutella">definition of gnutella</a> 
   on the infoAnarchy wiki.
 </p>
@@ -222,6 +222,8 @@ See also,
 </p>
 
 <h2>Gnutella connections</h2>
+
+<h3><a href="#gnet4">gtk-gnutella does not connect!</a></h3>
 
 <h3><a name="gnet0">What is a good number of connections?</a></h3>
 <p>
@@ -565,7 +567,7 @@ See also,
 
 <h3><a name="filenames">What is the filename encoding?</a></h3>
 <p>
-  gtk-gnutella use UTF-8 as default encoding for filenames. If your locale
+  gtk-gnutella uses UTF-8 as default encoding for filenames. If your locale
   setting does not use UTF-8, other applications may not display these
   filenames correctly or may have problems accessing them in the worst case.
   You can change the encoding using the environment variable
