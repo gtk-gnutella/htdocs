@@ -1,0 +1,59 @@
+<!-- $Id: news_51 13188 2007-03-21 21:12:04Z cbiere $ -->
+<h4>2 April 2008, Version 0.96.5 Released</h4>
+
+<p>Version 0.96.5 is a stable release. The list below shows the most important
+bug fixed and improvements since the previous release.</p>
+
+<h5>Bug Fixes</h5>
+
+<ul>
+<li>#1870957: Wrong sign could cause out-of-bounds read and potentially a crash.</li>
+<li>Firewalled status was not re-verified after a port change if the previously used port was open.</li>
+<li>Fixed issue that caused the local peer cache to degenerate.</li>
+</ul>
+
+<h5>Improvements</h5>
+
+<ul>
+<li>Client-side support for tigertree hashes (TTH/THEX).</li>
+<li>Replaced navigation tree by tabs.</li>
+<li>Redesigned download user-interface to make it more accessible.</li>
+<li>Added some selectable pre-defined search filters.</li>
+<li>Bitzi tickets are displayed in full raw indented XML.</li>
+<li>Display Bitzi and ShareMonkey URLs as search result details.</li>
+<li>Topless mode is available at run-time via command-line switch.</li>
+<li>Added default shared filename extensions: .7z, .bittorrent, .oga, .ogv, .spx, .tbz2</li>
+<li>Removed default shared filename extensions: .doc</li>
+<li>Updated translations: Japanese, Norwegian Bokmal, French.</li>
+</ul>
+
+<h5>Under the hood</h5>
+
+<ul>
+<li>Changed default to dual use of IPv4 and IPv6 instead of IPv4-only.</li>
+<li>Support the "as" (Alternate Source) key in magnet links.</li>
+<li>Eszett is finally normalized to "ss" in search queries.</li>
+<li>Avoid display updates for elements not currently visible.</li>
+<li>Take full advantage of persistent HTTP connections to fetch multiple files from the same peer through over the same connection if scheduling permits.</li>
+<li>Improved TLS support and blocking detection.</li>
+<li>Updated list of hostile IP adress ranges, bogons, Geo-IP data, spam patterns and spam samples.</li>
+</ul>
+
+<h5>Integrity checks for the source tarball</h5>
+
+<pre>Size: 13634700 bytes
+gtk-gnutella-0.96.5.tar.bz2: urn:bitprint:QBMJUJBSF5IJ5UOCJFFBWXHARFI4PYQW.G55HBDRFR2FZNXH6GZNJA3MW7KWH62ZH7SIMBTA
+SHA256 (gtk-gnutella-0.96.5.tar.bz2) = 02c0f661f112739c011e0a12ebfc58d8fcb8ce6f660cc03be610ba664050b529
+SHA1 (gtk-gnutella-0.96.5.tar.bz2) = 80589a24322f509ed1c2494a1b5ce08951c7e216
+RMD160 (gtk-gnutella-0.96.5.tar.bz2) = 1f7b58b45955d940e19284110ad78bb6410cd3c6
+</pre>
+
+<p>
+Thanks to everyone who contributed to this release in form of feedback,
+bug reports, patches or translations!
+</p>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_48 -->
