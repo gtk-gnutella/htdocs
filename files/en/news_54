@@ -7,7 +7,7 @@ bug fixed and improvements since the previous release.</p>
 <h5>Bug Fixes</h5>
 
 <ul>
-<li><a href="https://sourceforge.net/tracker/index.php?func=detail&aid=1870957&group_id=4467&atid=104467">#1870957</a>: Wrong sign could cause out-of-bounds read and potentially a crash.</li>
+<li><a href="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=1870957&amp;group_id=4467&amp;atid=104467">#1870957</a>: Wrong sign could cause out-of-bounds read and potentially a crash.</li>
 <li>Firewalled status was not re-verified after a port change if the previously used port was open.</li>
 <li>Fixed <a href="http://www.mail-archive.com/gtk-gnutella-devel@lists.sourceforge.net/msg03799.html">issue</a> that caused the local peer cache to degenerate.</li>
 </ul>
@@ -54,7 +54,7 @@ RMD160 (gtk-gnutella-0.96.5.tar.bz2) = 1f7b58b45955d940e19284110ad78bb6410cd3c6
 <h5>Download the sources</h5>
 
 <p>
-[ <img src="/images/magnet.32x32.png" alt="magnet-link icon" width="32" height="32">Download via <a href="magnet:?dn=gtk-gnutella-0.96.5.tar.bz2&kt=gtk-gnutella-0.96.5.tar.bz2&xl=13634700&xs=http://catnip.bishopston.net:53615/uri-res/N2R%3Furn:sha1:QBMJUJBSF5IJ5UOCJFFBWXHARFI4PYQW">magnet-link</a> from Gnutella
+[ <img src="/images/magnet.32x32.png" alt="magnet-link icon" width="32" height="32">Download via <a href="magnet:?dn=gtk-gnutella-0.96.5.tar.bz2&amp;kt=gtk-gnutella-0.96.5.tar.bz2&amp;xl=13634700&amp;xs=http://catnip.bishopston.net:53615/uri-res/N2R%3Furn:sha1:QBMJUJBSF5IJ5UOCJFFBWXHARFI4PYQW">magnet-link</a> from Gnutella
 |
 <a href="http://downloads.sourceforge.net/gtk-gnutella/gtk-gnutella-0.96.5.tar.bz2">Direct HTTP download</a> (13 MiB) ]
 </p>
