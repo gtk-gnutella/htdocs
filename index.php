@@ -140,18 +140,18 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 		width="36" height="14"
 		alt="RSS Feed Available"
 		title="RSS Feed Available"
-		/></a> 
+		></a> 
 	<a href="http://www.ohloh.net/projects/491"><img
 		src="http://www.ohloh.net/projects/491/badge.gif"
 		width="100" height="16"
 		alt="Ohloh Metrics"
 		title="Ohloh Metrics"
-		/></a>
+		></a>
 	<a href="http://cia.vc/stats/project/gtk-gnutella"><img
 		src="/images/cia.png" width="16" height="16"
 		alt="cia.vc: Real-time open source activity stats"
 		title="cia.vc: Real-time open source activity stats"
-		/></a>
+		></a>
       </div>
       <div class="hidden">&nbsp;</div>
       <div class="boxed">
