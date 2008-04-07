@@ -47,14 +47,17 @@ SHA256 (gtk-gnutella-0.96.5.tar.bz2) = 02c0f661f112739c011e0a12ebfc58d8fcb8ce6f6
 SHA1 (gtk-gnutella-0.96.5.tar.bz2) = 80589a24322f509ed1c2494a1b5ce08951c7e216
 RMD160 (gtk-gnutella-0.96.5.tar.bz2) = 1f7b58b45955d940e19284110ad78bb6410cd3c6
 </pre>
+<p>
+<a href="http://downloads.sourceforge.net/gtk-gnutella/gtk-gnutella-0.96.5.tar.bz2.asc">PGP Signature</a> (186 bytes)
+</p>
 
-<h5>Download</h5>
+<h5>Download the sources</h5>
 
-<ul>
-<li><img src="/images/magnet.32x32.png" alt="magnet-link icon" width="32" height="32">Download via <a href="magnet:?dn=gtk-gnutella-0.96.5.tar.bz2&kt=gtk-gnutella-0.96.5.tar.bz2&xl=13634700&xs=http://catnip.bishopston.net:53615/uri-res/N2R%3Furn:sha1:QBMJUJBSF5IJ5UOCJFFBWXHARFI4PYQW">magnet-link</a></li>
-<li><a href="http://downloads.sourceforge.net/gtk-gnutella/gtk-gnutella-0.96.5.tar.bz2">Source Tarball</a> (13 MiB)</li>
-<li><a href="http://downloads.sourceforge.net/gtk-gnutella/gtk-gnutella-0.96.5.tar.bz2.asc">PGP Signature</a> (186 bytes)</li>
-</ul>
+<p>
+[ <img src="/images/magnet.32x32.png" alt="magnet-link icon" width="32" height="32">Download via <a href="magnet:?dn=gtk-gnutella-0.96.5.tar.bz2&kt=gtk-gnutella-0.96.5.tar.bz2&xl=13634700&xs=http://catnip.bishopston.net:53615/uri-res/N2R%3Furn:sha1:QBMJUJBSF5IJ5UOCJFFBWXHARFI4PYQW">magnet-link</a> from Gnutella
+|
+<a href="http://downloads.sourceforge.net/gtk-gnutella/gtk-gnutella-0.96.5.tar.bz2">Direct HTTP download</a> (13 MiB) ]
+</p>
 
 <p>
 Thanks to everyone who contributed to this release in form of feedback,
