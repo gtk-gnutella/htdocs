@@ -183,7 +183,8 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
       <div class="boxed">
         <?php iceinclude("sidenav_conform", 0) ?>
         <div>
-          <a class="image" href="http://validator.w3.org/check/referer">
+          <a class="image"
+            	href="http://validator.w3.org/check?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
             <img src="/images/valid-html401.png"
               alt="Valid&nbsp;HTML&nbsp;4.01" width="88" height="31"></a>
           <a class="image"
