@@ -15,7 +15,6 @@
   Linux,  
   <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net-p2p/gtk-gnutella/">FreeBSD</a>,
   <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
-  <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
   <a href="http://gtk-gnutella.darwinports.com/">Darwin</a>,
 Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS. Tevens is bekend dat het 
   werkt met de volgende CPU architecturen:

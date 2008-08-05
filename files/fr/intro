@@ -12,7 +12,6 @@
   Gnome n'est pas n&eacute;c&eacute;ssaire. Le d&eacute;veloppement du programme se d&eacute;roule actuellement sous Linux (Debian 2.2) et fonctionne au moins sous Linux,
   <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net-p2p/gtk-gnutella/">FreeBSD</a>,
   <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
-  <a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/net/gtk-gnutella/">OpenBSD</a>,
   <a href="http://gtk-gnutella.darwinports.com/">Darwin</a>,
 Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS tout comme sur les architectures CPU x86, AMD64, PowerPC, SPARC, MIPS.
 </p>
