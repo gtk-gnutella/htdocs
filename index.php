@@ -81,7 +81,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
       <div>
         <a class="image" href="/?page=index">
           <img src="/images/gtk-gnutella.png" 
-            width="408" height="44" alt="Gtk-Gnutella"></a>
+            width="408" height="44" alt="gtk-gnutella logo"></a>
       </div>
       <div>
         <?php iceinclude("current_version", 0); echo VERSION ?>
