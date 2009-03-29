@@ -1,0 +1,172 @@
+<!-- $Id: news_51 13188 2007-03-21 21:12:04Z cbiere $ -->
+<h4>29 March 2009, Version 0.96.6 Released</h4>
+
+<p>Version 0.96.6 is a stable release. The list below shows the most important
+bug fixed and improvements since the previous release.</p>
+
+<h5>Bug Fixes</h5>
+
+<ul>
+<li>#1932909 "columns in search window do not scale properly".</li>
+<li>Fixed improper HTTP chunking when outputing chunks larger than 64 KiB.</li>
+<li>#2628899 "tries to download from my old self after IP changes".</li>
+<li>Was not always resuming the interrupted SHA-1 computation of a finished file
+	when servent was closed in the middle of processing.</li>
+<li>Fixed bad range checking test in the download part.</li>
+<li>Was not paying attention to the "give_server_hostname" property and instead
+	sent "HNAME" GGEP extensions in query hits provided a non-empty name was
+	defined as the "server_hostname".</li>
+<li>Fixed improper upload slot counting which introduced race conditions,
+	sometimes leading to having more slots used than the configured maximum
+	(in addition to the "quick" upload slots).</li>
+<li>Prevent occasional crashes at shutdown time, during subsystem cleanups.</li>
+<li>Fixed corner cases where we could lose a server hostname and downright bug
+	where we discarded the hostname after a DNS lookup if the subsequent
+	connection attempt did not succeed.</li>
+</ul>
+
+<h5>Improvements</h5>
+
+<ul>
+<li>Refuse to share certain directories: /, $HOME, $GTK_GNUTELLA_DIR, and
+	the incomplete and corrupted directories.</li>
+<li>Downloads GUI: added checkboxes to invert the select/filter patterns.</li>
+<li>Downloads GUI: added "Modified" column and detail showing the timestamp of
+	the last file modification.</li>
+<li>Optional beautification operations on filenames: strip leading "-", remove
+	consecutive "_" and prevent "_" surrounding punctuation characters.</li>
+<li>Fixed significant performance issue in the Gtk+ 1.2 front-end: update of
+	upload statistics was O(n) but is now O(1).</li>
+<li>Background TTH file verification now lights an icon in the GUI.</li>
+<li>Show TTH tree depth in the download "Details" pane.</li>
+<li>Update the bitzi metadata info box when a query finishes, so that it is
+	not required to click on the result again after requesting bitzi data.</li>
+<li>Added MIME type column for search results.</li>
+<li>Added "Last Request" and "Last Upload" columns to the Upload History.</li>
+<li>Almost complete DHT support (missing only publishing of data), but code
+	needs to be explicitly enabled by setting "enable_dht" to TRUE.  The DHT
+	knows how to look for alt-locs for files and push-proxies for firewalled
+	hosts, and will store local data for others to query.</li>
+<li>New shell commands "stats", "download", "echo".</li>
+<li>It is now possible to rename files being downloaded (through GTK2 or shell,
+	no support in GTK1).</li>
+<li>Added more filename extensions to the built-in search filters.</li>
+<li>Switch resources after getting an HTTP error if the connection is kept alive
+	and the error permits follow-ups (non-busy conditions).</li>
+<li>Improved ability to switch resources after file completion by ignoring
+	trailing swarming data, to keep the connection alive.</li>
+<li>Bitzi tickets are refreshed when explicitely requested, avoiding reuse
+	of stale metadata.</li>
+<li>Completed files are displayed during hash verification.</li>
+<li>Only propagate good alt-locs for files we are downloading, i.e. addresses
+	of hosts which we know to be serving that file because we contacted them.<li>
+<li>Many new statistics counters.</li>
+<li>Allow scheduling of special downloads without considering per-host limits,
+	as these are of a much shorter duration (THEX and browse host requests).</li>
+<li>Always seed completed files, regardless of their size (no PFSP minimum as
+	with partial files), when their SHA-1 has been verified.</li>
+<li>Incorrectly encoded Bitzi metadata is translated to Unicode.</li>
+<li>Browse-host responses are sorted alphanumerically on relative pathnames to
+	allow users to relate files together if they don't understand GGEP "PATH".
+	</li>
+<li>Improved routing of PUSH messages by also looking whether targetted hosts
+	happen to be one of our immediate neighbours.</li>
+<li>Updated Norwegian Bokmal and Spanish translations.</li>
+</ul>
+
+<h5>Under the hood</h5>
+
+<ul>
+<li>Parse legacy Shareaza THEX URIs "urn:tree:tiger/:" (extra "/" here).</li>
+<li>Handle non-standard  X-Thex-URI headers if peer provides a valid
+	X-Content-URN header (Shareaza 2.1.0.0).</li>
+<li>Also attempt to give priority to the last "pfsp_last_chunk" bytes of
+	downloaded files, since that can contain important indexing information to
+	enable pre-view of partial video files.</li>
+<li>More MIME types known (derived from file extensions).</li>
+<li>Can now download THEX data at a tree depth of 11 for files larger than 1
+	GiB.</li>
+<li>Can download sub-optimal THEX data, as non-optimal data is better than none,
+	but keeps looking for THEX data at the optimal tree depth nonetheless.</li>
+<li>Reimplemented scanning of shared directories as a background task so that
+	the process (not just the GUI) is fully responsive during the whole scan.
+	</li>
+<li>Let the background task scheduler compute the proper amount of ticks to
+	use for each task.</li>
+<li>Upload statistics now record the file's SHA-1, so that we can consolidate
+	partial file sharing with library sharing statistics, with the filename
+	being forced to the library's filename.</li>
+<li>Avoid starting moving a completed file if there is not enough space on
+	the targetted file system.</li>
+<li>Recognize and propagate the "DHT" GGEP extension in pongs.</li>
+<li>Added support for "DHTIPP" GGEP extension in pings, used for DHT bootstrap.
+	</li>
+<li>Added more entropy to the random number seed.</li>
+<li>Plugged a few memory leaks.</li>
+<li>No longer send SHA-1 queries on the Gnutella network. They are now performed
+	through the DHT, which has the suitable topology to do so efficiently.</li>
+<li>Fixed UDP bandwidth computation, and removed any limit on UDP incoming.</li>
+<li>Updated list of hostile IP adress ranges, Geo-IP data, spam patterns and
+	spam samples.</li>
+<li>Property loading from files was in O(n*n), made it O(n).</li>
+<li>Now detect property files being blindly copied over from another
+	gtk-gnutella's config directory and reset properties whose value needs to
+	be unique.</li>
+<li>The GUID and the KUID (Kademlia ID, the DHT node ID) were made sticky.</li>
+<li>Optimization of QRP lookups in tables ranging from 16k to 2M slots.</li>
+<li>Limit amount of hits to 10 per query hit packet, as LimeWire chokes
+	otherwise.</li>
+<li>Limit amount of alt-locs in hits to 10 or LimeWire chokes.</li>
+<li>Keep connection alive when reporting an HTTP error to allow remote resource
+	switching if necessary.</li>
+<li>Emit and parse new X-Downloaded header, apparently introduced by LimeWire.
+	</li>
+<li>Added parsing of X-FW-Node-Info headers to grab push-proxies from firewalled
+	hosts, as well as gather the proper GUID and host address/port.</li>
+<li>Emit X-FW-Node-Info if node is firewalled but continue to list our
+	push-proxies in the standard X-Push-Proxies header.</li>
+<li>Avoid endless aggressive chunk splitting during swarming.</li>
+<li>Proper parsing of comma-separated values in Accept and other Accept-Encoding
+	HTTP headers.</li>
+<li>Reject UDP packets from unspecified addresses.</li>
+<li>Drain more data out of the UDP receive buffer to prevent it from filling up.
+	</li>
+<li>Strip at most 5 trailing characters from words when building the QRP table,
+	thereby inserting less radices and making the table more sparse.</li>
+<li>Removed workarounds for dealing with broken 0.96.2 nodes and earlier 0.95.x.
+	</li>
+<li>Extended syntax for push:// exact sources in magnets to be able to supply
+	all the known push-proxies, even if that is an empty set.  Since downloads
+	are persisted as magnets, this also allows keeping all the previously
+	known push-proxies accross sessions.</li>
+<li>Upgraded PARQ to version 1.1 (mostly specification cleanups).</li>
+<li>Added additional anti-hammering for cases where many files on the same
+	server are queued and gtk-gnutella is configured to launch more than 1
+	connection per IP.  Connection attempts to the same server are now limited
+	to 5 per minute.</li>
+</ul>
+
+<h5>Limitations</h5>
+
+<ul>
+<li>DHT code is still experimental, although functional: configuration of
+	parameters can only be done through the shell, and there is no support
+	for publishing yet.</li>
+</ul>
+
+<h5>Integrity checks for the source tarball</h5>
+
+<pre>Size: 15739240 bytes
+gtk-gnutella-0.96.5.tar.bz2: urn:sha1:GGKBP2G6CBFTHEJ6BCQKV3EMB4RKMEU5
+SHA1 (gtk-gnutella-0.96.5.tar.bz2) = 319417e8de104b33913e08a0aaec8c0f22a6129d
+</pre>
+
+<p>
+Thanks to everyone who contributed to this release in form of feedback,
+bug reports, patches or translations!
+</p>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_55 -->
