@@ -154,11 +154,48 @@ bug fixed and improvements since the previous release.</p>
 	for publishing yet.</li>
 </ul>
 
+<h5>What is the DHT good for?</h5>
+
+<p>Now that gtk-gnutella supports the DHT (an acronym standing for Distributed
+Hash Table), what are the direct benefits for gtk-gnutella users?</p>
+
+<p>If you enable the DHT code in gtk-gnutella, you will be able to benefit
+from these new features:</p>
+
+<ul>
+<li><i>Use sourceless magnets.</i>
+Only the urn:sha1 part is required, and that can
+be obtained by looking up Bitzi for instance.  Then either you can manually
+construct the magnet URI and drop it in gtk-gnutella's search box to request
+the downloading of the file.  Contrary to regular Gnutella searches, the DHT
+will find quickly (in less than a minute usually) whether someone has published
+that it was sharing the file.</li>
+
+<li><i>Better success with firewalled sources.</i>
+Because firewalled hosts publish their push-proxies in the DHT, you can start
+a download by using only a push: source (consisting only of the servent's GUID)
+and gtk-gnutella will be able to lookup the DHT for you and find what the
+current push-proxies are for that host.  Again, it is very quick and if that
+host has published its push-proxies, gtk-gnutella will find them.</li>
+
+<li><i>Faster downloads</i>.
+With the DHT, you can acquire additional alternate locations for files and
+use native Gnutella swarming abilities to very efficiently and reliably
+download files.</li>
+
+<p>If something has been published in the DHT (sources for files identified
+by their SHA-1, push-proxies for firewalled hosts identified by their GUID),
+it <i>will be found</i> in a matter of seconds.  If the search is unsucessful,
+it means the data is <i>not present</i> at this time in the DHT.  There is
+no horizon consideration as in Gnutella searches.  The only requirement is
+that you know how the published data is keyed in order to find it.</p>
+</ul>
+
 <h5>Integrity checks for the source tarball</h5>
 
 <pre>Size: 15739240 bytes
 gtk-gnutella-0.96.6.tar.bz2: urn:bitprint:GGKBP2G6CBFTHEJ6BCQKV3EMB4RKMEU5.BJ6GG3CKCHWOAT64HG6C7ZIKEUDPQNB4KP3PIDQ
-SHA1 (gtk-gnutella-0.96.5.tar.bz2) = 319417e8de104b33913e08a0aaec8c0f22a6129d
+SHA1 (gtk-gnutella-0.96.6.tar.bz2) = 319417e8de104b33913e08a0aaec8c0f22a6129d
 </pre>
 
 <p>
