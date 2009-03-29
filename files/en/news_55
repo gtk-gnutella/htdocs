@@ -8,7 +8,7 @@ bug fixed and improvements since the previous release.</p>
 
 <ul>
 <li>#1932909 "columns in search window do not scale properly".</li>
-<li>Fixed improper HTTP chunking when outputing chunks larger than 64 KiB.</li>
+<li>Fixed improper HTTP chunking when outputting chunks larger than 64 KiB.</li>
 <li>#2628899 "tries to download from my old self after IP changes".</li>
 <li>Was not always resuming the interrupted SHA-1 computation of a finished file
 	when servent was closed in the middle of processing.</li>
@@ -31,7 +31,7 @@ bug fixed and improvements since the previous release.</p>
 <li>Refuse to share certain directories: /, $HOME, $GTK_GNUTELLA_DIR, and
 	the incomplete and corrupted directories.</li>
 <li>Downloads GUI: added checkboxes to invert the select/filter patterns.</li>
-<li>Downloads GUI: added "Modified" column and detail showing the timestamp of
+<li>Downloads GUI: added "Modified" column and detail showing the time-stamp of
 	the last file modification.</li>
 <li>Optional beautification operations on filenames: strip leading "-", remove
 	consecutive "_" and prevent "_" surrounding punctuation characters.</li>
@@ -39,7 +39,7 @@ bug fixed and improvements since the previous release.</p>
 	upload statistics was O(n) but is now O(1).</li>
 <li>Background TTH file verification now lights an icon in the GUI.</li>
 <li>Show TTH tree depth in the download "Details" pane.</li>
-<li>Update the bitzi metadata info box when a query finishes, so that it is
+<li>Update the bitzi meta-data info box when a query finishes, so that it is
 	not required to click on the result again after requesting bitzi data.</li>
 <li>Added MIME type column for search results.</li>
 <li>Added "Last Request" and "Last Upload" columns to the Upload History.</li>
@@ -55,8 +55,8 @@ bug fixed and improvements since the previous release.</p>
 	and the error permits follow-ups (non-busy conditions).</li>
 <li>Improved ability to switch resources after file completion by ignoring
 	trailing swarming data, to keep the connection alive.</li>
-<li>Bitzi tickets are refreshed when explicitely requested, avoiding reuse
-	of stale metadata.</li>
+<li>Bitzi tickets are refreshed when explicitly requested, avoiding reuse
+	of stale meta-data.</li>
 <li>Completed files are displayed during hash verification.</li>
 <li>Only propagate good alt-locs for files we are downloading, i.e. addresses
 	of hosts which we know to be serving that file because we contacted them.<li>
@@ -65,11 +65,11 @@ bug fixed and improvements since the previous release.</p>
 	as these are of a much shorter duration (THEX and browse host requests).</li>
 <li>Always seed completed files, regardless of their size (no PFSP minimum as
 	with partial files), when their SHA-1 has been verified.</li>
-<li>Incorrectly encoded Bitzi metadata is translated to Unicode.</li>
-<li>Browse-host responses are sorted alphanumerically on relative pathnames to
+<li>Incorrectly encoded Bitzi meta-data is translated to Unicode.</li>
+<li>Browse-host responses are sorted alpha-numerically on relative pathnames to
 	allow users to relate files together if they don't understand GGEP "PATH".
 	</li>
-<li>Improved routing of PUSH messages by also looking whether targetted hosts
+<li>Improved routing of PUSH messages by also looking whether targeted hosts
 	happen to be one of our immediate neighbours.</li>
 <li>Updated Norwegian Bokmal and Spanish translations.</li>
 </ul>
@@ -88,7 +88,7 @@ bug fixed and improvements since the previous release.</p>
 	GiB.</li>
 <li>Can download sub-optimal THEX data, as non-optimal data is better than none,
 	but keeps looking for THEX data at the optimal tree depth nonetheless.</li>
-<li>Reimplemented scanning of shared directories as a background task so that
+<li>Re-implemented scanning of shared directories as a background task so that
 	the process (not just the GUI) is fully responsive during the whole scan.
 	</li>
 <li>Let the background task scheduler compute the proper amount of ticks to
@@ -97,7 +97,7 @@ bug fixed and improvements since the previous release.</p>
 	partial file sharing with library sharing statistics, with the filename
 	being forced to the library's filename.</li>
 <li>Avoid starting moving a completed file if there is not enough space on
-	the targetted file system.</li>
+	the targeted file system.</li>
 <li>Recognize and propagate the "DHT" GGEP extension in pongs.</li>
 <li>Added support for "DHTIPP" GGEP extension in pings, used for DHT bootstrap.
 	</li>
@@ -106,7 +106,7 @@ bug fixed and improvements since the previous release.</p>
 <li>No longer send SHA-1 queries on the Gnutella network. They are now performed
 	through the DHT, which has the suitable topology to do so efficiently.</li>
 <li>Fixed UDP bandwidth computation, and removed any limit on UDP incoming.</li>
-<li>Updated list of hostile IP adress ranges, Geo-IP data, spam patterns and
+<li>Updated list of hostile IP address ranges, Geo-IP data, spam patterns and
 	spam samples.</li>
 <li>Property loading from files was in O(n*n), made it O(n).</li>
 <li>Now detect property files being blindly copied over from another
@@ -138,7 +138,7 @@ bug fixed and improvements since the previous release.</p>
 <li>Extended syntax for push:// exact sources in magnets to be able to supply
 	all the known push-proxies, even if that is an empty set.  Since downloads
 	are persisted as magnets, this also allows keeping all the previously
-	known push-proxies accross sessions.</li>
+	known push-proxies across sessions.</li>
 <li>Upgraded PARQ to version 1.1 (mostly specification cleanups).</li>
 <li>Added additional anti-hammering for cases where many files on the same
 	server are queued and gtk-gnutella is configured to launch more than 1
@@ -163,7 +163,7 @@ Hash Table), what are the direct benefits for gtk-gnutella users?</p>
 from these new features:</p>
 
 <ul>
-<li><i>Use sourceless magnets.</i>
+<li><i>Use source-less magnets.</i>
 Only the urn:sha1 part is required, and that can
 be obtained by looking up Bitzi for instance.  Then you can manually
 construct the magnet URI and drop it in gtk-gnutella's search box to request
@@ -194,7 +194,7 @@ orphan (without active sources) for a long time.</li>
 
 <p>If something has been published in the DHT (sources for files identified
 by their SHA-1, push-proxies for firewalled hosts identified by their GUID),
-it <i>will be found</i> in a matter of seconds.  If the search is unsucessful,
+it <i>will be found</i> in a matter of seconds.  If the search is unsuccessful,
 it means the data is <i>not present</i> at this time in the DHT.  There is
 no horizon consideration as in Gnutella searches.  The only requirement is
 that you know how the published data is keyed in order to find it.</p>
