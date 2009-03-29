@@ -165,11 +165,13 @@ from these new features:</p>
 <ul>
 <li><i>Use sourceless magnets.</i>
 Only the urn:sha1 part is required, and that can
-be obtained by looking up Bitzi for instance.  Then either you can manually
+be obtained by looking up Bitzi for instance.  Then you can manually
 construct the magnet URI and drop it in gtk-gnutella's search box to request
 the downloading of the file.  Contrary to regular Gnutella searches, the DHT
 will find quickly (in less than a minute usually) whether someone has published
-that it was sharing the file.</li>
+that it was sharing the file. No spam or fakes: look up the content you
+want from trusted dictionaries (like Bitzi) to find the key that will
+unlock the content for you.</li>
 
 <li><i>Better success with firewalled sources.</i>
 Because firewalled hosts publish their push-proxies in the DHT, you can start
@@ -183,13 +185,31 @@ With the DHT, you can acquire additional alternate locations for files and
 use native Gnutella swarming abilities to very efficiently and reliably
 download files.</li>
 
+<li><i>Improved session resuming.</i>If you shut-down gtk-gnutella and
+restart it later, it will lookup for new push-proxies (the old ones that
+were persisted are probably obsolete) and new sources for the files which
+are pending in the queue, possibly re-seeding some downloads that were
+orphan (without active sources) for a long time.</li>
+</ul>
+
 <p>If something has been published in the DHT (sources for files identified
 by their SHA-1, push-proxies for firewalled hosts identified by their GUID),
 it <i>will be found</i> in a matter of seconds.  If the search is unsucessful,
 it means the data is <i>not present</i> at this time in the DHT.  There is
 no horizon consideration as in Gnutella searches.  The only requirement is
 that you know how the published data is keyed in order to find it.</p>
-</ul>
+
+<p>The key to make all that possible is to use a Gnutella servent that is
+capable of joining and querying the global Gnutella DHT, currently supported
+by LimeWire (and all its derivatives) and gtk-gnutella.  The next release
+will add DHT publishing to gtk-gnutella to make it fully productive.</p>
+
+<p><i>Who should activate the DHT code?</i>
+Ideal nodes are leaf nodes which are not firewalled, then ultra nodes.
+If you are a firewalled node, you can still enable the DHT code but it will
+be less efficient currently for the network.  The more nodes are present in
+the DHT, the longer they stay connected, the more powerful the DHT becomes.
+</p>
 
 <h5>Integrity checks for the source tarball</h5>
 
