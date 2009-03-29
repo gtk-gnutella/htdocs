@@ -157,7 +157,7 @@ bug fixed and improvements since the previous release.</p>
 <h5>Integrity checks for the source tarball</h5>
 
 <pre>Size: 15739240 bytes
-gtk-gnutella-0.96.5.tar.bz2: urn:sha1:GGKBP2G6CBFTHEJ6BCQKV3EMB4RKMEU5
+gtk-gnutella-0.96.6.tar.bz2: urn:bitprint:GGKBP2G6CBFTHEJ6BCQKV3EMB4RKMEU5.BJ6GG3CKCHWOAT64HG6C7ZIKEUDPQNB4KP3PIDQ
 SHA1 (gtk-gnutella-0.96.5.tar.bz2) = 319417e8de104b33913e08a0aaec8c0f22a6129d
 </pre>
 
