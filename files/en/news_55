@@ -163,29 +163,41 @@ Hash Table), what are the direct benefits for gtk-gnutella users?</p>
 from these new features:</p>
 
 <ul>
-<li><i>Use source-less magnets.</i>
-Only the urn:sha1 part is required, and that can
-be obtained by looking up Bitzi for instance.  Then you can manually
-construct the magnet URI and drop it in gtk-gnutella's search box to request
-the downloading of the file.  Contrary to regular Gnutella searches, the DHT
-will find quickly (in less than a minute usually) whether someone has published
-that it was sharing the file. No spam or fakes: look up the content you
-want from trusted dictionaries (like Bitzi) to find the key that will
-unlock the content for you.</li>
+<li><em>Use source-less magnets.</em>
+The DHT can locate files by their SHA-1. Websites like <a
+href="http://www.bitzi.com/">Bitzi</a> collect this information along with
+further metadata about files. Bitzi also provides magnet links you can readily
+drag and drop onto gtk-gnutella's main window or copy and paste into its search
+box to search and download the desired file. Of course, magnet links can also
+be manually constructed as long as you know the SHA-1 of the file.
 
-<li><i>Better success with firewalled sources.</i>
-Because firewalled hosts publish their push-proxies in the DHT, you can start
+Contrary to regular Gnutella searches, the DHT will find quickly (in less than
+a minute usually) whether someone has published that it was sharing the file.
+</li>
+
+<li><em>No spam or fakes</em>
+Look up the content you want at places you trust (like Bitzi). Magnet links
+can link to known sources, too, but usually don't. Therefore, they are
+conveniently short, look like URLs and can be posted anywhere: forums, blogs,
+index sites, emails, IRC etc. As they link to content instead of a specific
+location, they are practically permantly valid and never expire. Using your
+your trusted communities to exchange magnet links gives you the benefit
+of avoiding all spam and fakes that you may suffer from with regular searches.
+</li>
+
+<li><em>Better success with firewalled sources.</em>
+As firewalled hosts publish their push-proxies in the DHT, you can start
 a download by using only a push: source (consisting only of the servent's GUID)
 and gtk-gnutella will be able to lookup the DHT for you and find what the
 current push-proxies are for that host.  Again, it is very quick and if that
 host has published its push-proxies, gtk-gnutella will find them.</li>
 
-<li><i>Faster downloads</i>.
+<li><em>Faster downloads</em>.
 With the DHT, you can acquire additional alternate locations for files and
 use native Gnutella swarming abilities to very efficiently and reliably
 download files.</li>
 
-<li><i>Improved session resuming.</i>If you shut-down gtk-gnutella and
+<li><em>Improved session resuming.</em>If you shut-down gtk-gnutella and
 restart it later, it will lookup for new push-proxies (the old ones that
 were persisted are probably obsolete) and new sources for the files which
 are pending in the queue, possibly re-seeding some downloads that were
@@ -194,8 +206,8 @@ orphan (without active sources) for a long time.</li>
 
 <p>If something has been published in the DHT (sources for files identified
 by their SHA-1, push-proxies for firewalled hosts identified by their GUID),
-it <i>will be found</i> in a matter of seconds.  If the search is unsuccessful,
-it means the data is <i>not present</i> at this time in the DHT.  There is
+it <em>will be found</em> in a matter of seconds.  If the search is unsuccessful,
+it means the data is <em>not present</em> at this time in the DHT.  There is
 no horizon consideration as in Gnutella searches.  The only requirement is
 that you know how the published data is keyed in order to find it.</p>
 
@@ -204,9 +216,9 @@ capable of joining and querying the global Gnutella DHT, currently supported
 by LimeWire (and all its derivatives) and gtk-gnutella.  The next release
 will add DHT publishing to gtk-gnutella to make it fully productive.</p>
 
-<p><i>Who should activate the DHT code?</i>
-Ideal nodes are leaf nodes which are not firewalled, then ultra nodes.
-If you are a firewalled node, you can still enable the DHT code but it will
+<p><em>Who should activate the DHT code?</em>
+Ideal nodes are leaf nodes which are not firewalled, then ultrapeers.
+If your peer is firewalled, you can still enable the DHT code but it will
 be less efficient currently for the network.  The more nodes are present in
 the DHT, the longer they stay connected, the more powerful the DHT becomes.
 </p>
