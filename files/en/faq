@@ -27,20 +27,19 @@
 
 <h2>Gnutella connections</h2>
 <ul>
-  <li><a href="#gnet4">gtk-gnutella does not connect!</a></li>
   <li><a href="#gnet0">What is a good number of connections?</a></li>
   <li><a href="#gnet1">Do I need to forward a port on my firewall?</a></li>
   <li><a href="#gnet-forward-howto">How do I configure port forwarding?</a></li>
   <li><a href="#gnet-udp">Does gtk-gnutella use UDP?</a></li>
   <li><a href="#gnet2">What does "[FC]" mean?</a></li>
-  <li><a href="#gnet3">Why do I lose gnet connections when i have an upload?</a></li>
+  <li><a href="#gnet3">Why do I lose Gnutella peer connections when i have an upload?</a></li>
   <li><a href="#gnet4">What does this stuff in the Flags column mean?</a></li>
   <li><a href="#gnet-user-agent">What's the meaning of a leading "!" in the User-Agent name?</a></li>
   <li><a href="#gnet5">What does "Harmful version banned, upgrade required" mean?</a></li>
   <li><a href="#gnet6">What does "Outdated version, please upgrade" mean?</a></li>
   <li><a href="#gnet7">Why doesn't my HTTP proxy work?</a></li>
   <li><a href="#gnet8">How can I increase the timeouts?</a></li>
-  <li><a href="#gnet-auto">How does auto mode decide between ultra and leaf?</a></li>
+  <li><a href="#gnet-auto">How does auto mode decide between ultrapeer and leaf?</a></li>
 </ul>
 
 <h2>Searches</h2>
@@ -117,7 +116,7 @@
     you are running.
   </li>
   <li>
-    Limit the number of gnet connections you have.
+    Limit the number of Gnutella peer connections you have.
   </li>
   <li>
     If you are able to receive incoming connections, enable <em>Prefer
@@ -128,9 +127,9 @@
     Even if you are on a slow connection, it's still important to share
     files.  With <a href="#down3">swarming</a>, people can upload small chunks
     of files from you, so even a slow connection, multiplied by many sources on
-    the gnet, makes a tremendous contribution.  If you have a 56K modem, you
-    can set <em>Bandwidth limits for HTTP traffic</em> - <em>Cumulative upload
-    rate</em> to 1K/s so you still have the majority of your bandwidth for
+    the Gnutella network, makes a tremendous contribution.  If you have a 56K
+    modem, you can set <em>Bandwidth limits for HTTP traffic</em> - <em>Cumulative
+    upload rate</em> to 1K/s so you still have the majority of your bandwidth for
     downloading.
   </li>
   <li>
@@ -146,7 +145,7 @@
   Since version 0.92, gtk-gnutella has implemented
   <a href="?page=features"><em>ultrapeers</em></a> and
   <em>leaf nodes</em>.
-  This divides servents on the gnet into leaf nodes, which connect only to
+  This divides peers on the Gnutella network into leaf nodes, which connect only to
   ultrapeers, and ultrapeers, which connect to many leaf nodes and a small
   number of other ultrapeers (see
   <a href="#gnet0">What is a good number of connections?</a>).
@@ -154,16 +153,14 @@
 <p>
   Ultrapeers must not be not firewalled, are expected to have long uptimes
   (more than two hours), and have sufficient surplus bandwidth to donate to
-  the gnet.  Ultrapeers forward queries from their leaf nodes and leaf nodes
-  upload to their ultrapeers
-  <a href="?page=features">QRP</a>
+  the Gnutella network.  Ultrapeers forward queries from their leaf nodes and
+  leaf nodes upload to their ultrapeers <a href="?page=features">QRP</a>
   tables which contain hashes of keywords that will match files shared by the 
   leaf.  When an ultrapeer gets a hit on a query routing table, it relays the 
-  query to the corresponding leaf node.  The result is very low gnet traffic 
-  for each leaf node, freeing bandwidth for sharing and downloading (which 
-  still occur directly p2p.)  Ultrapeers can also act as
-  <a href="?page=features">push-proxies</a> for
-  firewalled leaf nodes.
+  query to the corresponding leaf node.  The result is very low Gnutella
+  network traffic for each leaf node, freeing bandwidth for sharing and
+  downloading (which still occur directly p2p.)  Ultrapeers can also act as <a
+  href="?page=features">push-proxies</a> for firewalled leaf nodes.
 </p>
 
 <h3><a name="general-firewall">Why does gtk-gnutella claim it's firewalled
@@ -223,8 +220,6 @@ See also,
 
 <h2>Gnutella connections</h2>
 
-<h3><a href="#gnet4">gtk-gnutella does not connect!</a></h3>
-
 <h3><a name="gnet0">What is a good number of connections?</a></h3>
 <p>
   In <a href="#general-ultrapeer">leaf</a> mode 3 ultrapeers, in
@@ -232,9 +227,9 @@ See also,
   ultrapeers and around 100 leaf nodes. The actual number should depend on the 
   available bandwidth. If you have set "Prefer compressed connections," bandwidth
   used will be much lower. You should never use up all your bandwidth with
-  gnet connections. Especially on an asymmetric cable/DSL connection you can
+  Gnutella peer connections. Especially on an asymmetric cable/DSL connection you can
   easily starve your incoming traffic by producing too much outgoing traffic
-  (TCP/IP issue). Use at most half of your outgoing bandwidth for gnet
+  (TCP/IP issue). Use at most half of your outgoing bandwidth for Gnutella peer
   connections.
 </p>
 <p>
@@ -277,25 +272,26 @@ See also,
 <p>
   Yes, starting with version 0.95 gtk-gnutella can also use 
   <a href="http://www.faqs.org/rfcs/rfc768.html">UDP</a> in addition
-  to <a href="http://www.faqs.org/rfcs/rfc793.html">TCP</a>.  
+  to <a href="http://www.faqs.org/rfcs/rfc793.html">TCP</a>.
+  It uses the same port number for UDP and TCP.
 </p>
 
 <h3><a name="gnet2">What does "[FC]" mean?</a></h3>
 <p>
   The <em>FC</em> means "flow control".<br>
-  In general, you should make sure that servents to which you are connected do
+  In general, you should make sure that peers to which you are connected do
   not flow control.  Watch for the trailing <em>[FC]</em> indication at
   the end of the <em>Info</em> string (you may need to drag the right
   edge past the window to trigger the underlying scroll bar), or look at the
   FC state in the <a href="#gnet4">Flags</a> column. As a rule of thumb, if
   you have more than one node flow-controlling at a given time, you don't have
-  enough outgoing bandwidth dedicated to gnet, and therefore you are harming
-  the network: either decrease the amount of connections, enable the
-  <em>Prefer compressed connections</em> option or raise the outgoing
+  enough outgoing bandwidth dedicated to the Gnutella network, and therefore
+  you are harming the network: either decrease the amount of connections, enable
+  the <em>Prefer compressed connections</em> option or raise the outgoing
   bandwidth limit.
 </p>
 
-<h3><a name="gnet3">Why do I lose gnet connections when I have an upload?</a></h3>
+<h3><a name="gnet3">Why do I lose Gnutella peer connections when I have an upload?</a></h3>
 <p>
   Try to do bandwidth limiting. If that doesn't help, maybe your provider throttles
   gnutella traffic. Try changing your gnutella port in the network settings of
@@ -331,18 +327,19 @@ See also,
 
 <h3><a name="gnet5">What does "Harmful version banned, upgrade required" mean?</a></h3>
 <p>
-  Sometimes, servents are discovered to have a bug or behaviour that is harmful
-  to the gnet.  For example, gtk-gnutella-0.92b had a bug that generated excessive
+  Sometimes, peers are discovered to have a bug or behaviour that is harmful
+  to the Gnutella network.  For example, gtk-gnutella-0.92b had a bug that generated excessive
   queries which hammered on the <a href="?page=gwebcache">GWebCache system</a>.
   Such banning is exceptional, usually restricted to specific versions, and the
-  servent's author is informed about the banning.
+  author of the software is informed about the banning.
 </p>
 
 <h3><a name="gnet6">What does "Outdated version, please upgrade" mean?</a></h3>
 <p>
   Versions of gtk-gnutella more than one year old are banned, since they
-  lack features that are important to the rapidly evolving gnet's health and
-  scalability.  In addition, unstable versions are banned after 90 days.
+  lack features that are important to the rapidly evolving health and
+  scalability of the Gnutella network.  In addition, unstable versions are banned
+  after 90 days.
 </p>
 
 <h3><a name="gnet7">Why doesn't my HTTP proxy work?</a></h3>
@@ -365,9 +362,9 @@ See also,
   <em>Settings-&gt;Preferences-&gt;GnutellaNet</em>.
 </p>
 
-<h3><a name="gnet-auto">How does auto mode decide between ultra and leaf?</a></h3>
+<h3><a name="gnet-auto">How does auto mode decide between ultrapeer and leaf?</a></h3>
 <p>
-  In order to be promoted to <a href="#general-ultrapeer">ultra mode</a> the 
+  In order to be promoted to <a href="#general-ultrapeer">ultrapeer mode</a> the 
   following conditions must be met:
 </p>
 <ol>
@@ -379,12 +376,12 @@ See also,
     steal all the HTTP outgoing bandwidth.
   </li>
   <li>
-    If Gnet out scheduler is enabled, there must be at least 256 bytes/s per 
-    gnet connection (ultrapeer or normal aka legacy).
+    If Gnutella network output scheduler is enabled, there must be at least 256 bytes/s per 
+    Gnutella network connection (ultrapeer or normal aka legacy).
   </li>
   <li>
     Overall, there must be 32 bytes/s per configured leaf plus 256 bytes/s per 
-    gnet connection available.
+    Gnutella peer connection available.
   </li>
 </ol>
   
@@ -418,10 +415,10 @@ See also,
   passive searches can be useful.  
 </p>
 <p>
-  If you are in <a href="#general-ultrapeer">ultra</a> mode, many search 
+  If you are in <a href="#general-ultrapeer">ultrapeer</a> mode, many search 
   results are already passing through your node besides the ones for your own 
   searches. You can take advantage of this to make searches without generating 
-  any extra gnet traffic.  For example, on my ultrapeer with 200 
+  any extra Gnutella network traffic.  For example, on my ultrapeer with 200 
   <a href="#general-ultrapeer">leaf nodes</a>, I opened a passive search and 
   filtered the results to display only hits with the name 
   <q><em>eminem</em></q>.  Within an hour or so I had about 1500 results. 
