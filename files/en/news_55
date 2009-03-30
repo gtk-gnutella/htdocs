@@ -198,7 +198,8 @@ With the DHT, you can acquire additional alternate locations for files and
 use native Gnutella swarming abilities to very efficiently and reliably
 download files.</li>
 
-<li><em>Improved session resuming.</em>If you shut-down gtk-gnutella and
+<li><em>Improved session resuming.</em>
+If you shut-down gtk-gnutella and
 restart it later, it will lookup for new push-proxies (the old ones that
 were persisted are probably obsolete) and new sources for the files which
 are pending in the queue, possibly re-seeding some downloads that were
