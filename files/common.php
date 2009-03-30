@@ -47,7 +47,7 @@ $pages = array(
 );
 
 /* NEWSNUM is the number of news items that appear on the front page. */
-define("NEWSNUM", 7);
+define("NEWSNUM", 3);
 define("GENDIR",  "general/");
 define("PAGE",    getpage());
 define("LANG",    getlang());
