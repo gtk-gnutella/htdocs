@@ -59,7 +59,7 @@ bug fixed and improvements since the previous release.</p>
 	of stale meta-data.</li>
 <li>Completed files are displayed during hash verification.</li>
 <li>Only propagate good alt-locs for files we are downloading, i.e. addresses
-	of hosts which we know to be serving that file because we contacted them.<li>
+	of hosts which we know to be serving that file because we contacted them.</li>
 <li>Many new statistics counters.</li>
 <li>Allow scheduling of special downloads without considering per-host limits,
 	as these are of a much shorter duration (THEX and browse host requests).</li>
@@ -166,7 +166,8 @@ from these new features:</p>
 <li><em>Use source-less magnets.</em>
 The DHT can locate files by their SHA-1. Websites like <a
 href="http://www.bitzi.com/">Bitzi</a> collect this information along with
-further metadata about files. Bitzi also provides magnet links you can readily
+further metadata about files. Bitzi also provides
+<a href="http://magnet-uri.sourceforget.net/">magnet links</a> you can readily
 drag and drop onto gtk-gnutella's main window or copy and paste into its search
 box to search and download the desired file. Of course, magnet links can also
 be manually constructed as long as you know the SHA-1 of the file.
@@ -175,7 +176,7 @@ Contrary to regular Gnutella searches, the DHT will find quickly (in less than
 a minute usually) whether someone has published that it was sharing the file.
 </li>
 
-<li><em>No spam or fakes</em>
+<li><em>No spam or fakes.</em>
 Look up the content you want at places you trust (like Bitzi). Magnet links
 can link to known sources, too, but usually don't. Therefore, they are
 conveniently short, look like URLs and can be posted anywhere: forums, blogs,
