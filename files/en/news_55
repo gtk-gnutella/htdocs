@@ -230,7 +230,12 @@ the DHT, the longer they stay connected, the more powerful the DHT becomes.
 <pre>Size: 15739240 bytes
 gtk-gnutella-0.96.6.tar.bz2: urn:bitprint:GGKBP2G6CBFTHEJ6BCQKV3EMB4RKMEU5.BJ6GG3CKCHWOAT64HG6C7ZIKEUDPQNB4KP3PIDQ
 SHA1 (gtk-gnutella-0.96.6.tar.bz2) = 319417e8de104b33913e08a0aaec8c0f22a6129d
+RMD160 (gtk-gnutella-0.96.6.tar.bz2) = 0dae6af9ac64fa8d75980cafd55c5a3e9eb18dfe
+SHA256 (gtk-gnutella-0.96.6.tar.bz2) = 1e9e9952658134448675a991aca583b2a6bcacdc144b8a81628e1505b4567e8f
 </pre>
+<p>
+<a href="http://downloads.sourceforge.net/gtk-gnutella/gtk-gnutella-0.96.6.tar.bz2.asc">PGP Signature</a> (186 bytes)
+</p>
 
 <p>
 Thanks to everyone who contributed to this release in form of feedback,
