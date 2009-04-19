@@ -20,6 +20,7 @@ $news_items = null;
 
 $pages = array(
   "banners",
+  "bootstrap",
   "bugreport_howto",
   "code101",
   "code101a",
