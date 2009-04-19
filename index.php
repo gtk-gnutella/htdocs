@@ -95,6 +95,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 
           <?php iceinclude("sidenav", 0) ?>
 
+	  <div>
           <select name="lang" tabindex=1 onchange="submit();">
             <option
 		<?php if ('en' === LANG) echo 'selected' ?>
@@ -123,6 +124,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
           </select>&nbsp;<input type="submit" value="Go"
                                 accesskey="G" tabindex="2">
           <input type="hidden" name="page" value="<?php echo PAGE ?>">
+	  </div>
         </form>
 
       </div>
