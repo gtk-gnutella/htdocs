@@ -1,7 +1,7 @@
 <!-- $Id$ -->
 
 <div class="sb_section">
-<a href="/">新闻</a>&nbsp;|&nbsp;
+<a href="?page=news">新闻</a>&nbsp;|&nbsp;
 <a href="?page=docs">文档</a>&nbsp;|&nbsp;
 <a href="?page=features">功能介绍</a>&nbsp;|&nbsp;
 <a href="?page=faq">有问有答</a>&nbsp;|&nbsp;

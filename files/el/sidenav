@@ -1,7 +1,7 @@
 <!-- $Id$ -->
 
 <div class="sb_section">
-<a href="/">Νέα</a> &nbsp;|&nbsp;
+<a href="?page=news">Νέα</a> &nbsp;|&nbsp;
 <a href="?page=docs">Εγχειρίδιο</a> &nbsp;|&nbsp;
 <a href="?page=features">Χαρακτηριστικά</a> &nbsp;|&nbsp;
 <a href="?page=faq">Συχνές Ερωτήσεις</a> &nbsp;|&nbsp;
