@@ -1,83 +1,24 @@
 <!-- $Id$ -->
 
-<!--      -->
-<!-- NEWS -->
-<!--      -->
 <div class="sb_section">
-<a href="?page=news" class="sb_section_header">新闻</a><br>
-</DIV>
-
-<!--               -->
-<!-- DOCUMENTATION -->
-<!--               -->
-<div class="sb_section">
-  <a href="?page=docs" class="sb_section_header">文档</a>
-
-  <div class="indent">
-    <a href="?page=features">功能介绍</a><br>
-    <a href="?page=faq">有问有答</a><br>
-    <a href="?page=shots096u">界面截屏</a><br>
-    <a href="?page=release_history">历史记录</a><br>
-  </div>
-</div>
-
-<!--              -->
-<!-- Getting help -->
-<!--              -->
-<div class="sb_section">
-  <a href="?page=mailing" class="sb_section_header">获取帮助</a>
-
-  <div class="sb_section_content">
-    <a href="?page=bugreport_howto">
-      如何报告Bug</a><br>
-    <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
-      Bug追踪</a><br>
-    <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
-      功能需求</a><br>
-  </div>
-</div>
-
-<!--            -->
-<!-- DEVELOPERS -->
-<!--            -->
-<div class="sb_section">
-  <a href="?page=devel" class="sb_section_header">开发园地</a>
-
-  <div class="sb_section_content">
-    <a href="http://sourceforge.net/projects/gtk-gnutella/">
-      SF项目页面</a><br>
-    <a href="http://gtk-gnutella.sourceforge.net/doxygen/">
-      API 参考</a><br>
-    <a href="?page=code101">代码 101</a>
-  </div>
-</div>
-
-<!--          -->
-<!-- DOWNLOAD -->
-<!--          -->
-<div class="sb_section">
-  <a href="http://sourceforge.net/project/showfiles.php?group_id=4467"
-    class="sb_section_header"
-    >下载</a>
-   
-  <div class="sb_section_content">
-    <a href="?page=devel#devel-snapshots">SVN 快照</a>
-  </div>
-</div>
-
-<!--        -->
-<!--  LINKS -->
-<!--        -->
-
-<div class="sb_section">
-  <a href="?page=links" class="sb_section_header">链接</a>
-</div>
-
-<!--        -->
-<!-- DONATE -->
-<!--        -->
-<div class="sb_section">
-  <a href="?page=donate" class="sb_section_header">捐助</a>
+<a href="?page=news">新闻</a>&nbsp;|&nbsp;
+<a href="?page=docs">文档</a>&nbsp;|&nbsp;
+<a href="?page=features">功能介绍</a>&nbsp;|&nbsp;
+<a href="?page=faq">有问有答</a>&nbsp;|&nbsp;
+<a href="?page=shots096u">界面截屏</a>&nbsp;|&nbsp;
+<a href="?page=release_history">历史记录</a>&nbsp;|&nbsp;
+<a href="?page=mailing">获取帮助</a>&nbsp;|&nbsp;
+<a href="?page=bugreport_howto">如何报告Bug</a>&nbsp;|&nbsp;
+<a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">Bug追踪</a>&nbsp;|&nbsp;
+<a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">功能需求</a>&nbsp;|&nbsp;
+<a href="?page=devel">开发园地</a>&nbsp;|&nbsp;
+<a href="http://sourceforge.net/projects/gtk-gnutella/">SF项目页面</a>&nbsp;|&nbsp;
+<a href="http://gtk-gnutella.sourceforge.net/doxygen/">API 参考</a>&nbsp;|&nbsp;
+<a href="?page=code101">代码 101</a>&nbsp;|&nbsp;
+<a href="http://sourceforge.net/project/showfiles.php?group_id=4467">下载</a>&nbsp;|&nbsp;
+<a href="?page=devel#devel-snapshots">SVN 快照</a>&nbsp;|&nbsp;
+<a href="?page=links">链接</a>&nbsp;|&nbsp;
+<a href="?page=donate">捐助</a>&nbsp;|&nbsp;
 </div>
 <!-- end sidenav -->
 
