@@ -4,7 +4,7 @@
 <h2>Joining the Gnutella network</h2>
 <p>
 Initially, when you start gtk-gnutella for the first time, it doesn't know any other
-peers at all. The process of joining the Gnutella work by discovering peers
+peers at all. The process of joining the Gnutella network by discovering peers
 is called bootstrapping. This can be achieved automagically or manually.
 Actually, if you haven't used gtk-gnutella for a couple of days, it may not know
 any connectible peers anymore and it has to bootstrap again. By using gtk-gnutella
@@ -18,7 +18,7 @@ automagically using UDP host caches.  That means you don't have anything to do
 other than waiting a moment until gtk-gnutella has found a number of peers and
 is connected to them. The "Network" shows you whether gtk-gnutella is connected
 to any peers, trying to connect or just a sitting duck. Ignore the one or two
-"Pseudo UDP nodes". They are called because that's your own peer.
+"Pseudo UDP nodes". They are called so because that's your own peer.
 </p>
 
 <p>
