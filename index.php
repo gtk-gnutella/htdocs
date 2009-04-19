@@ -148,9 +148,8 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
     <tr>
       <td>&nbsp;</td>
       <td valign="bottom">
-      <hr>
-      <div class="hidden">&nbsp;</div>
-      <div class="boxed">
+      <div class="hidden">&nbsp;<hr>&nbsp;</div>
+      <div>
 	<a href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467"><img
 		src="http://images.sourceforge.net/images/xml.png"
 		width="36" height="14"
@@ -169,16 +168,13 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 		title="cia.vc: Real-time open source activity stats"
 		></a>
         <?php iceinclude("sidenav_copyright", 0) ?>
-        <?php iceinclude("sidenav_hosted", 0) ?>
           <a class="image" href="http://sourceforge.net/projects/alexandria">
             <img
               src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
               alt="SourceForge.net Logo" width="88" height="31"></a>
-          <?php iceinclude("sidenav_glade", 0) ?>
           <a class="image" href="http://glade.gnome.org/">
             <img src="/images/glade-banner.png"
               alt="Glade" width="100" height="45"></a>
-        <?php iceinclude("sidenav_conform", 0) ?>
           <a class="image"
             	href="http://validator.w3.org/check?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
             <img src="/images/valid-html401.png"
