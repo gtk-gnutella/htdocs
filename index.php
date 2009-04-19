@@ -180,7 +180,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 		title="cia.vc: Real-time open source activity stats"
 		></a>
 	&nbsp;
-        <div style="float: left; text-align: center;">
+        <div style="text-align: center;">
 	<?php iceinclude("sidenav_copyright", 0) ?>
 	</div>
 
