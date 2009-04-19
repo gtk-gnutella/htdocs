@@ -1,7 +1,7 @@
 <!-- $Id$ -->
 
 <div class="sb_section">
-<a href="?page=news">News</a>&nbsp;|&nbsp;
+<a href="/">News</a>&nbsp;|&nbsp;
 <a href="?page=docs">Documentation</a>&nbsp;|&nbsp;
 <a href="?page=faq">FAQ</a>&nbsp;|&nbsp;
 <a href="/manual/">Online Manual</a>&nbsp;|&nbsp;
