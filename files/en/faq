@@ -27,6 +27,7 @@
 
 <h2>Gnutella connections</h2>
 <ul>
+  <li><a href="#gnet-bootstrap">How do I find peers?</a></li>
   <li><a href="#gnet0">What is a good number of connections?</a></li>
   <li><a href="#gnet1">Do I need to forward a port on my firewall?</a></li>
   <li><a href="#gnet-forward-howto">How do I configure port forwarding?</a></li>
@@ -185,12 +186,10 @@ See also,
 
 <h3><a name="build1">How do I make Configure stop asking me all those questions?</a></h3>
 <p>
-  You can run the <code>Configure</code> script in the following way to make it
-  use the default settings. It then behaves as calling the old
-  <code>configure</code> script from autoconf did back in the old days.
+Use the build.sh script instead of Configure!
 </p>
 <p>
-  <code>$ ./Configure -ders</code>
+  <code>$ ./build.sh</code>
 </p>
 <p>
   You can set compile options on the command line too. Here is an example
@@ -198,27 +197,32 @@ See also,
 </p>
 <ul>
   <li>
-    accept custom settings (<code>-O</code>). Without this all the
-    parameters below won't have an effect.
-  </li>
-  <li>
-     use the Gtk1 frontend, activate the remote shell
-     (<code>-D gtkversion=1 -D remotectrl=y</code>)
-  </li>
-  <li>
-    compile for a pentium with MMX support
-    (<code>-Dccflags="-march=pentium -mmmx"</code>).
+    compile gtk-gnutella with the old Gtk+ 1.2 user-interface:
+    (<code>--gtk1"</code>).
   </li>
   <li>
     compile in debugging information while turning off all compiler
-    optimizations (<code>-Doptimize="-g -O0"</code>).
+    optimizations (<code>--cflags="-g -O0"</code>).
   </li>
 </ul>
 <p>
-  <code>$ ./Configure -ders -O -D gtkversion=1 -D remotectrl=y -Dccflags="-march=pentium -mmmx" -Doptimize="-g -O0"</code>
+  Thus, the resulting command-line looks like this:
+  <code>$ ./build.sh --gtk1 --cflags="-g O0"</code>
+</p>
+<p>
+  For available options and help regarding build.sh run this:
+  <code>$ ./build.sh --help</code>
 </p>
 
 <h2>Gnutella connections</h2>
+
+<h3><a name="gnet-bootstrap">How do I find peers?</a></h3>
+<p>
+  Normally, gtk-gnutella finds peers all by itself within one or two
+  minutes after starting it. However, if this doesn't work for you
+  read how you can <a href="?page=bootstrap">bootstrap</a> gtk-gnutella
+  manually and find peers to connect to.
+</p>
 
 <h3><a name="gnet0">What is a good number of connections?</a></h3>
 <p>
