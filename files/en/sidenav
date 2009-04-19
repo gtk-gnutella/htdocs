@@ -1,22 +1,14 @@
 <!-- $Id$ -->
 
 <div class="sb_section">
-<a href="?page=news" class="sb_section_header">News</a>
-&nbsp;|&nbsp;
-<a href="?page=docs" class="sb_section_header">Documentation</a>
-&nbsp;|&nbsp;
-<a href="?page=faq">FAQ</a>
-&nbsp;|&nbsp;
-<a href="http://gtk-gnutella.sourceforge.net/manual/">Online Manual</a>
-&nbsp;|&nbsp;
-<a href="?page=mailing" class="sb_section_header">Getting&nbsp;help</a>
-&nbsp;|&nbsp;
-<a href="?page=devel" class="sb_section_header">Developers</a>
-&nbsp;|&nbsp;
-<a href="http://sourceforge.net/project/showfiles.php?group_id=4467" class="sb_section_header">Download</a>
-&nbsp;|&nbsp;
-<a href="?page=links" class="sb_section_header">Links</a>
-&nbsp;|&nbsp;
-<a href="?page=donate" class="sb_section_header">Donate</a>
+<a href="?page=news">News</a>&nbsp;|&nbsp;
+<a href="?page=docs">Documentation</a>&nbsp;|&nbsp;
+<a href="?page=faq">FAQ</a>&nbsp;|&nbsp;
+<a href="/manual/">Online Manual</a>&nbsp;|&nbsp;
+<a href="?page=mailing">Getting&nbsp;help</a>&nbsp;|&nbsp;
+<a href="?page=devel">Developers</a>&nbsp;|&nbsp;
+<a href="http://sourceforge.net/project/showfiles.php?group_id=4467">Download</a>&nbsp;|&nbsp;
+<a href="?page=links">Links</a>&nbsp;|&nbsp;
+<a href="?page=donate">Donate</a>
 </div>
 <!-- end sidenav -->

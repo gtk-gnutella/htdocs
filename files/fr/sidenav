@@ -1,88 +1,22 @@
 <!-- $Id$ -->
 
-<!--      -->
-<!-- NEWS -->
-<!--      -->
 <div class="sb_section">
-<a href="?page=news" class="sb_section_header" >Actualit&eacute;s</a><br>
-</div>
-
-<!--               -->
-<!-- DOCUMENTATION -->
-<!--               -->
-<div class="sb_section">
-  <a href="?page=docs" class="sb_section_header">Documentation</a>
-
-  <div class="indent">
-    <a href="?page=features">Fonctionnalit&eacute;s</a><br>
-    <a href="?page=faq">FAQ</a><br>
-    <a href="?page=shots096u">Captures d'&eacute;cran</a><br>
-    <a href="?page=release_history">Historique</a><br>
-  </div>
-</div>
-
-<!--              -->
-<!-- Getting help -->
-<!--              -->
-<div class="sb_section">
-  <a href="?page=mailing"
-    class="sb_section_header"
-    >Obtenir de l'aide</a>
-
-  <div class="sb_section_content">
-    <a href="?page=bugreport_howto">
-      Comment reporter un bug</a><br>
-    <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
-      Gestion des Bugs</a><br>
-    <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
-      Demande de fonctionnalit&eacute;s suppl&eacute;mentaires</a><br>
-  </div>
-</div>
-
-<!--            -->
-<!-- DEVELOPERS -->
-<!--            -->
-<div class="sb_section">
-  <a href="?page=devel"
-    class="sb_section_header"
-    >D&eacute;veloppeurs</a>
-
-  <div class="sb_section_content">
-    <a href="http://sourceforge.net/projects/gtk-gnutella/">
-      Page du projet SF</a><br>
-    <a href="http://gtk-gnutella.sourceforge.net/doxygen/">
-      API Reference</a><br>
-    <a href="?page=code101">
-      Code 101</a>
-  </div>
-</div>
-
-<!--          -->
-<!-- DOWNLOAD -->
-<!--          -->
-<div class="sb_section">
-  <a href="http://sourceforge.net/project/showfiles.php?group_id=4467"
-    class="sb_section_header"
-    >Download</a>
-   
-  <div class="sb_section_content">
-    <a href="?page=devel#devel-snapshots">
-      SVN&nbsp;Snapshots</a>
-  </div>
-</div>
-
-<!--        -->
-<!--  LINKS -->
-<!--        -->
-
-<div class="sb_section">
-  <a href="?page=links" class="sb_section_header">Liens</a>
-</div>
-
-<!--        -->
-<!-- DONATE -->
-<!--        -->
-<div class="sb_section">
-  <a href="?page=donate" class="sb_section_header">Donner</a>
+  <a href="?page=news">Actualit&eacute;s</a>&nbsp;|&nbsp;
+  <a href="?page=docs">Documentation</a>&nbsp;|&nbsp;
+  <a href="?page=features">Fonctionnalit&eacute;s</a>&nbsp;|&nbsp;
+  <a href="?page=faq">FAQ</a>&nbsp;|&nbsp;
+  <a href="?page=shots096u">Captures d'&eacute;cran</a>&nbsp;|&nbsp;
+  <a href="?page=release_history">Historique</a>&nbsp;|&nbsp;
+  <a href="?page=mailing">Obtenir de l'aide</a>&nbsp;|&nbsp;
+  <a href="?page=bugreport_howto">Comment reporter un bug</a>&nbsp;|&nbsp;
+  <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">Gestion des Bugs</a>&nbsp;|&nbsp;
+  <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">Demande de fonctionnalit&eacute;s suppl&eacute;mentaires</a>&nbsp;|&nbsp;
+  <a href="?page=devel">D&eacute;veloppeurs</a>&nbsp;|&nbsp;
+  <a href="http://sourceforge.net/projects/gtk-gnutella/">Page du projet SF</a>&nbsp;|&nbsp;
+  <a href="http://gtk-gnutella.sourceforge.net/doxygen/">API Reference</a>&nbsp;|&nbsp;
+  <a href="?page=code101">Code 101</a>&nbsp;|&nbsp;
+  <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">Download</a>&nbsp;|&nbsp;
+  <a href="?page=links">Liens</a>&nbsp;|&nbsp;
+  <a href="?page=donate">Donner</a>&nbsp;|&nbsp;
 </div>
 <!-- end sidenav -->
