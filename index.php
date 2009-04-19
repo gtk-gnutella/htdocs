@@ -180,6 +180,19 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
         </div>
       </div>
       <div class="hidden">&nbsp;</div>
+    </div>
+
+    <td valign="top">
+
+    <div class="content">
+      <?php maincontent() ?>
+    </div>
+
+    </td>
+    </tr>
+
+    <tr><td valign="bottom">
+      <div class="hidden">&nbsp;</div>
       <div class="boxed">
         <?php iceinclude("sidenav_conform", 0) ?>
         <div>
@@ -193,17 +206,8 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
               alt="Valid&nbsp;CSS" width="88" height="31"></a>
         </div>
       </div>
-      <div class="hidden">&nbsp;</div>
-    </div>
+    </td></tr>
 
-    <td valign="top">
-
-    <div class="content">
-      <?php maincontent() ?>
-    </div>
-
-    </td>
-    </tr>
     </table>
 
   </body>
