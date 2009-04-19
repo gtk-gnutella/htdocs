@@ -32,7 +32,6 @@ are:
 <li>The known bootstrap servers are dead and gone or just out-of-order.</li>
 <li>You have bad luck.</li>
 </ul>
-</p>
 
 <h2>Manual bootstrapping</h2>
 <p>
@@ -57,17 +56,17 @@ addresses. Just copy one and try to connect to it with gtk-gnutella.
 </p>
 
 <ul>
-<li><a href="http://drei.gtkg.net:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" target="_blank" rel="nofollow">http://drei.gtkg.net:8080/gwc/</a></li>
-<li><a href="http://ein.gtkg.net:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" target="_blank" rel="nofollow">http://ein.gtkg.net:8080/gwc/</a></li>
-<li><a href="http://gnutelladev1.udp-host-cache.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" target="_blank" rel="nofollow">http://gnutelladev1.udp-host-cache.com:8080/gwc/</a></li>
-<li><a href="http://gnutelladev2.udp-host-cache.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" target="_blank" rel="nofollow">http://gnutelladev2.udp-host-cache.com:8080/gwc/</a></li>
-<li><a href="http://gwc.ak-electron.eu:12050/?client=gtk-gnutella.sf.net&amp;hostfile=1" target="_blank" rel="nofollow">http://gwc.ak-electron.eu:12050/</a></li>
-<li><a href="http://gwc.chickenkiller.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" target="_blank" rel="nofollow">http://gwc.chickenkiller.com:8080/gwc/</a></li>
-<li><a href="http://leet.gtkg.org:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" target="_blank" rel="nofollow">http://leet.gtkg.org:8080/gwc/</a></li>
-<li><a href="http://secondary.udp-host-cache.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" target="_blank" rel="nofollow">http://secondary.udp-host-cache.com:8080/gwc/</a></li>
-<li><a href="http://sissy.gtkg.org:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" target="_blank" rel="nofollow">http://sissy.gtkg.org:8080/gwc/</a></li>
-<li><a href="http://tertiary.udp-host-cache.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" target="_blank" rel="nofollow">http://tertiary.udp-host-cache.com:8080/gwc/</a></li>
-<li><a href="http://zwei.gtkg.net:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" target="_blank" rel="nofollow">http://zwei.gtkg.net:8080/gwc/</a></li>
+<li><a href="http://drei.gtkg.net:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://drei.gtkg.net:8080/gwc/</a></li>
+<li><a href="http://ein.gtkg.net:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://ein.gtkg.net:8080/gwc/</a></li>
+<li><a href="http://gnutelladev1.udp-host-cache.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://gnutelladev1.udp-host-cache.com:8080/gwc/</a></li>
+<li><a href="http://gnutelladev2.udp-host-cache.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://gnutelladev2.udp-host-cache.com:8080/gwc/</a></li>
+<li><a href="http://gwc.ak-electron.eu:12050/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://gwc.ak-electron.eu:12050/</a></li>
+<li><a href="http://gwc.chickenkiller.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://gwc.chickenkiller.com:8080/gwc/</a></li>
+<li><a href="http://leet.gtkg.org:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://leet.gtkg.org:8080/gwc/</a></li>
+<li><a href="http://secondary.udp-host-cache.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://secondary.udp-host-cache.com:8080/gwc/</a></li>
+<li><a href="http://sissy.gtkg.org:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://sissy.gtkg.org:8080/gwc/</a></li>
+<li><a href="http://tertiary.udp-host-cache.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://tertiary.udp-host-cache.com:8080/gwc/</a></li>
+<li><a href="http://zwei.gtkg.net:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://zwei.gtkg.net:8080/gwc/</a></li>
 </ul>
 
 <p>
@@ -88,7 +87,7 @@ list of multiple addresses.
 <h3>Adding a peer using the shell interface</h3>
 <p>
 Peers can also be added by using the shell interface:
-<p>
+</p>
 <pre>
 echo node add 127.1.2.3:38359 | gtk-gnutella --shell
 </pre>
