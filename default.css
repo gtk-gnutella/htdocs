@@ -113,7 +113,7 @@ div.sb_section_content {
 	margin-left: 1em;
 }
 
-div.hidden {
+.hidden {
 	visibility: hidden;
 	width: 0;
 	height: 0;

@@ -88,6 +88,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
       </div>
     </div>
 
+    <hr class="hidden">
 
     <div class="sidebar">
       <div class="boxed">
@@ -131,13 +132,13 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 
     </div>
 
-    <div class="hidden">&nbsp;<hr>&nbsp;</div>
+    <hr class="hidden">
 
     <div class="content">
       <?php maincontent() ?>
     </div>
 
-      <div class="hidden">&nbsp;<hr>&nbsp;</div>
+      <hr class="hidden">
 
       <div class="boxed">
         <a class="image" href="http://sourceforge.net/projects/alexandria">
