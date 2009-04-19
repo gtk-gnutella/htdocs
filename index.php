@@ -134,6 +134,22 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
         <?php iceinclude("sidenav", 0) ?>
       </div>
       <div class="hidden">&nbsp;</div>
+    </div>
+
+    <td valign="top">
+
+    <div class="content">
+      <?php maincontent() ?>
+    </div>
+
+    </td>
+    </tr>
+
+    <tr>
+      <td>&nbsp;</td>
+      <td valign="bottom">
+      <hr>
+      <div class="hidden">&nbsp;</div>
       <div class="boxed">
 	<a href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467"><img
 		src="http://images.sourceforge.net/images/xml.png"
@@ -152,50 +168,17 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 		alt="cia.vc: Real-time open source activity stats"
 		title="cia.vc: Real-time open source activity stats"
 		></a>
-      </div>
-      <div class="hidden">&nbsp;</div>
-      <div class="boxed">
         <?php iceinclude("sidenav_copyright", 0) ?>
-      </div>
-      <div class="hidden">&nbsp;</div>
-      <div class="boxed">
-        <div>
-          <?php iceinclude("sidenav_hosted", 0) ?>
-        </div>
-        <div class="hidden">&nbsp;</div>
-        <div>
+        <?php iceinclude("sidenav_hosted", 0) ?>
           <a class="image" href="http://sourceforge.net/projects/alexandria">
             <img
               src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
               alt="SourceForge.net Logo" width="88" height="31"></a>
-        </div>
-        <div class="hidden">&nbsp;</div>
-        <div>
           <?php iceinclude("sidenav_glade", 0) ?>
-        </div>
-        <div>
           <a class="image" href="http://glade.gnome.org/">
             <img src="/images/glade-banner.png"
               alt="Glade" width="100" height="45"></a>
-        </div>
-      </div>
-      <div class="hidden">&nbsp;</div>
-    </div>
-
-    <td valign="top">
-
-    <div class="content">
-      <?php maincontent() ?>
-    </div>
-
-    </td>
-    </tr>
-
-    <tr><td valign="bottom">
-      <div class="hidden">&nbsp;</div>
-      <div class="boxed">
         <?php iceinclude("sidenav_conform", 0) ?>
-        <div>
           <a class="image"
             	href="http://validator.w3.org/check?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
             <img src="/images/valid-html401.png"
@@ -204,7 +187,6 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
             href="http://jigsaw.w3.org/css-validator/validator?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
             <img src="/images/valid-css.png"
               alt="Valid&nbsp;CSS" width="88" height="31"></a>
-        </div>
       </div>
     </td></tr>
 
