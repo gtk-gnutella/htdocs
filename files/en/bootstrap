@@ -76,7 +76,7 @@ More GWebCaches can be found <a href="http://gcachescan.jonatkins.com/">here</a>
 
 <h3>Adding a peer using the GUI</h3>
 <p>
-<img alt="How to add a peer" src="/images/addpeer.png" width="900" height="407">
+<img alt="How to add a peer" src="/images/addpeer.png" width="533" height="407">
 </p>
 <p>
 A peer is manually added by entering its address at the "Network" tab. Always
