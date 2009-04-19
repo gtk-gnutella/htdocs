@@ -92,7 +92,9 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
     <div class="sidebar">
       <div class="boxed">
         <form action="/" method="GET">
-        <p style="margin: 0;">Select your language:<br>
+
+          <?php iceinclude("sidenav", 0) ?>
+
           <select name="lang" tabindex=1 onchange="submit();">
             <option
 		<?php if ('en' === LANG) echo 'selected' ?>
@@ -121,26 +123,40 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
           </select>&nbsp;<input type="submit" value="Go"
                                 accesskey="G" tabindex="2">
           <input type="hidden" name="page" value="<?php echo PAGE ?>">
-        </p>
         </form>
 
       </div>
 
-      <div class="boxed">
-        <?php iceinclude("sidenav", 0) ?>
-      </div>
-      <div class="hidden">&nbsp;</div>
-      <div class="boxed">
-        <?php iceinclude("sidenav_copyright", 0) ?>
-       </div>
     </div>
+
+    <div class="hidden">&nbsp;<hr>&nbsp;</div>
 
     <div class="content">
       <?php maincontent() ?>
     </div>
 
       <div class="hidden">&nbsp;<hr>&nbsp;</div>
+
       <div>
+        <a class="image" href="http://sourceforge.net/projects/alexandria">
+            <img
+              src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
+              alt="SourceForge.net Logo" width="88" height="31"></a>
+	&nbsp;
+        <a class="image" href="http://glade.gnome.org/">
+            <img src="/images/glade-banner.png"
+              alt="Glade" width="100" height="45"></a>
+	&nbsp;
+        <a class="image"
+            	href="http://validator.w3.org/check?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
+            <img src="/images/valid-html401.png"
+              alt="Valid&nbsp;HTML&nbsp;4.01" width="88" height="31"></a>
+	&nbsp;
+        <a class="image"
+            href="http://jigsaw.w3.org/css-validator/validator?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
+            <img src="/images/valid-css.png"
+              alt="Valid&nbsp;CSS" width="88" height="31"></a>
+
 	<a href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467"><img
 		src="http://images.sourceforge.net/images/xml.png"
 		width="36" height="14"
@@ -161,24 +177,10 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 		title="cia.vc: Real-time open source activity stats"
 		></a>
 	&nbsp;
-        <a class="image" href="http://sourceforge.net/projects/alexandria">
-            <img
-              src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
-              alt="SourceForge.net Logo" width="88" height="31"></a>
-	&nbsp;
-        <a class="image" href="http://glade.gnome.org/">
-            <img src="/images/glade-banner.png"
-              alt="Glade" width="100" height="45"></a>
-	&nbsp;
-        <a class="image"
-            	href="http://validator.w3.org/check?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
-            <img src="/images/valid-html401.png"
-              alt="Valid&nbsp;HTML&nbsp;4.01" width="88" height="31"></a>
-	&nbsp;
-        <a class="image"
-            href="http://jigsaw.w3.org/css-validator/validator?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
-            <img src="/images/valid-css.png"
-              alt="Valid&nbsp;CSS" width="88" height="31"></a>
+        <div style="float: left; text-align: center;">
+	<?php iceinclude("sidenav_copyright", 0) ?>
+	</div>
+
       </div>
 
   </body>
