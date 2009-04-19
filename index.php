@@ -89,10 +89,6 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
     </div>
 
 
-    <table width="100%" summary="layout">
-    <tr>
-    <td valign="top">
-
     <div class="sidebar">
       <div class="boxed">
         <form action="/" method="GET">
@@ -134,20 +130,15 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
         <?php iceinclude("sidenav", 0) ?>
       </div>
       <div class="hidden">&nbsp;</div>
+      <div class="boxed">
+        <?php iceinclude("sidenav_copyright", 0) ?>
+       </div>
     </div>
-
-    <td valign="top">
 
     <div class="content">
       <?php maincontent() ?>
     </div>
 
-    </td>
-    </tr>
-
-    <tr>
-      <td>&nbsp;</td>
-      <td valign="bottom">
       <div class="hidden">&nbsp;<hr>&nbsp;</div>
       <div>
 	<a href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467"><img
@@ -155,38 +146,40 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 		width="36" height="14"
 		alt="RSS Feed Available"
 		title="RSS Feed Available"
-		></a> 
+		></a>
+	&nbsp;
 	<a href="http://www.ohloh.net/projects/491"><img
 		src="http://www.ohloh.net/projects/491/badge.gif"
 		width="100" height="16"
 		alt="Ohloh Metrics"
 		title="Ohloh Metrics"
 		></a>
+	&nbsp;
 	<a href="http://cia.vc/stats/project/gtk-gnutella"><img
 		src="/images/cia.png" width="16" height="16"
 		alt="cia.vc: Real-time open source activity stats"
 		title="cia.vc: Real-time open source activity stats"
 		></a>
-        <?php iceinclude("sidenav_copyright", 0) ?>
-          <a class="image" href="http://sourceforge.net/projects/alexandria">
+	&nbsp;
+        <a class="image" href="http://sourceforge.net/projects/alexandria">
             <img
               src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
               alt="SourceForge.net Logo" width="88" height="31"></a>
-          <a class="image" href="http://glade.gnome.org/">
+	&nbsp;
+        <a class="image" href="http://glade.gnome.org/">
             <img src="/images/glade-banner.png"
               alt="Glade" width="100" height="45"></a>
-          <a class="image"
+	&nbsp;
+        <a class="image"
             	href="http://validator.w3.org/check?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
             <img src="/images/valid-html401.png"
               alt="Valid&nbsp;HTML&nbsp;4.01" width="88" height="31"></a>
-          <a class="image"
+	&nbsp;
+        <a class="image"
             href="http://jigsaw.w3.org/css-validator/validator?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
             <img src="/images/valid-css.png"
               alt="Valid&nbsp;CSS" width="88" height="31"></a>
       </div>
-    </td></tr>
-
-    </table>
 
   </body>
 </html>

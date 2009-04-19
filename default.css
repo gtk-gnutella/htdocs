@@ -50,9 +50,12 @@ code {
 	font-weight: bold
 }
 
+
 div.sidebar {
+/*
 	width: 14em;
 	float: left;
+*/
 }
 
 div.content {
