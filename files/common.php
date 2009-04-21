@@ -13,7 +13,7 @@
 /* error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE); */
 
 if (!defined(BASEDIR)) {
-  define(BASEDIR, "/home/groups/g/gt/gtk-gnutella/htdocs/files/");
+  define(BASEDIR, "/home/groups/g/gt/gtk-gnutella/htdocs/");
 }
 
 $news_items = null;
@@ -49,12 +49,12 @@ $pages = array(
 
 /* NEWSNUM is the number of news items that appear on the front page. */
 define("NEWSNUM", 3);
-define("GENDIR",  "general/");
+define("GENDIR",  "files/general/");
 define("PAGE",    getpage());
 define("LANG",    getlang());
 define("BASEURL", $_SERVER['PHP_SELF']);
 
-include(BASEDIR . "VERSION");
+include(BASEDIR . "files/VERSION");
 
 header("Content-Type: text/html; charset=utf-8");
 /*
@@ -83,7 +83,7 @@ function getdirlang() {
 
   if (isset($script) && ereg('^/[a-z][a-z]/', $script)) {
     $lang = substr($script, 1, 2);
-    if (file_exists(BASEDIR . '/../' . $lang . '/index.php'))
+    if (file_exists(BASEDIR . $lang . '/index.php'))
       return $lang;
   }
 
@@ -120,7 +120,7 @@ function getlang() {
     }
   }
 
-  if (!isset($lang) || !file_exists(BASEDIR . '/../' . $lang . '/index.php')) {
+  if (!isset($lang) || !file_exists(BASEDIR . $lang . '/index.php')) {
     /* Use English as default */
     $lang = 'en';
   }
@@ -148,9 +148,9 @@ function icecontent($content) {
  */
 function iceinclude($file, $box) {
   global $news_items; /* so the included files know about it */
-  $incfile = BASEDIR . LANG . "/$file";
+  $incfile = BASEDIR . "/files/" . LANG . "/$file";
   if (!file_exists($incfile)) {
-    $incfile = BASEDIR . "en/$file";
+    $incfile = BASEDIR . "/files/en/$file";
     if (file_exists($incfile)) {
       if ($box) {
         include(BASEDIR . GENDIR . "/cheader");
@@ -181,8 +181,8 @@ function maincontent() {
   
   if (
     in_array(PAGE, $pages) && (
-      file_exists(BASEDIR . LANG . '/' . PAGE) ||
-      file_exists(BASEDIR . 'en/' . PAGE)
+      file_exists(BASEDIR . 'files/' . LANG . '/' . PAGE) ||
+      file_exists(BASEDIR . 'files/en/' . PAGE)
     )
   ) {
     icecontent(PAGE);
@@ -211,7 +211,7 @@ function newsfiles() {
 	global $news_items;
 
 	$news_items = array();
-	$handle = opendir(BASEDIR . "en");
+	$handle = opendir(BASEDIR . 'files/en');
 	while (false !== ($file = readdir($handle))) {
 		if (ereg('^news_([0-9]{1,3})$', $file)) {
 			$news_items[] = $file;
