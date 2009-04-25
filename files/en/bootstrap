@@ -70,7 +70,9 @@ addresses. Just copy one and try to connect to it with gtk-gnutella.
 </ul>
 
 <p>
-More GWebCaches can be found <a href="http://gcachescan.jonatkins.com/">here</a>.
+More GWebCaches can be found <a href="http://gcachescan.jonatkins.com/">here</a>. Please
+note that some GWebCaches are hostile and provided by well-known spammers. It is therefore
+recommended to stick to the above mentioned ones.
 </p>
 
 <h3>Adding a peer using the GUI</h3>
