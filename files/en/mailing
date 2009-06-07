@@ -1,9 +1,13 @@
 <!-- $Id$ -->
-<h1>Getting help</h1>
+<h1>Contact</h1>
 <h4>Mailing Lists</h4>
 
 <p>
-  Just click on the links to subscribe or unsubscribe. 
+  The mailing lists are the most reliable and often the quickest way to
+  get help with gtk-gnutella. Don't hesitate to mail us if you have any gtk-gnutella
+  related questions! Other users and developers will try to help you.
+  Please, subscribe to a mailing list before posting because non-subscribers
+  are moderated to prevent spam. Just click on the links to subscribe or unsubscribe. 
 </p>
 
 <p>
@@ -32,10 +36,13 @@
 <p>
   On the <a href="http://www.freenode.net/">freenode network</a> (formerly 
   Open Projects Network / OPN) we meet in the channel 
-  <a href="http://www.symlink.ch/~melone/?channel=gtk-gnutella">
-    #gtk-gnutella</a>. There's always someone there, but not always someone 
+  <a href="irc://irc.freenode.net/gtk-gnutella">#gtk-gnutella at irc.freenode.net</a>.
+  You can also read past discussions in the
+  <a href="http://www.symlink.ch/~melone/?channel=gtk-gnutella">public IRC log archive</a>.
+  There's always someone there, but not always someone 
   who knows the answer to your question. You need an IRC client like 
-  <a href="http://www.xchat.org">xchat</a> to visit us.
+  <a href="http://www.xchat.org">xchat</a> to visit the channel. Though, if you don't
+  get any reaction in time, consider sending a mail to one of the mailing lists.
 </p>
 
 <h4>SourceForge</h4>
@@ -45,7 +52,7 @@
   Bug Tracker</a> and 
   <a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">
   Feature Requests</a> are available on SourceForge, but you will most
-  likely get a better response on the mailing lists or IRC.  There is
+  likely get a better response on the mailing lists or IRC. There is
   also a <a href="?page=bugreport_howto"> bug report howto</a>.
 </p>
 

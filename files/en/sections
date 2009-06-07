@@ -1,12 +1,13 @@
 <!-- $Id$ -->
 <link rel="section" title="News" href="?page=news">
 <link rel="section" title="Documentation" href="?page=docs">
+<link rel="section" title="Download" href="?page=download">
 <link rel="section" title="Features" href="?page=features">
 <link rel="section" title="FAQ" href="?page=faq">
 <link rel="section" title="Bootstrapping" href="?page=bootstrap">
 <link rel="section" title="Screenshots" href="?page=shots096u">
 <link rel="section" title="History" href="?page=history">
-<link rel="section" title="Getting help" href="?page=mailing">
+<link rel="section" title="Contact" href="?page=mailing">
 <link rel="section" title="Bug&nbsp;Report&nbsp;Howto"
       href="?page=bugreport_howto">
 <link rel="section" title="Developers" href="?page=devel">

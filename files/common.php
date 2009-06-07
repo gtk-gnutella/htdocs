@@ -29,6 +29,7 @@ $pages = array(
   "developers_howto",
   "docs",
   "donate",
+  "download",
   "faq",
   "features",
   "filtering_howto",
