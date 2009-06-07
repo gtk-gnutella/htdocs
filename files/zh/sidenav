@@ -2,6 +2,7 @@
 
 <div class="sb_section">
 <a href="?page=news">新闻</a>&nbsp;|&nbsp;
+<a href="?page=download">下载</a>&nbsp;|&nbsp;
 <a href="?page=docs">文档</a>&nbsp;|&nbsp;
 <a href="?page=features">功能介绍</a>&nbsp;|&nbsp;
 <a href="?page=faq">有问有答</a>&nbsp;|&nbsp;
@@ -15,7 +16,6 @@
 <a href="http://sourceforge.net/projects/gtk-gnutella/">SF项目页面</a>&nbsp;|&nbsp;
 <a href="/doxygen/">API 参考</a>&nbsp;|&nbsp;
 <a href="?page=code101">代码 101</a>&nbsp;|&nbsp;
-<a href="http://sourceforge.net/project/showfiles.php?group_id=4467">下载</a>&nbsp;|&nbsp;
 <a href="?page=devel#devel-snapshots">SVN 快照</a>&nbsp;|&nbsp;
 <a href="?page=links">链接</a>&nbsp;|&nbsp;
 <a href="?page=donate">捐助</a>

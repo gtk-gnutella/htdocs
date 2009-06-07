@@ -2,6 +2,7 @@
 
 <div class="sb_section">
 <a href="?page=news">Actualit&eacute;s</a>&nbsp;|&nbsp;
+<a href="?page=download">Download</a>&nbsp;|&nbsp;
 <a href="?page=docs">Documentation</a>&nbsp;|&nbsp;
 <a href="?page=features">Fonctionnalit&eacute;s</a>&nbsp;|&nbsp;
 <a href="?page=faq">FAQ</a>&nbsp;|&nbsp;
@@ -15,7 +16,6 @@
 <a href="http://sourceforge.net/projects/gtk-gnutella/">Page du projet SF</a>&nbsp;|&nbsp;
 <a href="/doxygen/">API Reference</a>&nbsp;|&nbsp;
 <a href="?page=code101">Code 101</a>&nbsp;|&nbsp;
-<a href="http://sourceforge.net/project/showfiles.php?group_id=4467">Download</a>&nbsp;|&nbsp;
 <a href="?page=links">Liens</a>&nbsp;|&nbsp;
 <a href="?page=donate">Donner</a>
 </div>
