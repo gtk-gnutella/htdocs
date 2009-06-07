@@ -12,20 +12,29 @@ official pre-compiled releases.
 <h4>Software distributions</h4>
 
 <p>
-gtk-gnutella is available from several software distributions:
+gtk-gnutella is available from several software distributions.
 </p>
 
+<h5>Linux</h5>
 <ul>
 <li><a href="http://packages.ubuntu.com/search?keywords=gtk-gnutella">Ubuntu</a></li>
 <li><a href="http://packages.gentoo.org/package/net-p2p/gtk-gnutella">Gentoo</a></li>
 <li><a href="http://packages.debian.org/search?keywords=gtk-gnutella">Debian</a></li>
-<li><a href="http://pkgsrc.se/net/gtk-gnutella">pkgsrc - NetBSD package collection<a></li>
-<li><a href="http://openports.se/net/gtk-gnutella">openports - OpenBSD package collection</a></li>
-<li><a href="http://www.freshports.org/net-p2p/gtk-gnutella/">freshports - FreeBSD package collection</a></li>
-<li><a href="http://gtk-gnutella.darwinports.com/">Darwin Ports (Mac OS X)</a></li>
-<li><a href="http://pdb.finkproject.org/pdb/package.php/gtk-gnutella">fink (Mac OS X)</a></li>
 <li><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gtk-gnutella">Fedora</a></li>
 <li><a href="http://www.archlinux.de/?page=PackageDetails;package=5281">Arch Linux</a></li>
+</ul>
+
+<h5>BSD</h5>
+<ul>
+<li><a href="http://pkgsrc.se/net/gtk-gnutella">pkgsrc - The NetBSD package collection<a></li>
+<li><a href="http://www.freshports.org/net-p2p/gtk-gnutella/">FreshPorts - FreeBSD packages</a></li>
+<li><a href="http://openports.se/net/gtk-gnutella">openports - The OpenBSD package collection</a></li>
+</ul>
+
+<h5>Darwin (Mac OS X)</h5>
+<ul>
+<li><a href="http://gtk-gnutella.darwinports.com/">Darwin Ports</a></li>
+<li><a href="http://pdb.finkproject.org/pdb/package.php/gtk-gnutella">Fink</a></li>
 </ul>
 
 <p>
@@ -48,7 +57,7 @@ are compiled from recent SVN sources and updated frequently:
 
 <p>
 Please, report any bugs and problems with gtk-gnutella at our
-<a href="?page=mailing"</a> lists or <a href="?page=bugreport_howto">bug tracker</a>!
+<a href="?page=mailing">mailing lists</a> or <a href="?page=bugreport_howto">bug tracker</a>!
 </p>
 
 <!-- end download -->
