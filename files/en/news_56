@@ -1,0 +1,27 @@
+<!-- $Id: news_51 13188 2007-03-21 21:12:04Z cbiere $ -->
+<h4>07 March 2010, Version 0.96.7 Released</h4>
+
+<p>Version 0.96.7 is a stable release. The list below shows the most important
+bug fixed and improvements since the previous release.</p>
+
+<i>not yet published here, look at the ChangeLog file in the distribution</i>
+
+<h5>Integrity checks for the source tarball</h5>
+
+<pre>Size: 16273432 bytes
+urn:bitprint:XODKKQMZ2IMQRFZV4BLTCO4UCGYOGVVB.O5ONBJQOY5PK35S5PG7HJDQPZD3XMW2H2Q2IQLQ
+SHA1 (gtk-gnutella-0.96.7.tar.bz2) = bb86a54199d219089735e057313b9411b0e356a1
+</pre>
+<p>
+<a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.96.7/gtk-gnutella-0.96.7.tar.bz2.asc/download">PGP Signature</a> (286 bytes)
+</p>
+
+<p>
+Thanks to everyone who contributed to this release in form of feedback,
+bug reports, patches or translations!
+</p>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_56 -->
