@@ -82,7 +82,7 @@ bug fixed and improvements since the previous release.</p>
     which does not follow the published specification (so we don't either now
     but we are compliant with the de-facto standard).</li>
 <li>Will now remove uncompressed ultra connections when full and getting a
-    new compressed one.<li>
+    new compressed one.</li>
 <li>Whitelist can now support TLS hosts and will refresh DNS mappings
     regularily.</li>
 <li>Improved granularity of the background task used to scan the library in
