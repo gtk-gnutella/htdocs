@@ -1,0 +1,76 @@
+<!-- $Id$ -->
+<h4>21 March 2010, Version 0.96.8 Released</h4>
+
+<p>Version 0.96.8 is a stable release, containing <em>critical</em>
+bug fixes for the previous release 0.96.7</p>
+
+<h5>Bug Fixes</h5>
+
+<ul>
+<li>Removed an obsolete assertion now that gtk-gnutella supports NOPE
+    DHT values. This was causing a crash each time a NOPE value was received
+    in response to push-proxies queries in the DHT.</li>
+<li>Fixed memory alignment problem for non-forgiving CPU architectures.</li>
+<li>The virtual memory manager would crash when the kernel starts allocating
+    pages in zones we wrongly thought were already used.</li>
+<li>Fixed long-standing bug in the Query Routing Table protocol where a RESET
+    message with the wrong table size could sometimes be sent, causing the
+	remote node to close the connection.</li>
+<li>Make sure an ultrapeer is not publishing NOPE values in the DHT if support
+    for the DHT was disabled by user, which would be triggering a fatal
+	assertion failure.</li>
+</ul>
+
+<h5>Under the Hood</h5>
+
+<ul>
+<li>Fixed Makefile to ensure proper compilation under Gentoo's
+    build scripts.</li>
+<li>Push-proxy client support now makes sure there is a space after a leading
+    GET or HEAD word in the HTTP request.</li>
+<li>The DIME parsing layer now given more information in case of an error.</li>
+<li>Let THEX downloads peruse any supplied Content-Length information from the
+    server (applicable only when the output is not chunked).</li>
+<li>The VMM layer is now smarter at identifying foreign pages when allocating
+    blocks larger than a single page.</li>
+<li>When sending BYE messages, do not shutdown the socket layer if
+    using TLS.</li>
+<li>Compilation cleanup for SunOS, Sun Studio, and versions of
+	GTK &lt; 2.5.0.</li>
+</ul>
+
+<h5>Limitations</h5>
+
+<p>They are really identical to the ones present in version 0.96.7.</p>
+
+<ul>
+<li>DHT code is currently sub-optimal for firewalled hosts.</li>
+<li>Manual bandwidth tuning is currently necessary to allow for efficient
+  DHT usage.  Allow at least 8 Kib/s out, 15 KiB/s out being better.
+  Also increase the lookup bandwidth to 32 KiB/s in and 6 KiB/s out, the
+  defaults of 8 KiB/s in and 2 KiB/s out being very conservative.</li>
+<li>DHT is enabled by default with a fixed (manually tunable) configuration.
+  There is no auto-tuning and no adaptation to traffic conditions yet.
+  You need to explicitly disable the DHT if you don't want to benefit from
+  it.</li>
+</ul>
+
+<h5>Integrity checks for the source tarball</h5>
+
+<pre>Size: 16275481 bytes
+urn:bitprint:6KCK5T6JYBJF5T4AHRIF5C55CPA3K423.7DFFFGSMPZMLZFG7OLLOBFSKBX2PKYHJTYYAMDA
+SHA1 (gtk-gnutella-0.96.7.tar.bz2) = f284aecfc9c0525ecf803c505e8bbd13c1b5735b
+</pre>
+<p>
+<a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.96.8/gtk-gnutella-0.96.8.tar.bz2.asc/download">PGP Signature</a> (286 bytes)
+</p>
+
+<p>
+Thanks to everyone who contributed to this bug-fix release in the
+form of feedback, bug reports or patches.
+</p>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_57 -->
