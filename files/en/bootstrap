@@ -49,30 +49,14 @@ connect to their peers. You only need to know the IP address and port.
 
 <h3>A public server is fine, too</h3>
 <p>
-Last but not least, there are also public servers, also known as GWebCaches. Originally,
-these were used automagically but this caused a lot of intended and unintended abuse.
-You can simply click on one of the links below. You should then see a list of peer
-addresses. Just copy one and try to connect to it with gtk-gnutella.
-</p>
-
-<ul>
-<li><a href="http://drei.gtkg.net:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://drei.gtkg.net:8080/gwc/</a></li>
-<li><a href="http://ein.gtkg.net:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://ein.gtkg.net:8080/gwc/</a></li>
-<li><a href="http://gnutelladev1.udp-host-cache.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://gnutelladev1.udp-host-cache.com:8080/gwc/</a></li>
-<li><a href="http://gnutelladev2.udp-host-cache.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://gnutelladev2.udp-host-cache.com:8080/gwc/</a></li>
-<li><a href="http://gwc.ak-electron.eu:12050/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://gwc.ak-electron.eu:12050/</a></li>
-<li><a href="http://gwc.chickenkiller.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://gwc.chickenkiller.com:8080/gwc/</a></li>
-<li><a href="http://leet.gtkg.org:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://leet.gtkg.org:8080/gwc/</a></li>
-<li><a href="http://secondary.udp-host-cache.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://secondary.udp-host-cache.com:8080/gwc/</a></li>
-<li><a href="http://sissy.gtkg.org:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://sissy.gtkg.org:8080/gwc/</a></li>
-<li><a href="http://tertiary.udp-host-cache.com:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://tertiary.udp-host-cache.com:8080/gwc/</a></li>
-<li><a href="http://zwei.gtkg.net:8080/gwc/?client=gtk-gnutella.sf.net&amp;hostfile=1" rel="nofollow">http://zwei.gtkg.net:8080/gwc/</a></li>
-</ul>
-
-<p>
-More GWebCaches can be found <a href="http://gcachescan.jonatkins.com/">here</a>. Please
-note that some GWebCaches are hostile and provided by well-known spammers. It is therefore
-recommended to stick to the above mentioned ones.
+Last but not least, there are also public servers, also known as
+GWebCaches. Originally, these were used automagically but this caused a
+lot of intended and unintended abuse. Most of them are extinct by now.
+Nonetheless, it is usually possible to visit them using any web browser to
+discover some fresh peer addresses for joining the gnutella network manually.
+GWebCaches can be found <a
+href="http://gcachescan.jonatkins.com/">here</a>. Please note that some
+GWebCaches are hostile and provided by well-known spammers.
 </p>
 
 <h3>Adding a peer using the GUI</h3>
