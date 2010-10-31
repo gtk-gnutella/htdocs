@@ -21,7 +21,7 @@ gtk-gnutella is available from several software distributions.
 <li><a href="http://packages.gentoo.org/package/net-p2p/gtk-gnutella">Gentoo</a></li>
 <li><a href="http://packages.debian.org/search?keywords=gtk-gnutella">Debian</a></li>
 <li><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gtk-gnutella">Fedora</a></li>
-<li><a href="http://www.archlinux.de/?page=PackageDetails;package=5281">Arch Linux</a></li>
+<li><a href="http://www.archlinux.de/?page=Packages&amp;search=gtk-gnutella">Arch Linux</a></li>
 </ul>
 
 <h5>BSD</h5>
@@ -37,9 +37,15 @@ gtk-gnutella is available from several software distributions.
 <li><a href="http://pdb.finkproject.org/pdb/package.php/gtk-gnutella">Fink</a></li>
 </ul>
 
+<h5>Microsoft Windows</h5>
+<ul>
+<li><a href="http://kemovitra.blogspot.com/2010/01/download-set-up-and-use-gtk-gnutella-on.html">Build for Windows XP/Vista/7 with Cygwin</a>
+/li>
+</ul>
+
 <p>
-This is the easiest option for installing gtk-gnutella but the provided
-version of gtk-gnutella may be outdated.
+These are the most convenient options for installing gtk-gnutella but the
+provided version of gtk-gnutella may be outdated.
 </p>
 
 <h4>Unofficial builds</h4>

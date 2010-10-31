@@ -4,18 +4,11 @@
 
 <ul>
   <li>
-    <a href="http://gnet-specs.gnufu.net/">Gnutella Protocol Development Wiki</a>: 
-    Learn more about the protocol itself.
-  </li>  
-  <li>
-    <a href="http://www.gnutella.com">www.gnutella.com</a>: Unofficial homepage of Gnutella.
-  </li>
-  <li>
   <a href="http://www.infoanarchy.org/en/Gnutella">infoAnarchy's 
     Gnutella Wiki</a>: good general information about all things Gnutella.
   </li>
   <li>
-  <a href="http://en.wikisource.org/wiki/GnuFU">GnuFU</a>
+  <a href="http://rakjar.de/gnufu/">GnuFU</a>
   (<b>Gnu</b>tella <b>F</b>or <b>U</b>sers): A simplified description of the
    Gnutella network and its internals.
   </li>
