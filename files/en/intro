@@ -1,12 +1,12 @@
 <!-- content -->
 <!-- $Id$ -->
 
-<h3>The Graphical Gnutella Client for Unix</h3>
+<h3>The Most Efficient Gnutella Client</h3>
 
 <p>
   gtk-gnutella is a server/client for
   <a href="http://www.gnutella.com/">Gnutella</a>.
-  It runs on every Unix-like system which supports
+  It runs on Microsoft Windows and every Unix-like system which supports
 <a href="http://www.gtk.org/">GTK+</a> 
   (1.2 or above) and <a href="http://www.libxml.org">libxml</a>.
   The GNOME desktop environment is not required. It is currently developed
@@ -17,7 +17,7 @@
   <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
   <a href="http://gtk-gnutella.darwinports.com/">Darwin</a>,
 Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS whereas CPU architectures include
-x86, AMD64, PowerPC, SPARC, MIPS.
+x86, AMD64, PowerPC, SPARC, MIPS.  And of course Microsoft Windows (XP at least).
 </p>
 
 <p>

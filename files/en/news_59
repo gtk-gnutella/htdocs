@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<h4>April 1st, 2011 -- Binary for Microsoft Windows available!</h4>
+<h4>April 1st, 2011 -- Binary for Microsoft Windows Available!</h4>
 
 <p>Version 0.96.9 has been ported to Microsoft Windows and is now available
 for downloading.</p>
@@ -13,7 +13,7 @@ on the icon).</p>
 <p>Porting was done by your gtk-gnutella development team, by creating a thin
 POSIX-like layer on top of which the rest of the code can run without changes
 compared to the UNIX version.  Note that this has nothing to do with Cygwin,
-and the resulting program is a <bold>native</bold> executable not requiring
+and the resulting program is a <strong>native</strong> executable not requiring
 any Cygwin library.</p>
 
 <p>You can download the 
