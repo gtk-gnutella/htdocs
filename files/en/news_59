@@ -1,0 +1,31 @@
+<!-- $Id$ -->
+<h4>April 1st, 2011 -- Binary for Microsoft Windows available!</h4>
+
+<p>Version 0.96.9 has been ported to Microsoft Windows and is now available
+for downloading.</p>
+
+<p>All the gtk-gnutella features are available and the program runs on Windows
+with the same low-CPU and low-memory usage as when running under UNIX-like
+operating systems, including the gtk-gnutella shell (but then you have to
+launch it through the command line, not through the GUI by double-clicking
+on the icon).</p>
+
+<p>Porting was done by your gtk-gnutella development team, by creating a thin
+POSIX-like layer on top of which the rest of the code can run without changes
+compared to the UNIX version.  Note that this has nothing to do with Cygwin,
+and the resulting program is a <bold>native</bold> executable not requiring
+any Cygwin library.</p>
+
+<p>You can download the 
+<a href="http://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.96.9/gtk-gnutella-0.96.9-18885.exe/download">installer</a> and the
+<a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.96.9/gtk-gnutella-0.96.9-18885.exe.asc/download">PGP signature</a> as usual.
+</p>
+
+<p>
+Enjoy the quality of gtk-gnutella on Windows!
+</p>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_59 -->
