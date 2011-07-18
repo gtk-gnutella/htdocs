@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<h4>18 March 2011, Version 0.97 Released</h4>
+<h4>18 July 2011, Version 0.97 Released</h4>
 
 <p>Version 0.97 is a <b>major</b> release, fixing  critical long-standing
    bugs and introducing handy new features.</p>
@@ -13,7 +13,7 @@
 <li>Added the ability to query for partial files as well.</li>
 <li>Added "What's New?" queries.</li>
 <li>Added smart search stopping / resuming options.</li>
-<li>Added command-line option <pre>--minimized</pre>;
+<li>Added command-line option <tt>--minimized</tt>;
     useful when auto-starting gtk-gnutella.</li>
 </ul>
 
