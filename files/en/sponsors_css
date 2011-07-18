@@ -11,6 +11,7 @@
 .sponsor .txt h1 {
 	font: bold 55px/50px "Arial"; letter-spacing: -3px;
 	text-transform: lowercase; padding-bottom: 0px;
+	margin-bottom: 0px;
 }
 .sponsor .txt h1 a, .sponsor .txt h1 a:visited, .sponsor .txt h1 a:hover {
 	text-decoration: none; color:#272d36;
