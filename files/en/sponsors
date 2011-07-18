@@ -1,6 +1,5 @@
 <!-- begin sponsors -->
 <?php
-  <h5>Gtk-Gnutella is currently sponsored by:</h5>
   /* The project sponsors */
   icecontent("sponsor_1");
 ?>
