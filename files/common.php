@@ -179,6 +179,8 @@ function iceinclude($file, $box) {
  */
 function maincontent() {
   global $pages; /* so the included files know about it */
+
+  iceinclude("sponsors", 0);
   
   if (
     in_array(PAGE, $pages) && (

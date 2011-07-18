@@ -1,0 +1,8 @@
+<!-- $Id: news 8771 2005-07-25 15:03:57Z cbiere $ -->
+<?php
+  <h5>Gtk-Gnutella is currently sponsored by:</h5>
+  /* The project sponsors */
+  icecontent("sponsor_1");
+?>
+<!-- end sponsors -->
+

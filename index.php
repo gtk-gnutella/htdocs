@@ -73,6 +73,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
           title="中文">
 
     <?php iceinclude("sections", 0) ?>
+    <?php iceinclude("sponsors_css", 0) ?>
 
   </head>
 
