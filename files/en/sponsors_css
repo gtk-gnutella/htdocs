@@ -20,7 +20,7 @@
 .sponsor .txt p.desc {
 	font: bold 14px/14px "Arial"; letter-spacing: -1px;
 	display: block; color:#2abada;
-	margin-above: 0px;
+	margin-top: 5px;
 }
 .sponsor .img { padding-bottom: 0px; }
 </style>
