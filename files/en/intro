@@ -8,7 +8,7 @@
   <a href="http://www.gnutella.com/">Gnutella</a>.
   It runs on Microsoft Windows and every Unix-like system which supports
 <a href="http://www.gtk.org/">GTK+</a> 
-  (1.2 or above) and <a href="http://www.libxml.org">libxml</a>.
+  (1.2 or above).
   The GNOME desktop environment is not required. It is currently developed
   and tested under Linux (<a href="http://www.debian.org/">Debian</a>) as
   well as <a href="http://www.NetBSD.org">NetBSD</a>. It is known to run at
