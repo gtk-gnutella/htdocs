@@ -2,14 +2,23 @@
 <h1>Features</h1>
 
 <ul>
-  <li>Share files on the gnutella network (Limewire, BearShare, Xolox, Gnucleus, Shareaza, Morpheus ...)</li>
-  <li>Compressed GNet connections</li>
+  <li>Share files on the Gnutella network (Limewire, BearShare, Xolox, Gnucleus, Shareaza, Morpheus ...)</li>
+  <li>Compressed Gnutella connections</li>
+  <li>Compressed UDP traffic (negotiated)</li>
+  <li>TLS support for Gnutella and HTTP connections</li>
   <li>Simultaneous downloading of files from multiple hosts (swarming)</li>
   <li>Passive searches</li>
   <li>Searching by urn:sha1: and magnet:</li>
+  <li>Searching by media type (audio, video, image, document, archive)</li>
+  <li>"What's New?" queries to find stuff made recently available in your Gnutella neighbourhood</li>
+  <li>Lookup for partial files</li>
   <li>Automatic aquisition of additional sources via download mesh and watching searches</li>
   <li>Powerful filtering engine</li>
   <li>Bandwidth management/limiting</li>
+  <li>HTTP request pipelining to lower download latency</li>
+  <li>UPnP and NAT-PMP support</li>
+  <li>Distributed Hash Table (DHT) to find alternate locations and push-proxies</li>
+  <li>Unicode support for handling non-ASCII filenames and queries</li>
   <li>A lot of settings</li>
   <li>A lot of statistics</li>
   <li>Compliant to:
@@ -35,9 +44,11 @@
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/ultra-peers?view=markup"
         >Ultrapeers</a></li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/QRP?view=markup"
-        >QRP</a> (<strong>Q</strong>uery <strong>R</strong>outing <strong>P</strong>roposal)</li>
+        >QRP</a> (<strong>Q</strong>uery <strong>R</strong>outing <strong>P</strong>rotocol)</li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/push_proxy?view=markup"
         >Push Proxies</a></li>
+      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/GUESS?view=markup"
+        >GUESS</a> (<strong>G</strong>nutella <strong>U</strong>DP <strong>E</strong>xtension for <strong>S</strong>calable <strong>S</strong>earches)</li>
     </ul>
   </li>
 </ul>
