@@ -7,18 +7,74 @@ Official releases can be downloaded from SourceForge as
 <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">source tarballs</a>.
 Cryptographic signatures for the tarballs are also available. 
 </p>
+
+<?php
+$mac = NULL;
+$win32 = NULL;
+$bz2 = NULL;
+$deb = NULL;
+
+require_once('../../frameworks/correylib/coreylib.php');
+function endsWith($haystack, $needle)
+{
+    $length = strlen($needle);
+    $start  = $length * -1; //negative
+    return (substr($haystack, $start) === $needle);
+}
+?>
+
+  <?php $api = new clApi('http://sourceforge.net/api/file/index/project-id/4467/mtime/desc/limit/20/atom');
+        if ($feed = $api->parse()) { ?>
+
+    <?php foreach($feed->get('entry') as $entry) {
+        if ($entry->get('default') == 'mac' && is_null($mac))
+          $mac = $entry;
+        if ($entry->get('default') == 'windows' && is_null($win32))
+          $win32 = $entry;
+        if ($entry->get('default') == 'linux,bsd,solaris,others' && is_null($bz2))
+          $bz2 = $entry;
+        if (endsWith($entry->get('title'), '.deb') && is_null($deb))
+          $deb = $entry;
+        ?>
+    <?php } ?>
+  <?php } ?>
+  
 <h5>Source</h5>
-<ul>
-<li><a href="http://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.97/gtk-gnutella-0.97.tar.bz2/download">gtk-gnutella-0.97.tar.bz2</a> - MD5 d44e1af3441fb07a5e5712b0d522fae5</li>
-</ul>
+<p>Application source file .tar.bz2
+<a href="<?php echo $bz2->get('link@href'); ?>"><?php echo basename($bz2->get('title')); ?></a>       
+(<?php echo $bz2->get('content@filesize'); ?>)
+<?php foreach($bz2->get('hash') as $hash) { ?>
+    - <span class="hash"><?php echo strtoupper($hash->get('@algo')); ?> <?php echo $bz2->get('hash'); ?></span>
+<?php } ?>
+</p>
+
+<h5>Debian</h5>
+<p>Deb file for Debian deratives such as Ubuntu                                        
+<a href="<?php echo $deb->get('link@href'); ?>"><?php echo basename($deb->get('title')); ?></a>       
+(<?php echo $deb->get('content@filesize'); ?>)
+<?php foreach($deb->get('hash') as $hash) { ?>
+    - <span class="hash"><?php echo strtoupper($hash->get('@algo')); ?> <?php echo $deb->get('hash'); ?></span>
+<?php } ?>
+</p>
+
 <h5>Microsoft Windows Binary</h5>
-<ul>
-<li><a href="http://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.97/gtk-gnutella-0.97.0-19338.exe/download">gtk-gnutella-0.97.0-19338.exe</a> - MD5 2a642fdbbbc12496edc9d8ae6ebff5f1</li>
-</ul>
+<p>Binary for Microsoft Windows XP or higher
+<a href="<?php echo $win32->get('link@href'); ?>"><?php echo basename($win32->get('title')); ?></a>       
+(<?php echo $win32->get('content@filesize'); ?>)
+<?php foreach($win32->get('hash') as $hash) { ?>
+    - <span class="hash"><?php echo strtoupper($hash->get('@algo')); ?> <?php echo $win32->get('hash'); ?></span>
+<?php } ?>
+</p>
+
 <h5>Mac OS X App</h5>
-<ul>
-<li><a href="http://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.97/Gtk-Gnutella-0.97.0-19367%20OSX%20Preview.zip/download">Gtk-Gnutella-0.97.0-19367 OSX Preview</a> - MD5 21f9f641ec1d6d36867ff8616eec17e2</li>
-</ul>
+<p>Application bundle for MAC OS X 10.5 or higher
+<a href="<?php echo $mac->get('link@href'); ?>"><?php echo basename($mac->get('title')); ?></a>       
+(<?php echo $mac->get('content@filesize'); ?>)
+<?php foreach($mac->get('hash') as $hash) { ?>
+    - <span class="hash"><?php echo strtoupper($hash->get('@algo')); ?> <?php echo $mac->get('hash'); ?></span>
+<?php } ?>
+</p>
+
 
 <h4>Software distributions</h4>
 
