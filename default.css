@@ -34,6 +34,10 @@ h3,h4,h5 {
 	margin: 0em 1em;
 }
 
+h5 { 	
+	font-size: 0.83em;
+}
+
 .nav {
 	font-weight: bold
 }
