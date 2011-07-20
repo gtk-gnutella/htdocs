@@ -5,9 +5,20 @@
 <p>
 Official releases can be downloaded from SourceForge as
 <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">source tarballs</a>.
-Cryptographic signatures for the tarballs are also available. There are no
-official pre-compiled releases.
+Cryptographic signatures for the tarballs are also available. 
 </p>
+<h5>Source</h5>
+<ul>
+<li><a href="http://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.97/gtk-gnutella-0.97.tar.bz2/download"> - MD5 d44e1af3441fb07a5e5712b0d522fae5</li>
+</ul>
+<h5>Microsoft Windows Binary</h5>
+<ul>
+<li><a href="http://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.97/gtk-gnutella-0.97.0-19338.exe/download"> - MD5 2a642fdbbbc12496edc9d8ae6ebff5f1</li>
+</ul>
+<h5>Mac OS X App</h5>
+<ul>
+<li><a href="http://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.97/Gtk-Gnutella-0.97.0-19367%20OSX%20Preview.zip/download">Gtk-Gnutella-0.97.0-19367 OSX Preview</a> - MD5 21f9f641ec1d6d36867ff8616eec17e2</li>
+</ul>
 
 <h4>Software distributions</h4>
 
@@ -35,12 +46,6 @@ gtk-gnutella is available from several software distributions.
 <ul>
 <li><a href="http://gtk-gnutella.darwinports.com/">Darwin Ports</a></li>
 <li><a href="http://pdb.finkproject.org/pdb/package.php/gtk-gnutella">Fink</a></li>
-</ul>
-
-<h5>Microsoft Windows</h5>
-<ul>
-<li><a href="http://kemovitra.blogspot.com/2010/01/download-set-up-and-use-gtk-gnutella-on.html">Build for Windows XP/Vista/7 with Cygwin</a>
-</li>
 </ul>
 
 <p>
