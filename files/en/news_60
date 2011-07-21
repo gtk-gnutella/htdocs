@@ -140,12 +140,14 @@
 
 <pre>Size: 16876186 bytes
 urn:bitprint:DNIHSCW4JFGXAI5HZ6JRTV6N54OJVNI6.N44WDAPJVSWWOUE4SNRFNNANHKZ7SNHGONRKQCI
-SHA1 (gtk-gnutella-0.96.9.tar.bz2) = 1b50790adc494d7023a7cf9319d7cdef1c9ab51e
+SHA1 (gtk-gnutella-0.97.tar.bz2) = 1b50790adc494d7023a7cf9319d7cdef1c9ab51e
 </pre>
 <p>
 <a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.97/gtk-gnutella-0.97.tar.bz2.asc/download">PGP Signature</a> (286 bytes)
 </p>
-
+<a href="http://www.softpedia.com/progClean/gtk-gnutella-Clean-192640.html" title="100% FREE Certified by Softpedia">
+<img src="images/softpedia_free_award_f.gif" border="0" height="116" width="170">
+</a>
 <p>
 Thanks to everyone who contributed to this bug-fix release in the
 form of feedback, bug reports or patches.
