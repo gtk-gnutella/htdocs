@@ -24,7 +24,7 @@ function endsWith($haystack, $needle)
 ?>
 
   <?php $api = new clApi('http://sourceforge.net/api/file/index/project-id/4467/mtime/desc/limit/20/atom');
-        if ($feed = $api->parse()) { ?>
+        if ($feed = $api->parse("1 hour")) { ?>
 
     <?php foreach($feed->get('entry') as $entry) {
         if ($entry->get('default') == 'mac' && is_null($mac))
