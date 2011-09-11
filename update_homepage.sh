@@ -1,5 +1,5 @@
 #!/bin/sh
-if [ "$1" == "" ]
+if [ "x$1" = "x" ]
 then
 	echo "Usage: update_homepage.sh sourceforgeusername"
 	exit	
