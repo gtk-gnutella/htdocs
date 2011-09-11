@@ -1,0 +1,85 @@
+<!-- $Id$ -->
+<h4>11 September 2011, Version 0.97.1 Released</h4>
+
+<p>
+Version 0.97.1 is a bug-fixing release, addressing critical bugs that slipped
+through in the 0.97 release but which happen only in particular conditions.
+</p>
+
+<p>
+The project also switched from SVN to git.  This affects the version number
+which no longer includes a single SVN revision but instead uses the combination
+of a counter for the number of changes since the last release plus git's
+abbreviated commit ID. Tagged releases do not contain any build information.
+</p>
+
+<h5>Bug Fixes</h5>
+
+<ul>
+<li>Fixed bootstrapping problems on IPv6 enabled hosts [bug #3376322].</li>
+<li>Forgot to clear global HTTP handle on GHC errors [bug #376322].</li>
+<li>Typo caused crash when processing alternate locations in firewalled mode
+    with PFSP enabled.</li>
+<li>Forgot to clear pending THEX downloads on download stops.</li>
+<li>Make sure we remove the SHA1 of de-indexed files from the shared set.</li>
+<li>Handle "message too large" errors when sending on UDP.</li>
+</ul>
+
+<h5>Under the Hood</h5>
+
+<ul>
+<li>When running as ultra node, use GUESS introduction pings when requesting
+    a query key so that the remote ultrapeer can passively discover us.</li>
+<li>
+Do not count GUID collisions with our own GUID when we see our own IP:port!
+</li>
+<li>
+Added some gcc 4.6 <i>hot</i> / <i>cold</i> routine tagging for better
+optimizations.
+</li>
+<li>
+<tt>netmask_to_cidr()</tt>: was not using the proper metaconfig symbol to
+activate the usage of <tt>__builtin_popcount</tt>.
+</li>
+<li>
+Updated <tt>build.sh</tt> to build an app bundle for OSX with target=osxbundle.
+</li>
+<li>
+Added <i>dmg</i> to the default extension list for shared files.
+</li>
+<li>
+Added OS X integration support: menu bar is now on the OS menubar on top,
+the application does a clean exit on cmd-q and the application continues
+to run when only the window is closed.
+</li>
+<li>
+Use the downloads folder on Windows 7 and Vista for completed downloads.
+</li>
+<li>
+Updated the geographic IP mapping database.
+</li>
+<li>
+Integrated spell check of the French translation from <i>stegozor</i>.
+</li>
+<li>
+Turned <i>zalloc_always_gc</i> to FALSE by default.
+</li>
+</ul>
+
+<h5>Integrity checks for the source tarball</h5>
+
+<pre>Size: 17084243 bytes
+urn:bitprint:CSSLL7MMGXF62RB6TGL6KXSEVL52AWIG.WK4P24R32DKY2SMGGYHLRMS4TQKRZYQSV5X56LI
+SHA1 (gtk-gnutella-0.97.1.tar.bz2) = 14a4b5fd8c35cbed443e9997e55e44aafba05906
+</pre>
+<p>
+<a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.97.1/gtk-gnutella-0.97.1.tar.bz2.asc/download">PGP Signature</a> (286 bytes)
+</p>
+<p>
+Thanks to everyone who contributed to this bug-fix release in the
+form of feedback, bug reports or patches.
+</p>
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_61 -->
