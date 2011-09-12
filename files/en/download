@@ -67,7 +67,7 @@ function endsWith($haystack, $needle)
 </p>
 
 <h5>Mac OS X App</h5>
-<p>Application bundle for MAC OS X 10.5 or 10.6, Lion is currently not supported and does not work
+<p>Application bundle for MAC OS X 10.5 and higher
 <a href="<?php echo $mac->get('link@href'); ?>"><?php echo basename($mac->get('title')); ?></a>       
 (<?php echo $mac->get('content@filesize'); ?>)
 <?php foreach($mac->get('hash') as $hash) { ?>
