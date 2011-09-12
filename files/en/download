@@ -31,7 +31,7 @@ function endsWith($haystack, $needle)
           $mac = $entry;
         if ($entry->get('default') == 'windows' && is_null($win32))
           $win32 = $entry;
-        if ($entry->get('default') == 'linux,bsd,solaris,others' && is_null($bz2))
+        if (strpos($entry->get('default'), 'others') !==  false && is_null($bz2))
           $bz2 = $entry;
         if (endsWith($entry->get('title'), '.deb') && is_null($deb))
           $deb = $entry;
