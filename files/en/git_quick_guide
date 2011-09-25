@@ -1,0 +1,41 @@
+<style type="text/css">
+samp { white-space: pre; display: block; background-color: black; color: white; margin: 0.5em 0; padding: 0.5em; }
+kbd { background-color: lightgrey; }
+</style>
+
+<h2>GIT guide</h2>
+<p>Gtk-gnutella's sourcecode is nowadays hosted on github at 
+<a href="https://github.com/gtk-gnutella">https://github.com/gtk-gnutella</a>.
+You can clone the git repository with the URL <kbd>https://github.com/gtk-gnutella/gtk-gnutella.git</kbd>.
+
+<h3><a name="quick_guide">Quick guide</a></h3>
+<ul>
+	<li><kbd>git clone https://github.com/gtk-gnutella/gtk-gnutella.git</kbd></li>
+	<li><kbd>cd gtk-gnutella</kbd></li>
+	<li><kbd>git checkout -b devel origin/devel</kbd></li>
+	<li><kbd>./build.sh</kbd></li>
+</ul>
+A new build of gtk-gnutella should now be available under src/gtk-gnutella, which
+you can now launch with <kbd>./src/gtk-gnutella</kbd>.
+</p>
+<p>After a while there will be new changes pushed to the origin remote. To fetch
+these and build a new version while still in the gtk-gnutella source directory, enter:
+<ul>
+	<li><kbd>git pull</kbd></li>
+	<li><kbd>./build.sh</kbd</li>
+</ul>
+Which will also cause a new build of gtk-gnutella to be available under src/gtk-gnutella.
+</p>
+<p>That's it, read our <a href="?page=git_guide">extended git guide</a>
+if you want to know more on how you
+can make more use of git, for example if you encounter a bug and want to fix it
+yourself.</p>
+
+
+<h3>Whats in the devel branch to be tested</h3>
+<p>
+Currently we need help with testing the following features in the devel branch:
+<ul>
+	<li>IPv6-ready support</li>
+</ul>
+</p>
