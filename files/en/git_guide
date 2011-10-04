@@ -1,0 +1,101 @@
+<style type="text/css">
+samp { white-space: pre; display: block; background-color: black; color: white; margin: 0.5em 0; padding: 0.5em; }
+kbd { background-color: lightgrey; }
+</style>
+
+
+<h3><a name="extended_guide">Extended guide</a></h3>
+<p>With git you will always retreive a clone of a remote repository. This will
+contain all the current source files including their full history. This means once
+you have a cloned repository you can browse through all changesets without being
+connected to the internet, if the remote would disapear you still have a full
+copy available locally.</p>
+<p>To retrieve this clone you need to git clone. To clone the gtk-gnutella 
+repository you can use the following command:
+<kbd>git clone https://github.com/gtk-gnutella/gtk-gnutella.git</kbd>. Which 
+will output:
+	<samp>$ git clone https://github.com/gtk-gnutella/gtk-gnutella.git
+Cloning into gtk-gnutella...
+remote: Counting objects: 111280, done.
+remote: Compressing objects: 100% (20316/20316), done.
+remote: Total 111280 (delta 90978), reused 111082 (delta 90780)
+Receiving objects: 100% (111280/111280), 47.27 MiB | 1.32 MiB/s, done.
+Resolving deltas: 100% (90978/90978), done.
+</samp>
+</p>
+
+<p>Now that you have cloned the git repository lets enter the newly
+created directory: <kbd>cd gtk-gnutella</kbd>. You are now in your freshly
+created git clone of gtk-gnutella. We use 2 branches on our public repository, 
+you can view them using the following command: <kbd>git branch -a</kbd>.
+<samp>$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/devel
+  remotes/origin/master
+  remotes/origin/v0.93
+</samp>
+You will notice master, origin/master and origin/devel, we'll ignore the origin/v0.93 for now.
+</p>
+<p>
+By default git automatically tracks the origin/master branch in our master branch,
+to also track the origin/devel branch in a local branch so we can actually
+use that branch we need to track it locally. To track origin/devel in a local 
+devel branch enter the following command:
+<kbd>git checkout -b devel origin/devel</kbd>
+<samp>$ git checkout -b devel origin/devel
+Branch devel set up to track remote branch devel from origin.
+Switched to a new branch 'devel'
+</samp>
+Now if we do a <kbd>git branch -a</kbd> we'll see that there is a new devel
+branch in the output
+<samp>$ git branch -a
+* devel
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/devel
+  remotes/origin/master
+  remotes/origin/v0.93
+</samp>
+Notice the * mark before the devel, this means this is the current active
+branch we are working on. This was done by the command git checkout -b devel/origin/devel which
+told us "Switched to a new branch 'devel'".
+
+<p>
+Although we are now tracking 2 remote branches, git branch -a didn't tell us 
+what branch is tracking what. To view your local branches and tell what remote
+branch it is tracking enter the command <kbd>git branch -vv</kbd>.
+<samp>$ git branch -vv
+* devel  ecd14a9 [origin/devel] Added IPv6-Ready implementation.
+  master b401063 [origin/master] vxml_read_char(): removed check made too early.
+</samp>
+As you see, devel is tracking origin/devel and master is tracking origin/master.
+Origin is set to our github.com/gtk-gnutella URL, you can view this with
+<kbd>git remote -v</kbd>.
+<samp>$ git remote -v
+origin	https://github.com/gtk-gnutella/gtk-gnutella.git (fetch)
+origin	https://github.com/gtk-gnutella/gtk-gnutella.git (push)
+</samp>
+</p>
+
+
+<h3>Branches</h3> 
+<p>
+There are currently 2 branches on our public repository:
+<ul>
+<li>master, our stable branch only patches are applied to this branch and is always ready for a release;</li>
+<li>devel, is where all new features are pushed to and might not be release ready.</li>
+</ul>
+</p>
+
+<p>
+Use the master branch if you are only interested in the latest fixes. You might
+want to use this to build a new stable build with all the latest fixes applied.
+Use the devel branch if you want to help us test our new features or if you can't 
+wait for some of these features to appear in the stable master branch. We need
+people to test new features and it would be great if you'd test the devel branch
+and report any issues to us at the 
+<a href="http://sourceforge.net/tracker/?group_id=4467&atid=104467">bug tracker</a> 
+or by mail at 
+<a href="mailto:gtk-gnutella-devel@lists.sourceforge.net">gtk-gnutella-devel@lists.sourceforge.net</a>.
+</p>

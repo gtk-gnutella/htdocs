@@ -3,7 +3,7 @@ samp { white-space: pre; display: block; background-color: black; color: white; 
 kbd { background-color: lightgrey; }
 </style>
 
-<h2>GIT guide</h2>
+<h2>Our quick git guide</h2>
 <p>Gtk-gnutella's sourcecode is nowadays hosted on github at 
 <a href="https://github.com/gtk-gnutella">https://github.com/gtk-gnutella</a>.
 You can clone the git repository with the URL <kbd>https://github.com/gtk-gnutella/gtk-gnutella.git</kbd>.
@@ -15,16 +15,23 @@ You can clone the git repository with the URL <kbd>https://github.com/gtk-gnutel
 	<li><kbd>git checkout -b devel origin/devel</kbd></li>
 	<li><kbd>./build.sh</kbd></li>
 </ul>
-A new build of gtk-gnutella should now be available under src/gtk-gnutella, which
+<p>A new build of gtk-gnutella should now be available under src/gtk-gnutella, which
 you can now launch with <kbd>./src/gtk-gnutella</kbd>.
 </p>
 <p>After a while there will be new changes pushed to the origin remote. To fetch
-these and build a new version while still in the gtk-gnutella source directory, enter:
+these and build a new version while still in the gtk-gnutella source directory, enter:</p>
 <ul>
 	<li><kbd>git pull</kbd></li>
 	<li><kbd>./build.sh</kbd</li>
 </ul>
+<p>
 Which will also cause a new build of gtk-gnutella to be available under src/gtk-gnutella.
+</p>
+<p> We need people to test new features and it would be great if you'd test 
+this devel branch and report any issues to us at the 
+<a href="http://sourceforge.net/tracker/?group_id=4467&atid=104467">bug tracker</a> 
+or by mail at 
+<a href="mailto:gtk-gnutella-devel@lists.sourceforge.net">gtk-gnutella-devel@lists.sourceforge.net</a>.
 </p>
 <p>That's it, read our <a href="?page=git_guide">extended git guide</a>
 if you want to know more on how you

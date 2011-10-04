@@ -33,6 +33,8 @@ $pages = array(
   "faq",
   "features",
   "filtering_howto",
+  "git_guide",
+  "git_quick_guide",
   "links",
   "mailing",
   "news_bridge",
