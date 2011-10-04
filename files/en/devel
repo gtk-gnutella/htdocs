@@ -60,24 +60,31 @@
 
 <hr>
 
-<p><a name="devel-svn"></a>
-  To get the latest development version, you can always use the SVN 
+<p>
+<a name="devel-git"></a>
+  To get the latest development version, you can always use the Git
   repository of gtk-gnutella.  <strong>Warning</strong>: As a development 
   version, the current version may be unstable or even not compile right on 
   your machine. If you're just interested in getting an overview of the 
   different files you can browse the repository 
-  <a href="https://gtk-gnutella.svn.sourceforge.net/viewvc/gtk-gnutella/trunk/gtk-gnutella/">
+  <a href="https://github.com/gtk-gnutella/gtk-gnutella/tree/">
   on the web</a>.
 </p>
 
 <p>
-  To get the files from SVN just type in the following command:
+  To get the files from Git just type in the following command:
 </p>
 
 <p>
   <kbd style="font-size:small">
-    svn co https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella gtk-gnutella
+    git clone https://github.com/gtk-gnutella/gtk-gnutella.git
   </kbd>
+</p>
+
+<p>
+  To learn about the important branches in the Git repository, see the
+  <a href="?page=git_quick_guide">Git Quit Guide</a> or the
+  <a href="?page=git_guide">Git Advanced Guide</a>.
 </p>
 
 <p>
