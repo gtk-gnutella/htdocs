@@ -1,0 +1,22 @@
+<h4>30 December 2011, Version 0.98.2 Released</h4>
+
+<p>This is a minor patch to support systems running latest Ubuntu systems,
+   and maybe others which create multiple threads for GTK programs: our
+   <tt>xmalloc()</tt> implementation replaces the system's <tt>malloc()</tt> but
+   it was not safe to use in multi-threaded environments.</p>
+
+<h5>GUI improvements</h5>
+<ul>
+<li>[GTK] Added option to discard results from banned GUIDs (set by
+    default).</li>
+<li>[GTK] Display results from servents with a banned GUID in "hot pink".</li>
+
+</ul>
+<h5>Other improvements</h5>
+<ul>
+<li>Updated turkish translation.</li>
+<li>Added IPv6 geo-localization database (from Maxmind).</li>
+<li>Added dynamic IPv6 hostile support.</li>
+
+</ul>
+<!-- end of release 0.98.2 -->

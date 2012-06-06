@@ -1,0 +1,122 @@
+<h4>11 December 2011, Version 0.98 Released</h4>
+
+<p>This is a major release, adding "IPv6-Ready" features. It also fixes
+   long-lasting bugs in various areas and contains some other low-level
+   improvements.</p>
+
+<p>During the building of this release, Dennis MacAlistair Ritchie passed
+   away. Gtk-gnutella would not exist in its current form without the earlier
+   work of Dennis, the co-inventor of C. This release is dedicated to the memory
+   of that great computer scientist. Farewell, Dennis!</p>
+
+<h5>New Features</h5>
+<ul>
+<li>Added "IPv6-Ready" support.</li>
+<li>Enhanced the shell "memory" command to display various allocator
+    stats.</li>
+<li>Added the "pid" and "version" shell commands.</li>
+<li>Added the "command" shell command to print the server's command line.</li>
+<li>Added -r option to "shutdown" shell command to request a restart.</li>
+<li>Added the --no-restart and --restart-on-crash gtk-gnutella options.</li>
+<li>Added the shell "date" command displaying ISO time with ms accuracy.</li>
+
+</ul>
+<h5>Improvements</h5>
+<ul>
+<li>Ignore Bitzi ticket timeouts on missing entries for explicit user
+    retries.</li>
+<li>Added routing table statistics.</li>
+<li>GUI: show file creation times for local searches in the info summary.</li>
+<li>Optimized page cache coalescing by avoiding two successive binary
+    lookups.</li>
+<li>Added -f option to "shutdown" shell command to initiate a fast
+    shutdown.</li>
+<li>Allow "echo command | gtk-gnutella --shell" a chance to work on
+    Windows.</li>
+<li>Ban duplicate GUIDs to avoid them being the target of PUSH requests.</li>
+<li>Updated French translation for 0.98.</li>
+<li>Revisited TX stack flow-control logic when there is a compressing
+    layer.</li>
+<li>Don't send Hops-Flow messages to nodes not supporting it.</li>
+<li>Use full compression for ultra &lt;-&gt; ultra connections.</li>
+<li>Internationalization now works on Windows.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Fixed harmful cleanup of routing table when cycling over naturally.</li>
+<li>Fixed bug in <tt>add_file()</tt> when adding multiple partial files to a
+    query hit.</li>
+<li>Fixed DHT lookup when path protection kicks in and clears the closest
+    node.</li>
+<li>Fixed handling of relative position lists, causing unfair PARQ
+    scheduling.</li>
+<li>Prevent preferences from being shown from tray icon when already
+    shutdowning, fixing <a href="https://sourceforge.net/tracker/?func=detail&aid=3376952&group_id=4467&atid=104467">bug #3376952</a>.</li>
+<li>Hide tray icon at shutdown time.</li>
+<li>Enabled loading of hostiles file on Windows.</li>
+<li>Fixed crash on mis-parsed IPv6 address.</li>
+<li>Make sure node is still connected before routing its queries.</li>
+<li>Avoid crashes when asked to deflate 0 bytes.</li>
+<li>Fixed dynamic querying to avoid duplicate messages to probed nodes.</li>
+<li>GUESS must forget about query if the query key was not correct.</li>
+<li>Do not send translated messages in node handshaking replies.</li>
+<li><tt>dualhash_insert_key()</tt>: fixed insertion to avoid possible
+    assertion failures.</li>
+<li>Avoid wrong "activity timeout" indications for ultra &lt;-&gt; ultra
+    connections.</li>
+<li>Make sure we do not include "non-shareable" files in query hits.</li>
+<li>Fixed the "node add" and "node drop" shell commands.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Fixed remote token validation for git versions.</li>
+<li>Count and report in statistics the amount of cached GUESS 0.2 hosts.</li>
+<li>Fixed improper message queue status computation (warn zone / delay).</li>
+<li>XML parser was not handling illegal byte sequences in UTF-8 buffers.</li>
+<li>Fixed creation time (GGEP "CT") to send actual filesystem creation time,
+    not the filesystem last modification time.</li>
+<li>Enforce configured IP protocols, preventing connection to other
+    protocols.</li>
+<li>Added <tt>malloc()</tt> replacement.</li>
+<li>Clear "last dmesh sent" timestamp in uploads when client switches
+    resources.</li>
+<li>Construct build date from git's HEAD commit, if available.</li>
+<li>Added options to the "shutdown" shell command to trigger the crash
+    handler.</li>
+<li>Propagate Windows exception information into the crash log.</li>
+<li>On Windows, propagate the PC at which the exception occurs in the crash
+    log.</li>
+<li>Force "idle" tasks to be scheduled once in a while.</li>
+<li>Increased frequency of the main callout queue heartbeats by 4.</li>
+<li>Arrange for a crash log to be generated even when <tt>fork()</tt>
+    fails.</li>
+<li>Loudly warn when string formatting leads to truncation of the
+    message.</li>
+<li>Added regression tests for <tt>str_vncatf()</tt>.</li>
+<li>Added floating point formatting routine from Robert G. Burger, allowing
+    <tt>str_vncatf()</tt> to format floating point numbers natively.</li>
+<li>Added Windows startup debugging support and fixed Cygwin startup.</li>
+<li>Remap all <tt>g_xxx()</tt> logging routines to our own message logging
+    layer.</li>
+<li>Added "update-potfiles" target to refresh the POTFILES.in list.</li>
+<li>Frozen PARQ upload queue slots don't count as "wanted" by the queue.</li>
+<li>Added "qhit_bad_debug" property to control logging of bad query hits.</li>
+<li>Stack unwinding routines now stop at the first non-text address they
+    reach.</li>
+<li>Added dynamic memory usage statistics collection.</li>
+<li>Propagate self-assessed symbol quality into the crash log, if not
+    good.</li>
+<li>Make sure we open all files in binary mode on Windows.</li>
+<li>Packaged regex 0.12 to supply POSIX <tt>regcomp()</tt> on systems lacking
+    it.</li>
+<li>Raise the default number of allowed fds to 2048 on OS X.</li>
+<li>Added SDBM testing and benchmarking program.</li>
+<li>Don't publish NOPE entries in the DHT for nodes with a bad GUID.</li>
+<li>Added "tx_deflate_debug" and "tx_debug_addrs" properties.</li>
+<li>TX deflating layer can postpone Nagle flushing up to 2 seconds.</li>
+<li>Updated Geo IP database.</li>
+
+</ul>
+<!-- end of release 0.98 -->
