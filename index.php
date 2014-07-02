@@ -178,6 +178,12 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 		></a>
 	&nbsp;
 	<a class="image"
+		href="https://scan.coverity.com/projects/2178">
+	  <img alt="Coverity Scan Build Status"
+			 src="https://scan.coverity.com/projects/2178/badge.svg"/>
+	</a>
+	&nbsp;
+	<a class="image"
 		href="http://cia.vc/stats/project/gtk-gnutella"><img
 		src="/images/cia.png" width="16" height="16"
 		alt="cia.vc: Real-time open source activity stats"
