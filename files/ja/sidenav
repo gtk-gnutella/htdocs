@@ -10,8 +10,8 @@
 <a href="?page=release_history">リリース履歴</a>&nbsp;|&nbsp;
 <a href="?page=mailing">サポート</a>&nbsp;|&nbsp;
 <a href="?page=bugreport_howto">バグの報告に関して</a>&nbsp;|&nbsp;
-<a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">バグ追跡システム</a>&nbsp;|&nbsp;
-<a href="http://sourceforge.net/tracker/?group_id=4467&amp;atid=354467">要望</a>&nbsp;|&nbsp;
+<a href="http://sourceforge.net/p/gtk-gnutella/bugs/">バグ追跡システム</a>&nbsp;|&nbsp;
+<a href="http://sourceforge.net/p/gtk-gnutella/feature-requests/">要望</a>&nbsp;|&nbsp;
 <a href="?page=devel" >開発</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/projects/gtk-gnutella/">SFプロジェクト</a>&nbsp;|&nbsp;
 <a href="/doxygen/">APIリファレンス</a>&nbsp;|&nbsp;

@@ -47,7 +47,7 @@
 </ul>
 <h5>Bug Fixes</h5>
 <ul>
-<li><a href="https://sourceforge.net/tracker/?func=detail&aid=3286824&group_id=4467&atid=104467">bug #3286824</a> "Crash at startup / 0.96.9 / FreeBSD AMD64"</li>
+<li><?php sf_bug("3286824");?>"Crash at startup / 0.96.9 / FreeBSD AMD64"</li>
 <li>Fixed %G formatting bug whereby a zero following a dot would be
     missed.</li>
 <li>Prevent auto-restart when they explicitly request a shutdown.</li>
@@ -61,8 +61,8 @@
 <li>Fixed bad copy-n-paste that could lead to <tt>malloc()</tt> freelist
     corruption.</li>
 <li>Fixed GUESS corner-case crash when handling an RPC timeout.</li>
-<li>[GTK] Avoid crash when user clears the upload statistics (<a href="https://sourceforge.net/tracker/?func=detail&aid=3501181&group_id=4467&atid=104467">bug
-    #3501181</a>).</li>
+<li>[GTK] Avoid crash when user clears the upload statistics
+   (<?php sf_bug("3501181");?>).</li>
 <li>On Windows, be smarter when reserving the initial amount of virtual
     space.</li>
 <li>GUESS: always wakeup sleeping queries if we have bandwidth.</li>

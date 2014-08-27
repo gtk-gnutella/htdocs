@@ -52,7 +52,7 @@
 <li>Fixed handling of relative position lists, causing unfair PARQ
     scheduling.</li>
 <li>Prevent preferences from being shown from tray icon when already
-    shutdowning, fixing <a href="https://sourceforge.net/tracker/?func=detail&aid=3376952&group_id=4467&atid=104467">bug #3376952</a>.</li>
+    shutdowning, fixing <?php sf_bug("3376952");?>.</li>
 <li>Hide tray icon at shutdown time.</li>
 <li>Enabled loading of hostiles file on Windows.</li>
 <li>Fixed crash on mis-parsed IPv6 address.</li>

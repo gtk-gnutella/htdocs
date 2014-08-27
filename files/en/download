@@ -4,7 +4,7 @@
 
 <p>
 Official releases can be downloaded from SourceForge as
-<a href="http://sourceforge.net/project/showfiles.php?group_id=4467">source tarballs</a>.
+<a href="http://sourceforge.net/projects/gtk-gnutella/files/">source tarballs</a>.
 Cryptographic signatures for the tarballs are also available. 
 </p>
 
@@ -23,7 +23,7 @@ function endsWith($haystack, $needle)
 }
 ?>
 
-  <?php $api = new clApi('http://sourceforge.net/api/file/index/project-id/4467/mtime/desc/limit/20/atom');
+  <?php $api = new clApi('http://sourceforge.net/projects/gtk-gnutella/rss?limit=20');
         if ($feed = $api->parse("1 hour")) { ?>
 
     <?php foreach($feed->get('entry') as $entry) {

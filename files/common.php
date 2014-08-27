@@ -202,7 +202,7 @@ function maincontent() {
  * create a link for gtk-gnutella bug with given number.
  */
  function sf_bug($number) {
-   print("<a href=\"http://sourceforge.net/tracker/index.php?func=detail&amp;aid=$number&amp;group_id=4467&amp;atid=104467\">#$number</a>");
+   print("<a href=\"http://sourceforge.net/p/gtk-gnutella/bugs/$number/\">#$number</a>");
  }
  
 /*

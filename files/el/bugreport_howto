@@ -26,7 +26,7 @@
   <p>
     Να θυμάστε ότι τους υπεύθυνους ανάπτυξης τους ενδιαφέρουν αναφορές μόνο για 
     την τελευταία 
-    <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
+    <a href="http://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/">
     έκδοση</a> ή εκδόσεις που δημιουργήθηκαν από το 
     <a href="?page=devel#devel-svn">τρέχον SVN</a>.
    Οι υπεύθυνοι ανάπτυξης 
@@ -102,7 +102,7 @@
   <p>
     Αν το gtk-gnutella λειτουργεί όπως στόχευαν οι προγραμματιστές του αλλά εσείς 
     επιθυμείτε κάτι διαφορετικό, τότε πρέπει να αρχειοθετήσετε ένα 
-    <a href="http://sourceforge.net/tracker/?atid=354467&amp;group_id=4467&amp;func=browse">
+    <a href="http://sourceforge.net/p/gtk-gnutella/feature-requests/">
     αίτημα χαρακτηριστικού</a> και όχι μια αναφορά σφάλματος.  Φυσικά, υπάρχουν και 
     εξαιρέσεις - η λειτουργία μπορεί να είναι βλαβερή κατά απρόβλεπτο τρόπο ή να μην  
     ανταποκρίνεται στα πρότυπα.  Παρόλα αυτά, είναι δύσκολο να γνωρίζουμε τι ακριβώς 
@@ -468,7 +468,7 @@
 <h3><a name="bugreport-where">Ποιό είναι το καλύτερο μέρος για την υποβολής της αναφοράς σφάλματός μου;</a></h3>
   <p>
     Μπορείτε να αναφέρετε το σφάλμα σας χρησιμοποιώντας το 
-    <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+    <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">
     SourceForge.net Bug Tracker</a> ή μπορείτε να στείλετε την αναφορά σας με email στην ταχυδρομική λίστα 
     <a href="http://lists.sourceforge.net/lists/listinfo/gtk-gnutella-devel/">
     gtk-gnutella-devel</a>.  Επίσης μπορείτε να βρείτε έναν υπεύθυνο ανάπτυξης 

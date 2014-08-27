@@ -24,7 +24,7 @@
   <p>
     Keep in mind that the developers are only interested in bug reports from 
     the latest 
-    <a href="http://sourceforge.net/project/showfiles.php?group_id=4467">
+    <a href="http://sourceforge.net/projects/gtk-gnutella/files/">
     released version</a> or from versions built from 
     <a href="?page=devel#devel-svn">current SVN</a>.
    The developers 
@@ -96,7 +96,7 @@
   <p>
     If gtk-gnutella is acting the way its programmers intended but you would 
     prefer it behaved differently, then you should probably file a 
-    <a href="http://sourceforge.net/tracker/?atid=354467&amp;group_id=4467&amp;func=browse">
+    <a href="http://sourceforge.net/p/gtk-gnutella/feature-requests/">
     feature request</a> rather than a bug report.  Of course, there are 
     exceptions - the behavior could be harmful in some unforeseen way or not 
     conform to standards.  Besides, it's hard to know what the developer 
@@ -460,7 +460,7 @@
 <h3><a name="bugreport-where">Where's the best place to submit my bug report?</a></h3>
   <p>
     You can report your bug using the 
-    <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+    <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">
     SourceForge.net Bug Tracker</a> or you can email your report to the
     <a href="http://lists.sourceforge.net/lists/listinfo/gtk-gnutella-devel/">
     gtk-gnutella-devel</a> mailing list.  You can also find a developer on IRC 

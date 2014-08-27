@@ -28,7 +28,7 @@ CPU アーキテクチャには x86, AMD64, PowerPC, SPARC, MIPS が含まれま
 <p>
   アイデアや感想等がありましたら gtk-gnutella-devel メーリングリストまでお寄せ下さい。
   バグは SourceForge.net の
-  <a href="http://sourceforge.net/tracker/?atid=104467&amp;group_id=4467&amp;func=browse">
+  <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">
   バグ追跡システム</a> に報告して下さい。
 </p>
 

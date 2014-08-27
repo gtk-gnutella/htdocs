@@ -95,7 +95,7 @@ Use the devel branch if you want to help us test our new features or if you can'
 wait for some of these features to appear in the stable master branch. We need
 people to test new features and it would be great if you'd test the devel branch
 and report any issues to us at the 
-<a href="http://sourceforge.net/tracker/?group_id=4467&atid=104467">bug tracker</a> 
+<a href="http://sourceforge.net/p/gtk-gnutella/bugs/">bug tracker</a> 
 or by mail at 
 <a href="mailto:gtk-gnutella-devel@lists.sourceforge.net">gtk-gnutella-devel@lists.sourceforge.net</a>.
 </p>

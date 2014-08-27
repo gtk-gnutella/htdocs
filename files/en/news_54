@@ -7,7 +7,7 @@ bug fixed and improvements since the previous release.</p>
 <h5>Bug Fixes</h5>
 
 <ul>
-<li><a href="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=1870957&amp;group_id=4467&amp;atid=104467">#1870957</a>: Wrong sign could cause out-of-bounds read and potentially a crash.</li>
+<li><?php sf_bug("1870957");?>: Wrong sign could cause out-of-bounds read and potentially a crash.</li>
 <li>Firewalled status was not re-verified after a port change if the previously used port was open.</li>
 <li>Fixed <a href="http://www.mail-archive.com/gtk-gnutella-devel@lists.sourceforge.net/msg03799.html">issue</a> that caused the local peer cache to degenerate.</li>
 </ul>

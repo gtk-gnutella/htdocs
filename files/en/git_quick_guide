@@ -29,7 +29,7 @@ Which will also cause a new build of gtk-gnutella to be available under src/gtk-
 </p>
 <p> We need people to test new features and it would be great if you'd test 
 this devel branch and report any issues to us at the 
-<a href="http://sourceforge.net/tracker/?group_id=4467&atid=104467">bug tracker</a> 
+<a href="http://sourceforge.net/p/gtk-gnutella/bugs/">bug tracker</a> 
 or by mail at 
 <a href="mailto:gtk-gnutella-devel@lists.sourceforge.net">gtk-gnutella-devel@lists.sourceforge.net</a>.
 </p>
