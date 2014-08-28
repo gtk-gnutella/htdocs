@@ -8,6 +8,42 @@ Official releases can be downloaded from SourceForge as
 Cryptographic signatures for the tarballs are also available. 
 </p>
 
+<h4>Software distributions</h4>
+
+<p>
+gtk-gnutella is available from several software distributions.
+</p>
+
+<h5>Linux</h5>
+<ul>
+<li><a href="http://packages.ubuntu.com/search?keywords=gtk-gnutella">Ubuntu</a></li>
+<li><a href="http://packages.gentoo.org/package/net-p2p/gtk-gnutella">Gentoo</a></li>
+<li><a href="http://packages.debian.org/search?keywords=gtk-gnutella">Debian</a></li>
+<li><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gtk-gnutella">Fedora</a></li>
+</ul>
+
+<h5>BSD</h5>
+<ul>
+<li><a href="http://www.freshports.org/net-p2p/gtk-gnutella/">FreshPorts - FreeBSD packages</a></li>
+<li><a href="http://pkgsrc.se/net/gtk-gnutella">pkgsrc - The NetBSD package collection</a> <strong>[Terribly outdated version!]</strong></li>
+<li><a href="http://openports.se/net/gtk-gnutella">openports - The OpenBSD package collection</a> <strong>[Terribly outdated version!]</strong></li>
+</ul>
+
+<h5>Darwin (Mac OS X)</h5>
+<ul>
+<li><a href="http://pdb.finkproject.org/pdb/package.php/gtk-gnutella">Fink</a> <strong>[Terribly outdated version!]</strong></li>
+</ul>
+
+<p>
+These are the most convenient options for installing gtk-gnutella but the
+provided version of gtk-gnutella may be outdated.
+</p>
+
+<p>
+Please, report any bugs and problems with gtk-gnutella at our
+<a href="?page=mailing">mailing lists</a> or <a href="?page=bugreport_howto">bug tracker</a>!
+</p>
+
 <?php
 $mac = NULL;
 $win32 = NULL;
@@ -21,110 +57,101 @@ function endsWith($haystack, $needle)
     $start  = $length * -1; //negative
     return (substr($haystack, $start) === $needle);
 }
-?>
-
-  <?php $api = new clApi('http://sourceforge.net/projects/gtk-gnutella/rss?limit=20');
-        if ($feed = $api->parse("1 hour")) { ?>
-
-    <?php foreach($feed->get('entry') as $entry) {
+$api = new clApi('http://sourceforge.net/projects/gtk-gnutella/rss?limit=20');
+if ($feed = $api->parse("1 hour")) {
+		
+	foreach($feed->get('entry') as $entry) {
         if ($entry->get('default') == 'mac' && is_null($mac))
           $mac = $entry;
         if ($entry->get('default') == 'windows' && is_null($win32))
           $win32 = $entry;
-        if (strpos($entry->get('default'), 'others') !==  false && is_null($bz2))
+        if (strpos($entry->get('default'), 'others') !== false && is_null($bz2))
           $bz2 = $entry;
         if (endsWith($entry->get('title'), '.deb') && is_null($deb))
           $deb = $entry;
-        ?>
-    <?php } ?>
-  <?php } ?>
-  
-<h5>Source</h5>
-<p>Application source file .tar.bz2
-<a href="<?php echo $bz2->get('link@href'); ?>"><?php echo basename($bz2->get('title')); ?></a>       
-(<?php echo $bz2->get('content@filesize'); ?>)
-<?php foreach($bz2->get('hash') as $hash) { ?>
-    - <span class="hash"><?php echo strtoupper($hash->get('@algo')); ?> <?php echo $bz2->get('hash'); ?></span>
-<?php } ?>
-</p>
+	}
 
-<h5>Debian</h5>
-<p>Deb file for Debian deratives such as Ubuntu                                        
-<a href="<?php echo $deb->get('link@href'); ?>"><?php echo basename($deb->get('title')); ?></a>       
-(<?php echo $deb->get('content@filesize'); ?>)
-<?php foreach($deb->get('hash') as $hash) { ?>
-    - <span class="hash"><?php echo strtoupper($hash->get('@algo')); ?> <?php echo $deb->get('hash'); ?></span>
-<?php } ?>
-</p>
+	if (!is_null($bz2)) {
+		echo '<h5>Source</h5>';
+		echo '<p>Application source file .tar.bz2';
+		echo '<a href="'
+			. $bz2->get('link@href')
+			. '">'
+			. basename($bz2->get('title'))
+			. '</a> ('
+			. $bz2->get('content@filesize')
+			. ')';
 
-<h5>Microsoft Windows Binary</h5>
-<p>Binary for Microsoft Windows XP or higher
-<a href="<?php echo $win32->get('link@href'); ?>"><?php echo basename($win32->get('title')); ?></a>       
-(<?php echo $win32->get('content@filesize'); ?>)
-<?php foreach($win32->get('hash') as $hash) { ?>
-    - <span class="hash"><?php echo strtoupper($hash->get('@algo')); ?> <?php echo $win32->get('hash'); ?></span>
-<?php } ?>
-</p>
+		foreach($bz2->get('hash') as $hash) {
+			echo ' - <span class="hash">'
+			. strtoupper($hash->get('@algo'))
+			. ' '
+			. $bz2->get('hash')
+			. '</span>';
+		}
+		echo '</p>';
+	}
 
-<h5>Mac OS X App</h5>
-<p>Application bundle for MAC OS X 10.5 and higher
-<a href="<?php echo $mac->get('link@href'); ?>"><?php echo basename($mac->get('title')); ?></a>       
-(<?php echo $mac->get('content@filesize'); ?>)
-<?php foreach($mac->get('hash') as $hash) { ?>
-    - <span class="hash"><?php echo strtoupper($hash->get('@algo')); ?> <?php echo $mac->get('hash'); ?></span>
-<?php } ?>
-</p>
+	if (!is_null($deb)) {
+		echo '<h5>Debian</h5>';
+		echo '<p>Deb file for Debian derivative such as Ubuntu';
 
+		echo '<a href="' . $deb->get('link@href') . '">' . basename($deb->get('title')) . '</a> (' . $deb->get('content@filesize') . ')';
 
-<h4>Software distributions</h4>
+		foreach($deb->get('hash') as $hash) {
+			echo ' - <span class="hash">'
+			. strtoupper($hash->get('@algo'))
+			. ' '
+			. $deb->get('hash')
+			. '</span>';
+		}
+		echo '</p>';
+	}
 
-<p>
-gtk-gnutella is available from several software distributions.
-</p>
+	if (!is_null($win32)) {
+		echo '<h5>Microsoft Windows Binary</h5>';
+		echo '<p>Binary for Microsoft Windows XP or higher';
 
-<h5>Linux</h5>
-<ul>
-<li><a href="http://packages.ubuntu.com/search?keywords=gtk-gnutella">Ubuntu</a></li>
-<li><a href="http://packages.gentoo.org/package/net-p2p/gtk-gnutella">Gentoo</a></li>
-<li><a href="http://packages.debian.org/search?keywords=gtk-gnutella">Debian</a></li>
-<li><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gtk-gnutella">Fedora</a></li>
-<li><a href="http://www.archlinux.de/?page=Packages&amp;search=gtk-gnutella">Arch Linux</a></li>
-</ul>
+		echo '<a href="'
+		. $win32->get('link@href')
+		. '">'
+		. basename($win32->get('title'))
+		. '</a> ('
+		. $win32->get('content@filesize')
+		. ')';
 
-<h5>BSD</h5>
-<ul>
-<li><a href="http://pkgsrc.se/net/gtk-gnutella">pkgsrc - The NetBSD package collection</a></li>
-<li><a href="http://www.freshports.org/net-p2p/gtk-gnutella/">FreshPorts - FreeBSD packages</a></li>
-<li><a href="http://openports.se/net/gtk-gnutella">openports - The OpenBSD package collection</a></li>
-</ul>
+		foreach($win32->get('hash') as $hash) {
+			echo ' - <span class="hash">'
+			. strtoupper($hash->get('@algo'))
+			. $win32->get('hash')
+			. '</span>';
+		}
+		echo '</p>';
+	}
 
-<h5>Darwin (Mac OS X)</h5>
-<ul>
-<li><a href="http://gtk-gnutella.darwinports.com/">Darwin Ports</a></li>
-<li><a href="http://pdb.finkproject.org/pdb/package.php/gtk-gnutella">Fink</a></li>
-</ul>
+	if (!is_null($mac)) {
+		echo '<h5>Mac OS X App</h5>';
+		echo '<p>Application bundle for MAC OS X 10.5 and higher';
 
-<p>
-These are the most convenient options for installing gtk-gnutella but the
-provided version of gtk-gnutella may be outdated.
-</p>
+		echo '<a href="'
+		. $mac->get('link@href')
+		. '">'
+		. basename($mac->get('title'))
+		. '</a> ('
+		. $mac->get('content@filesize')
+		. ')';
 
-<h4>Unofficial builds</h4>
+		foreach($mac->get('hash') as $hash) {
+			echo ' - <span class="hash">'
+			. strtoupper($hash->get('@algo'))
+			. ' '
+			. $mac->get('hash')
+			. '</span>';
+		}
+		echo '</p>';
+	}
 
-<p>
-Joel Oliver provides unofficial builds for several Linux-based software
-distributions for x86 (32-bit) and x86-64/amd64 (64-bit) systems. His builds
-are compiled from recent SVN sources and updated frequently:
-</p>
+} ?>
 
-<p>
-<a href="http://stinker.serveftp.net:8000/gtkgnutella/gtkgnutella.html"
->http://stinker.serveftp.net:8000/gtkgnutella/gtkgnutella.html</a>
-</p>
-
-<p>
-Please, report any bugs and problems with gtk-gnutella at our
-<a href="?page=mailing">mailing lists</a> or <a href="?page=bugreport_howto">bug tracker</a>!
-</p>
-
+<!-- vi: set ts=4 sw=4 syntax=html: -->
 <!-- end download -->
