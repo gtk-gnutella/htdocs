@@ -1,0 +1,95 @@
+<h4>8 April 2015, Version 1.1.3 Released</h4>
+
+<p>This is mainly a critical bug-fixing release, addressing a huge
+   shortcoming in 1.1.2: all Shareaza leaves are incorrectly flagged as being
+   fakes and are being removed quicktly from ultrapeers, creating network churn
+   and instability. Everyone running gtk-gnutella as Ultrapeer must upgrade to
+   1.1.3 quickly.</p>
+
+<p>Releasing quickly after 1.1.3 is also a pretext for improving stability on
+   Windows platforms, especially after restarts: because Windows does not
+   support the "close on exec" flag on file descriptors, restarted processes
+   were left with several instances of a listening socket bound to the same
+   port, causing havoc as behaviour is totally undefined and was most probably
+   leading to the inability for the process to get any incoming
+   connections.</p>
+
+<p>On Windows, we now also monitor the memory usage more closely, in order to
+   avoid the C runtime from issuing a (blocking) popup signalling a fatal memory
+   allocation error should it run out of space.</p>
+
+<p>More generally, the VMM layer is now capable of trapping fatal memory
+   allocation errors and handling them more efficiently. In particular, when
+   everything has failed, the layer can request a brutal restart of the process.
+   Under less dire circumstances, a graceful restart will be requested.</p>
+
+<p>This was also an occasion to revisit the long-term allocation strategy in
+   the VMM layer and optimize it in order to further limit fragmentation of the
+   VM space. Even though avoiding fragmentation matters mostly for 32-bit
+   applications, this also limits the amount of individual memory region
+   mappings the kernel has to maintain and gtk-gnutella has to keep track
+   of.</p>
+
+<p>Finally, a last-minute bug fix where a user reported a deadlock in the QRP
+   processing code. After investigation, it turned out that there was indeed a
+   recursive locking on a spinlock that had escaped all real-life testing out
+   there so far!</p>
+
+<h5>Improvements</h5>
+<ul>
+<li>[GTK2] Added popup menu icon in front of "force push mode" for
+    sources.</li>
+<li>[GTK2] Added warning icon in status bar when kernel runs short of net
+    buffers.</li>
+<li>Increased default node connection timeout and size of the quick connect
+    pool.</li>
+<li>Updated the shell "status" command to display "!IP" on net buffer
+    shortage.</li>
+<li>Updated FAQ along with French and Turkish translations.</li>
+<li>Updated GeoIP databases.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Fixed invalid test for "fake" Shareaza that led to network
+    instabilities.</li>
+<li>Made QRP lock a mutex to allow for recursive locking through
+    <tt>qrp_comp_done()</tt>.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>On out-of-memory conditions, attempt to auto-restart if possible.</li>
+<li>Windows: monitor committed memory, crashing before the kernel would kill
+    us.</li>
+<li>Added <tt>crash_restart()</tt> and controlling routines to request smooth
+    restart.</li>
+<li>On network buffer shortage (ENOBUFS), stop TCP connections for a
+    while.</li>
+<li>UPnP: protect upnp_mapping objects given to callbacks with reference
+    counts.</li>
+<li>Adjusted lock tracking when locks are disabled, fixing lock swapping.</li>
+<li>Windows: remember socket descriptors so that we can close them on
+    <tt>exec()</tt>.</li>
+<li>Refactored code for listening sockets to warn when bound port is already
+    used.</li>
+<li>When shutdowning in "crash mode", skip most of the memory cleanup.</li>
+<li><tt>rwlock_destroy()</tt>: make sure to write-unlock the lock if it was
+    owned.</li>
+<li><tt>waiter_ack()</tt>: don't panic if waiter was not notified, but loudly
+    complain.</li>
+<li><tt>upnp_map_natpmp_publish_reply()</tt>: trace given port on NAT-PMP
+    mapping errors.</li>
+<li><tt>upnp_discover()</tt>: force selection of IPv4 interface for UPnP
+    discovery.</li>
+<li><tt>thread_unsuspend_others()</tt>: relaxed hard assertion into a soft
+    one.</li>
+<li><tt>alloc_pages()</tt>: try harder on OOM conditions to allocate from the
+    page cache.</li>
+<li><tt>socket_connect_finalize()</tt>: fixed wrong errno processing for
+    <tt>connect()</tt>.</li>
+<li><tt>socket_connect_prepare()</tt>: no need for SO_REUSEADDR for
+    connecting sockets.</li>
+
+</ul>
+<!-- end of release 1.1.3 -->
