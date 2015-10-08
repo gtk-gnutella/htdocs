@@ -1,0 +1,69 @@
+<h4>8 October 2015, Version 1.1.5 Released</h4>
+
+<p>This is a bug-fixing release.</p>
+
+<p>Most of these bugs were discovered by investigating why gtk-gnutella was
+   frequently crashing on OS/X platforms. Why other platforms were not having
+   the same problems remains a mystery, since all these bugs were not specific
+   to OS/X, apart from the <tt>vmm_munmap()</tt> bug -- since <tt>mmap()</tt> is
+   only used on OS/X due to its lack of the <tt>sendfile()</tt> system
+   call.</p>
+
+<p>One of the fixed bugs could lead to a crash when the network connection
+   was broken (e.g. a cable unplugged or a WiFi connection terminated).</p>
+
+<h5>Improvements</h5>
+<ul>
+<li>UHC: re-engineered the random choice of UHCs in the pre-established
+    list.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><tt>qrt_patch_compress_done()</tt>: fixed race with
+    <tt>qrp_comp_done()</tt>.</li>
+<li>xmalloc: prevent deadlock when freeing deferred blocks on the allocation
+    path.</li>
+<li><tt>pmap_remove_from()</tt>: protect from exceptional corner case to
+    avoid crash.</li>
+<li><tt>ut_frag_pmsg_free()</tt>: don't requeue an unsent message
+    synchronously.</li>
+<li>VMM: fixed race condition in <tt>vmm_munmap()</tt> that could lead to
+    failures.</li>
+<li>omalloc: fixed chunk management when memory alignment is required.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li><tt>well_state_discard()</tt>: fixed missing indexing of array
+    pointer.</li>
+<li>thread-test: avoid mixed output by using atomic I/Os to stderr for
+    messages.</li>
+<li>thread-test: main testing entry points now clearly flagged in output.</li>
+<li><tt>signal_trampoline()</tt>: be verbose and lenient when our
+    pre-condition fails.</li>
+<li><tt>evq_event_discard()</tt>: fixed message to log the name of the
+    registering thread.</li>
+<li><tt>hash_list_lookup()</tt>: was mistakenly returning a const value.</li>
+<li><tt>thread_private_set_extended()</tt>: ensure a NULL free routine clears
+    any old one.</li>
+<li><tt>crash_mode()</tt>: removed redundant call to
+    <tt>thread_suspend_others()</tt>.</li>
+<li><tt>rand31_random_seed()</tt>: avoid <tt>popcount()</tt>, prefer modulo
+    with a prime number.</li>
+<li><tt>hash_offset_init_once()</tt>: avoid <tt>entropy_minirand()</tt>,
+    causes dealocks on Windows.</li>
+<li><tt>uhc_send_ping()</tt>: if we cannot contact selected UHC, try with
+    another one.</li>
+<li>omalloc_chunk_*<tt>protect()</tt>: ensure chunk is consistent with page
+    boundaries.</li>
+<li>More assertions in <tt>omalloc()</tt> to ensure we're not corrupting
+    memory.</li>
+<li>Use global mutex to protect <tt>symbols_xxx()</tt> calls, simplified
+    stacktrace code.</li>
+<li>Reduced UHC retry time from 1 hour down to 3 minutes.</li>
+<li>Revised UHC list.</li>
+<li>More thread-safe refactoring for other stringification routines.</li>
+
+</ul>
+<!-- end of release 1.1.5 -->
