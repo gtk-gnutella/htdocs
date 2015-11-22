@@ -118,6 +118,15 @@ div.sb_section_content {
 	margin-left: 1em;
 }
 
+div.glossary_capital {
+	font-size: 20px;
+	font-weight:bold;
+}
+
+div.glossary_term {
+	font-weight:bold;
+}
+
 .hidden {
 	visibility: hidden;
 	width: 0;
