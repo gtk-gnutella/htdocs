@@ -8,14 +8,14 @@
 
 <div class="glossary_capital">G</div>
 
-<div class="glossary_term" name="G2hub">G2 Hub</div>
+<div class="glossary_term">G2 Hub</div>
 
 <p>
-	G2 Hubs in Gnutella2 network are equivalent to <a href="ultrapper">Ultrappers</a> in <a href="GnutellaNet">GnutellaNet</a>. 
-	GTK-Gnutella usually connects to 2 G2 Hubs behaving as a <a href="leaf">leaf node</a> on Gnutella2 network.
+	G2 Hubs in Gnutella2 network are equivalent to Ultrapeers in GnutellaNet. 
+	GTK-Gnutella usually connects to 2 G2 Hubs behaving as a leaf node on Gnutella2 network.
 </p>
 
-<div class="glossary_term" name="GnutellaNet">GnutellaNet</div>
+<div class="glossary_term">GnutellaNet</div>
 
 <p>
 	The GnutellaNet is an <em>overlay</em> network. This means it is a network that sits on top of the normal internet. 
@@ -24,7 +24,7 @@
 </p>
 <p>
 	As the GnutellaNet is an overlay network, it doesn't have to pay
-	attention to geography.  It is likely that you will connect to
+	attention to geography. It is likely that you will connect to
 	computers in other countries. Things might be faster if this was not
 	the case. However, they may also be more resilient in the current form.
 </p>
@@ -32,26 +32,26 @@
 
 <div class="glossary_capital">L</div>
 
-<div class="glossary_term" name="leaf">Leaf node</div>
+<div class="glossary_term">Leaf node</div>
 
 <p>
-	A leaf is the basic connection to the GnutellaNet. A leaf typically connects to three or four <a href="#ultrapeer">ultrapeers</a>. The ultrapeers
-	route searches and keep their leaves connected to the GnutellaNet.
+	A leaf is the basic connection to the GnutellaNet. A leaf typically connects to three or four ultrapeers.
+	The ultrapeers route searches and keep their leaves connected to the GnutellaNet.
 </p>
 
 
 <div class="glossary_capital">S</div>
 
-<div class="glossary_term" name="search_literals">search literals</div>
+<div class="glossary_term">search literals</div>
 
 <p>
 	Double and single quotes can be used so that an entire search term
 	will be matched instead of individual words.  Quoting maybe necessary
 	if you wish to search for a phrase with special characters such as the
-	<a href="#search_required">plus and minus signs</a>.
+	plus and minus signs (see &quot;search requireds&quot;).
 </p>
 
-<div class="glossary_term" name="search_prefixes">search prefixes</div>
+<div class="glossary_term">search prefixes</div>
 
 <ol>
 <li>
@@ -85,7 +85,7 @@
 	urn: Similar to a sha1 search, but the hash value is specified. Ie, urn:sha1:<em>hash value</em>
 </li>
 
-<div class="glossary_term" name="search_required">search requireds</div>
+<div class="glossary_term">search requireds</div>
 
 <p>
 	Mini filters are created with the '+' and '-' signs. The plus sign
@@ -94,19 +94,19 @@
 	can be used to select ambigious terms.
 </p>
 <p>
-	Suppose you wish to find information about apples.  You might use a search like <em>apples -computers</em>. 
+	Suppose you wish to find information about apples. You might use a search like <em>apples -computers</em>. 
 	You may get even more relevant results by using <em>apples +fruit</em>.
 </p>
 
 
 <div class="glossary_capital">U</div>
 
-<div class="glossary_term" name="ultrapeer">Ultrapeer</div>
+<div class="glossary_term">Ultrapeer</div>
 
 <p>
 	An ultrapeer is well connected to the GnutellaNet.
 	As ultrapeers must have many connections and route search queries,
-	they require more resources than a <a href="#leaf">leaf</a> node. Ultrapeers will
+	they require more resources than a leaf node. Ultrapeers will
 	typically be connected to 30+ other ultrapeers and connected to 70+ leaf nodes.
 </p>
 
