@@ -84,6 +84,7 @@
 <li>
 	urn: Similar to a sha1 search, but the hash value is specified. Ie, urn:sha1:<em>hash value</em>
 </li>
+</ol>
 
 <div class="glossary_term" name="search_required">search requireds</div>
 
