@@ -54,7 +54,7 @@
 <li>Fixed invalid test for "fake" Shareaza that led to network
     instabilities.</li>
 <li>Made QRP lock a mutex to allow for recursive locking through
-    <tt>qrp_comp_done()</tt>.</li>
+    <code>qrp_comp_done()</code>.</li>
 
 </ul>
 <h5>Under the Hood</h5>
@@ -62,7 +62,7 @@
 <li>On out-of-memory conditions, attempt to auto-restart if possible.</li>
 <li>Windows: monitor committed memory, crashing before the kernel would kill
     us.</li>
-<li>Added <tt>crash_restart()</tt> and controlling routines to request smooth
+<li>Added <code>crash_restart()</code> and controlling routines to request smooth
     restart.</li>
 <li>On network buffer shortage (ENOBUFS), stop TCP connections for a
     while.</li>
@@ -70,25 +70,25 @@
     counts.</li>
 <li>Adjusted lock tracking when locks are disabled, fixing lock swapping.</li>
 <li>Windows: remember socket descriptors so that we can close them on
-    <tt>exec()</tt>.</li>
+    <code>exec()</code>.</li>
 <li>Refactored code for listening sockets to warn when bound port is already
     used.</li>
 <li>When shutdowning in "crash mode", skip most of the memory cleanup.</li>
-<li><tt>rwlock_destroy()</tt>: make sure to write-unlock the lock if it was
+<li><code>rwlock_destroy()</code>: make sure to write-unlock the lock if it was
     owned.</li>
-<li><tt>waiter_ack()</tt>: don't panic if waiter was not notified, but loudly
+<li><code>waiter_ack()</code>: don't panic if waiter was not notified, but loudly
     complain.</li>
-<li><tt>upnp_map_natpmp_publish_reply()</tt>: trace given port on NAT-PMP
+<li><code>upnp_map_natpmp_publish_reply()</code>: trace given port on NAT-PMP
     mapping errors.</li>
-<li><tt>upnp_discover()</tt>: force selection of IPv4 interface for UPnP
+<li><code>upnp_discover()</code>: force selection of IPv4 interface for UPnP
     discovery.</li>
-<li><tt>thread_unsuspend_others()</tt>: relaxed hard assertion into a soft
+<li><code>thread_unsuspend_others()</code>: relaxed hard assertion into a soft
     one.</li>
-<li><tt>alloc_pages()</tt>: try harder on OOM conditions to allocate from the
+<li><code>alloc_pages()</code>: try harder on OOM conditions to allocate from the
     page cache.</li>
-<li><tt>socket_connect_finalize()</tt>: fixed wrong errno processing for
-    <tt>connect()</tt>.</li>
-<li><tt>socket_connect_prepare()</tt>: no need for SO_REUSEADDR for
+<li><code>socket_connect_finalize()</code>: fixed wrong errno processing for
+    <code>connect()</code>.</li>
+<li><code>socket_connect_prepare()</code>: no need for SO_REUSEADDR for
     connecting sockets.</li>
 
 </ul>
