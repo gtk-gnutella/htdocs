@@ -18,18 +18,18 @@
 <ul>
 <li>Fixed memory leak on the error path of OOB / G2 query hit sending.</li>
 <li>Fixed memory leak on the file upload path.</li>
-<li><tt>aging_insert()</tt>: was not properly handling freeing of keys,
+<li><code>aging_insert()</code>: was not properly handling freeing of keys,
     causing leaks.</li>
 <li>Fixed property description message for "max_leaves".</li>
-<li>Windows: no HEAP_NO_SERIALIZE flag on <tt>HeapAlloc()</tt> since we're
+<li>Windows: no HEAP_NO_SERIALIZE flag on <code>HeapAlloc()</code> since we're
     multi-threaded.</li>
-<li><tt>mingw_valloc()</tt>: fixed monitoring of unreserved VM space.</li>
+<li><code>mingw_valloc()</code>: fixed monitoring of unreserved VM space.</li>
 <li>Windows: optimized the inital VM space reservation.</li>
-<li><tt>rpc_delay()</tt>: avoid int overflowing, which would make delay
+<li><code>rpc_delay()</code>: avoid int overflowing, which would make delay
     negative!</li>
-<li><tt>node_udp_sr_data_ind()</tt>: do not crash if UDP was disabled or port
+<li><code>node_udp_sr_data_ind()</code>: do not crash if UDP was disabled or port
     was 0.</li>
-<li>Fixed crashes in the <tt>omalloc()</tt> layer.</li>
+<li>Fixed crashes in the <code>omalloc()</code> layer.</li>
 
 </ul>
 <h5>Under the Hood</h5>
@@ -37,76 +37,76 @@
 <li>Make sure an initial GMT offset is computed before the time thread
     starts.</li>
 <li>Compact the aging structure on 64-bit platforms.</li>
-<li>Fixed possible race between <tt>evq_trampoline()</tt> and
-    <tt>evq_event_discard()</tt>.</li>
+<li>Fixed possible race between <code>evq_trampoline()</code> and
+    <code>evq_event_discard()</code>.</li>
 <li>Added safety assertions: a removed item must belong to the list.</li>
 <li>Fixed typos in safety assertions.</li>
 <li>EVQ: closed race condition betweeen queues recreated in same thread
     ID.</li>
 <li>Use getrlimit(RLIMIT_AS) to get the available space, not RLIMIT_DATA.</li>
 <li>Windows: try harder to compute a relevant break value with sbrk(0).</li>
-<li>Windows: added cpp trap for <tt>dup()</tt>.</li>
+<li>Windows: added cpp trap for <code>dup()</code>.</li>
 <li>Windows: fixed fcntl(F_DUPFD) implementation which was not
     thread-safe.</li>
 <li>Windows: dump symbolic PC on stack overflows, after basic
     information.</li>
-<li><tt>elist_remove()</tt>: assert that removed item must be part of some
+<li><code>elist_remove()</code>: assert that removed item must be part of some
     list.</li>
-<li><tt>evq_event_discard()</tt>: be quiet when removing event for the event
+<li><code>evq_event_discard()</code>: be quiet when removing event for the event
     queue thread.</li>
-<li><tt>evq_event_discard()</tt>: correctly handle cancelable events.</li>
-<li><tt>evq_trampoline()</tt>: factorize removal of triggered item from queue
+<li><code>evq_event_discard()</code>: correctly handle cancelable events.</li>
+<li><code>evq_trampoline()</code>: factorize removal of triggered item from queue
     list.</li>
-<li><tt>evq_trampoline()</tt>: fixed logging message to use copied value.</li>
-<li><tt>getgateway()</tt>: on Linux, cache previously computed value in case
+<li><code>evq_trampoline()</code>: fixed logging message to use copied value.</li>
+<li><code>getgateway()</code>: on Linux, cache previously computed value in case
     netlink fails.</li>
-<li><tt>getgateway()</tt>: on Linux, the netlink socket can return EAGAIN on
-    <tt>recv()</tt>.</li>
-<li><tt>main_command_line()</tt>: optimized and simplified!</li>
-<li><tt>malloc_init_vtable()</tt>: be sure to set G_SLICE=always-malloc on
+<li><code>getgateway()</code>: on Linux, the netlink socket can return EAGAIN on
+    <code>recv()</code>.</li>
+<li><code>main_command_line()</code>: optimized and simplified!</li>
+<li><code>malloc_init_vtable()</code>: be sure to set G_SLICE=always-malloc on
     Windows.</li>
-<li><tt>mingw_exception()</tt>: skip printing of stacktrace if we got a stack
+<li><code>mingw_exception()</code>: skip printing of stacktrace if we got a stack
     overflow.</li>
-<li><tt>mingw_getrlimit()</tt>: implement a better RLIMIT_DATA query.</li>
-<li><tt>mingw_getrlimit()</tt>: return different max / current values to
+<li><code>mingw_getrlimit()</code>: implement a better RLIMIT_DATA query.</li>
+<li><code>mingw_getrlimit()</code>: return different max / current values to
     account for usage.</li>
-<li><tt>mingw_signal()</tt>: always record signal handler in our internal
+<li><code>mingw_signal()</code>: always record signal handler in our internal
     list of handlers.</li>
-<li><tt>mingw_valloc()</tt>: don't complain about non-hinted allocations when
+<li><code>mingw_valloc()</code>: don't complain about non-hinted allocations when
     crashing!</li>
-<li><tt>mingw_valloc()</tt>: use <tt>s_minicarp()</tt> to limit resource
+<li><code>mingw_valloc()</code>: use <code>s_minicarp()</code> to limit resource
     consumption.</li>
-<li><tt>mingw_valloc()</tt>: when nearing out-of-memory, take data segment
+<li><code>mingw_valloc()</code>: when nearing out-of-memory, take data segment
     into account.</li>
-<li><tt>mingw_vmm_init()</tt>: accelerate initialization, reducing amount of
+<li><code>mingw_vmm_init()</code>: accelerate initialization, reducing amount of
     system calls.</li>
-<li><tt>mingw_win2posix()</tt>: handle 0 to avoid warnings when called with
+<li><code>mingw_win2posix()</code>: handle 0 to avoid warnings when called with
     no error.</li>
-<li><tt>mingw_win2posix()</tt>: mapped ERROR_BAD_EXE_FORMAT to ENOEXEC.</li>
-<li><tt>mingw_win2posix()</tt>: mapped ERROR_NETNAME_DELETED to
+<li><code>mingw_win2posix()</code>: mapped ERROR_BAD_EXE_FORMAT to ENOEXEC.</li>
+<li><code>mingw_win2posix()</code>: mapped ERROR_NETNAME_DELETED to
     EHOSTUNREACH.</li>
-<li><tt>mingw_win2posix()</tt>: use <tt>s_minicarp()</tt> instead of
-    <tt>s_warning()</tt> to see "culprit".</li>
-<li><tt>omalloc_allocate()</tt>: was releasing spinlock too soon in read-only
+<li><code>mingw_win2posix()</code>: use <code>s_minicarp()</code> instead of
+    <code>s_warning()</code> to see "culprit".</li>
+<li><code>omalloc_allocate()</code>: was releasing spinlock too soon in read-only
     mode.</li>
-<li><tt>omalloc_chunk_allocate_from()</tt>: fixed bug when header dissolution
+<li><code>omalloc_chunk_allocate_from()</code>: fixed bug when header dissolution
     was required.</li>
-<li><tt>publisher_handle()</tt>: simplified code by factorizing
-    <tt>shared_file_unref()</tt> call.</li>
-<li><tt>s_minicarp()</tt> and <tt>s_minicrit()</tt>: carefully avoid stdio
+<li><code>publisher_handle()</code>: simplified code by factorizing
+    <code>shared_file_unref()</code> call.</li>
+<li><code>s_minicarp()</code> and <code>s_minicrit()</code>: carefully avoid stdio
     when dumping stack.</li>
-<li><tt>sdbm_close()</tt>: ensure we sync pending dirty data when database is
+<li><code>sdbm_close()</code>: ensure we sync pending dirty data when database is
     not volatile.</li>
-<li><tt>sdbm_name()</tt>: return path to the .pag file if no name was
+<li><code>sdbm_name()</code>: return path to the .pag file if no name was
     explicitly given.</li>
-<li><tt>settings_init()</tt>: when computing max VM space, use max from
+<li><code>settings_init()</code>: when computing max VM space, use max from
     RLIMIT_AS, not cur.</li>
-<li><tt>socket_create_and_bind()</tt>: on Linux systems, force SO_REUSEADDR
-    before <tt>bind()</tt>.</li>
+<li><code>socket_create_and_bind()</code>: on Linux systems, force SO_REUSEADDR
+    before <code>bind()</code>.</li>
 <li>sort-test: reduce verbosity by default.</li>
-<li><tt>thread_suspend_others()</tt>: silently suspends itself if
+<li><code>thread_suspend_others()</code>: silently suspends itself if
     concurrently asked to.</li>
-<li><tt>udp_sched_write_error()</tt>: don't dump a stack trace on send errors
+<li><code>udp_sched_write_error()</code>: don't dump a stack trace on send errors
     we expect.</li>
 
 </ul>
