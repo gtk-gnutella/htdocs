@@ -38,58 +38,58 @@
 </ul>
 <h5>Bug Fixes</h5>
 <ul>
-<li><tt>upnp_natpmp_discovered()</tt>: detect when UPnP layer was shutdown
+<li><code>upnp_natpmp_discovered()</code>: detect when UPnP layer was shutdown
     and abort.</li>
 <li>Fixed bad definition of XXTEA key, which led us to use only its first 4
     bytes.</li>
-<li><tt>node_g2_read()</tt>: need to only read 3 bytes usually to determine
+<li><code>node_g2_read()</code>: need to only read 3 bytes usually to determine
     frame length.</li>
-<li><tt>thread_sp()</tt>: tweaked to defeat gcc 5.x optimization leading to a
+<li><code>thread_sp()</code>: tweaked to defeat gcc 5.x optimization leading to a
     NULL return.</li>
 <li>File moving: notify main thread as soon as file is completely copied.</li>
-<li><tt>update_available_ranges()</tt>: lack of X-Available means file is
+<li><code>update_available_ranges()</code>: lack of X-Available means file is
     full on server.</li>
 
 </ul>
 <h5>Under the Hood</h5>
 <ul>
-<li>Windows: added <tt>getppid()</tt> and <tt>statvfs()</tt> emulation, plus
-    <tt>rmdir()</tt> support.</li>
+<li>Windows: added <code>getppid()</code> and <code>statvfs()</code> emulation, plus
+    <code>rmdir()</code> support.</li>
 <li>Improved the unpredictability of our random numbers.</li>
 <li>Loudly warn if attempting a file-descriptor operation on a revoked
     descriptor.</li>
-<li>Added <tt>compat_sendfile()</tt> with fallback to emulated version when
+<li>Added <code>compat_sendfile()</code> with fallback to emulated version when
     necessary.</li>
-<li>Added <tt>compat_statvfs()</tt> for portability and code
+<li>Added <code>compat_statvfs()</code> for portability and code
     simplification.</li>
-<li>File moving operations now use <tt>sendfile()</tt> if available.</li>
+<li>File moving operations now use <code>sendfile()</code> if available.</li>
 <li>XFMT: made it loudly clear that comment nodes are ignored for now.</li>
 <li>VMM: when debugging, trace large allocation spots.</li>
 <li>VMM: raised maximum page cache lifetime from 3 to 15 minutes.</li>
-<li><tt>page_cache_find_pages()</tt>: treat user memory as if under
+<li><code>page_cache_find_pages()</code>: treat user memory as if under
     short-term strategy.</li>
-<li><tt>filepath_basename()</tt>: optimize code when G_DIR_SEPARATOR is
+<li><code>filepath_basename()</code>: optimize code when G_DIR_SEPARATOR is
     '/'.</li>
-<li>Optimized <tt>CMP()</tt> to avoid branching regardless of the
+<li>Optimized <code>CMP()</code> to avoid branching regardless of the
     arguments.</li>
-<li>Added <tt>ftw_foreach()</tt> to traverse a file system and process each
+<li>Added <code>ftw_foreach()</code> to traverse a file system and process each
     entry.</li>
-<li><tt>mingw_readdir()</tt>: do not change errno if it was left untouched by
-    <tt>_wreaddir()</tt>.</li>
+<li><code>mingw_readdir()</code>: do not change errno if it was left untouched by
+    <code>_wreaddir()</code>.</li>
 <li>Let mingw_{opendir,readdir,closedir} use normal types, not generic
     ones.</li>
-<li><tt>mingw_stat()</tt>: added workaround for trailing "/" or "/." in
+<li><code>mingw_stat()</code>: added workaround for trailing "/" or "/." in
     paths.</li>
-<li><tt>etree_traverse_internal()</tt>: minor optimization to avoid trailing
+<li><code>etree_traverse_internal()</code>: minor optimization to avoid trailing
     +1 each time.</li>
-<li>Added <tt>etree_sort()</tt> and <tt>etree_sort_with_data()</tt> to sort
+<li>Added <code>etree_sort()</code> and <code>etree_sort_with_data()</code> to sort
     children of all nodes.</li>
 <li>Changed signature of decoding base16 and base32 routines.</li>
-<li>Regenerated Configure to fix the <tt>fdopendir()</tt> compile test.</li>
+<li>Regenerated Configure to fix the <code>fdopendir()</code> compile test.</li>
 <li>Make sure pointer hashing distributes its trailing bits evenly.</li>
-<li><tt>elist_merge_sort()</tt>: don't update tail, just do one single pass
+<li><code>elist_merge_sort()</code>: don't update tail, just do one single pass
     at the end.</li>
-<li><tt>vmm_dump_pmap_log()</tt>: copy pmap data, then process dumping
+<li><code>vmm_dump_pmap_log()</code>: copy pmap data, then process dumping
     without locks.</li>
 
 </ul>
