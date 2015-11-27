@@ -100,9 +100,9 @@
     gold).</li>
 <li>Various PARQ cleanup to smooth QUEUE callback operations.</li>
 <li>Fallback to pre-computed symbol file when loaded symbols are garbage.</li>
-<li>Relax <tt>file_path_set()</tt> and <tt>open_read()</tt> to gracefully
+<li>Relax <code>file_path_set()</code> and <code>open_read()</code> to gracefully
     handle relative paths.</li>
-<li><tt>get_folder_basepath()</tt>: protect against unsuitable environment
+<li><code>get_folder_basepath()</code>: protect against unsuitable environment
     variables.</li>
 <li>Recompute the amount of banned fds dynamically as config parameters
     change.</li>
@@ -114,7 +114,7 @@
 <li>Enhanced the incremental zlib operations, reusing objects across
     operations.</li>
 <li>Added new official ISO 3166 country codes.</li>
-<li><tt>node_read()</tt>: was wrongly resizing the message buffer for each
+<li><code>node_read()</code>: was wrongly resizing the message buffer for each
     message!</li>
 <li>Refactored aging table to lower memory footprint (by 6 pointers per
     entry).</li>
@@ -127,11 +127,11 @@
     transfers.</li>
 <li>Count received PUSHes requesting FW-FW transfers, plus those targeting
     us.</li>
-<li><tt>dht_init()</tt>: do not reset the KUID if DHT disabled at
+<li><code>dht_init()</code>: do not reset the KUID if DHT disabled at
     startup.</li>
 <li>Detect whether we are restarting after a clean shutdown or after a
     crash.</li>
-<li><tt>bg_task_terminate()</tt>: don't panic at shutdown when handling
+<li><code>bg_task_terminate()</code>: don't panic at shutdown when handling
     unaccounted tasks.</li>
 <li>Reserve only about 40% of the available virtual memory space on
     Windows.</li>
@@ -140,9 +140,9 @@
     route.</li>
 <li>The shell "nodes" command now displays the gnet port along with the
     address.</li>
-<li>Added metaconfig check for <tt>malloc()</tt> superseding.</li>
-<li>New switch <tt>--disable-malloc</tt> added to <tt>build.sh</tt>
-    to prevent superseding <tt>malloc()</tt>.</li>
+<li>Added metaconfig check for <code>malloc()</code> superseding.</li>
+<li>New switch <code>--disable-malloc</code> added to <code>build.sh</code>
+    to prevent superseding <code>malloc()</code>.</li>
 <li>When launching gdb during crash, ask for threads and thread stacks as
     well.</li>
 <li>External IP changes were not waiting for 3 hosts in 3 different CIDR

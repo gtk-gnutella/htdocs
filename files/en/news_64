@@ -2,7 +2,7 @@
 
 <p>This is a minor patch to support systems running latest Ubuntu systems,
    and maybe others which create multiple threads for GTK programs: our
-   <tt>xmalloc()</tt> implementation replaces the system's <tt>malloc()</tt> but
+   <code>xmalloc()</code> implementation replaces the system's <code>malloc()</code> but
    it was not safe to use in multi-threaded environments.</p>
 
 <h5>GUI improvements</h5>

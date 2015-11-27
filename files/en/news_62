@@ -45,7 +45,7 @@
 <h5>Bug Fixes</h5>
 <ul>
 <li>Fixed harmful cleanup of routing table when cycling over naturally.</li>
-<li>Fixed bug in <tt>add_file()</tt> when adding multiple partial files to a
+<li>Fixed bug in <code>add_file()</code> when adding multiple partial files to a
     query hit.</li>
 <li>Fixed DHT lookup when path protection kicks in and clears the closest
     node.</li>
@@ -61,7 +61,7 @@
 <li>Fixed dynamic querying to avoid duplicate messages to probed nodes.</li>
 <li>GUESS must forget about query if the query key was not correct.</li>
 <li>Do not send translated messages in node handshaking replies.</li>
-<li><tt>dualhash_insert_key()</tt>: fixed insertion to avoid possible
+<li><code>dualhash_insert_key()</code>: fixed insertion to avoid possible
     assertion failures.</li>
 <li>Avoid wrong "activity timeout" indications for ultra &lt;-&gt; ultra
     connections.</li>
@@ -79,7 +79,7 @@
     not the filesystem last modification time.</li>
 <li>Enforce configured IP protocols, preventing connection to other
     protocols.</li>
-<li>Added <tt>malloc()</tt> replacement.</li>
+<li>Added <code>malloc()</code> replacement.</li>
 <li>Clear "last dmesh sent" timestamp in uploads when client switches
     resources.</li>
 <li>Construct build date from git's HEAD commit, if available.</li>
@@ -90,15 +90,15 @@
     log.</li>
 <li>Force "idle" tasks to be scheduled once in a while.</li>
 <li>Increased frequency of the main callout queue heartbeats by 4.</li>
-<li>Arrange for a crash log to be generated even when <tt>fork()</tt>
+<li>Arrange for a crash log to be generated even when <code>fork()</code>
     fails.</li>
 <li>Loudly warn when string formatting leads to truncation of the
     message.</li>
-<li>Added regression tests for <tt>str_vncatf()</tt>.</li>
+<li>Added regression tests for <code>str_vncatf()</code>.</li>
 <li>Added floating point formatting routine from Robert G. Burger, allowing
-    <tt>str_vncatf()</tt> to format floating point numbers natively.</li>
+    <code>str_vncatf()</code> to format floating point numbers natively.</li>
 <li>Added Windows startup debugging support and fixed Cygwin startup.</li>
-<li>Remap all <tt>g_xxx()</tt> logging routines to our own message logging
+<li>Remap all <code>g_xxx()</code> logging routines to our own message logging
     layer.</li>
 <li>Added "update-potfiles" target to refresh the POTFILES.in list.</li>
 <li>Frozen PARQ upload queue slots don't count as "wanted" by the queue.</li>
@@ -109,7 +109,7 @@
 <li>Propagate self-assessed symbol quality into the crash log, if not
     good.</li>
 <li>Make sure we open all files in binary mode on Windows.</li>
-<li>Packaged regex 0.12 to supply POSIX <tt>regcomp()</tt> on systems lacking
+<li>Packaged regex 0.12 to supply POSIX <code>regcomp()</code> on systems lacking
     it.</li>
 <li>Raise the default number of allowed fds to 2048 on OS X.</li>
 <li>Added SDBM testing and benchmarking program.</li>

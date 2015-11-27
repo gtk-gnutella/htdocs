@@ -81,16 +81,16 @@
     table.</li>
 <li>Reception of improper DHT messages could lead to an immediate crash
     (DoS).</li>
-<li><tt>ut_frag_pmsg_free()</tt>: rescheduling of expire event was in wrong
+<li><code>ut_frag_pmsg_free()</code>: rescheduling of expire event was in wrong
     block.</li>
-<li><tt>base16_encode()</tt>: would cause buffer overflow when destination
+<li><code>base16_encode()</code>: would cause buffer overflow when destination
     too small.</li>
 <li>Rotate OOB token keys less often, to avoid expiration whilst in
     transit.</li>
-<li><tt>socket_udp_event()</tt>: ignore empty datagrams.</li>
+<li><code>socket_udp_event()</code>: ignore empty datagrams.</li>
 <li>Fixed host cache updates to avoid setting "out of bounds" property
     values.</li>
-<li><tt>hcache_find_nearby()</tt>: was missing a "break" in the case for
+<li><code>hcache_find_nearby()</code>: was missing a "break" in the case for
     HOST_GUESS.</li>
 <li>Scheduled static checking by Coverity, found 81 problems requring a
     fix.</li>
@@ -99,9 +99,9 @@
 <li>Configure: fixed endianess detection of IEEE-754 floats on Solaris.</li>
 <li>Was never configuring TCP quick ACKs due to a missing "break"
     statement.</li>
-<li><tt>omalloc()</tt> could crash when configuring read-only objects.</li>
+<li><code>omalloc()</code> could crash when configuring read-only objects.</li>
 <li>Ensure we never insert any "unusable host" in the push-proxy set.</li>
-<li><tt>keys_update_value()</tt>: forgot to persist back updated expiration
+<li><code>keys_update_value()</code>: forgot to persist back updated expiration
     timestamp.</li>
 <li>Properly flag UDP route as deflatable when GGEP "Z" is seen in
     queries.</li>
@@ -129,7 +129,7 @@
     variables.</li>
 <li>VMM: closed race condition during allocations.</li>
 <li>Added support for permanent thread-private data.</li>
-<li>Added primitive <tt>fork()</tt> handling in a multi-threaded
+<li>Added primitive <code>fork()</code> handling in a multi-threaded
     environment.</li>
 <li>Made float formatting code thread-safe, removing need for funnelling.</li>
 <li>The ADNS now always runs in a separate thread.</li>
@@ -142,33 +142,33 @@
 <li>Added "lib show callout" shell command to display callout queue
     information.</li>
 <li>Added "lib show files" to show opened files via
-    <tt>file_object_xxx()</tt>.</li>
+    <code>file_object_xxx()</code>.</li>
 <li>Made sure PROTECT_ATOMS and ATOMS_HAVE_MAGIC are orthogonal settings.</li>
 <li>Moved the reference count of atoms to the tracking hash table.</li>
 <li>Callout queue runs the idle callbacks if not scheduled in the last 30
     secs.</li>
 <li>Logging timestamps are now emitted with a millisecond accuracy.</li>
-<li>Improved <tt>g_assert_not_reached()</tt> to propagate the routine name as
+<li>Improved <code>g_assert_not_reached()</code> to propagate the routine name as
     well.</li>
 <li>Re-architected file_objects to allow permission checking on opened
     files.</li>
-<li>Introducing <tt>tqsort()</tt>, a multi-threaded quicksort for sorting
+<li>Introducing <code>tqsort()</code>, a multi-threaded quicksort for sorting
     large arrays.</li>
 <li>Do not mark SIGPROF as harmful to allow profiling.</li>
-<li>Added a thread-magazine allocator, used by <tt>walloc()</tt> and
-    <tt>vmm_alloc()</tt>.</li>
+<li>Added a thread-magazine allocator, used by <code>walloc()</code> and
+    <code>vmm_alloc()</code>.</li>
 <li>Allow execution of some shell commands in a separate thread.</li>
 <li>Added our own plain one-way and two-way list implementation.</li>
 <li>Added optimized item freeing for embedded lists holding
-    <tt>walloc()</tt>'ed objects.</li>
+    <code>walloc()</code>'ed objects.</li>
 <li>Added thread-local ARC4 random streams for increased throughput.</li>
 <li>Added global and per-thread WELL and CMWC random number generators.</li>
 <li>Added Fortuna-like algorithm (AJE -- Alea Jacta Est) for gathering
     entropy.</li>
 <li>Added support for fixed-size hash tables, entirely held in a static
     buffer.</li>
-<li><tt>hash_table_replace()</tt>: optimized to avoid two
-    <tt>hash_table_find()</tt> calls.</li>
+<li><code>hash_table_replace()</code>: optimized to avoid two
+    <code>hash_table_find()</code> calls.</li>
 <li>Protect query hit generation against concurrent library rescans.</li>
 <li>No longer close all file descriptors in main, since threads use them.</li>
 <li>Semi-reliable UDP: only send last fragment of large message to unknown
@@ -182,54 +182,54 @@
 <li>Semi-reliable UDP: was not releasing data structure for dropped ACKs.</li>
 <li>QRP support for generation of 1-bit patches, and optimized 1-bit
     handling.</li>
-<li><tt>make_room_internal()</tt>: removed bug catcher from 2006, which never
+<li><code>make_room_internal()</code>: removed bug catcher from 2006, which never
     triggered.</li>
 <li>Cleaned up Gnutella handshaking to emit an Accept if the remote sent
     one.</li>
-<li><tt>search_results_process()</tt>: do not record last hop as hostile on
+<li><code>search_results_process()</code>: do not record last hop as hostile on
     relayed hits.</li>
-<li>Do not attempt to OOB-proxy queries in <tt>search_request()</tt>!</li>
-<li><tt>host_timer()</tt>: fixed wrong cut-off by "quick connect pool".</li>
+<li>Do not attempt to OOB-proxy queries in <code>search_request()</code>!</li>
+<li><code>host_timer()</code>: fixed wrong cut-off by "quick connect pool".</li>
 <li>Added script to auto-generate enums along with symbolic and English
     text.</li>
-<li><tt>options_parse()</tt>: fixed parsing of values immediately following
+<li><code>options_parse()</code>: fixed parsing of values immediately following
     the option.</li>
 <li>Shuffling of large arrays now performed using PRNGs with greater
     period.</li>
 <li>Renamed "struct mutex" as "struct lmutex" to avoid conflicts on
     Solaris.</li>
-<li><tt>st_search()</tt>: randomly shuffle results only when we have more
+<li><code>st_search()</code>: randomly shuffle results only when we have more
     than we can send.</li>
-<li>Windows: added emulated <tt>clock_gettime()</tt> and
-    <tt>clock_getres()</tt>.</li>
+<li>Windows: added emulated <code>clock_gettime()</code> and
+    <code>clock_getres()</code>.</li>
 <li>Dispatch entropy to PRNGs only once every 30 seconds at most.</li>
-<li>Simplified <tt>rand31()</tt>, restoring its full period, and redesigned
-    <tt>rand31_u32()</tt>.</li>
-<li><tt>sdbm_rebuild()</tt>: was not properly catching errors during
+<li>Simplified <code>rand31()</code>, restoring its full period, and redesigned
+    <code>rand31_u32()</code>.</li>
+<li><code>sdbm_rebuild()</code>: was not properly catching errors during
     copy.</li>
-<li><tt>prop_get_def()</tt>: switched to <tt>HCOPY_ARRAY()</tt> to avoid any
+<li><code>prop_get_def()</code>: switched to <code>HCOPY_ARRAY()</code> to avoid any
     size problems</li>
-<li><tt>kmsg_handle()</tt>: avoid dereferencing a potentially NULL
+<li><code>kmsg_handle()</code>: avoid dereferencing a potentially NULL
     pointer.</li>
-<li><tt>route_max_forward_ttl()</tt>: take a reference instead of a by-value
+<li><code>route_max_forward_ttl()</code>: take a reference instead of a by-value
     parameter.</li>
-<li><tt>parq_upload_remove()</tt>: fixed assertion, which was always
+<li><code>parq_upload_remove()</code>: fixed assertion, which was always
     evaluating to TRUE.</li>
 <li>Report errors if we cannot set a file non-blocking or request close on
-    <tt>exec()</tt>.</li>
+    <code>exec()</code>.</li>
 <li>Base32 decoding could fail spotting bad input due to short base32_map[]
     array.</li>
-<li><tt>search_matched()</tt>: was not counting the amount of skipped results
+<li><code>search_matched()</code>: was not counting the amount of skipped results
     in a search.</li>
-<li><tt>getgateway()</tt>: properly fallback to netstat parsing when
-    <tt>socket()</tt> fails.</li>
-<li><tt>roots_fill_closest()</tt>: avoid memory leak on the error path.</li>
+<li><code>getgateway()</code>: properly fallback to netstat parsing when
+    <code>socket()</code> fails.</li>
+<li><code>roots_fill_closest()</code>: avoid memory leak on the error path.</li>
 <li>Fixed UDP TX schedulers to allow both IPv4 and IPv6 message sending.</li>
 <li>Make sure only developers will use autogen to regenerate the property
     files.</li>
-<li><tt>dh_route()</tt>: only compress UDP query hits when GUESS queryier
+<li><code>dh_route()</code>: only compress UDP query hits when GUESS queryier
     supports them.</li>
-<li><tt>dh_route()</tt>: do not attempt UDP compression if message sent via
+<li><code>dh_route()</code>: do not attempt UDP compression if message sent via
     reliable UDP.</li>
 <li>Count UDP compression attempts and failures, including in semi-reliable
     UDP.</li>

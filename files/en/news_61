@@ -38,11 +38,11 @@ Added some gcc 4.6 <i>hot</i> / <i>cold</i> routine tagging for better
 optimizations.
 </li>
 <li>
-<tt>netmask_to_cidr()</tt>: was not using the proper metaconfig symbol to
-activate the usage of <tt>__builtin_popcount</tt>.
+<code>netmask_to_cidr()</code>: was not using the proper metaconfig symbol to
+activate the usage of <code>__builtin_popcount</code>.
 </li>
 <li>
-Updated <tt>build.sh</tt> to build an app bundle for OSX with target=osxbundle.
+Updated <code>build.sh</code> to build an app bundle for OSX with target=osxbundle.
 </li>
 <li>
 Added <i>dmg</i> to the default extension list for shared files.

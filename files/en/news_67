@@ -58,7 +58,7 @@
 </ul>
 <h5>Under the Hood</h5>
 <ul>
-<li>Fixed <tt>posix_memalign()</tt> so that we can now run with glib 2.36 and
+<li>Fixed <code>posix_memalign()</code> so that we can now run with glib 2.36 and
     upwards.</li>
 <li>[GTK] Update available ranges when the core sends a "range changed"
     event.</li>
@@ -67,60 +67,60 @@
 <li>Added UDP read-ahead statistics.</li>
 <li>Ensure "DHT values" and "DHT raw data" SDBM files are consistently
     reloaded.</li>
-<li>Fixed <tt>omalloc()</tt> memory usage accounting.</li>
-<li><tt>str_at()</tt>: fixed harmful typo causing it to seg-fault with
+<li>Fixed <code>omalloc()</code> memory usage accounting.</li>
+<li><code>str_at()</code>: fixed harmful typo causing it to seg-fault with
     negative offsets.</li>
 <li>Do not send X-Features / X-Token on follow-up HTTP requests.</li>
-<li><tt>upnp_dscv_probed()</tt>: plugged memory leak.</li>
+<li><code>upnp_dscv_probed()</code>: plugged memory leak.</li>
 <li>UPNP: extract the Service Control Protocol Definition (SCPD) URL.</li>
-<li>UPNP: monitor gateway with <tt>GetStatusInfo()</tt> if no
-    <tt>GetTotalPacketsReceived()</tt>.</li>
+<li>UPNP: monitor gateway with <code>GetStatusInfo()</code> if no
+    <code>GetTotalPacketsReceived()</code>.</li>
 <li>Some UPnP devices can advertize an API and yet return 401 (action
     invalid).</li>
-<li><tt>bigkey_hash()</tt>: more robust in case we encounter a big key and
+<li><code>bigkey_hash()</code>: more robust in case we encounter a big key and
     support is off.</li>
-<li><tt>udp_sched_write_error()</tt>: don't panic if we get an unexpected UDP
+<li><code>udp_sched_write_error()</code>: don't panic if we get an unexpected UDP
     write error.</li>
-<li>Jumbo patch: replaced most gm_[v]<tt>snprintf()</tt> with
-    str_[v]<tt>bprintf()</tt> calls.</li>
+<li>Jumbo patch: replaced most gm_[v]<code>snprintf()</code> with
+    str_[v]<code>bprintf()</code> calls.</li>
 <li>Count truncated incoming UDP messages.</li>
-<li><tt>http_got_header()</tt>: fixed harmful typo causing mishandling of
+<li><code>http_got_header()</code>: fixed harmful typo causing mishandling of
     chunked output.</li>
 <li>After 3 X-Nalt reports, move source from download mesh to the banned
     mesh.</li>
 <li>Leave banned entries in the bad mesh for at least 5 minutes.</li>
-<li><tt>cq_free()</tt>: release mutex to prevent loud warning a shutdown
+<li><code>cq_free()</code>: release mutex to prevent loud warning a shutdown
     time.</li>
 <li>When the the crash handler child fails, append decorated stack from
     parent.</li>
-<li><tt>download_data_received()</tt>: extend fileinfo when file size is
+<li><code>download_data_received()</code>: extend fileinfo when file size is
     unknown.</li>
 <li>Moved HTTP range parsing / handling from core to library
     (re-architectured).</li>
 <li>Benchmark sorting routines at startup and select the most efficient.</li>
-<li><tt>socket_udp_flush_timer()</tt>: do not process queued datagrams during
+<li><code>socket_udp_flush_timer()</code>: do not process queued datagrams during
     shutdown.</li>
-<li>Make <tt>rand31()</tt> more random, especially on the low-order bits.</li>
+<li>Make <code>rand31()</code> more random, especially on the low-order bits.</li>
 <li>Added computation of chi-squared cumulative distributions.</li>
-<li>Made <tt>entropy_random()</tt> 5 times faster on average.</li>
-<li>Prefer <tt>random_value()</tt> over <tt>random_u32()</tt> followed by bit
+<li>Made <code>entropy_random()</code> 5 times faster on average.</li>
+<li>Prefer <code>random_value()</code> over <code>random_u32()</code> followed by bit
     masking.</li>
 <li>The random layer now uses the Mersenne Twister, excepted for
-    <tt>random_bytes()</tt>.</li>
-<li><tt>hash_keyset_lookup()</tt>: was not always spotting first tomb
+    <code>random_bytes()</code>.</li>
+<li><code>hash_keyset_lookup()</code>: was not always spotting first tomb
     correctly.</li>
 <li>Let small hash tables be denser than larger ones.</li>
 <li>Tweaked hash tables and derivatives for smaller memory footprint.</li>
-<li><tt>guess_pmsg_free()</tt>: make sure pool does not contain host before
+<li><code>guess_pmsg_free()</code>: make sure pool does not contain host before
     adding it back.</li>
-<li><tt>http_send_status()</tt>: was not properly detecting too large HTTP
+<li><code>http_send_status()</code>: was not properly detecting too large HTTP
     headers.</li>
 <li>Semi-reliable RX UDP: re-ack everything well before the whole message
     expires.</li>
 <li>Adjust maximum DHT value count per IP/network dynamically with DHT
     size.</li>
 <li>Be careful when truncating body on an HTTP kept-alive connection.</li>
-<li><tt>ensure_unicity()</tt>: assume pidfile is locked when lock owner bears
+<li><code>ensure_unicity()</code>: assume pidfile is locked when lock owner bears
     our PID.</li>
 <li>Added protection when writing important files on filesystems like
     "ext4".</li>

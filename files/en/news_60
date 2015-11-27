@@ -13,7 +13,7 @@
 <li>Added the ability to query for partial files as well.</li>
 <li>Added "What's New?" queries.</li>
 <li>Added smart search stopping / resuming options.</li>
-<li>Added command-line option <tt>--minimized</tt>;
+<li>Added command-line option <code>--minimized</code>;
     useful when auto-starting gtk-gnutella.</li>
 </ul>
 

@@ -25,28 +25,28 @@
 </ul>
 <h5>Under the Hood</h5>
 <ul>
-<li><tt>shared_file_get_index()</tt>: fixed lower boundary of assertion.</li>
-<li><tt>fi_find_aggressive_candidate()</tt>: prevent division by 0 if no
+<li><code>shared_file_get_index()</code>: fixed lower boundary of assertion.</li>
+<li><code>fi_find_aggressive_candidate()</code>: prevent division by 0 if no
     starving download.</li>
-<li>Fixed possible race condition between <tt>bg_task_wakeup()</tt> and
-    <tt>bg_sched_sleep()</tt>.</li>
+<li>Fixed possible race condition between <code>bg_task_wakeup()</code> and
+    <code>bg_sched_sleep()</code>.</li>
 <li>Regenerated Configure to allow BFD library detection for newest
     versions.</li>
-<li><tt>teq_post_rpc()</tt>: use linearily increasing timeouts to limit
+<li><code>teq_post_rpc()</code>: use linearily increasing timeouts to limit
     logging.</li>
-<li><tt>str_vncatf()</tt>: made recursion checks before calling
-    <tt>s_minicarp()</tt> thread-safe.</li>
-<li><tt>ut_frag_pmsg_free()</tt>: avoid SIGSEGV when fragment was already
+<li><code>str_vncatf()</code>: made recursion checks before calling
+    <code>s_minicarp()</code> thread-safe.</li>
+<li><code>ut_frag_pmsg_free()</code>: avoid SIGSEGV when fragment was already
     acknowledged.</li>
-<li><tt>deflate_add()</tt>: refuse further data when the TX deflate layer had
+<li><code>deflate_add()</code>: refuse further data when the TX deflate layer had
     an error.</li>
-<li><tt>search_dequeue_all_nodes()</tt>: must also iterate on G2 nodes.</li>
-<li><tt>cq_heartbeat()</tt>: only log delay adjustements when running with
+<li><code>search_dequeue_all_nodes()</code>: must also iterate on G2 nodes.</li>
+<li><code>cq_heartbeat()</code>: only log delay adjustements when running with
     cq_debug &gt; 0.</li>
-<li><tt>g2_node_handle()</tt>: silence warnings when not debugging.</li>
-<li>Allow <tt>xfl_find_freelist_index()</tt> to work with gcc 4.9 and
+<li><code>g2_node_handle()</code>: silence warnings when not debugging.</li>
+<li>Allow <code>xfl_find_freelist_index()</code> to work with gcc 4.9 and
     optimizations.</li>
-<li><tt>keys_offload()</tt>: do not process if the key layer was
+<li><code>keys_offload()</code>: do not process if the key layer was
     shutdown.</li>
 
 </ul>

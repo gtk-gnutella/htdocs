@@ -23,7 +23,7 @@
 <li>Limit pongs sent to transient nodes in order to save some bandwidth.</li>
 <li>Avoid sending too many pongs on uncompressed connections.</li>
 <li>Added README.Windows to document compile instructions for Windows.</li>
-<li>Avoid "<tt>write()</tt> failed: EPIPE" messages from the shell for local
+<li>Avoid "<code>write()</code> failed: EPIPE" messages from the shell for local
     client writes.</li>
 <li>Added GUESS link cache size to the general statistics pane.</li>
 <li>GUESS now uses a dynamically computed outgoing bandwidth limit.</li>
@@ -57,8 +57,8 @@
 <li>Avoid random shell connection failures on Windows.</li>
 <li>An un-parseable token in a shell command led to an assertion failure.</li>
 <li>Fixed the "alignment optimized" code branch of
-    <tt>msort_with_tmp()</tt>.</li>
-<li>Fixed bad copy-n-paste that could lead to <tt>malloc()</tt> freelist
+    <code>msort_with_tmp()</code>.</li>
+<li>Fixed bad copy-n-paste that could lead to <code>malloc()</code> freelist
     corruption.</li>
 <li>Fixed GUESS corner-case crash when handling an RPC timeout.</li>
 <li>[GTK] Avoid crash when user clears the upload statistics
@@ -77,8 +77,8 @@
     info.</li>
 <li>When logging from another thread (not main), include the small thread
     ID.</li>
-<li>Switched <tt>halloc()</tt> to <tt>xpmalloc()</tt> instead of
-    <tt>walloc()</tt>.</li>
+<li>Switched <code>halloc()</code> to <code>xpmalloc()</code> instead of
+    <code>walloc()</code>.</li>
 <li>Added thread-private zones for blocks &lt;= 512 bytes for faster
     allocations.</li>
 <li>Optimized access to thread-private information, via a lock-free fast
@@ -95,7 +95,7 @@
 <li>Sort SHA1s in the search.xml file.</li>
 <li>Clear whole routing table when switching between Ultra and Leaf
     modes.</li>
-<li>Protect <tt>xfree()</tt> from algorithmic complexity when handling
+<li>Protect <code>xfree()</code> from algorithmic complexity when handling
     bursts.</li>
 <li>Added xmalloc garbage collector to reclaim fragments from freelist.</li>
 <li>Allow the "TLS handshake failed" string to be translated.</li>
@@ -106,7 +106,7 @@
 <li>Assume we're not firewalled right after initial UPnP or NAT-PMP
     configuration.</li>
 <li>Avoid compiler warnings on Windows.</li>
-<li>Make sure <tt>random_value()</tt> returns uniformly distributed random
+<li>Make sure <code>random_value()</code> returns uniformly distributed random
     numbers.</li>
 <li>Added ability to filter dumped traffic by IP address.</li>
 <li>Changed %F to display whole mantissa before switching to scientific
