@@ -38,6 +38,10 @@ h5 {
 	font-size: 0.83em;
 }
 
+code {
+	font-family: monospace;
+}
+
 .nav {
 	font-weight: bold
 }
