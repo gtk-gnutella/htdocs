@@ -24,19 +24,16 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 }
 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!DOCTYPE HTML>
 <html lang="<?php echo LANG ?>">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Style-Type" content="text/css" />
-    <meta http-equiv="Content-Script-Type" content="text/javascript" />
 
     <?php iceinclude("title", 0) ?>
 
     <link rel="stylesheet" type="text/css" href="/default.css" />
     <link rel="icon" href="/images/favicon.png" type="image/png" />
     <link rel="start" href="/" />
-    <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net" />
     <link rel="copyright" href="https://sourceforge.net/projects/gtk-gnutella" />
     <link rel="alternate"
           type="text/html"
