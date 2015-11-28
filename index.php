@@ -136,63 +136,47 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
       <?php maincontent() ?>
     </div>
 
-      <hr class="hidden">
+<hr class="hidden" />
 
-      <div class="boxed">
-        <a class="image" href="http://sourceforge.net/projects/alexandria">
-            <img
-              src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
-              alt="SourceForge.net Logo" width="88" height="31"></a>
+<div class="boxed">
+    <a class="image" href="http://sourceforge.net/projects/alexandria">
+      <img src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
+      alt="SourceForge.net Logo" width="88" height="31" /></a>
 	&nbsp;
-        <a class="image" href="http://glade.gnome.org/">
-            <img src="/images/glade-banner.png"
-              alt="Glade" width="100" height="45"></a>
+   <a class="image" href="http://glade.gnome.org/">
+      <img src="/images/glade-banner.png" alt="Glade" width="100" height="45" /></a>
 	&nbsp;
-        <a class="image"
-            	href="http://validator.w3.org/check?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
-            <img src="/images/valid-html401.png"
-              alt="Valid&nbsp;HTML&nbsp;4.01" width="88" height="31"></a>
-	&nbsp;
-        <a class="image"
-            href="http://jigsaw.w3.org/css-validator/validator?uri=http://gtk-gnutella.sourceforge.net/<?php echo LANG . '%3fpage%3d' . PAGE ?>">
-            <img src="/images/valid-css.png"
-              alt="Valid&nbsp;CSS" width="88" height="31"></a>
-
 	<a class="image"
 		href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467"><img
 		src="http://images.sourceforge.net/images/xml.png"
 		width="36" height="14"
 		alt="RSS Feed Available"
-		title="RSS Feed Available"
-		></a>
+		title="RSS Feed Available" /></a>
 	&nbsp;
 	<a class="image"
 		href="http://www.ohloh.net/projects/491"><img
 		src="http://www.ohloh.net/projects/491/badge.gif"
 		width="100" height="16"
 		alt="Ohloh Metrics"
-		title="Ohloh Metrics"
-		></a>
+		title="Ohloh Metrics" /></a>
 	&nbsp;
 	<a class="image"
 		href="https://scan.coverity.com/projects/2178"><img
 		alt="Coverity Scan Build Status"
 	  	width="95" height="18"
-		src="https://scan.coverity.com/projects/2178/badge.svg"
-		></a>
+		src="https://scan.coverity.com/projects/2178/badge.svg" /></a>
 	&nbsp;
 	<a class="image"
 		href="https://github.com/gtk-gnutella/gtk-gnutella"><img
 		alt="gtk-gnutella at GitHub"
 	  	width="32" height="32"
-		src="/images/GitHub-Mark-32px.png"
-		></a>
+		src="/images/GitHub-Mark-32px.png" /></a>
 	&nbsp;
-        <div style="text-align: center;">
+   <div style="text-align: center;">
 	<?php iceinclude("sidenav_copyright", 0) ?>
 	</div>
 
-      </div>
+</div>
 
   </body>
 </html>
