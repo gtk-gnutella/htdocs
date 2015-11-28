@@ -27,50 +27,50 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="<?php echo LANG ?>">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="Content-Style-Type" content="text/css">
-    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
 
     <?php iceinclude("title", 0) ?>
 
-    <link rel="stylesheet" type="text/css" href="/default.css">
-    <link rel="icon" href="/images/favicon.png" type="image/png">
-    <link rel="start" href="/">
-    <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net">
-    <link rel="copyright" href="https://sourceforge.net/projects/gtk-gnutella">
+    <link rel="stylesheet" type="text/css" href="/default.css" />
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link rel="start" href="/" />
+    <link rev="made" href="mailto:gtk-gnutella-devel@lists.sf.net" />
+    <link rel="copyright" href="https://sourceforge.net/projects/gtk-gnutella" />
     <link rel="alternate"
           type="text/html"
           href="/en/?page=<?php echo PAGE ?>"
           hreflang="en"
-          title="English version">
+          title="English version" />
     <link rel="alternate"
           href="/de/?page=<?php echo PAGE ?>"
           hreflang="de"
-          title="Deutsche &Uuml;bersetzung">
+          title="Deutsche &Uuml;bersetzung" />
     <link rel="alternate"
           href="/el/?page=<?php echo PAGE ?>"
           hreflang="el"
-          title="Ελληνικά">
+          title="Ελληνικά" />
     <link rel="alternate"
           href="/fr/?page=<?php echo PAGE ?>"
           hreflang="fr"
-          title="Traduction fran&ccedil;aise">
+          title="Traduction fran&ccedil;aise" />
     <link rel="alternate"
           href="/ja/?page=<?php echo PAGE ?>"
           hreflang="ja"
-          title="日本語版">
+          title="日本語版" />
     <link rel="alternate"
           href="/nl/?page=<?php echo PAGE ?>"
           hreflang="nl"
-          title="Nederlandse vertaling">
+          title="Nederlandse vertaling" />
     <link rel="alternate"
           href="/uk/?page=<?php echo PAGE ?>"
           hreflang="uk"
-          title="Ukrainian version">
+          title="Ukrainian version" />
     <link rel="alternate"
           href="/zh/?page=<?php echo PAGE ?>"
           hreflang="zh"
-          title="中文">
+          title="中文" />
 
     <?php iceinclude("sections", 0) ?>
     <?php iceinclude("sponsors_css", 0) ?>
@@ -180,7 +180,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 	<a class="image"
 		href="https://scan.coverity.com/projects/2178"><img
 		alt="Coverity Scan Build Status"
-	  	width="95px" height="18px"
+	  	width="95" height="18"
 		src="https://scan.coverity.com/projects/2178/badge.svg"
 		></a>
 	&nbsp;
