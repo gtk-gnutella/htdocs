@@ -4,7 +4,36 @@
 
 <p>
 	This glossary derives from the old <a href="/manual/">Online Manual</a>. More terms are being included.
+	Some definitions derive from the <a href="http://rfc-gnutella.sourceforge.net/src/rfc-0_6-draft.html" target="_blank">
+	Gnutella Protocol Development draft</a>.
 </p>
+
+
+<div class="glossary_capital">B</div>
+
+<div class="glossary_term">Bootstrap</div>
+
+<p>
+	The process of joining the Gnutella network by discovering peers is called bootstrapping. More informations <a href="?page=bootstrap">here</a>.
+</p>
+
+<div class="glossary_term">Bye</div>
+
+<p>
+	This is an optional message used to inform the remote host that the connection is being closed
+	and the reason for doing so.
+</p>
+
+
+<div class="glossary_capital">F</div>
+
+<div class="glossary_term">Flooding</div>
+
+<p>
+	<em>Flooding</em> is a simple but inefficient P2P routing algorithm which sends messages to all the connected nodes in order
+	to reach destination.
+</p>
+
 
 <div class="glossary_capital">G</div>
 
@@ -29,6 +58,14 @@
 	the case. However, they may also be more resilient in the current form.
 </p>
 
+<div class="glossary_term">GUESS (Gnutella UDP Extension for Scalable Searches)</div>
+
+<p>
+	As opposed to <em>flooding</em> algorithm, with GUESS routing nodes are queried one at a time. Each node must keep a
+	cache of known and trusted peers able to accept queries and the nodes are picked up randomly. This routing method is
+	considered more efficient and safe compared to flooding.
+</p>
+
 
 <div class="glossary_capital">L</div>
 
@@ -37,6 +74,56 @@
 <p>
 	A leaf is the basic connection to the GnutellaNet. A leaf typically connects to three or four ultrapeers.
 	The ultrapeers route searches and keep their leaves connected to the GnutellaNet.
+</p>
+
+
+<div class="glossary_capital">M</div>
+
+<div class="glossary_term">Message</div>
+
+<p>
+	<em>Messages</em> are the entity in which information is transmitted over the network. Synonyms are <em>packet</em> and
+	<em>descriptor</em>.
+</p>
+
+
+<div class="glossary_capital">P</div>
+
+<div class="glossary_term">Ping</div>
+
+<p>
+	A <em>Ping</em> is a message sent by a servent trying to actively discover hosts on the network.
+	A servent receiving a Ping message is expected to respond with one or more Pong messages.
+</p>
+
+<div class="glossary_term">Pong</div>
+
+<p>
+	A <em>Pong</em> is the response message to a Ping. It includes the address of a connected Gnutella servent, the listening port of
+   that servent, and information regarding the amount of data it is making available to the network.
+</p>
+
+<div class="glossary_term">Push</div>
+
+<p>
+	This is a mechanism that allows a firewalled servent to contribute file-based data to the network.
+</p>
+
+
+<div class="glossary_capital">Q</div>
+
+<div class="glossary_term">Query</div>
+
+<p>
+	Sending a <em>Query</em> is the primary mechanism for searching the distributed network.
+	A servent receiving a Query message will respond with a QueryHit if a match is found against its local data set.
+</p>
+
+<div class="glossary_term">QueryHit</div>
+
+<p>
+	A <em>QueryHit</em> is the response to a Query. This message provides the recipient with enough information to acquire the data
+	matching the corresponding Query.
 </p>
 
 
@@ -97,6 +184,23 @@
 <p>
 	Suppose you wish to find information about apples. You might use a search like <em>apples -computers</em>. 
 	You may get even more relevant results by using <em>apples +fruit</em>.
+</p>
+
+<div class="glossary_term">Servent</div>
+
+<p>
+	&quot;Servent&quot; word derives from the fusion of server+client. A node in a P2P network is called <em>servent</em> because of the dual nature of both server and client. 
+</p>
+
+
+<div class="glossary_capital">T</div>
+
+<div class="glossary_term">Time-To-Live (TTL)</div>
+
+<p>
+	TTL is the number of times a message will be forwarded by Gnutella servents before it is removed from the network.
+	Each servent will decrement the TTL value before passing it on to another servent.
+	When the TTL value reaches 0, the message will no longer be forwarded to avoid eccessive network traffic.
 </p>
 
 
