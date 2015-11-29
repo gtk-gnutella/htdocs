@@ -148,8 +148,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 	&nbsp;
 	<a class="image"
 		href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467"><img
-		src="images/feed-icon-28x28.png"
-		width="36" height="14"
+		src="/images/feed-icon-28x28.png"
 		alt="RSS Feed Available"
 		title="RSS Feed Available" /></a>
 	&nbsp;
