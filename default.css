@@ -54,11 +54,6 @@ a.navlink:active,a.navlink:hover {
 	text-decoration: underline
 }
 
-code {
-	font-weight: bold
-}
-
-
 div.sidebar {
 /*
 	width: 14em;
@@ -110,12 +105,12 @@ div.sb_section {
 }
 
 a.rss {
-	font-size:large;
-	font-weight:bold;
+	font-size: large;
+	font-weight: bold;
 	color: white;
 	background: #e60;
 	border: solid 2pt #f70;
-        text-decoration: none;
+   text-decoration: none;
 }
 
 div.sb_section_content {
@@ -124,11 +119,12 @@ div.sb_section_content {
 
 div.glossary_capital {
 	font-size: 20px;
-	font-weight:bold;
+	font-weight: bold;
+	margin-bottom: 0.5em;
 }
 
 div.glossary_term {
-	font-weight:bold;
+	font-weight: bold;
 }
 
 .hidden {
@@ -143,7 +139,7 @@ img {
 }
 
 .image {
-        text-align: center
+	text-align: center
 }
 
 .image img {

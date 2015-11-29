@@ -138,7 +138,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 
 <hr class="hidden" />
 
-<div class="boxed">
+<div class="boxed" style="text-align: center">
     <a class="image" href="http://sourceforge.net/projects/alexandria">
       <img src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
       alt="SourceForge.net Logo" width="88" height="31" /></a>
