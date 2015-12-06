@@ -118,7 +118,8 @@ div.sb_section_content {
 }
 
 div.glossary_capital {
-	font-size: 20px;
+	color: blue;
+	font-size: 28px;
 	font-weight: bold;
 	margin-bottom: 0.5em;
 }
