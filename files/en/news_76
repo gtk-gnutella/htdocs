@@ -5,7 +5,6 @@
 <li>TLS upgrade of existing connections.</li>
 <li>Inbound HTTPS connections.</li>
 <li>Use of a supervisor process to relaunch gtk-gnutella on crashes.</li>
-<li>TLS upgrade of existing connections.</li>
 </ul>
 
 <p>The TLS upgrade allows connections that have started without TLS to
