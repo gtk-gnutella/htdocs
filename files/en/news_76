@@ -1,0 +1,214 @@
+<h4>13 December 2015, Version 1.1.7 Released</h4>
+
+<p>This release adds support for new features:</p>
+<ul>
+<li>TLS upgrade of existing connections.</li>
+<li>Inbound HTTPS connections.</li>
+<li>Use of a supervisor process to relaunch gtk-gnutella on crashes.</li>
+<li>TLS upgrade of existing connections.</li>
+</ul>
+
+<p>The TLS upgrade allows connections that have started without TLS to
+   negotiate TLS on the fly without having to reconnect. They are flagged as "e"
+   to show that encryption was dynamically added, as opposed to "E" which
+   indicates an initial TLS connection.</p>
+
+<p>Certificates are now automatically generated and this allows HTTPS
+   connections from browsers. For now this is of limited use, but it will come
+   handy in the near future when building a web-enabled GUI.</p>
+
+<p>To be more resilient against crashes, gtk-gnutella now automatically
+   launches a supervisor process that will launch the real gtk-gnutella as a
+   child process and monitor its fate, restarting a new process when the old one
+   failed. This is far more robust than having the process
+   re-<code>exec()</code> itself at crash time since there are some crashing
+   conditions that do not even allow the process to go that far in the crash
+   handling...</p>
+
+<p>On Windows, provided you have installed Cygwin's gdb, crash logs will now
+   contain a gdb backtrace of the failing process, making analysis of what went
+   wrong easier than with a simple stack trace.</p>
+
+<p>Your previous GUID and KUID will be regenerated the next time you restart
+   due to a new algorithm used to detect that a configuration file is not
+   accidentally reused on another machine: the host name is now included,
+   instead of just the physical file information. So when moving a disk to
+   another machine, or simply cloning an existing virtual machine, we are no
+   longer going to reuse these IDs which are supposed to be unique by properly
+   detecting that the information was copied over.</p>
+
+<p>A bug in <code>open_read()</code> caused the Geo IP database to not be
+   loaded on Windows.</p>
+
+<p>Finally, all the options given to gtk-gnutella can now be abbreviated as
+   long as they are not ambiguous (i.e. enough is given to make them
+   non-ambiguous). For instance, given the current set of options, --p would be
+   ambiguous but --s will always mean --shell. However, --pi is not ambiguous
+   and refers to --ping.</p>
+
+<h5>Improvements</h5>
+<ul>
+<li>By default, gtk-gnutella now supervises its children to restart them.</li>
+<li>Now allows incoming HTTPS connections.</li>
+<li>Added support for Gnutella connection upgrade to TLS.</li>
+<li>Added support of RFC-2817 for upgrading to TLS within HTTP/1.1.</li>
+<li>Dump symbolic stack when crashing in supervised mode with our parent.</li>
+<li>VMM: added new flag to signal OOM condition and be aggressive with the
+    cache.</li>
+<li>Options can now be abbreviated as long as they are not ambiguous.</li>
+<li>Added support for Virtual Memory Emergency Allocation (VMEA).</li>
+<li>Pulled latest translations from Transifex.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Make sure <code>node_by_guid()</code> cannot return a G2 node!</li>
+<li>VMM: fixed memory allocation logic during crashes.</li>
+<li><code>open_read()</code>: fixed logic on Windows when no renaming is
+    requested.</li>
+<li>Make sure we don't restart nor pause a failing process on --shell or
+    --ping.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Added <code>spopen()</code>, a simple <code>popen()</code> bypassing the
+    shell.</li>
+<li>Added Windows-specific PROT_GUARD protection type for
+    <code>mprotect()</code>.</li>
+<li>Added <code>log_show_pid()</code> to direct the logging layer to show or
+    hide the PID.</li>
+<li>Added library support for file locks.</li>
+<li>Added <code>compat_process_exists()</code> and
+    <code>compat_kill_zero()</code>.</li>
+<li>Added ability to dynamically limit <code>walloc()</code> usage, remapping
+    to <code>xmalloc()</code>.</li>
+<li>Added ability to disable <code>halloc()</code> at runtime, remapping it
+    to <code>xmalloc()</code>.</li>
+<li>Added specific PID file for locking out the supervisor process.</li>
+<li>Do not install periodic <code>xgc()</code> and <code>zgc()</code> unless
+    running in a long-term process.</li>
+<li>Refactored <code>main()</code> initializations to limit memory usage in
+    the supervisor.</li>
+<li>Windows: stop fatal recursion when the VMM layer extends the pmap.</li>
+<li>Windows: revisited exception logging to give more details and simplify
+    code.</li>
+<li>Windows: reworked stack overflow detection logic.</li>
+<li>Windows: added <code>launch()</code> and <code>spopen()</code>
+    support.</li>
+<li>Windows: added support for <code>wait()</code> and <code>waitpid()</code>
+    on launched processes.</li>
+<li>Windows: launch gdb in a separate thread to get symbols when
+    crashing.</li>
+<li>Windows: re-worked early init code to allow memory allocation.</li>
+<li>Windows: will now be building with gnutls-3.4.5.</li>
+<li>Windows: added <code>getppid()</code> support.</li>
+<li>Windows: added <code>getuid()</code>, <code>geteuid()</code>,
+    <code>getgid()</code> and <code>getegid()</code> emulations.</li>
+<li>Windows: try to have <code>SymInitialize()</code> done as soon as
+    possible.</li>
+<li>Windows: added support for getrusage(RUSAGE_CHILDREN).</li>
+<li>Make sure the logic used to construct fallback path is consistent.</li>
+<li>Refactored Windows socket initialization.</li>
+<li>Refactored <code>setproctitle()</code>, adding <code>getprogname()</code>
+    and <code>setprogname()</code> as well.</li>
+<li>Revisited <code>crash_mode()</code> to include the notion of criticity
+    level.</li>
+<li>Switched <code>rand31()</code> to the Park and Miller algorithm.</li>
+<li>SDBM: added <code>fadvise()</code> hint for page accesses, with a
+    "random" access mode.</li>
+<li>Use <code>short_time_ascii()</code> instead of <code>short_time()</code>
+    in log messages.</li>
+<li>TLS: use our own random number generators.</li>
+<li>TLS: use new types, with the _t trailing prefix.</li>
+<li>TLS: added support for a global audit log, available since gnutls
+    3.0.</li>
+<li>TLS: added vectorized push routine.</li>
+<li>TLS: added generation of private server key at startup if missing.</li>
+<li>TLS: don't need anonymous server credentials if we have a
+    certificate.</li>
+<li>TLS: added generation of self-signed certificate at startup if
+    missing</li>
+<li>TLS: removed ARCFOUR-40 from the list of overrides for GnuTLS 3.4.5.</li>
+<li>TLS: enhanced to support GnuTLS 3.x and allow HTTPS connections.</li>
+<li>TLS: the "custom I/O" push/pull routines are now the norm.</li>
+<li>TLS: normalized logging to always use G_STRFUNC for non-informative
+    messages.</li>
+<li><code>SHA1_process_message_block()</code>: make sure SHA1 is correct on
+    big-endian systems.</li>
+<li><code>cq_init()</code>: always warn if callout queue exists, regardless
+    of its thread.</li>
+<li><code>cq_init()</code>: loudly warn if the callout queue was created
+    automatically before.</li>
+<li><code>crash_generate_crashlog()</code>: dump thread locks before current
+    stack.</li>
+<li><code>crash_init()</code>: now calls <code>stacktrace_init()</code> with
+    immediate symbol loading.</li>
+<li><code>crash_invoke_inspector()</code>: also attempt to launch gdb on
+    Windows.</li>
+<li><code>crash_invoke_inspector()</code>: force emission of decorated
+    stacks.</li>
+<li><code>crash_try_reexec()</code>: do not <code>exec()</code> ourselves
+    when we have a supervising parent.</li>
+<li><code>download_get_server_name()</code>: when name changes, reset some
+    internal attributes.</li>
+<li><code>entropy_seed()</code>: make sure we're correctly seeding our KISS
+    RNG.</li>
+<li><code>file_locate_from_path()</code>: tweaked for Windows to add implicit
+    "." in PATH.</li>
+<li><code>gtk_gnutella_atexit()</code>: do nothing if we're already
+    crashing.</li>
+<li><code>gwc_parse_dispatch_lines()</code>: avoid using "eof", it shadows a
+    global on Windows.</li>
+<li><code>hash_table_replace()</code>: fixed logic when inserting into a
+    fix-sized table.</li>
+<li><code>kuid_random_fill()</code>: use <code>random_key_bytes()</code> to
+    generate unique KUID.</li>
+<li><code>mingw_exception()</code>: maintain exception recursive depth per
+    thread.</li>
+<li><code>mingw_execve()</code>: redesigned to avoid using external
+    resources.</li>
+<li><code>mingw_fcntl()</code>: added F_RDLCK (read-lock) support for F_SETLK
+    operations.</li>
+<li><code>mingw_fcntl()</code>: return ENOSYS for unimplemented parts, not
+    EINVAL!</li>
+<li><code>mingw_signal()</code>: be thread-safe, in case of concurrent
+    updates.</li>
+<li><code>mingw_sigraise()</code>: trace signal, since it could be the
+    prelude to a crash.</li>
+<li><code>node_can_accept_connection()</code>: even when "offline", accept
+    nearby hosts.</li>
+<li><code>node_is_now_connected()</code>: watch out for disconnected nodes
+    after RX injection.</li>
+<li><code>pncs_convert()</code>: avoid using the stack, prefer a
+    thread-private buffer.</li>
+<li><code>sdbm_set_volatile()</code>: forgot to grab lock on entry.</li>
+<li><code>sdbm_thread_datum()</code>: avoid too many re-allocation overhead,
+    sacrificing memory.</li>
+<li><code>settings_random_save()</code>: now merge randomness instead of just
+    superseding it.</li>
+<li><code>shell_exec_thread_list()</code>: use configured stack size if
+    available.</li>
+<li><code>signal_perform_cleanup()</code>: trace signals we get during
+    cleanup.</li>
+<li><code>spinlock_crash_mode()</code>: dump PID as well in case process
+    forked.</li>
+<li><code>stack_print_decorated_to()</code>: switch to lighter tracing if we
+    hit an OOM.</li>
+<li><code>thread_launch()</code>: warn once if
+    <code>pthread_attr_setstacksize()</code> returns an error.</li>
+<li><code>thread_launch_register()</code>: force new PROT_GUARD protection on
+    red-zone page.</li>
+<li><code>tls_handshake()</code>: log IP:port and whether remote is client or
+    server.</li>
+<li><code>tm_init()</code>: now controls whether to start the time
+    thread.</li>
+<li><code>unique_file_token()</code>: include the hostname into the unique
+    file ID.</li>
+<li><code>vxml_parser_remove_buffer()</code>: application logic was done only
+    when debugging!</li>
+<li><code>xallocate()</code>: when crashing, use <code>omalloc()</code> for
+    small blocks, instead of <code>sbrk()</code>.</li>
+
+</ul>
+<!-- end of release 1.1.7 -->
