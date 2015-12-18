@@ -1,0 +1,15 @@
+<h4>18 December 2015, Version 1.1.8 Released</h4>
+
+<p>This is an emergency bug-fixing release.</p>
+
+<p>It addresses systematic crashes on some platforms, right at startup time,
+   and prevents random deadlocks on OS/X.</p>
+
+<p>The systematic crash was due to an innocent change, which actually
+   perturbed the order of the initialization routines and, depending on the
+   conditions, caused an assertion failure during one of the thread startup.
+   Curiously, the error manifests randomly and does not seem to depend on the OS
+   but rather on other subtle environment issues: one Linux distribution could
+   be fine whilst another was hit by the bug.</p>
+
+<!-- end of release 1.1.8 -->
