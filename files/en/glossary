@@ -17,6 +17,15 @@
 	The process of joining the Gnutella network by discovering peers is called bootstrapping. More informations <a href="?page=bootstrap">here</a>.
 </p>
 
+<div class="glossary_term">Bucket (of a routing table)</div>
+
+<p>
+	A <em>bucket</em> is a portion of the node ID space covered by the routing table. Each bucket can only hold K nodes, currently eight, before becoming &quot;full&quot;. When a bucket is full of known good nodes, no more nodes may be added unless our own node ID falls within the range of the bucket. In that case, the bucket is replaced by two new buckets each with half the range of the old bucket and the nodes from the old bucket are distributed among the two new ones. This is called &quot;bucket SPLIT&quot;. The opposite operation involving buckets is called MERGE.<br /> Every node maintains a routing table of known good nodes. The nodes in the routing table are used as starting points for queries in the DHT. Nodes from the routing table are returned in response to queries from other nodes. It is important that each node's routing table must contain only known good nodes. A good node is a node has responded to one of our queries within the last 15 minutes. A node is also good if it has ever responded to one of our queries and has sent us a query within the last 15 minutes. After 15 minutes of inactivity, a node becomes questionable. Nodes become bad when they fail to respond to multiple queries in a row. Nodes that we know are good are given priority over nodes with unknown status.<br />
+	
+	The above informations have been readapted from  <a href="http://www.bittorrent.org/beps/bep_0005.html" target="_blank">BitTorrent DHT protocol</a> where more details can be found. 
+</p>
+
+
 <div class="glossary_term">Bye</div>
 
 <p>
@@ -33,6 +42,21 @@
 	The entity in which information is transmitted over the network. Same as <em>message</em>.
 </p>
 
+<div class="glossary_term">DHT</div>
+
+<p>
+	Distributed Hash Table (DHT) is a <em>hash table</em> distributed among Gnutella network nodes. Gtk-Gnutella uses an implementation of Kademlia for its DHT. Kademlia is also used for other p2p networks (such as eDonkey) but storing different keys and values, therere preventing inter-operability between DHT of different p2p networks. In Gnutella, DHT is used for exact lookups, alternate locations, push-proxies, etc. but not for keywords search. Operations such as <em>lookup, publish, store, etc.</em> are typically performed in a DHT whose nodes can be either active or passive.
+</p>
+
+
+<div class="glossary_capital">E</div>
+
+<div class="glossary_term">EAR</div>
+
+<p>
+	<em>EAR</em> stands for &quot;Extra Acknowledgement Request&quot;.
+</p>
+
 
 <div class="glossary_capital">F</div>
 
@@ -40,7 +64,7 @@
 
 <p>
 	<em>Flooding</em> is a simple but inefficient P2P routing algorithm which sends messages to all the connected nodes in order
-	to reach destination.
+	to reach destination. The flooding algorithm have been replaced by the more efficient <em>GUESS</em> algorithm.
 </p>
 
 
@@ -62,7 +86,7 @@
 <div class="glossary_term">GnutellaNet</div>
 
 <p>
-	The GnutellaNet is an <em>overlay</em> network. This means it is a network that sits on top of the normal internet. 
+	The GnutellaNet (or &quot;Gnutella&quot; in short) is an <em>overlay</em> network. This means it is a network that sits on top of the normal internet. 
 	GnutellaNet is <em>unstructured</em>. This just means that no particular computer or group of computers controls
 	GnutellaNet; it is probably more democratic than most governments.
 </p>
