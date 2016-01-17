@@ -11,11 +11,19 @@
 
 <div class="glossary_capital">B</div>
 
+<div class="glossary_term">Bandwidth <em>hint</em> for GUESS querying</div>
+
+<p>
+	This is termes <em>bandwidth hint</em> because GUESS uses UDP and cannot fraction large messages to emit just a few bytes. Therefore, the bandwidth is just a hint because it can be exceeded if a set of queries need to be made and their total amount exceeds the allocated bandwidth. Lower values means we can send less queries, and therefore the overall querying is slowed down (meaning the total querying will take longer) because each query is sent to <em>one</em> GUESS ultrapeer.
+</p>
+
+
 <div class="glossary_term">Bootstrap</div>
 
 <p>
 	The process of joining the Gnutella network by discovering peers is called bootstrapping. More informations <a href="?page=bootstrap">here</a>.
 </p>
+
 
 <div class="glossary_term">Bucket (of a routing table)</div>
 
@@ -76,6 +84,13 @@
 	G2 Hubs in Gnutella2 network are equivalent to Ultrapeers in GnutellaNet. 
 	GTK-Gnutella usually connects to 2 G2 Hubs behaving as a leaf node on Gnutella2 network.
 </p>
+
+<div class="glossary_term">GGEP</div>
+
+<p>
+	Gnutella Generic Extension Protocol (GGEP) includes new functions added to the original Gnutella 0.4 protocol: more informations <a href="http://rfc-gnutella.sourceforge.net/src/GnutellaGenericExtensionProtocol.0.51.html" target="_blank">here</a>.
+</p>
+
 
 <div class="glossary_term">GIV</div>
 
@@ -212,6 +227,13 @@
 </p>
 
 
+<div class="glossary_term">RX</div>
+
+<p>
+	RX stands for <em>Reception</em>, opposite of <em>Transmission</em>.
+</p>
+
+
 <div class="glossary_capital">S</div>
 
 <div class="glossary_term">search literals</div>
@@ -278,7 +300,21 @@
 </p>
 
 
+<div class="glossary_term">SOAP</div>
+
+<p>
+	Simple Object Access Protocol (SOAP) is a lightweight XML-based protocol for exchange of information in a decentralized, distributed environment like P2P networks. More informations <a href="https://www.w3.org/TR/2000/NOTE-SOAP-20000508/" target="_blank">here</a>.
+</p>
+
+
 <div class="glossary_capital">T</div>
+
+<div class="glossary_term">THEX</div>
+
+<p>
+	The Tree Hash EXchange (THEX) format is used for exchanging Merkle Hash Trees built up from the subrange hashes of discrete digital files. More informations <a href="http://adc.sourceforge.net/draft-jchapweske-thex-02.html" target="_blank">here</a>.
+</p>
+
 
 <div class="glossary_term">Time-To-Live (TTL)</div>
 
@@ -286,6 +322,13 @@
 	TTL is the number of times a message will be forwarded by Gnutella servents before it is removed from the network.
 	Each servent will decrement the TTL value before passing it on to another servent.
 	When the TTL value reaches 0, the message will no longer be forwarded to avoid eccessive network traffic.
+</p>
+
+
+<div class="glossary_term">TX</div>
+
+<p>
+	TX stands for <em>Transmission</em>.
 </p>
 
 

@@ -118,14 +118,15 @@ div.sb_section_content {
 }
 
 div.glossary_capital {
-	color: blue;
-	font-size: 28px;
+	color: red;
+	font-size: 32px;
 	font-weight: bold;
 	margin-bottom: 0.5em;
 }
 
 div.glossary_term {
 	font-weight: bold;
+	font-size: larger;
 }
 
 .hidden {
