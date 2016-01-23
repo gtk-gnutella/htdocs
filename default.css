@@ -107,6 +107,7 @@ div.sb_section {
 	border-top: solid 2px #D3D3D3;
 	font-size: large;
 	font-weight: bold;
+	line-height: 1.5em;
 }
 
 a.rss {
@@ -159,6 +160,10 @@ img {
 
 .title_image {
 	width: 100%;
+}
+
+div.sb_section {
+	line-height: 2em;
 }
 
 }
