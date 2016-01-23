@@ -27,7 +27,8 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 <!DOCTYPE HTML>
 <html lang="<?php echo LANG ?>">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <?php iceinclude("title", 0) ?>
 
@@ -77,9 +78,8 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
   <body>
     <div class="boxed" style="text-align: center">
       <div>
-        <a class="image" href="/?page=index">
-          <img src="/images/gtk-gnutella.png" 
-            width="408" height="44" alt="gtk-gnutella logo"></a>
+        <a href="/?page=index">
+          <img class="title_image" src="/images/gtk-gnutella.png" alt="gtk-gnutella logo"></a>
       </div>
       <div>
         <?php iceinclude("current_version", 0); echo VERSION ?>
