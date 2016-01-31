@@ -4,9 +4,8 @@
 <h3>The Most Efficient Gnutella Client</h3>
 
 <p>
-  gtk-gnutella is a server/client for
-  <a href="http://www.gnutella.com/">Gnutella</a>.
-  It runs on Microsoft Windows and every Unix-like system which supports
+  gtk-gnutella is a server/client for the <em>Gnutella</em> peer-to-peer network.
+  It runs on Microsoft Windows, MacOS and every Unix-like system which supports
 <a href="http://www.gtk.org/">GTK+</a> 
   (1.2 or above).
   The GNOME desktop environment is not required. It is currently developed
