@@ -1,1 +1,46 @@
+<!-- content -->
+<!-- $Id$ -->
+
+<h3>Il pi&ugrave; efficiente client Gnutella</h3>
+
+<p>
+  gtk-gnutella &egrave; un server/client per la rete peer-to-peer <em>Gnutella</em>.
+  Funziona in Microsoft Windows, MacOS e ogni sistema operativo tipo Unix che supporta
+<a href="http://www.gtk.org/">GTK+</a> 
+  (1.2 e oltre).
+  L'interfaccia grafica GNOME non è richiesta. Attualmente &egrave; sviluppato e testato sotto
+  Linux (<a href="http://www.debian.org/">Debian</a>) e
+  <a href="http://www.NetBSD.org">NetBSD</a>. Funziona almeno sotto Linux,
+  <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net-p2p/gtk-gnutella/">FreeBSD</a>,
+  <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
+  <a href="http://gtk-gnutella.darwinports.com/">Darwin</a>,
+Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS whereas CPU architectures include
+x86, AMD64, PowerPC, SPARC, MIPS. E naturalmente Microsoft Windows (almeno XP).
+</p>
+
+<p>
+  gtk-gnutella &egrave; software libero e rilasciato con licenza GNU General Public License (GPL).
+</p>
+
+<p>
+  gtk-gnutella non &egrave; ancora completo ma completamente funzionante: puoi condividere, 
+  cercare e scaricare. &Egrave; anche stabile, gli utenti di solito lo lasciano girare senza supervisione per giorni.
+</p>
+
+<p>
+  Questo sito &egrave; scritto utilizzando gli standard HTML5 e CSS3 e utilizza i cookies solo per memorizzare le preferenze della lingua.
+</p>
+
+<p>
+  Idee e commenti sono benvenuti nella mailing list gtk-gnutella-devel.
+  I bug devono essere inviati al 
+  <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">
+  Bug tracker su SourceForge.net</a>
+</p>
+
+<p style="text-align: center;">
+  <a href="?page=devel">C'&egrave; bisogno di ulteriori collaboratori per sviluppo C e per la documentazione.</a>
+</p>
+
+<!-- end intro -->
 
