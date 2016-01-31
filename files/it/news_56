@@ -1,0 +1,197 @@
+<!-- $Id: news_51 13188 2007-03-21 21:12:04Z cbiere $ -->
+<h4>07 March 2010, Version 0.96.7 Released</h4>
+
+<p>Version 0.96.7 is a stable release. The list below shows the most important
+bug fixed and improvements since the previous release.</p>
+
+<h5>Bug Fixes</h5>
+
+<ul>
+<li>Fixed memory leaks.</li>
+<li>Do not unduly rewrite fileinfo trailers on restart, messing with the
+    "mtime" filesystem information.</li>
+<li>We were never forwarding to other ultra nodes queries that did not
+    have a TTL of exactly 1 (severe bug impacting the network).</li>
+<li>Queries not kept for a local file match were most often dropped and not
+    forwarded (severe bug impacting the network).</li>
+<li>Corrected detection of largefile support in Configure.</li>
+<li>Fixed oversight in token validation, to be able to verify older
+    versions.</li>
+<li>Fixed metaconfig unit for systems without kqueue().</li>
+<li>PARQ complained about lack of X-Queued header even if HTTP status was not
+    503.</li>
+<li>Fixed sending of QUEUE callbacks to avoid hammering remote host, or
+    stopping alltogether at the first timeout detection.</li>
+<li>Was sometimes failing to reconnect to more nodes after disconnections.</li>
+<li>Inverted logic was causing repeated UHCs queries when under the minimum
+    amount of peer connections, causing undue traffic.</li>
+<li>Tigertree verification would sometimes crash and delete the wrong slices
+    after a TTH mismatch.</li>
+<li>Fixed crashes at shutdown time due to inappropriate dropping of new messages
+    in the message queues.</li>
+<li>Fixed crashes at shutdown time due to improper checking in the dynamic
+    query cleanup code.</li>
+<li>Fixed invalid boundary test when server shrinks the requested file
+    chunk.</li>
+<li>Unfreeze all PARQ entries from the IP after serving a quick slot, or we
+    could have several frozen entries for that IP with no possible escape.</li>
+<li>Receptions of "GIV" and "QUEUE" were not checking whether the remote
+    address was an hostile one.</li>
+<li>Changed the Bitzi ticket-requesting URL, as the previous one was no longer
+    responding correctly.</li>
+<li>Fixed push-proxy support: requests (LIME/21) now only use v1 and acks
+    (LIME/22) only use v2 because this is what LimeWire expects.  GTKG was
+    sending LIME/21v2 which confused LimeWire, in effect disabling the ability
+    of GTKG to act as a push-proxy.</li>
+<li>GUI node flags were not updated upon reception of a Push Proxy
+    Acknowledgement (indicating the node became one of our push-proxies).</li>
+<li>Fixed status bar which lost the GTKG URL as soon as a new version was
+    announced.</li>
+<li>Fixed crash when a compressed connection was closed and had never been
+    given any data to compress.</li>
+<li>Fixed behaviour on DHT value lookups when the key exists but is not
+    holding the proper value types.</li>
+<li>Fixed HTTP partial range merging logic.</li>
+<li>Fixed logic for push-fallback on connection timeouts.</li>
+<li>Fixed improper GUI status display when connecting to a push-proxy.</li>
+<li>Could wrongly discard a perfectly good push-proxy.</li>
+<li>Prevent "found more recent metainfo" warnings at next startup by properly
+    flushing the metainfo database at shutdown time.</li>
+<li>The "Force push mode" menu entry could have no effect if gtk-gnutella had
+    determined the host did not require a push.</li>
+<li>Avoid innocuous duplicates in the persisted download file.</li>
+</ul>
+
+<h5>Improvements</h5>
+
+<ul>
+<li>Better resuming of downloads on session restarts.</li>
+<li>Increased success rate on downloads from firewalled hosts.</li>
+<li>Completed support for DHT publishing: DHT is now fully functional.</li>
+<li>DHT bandwidth usage is now disaplayed in the GUI.</li>
+<li>Added support for GGEP XQ (eXtended Query) as used by LimeWire for search
+    terms longer than about 30 characters.</li>
+<li>Try to decipher incorrectly encoded query flags from buggy Shareaza.</li>
+<li>Parse incorrectly formatted X-Alt header from buggy Shareaza.</li>
+<li>Implemented PFSP 1.0a: now emits and handles new X-Available header.</li>
+<li>Added some MIME types and file extension mappings.</li>
+<li>Added comand-line switch --compile-info to print some information
+    that is hardcoded at compile-time.</li>
+<li>Persist known TTH roots in magnets.</li>
+<li>Swapped leaf and ultrapeer slots for GGEP UP in compliance with LimeWire
+    which does not follow the published specification (so we don't either now
+    but we are compliant with the de-facto standard).</li>
+<li>Will now remove uncompressed ultra connections when full and getting a
+    new compressed one.</li>
+<li>Whitelist can now support TLS hosts and will refresh DNS mappings
+    regularily.</li>
+<li>Improved granularity of the background task used to scan the library in
+    order to prevent noticeable processing freezes as much as possible.</li>
+<li>Redesigned the output of the shell "status" command to show more
+    information and display status flags (shown as icons in the GUI).</li>
+<li>Added liberal parsing of urn:sha1: and urn:bitprint to cope with clueless
+    sites using hexadecimal instead of base32 to encode the hashes.</li>
+<li>Added -v option to the shell command "props" to also display values
+    along.</li>
+<li>Added real shell-like string parsing, and fixed escaping to work
+    correctly.</li>
+<li>Added the ';' separator to be used to separate mutiple shell commands.</li>
+<li>Allow crashes and fast assertions "soft" failures to be timestamped.</li>
+<li>Don't answer to UDP pings from bad nodes, which include "alien" hosts.</li>
+<li>Loop through the TCP push-proxies more quickly until one can relay our
+    push.</li>
+<li>Passively revitalize PUSH routes and wakeup starving downloads.</li>
+<li>Attempt to collect push-proxies passively from relayed query hits.</li>
+<li>A completed file waiting for being moved accross filesystems will now
+    be flagged as such in the GUI "Downloads" pane.</li>
+<li>Detect and fix improper 503 HTTP status code replies when 416 was meant
+    (broken HTTP replies from Foxy, Shareaza, and maybe others).</li>
+</ul>
+
+<h5>Under the Hood</h5>
+
+<ul>
+<li>DHT (Distributed Hash Table) is now enabled by default.</li>
+<li>Reduced blackout period between two DNS server name lookups to 30
+    minutes.</li>
+<li>Updated PFSP specifications (partial file sharing) to version 1.0a.</li>
+<li>More statistics.</li>
+<li>Always use exact time when logging, not the cached time.</li>
+<li>Align to LimeWire's settings for DHT expiration and republishing
+    periods.</li>
+<li>Do not emit any PFSP header when seeding a finished file.</li>
+<li>Even if bandwidth is tight, force emission of the X-Hostname header under
+  certain circumstances because this information is precious.</li>
+<li>No longer constantly monitors for unsolicited UDP traffic, which will save
+  precious CPU cycles.</li>
+<li>Improved malloc tracking by reporting symbolic names in stack frames.</li>
+<li>Optimized ultrapeer TX compression settings to reduce memory requirements,
+  saving 288 KiB of RAM per Gnutella node connection (leaf or ultra).</li>
+<li>Increased default amount of ultrapeer connections to 42.</li>
+<li>Optimized memory footprint of the simple hashtable and allow it to be
+  downsized as well.</li>
+<li>Consider a HEAD Ping message to be unsolicited UDP traffic.</li>
+<li>New shell command "memory dump" available when malloc stats compiled in.</li>
+<li>Some documentation held in SVN cannot be packaged on Debian, so it was
+  moved to a separate directory that is left out from the packaging
+  manifest.</li>
+<li>SDBM improvements for greater runtime performance and data consistency.</li>
+<li>Added DHT root node caching (k-closest nodes of a target KUID).</li>
+<li>Tuned DHT node lookups for more performance.</li>
+<li>Can now hold the SPAM look-up table in an SDBM database instead of
+    memory.</li>
+<li>The directory holding "incomplete" files is now lock-protected to prevent
+  two different gtk-gnutella instances from using the same one.</li>
+<li>Added long-due zone garbage collector, called when gtk-gnutella is
+    "idle".</li>
+<li>Tuned block size to avoid wasting too many bytes in zones.</li>
+<li>Improved the virtual memory management layer to limit fragmentation,
+  especially for servents running over long periods of time (weeks).</li>
+<li>Revised the vitrual memory management page-caching algorithm.</li>
+<li>Politely deny handshaking with peers presenting an X-Auth-Challenge header
+  or an FP-Auth-Challenge one.</li>
+<li>Added support for firewalled alternate location collection and propagation
+  through the X-Falt header (requires that the "fwalt/0.1" feature be
+  advertised in X-Features).</li>
+<li>Added a non-persistent "alien" cache to keep track of IP:port of nodes
+  that do not belong to the Gnutella network.</li>
+<li>Increased the buffer size of datagram sockets to 32KiB to allow reception of
+  bigger messages: it is not uncommon to get OOB query hits larger than
+  4KiB.</li>
+<li>Count (and show) amount of launched SHA-1 and TTH file verifications.</li>
+<li>Translation updates.</li>
+</ul>
+
+<h5>Limitations</h5>
+
+<ul>
+<li>DHT code is currently sub-optimal for firewalled hosts.</li>
+<li>Manual bandwidth tuning is currently necessary to allow for efficient
+  DHT usage.  Allow at least 8 Kib/s out, 15 KiB/s out being better.
+  Also increase the lookup bandwidth to 32 KiB/s in and 6 KiB/s out, the
+  defaults of 8 KiB/s in and 2 KiB/s out being very conservative.</li>
+<li>DHT is enabled by default with a fixed (manually tunable) configuration.
+  There is no auto-tuning and no adaptation to traffic conditions yet.
+  You need to explicitly disable the DHT if you don't want to benefit from
+  it.</li>
+</ul>
+
+<h5>Integrity checks for the source tarball</h5>
+
+<pre>Size: 16273432 bytes
+urn:bitprint:XODKKQMZ2IMQRFZV4BLTCO4UCGYOGVVB.O5ONBJQOY5PK35S5PG7HJDQPZD3XMW2H2Q2IQLQ
+SHA1 (gtk-gnutella-0.96.7.tar.bz2) = bb86a54199d219089735e057313b9411b0e356a1
+</pre>
+<p>
+<a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.96.7/gtk-gnutella-0.96.7.tar.bz2.asc/download">PGP Signature</a> (286 bytes)
+</p>
+
+<p>
+Thanks to everyone who contributed to this release in form of feedback,
+bug reports, patches or translations!
+</p>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_56 -->

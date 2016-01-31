@@ -1,0 +1,96 @@
+<!-- $Id: news_51 13188 2007-03-21 21:12:04Z cbiere $ -->
+<h4>7 July 2007, Version 0.96.4 Released</h4>
+
+<p>Version 0.96.4 is a stable release. The list below shows the most important
+bug fixed and improvements since the previous release.</p>
+
+<h5>Bug Fixes</h5>
+
+<ul>
+<li>The download overlap checking was incorrectly detecting mismatches.
+</li>
+<li>A bug in the network queue caused frequent crashes (#1601523).
+</li>
+<li>A bug in the event timing caused failures after 25 days uptime.
+</li>
+<li>A stalling issue with TLS connections.
+</li>
+<li>The search retry timeouts weren't accepted (#1568205).
+</li>
+<li>The order of items in the search history was wrong (#1568206).
+</li>
+<li>The quick-connect limit wasn't respected causing too frequent
+   connection attempts during startup.
+</li>
+<li>Removed incorrect use of SF_NODISKIO flag for sendfile() on FreeBSD.
+</li>
+<li>Fixed crash that could be triggered by changing the listening port
+   temporarily to zero.
+</li>
+<li>iconv() was not used correctly which could cause wrong conversions
+   for longer strings.
+</li>
+<li>Generated filenames weren't properly restricted in length which
+   could cause crashes.
+</li>
+<li>There was a compile issue on NetBSD caused by namespace pollution.
+</li>
+<li>Added workaround for the issue that on Solaris only the file descriptors
+   0..255 can be used for stdio.
+</li>
+</ul>
+
+<h5>Improvements</h5>
+
+<ul>
+<li>Finished downloads are now seeded for the whole session or until
+   they are manually purged, if partial file-sharing is enabled.
+</li>
+<li>Server-side support for Tigertree hashes and THEX thanks to patches
+   provided by Martijn van Oosterhout.
+</li>
+<li>Improved spam filters.
+</li>
+<li>Slightly better drag & drop support.
+</li>
+<li>Removed GWebCache support so only UHCs are used for bootstrapping.
+</li>
+<li>Improved the shell interface somewhat.
+</li>
+<li>Downloads can be paused now.
+</li>
+<li>Added a simple query syntax for easier creation of result filters.
+</li>
+</ul>
+
+<h5>Under the hood</h5>
+
+<ul>
+
+<li>Added support for HEAD Pings and Pongs which improves the download mesh.
+</li>
+<li>Implemented for Out-of-Band result delivery protocol v3 which protects
+   against certain kinds of forged results.
+</li>
+<li>Improved aggressive swarming logic so that files are completed more
+   quickly and efficiently when nearing completion.
+</li>
+
+</ul>
+
+<h5>Checksums of the source tarball</h5>
+<ul>
+  <li><tt>SHA256 (gtk-gnutella-0.96.4.tar.bz2) = 543ead5b650cb18cecd8148b7683f2fb057d26c665ac74214714c2caa7baa726</tt></li>
+  <li><tt>SHA1 (gtk-gnutella-0.96.4.tar.bz2) = 03893f83b44f677a6cc8af277115f40b6d208a18</tt></li>
+  <li><tt>urn:bitprint:AOET7A5UJ5TXU3GIV4TXCFPUBNWSBCQY.OX2JFS62JOD35RHOIZJ6EJ6VNRAODGMMBL3KALQ</tt></li>
+</ul>
+
+<p>
+Thanks to everyone who contributed to this release in form of feedback,
+bug reports, patches or translations!
+</p>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_48 -->

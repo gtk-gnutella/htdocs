@@ -1,0 +1,57 @@
+<!-- $Id$ -->
+<h4>24 January 2006, Version 0.96 Released</h4>
+
+<p>
+  Version 0.96 is a <b>stable</b> release.
+  It is now <b>mandatory</b> to use this version, since all previous
+  versions have <i>expired</i> meaning they are going to be banned
+  by all new <tt>gtk-gnutella</tt> clients and will no longer contact
+  the Gnutella web caches.
+</p>
+<p>
+Below is the changelog entry for the release, identifying the changes
+since the last stable version, 0.95.x.
+</p>
+<h5>New Features</h5>
+<ul>
+  <li>Browse Host (HTML and Gnutella), TLS and IPv6 support.</li>
+  <li>Chinese (Simplified), Greek, Norwegian (Bokmal) and Ukrainian
+    translations of the user interface.</li>
+  <li>D-BUS plugging.</li>
+  <li>Added hot keys: F2, F8 and F9 (see menu View->...).</li>
+  <li>Searches are now created with a configurable expiration date.</li>
+</ul>
+
+<h5>Improvements</h5>
+<ul>
+  <li>Optimization of the UTF-8 processing.</li>
+  <li>Better filename conversion to locale, with automagic charset
+	detection.</li>
+  <li>General performance improvements in QRP and search filters.</li>
+  <li>Dutch, German and Japanese translation updated.</li>
+  <li>Sorting persistence.</li>
+</ul>
+
+<h5>Under the Hood</h5>
+<ul>
+  <li>Buffering of downloaded data to avoid excessive disk fragmentation.</li>
+  <li>Support for the <tt>epoll()</tt> / <tt>kqueue()</tt> system calls.</li>
+  <li>More optimistic PARQ ETA, and PARQ back-off when QUEUE
+	are unanswered.</li>
+  <li>NFS-compatible session locking.</li>
+  <li>Nifty property browser.</li>
+</ul>
+
+<p>Checksums of the source tarball:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.96.tar.bz2) =
+	<tt>4e1cd518ac2995f29952274e880cd6ec</tt></li>
+  <li>SHA1 (gtk-gnutella-0.96.tar.bz2) =
+	<tt>29628c5a88d2e2e4167ec85cdc72ca4cf5108b7d</tt></li>
+  <li><tt>urn:sha1:FFRIYWUI2LROIFT6ZBONY4WKJT2RBC35</tt></li>
+</ul>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_47 -->

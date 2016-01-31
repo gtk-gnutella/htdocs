@@ -1,0 +1,28 @@
+<!-- $Id$ -->
+<h4>2. November 2003, Version 0.93 released</h4>
+<p>
+  You can get this new version from our download section.
+</p>
+<p>
+  <strong>These are some of the changes made since 0.92.1 stable:</strong>
+</p>
+<ul>
+  <li>
+		Support for sharing downloading files (Partial File Sharing).
+  </li>
+  <li>
+    New addresses in hostiles.txt to protect against malicious hosts.
+  </li>
+  <li>
+    Collects alternate download locations acquired from query hits.
+  </li>
+  <li>
+    Automatically save settings from time to time.
+  </li>
+</ul>
+<p>
+	For more changes go <a href="?page=release_history#0.93">here</a>.
+</p><p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_30 -->

@@ -1,0 +1,26 @@
+<!-- $Id$ -->
+<h4>12. January 2004, Bugfix release coming soon</h4>
+<p>
+	It is
+  recommended that you either wait for this release or compile from the
+  <a href="http://gtk-gnutella.sourceforge.net/pub/gtk-gnutella.tar.bz2">
+    <strong>Official CVS snapshot</strong></a>, which should be at least as
+  stable as the releases and has fixes for most of the known bugs.  If you want
+  to help stamp out bugs for this release please read the 
+  <a href="?page=bugreport_howto">Bug Report Howto</a>
+  and report your bugs to the
+  <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">
+    Bug Tracker</a>.  I think it should be well worth the
+  wait since there have been some very nice improvements to gtk-gnutella
+  lately.
+</p>
+<p>
+	<strong>Update 14.1.2004:</strong>
+	We have problems finding a memory leak in the CVS  version
+	of gtk-gnutella at the moment and need to do more testing which will probably
+	delay the release of 0.93.3.
+</p>
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_35 -->

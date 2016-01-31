@@ -1,0 +1,122 @@
+<!-- $Id$ -->
+<h4>14 March 2011, Version 0.96.9 Released</h4>
+
+<p>Version 0.96.9 is the stable yearly release.</p>
+
+<h5>New Features</h5>
+
+<ul>
+<li>Added UPnP and NAT-PMP support.</li>
+<li>Added a "log" command to the shell to manage logfiles.</li>
+<li>Added --gdb-on-crash switch, auto-activated when no core dumps are
+    possible.</li>
+<li>Configures a crash directory as ~/.gtk-gnutella/crashes.</li>
+<li>[GTK] Added visual feedback for UPnP and NAT-PMP configuration status.</li>
+</ul>
+
+<h5>Improvements</h5>
+
+<ul>
+<li>Better handling of uploading servers that also publish in the DHT.</li>
+<li>Added Global Host Cache as a last-resort bootstrapping mechanism when UDP is
+    not working.</li>
+<li>Search results from firewalled hosts are now displayed in
+    "dark slate gray"</li>
+<li>Message statistics now include a line per DHT message type instead of
+    aggregating all DHT messages in the same basket.</li>
+<li>Always use ARC4 random number generator.</li>
+<li>Continuous entropy collection to make the random number sequence more
+    random.</li>
+<li>Raised default ultrapeer connections in leaf mode to 4, maximum now
+    being 5.</li>
+<li>ASCII parentheses are no longer considered evil characters and are not
+    stripped from filenames anymore.</li>
+<li>Trailing spaces and periods are stripped from filenames because Windows
+    does not like them.</li>
+<li>When stdout and stderr are different files, critical messages (assertion
+    failures, crashes) are duplicated to stdout.</li>
+<li>[GTK] Added visual feedback icon for the DHT status.</li>
+<li>[GTK] Show green/yellow/red uploading status icons indicating increasing
+    warning levels after which we declare that uploads are stalling.</li>
+<li>[GTK] Show DHT alt-loc queries on a per-file basis.</li>
+</ul>
+
+<h5>Bug Fixes</h5>
+
+<ul>
+<li>Prevented random crash at shutdown time (improper cleanup ordering).</li>
+<li>Prevent crash when running on linux kernels patched with grsecurity.</li>
+<li>Fixed improper hop count display (always showing 2147483647) in horizon
+    stats.</li>
+<li>Fixed bad GUI status for files: do not say "SHA1 failed" unless
+    it's true.</li>
+<li>Fixed message statistics which were reading payload size from the header
+    instead of relying on what was actually read.</li>
+<li>OOB proxying code was not considering MUID collisions, causing memory
+    leaks.</li>
+<li>Was not always reconnecting to other Gnutella nodes when missing slots.</li>
+<li>Fixed old bug triggered by setting "listen_port" to 1 multiple times.</li>
+<li>Magnets created from search results did not include push proxies.</li>
+<li>[GTK2] Was not saving tree view column positions in the statistics pane.</li>
+<li>[GTK2] Fixed broken DND so that files can be drag 'n' dropped from
+    local searches and the download view to other desktop apps now.</li>
+<li>[GTK] New users were never able to see the preset filters in the menu.</li>
+</ul>
+
+<h5>Under the Hood</h5>
+
+<ul>
+<li>Fresh bogus IP lists and geo IP database.</li>
+<li>Updated SPAM detection rules.</li>
+<li>Updated Gnutella bootstraping logic due to changing environments.</li>
+<li>Cached DHT security tokens are now regularily expired.</li>
+<li>Tuned DHT maintenance traffic down, using statistical methods to further
+    avoid needless RPCs.</li>
+<li>Clear empty databases at startup, attempt to shrink them otherwise.</li>
+<li>Fixed uninitialized memory read detected by valgrind.</li>
+<li>Made SDBM more robust when facing errors.</li>
+<li>Errors encountered during SDBM operation are now reported at exit time.</li>
+<li>If I/O errors were detected during operations of a persisted DB, request key
+    checking at next startup.</li>
+<li>Added CPU frequency scaling detection (Linux and Windows only) to be
+    able to properly determine whether we are overloading the CPU.</li>
+<li>Removed ShareMonkey URL support: they went out of business.</li>
+<li>Use the DHT routing table as a source for new node addresses when the host
+    caches are depleted, before attempting to contact the UHCs.</li>
+<li>Throttle UDP pings so that we do not bombard a single host with many
+    requests.</li>
+<li>Limit Gnutella connection attempts to a given host to one per 2 minutes.</li>
+<li>DHT routing table size now adjusts dynamically, lowering maintenance
+    traffic.</li>
+<li>Throttle received DHT lookups as a precaution against abuse from rogue
+    nodes.</li>
+<li>At startup time, sort cached host entries to put the most recent ones
+    first.</li>
+<li>Optimized QRP table merging loop.</li>
+<li>Improved behaviour when facing stalling uploads.</li>
+<li>Only send "DHT" in Gnutella pongs if the DHT runs in active mode.</li>
+<li>Implemented DHT attack-prevention rules to guard against Sybil attacks.</li>
+<li>Added arc4random() default implementation for systems without it.</li>
+<li>Robustified query hit parsing so that we can filter out invalid hits.</li>
+<li>[GTK2] Completely migrated GtkFileSelection to GtkFileChooser.</li>
+</ul>
+
+<h5>Integrity checks for the source tarball</h5>
+
+<pre>Size: 16669486 bytes
+urn:bitprint:JOJFJI6VCURXPTTFVTYJ3BMMFMF3JSSQ.MLDGSRTGH3J7OPVBHRRZ2XKVK5M7MBNGQDMEWWA
+SHA1 (gtk-gnutella-0.96.9.tar.bz2) = 4b9254a3d5152377ce65acf09d858c2b0bb4ca50
+</pre>
+<p>
+<a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.96.9/gtk-gnutella-0.96.9.tar.bz2.asc/download">PGP Signature</a> (286 bytes)
+</p>
+
+<p>
+Thanks to everyone who contributed to this bug-fix release in the
+form of feedback, bug reports or patches.
+</p>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_58 -->

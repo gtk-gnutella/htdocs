@@ -1,0 +1,127 @@
+<!-- $Id$ -->
+<h4>9 November 2006, Version 0.96.3 Released</h4>
+
+<p>
+  Version 0.96.3 is a <b>stable</b> release. Fixing some
+  bugs and adding a few improvements.
+</p>
+<p>
+Below is the ChangeLog entry for the release.
+</p>
+<h5>Bug Fixes</h5>
+<ul>
+  <li>
+  Portability fixes which affect the ARM architecture.
+  </li>
+  <li>
+  Ultrapeers could be unnecessarily demoted to leaves in auto mode.
+  </li>
+  <li>
+  [GTK2] Fixed a bug that could cause spurious assertion failures or memory    
+   corruption.
+  </li>
+  <li>
+  Fixed bug that might have caused truncation of printed numbers in certain
+  places.
+  </li>
+  <li>
+  Rewrite the upload_history file if the history was cleared.
+  </li>
+  <li>
+  Fixed crash caused by an assertion failure that could occur if IPv6
+  support was disabled at compile-time.
+  </li>
+  <li>
+  Fixed buggy utf8_is_valid_data().
+  </li>
+  <li>
+  Fixed a couple of small technical mistakes in translations.
+  </li>
+  <li>
+  Fixed compilation for Cygwin without IPv6 support.
+  </li>
+</ul>
+
+<h5>Updates</h5>
+<ul>
+  <li>
+  Updated French translation.
+  </li>
+  <li>
+  Updated list of hostile IP ranges.
+  </li>
+  <li>
+  Updated list of bootstrap caches.
+  </li>
+  <li>
+  Updated list of country names and codes for Serbia and Montenegro.
+  </li>
+</ul>
+
+<h5>Improvements</h5>
+<ul>
+  <li>
+  Turkish translation.
+  </li>
+  <li>
+  New shell commands: online, offline, props, status.
+  </li>
+  <li>
+  The search list allows selection of multiple items and applying actions to
+  them now.
+  </li>
+  <li>
+  Added a tray icon to hide the gtk-gnutella application windows. This
+  feature requires Gtk+ 2.10 or newer.
+  </li>
+  <li>
+  Added a limit of downloads per file which defaults to 40 to prevent using
+  an unreasonably large amount of sources.
+  </li>
+  <li>
+  Keep certain irrelevant columns empty for "local:" searches instead of
+  showing bogus data.
+  </li>
+  <li>
+  Added README.Debian with instructions how to compile gtk-gnutella yourself
+  on Debian-derived systems.
+  </li>
+</ul>
+
+<h5>Under the hood</h5>
+<ul>
+  <li>
+  Rewrote "fast" assertions so that they are sufficiently portable and do
+  not mess with debugging. Thus they are always enabled now which reduces
+  code size signifcantly.
+  </li>
+  <li>
+  The TLS cache is now persistent without SQLite too.
+  </li>
+  <li>
+  Disabled reservation of Gnutella slots and vendor limits because it's not
+  useful with the current population of Gnutella.
+  </li>
+  <li>
+  Disabled GWebCache updates.
+  </li>
+  <li>
+  Configure bails out now if a mandatory dependency e.g., libxml2, GLib,
+  zlib isn't available.
+  </li>
+  <li>
+  Added -Wshadow to the default compile flags for GCC for even cleaner code.
+  </li>
+</ul>
+
+<h5>Checksums of the source tarball:</h5>
+<ul>
+  <li><tt>SHA256 (gtk-gnutella-0.96.3.tar.bz2) = 6079661ffeb78ae480cf37cf9954d0c437d415363aa4133268b732700b52be80</tt></li>
+  <li><tt>SHA1 (gtk-gnutella-0.96.3.tar.bz2) = 7469d4ea685c387f38e927efeb8b9947a9ec72e3</tt></li>
+  <li><tt>urn:bitprint:ORU5J2TILQ4H6OHJE7X6XC4ZI6U6Y4XD.PE75OTYXNJILFDZFSWSHGSTLYNFKGLLHWPMG3DI</tt></li>
+</ul>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_48 -->

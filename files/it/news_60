@@ -1,0 +1,161 @@
+<!-- $Id$ -->
+<h4>18 July 2011, Version 0.97 Released</h4>
+
+<p>Version 0.97 is a <b>major</b> release, fixing  critical long-standing
+   bugs and introducing handy new features.</p>
+
+<h5>New Features</h5>
+
+<ul>
+<li>Added HTTP request pipelining.</li>
+<li>Added GUESS (Gnutella UDP Extension for Scalable Searches).</li>
+<li>Added the ability to look for specific media types.</li>
+<li>Added the ability to query for partial files as well.</li>
+<li>Added "What's New?" queries.</li>
+<li>Added smart search stopping / resuming options.</li>
+<li>Added command-line option <code>--minimized</code>;
+    useful when auto-starting gtk-gnutella.</li>
+</ul>
+
+<h5>Improvements</h5>
+
+<ul>
+<li>Improved unpredictability of random numbers.
+    Continuously collect new randomness from message events (RX, TX, dropping).</li>
+<li>No longer uses download overlaps as soon as we know the TTH of the file.</li>
+<li>When the download queue is auto-frozen due to lack of space, monitor the
+    filesystem to auto-unfreeze when enough space is available again.</li>
+<li>Can configure different amount of limits for various kind of search results.</li>
+<li>[GTK2] Added missing configuration option for case-insensitive sorting.</li>
+<li>[GTK] Flag search results bearing an alien IP as such, using both a tag
+    (alien) and a color (deep pink).</li>
+<li>[GTK] Added option to discard results bearing an alien IP (TRUE by default).</li>
+<li>[GTK] Added option to restart session-only searches that still have pending
+    downloads registered (FALSE by default).</li>
+<li>[GTK] Search details now include a line to display available metadata.</li>
+<li>[GTK] Fill in the Bitzi metadata column on the fly as results come in when
+    we have cached ticket information available.</li>
+<li>[GTK] Show media type filter attached to query, when known, in the search
+    detail window.</li>
+</ul>
+
+<h5>Bug Fixes</h5>
+
+<ul>
+<li>Fixed *grave* routing bug whereby TTL was wrongly trimmed down by one
+    extra step. Furthermore, the trimming threshold was wrong, which in effect
+    caused ultrapeers to drop queries with TTL &lt;= 2.</li>
+<li>Fixed *grave* routing bug: was sending TTL&gt;1 queries twice on the same
+    connection when running as ultrapeer.</li>
+<li>Fixed *grave* routing bug: was not properly forwarding duplicate OOB-proxied
+    queries with a higher TTL (MUID was not altered the second time).</li>
+<li>Make sure ~ expansion is done for path variables when changed at runtime.
+    Fixes bug #3215847.</li>
+<li>Was not processing updates of "search_reissue_timeout" from the GUI!</li>
+<li>Filename sanitizer led to a crash when given a filename with leading spaces.</li>
+<li>TTH downloads would crash when not receiving any data back.</li>
+<li>An off-by-one bug prevented proper token validation, causing GTKG to not
+    properly recognize the latest releases.</li>
+<li>Avoid crash when attempting to connect to a node that would be internally
+    flagged as "useless".</li>
+<li>Fixed chunk selection algorithm to properly request from servers providing
+    partial files.</li>
+<li>Various "crash at shutdown time" type of fixes (occuring rarely and randomly).</li>
+<li>Plugged hole leading to a file completing but not being checked for its SHA-1
+    when we have a few sources competing against each-other and all these sources
+    end up ignoring data to preserve their connection.</li>
+<li>Fixed crashes with GTK2 on some platforms at quit time by ignoring duplicate
+    "quit" requests.</li>
+<li>Fixed race condition that could lead to an incomplete QRP configuration.</li>
+<li>Fixed important LRU cache management bug in the SDBM layer, which was causing
+    data loss in persisted databases.</li>
+<li>Head pings had their GGEP "PUSH" key improperly parsed.</li>
+<li>[GTK] Was not saving the column size of the search list.</li>
+<li>Fixed cause of random crashes in the VMM layer on systems using mmap() to
+    serve uploaded files.</li>
+</ul>
+
+<h5>Miscellaneous</h5>
+
+<ul>
+<li>Dutch translation updated.</li>
+<li>French translation updated.</li>
+<li>By default, auto-clear completed and failed chunk downloads.</li>
+<li>Changed user-visible connection state wording: "Connected" -&gt; "Receiving" or
+    "Awaiting data".</li>
+<li>Added documentation for DHT "NOPE" values.</li>
+<li>Allow one to disable partial file sharing in general, enabling it only for
+    rare files (no full copy present).</li>
+<li>Moved SDBM files to dedicated directories, either "gnet-db" or "dht-db".</li>
+<li>Added visual indication that the download queue is frozen.</li>
+<li>Added GUI configuration for "tth_auto_discovery".</li>
+<li>[GTK] New colors for search results, to quickly spot partial hits, alien hits,
+    hits with media-type mismatch and hits from firewalled sources with no
+    push-proxy listed.</li>
+<li>[GTK] Added expert-level configuration for the DHT mode, for whether DHT
+    keys/values should be kept in memory, and for the SPAM SHA1 look-up table.</li>
+<li>Option --disable-ipv6 was removed from build.sh:  we now always compile with
+    IPv6 when Configure detects OS support.</li>
+</ul>
+
+<h5>Under the Hood</h5>
+
+<ul>
+<li>Tweaked aggressive chunk selection logic.</li>
+<li>Let the RX link layer use the configured socket RX buffer size to determine
+    the maximum amount of data that we can attempt to read in one system call,
+    when the input layer cannot let us know how much data is pending.</li>
+<li>Ensure we only keep valid address and port information when merging PUSH
+    servent addresses for a given GUID.</li>
+<li>Make sure fast assertion routines are never inlined or it would perturb
+    stack traces due to missing offsets.</li>
+<li>When building search request, be careful to not include unnecessary bloat at
+    the end of the extension block or other GTKG nodes will drop the query.</li>
+<li>DHT statistics now show local k-ball info along with the theoretical one.</li>
+<li>Added probalistic model to randomly avoid cached DHT values too far from the
+    key's theoretical k-ball during value lookups.</li>
+<li>Smarter handling of "duplicate DHT values" (coming from the same publisher).
+    We now allow fetching of these duplicates and retain different versions of the
+    same value if we find a discrepancy (due to caching or partial re-publishing).</li>
+<li>PUSH flooding detection no longer bans offending hosts, but only regulates
+    the traffic by dropping flooding requests.</li>
+<li>Compact extensions of forwarded queries to remove needless bloat: the XML is
+    compacted, legacy HUGE requests to return URNs in hits are dropped, GGEP
+    payload that are large enough are possibly compressed.</li>
+<li>s390(x) has IEEE 754 floats.</li>
+<li>Handle GGEP "u" in queries (SHA1 and bitprint URNs).</li>
+<li>Avoid showing "negative" retry delays.</li>
+<li>Turned some debugging-only assertions off.</li>
+<li>Fixed bad test that led to a crash when receiving improper FIND_NODE messages.</li>
+<li>Removed dependency to libxml2: now uses built-in XML support.</li>
+<li>Converted bitzi cache to a persistent SDBM-based database.</li>
+<li>Faster Bitzi request scheduling.</li>
+<li>The Gnutella routing table now dynamically adjusts its size.</li>
+<li>Deprecated GGEP "GTKGV1" in query hits, replacing it with "GTKGV".</li>
+<li>Make sure we never send back duplicate SHA1 hits, even if they are sharing
+    twice the same file from different directories.</li>
+</ul>
+
+<h5>Integrity checks for the source tarball</h5>
+
+<pre>Size: 16876186 bytes
+urn:bitprint:DNIHSCW4JFGXAI5HZ6JRTV6N54OJVNI6.N44WDAPJVSWWOUE4SNRFNNANHKZ7SNHGONRKQCI
+SHA1 (gtk-gnutella-0.97.tar.bz2) = 1b50790adc494d7023a7cf9319d7cdef1c9ab51e
+</pre>
+<p>
+<a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/0.97/gtk-gnutella-0.97.tar.bz2.asc/download">PGP Signature</a> (286 bytes)
+</p>
+<p>
+Gtk-Gnutella is <a href="http://www.softpedia.com/progClean/gtk-gnutella-Clean-192640.html" title="100% FREE Certified by Softpedia">
+<img src="/images/softpedia_free_award_f.gif" border="0" height="116" width="170">
+</a>
+</p>
+<p>
+Thanks to everyone who contributed to this bug-fix release in the
+form of feedback, bug reports or patches.
+</p>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_60 -->

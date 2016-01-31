@@ -1,0 +1,15 @@
+<!-- $Id$ -->
+<h4>27. Jan 2003, We are alive</h4>
+<p>
+This is just a small information that gtk-gnutella is still under development. Ultrapeer support on the ultrapeer side
+and on the leaf side is currently in CVS, the client side of the partial file sharing protocol (PFSP) too. Also
+someone (MrJoe ;) is doing queueing support. Great news, isn't it? :)<br>
+If you want the bleeding edge, go to the
+<a href="?page=devel">development page</a> and look
+how to get the CVS version.
+</p>
+
+<p>
+<em>Markus "guruz" Goetz &lt;guruz at guruz dot de&gt;</em>
+</p>
+<!-- end news_22 -->

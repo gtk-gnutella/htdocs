@@ -1,0 +1,8 @@
+<!-- $Id$ -->
+<h4>11. May 2002, gtk-gnutella supports traffic compression</h4>
+<p>
+Today Raphael completed the first implementation of the gtk-gntuella
+traffic compression stack. The whole thing is brand new and compression
+is not yet tested very much and will still have it's edges. But the more
+people get the code from CVS and file bug reports, the faster it will be stable.
+</p>

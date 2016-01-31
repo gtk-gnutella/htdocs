@@ -1,0 +1,120 @@
+<h4>4 June 2012, Version 0.98.3 Released</h4>
+
+<h5>New Features</h5>
+<ul>
+<li>[GTK] Added per-search GUESS statistics line, which can be hidden by
+    users.</li>
+<li>[GTK] Display amount of downloads associated with search in the search
+    label.</li>
+<li>Added property to control usage of unused Gnutella bandwidth by
+    GUESS.</li>
+<li>Added "memory check xmalloc" shell command to monitor the xmalloc
+    freelists.</li>
+<li>On Windows, generate a gdb-like stack trace in the crash log file.</li>
+
+</ul>
+<h5>Improvements</h5>
+<ul>
+<li>[GTK] Optimized rendering of main statistics page.</li>
+<li>[GTK] Show more accurate message for queued downloads on completed
+    files.</li>
+<li>Shell now displays properties with appropriate surrounding type
+    markers.</li>
+<li>Limit pongs sent to transient nodes in order to save some bandwidth.</li>
+<li>Avoid sending too many pongs on uncompressed connections.</li>
+<li>Added README.Windows to document compile instructions for Windows.</li>
+<li>Avoid "<code>write()</code> failed: EPIPE" messages from the shell for local
+    client writes.</li>
+<li>Added GUESS link cache size to the general statistics pane.</li>
+<li>GUESS now uses a dynamically computed outgoing bandwidth limit.</li>
+<li>Allow failed TLS connections to be retried without TLS,
+    transparently.</li>
+<li>Added "-a" switch to the shell "version" command to display glib/GTK/TLS
+    info.</li>
+<li>Added -p switch to the "stats" shell command to pretty-print numbers.</li>
+<li>Memory optimization of commonly used data structures to reduce
+    footprint.</li>
+<li>Always generate a crashlog file, even when dumping a core.</li>
+<li>PARQ: switch actively queued download to another when file has been
+    completed.</li>
+<li>Attempt to immediately restart download after failed SHA1 + TTH
+    verification.</li>
+<li>At startup, compute TTH if available and SHA1 checking failed.</li>
+<li>When switching PARQ 1.0 downloads, switch IDs if queue position is
+    favorable.</li>
+<li>Updated translation strings, and fixed French translation.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><?php sf_bug("3286824");?>"Crash at startup / 0.96.9 / FreeBSD AMD64"</li>
+<li>Fixed %G formatting bug whereby a zero following a dot would be
+    missed.</li>
+<li>Prevent auto-restart when they explicitly request a shutdown.</li>
+<li>Fixed grave bugs in the virtual memory layer, some being
+    Windows-specific.</li>
+<li>PARQ was not properly computing amortized per-slot time.</li>
+<li>Avoid random shell connection failures on Windows.</li>
+<li>An un-parseable token in a shell command led to an assertion failure.</li>
+<li>Fixed the "alignment optimized" code branch of
+    <code>msort_with_tmp()</code>.</li>
+<li>Fixed bad copy-n-paste that could lead to <code>malloc()</code> freelist
+    corruption.</li>
+<li>Fixed GUESS corner-case crash when handling an RPC timeout.</li>
+<li>[GTK] Avoid crash when user clears the upload statistics
+   (<?php sf_bug("3501181");?>).</li>
+<li>On Windows, be smarter when reserving the initial amount of virtual
+    space.</li>
+<li>GUESS: always wakeup sleeping queries if we have bandwidth.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Improved thread-safety of the VMM layer.</li>
+<li>Removed perl4-ism in Perl scripts.</li>
+<li>Updated IPv4 and IPv6 geo databases.</li>
+<li>Attempt to drive a deadlock crash as far as possible to collect debug
+    info.</li>
+<li>When logging from another thread (not main), include the small thread
+    ID.</li>
+<li>Switched <code>halloc()</code> to <code>xpmalloc()</code> instead of
+    <code>walloc()</code>.</li>
+<li>Added thread-private zones for blocks &lt;= 512 bytes for faster
+    allocations.</li>
+<li>Optimized access to thread-private information, via a lock-free fast
+    path.</li>
+<li>Exit with a zero status when terminating through a regular signal or
+    request.</li>
+<li>Some UTF-8 optimizations and low-level fixes.</li>
+<li>Also log the faulting PC when we get a harmful signal.</li>
+<li>Use the BFD library, if available, to extract symbols from the
+    executable.</li>
+<li>Restored ability to have usable stack unwinding on Windows.</li>
+<li>Extended crash log information to include full OS name and CPU
+    architecture.</li>
+<li>Sort SHA1s in the search.xml file.</li>
+<li>Clear whole routing table when switching between Ultra and Leaf
+    modes.</li>
+<li>Protect <code>xfree()</code> from algorithmic complexity when handling
+    bursts.</li>
+<li>Added xmalloc garbage collector to reclaim fragments from freelist.</li>
+<li>Allow the "TLS handshake failed" string to be translated.</li>
+<li>Consider IPv4 addresses x.x.x.0 as non-routable.</li>
+<li>Now uses own hash table and hash set implementations.</li>
+<li>Strengthened entropy collection and ARC4 initial seeding.</li>
+<li>Randomly propagate GUESS 0.2 hosts among GUESS 0.2 servents.</li>
+<li>Assume we're not firewalled right after initial UPnP or NAT-PMP
+    configuration.</li>
+<li>Avoid compiler warnings on Windows.</li>
+<li>Make sure <code>random_value()</code> returns uniformly distributed random
+    numbers.</li>
+<li>Added ability to filter dumped traffic by IP address.</li>
+<li>Changed %F to display whole mantissa before switching to scientific
+    notation.</li>
+<li>Ensure memory allocated from the heap is aligned properly.</li>
+<li>Show amount of detected CPUs at startup.</li>
+<li>Added version numbers to the crash log file name.</li>
+<li>Avoid complexity attacks on the hash table.</li>
+
+</ul>
+<!-- end of release 0.98.3 -->

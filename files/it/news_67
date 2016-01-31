@@ -1,0 +1,132 @@
+<h4>1 September 2013, Version 1.0.0 Released</h4>
+
+<p>This is a major release correcting a few bugs and adding small but
+   interesting features such as the ability to limit dropping of received UDP
+   messages, making the DHT keys and values persistent across sessions, SDBM
+   file auto-compaction at startup, and last but not least, rarest-chunk
+   downloading to optimize download efficiency when facing partial
+   sources.</p>
+
+<h5>New Features</h5>
+<ul>
+<li>Let users define a maximum lease time for UPnP and NAT-PMP mappings.</li>
+<li>Made DHT keys and values persistent across sessions.</li>
+<li>When there are partial sources for a file, download the rarest chunks
+    first.</li>
+
+</ul>
+<h5>Improvements</h5>
+<ul>
+<li>[GTK1] Optimize massive updating of the download source list.</li>
+<li>[GTK] Dynamically update the list of available chunks in the file (blue
+    line).</li>
+<li>Files used to persist information across sessions are now
+    auto-compacted.</li>
+<li>The UPnP layer can now monitor more types of Internet Gateway
+    Devices.</li>
+<li>After unclean shutdown, rename existing core file in crash directory.</li>
+<li>Detect servers that choke when receiving pipelined HTTP requests.</li>
+<li>Added the Mersenne Twister Pseudo-Random Number Generator.</li>
+<li>Remember when user requests an auto-restart, to keep the same session
+    going.</li>
+<li>Increased maximum download buffer size to 1 MiB and default to 128
+    KiB.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>[GTK2] Set height of the pref/upload window (paths to files) to 100
+    pixels.</li>
+<li>[GTK1] Fixed wrong enum value usage (c_fi_sources instead of
+    c_src_num).</li>
+<li>[GTK] Download source details were incorrect sometimes for queued
+    downloads.</li>
+<li>[GTK] Reserve display of partial file indication (PFS) to partial
+    sources.</li>
+<li>DHT traffic accounting was broken when semi-reliable UDP was
+    introduced.</li>
+<li>Was wrongly keeping orphan DHT contacts and removing alive ones!</li>
+<li>Fixed wrong restarting DB key computation for DHT values (preventing
+    crashes).</li>
+<li>Fixed improper "good" alt-loc flagging from uploaders, leading to wrong
+    mesh.</li>
+<li>Fixed English typos in comments and user-visible messages.</li>
+<li>Avoid selecting the magic fw-fw file index for partial files in query
+    hits.</li>
+<li>Fixed wrong propagation of duplicate messages with higher TTL.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Fixed <code>posix_memalign()</code> so that we can now run with glib 2.36 and
+    upwards.</li>
+<li>[GTK] Update available ranges when the core sends a "range changed"
+    event.</li>
+<li>Added UDP datagram read-ahead to minimize local kernel drops (RX queue
+    full).</li>
+<li>Added UDP read-ahead statistics.</li>
+<li>Ensure "DHT values" and "DHT raw data" SDBM files are consistently
+    reloaded.</li>
+<li>Fixed <code>omalloc()</code> memory usage accounting.</li>
+<li><code>str_at()</code>: fixed harmful typo causing it to seg-fault with
+    negative offsets.</li>
+<li>Do not send X-Features / X-Token on follow-up HTTP requests.</li>
+<li><code>upnp_dscv_probed()</code>: plugged memory leak.</li>
+<li>UPNP: extract the Service Control Protocol Definition (SCPD) URL.</li>
+<li>UPNP: monitor gateway with <code>GetStatusInfo()</code> if no
+    <code>GetTotalPacketsReceived()</code>.</li>
+<li>Some UPnP devices can advertize an API and yet return 401 (action
+    invalid).</li>
+<li><code>bigkey_hash()</code>: more robust in case we encounter a big key and
+    support is off.</li>
+<li><code>udp_sched_write_error()</code>: don't panic if we get an unexpected UDP
+    write error.</li>
+<li>Jumbo patch: replaced most gm_[v]<code>snprintf()</code> with
+    str_[v]<code>bprintf()</code> calls.</li>
+<li>Count truncated incoming UDP messages.</li>
+<li><code>http_got_header()</code>: fixed harmful typo causing mishandling of
+    chunked output.</li>
+<li>After 3 X-Nalt reports, move source from download mesh to the banned
+    mesh.</li>
+<li>Leave banned entries in the bad mesh for at least 5 minutes.</li>
+<li><code>cq_free()</code>: release mutex to prevent loud warning a shutdown
+    time.</li>
+<li>When the the crash handler child fails, append decorated stack from
+    parent.</li>
+<li><code>download_data_received()</code>: extend fileinfo when file size is
+    unknown.</li>
+<li>Moved HTTP range parsing / handling from core to library
+    (re-architectured).</li>
+<li>Benchmark sorting routines at startup and select the most efficient.</li>
+<li><code>socket_udp_flush_timer()</code>: do not process queued datagrams during
+    shutdown.</li>
+<li>Make <code>rand31()</code> more random, especially on the low-order bits.</li>
+<li>Added computation of chi-squared cumulative distributions.</li>
+<li>Made <code>entropy_random()</code> 5 times faster on average.</li>
+<li>Prefer <code>random_value()</code> over <code>random_u32()</code> followed by bit
+    masking.</li>
+<li>The random layer now uses the Mersenne Twister, excepted for
+    <code>random_bytes()</code>.</li>
+<li><code>hash_keyset_lookup()</code>: was not always spotting first tomb
+    correctly.</li>
+<li>Let small hash tables be denser than larger ones.</li>
+<li>Tweaked hash tables and derivatives for smaller memory footprint.</li>
+<li><code>guess_pmsg_free()</code>: make sure pool does not contain host before
+    adding it back.</li>
+<li><code>http_send_status()</code>: was not properly detecting too large HTTP
+    headers.</li>
+<li>Semi-reliable RX UDP: re-ack everything well before the whole message
+    expires.</li>
+<li>Adjust maximum DHT value count per IP/network dynamically with DHT
+    size.</li>
+<li>Be careful when truncating body on an HTTP kept-alive connection.</li>
+<li><code>ensure_unicity()</code>: assume pidfile is locked when lock owner bears
+    our PID.</li>
+<li>Added protection when writing important files on filesystems like
+    "ext4".</li>
+<li>PARQ: accept to move an upload to the "dead" queue even if we wait for
+    QUEUE.</li>
+<li>Made GTK2 the default GTK version since GTK1 is not 64-bit safe.</li>
+
+</ul>
+<!-- end of release 1.0.0 -->

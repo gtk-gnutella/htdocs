@@ -1,0 +1,113 @@
+<h4>8 November 2015, Version 1.1.6 Released</h4>
+
+<p>This is a bug-fixing release.</p>
+
+<p>This time it focues on Windows, which apparently exercised some bugs in
+   common code with other platforms -- so some fixes are going to benefit to
+   everyone even though the bugs did not manifest themselves as often.</p>
+
+<h5>Improvements</h5>
+<ul>
+<li>Increased default and max for "max_leaves" to account for modern
+    systems.</li>
+<li>Pulled latest translations from transifex.</li>
+<li>Updated GeoIP databases.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Fixed memory leak on the error path of OOB / G2 query hit sending.</li>
+<li>Fixed memory leak on the file upload path.</li>
+<li><code>aging_insert()</code>: was not properly handling freeing of keys,
+    causing leaks.</li>
+<li>Fixed property description message for "max_leaves".</li>
+<li>Windows: no HEAP_NO_SERIALIZE flag on <code>HeapAlloc()</code> since we're
+    multi-threaded.</li>
+<li><code>mingw_valloc()</code>: fixed monitoring of unreserved VM space.</li>
+<li>Windows: optimized the inital VM space reservation.</li>
+<li><code>rpc_delay()</code>: avoid int overflowing, which would make delay
+    negative!</li>
+<li><code>node_udp_sr_data_ind()</code>: do not crash if UDP was disabled or port
+    was 0.</li>
+<li>Fixed crashes in the <code>omalloc()</code> layer.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Make sure an initial GMT offset is computed before the time thread
+    starts.</li>
+<li>Compact the aging structure on 64-bit platforms.</li>
+<li>Fixed possible race between <code>evq_trampoline()</code> and
+    <code>evq_event_discard()</code>.</li>
+<li>Added safety assertions: a removed item must belong to the list.</li>
+<li>Fixed typos in safety assertions.</li>
+<li>EVQ: closed race condition betweeen queues recreated in same thread
+    ID.</li>
+<li>Use getrlimit(RLIMIT_AS) to get the available space, not RLIMIT_DATA.</li>
+<li>Windows: try harder to compute a relevant break value with sbrk(0).</li>
+<li>Windows: added cpp trap for <code>dup()</code>.</li>
+<li>Windows: fixed fcntl(F_DUPFD) implementation which was not
+    thread-safe.</li>
+<li>Windows: dump symbolic PC on stack overflows, after basic
+    information.</li>
+<li><code>elist_remove()</code>: assert that removed item must be part of some
+    list.</li>
+<li><code>evq_event_discard()</code>: be quiet when removing event for the event
+    queue thread.</li>
+<li><code>evq_event_discard()</code>: correctly handle cancelable events.</li>
+<li><code>evq_trampoline()</code>: factorize removal of triggered item from queue
+    list.</li>
+<li><code>evq_trampoline()</code>: fixed logging message to use copied value.</li>
+<li><code>getgateway()</code>: on Linux, cache previously computed value in case
+    netlink fails.</li>
+<li><code>getgateway()</code>: on Linux, the netlink socket can return EAGAIN on
+    <code>recv()</code>.</li>
+<li><code>main_command_line()</code>: optimized and simplified!</li>
+<li><code>malloc_init_vtable()</code>: be sure to set G_SLICE=always-malloc on
+    Windows.</li>
+<li><code>mingw_exception()</code>: skip printing of stacktrace if we got a stack
+    overflow.</li>
+<li><code>mingw_getrlimit()</code>: implement a better RLIMIT_DATA query.</li>
+<li><code>mingw_getrlimit()</code>: return different max / current values to
+    account for usage.</li>
+<li><code>mingw_signal()</code>: always record signal handler in our internal
+    list of handlers.</li>
+<li><code>mingw_valloc()</code>: don't complain about non-hinted allocations when
+    crashing!</li>
+<li><code>mingw_valloc()</code>: use <code>s_minicarp()</code> to limit resource
+    consumption.</li>
+<li><code>mingw_valloc()</code>: when nearing out-of-memory, take data segment
+    into account.</li>
+<li><code>mingw_vmm_init()</code>: accelerate initialization, reducing amount of
+    system calls.</li>
+<li><code>mingw_win2posix()</code>: handle 0 to avoid warnings when called with
+    no error.</li>
+<li><code>mingw_win2posix()</code>: mapped ERROR_BAD_EXE_FORMAT to ENOEXEC.</li>
+<li><code>mingw_win2posix()</code>: mapped ERROR_NETNAME_DELETED to
+    EHOSTUNREACH.</li>
+<li><code>mingw_win2posix()</code>: use <code>s_minicarp()</code> instead of
+    <code>s_warning()</code> to see "culprit".</li>
+<li><code>omalloc_allocate()</code>: was releasing spinlock too soon in read-only
+    mode.</li>
+<li><code>omalloc_chunk_allocate_from()</code>: fixed bug when header dissolution
+    was required.</li>
+<li><code>publisher_handle()</code>: simplified code by factorizing
+    <code>shared_file_unref()</code> call.</li>
+<li><code>s_minicarp()</code> and <code>s_minicrit()</code>: carefully avoid stdio
+    when dumping stack.</li>
+<li><code>sdbm_close()</code>: ensure we sync pending dirty data when database is
+    not volatile.</li>
+<li><code>sdbm_name()</code>: return path to the .pag file if no name was
+    explicitly given.</li>
+<li><code>settings_init()</code>: when computing max VM space, use max from
+    RLIMIT_AS, not cur.</li>
+<li><code>socket_create_and_bind()</code>: on Linux systems, force SO_REUSEADDR
+    before <code>bind()</code>.</li>
+<li>sort-test: reduce verbosity by default.</li>
+<li><code>thread_suspend_others()</code>: silently suspends itself if
+    concurrently asked to.</li>
+<li><code>udp_sched_write_error()</code>: don't dump a stack trace on send errors
+    we expect.</li>
+
+</ul>
+<!-- end of release 1.1.6 -->

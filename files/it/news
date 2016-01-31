@@ -1,0 +1,26 @@
+<!-- $Id$ -->
+<?php
+
+/* Only for very important news
+ * icecontent("special_news");
+ */
+
+/* The site intro */
+icecontent("intro");
+
+/* Recent news */
+icecontent("news_header");
+newsfiles();
+
+for($i = 0; $i < NEWSNUM; $i++) {
+	/* Insert an anchor name for fragment references */
+        $id = (count($news_items) - $i - 1);
+	echo '<a id="news_' . $id . '"></a>' . "\n";
+	icecontent("$news_items[$i]");
+}
+
+/* Link to older news */
+icecontent("news_bridge");
+?>
+<!-- end news -->
+

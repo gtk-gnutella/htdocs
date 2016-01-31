@@ -1,0 +1,30 @@
+<!-- $Id$ -->
+<h4>22 May 2005, Version 0.95.3 Released</h4>
+
+<p>
+  Version 0.95.3 is a bug fix release. Several bugs were
+  fixed. We advise everyone to upgrade to this version of
+  GTKG as it is likely that the bugs we fixed will cause problems for
+  you at some point.
+</p>
+
+<ul>
+  <li>Fixed a potential denial-of-service problem.</li>
+  <li>Fixed OOB reply code which would lead to failed assertions.</li>
+  <li>[GTK1] Show Enable option and Remove button in Filter editor again.</li>
+  <li>Fixed inadvertent truncation of large files (&gt; 4 GB).</li>
+  <li>Compatibility fixes for 64-bit platforms.</li>
+</ul>
+
+<p>Checksums of the source tarball:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.95.3.tar.bz2) = bde94b95622f895294bffac8cecbe67a</li>
+  <li>SHA1 (gtk-gnutella-0.95.3.tar.bz2) = 1efeb54c8637f785e3a67e093c27fdf96974318b</li>
+  <li>urn:sha1:D37LKTEGG73YLY5GPYETYJ757FUXIMML</li>
+  
+</ul>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_44 -->

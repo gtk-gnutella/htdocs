@@ -1,0 +1,92 @@
+<!-- $Id$ -->
+<h4>6 May 2005, Version 0.95.1 Released</h4>
+
+<p>
+  Version 0.95.1 is a stability release. Stability has been greatly
+  improved since 0.95, so if you had any kind of trouble with 0.95
+  then these problems are likely to be gone. 
+  As usual everyone is encouraged to upgrade to the new version.
+</p>
+
+<ul>
+	<li>Bitzi tickets are now persistently cached so that tickets are
+      available again after restarting GTKG.</li>
+	<li>Improved Unicode support:
+	  <ul>
+	  <li>The use of Unicode in queries now matches that of other Gnutella
+		clients. This will make it easier to search for file names which
+		contain non-Latin characters. At the time of release only
+		gtk-gnutella 0.95.1 and Limewire will respond properly to Unicode
+		queries.</li>
+	  <li>Files are shared with their names converted to UTF-8, and
+		downloads are stored with UTF-8 file names.</li>
+	  <li>Unicode support is now built-in, we no longer depend on the ICU
+		library.</li>
+	  </ul>
+	</li>
+	<li>Search improvements:
+	  <ul>
+	  <li>It is now possible to enter negative matches in search strings. If
+		you enter "blah -blubb -nada" as search string, results matching
+		"blubb" or "nada" are automagically filtered.</li>
+	  <li>The search filter allows filtering for files larger than 4 GiB and
+		you can also use suffixes like KB, KiB, MB, MiB etc.</li>
+	  </ul>
+	</li>
+	<li>[GTK2] GUI updates:
+	  <ul>
+	  <li>You can drag &amp; drop items under Downloads-&gt;Files e.g., to pass
+		them to a audio/video player, picture viewer etc. Drag &amp; drop is
+		dangerous when used on files from unknown sources. You have been
+		warned.</li>
+	  <li>GnutellaNet has a new item "Reverse DNS lookup" in its context
+		menu to perform a lookup of the peer's IP address.</li>
+	  <li>XML data contained in search results is shown in the results
+		details pane.</li>
+	  <li>The search edit field has been moved to the top.</li>
+	  <li>The Downloads pane was split into "Active Sources" and "Queue".</li>
+	  <li>Compatible with GTK 2.6.x and older versions.</li>
+	  </ul>
+	</li>
+	<li>The GUI uses SI prefixes according to IEC 60027-2 (2000-11) Ed. 2.0
+	  everywhere, so hard disk vendors won't fool you any longer.</li>
+	<li>Compatibility fixes to allow compilation on more architectures,
+	  including 64 bit architectures.</li>
+	<li>
+	  <ul>
+	  <li>Systems with a sendfile() that is not largefile compatible work
+		again. On platforms without sendfile() we now use mmap() for
+		improved efficiency.</li>
+	  </ul>
+	</li>
+	<li>There are now two hostiles.txt, a system-wide ("global") and one in
+	  the ~/.gtk-gnutella directory. So you only need to put private
+	  additions into ~/.gtk-gnutella/hostiles.txt. These files are also
+	  automagically reloaded on change, so you don't need to restart
+	  gtk-gnutella to make the changes effective.</li>
+	<li>Updated listings for geographic information, bogus addresses and
+	  spam sites.</li>
+	<li>Greatly enhanced stability as compared to 0.95 due to many bug
+	  fixes. Other noteworthy bugs fixed are:</li>
+	<li>
+	  <ul>
+	  <li>gtk-gnutella as ultrapeer was not routing any searches iff uploads
+		had been disabled.</li>
+	  <li>Problems with the UDP/TCP port setting have been fixed (bug
+	  #1091827).</li>
+	  </ul>
+	</li>
+	<li>German, Japanese, and Spanish translation updated.</li>
+</ul>
+
+<p>Checksums of the source tarball:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.95.1.tar.bz2) = f3f84b2f7bad40478d11f4f91156bedd</li>
+  <li>SHA1 (gtk-gnutella-0.95.1.tar.bz2) = abd74c693a67dc7973d256109a98604213aa3331</li>
+  <li>urn:sha1:VPLUY2J2M7OHS46SKYIJVGDAIIJ2UMZR</li>
+</ul>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_42 -->

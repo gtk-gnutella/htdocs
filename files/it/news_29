@@ -1,0 +1,23 @@
+<!-- $Id$ -->
+<h4>15. August 2003, Version 0.92.1 released</h4>
+<p>
+	<strong>These are some of the changes made since 0.92 stable:</strong>
+</p>
+<ul>
+  <li>
+    Improved PARQ and fixed some problems with it.
+  </li>
+  <li>
+    Several crashes have been fixed. (<?php sf_bug("706014");?>, <?php sf_bug("757276");?>, <?php sf_bug("739262");?>)
+  </li>
+  <li>
+    Switched to metaconfig, and abandoned autoconf/automake.
+  </li>
+</ul>
+<p>
+	For more changes go <a href="?page=release_history#0.92.1">here</a>.
+</p>
+<p>
+<em>gtk-gnutella team</em>
+</p>
+<!-- end news_29 -->

@@ -1,0 +1,32 @@
+<!-- $Id$ -->
+<h4>5. January 2004, Version 0.93.2 released</h4>
+
+<div class="warning">
+	This is known to have critical bugs. Please don't use it.
+</div>
+
+<p>
+  <strong>These are some of the changes made since 0.93.1:</strong>
+</p>
+<ul>
+	<li>
+  	GTK1 now supports grouped searches and grouped downloads, like GTK2
+    did.
+  </li>
+  <li>
+    Reduced bandwidth requirements.
+  </li>
+	<li>
+		Reduced CPU usage.
+	</li>
+	<li>
+		Full compliance with LimeWire's I18N queries if the ICU library is used.
+	</li>
+</ul>
+<p>
+	For more changes go <a href="?page=release_history#0.93.2">here</a>.
+</p>
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_32 -->

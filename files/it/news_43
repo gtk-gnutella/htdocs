@@ -1,0 +1,30 @@
+<!-- $Id$ -->
+<h4>10 May 2005, Version 0.95.2 Released</h4>
+
+<p>
+  Version 0.95.2 is a bug fix release. Several bugs were
+  fixed. We strongly advise everyone to upgrade to this version of
+  GTKG.
+</p>
+
+<ul>
+  <li>GTKG generated up to four times more traffic than was needed between
+      GTKG Ultrapeer and GTKG leafs.</li>
+  <li>Improved firewall status detection: if you are not firewalled then GTKG
+      is now less likely to claim that you are.</li>
+  <li>Fix a build problem for some versions of Glade</li>
+  <li>A few minor bugs fixed</li>
+</ul>
+
+<p>Checksums of the source tarball:</p>
+<ul>
+  <li>MD5 (gtk-gnutella-0.95.2.tar.bz2) = 59725fb818dcedc5573df3894c50f1a0</li>
+  <li>SHA1 (gtk-gnutella-0.95.2.tar.bz2) = 885a5bf9793989d9ab40a8d2d3970378532e8b35</li>
+  <li>urn:sha1:RBNFX6LZHGE5TK2AVDJNHFYDPBJS5CZV</li>
+  
+</ul>
+
+<p>
+  <em>gtk-gnutella team</em>
+</p>
+<!-- end news_43 -->

@@ -1,0 +1,26 @@
+<!-- $Id$ -->
+<h4>3. Mar 2003, Version 0.92 beta2 released</h4>
+<p>
+This is a bugfix release. If you used beta1, please update to this beta. Also
+note that precompiled versions only exist for GTK1 as GTK2 is too slow for most
+users right now.
+</p>
+<ul> 
+<li> Fixed Gnutella web cache hammering.  A buggy test caused GTKG to query
+  the caches each time it was establishing an outgoing connection!
+<li> Domain name resolution for Gnutella web cache are now done asynchronously.
+  The GUI will no longer freeze due to a DNS request.
+<li> Some performance improvements: removed the most important bottlenecks.
+<li> Fixed flow-control bug, exercised mainly with compressed connections: they
+  could stall abruptly, no longer transmitting data.
+<li> Fixed assertion failure in PARQ client code.
+<li> Fixed incomplete clearing of downloads from a given host.
+<li> <strong>Warning:</strong> The amount of bandwidth configured for leaves is currently automatically
+  added to the HTTP connections when not in leaf mode, regardless of whether
+  "use surplus bandwidth" is activated.  This will change in the release.
+</ul>  
+
+<p>
+<em>gtk-gnutella team</em>
+</p>
+<!-- end news_25 -->

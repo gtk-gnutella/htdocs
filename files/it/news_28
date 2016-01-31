@@ -1,0 +1,34 @@
+<!-- $Id$ -->
+<h4>20. July 2003, Version 0.92.1 candidate released</h4>
+<p>
+  Please test this candidate so we can provide a very stable 0.92.1 in a few
+  weeks. It should be very stable and just as fine as a release. Due to some
+  problems with the toolchain, it's a source-only release.
+</p>
+<!--
+<p>
+  Here are the checksums:
+</p>
+<ul>
+  <li>
+    SHA1 (gtk-gnutella-0.92.1c.tar.bz2) = 41ea9104b4fe407139005d60d689a7bde044ebd7
+  </li>
+  <li>
+    MD5 (gtk-gnutella-0.92.1c.tar.bz2) = d20ef03a5474aa0d961c52030caf206b
+  </li>
+  <li>
+    SHA1 (gtk-gnutella-0.92.1c.tar.gz) = 5a51144bc5de026800ec23ee55763a126684fbd8
+  </li>
+  <li>
+    MD5 (gtk-gnutella-0.92.1c.tar.gz) = b6b5222b8d092e33176a779359f99ef1
+  </li>
+</ul>
+-->
+<p>
+  Thanks a lot to all the contributors and bug reporters!
+</p>
+
+<p>
+<em>gtk-gnutella team</em>
+</p>
+<!-- end news_28 -->
