@@ -1,0 +1,57 @@
+<!-- $Id$ -->
+<h1>Contatti</h1>
+<h4>Mailing List</h4>
+
+<p>
+Le mailing list sono il sistema pi&ugrave; affidabile e spesso il pi&ugrave; rapido 
+per ottenere aiuto su gtk-gnutella. Non esitate a scriberci se avete domande su gtk-gnutella!
+Altri utenti e gli sviluppatori cercheranno di aiutarvi. Per cortesia iscrivetevi a una mailing list prima di scrivere
+in quanto i messaggi dei non iscritti vengono moderati per evitare lo spam.
+Cliccate sui link per iscriversi o disiscriversi!
+</p>
+
+<p>
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-users/">
+    gtk-gnutella-users</a> Lista principale degli utenti Gtk-Gntuella ( 
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gtk-gnutella-users">
+    archivio</a> )<br>
+
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-devel/">
+    gtk-gnutella-devel</a> Se siete interessati a contribuire alla sviluppo di Gtk-gnutella ( 
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gtk-gnutella-devel">
+    archivio</a> )<br>
+
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-announce/">
+    gtk-gnutella-announce</a> Solo annunci di nuove versioni ( 
+  <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gtk-gnutella-announce">
+    archivio</a> )<br>
+           
+  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-cvs">
+    gtk-gnutella-cvs</a> Un sacco di informazioni sui commit SVN.<br>
+</p>
+
+<h4>Chat IRC</h4>
+
+<p>
+  Sulla <a href="http://www.freenode.net/">rete freenode</a> (precedentemente 
+  Open Projects Network / OPN) ci incontriamo nel canale 
+  <a href="irc://irc.freenode.net/gtk-gnutella">#gtk-gnutella at irc.freenode.net</a>.
+  Potete anche leggere discussioni passate nel
+  <a href="http://gtk-gnutella.nl/irc/log/">archivio IRC pubblico</a>.
+  C'&egrave; sempre qualcuno, ma non sempre qualcuno che conosce la risposta alla domanda.
+  Serve un client IRC come 
+  <a href="http://www.xchat.org">xchat</a> per entrare nel canale. Se non ricevete risposte in tempo utile,
+  considerate l'invio di una mail ad una delle mailing list.
+</p>
+
+<h4>SourceForge</h4>
+
+<p> 
+  Il <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">
+  Bug Tracker</a> e 
+  <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">
+  Richiesta Caratteristiche</a> sono disponibili su SourceForge, ma è pi&ugrave; facile ttenere risposte sulle
+  mailing list o su IRC. C'&egrave; una <a href="?page=bugreport_howto">guida per i bug report</a>.
+</p>
+
+<!-- end mailing -->

@@ -1,0 +1,21 @@
+<!-- $Id$ -->
+
+<h1>Donazioni</h1>
+<p>
+Potete supportare lo sviluppo di gtk-gnutella donando denaro al principale programmatore di gtk-gnutella, Raphael Manfredi.
+Il denaro verr&agrave; utilizzato per acquistare hardware di ricambio o libri di informatica.
+</p>
+<br>
+<p style="text-align: center;">
+  <a href="https://www.paypal.com/xclick/business=Raphael.Manfredi%40pobox.com&amp;no_note=1&amp;tax=0&amp;currency_code=EUR">
+    <strong>Cliccate qui per donare con PayPal!</strong></a>
+</p>
+<br>
+<br>
+<br>
+<p>
+  <strong>Grazie per il vostro aiuto!</strong>
+  <br>
+  <br>
+</p>
+<!-- end donate -->

@@ -1,0 +1,34 @@
+<!-- $Id$ -->
+<h1>gtk-gnutella documentation</h1>
+<ul>
+  <li>
+    <a href="?page=filtering_howto">piccola guida al filtraggio</a> 
+    <small> by Vidar</small>
+  </li>
+  <li>
+    <a href="?page=searching_by_hash">Ricerca tramite hash e magnet link</a> <small>by guruz</small>
+  </li>
+  <li>
+    <a href="?page=bugreport_howto">Come segnalre bug</a> <small>by eqom14</small>
+  </li>
+  <li>
+    <a href="?page=glossary">Glossario</a>
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <a href="?page=features">Caratteristiche</a>
+  </li>
+  <li>
+    <a href="?page=shots096u">Screenshot</a><br>
+  </li>
+  <li>
+    <a href="?page=release_history">Cronologia delle versioni</a><br>
+  </li>
+</ul>
+
+<p style="text-align: center;">
+  Altri in arrivo...
+</p>
+<!-- end docs -->
