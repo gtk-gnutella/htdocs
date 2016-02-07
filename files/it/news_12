@@ -1,8 +1,0 @@
-<!-- $Id$ -->
-<h4>3. May 2002, gtk-gnutella searches persist</h4>
-<p>
-As of the current CVS version gtk-gnutella saves the searches to disk and
-restores them again at startup. Also there have been lots of changes to the
-gui layout and bandwidth management can be done while gtk-gntuella is 
-running. 
-</p>

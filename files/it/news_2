@@ -1,8 +1,0 @@
-<!-- $Id$ -->
-<h4>24. October 2001, 0.17 finally available</h4>
-<p>
-This release should noticeably decrease the CPU usage, especially for
-people sharing many files and/or connecting to many nodes.  On a 466 Mhz
-PC, with 3600+ files shared and 7 node connections, the typical CPU used
-is under 2%.
-</p>
