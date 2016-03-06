@@ -1,0 +1,218 @@
+<h4>6 March 2016, Version 1.1.9 Released</h4>
+
+<p>This is mostly a bug-fixing release.</p>
+
+<p>It fixes an important bug in the UPnP discovery path that led to a crash
+   when it found more than one UPnP device on the network.</p>
+
+<p>It also introduces a new Glossary that can be displayed to explain some
+   terms that may be hard to understand for newcomers, so that they may in turn
+   benefit from the tooltips and the information in the FAQ.</p>
+
+<p>On Windows, one important change is that we now force all memory
+   allocations from the external DLLs to use our own <code>malloc()</code>
+   implementation. This proves that one of the DLLs is exhibiting a memory leak.
+   Plugging that leak will unfortunately require that a garbage collector be
+   implemented. Measurements indicate that 4K leak every second on average,
+   which eventually leads to an out-of-memory crash after a few days (2 to 3),
+   preventing high uptimes on Windows. The leak is not originating from
+   gtk-gnutella's code.</p>
+
+<h5>Improvements</h5>
+<ul>
+<li>[GTK2] Added menu to display the new glossary window.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Define PTHREAD_STACK_MIN to 0 in case it is not supplied by
+    &lt;pthread.h&gt;.</li>
+<li><code>can_become_ultra()</code>: don't account for upload fds if no
+    upload will take place.</li>
+<li><code>compat_sleep_ms()</code>: fixed the fallback implementation using
+    <code>compat_poll()</code>.</li>
+<li><code>dht_route_parse()</code>: ensure we never use uninitialized
+    variables.</li>
+<li><code>entropy_collect_host()</code>: no longer attempt to get the host IP
+    addresses.</li>
+<li><code>file_locate_from_path()</code>: if pathname is qualified, duplicate
+    argument!</li>
+<li><code>ftw_foreach()</code>: prevent memory leak on error path.</li>
+<li><code>thread_lock_deadlock()</code>: avoid de-referencing NULL if
+    possible.</li>
+<li><code>upnp_discovered()</code>: avoid segfault when we have to pick the
+    first device.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Disable warnings about the mem vtable being deprecated in recent
+    glib.</li>
+<li>Suspend threads created after a global suspension is in effect.</li>
+<li>Warn when we cannot find a thread to record / release a lock.</li>
+<li>Added a new crash-level for deadlocks.</li>
+<li>Added optional debugging code to track reading threads on a read-write
+    lock.</li>
+<li>Added <code>spinlock_in_crash_mode_raw()</code> for raw spinlocks to
+    avoid deadly recursion.</li>
+<li>Additional debugging code to track read spots per thread on a read-write
+    lock.</li>
+<li>Added backtrace capture when threads are contending for a lock.</li>
+<li>On deadlocks, suspend the other threads and log origin quickly before
+    handling.</li>
+<li>New strategy in lock "deadlock" routines: ignore when in pass-through
+    mode.</li>
+<li>Do not perturb the lock waiting state of the crashing thread on a
+    deadlock.</li>
+<li>Revisited <code>thread_lock_deadlock()</code>.</li>
+<li>Check for stack overflowing each time a lock is grabbed and recorded.</li>
+<li>Added thread diversion support.</li>
+<li>Added <code>thread_halt()</code> to forcefully halt concurrently crashing
+    threads.</li>
+<li>Refactored memory checks to avoid systematic locking in
+    <code>mem_is_valid_ptr()</code>.</li>
+<li>Try to divert crash processing to main thread when triggered in a
+    sub-thread.</li>
+<li>On deadlock condition, attempt to collect stacktraces of other
+    threads.</li>
+<li>Add the current process PID and the last crash level to the crash
+    log.</li>
+<li>Use raw logging routines in spinlock / mutex deadlock tracing.</li>
+<li>Added <code>crash_getpid()</code> for safe original PID computation, even
+    across a <code>fork()</code>.</li>
+<li>Add dump of all the thread stacks to the crash log if we can't
+    <code>fork()</code>.</li>
+<li>Moved <code>equiv()</code> and <code>implies()</code> definitions to
+    "casts.h".</li>
+<li>Added <code>xxx_to_string_grp()</code> to optionally format xxx with
+    thousand groupping.</li>
+<li>Adding win32 dynamic library patcher to trap <code>malloc()</code> in all
+    required DLLs.</li>
+<li>Windows: with win32dlp, no need for monitoring committed memory.</li>
+<li>Renaming of legacy G_GNUC_XXX into G_XXX for concision.</li>
+<li>Renamed G_N_ELEMENTS as N_ITEMS.</li>
+<li>Moved gcc-specific macros to a dedicated file.</li>
+<li>Added pragmas to shut up spurious warnings with the clang 3.4.1
+    compiler.</li>
+<li>On the lock recording path, we can now use
+    <code>thread_get_element()</code> safely.</li>
+<li>Made sure symbols are thread-safe and properly locked.</li>
+<li>If stacktrace dumps could intertwine, prefix the second with the thread
+    ID.</li>
+<li>Allow for nested lock waiting sequences.</li>
+<li>Added SIGSYS to the list of harmful signals we want to catch.</li>
+<li>Added THREAD_F_WAIT to let <code>thread_create()</code> wait for the new
+    thread to start.</li>
+<li>Windows: was not reconstructing correct stack frame pointer for WINAPI
+    calls.</li>
+<li>Windows: improved backtracing through routines using a large amount of
+    stack.</li>
+<li>Made <code>signal_enter_critical()</code> and
+    <code>signal_leave_critical()</code> thread-safe.</li>
+<li>Made <code>signal_in_handler()</code> thread-safe.</li>
+<li>No longer block signals when waiting for a read-write lock.</li>
+<li>Prevent signals during logging, to avoid recursion if logging from
+    handler.</li>
+<li>rwlock: when waiting for too long, deadlock only when no activity is
+    seen.</li>
+<li>Added <code>hash_table_is_locked()</code>.</li>
+<li>Added <code>compat_gettid()</code> and use it to record the system thread
+    ID.</li>
+<li>Added support for <code>thread_interrupt()</code> and
+    <code>thread_os_kill()</code>.</li>
+<li>Windows: make sure <code>s_read()</code> can return EINTR and handle it
+    properly.</li>
+<li>Windows: added support for <code>sigprocmask()</code>,
+    <code>sigsuspend()</code> and friends.</li>
+<li>xmalloc: count and loudly trace allocation attempts made from signal
+    handler.</li>
+<li>omalloc: loudly warn when invoked from signal handler.</li>
+<li>VMM: warn when memory allocation / freeing attempted from signal
+    handler.</li>
+<li>VMM: use groupped formatting for region sizes or large numbers.</li>
+<li>Make sure we do not dispatch thread signals when running in an
+    interrupt.</li>
+<li>Added <code>s_minicarp_once()</code> and a circular buffer to avoid
+    memory allocation.</li>
+<li>Monitor when we issue blocking syscalls to flag signal handlers as
+    safe/unsafe.</li>
+<li>Added plumbing to allow <code>longjmp()</code> or
+    <code>siglongjmp()</code> in a signal handler.</li>
+<li><code>booleanize()</code>: use version not causing any jump, for
+    speed.</li>
+<li><code>clamp_strlen()</code>: use same optimization as
+    <code>utf8_strlen()</code> to compute length.</li>
+<li><code>mingw_analyze_prologue()</code>: fixed MOVL immediate offset
+    parsing.</li>
+<li><code>mingw_exception_log()</code>: simplify processing on stack
+    overflows.</li>
+<li><code>mingw_getdtablesize()</code>: don't call
+    <code>_getmaxstdio()</code>, hardwire 2048 instead.</li>
+<li><code>mingw_signal()</code>: only call <code>signal()</code> for
+    SIGSEGV.</li>
+<li><code>mingw_sigraise()</code>: only log sent signal when asked to.</li>
+<li><code>mingw_waitpid()</code>: fixed compilation warning given that
+    WAIT_OBJECT_0 is 0.</li>
+<li><code>mingw_win2posix()</code>: added mapping for
+    ERROR_INVALID_USER_BUFFER.</li>
+<li><code>mingw_win2posix()</code>: added mapping of
+    ERROR_NO_SYSTEM_RESOURCES to ENOMEM.</li>
+<li><code>mingw_write()</code>: for Windows 7 and maybe later, do not call
+    <code>write()</code>.</li>
+<li><code>mutex_is_owned()</code>: optimized by avoiding
+    <code>thread_self()</code> call if mutex not locked.</li>
+<li><code>prop_save_to_file()</code>: use file's timestamp, not the current
+    time.</li>
+<li><code>rwlock_not_owned()</code>: ignore errors when the rwlock layer is
+    in pass-through.</li>
+<li><code>s_logv()</code>: made recursion detection thread-safe.</li>
+<li><code>s_logv()</code>: use raw time computation when running in signal
+    handler.</li>
+<li><code>s_minierror()</code>: enhanced to enter crash mode immediately and
+    show thread ID.</li>
+<li><code>s_rawlogv()</code>: force "raw" mode when running in a signal
+    handler.</li>
+<li><code>s_stacktrace()</code>: downgrade from decorated to plain stack
+    before skipping traces.</li>
+<li><code>signal_name()</code>: added more items to signals[], so cache
+    linear lookup result.</li>
+<li><code>spinlock_grab_try_from()</code>: no crashing mode, don't say we
+    locked if we couldn't.</li>
+<li><code>stacktrace_get_symbols()</code>: make sure we're running this only
+    once.</li>
+<li><code>stacktrace_unwind()</code>: detect recursion in a thread-safe
+    way.</li>
+<li><code>stacktrace_unwind()</code>: use gcc-style unwinding if recursing or
+    within malloc.</li>
+<li><code>str_vncatf()</code>: added verbose assertion to ensure string is
+    not overflowing.</li>
+<li><code>symbols_name_only()</code>: simplified code.</li>
+<li><code>symbols_name_only()</code>: simplify processing if we don't have to
+    format an offset.</li>
+<li><code>thread_check_suspended()</code>: account for
+    <code>thread_find()</code> returning NULL.</li>
+<li><code>thread_cond_waiting_element()</code>: don't create the cond stack
+    until necessary.</li>
+<li><code>thread_exiting()</code>: do not reset the QID range on Windows for
+    an exiting thread.</li>
+<li><code>thread_id_name()</code>: be robust if called during crashes.</li>
+<li><code>thread_launch_trampoline()</code>: do not harvest entropy, this
+    slows down creation.</li>
+<li><code>thread_lock_got_swap()</code>: missed accounting of new lock in
+    discovered thread.</li>
+<li><code>thread_lock_waiting_element()</code>: warn when we detect recursive
+    lock waiting.</li>
+<li><code>thread_preallocate_element()</code>: also pre-allocate the lock
+    stack.</li>
+<li><code>thread_sig_handle()</code>: don't handle signals if thread is
+    supposed to be blocked.</li>
+<li><code>thread_small_id()</code>: bet on the QID lookup success.</li>
+<li><code>thread_sp()</code>: simpler version defeating compiler
+    optimizations.</li>
+<li><code>tm_localtime_raw()</code>: use exact time, as this is used during
+    logging.</li>
+<li><code>xmalloc_thread_alloc()</code>: refuse to allocate if within a
+    signal handler.</li>
+
+</ul>
+<!-- end of release 1.1.9 -->
