@@ -68,6 +68,12 @@
 
 <div class="glossary_capital">F</div>
 
+<div class="glossary_term">Flow Control (FC) mode</div>
+
+<p>
+	Servents pile outgoing packets in a queue where they are broadcasted in a first-in-first-out (FIFO) mode. If outgoing bandwidth is small and many packets need to be broadcasted, the queue gets overloaded and the servent enters in <em>Flow Control (FC) mode</em>. While in FC mode all incoming queries on the connection are dropped. Of course servents should avoid entering FC mode by being granted more bandwidth or reducing the number of connected nodes.
+</p>
+
 <div class="glossary_term">Flooding</div>
 
 <p>
@@ -202,6 +208,12 @@
 
 
 <div class="glossary_capital">Q</div>
+
+<div class="glossary_term">QRP</div>
+
+<p>
+	Query Routing Protocol (QRP) is a scheme for avoiding broadcast queries on the Gnutella network. In this scheme, hosts create query route tables by hashing file keywords and regularly exchange them with their neighbors. Standard compression techniques minimize the cost of exchanging tables. This scheme can dramatically reduce Gnutella's bandwidth requirements improving scalability and leaving more bandwidth for files exchange.
+</p>
 
 <div class="glossary_term">Query</div>
 
