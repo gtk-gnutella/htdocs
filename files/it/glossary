@@ -1,0 +1,222 @@
+<!-- $Id$ -->
+
+<h1>Glossario</h1>
+
+<p>Questo glossatio deriva dal vecchio <a href="/manual/">Online Manual</a>. Stiamo includendo ulteriori definizioni, alcune delle quali derivano dal <a href="http://rfc-gnutella.sourceforge.net/src/rfc-0_6-draft.html" target="_blank">	Gnutella Protocol Development draft</a>.</p>
+
+
+<div class="glossary_capital">B</div>
+
+<div class="glossary_term">Banda <em>minima</em> per query GUESS</div>
+
+<p>Questa è definita <em>banda minima</em> in quanto GUESS utilizza UDP e non può frazionare messaggi grandi per inviare solo pochi byte. Comunque, il valore della banda minima essere superato se sono necessarie una serie di query e la loro quantità totale supera la banda allocata. Valori inferiori significa che possono essere inviate meno query e quindi l'invio globale delle query è rallentato (richiede più tempo) in quanto ciascuna query è inviata a <em>un solo</em> ultrapeer GUESS.</p>
+
+
+<div class="glossary_term">Bootstrap</div>
+
+<p>Il processo di accesso alla rete Gnutella durante il quale si trovano altri nodi è chiamato bootstrap. Maggiori informazioni <a href="?page=bootstrap">qui</a>.</p>
+
+
+<div class="glossary_term">Bucket (di una tabella di routing)</div>
+
+<p>Un <em>bucket</em> (secchio) è una porzione dello spazio dell'ID del nodo coperto dalla tabella di routing. Ogni bucket può contenere solo K nodi, al momento 8, prima di diventare &quot;pieno&quot;. Quando un bucket è pieno di nodi buoni conosciuti, non possono essere aggiunti altri nodi a meno che il nostro stesso ID di nodo rientri nell'ambito del bucket. In quel caso il bucket è rimpiazzato da altri due bucket nuovi, ciascuno con metà range del vecchio bucket e i nodi del vecchio bucket vengono redistribuiti tra i nuovi. Questo processo è definito &quot;bucket SPLIT&quot; (divisione del bucket). Il processo opposto si definisce MERGE (unione). Ogni nodo conserva una tabella di routing di nodi buoni conosciuti. I nodi nella tabella di routing sono usati come punti di partenza per query nel DHT. Le informazioni dei nodi inclusi nella tabella di routing sono inviati in risposta a query provenienti da altri nodi. E' importante che la tabella di routing di ciascun nodo contenga solo nodi buoni. Un nodo buono è un nodo che ha risposto a una o più query negli ultimi 15 minuti. Un nodo è buono anche se ha risposto in passato a una nostra query e ci ha inviato una query negli ultimi 15 minuti. Dopo 15 minuti di inattività un nodo diventa incerto. I nodi diventano cattivi quando non rispondono a diverse query consecutivamente. I nodi che sappiamo essere buoni hanno priorità rispetto a nodi il cui stato è sconosciuto.</p>
+
+
+<div class="glossary_term">Addio (Bye)</div>
+
+<p>Si tratta di un messaggio opzionale con lo scopo di informare gli host remoti che la connessione sta per essere chiusa ed il motivo.</p>
+
+
+<div class="glossary_capital">D</div>
+
+<div class="glossary_term">Descrittore</div>
+
+<p>L'entità con cui le informazioni vengono trasmesse alla rete. Sinonimo di <em>messaggio</em>.</p>
+
+<div class="glossary_term">DHT</div>
+
+<p>La tabella di hash distribuita (Distributed Hash Table, DHT) è una <em>tabella di hash</em> distribuita su tutta la rete Gnutella. Gtk-gnutella usa un'implementazione di Kademlia per la propria DHT. Kademlia è usata anche su altre reti peer-to-peer (come eDonkey) ma memorizza chiavi e valori differenti, rendendo impossibile l'interoperabilità tra DHT di altre reti peer-to-peer. In Gnutella, DHT è usata per eseguire lookup, ricerca di sorgenti alternative, push-proxy, ecc, ma non per i termini di ricerca. Operazioni definite <em>lookup, publish, store, ecc</em> sono tipicamente effettuate in una DHT i cui nodi possono essere alternativamente attivi o passivi.</p>
+
+
+<div class="glossary_capital">E</div>
+
+<div class="glossary_term">EAR</div>
+
+<p><em>EAR</em> sta per &quot;Extra Acknowledgement Request&quot; (richiesta extra di riscontro).</p>
+
+
+<div class="glossary_capital">F</div>
+
+<div class="glossary_term">FC - controllo di flusso</div>
+
+<p>I servent impilano i pacchetti in uscita in una coda dove sono trasmessi in modalità - primo che entra primo che esce - (first-in-first-out, FIFO). Se la banda uscente è ridotta e molti pacchetti devono essere trasmessi, la coda diventa sovraccarica e il servent entra in modalità <em>controllo di flusso (Flow Control, FC)</em>. Quando ci si trova in modalità FC tutte le query in ingresso vengono ignorate. Ovviamente i servent devono evitare di entrare in modalità FC cercando di avere una maggiore banda uscente o riducendo il numero di nodi connessi.</p>
+
+<div class="glossary_term">Flooding</div>
+
+<p>Il <em>Flooding (inondazione)</em> è un algoritmo di routing semplice ma inefficiente che invia i messaggi a tutti i nodi connessi al fine di farli giungere al destinatario. L'algoritmo di flooding è stato rimpiazzato dal più efficiente algoritmo <em>GUESS</em>.</p>
+
+
+<div class="glossary_capital">G</div>
+
+<div class="glossary_term">Hub G2</div>
+
+<p>Gli Hub G2 della rete Gnutella2 sono equivalenti agli Ultrapeer in GnutellaNet. Gtk-Gnutella di solito si connette a 2 Hub G2 comportandosi come nodo foglia sulla rete Gnutella2.</p>
+
+<div class="glossary_term">GGEP</div>
+
+<p>Il protocollo di estensione generica Gnutella (Gnutella Generic Extension Protocol, GGEP) include nuove funzioni aggiunte al protocollo originale Gnutella 0.4: maggiori informazioni <a href="http://rfc-gnutella.sourceforge.net/src/GnutellaGenericExtensionProtocol.0.51.html" target="_blank">qui</a>.</p>
+
+
+<div class="glossary_term">GIV</div>
+
+<p><em>GIV</em> è il messaggio mandato dal servent che sta per inviare un file in risposta a una richiesta.</p>
+
+<div class="glossary_term">Rete Gnutella</div>
+
+<p>GnutellaNet (o per brevità &quot;Gnutella&quot;) è una rete-sulla-rete (overlay network). Ciò significa che consiste in una rete che funziona sovrapponendosi a internet. GnutellaNet è <em>non strutturata</em>. Questo significa che nessun particolare computer o gruppo di computer la controlla o gestisce; è probabilmente più democratica della maggior parte dei governi!</p>
+<p>Poiché GnutellaNet è una rete-sulla-rete, non deve fare attenzione alla geografia. Probabilmente vi connetterete a computer fisicamente in altre nazioni. La rete potrebbe funzionare più velocemente se non fosse così, ma questa struttura garantisce anche maggiore resilienza.</p>
+
+<div class="glossary_term">GUESS (Gnutella UDP Extension for Scalable Searches, estensione UDP Gnutella per ricerche scalabili)</div>
+
+<p>Diversamente dall'algoritmo di <em>flooding</em>, mediante l'indirizzamento GUESS i nodi vengono interrogati uno alla volta. Ogni nodo mantiene una cache di peer conosciuti e affidabili in grado di accettare query e questi sono selezionati a caso. Questo metodo di indirizzamento è considerato più efficiente e sicuro in confronto al flooding.</p>
+
+<div class="glossary_term">GUID (Global Unique IDentifier) - Identificatore unico globale</div>
+
+<p>Consiste in un valore della dimensione di 16 byte costituito da byte casuali, il cui scopo è di etichettare servent e messaggi. Questa etichetta non è una firma, ma solo un modo per identificare gli elementi della rete in modo univoco.</p>
+
+
+<div class="glossary_capital">H</div>
+
+<div class="glossary_term">HSEP</div>
+
+<p>Il protocollo di stima della dimensione dell'orizzonte (Horizon Size Estimation Protocol, HSEP) permette di calcolare il numero di nodi Gnutella raggiungibili, di file condivisi e kibibyte condivisi. Maggiori informazioni <a href="http://www.schuerger.com/gnutella/hsep.html" target="_blank">qui</a>.</p>
+
+
+<div class="glossary_capital">L</div>
+
+<div class="glossary_term">Nodo foglia</div>
+
+<p>Una foglia (leaf) è la connessione base a GnutellaNet. Una foglia tipicamente si connette a 3-4 ultrapeer. Gli ultrapeer indirizzano le ricerche e mantengono le proprie foglie collegate a GnutellaNet.</p>
+
+
+<div class="glossary_capital">M</div>
+
+<div class="glossary_term">Messaggio</div>
+
+<p>I <em>messaggi</em> sono le entità in cui le informazioni vengono trasmesse sulla rete. <em>Pacchetti</em> e <em>descrittori</em> sono sinonimi.</p>
+
+<div class="glossary_term">MUID (Messages Unique IDentifier) - Identificatore unico dei messaggi</div>
+
+<p>Un <em>GUID</em> per messaggi di rete.</p>
+
+
+<div class="glossary_capital">P</div>
+
+<div class="glossary_term">PARQ (Passive/Active Remote Queuing, accodamento remoto passivo/attivo)</div>
+<p>Quando un servent richiede un file ospitato da un servent che non possiede slot di invio liberi, la richiesta entra in una coda remota sul servent ospitante. Questa coda remota è gestita dal <em>PARQ</em>.</p>
+
+<div class="glossary_term">Ping</div>
+
+<p>Un <em>Ping</em> è un messaggio inviato da un servent che cerca di scoprire attivamente i nodi sulla rete. Ci si aspetta che servent che riceve un messaggio Ping risponda con uno o più messaggi Pong.</p>
+
+<div class="glossary_term">Pong</div>
+
+<p>Un <em>Pong</em> è un messaggio di risposta a un Ping. Include gli indirizzi di un servent Gnutella connesso, la porta TCP di ascolto di quel servent e informazioni riguardo la quantità di dati resi disponibili sulla rete.</p>
+
+<div class="glossary_term">Push</div>
+
+<p>Questo è un meccanismo che permette a un servent dietro firewall di contribuire alla rete con dati sotto forma di file. Per esempio un servent può inviare un messaggio Push se riceve un messaggio QueryHit da un servent che non supporta connessioni in ingresso. Questo potrebbe accadere quando il servent che invia il messaggio QueryHit si trova dietro un firewall.</p>
+
+<div class="glossary_term">Push-proxy</div>
+
+<p>Un <em>push-proxy</em> è un nodo di ritrasmissione. Se un ultrapeer è collegato a una foglia dietro firewall, per poter inviare un <em>push</em> alla foglia, un servent può inviare un messaggio UDP all'ultrapeer che a sua volta lo ritrasmetterà alla foglia. In questo modo l'ultrapeer agisce da push-proxy: si occupa della ritrasmissione affinché la foglia possa essere raggiunta.</p>
+
+
+<div class="glossary_capital">Q</div>
+
+<div class="glossary_term">QRP</div>
+
+<p>Il protocollo di indirizzamento query (Query Routing Protocol, QRP) è un sistema per evitare di trasmettere query sulla rete Gnutella. Secondo questo sistema, i nodi generano tabella di indirizzamento query facendo l'hash di parole chiave dei file e scambiandole regolarmente con i loro vicini. Le tecniche di compressione standard minimizzano il costo dello scambio tabelle. Questo sistema può drammaticamente ridurre le richieste di banda di Gnutella aumentando la scalabilità e lasciando più banda libera per lo scambio file.</p>
+
+<div class="glossary_term">Query</div>
+
+<p>L'invio di una <em>Query</em> è il meccanismo principale per cercare all'interno di una rete distribuita. Un servent che riceve un messaggio Query risponderà con una QueryHit se viene trovata una corrispondenza verso la propria banca dati.</p>
+
+<div class="glossary_term">QueryHit</div>
+
+<p>Una <em>QueryHit</em> è la risposta a una Query. Questo messaggio fornisce al destinatario abbastanza informazioni per acquisire i dati riferiti alla Query corrispondente.</p>
+
+
+<div class="glossary_capital">R</div>
+
+<div class="glossary_term">RUDP</div>
+
+<p>Il protocollo affidabile UDP (Reliable UDP, RUDP) permette trasferimenti NAT-verso-NAT, talora chiamati Firewall-verso-Firewall or &quot;hole-punching&quot;, in quei casi in cui il port-forwarding non è stato effettuato o non può essere effettuato dall'utente.</p>
+
+
+<div class="glossary_term">RX</div>
+
+<p>RX significa <em>ricezione</em>, è l'opposto del termine TX ovvero <em>trasmissione</em>.</p>
+
+
+<div class="glossary_capital">S</div>
+
+<div class="glossary_term">search literals (ricerca letterale)</div>
+
+<p>Doppi e singoli apici possono essere usati in modo da ottenere la corrispondenza dell'intero termine di ricerca piuttosto che delle singole parole che lo compongono. Gli apici possono essere necessari se volete cercare una frase con caratteri speciali quali i segni più e meno (vedere &quot;search requireds&quot;).</p>
+
+<div class="glossary_term">search prefixes (prefissi di ricerca)</div>
+
+<ol>
+<li>browse: elenca i file condivisi sul nodo specificato. Il formato è "browse:<em>ip_address:port</em>". Molte parti dell'interfaccia grafica hanno un menù a cui si può accedere facendo click con il tasto destro del mouse; questo permette di visualizzare i contenuti del computer specificato</li>
+<li>http: scarica la pagina web specificata. Potrebbe trattarsi di un file zip, un filmato, una grande immagine JPG, ecc.</li>
+<li>local: cerca le corrispondenze dall'host locale, cioè il vostro computer. Un'espressione regolare può seguire per filtrare i risultati. Per esempio "local:manual" mostrerà tutti i file condivisi che contengono il termine "manual" nel nome.</li>
+<li>magnet: cerca e scarica il contenuto indicato dal magnet link.</li>
+<li>push: il formato di questa ricerca è "push:<em>guid:indirizzo_ip:porta/percorso_al_file</em>".
+	Il <em>guid</em> è l'ID Gnutella del computer che possiede il file cercato.
+	La <em>ip:porta</em> è il push proxy a cui la <em>guid</em> è collegato.
+	Tipicamente questo è un ultrapeer che permette un download proxy.
+	La <em>guid</em> è una stringa di 32 caratteri esadecimali.</li>
+<li>sha1: un valore SHA base64 da cercare. Non è scaricato automaticamente.</li>
+<li>urn: simile alla ricerca sha1, ma il valore di hash è specificato. Per esempio, urn:sha1:<em>valore hash</em>
+</li>
+</ol>
+<div class="glossary_term">search requireds</div>
+
+<p>Piccoli filtri sono creati con i segni '+' e '-'. Il segno più richiede che una parola sia parte del risultato. Il segno meno non mostra risultati contenenti la frase indicata. I segni più e meno possono essere usati per precisare termini ambigui.</p>
+<p>Immaginate di voler cercare informazioni sulle mele. Potete usare una ricerca come <em>mele -computers</em>. Potreste ottenere risultati ancora più rilevante specificando <em>mele +frutta</em>.</p>
+
+<div class="glossary_term">Servent</div>
+
+<p>La parola &quot;Servent&quot; deriva dalla fusione di server+client. Un nodo in una rete P2P è chiamato <em>servent</em> in quanto si comporta sia del server che da client nello stesso momento.</p>
+
+
+<div class="glossary_term">SOAP</div>
+
+<p>Il protocollo di accesso oggetti semplici (Simple Object Access Protocol, SOAP) è un protocollo leggero basato su XML per scambiare informazioni in un ambiente decentralizzato e distribuito come le reti P2P. Maggiori informazioni <a href="https://www.w3.org/TR/2000/NOTE-SOAP-20000508/" target="_blank">qui</a>.</p>
+
+
+<div class="glossary_capital">T</div>
+
+<div class="glossary_term">THEX</div>
+
+<p>Il formato Tree Hash EXchange (THEX) è usato per scambiare Merkle Hash Trees costituito da un sottoinsieme di hash di singoli file. Maggiori informazioni <a href="http://adc.sourceforge.net/draft-jchapweske-thex-02.html" target="_blank">qui</a>.</p>
+
+
+<div class="glossary_term">Time-To-Live (TTL)</div>
+
+<p>TTL è il numero di volte che un messaggio sarà inoltrato dai servent Gnutella prima di essere rimosso dalla rete. Ogni servent decrementerà il valore TTL prima di passarlo al servent successivo. Quando il valore TTL raggiunge lo 0, il messaggio non sarà più inoltrato per evitare di generare traffico eccessivo sulla rete.</p>
+
+
+<div class="glossary_term">TX</div>
+
+<p>TX è la sigla che significa <em>trasmissione</em>.</p>
+
+
+<div class="glossary_capital">U</div>
+
+<div class="glossary_term">Ultrapeer (UP)</div>
+
+<p>Un ultrapeer è ben collegato a GnutellaNet. Dal momento che gli ultrapeer devono avere molte connessioni e indirizzare le query di ricerca, necessitano di più risorse rispetto a un nodo foglia. Gli ultrapeer si collegano tipicamente a 30 o più altri ultrapeer e 70 o più nodi foglia.</p>
+
+<!-- end of glossary -->
