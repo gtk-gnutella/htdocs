@@ -33,7 +33,6 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 
     <?php iceinclude("title", 0) ?>
 
-    <link rel="stylesheet" type="text/css" href="/default.css" />
     <link rel="icon" href="/images/favicon.png" type="image/png" />
     <link rel="start" href="/" />
     <link rel="copyright" href="https://sourceforge.net/projects/gtk-gnutella" />
@@ -248,7 +247,7 @@ div.sb_section {
 </style>
 
 
-    <?php //iceinclude("sponsors_css", 0) ?> <!-- Sponsors' CSS currently unused, disabling fo enhance page speed -->
+    <?php //iceinclude("sponsors_css", 0) ?> <!-- Sponsors' CSS currently unused, disabling to enhance page speed -->
 
   </head>
 
