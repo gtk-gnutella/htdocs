@@ -76,7 +76,179 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
           title="中文" />
 
     <?php iceinclude("sections", 0) ?>
-    <?php iceinclude("sponsors_css", 0) ?>
+
+<style>
+@media all {
+
+a:link    { color: #4444BB; }
+a:visited { color: #BB4444; }
+a:active  { color: #4444BB; }
+
+body,th,td,h3,h4,h5,p,ul {
+	font-family: helvetica, sans-serif;
+	color: #000000;
+	margin: 0px 0px 0px 0px;
+}
+
+p,pre,ul {
+	margin: 1em 2em;
+}
+
+body {
+	background-color: #AAAAEE;
+}
+
+h1 {
+	text-align: center;
+}
+
+h1.attention {
+	margin: 0 0;
+	border-style: solid;
+	border-color: red;
+	background: red;
+	color: white;
+	text-align: center;
+}
+
+h3,h4,h5 {
+	font-size: medium;
+}
+
+h5 { 	
+	font-size: 0.83em;
+}
+
+code {
+	font-family: monospace;
+}
+
+.nav {
+	font-weight: bold
+}
+
+a.navlink:link,a.navlink:visited {
+	text-decoration: none
+}
+
+a.navlink:active,a.navlink:hover {
+	text-decoration: underline
+}
+
+div.sidebar {
+/*
+	width: 14em;
+	float: left;
+*/
+}
+
+div.content {
+	margin-left: 0em;
+}
+
+div.boxed {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #42a;
+	background-color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 1%;
+	margin-left: 1%;
+	padding: 1em;
+}
+
+div.indent {
+	margin-left: 1em;
+}
+
+div.warning {
+	background-color: #FFCCCC;
+	text-align: center;
+	border-style: outset;
+	border-color: red;
+	margin: 1em;
+	padding: 0.5em;
+	font-weight: bold;
+}
+
+div.scroll {
+	overflow: auto;
+	max-height: 10em;
+}
+
+div.sb_section {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0.3em;
+	border-left: solid 2px #D3D3D3;
+	border-top: solid 2px #D3D3D3;
+	font-size: large;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+a.rss {
+	font-size: large;
+	font-weight: bold;
+	color: white;
+	background: #e60;
+	border: solid 2pt #f70;
+   text-decoration: none;
+}
+
+div.sb_section_content {
+	margin-left: 1em;
+}
+
+div.glossary_capital {
+	color: red;
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+div.glossary_term {
+	font-weight: bold;
+	font-size: larger;
+}
+
+.hidden {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	font-size: 0pt;
+}
+
+img {
+	border: 0;
+}
+
+.image,.title_image {
+	text-align: center
+}
+
+.image img {
+	margin: 0.5em;
+}
+
+}
+
+@media handheld, only screen and (max-width: 440px) {
+
+.title_image {
+	width: 100%;
+}
+
+div.sb_section {
+	line-height: 2em;
+}
+
+}
+</style>
+
+
+    <?php //iceinclude("sponsors_css", 0) ?> <!-- Sponsors' CSS currently unused, disabling fo enhance page speed -->
 
   </head>
 
