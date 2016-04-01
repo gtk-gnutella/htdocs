@@ -35,6 +35,7 @@
         <li><a href="#gnet7">Perché il mio proxy HTTP non funziona?</a></li>
         <li><a href="#gnet8">Come incremento i timeout?</a></li>
         <li><a href="#gnet-auto">In che modo la modalità automatica decide tra ultra e foglia?</a></li>
+        <li><a href="#gnet-cache">Sono in esecuzione come ultrapeer; come mai GTKG ha difficoltà a raggiungere il numero massimo di ultrapeer collegati mentre il numero di foglie è costantemente prossimo al 100%?</a></li>
     </ul>
 <h2>Ricerche</h2>
     <ul>
@@ -66,8 +67,12 @@
 <li><a name="gtk2_slow">Gtk2 è trooooppo leeento.</a></li>
         <li><a href="#gtk2_ctype">I caratteri non-ASCII compaiono come un _ (trattino basso).</a></li>
     </ul>
+    
+    
 <!--  **  ** Questions and answers below  **  --><hr>
+
 <h2>Generale</h2>
+
     <h3><a name="general0">Ad ogni modo, cosa è Gnutella?</a></h3>
     <p>GNutella è una rete di scambio informazioni peer-to-peer decentralizzata. Al momento puoi pubblicare e scaricare file di ogni tipo tramite la rete Gnutella. Per maggiori informazioni date un'occhiata alla <a href="https://it.wikipedia.org/wiki/Gnutella">definizione di Gnutella su Wikipedia</a>.</p>
         
@@ -80,14 +85,15 @@
     <h3><a name="general1">Richiede troppa banda!</a></h3>
     <p>Al momento puoi provare uno o più dei provvedimenti seguenti se ti trovi su una linea lenta:</p>
     <ul>
-<li>Scegli la modalità foglia. Puoi cambiare la modalità nel pannello di configurazione sotto GnutellaNet. Un'icona nella barra di stato indica la modalità di esecuzione.</li>
+		  <li>Scegli la modalità foglia. Puoi cambiare la modalità nel pannello di configurazione sotto GnutellaNet. Un'icona nella barra di stato indica la modalità di esecuzione.</li>
         <li>Limita il numero di connessioni gnet che possiedi.</li>
         <li>Se sei in grado di ricevere connessioni in ingresso, abilita <em>Preferisci connessioni compresse</em> nelle opzioni <em>Banda</em>.</li>
         <li>Anche se hai una connessione lenta, è comunque importante condividere files. Con lo <a href="#down3">swarming</a>, le persone ricevere da te piccole porzioni di file in modo che, anche se lente, molteplici fonti possono determinare un contributo sostanziale.
         Impostare <em>Limiti di banda per il traffico HTTP</em> - <em>Velocità cumulativa in upload</em> fino al 50% della banda disponibile non dovrebbe compromettere la navigazione e l'uso di internet da parte di altri programmi.</li>
-          <li>Se si sta usando un router ADSL, considerate di configurare il  <em>Quality of Service</em> (QoS) per ottimizzare la banda disponibile secondo regole personalizzabili.</li>
+        <li>Se si sta usando un router ADSL, considerate di configurare il  <em>Quality of Service</em> (QoS) per ottimizzare la banda disponibile secondo regole personalizzabili.</li>
         <li>Deselezionate il tasto in basso a sinistra nella schermata grafica dopo che il download è iniziato. Questo determinerà la disconnessione dalla rete Gnutella. Sconsigliamo decisamente di NON farlo. Non sarete in grado di ottenere fonti alternative dalla rete e gli altri nodi non saranno in grado di cercare tra i vostri file condivisi.</li>
     </ul>
+    
 <h3><a name="general-ultrapeer">Cosa sono i nodi ultranodo e foglia?</a></h3>
     <p>Dalla versione 0.92, gtk-gnutella ha implementato gli <em>ultranodi</em>
       e i <em>nodi foglia</em>. In questo modo i nodi di gnet si dividono in foglie, che si connettono solo agli ultranodi, che si connettono a molte foglie e a un ridotto numero di altri ultranodi (vedi <a href="#gnet0">Quale è il numero ottimale di connessioni?</a>).</p>
@@ -183,13 +189,15 @@ E' spesso disattivata perché il vostro provider potrebbe considerarla problemat
         <li>Se un gestore automatico della banda è attivo per Gnet, devono essere disponibili almeno 256 byte/s per ogni connessione gnet (ultrapeer o normale/legacy).</li>
         <li>Complessivamente devono essere disponibili 32 byte/s per ogni foglia più 256 byte/s per gnet.</li>
     </ol>
+    
+    <h3><a name="gnet-cache">Sono in esecuzione come ultrapeer; come mai GTKG ha difficoltà a raggiungere il numero massimo di ultrapeer collegati mentre il numero di foglie è costantemente prossimo al 100%?</a></h3>
+    <p>Possono esserci teoricamente due motivi all'origine di questo fenomeno: 1) una carenza globale di nodi ultrapeer sulla rete Gnutella, 2) problemi di collegamento in uscita. Quest'ultima è senz'altro la spiegazione più verosimile. Quando in esecuzione come ultrapeer, molte foglie cercano continuamente di collegarsi a voi. Analogamente, un numero relativamente inferiore di ultrapeers cerca di fare lo stesso. Il vostro nodo cerca a sua volta di collegarsi attivamente a altri ultrapeer, ma non a foglie. Se la vostra connessione in uscita è problematica (banda uscente saturata, limitazioni da parte del provider, ecc) avrete difficoltà a collegarvi ad alcuni ultrapeer, il cui indirizzo IP viene quindi rimosso dalla propria cache ultrapeer. Probabilmente avrete anche notato che nella pagina della cache il livello degli host regolari aumenta gradualmente fino a raggiungere il massimo, mentre la cache degli ultrapeers è molto più vuota e il numero di nodi diminuisce invece che aumentare. In effetti non c'è molto da fare. Provate a ridurre il numero di connessioni simultanee e/o il numero di collegamenti ultrapeer e foglie; in alternativa scegliete la modalità in esecuzione come foglia.</p>
+    
+    
 <h2>Ricerche</h2>
 
     <h3><a name="search0">Come posso ottenere più risultati?</a></h3>
     <p>Il numero di risultati ottenuti dipende grandemente dal fatto che altri vogliano collegarsi con voi (vedere <a href="#gnet1">port forwarding</a>) e il <a href="#gnet0">numero di connessioni</a> a altri nodi.</p>
-      
-    <h3><a name="search3">Come posso ignorare i file senza SHA1?</a></h3>
-    <p>---TO BE CORRECTED---</p>
       
     <h3><a name="search-entry">Dove è finito il campo per le ricerche?</a></h3>
     <p>Le ricerche vanno inserite nella casella <q><em>Cerca:</em></q> della barra laterale.</p>
@@ -210,7 +218,9 @@ E' spesso disattivata perché il vostro provider potrebbe considerarla problemat
     <h3><a name="search-local">Come posso copiare il magnet link di un file che sto condividendo?</a></h3>
     <p>Fate una ricerca con la parola chiave <code>local:,</code>. Il "." è un'espressione regolare, che qui corrisponde a qualsiasi file: questo fornirà una lista completa dei propri file condivisi. Selezionate quindi una voce, fate clic con il tasto destro e copiate il magnet link negli appunti.</p>
       
-    <h3>Download</h3>
+      
+<h2>Download</h2>
+
     <h3><a name="down0">Cosa significa lo stato "Ignoro richiesta [SHA1|nome &amp; dimensione]"?</a></h3>
     <p>Questo significa che gtk-gnutella ha quel file memorizzato come completo nel proprio database. Questo database è di solito localizzato in <code>~/.gtk-gnutella/done.sha1</code> e <code>~/.gtk-gnutella/done.namesize</code>. Al momento non c'è modo di rimuovere o modificare una voce del database dall'interfaccia grafica, ma potete editare il file con qualsiasi editor di testo mentre gtk-gnutella non è in esecuzione. Se aggiungete o rimuovete qualcosa da un file, fate lo stesso con gli altri.</p>
       
@@ -257,6 +267,7 @@ E' spesso disattivata perché il vostro provider potrebbe considerarla problemat
       
       
     <h2>GTK+ 2.x</h2>
+    
     <h3><a name="gtk2_slow">Gtk2 è trooooppo leeento.</a></h3>
     <p>Impostate la variabile di ambiente <code>GDK_USE_XFT</code> a 0 e guardate se ciò aiuta. Questo disabilita l'anti aliasing in Gtk2, funzione che può consumare molta cpu. L'interfaccia Gtk2 è molto più lenta del Gtk1, per cui su macchine lente dovreste considerare l'utilizzo dell'interfaccia Gtk1.</p>
       

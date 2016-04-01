@@ -183,6 +183,7 @@ See also,
 <a href="#gnet1"><q>Do I need to forward a port on my firewall?</q></a>.
 </p>
 
+
 <h2>Building from source</h2>
 
 <h3><a name="build1">How do I make Configure stop asking me all those questions?</a></h3>
@@ -214,6 +215,7 @@ Use the build.sh script instead of Configure!
   For available options and help regarding build.sh run this:
   <code>$ ./build.sh --help</code>
 </p>
+
 
 <h2>Gnutella connections</h2>
 

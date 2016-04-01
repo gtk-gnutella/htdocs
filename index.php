@@ -243,6 +243,10 @@ div.sb_section {
 	line-height: 2em;
 }
 
+div.boxed {
+	padding: 0.5em;
+}
+
 }
 </style>
 
