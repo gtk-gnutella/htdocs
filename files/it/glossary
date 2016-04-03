@@ -219,4 +219,14 @@
 
 <p>Un ultrapeer è ben collegato a GnutellaNet. Dal momento che gli ultrapeer devono avere molte connessioni e indirizzare le query di ricerca, necessitano di più risorse rispetto a un nodo foglia. Gli ultrapeer si collegano tipicamente a 30 o più altri ultrapeer e 70 o più nodi foglia.</p>
 
+
+<div class="glossary_capital">V</div>
+
+<div class="glossary_term">Vendor Code</div>
+
+<p>
+	Il <em>Vendor Code</em> (codice produttore) è un codice di 4 lettere usato convenzionalmente nelle Query Hit di Gnutella per identificare il sofware in esecuzione sul noto Gnutella che ha generato la hit. Per gtk-gnutella il Vendor Code è <em>GTKG</em>.
+</p>
+
+
 <!-- end of glossary -->

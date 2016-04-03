@@ -355,4 +355,13 @@
 	typically be connected to 30+ other ultrapeers and connected to 70+ leaf nodes.
 </p>
 
+
+<div class="glossary_capital">V</div>
+
+<div class="glossary_term">Vendor Code</div>
+
+<p>
+	The Vendor Code is a conventional 4-letter code used in Query Hits to identify the software running the node that generated the hit. For gtk-gnutella the Vendor Code is <em>GTKG</em>.
+</p>
+
 <!-- end of glossary -->
