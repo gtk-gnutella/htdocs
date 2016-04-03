@@ -1,0 +1,104 @@
+<!-- $Id$ -->
+<h1>Sviluppatori</h1>
+
+<h2>Collegamenti</h2>
+<ul>
+    <li><a href="http://sourceforge.net/projects/gtk-gnutella/">
+      Pagina progetto su SourceForge</a></li>
+    <li><a href="http://gtk-gnutella.sourceforge.net/doxygen/">
+      API Reference</a></li>
+    <li><a href="?page=code101">Code 101</a></li>
+</ul>
+
+<h2>Richiesta di aiuto</h2>
+<p>
+  L'attuale versione di gtk-gnutella funziona bene, ma non è aggiornata con tutte
+  le caratteristiche degli ultimi standard Gnutella. I principali protagonisti sulla rete
+  Gnutella (Limewire, BearShare, Shareaza, Gnucleus) implementano caratteristiche come il
+  Tiger Tree Hashing. gtk-gnutella lo supporta solo lato server al momento.
+  Altre caratteristiche interessanti sono gli schemi di ricerca XML (XML-Query schemes, cioè
+  la ricerca per titolo, dimensione, genere, ecc.) e i Download Proxy.
+</p>
+<p>
+  D'altra parte, gtk-gnutella possiede alcune caratteristiche che i principali software
+  non hanno, come il PARQ per l'accodamento passivo, supporto TLS, connessioni
+  criptate e supporto IPv6.
+  gtk-gnutella è anche un'implementazione C molto efficiente che usa poca memoria
+  e CPU. Probabilmente è al momento uno dei client più veloci ed efficienti.
+</p>
+<p>
+  Raphael Manfredi e Richard Eckart, gli attuali principali sviluppatori, stanno lavorando bene,
+  tuttavia Richard è occupato con l'università e Raphael ha lavoro e famiglia, per cui 
+  il tempo da dedicare alla programmazione è limitato. Poiché GTKG è software libero, sta a tutti
+  riuscire a migliorarlo.
+</p>
+<p>
+  Adesso le domande importanti:
+</p>
+<ul>
+  <li>
+    Conosci abbastanza bene il linguaggio C per aiutarci a lavorare sul codice aggiungendo
+    le funzionalità mancanti e contribuendo a renderlo il miglior client nativo Unix?
+  </li>
+  <li>
+    Possiedi abilità letterarie e/o doti per redigere una buona documentazione? Al momento
+    manca una buona documentazione e gli sviluppatori sono occupati... a programmare ovviamente.
+  </li>
+  <li>
+    Vuoi contribuire ma non sai esattamente cosa fare?
+  </li>
+</ul>
+<p>
+  Se si, iscrivetevi alla <a href="?page=mailing">
+  mailing list degli sviluppatori</a> e mandate un messaggio. Non iniziate subito a programmare, 
+  vediamo se ci sono altre persone che vogliono aiutare a fare la stessa cosa e facciamo squadra.
+  Dai anche un'occhiata alla pagina <a href="?page=developers_howto">"Developers Howto"</a>.
+</p>
+
+<hr>
+
+<p>
+<a name="devel-git"></a>
+  Per ottenere l'ultima versione in sviluppo, puoi sempre usare il repository Git
+  di gtk-gnutella. <strong>Attenzione</strong>: in quanto versione in sviluppo 
+  la versione attuale potrebbe essere instabile e magari non compilarsi bene
+  sulla tua macchina. Se ti interessa anche dare un'occhiata generale sui file puoi
+  dare un'occhiata ai repository <a href="https://github.com/gtk-gnutella/gtk-gnutella/tree/">
+  su GitHub</a>.
+</p>
+
+<p>
+  Per recuperare i file da Git digitate i seguenti comandi:
+</p>
+
+<p>
+  <code>
+    git clone https://github.com/gtk-gnutella/gtk-gnutella.git
+  </code>
+</p>
+
+<p>
+  Per imparare come muovervi con le principali branch nel repository Git, guardate
+  <a href="?page=git_quick_guide">Guida veloce Git</a> or the
+  <a href="?page=git_guide">Guida avanzata Git</a>.
+</p>
+
+<p>
+  Se volete contribuire alla sviluppo di gtk-gnutella visitate la nostra
+  <a href="http://sourceforge.net/projects/gtk-gnutella/">pagina SourceForge
+  del progetto</a> dopo potete iscrivervi alla mailing list gtk-gnutella-devel
+  e inviare le vostre correzioni, bug report e richieste di implementazioni sul 
+  <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">nostro bug tracker</a>,
+  grazie.
+</p>
+
+<hr>
+
+<a name="devel-snapshots"></a>
+<h3>Snapshot GIT</h3>
+
+<p>
+	Gli snapshot del codice sorgente più aggiornato possono essere scaricati
+	<a href="https://github.com/gtk-gnutella/gtk-gnutella"><strong>qui</strong></a>.
+</p>
+<!-- end devel -->

@@ -76,14 +76,14 @@
 </p>
 
 <p>
-  <kbd style="font-size:small">
+  <code>
     git clone https://github.com/gtk-gnutella/gtk-gnutella.git
-  </kbd>
+  </code>
 </p>
 
 <p>
   To learn about the important branches in the Git repository, see the
-  <a href="?page=git_quick_guide">Git Quit Guide</a> or the
+  <a href="?page=git_quick_guide">Git Quick Guide</a> or the
   <a href="?page=git_guide">Git Advanced Guide</a>.
 </p>
 

@@ -1,59 +1,57 @@
 <!-- $Id$ -->
-<h1>Features</h1>
+<h1>Caratteristiche</h1>
 
 <ul>
-  <li>Share files on the Gnutella network (Shareaza, Limewire, BearShare...)</li>
-  <li>Compressed Gnutella connections</li>
-  <li>Compressed UDP traffic (negotiated)</li>
-  <li>TLS support for Gnutella and HTTP connections</li>
-  <li>Simultaneous downloading of files from multiple hosts (swarming)</li>
-  <li>Passive searches</li>
-  <li>Searching by urn:sha1: and magnet:</li>
-  <li>Searching by media type (audio, video, image, document, archive)</li>
-  <li>"What's New?" queries to find stuff made recently available in your Gnutella neighbourhood</li>
-  <li>Lookup for partial files</li>
-  <li>Automatic aquisition of additional sources via download mesh and watching searches</li>
-  <li>Powerful filtering engine</li>
-  <li>Bandwidth management/limiting</li>
-  <li>HTTP request pipelining to lower download latency</li>
-  <li>UPnP and NAT-PMP support</li>
-  <li>Distributed Hash Table (DHT) to find alternate locations and push-proxies</li>
-  <li>Unicode support for handling non-ASCII filenames and queries</li>
-  <li>A lot of settings</li>
-  <li>A lot of statistics</li>
-  <li>Compliant to:
+  <li>Condividi file sulla rete Gnutella (Shareaza, Limewire, BearShare...)</li>
+  <li>Connessioni Gnutella compresse</li>
+  <li>Traffico UDP compresso (negoziato)</li>
+  <li>Supporto TLS support per connessioni Gnutella e HTTP</li>
+  <li>Download simultaneo di file da multiple sorgenti (swarming)</li>
+  <li>Ricerche passive</li>
+  <li>Ricerca tramite urn:sha1: e magnet:</li>
+  <li>Ricerca per tipologia di file (audio, video, immagine, testo, archivio)</li>
+  <li>Ricerche "Novità?" per cercare contenuti resi recentemente disponibili sui nodi Gnutella vicini</li>
+  <li>Ricerca di file parziali</li>
+  <li>Acquisizione automatica di sorgenti aggiuntive tramite download mesh e watching searches</li>
+  <li>Potente filtraggio dei risultati</li>
+  <li>Gestione e controllo del consumo di banda</li>
+  <li>Accodamento dell richieste HTTP per ridurre la latenza del download</li>
+  <li>Supporto UPnP e NAT-PMP</li>
+  <li>Distributed Hash Table (DHT) per cercare locazioni alternative e push-proxy</li>
+  <li>Supporto unicode e gestione di nomi file e query non-ASCII</li>
+  <li>Numerosi settaggi</li>
+  <li>Abbondanza di statistiche</li>
+  <li>Aderente ai seguenti standard:
     <ul>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/http/http-1.1.txt?view=markup"
 		>HTTP/1.1</a></li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/handshaking_0.6?view=markup"
-        >Gnutella 0.6</a> (Vendor Code GTKG and soon GNTD)</li>
+        >Gnutella 0.6</a> (Vendor Code GTKG e presto GNTD)</li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/compression?view=markup"
-        >GNet compression</a></li>
-      <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/bye?view=markup"
-        >BYE</a> packet</li>
+        >Compressione GNet</a></li>
+      <li>Pacchetti <a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/bye?view=markup">BYE</a></li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/huge?view=markup"
         >HUGE</a> (<strong>H</strong>ash/<strong>U</strong>RN <strong>G</strong>nutella <strong>E</strong>xtensions)</li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/ping-pong?view=markup"
-        >Ping/Pong reduction</a></li>
+        >Riduzione Ping/Pong</a></li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/PARQ?view=markup"
         >PARQ</a> (<strong>P</strong>assive/<strong>A</strong>ctive <strong>R</strong>emote <strong>Q</strong>ueueing)</li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/PFSP?view=markup"
         >PFSP</a> (<strong>P</strong>artial <strong>F</strong>ile <strong>S</strong>haring <strong>P</strong>rotocol)</li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/vendor_msg?view=markup"
-        >Vendor Messages</a></li>
+        >Messaggi Produttori</a></li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/ultra-peers?view=markup"
-        >Ultrapeers</a></li>
+        >Ultrapeer</a></li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/QRP?view=markup"
         >QRP</a> (<strong>Q</strong>uery <strong>R</strong>outing <strong>P</strong>rotocol)</li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/push_proxy?view=markup"
-        >Push Proxies</a></li>
+        >Push Proxy</a></li>
       <li><a href="https://gtk-gnutella.svn.sourceforge.net/svnroot/gtk-gnutella/trunk/gtk-gnutella/doc/gnutella/GUESS?view=markup"
         >GUESS</a> (<strong>G</strong>nutella <strong>U</strong>DP <strong>E</strong>xtension for <strong>S</strong>calable <strong>S</strong>earches)</li>
     </ul>
   </li>
 </ul>
 <p>
-  However there is still a lot of stuff to be done. If you want to help, go to our 
-  <a href="?page=devel">development page</a>
+  C'è comunque molto lavoro da fare. Se volete darci una mano visitate la <a href="?page=devel">pagina sviluppatori</a>
 </p>
 <!-- end features -->
