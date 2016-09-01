@@ -1,0 +1,52 @@
+<h4>1 September 2016, Version 1.1.10 Released</h4>
+
+<p>This is mostly a bug-fixing release and should be the last update on the
+   1.1.x release tree, before important core changes in the upcoming 1.2.</p>
+
+<h5>Improvements</h5>
+<ul>
+<li>FAQ cleanups.</li>
+<li>Added the ".ape" file extension to the default list of shared files.</li>
+<li>Remember hosts to which a TCP connection failed recently to avoid
+    hammering.</li>
+<li>Updated French and Turkish translations.</li>
+<li>Updated GeoIP databases.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Don't embed build date if SOURCE_DATE_EPOCH is set for reproducibile
+    builds.</li>
+<li>Missed ":" in variable substitution request, in scripts/nm-list</li>
+<li>nm-list: fixed date computation on BSD systems.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Need TLS 2.12 to generate an X.509 self-signed certificate.</li>
+<li>Added <code>G_PRINTF()</code> hint to <code>tls_logfmt()</code> and
+    <code>tls_cert_log()</code> to avoid warnings.</li>
+<li>Fixed CPP file inclusion protection symbol for lib/mime_type.h.</li>
+<li>Added the "ape" MIME type linked to the ".ape" file extension.</li>
+<li>Ensure we do not suspend threads during an interrupt.</li>
+<li>Track where context was taken in our setjmp wrappers to ease
+    debugging.</li>
+<li>Keep track of "once" initializations in case we end-up recursing.</li>
+<li>Trace which new lock is overflowing the lock stack.</li>
+<li>once: make sure we can insert routine in our tracking table.</li>
+<li>once: arbitrarily limit nesting level in one thread to 32.</li>
+<li><code>dht_update_size_estimate()</code>: return if our KUID was not
+    initialized yet.</li>
+<li><code>keys_reclaim()</code>: we can have values attached to key if we can
+    remove it.</li>
+<li><code>symbols_load_from()</code>: must release write lock when falling
+    back to pre-computed.</li>
+<li><code>thread_element_block_until()</code>: was not checking for
+    concurrent unblocking.</li>
+<li><code>thread_element_block_until()</code>: revisited signal handling.</li>
+<li><code>thread_suspend_others()</code>: don't wait for busy threads already
+    marked suspended.</li>
+<li>walloc: prevent race condition on walloc_stopped being set.</li>
+
+</ul>
+<!-- end of release 1.1.10 -->
