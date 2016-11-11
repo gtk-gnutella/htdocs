@@ -1,0 +1,104 @@
+<h4>11 November 2016, Version 1.1.11 Released</h4>
+
+<p>This release fixes a portability issue on FreeBSD and introduces a main
+   core feature and minor new GUI features.</p>
+
+<p>The main feature is the additiona of "equivalence classes" defining word
+   aliases, used when sharing files and querying for them.</p>
+
+<p>Currently, the only supported equivalence class deals with naming of
+   series. Indeed, there are various conventions that can be used to represent
+   these, and it makes searching inefficient: either one will lookup for all the
+   possible variations, or one will miss some of the files.</p>
+
+<p>For instance, episode #8 of an hypothetical season #4 can be represented
+   by any of these strings:</p>
+
+<pre>
+	{ "s04e08", "4x08", "408", "04x08", "0408" }
+</pre>
+
+<p>Thanks to the equivalence class, a file bearing one of these strings can
+   be searched for (and located successfully) by using any of the other strings.
+   Of course, since this is a local processing, the more servents out there are
+   deployed with this aliasing support, the more efficient the feature
+   becomes!</p>
+
+<p>There are also new GUI features: the "Clear completed" button from the
+   Download pane is now doing someething useful, and the current page of
+   different notebooks is remembered across sessions. The only one which is not
+   restored on normal resuming is the main notebook tab. It will be restored if
+   GTKG is restarted after a crash, but otherwise the application will always
+   start up within the Network tab.</p>
+
+<p>In the Uploads tab, upload requests coming from a G2 servent will not be
+   flagged with a "[G2]" tab right after the IP address. This helps seeing how
+   the Gnutella and G2 network unification is evolving.</p>
+
+<h5>New Features</h5>
+<ul>
+<li>Flag uploads coming from G2 servents with a "[G2]" tag after IP
+    address.</li>
+<li>Added alias support in sharing/querying.</li>
+<li>Made the "Clear completed" button in Downloads/Tools do something
+    useful.</li>
+<li>Moved "Clear completed" button to the bottom right of the download
+    pane.</li>
+<li>Remember fileinfo notebook tab number across sessions.</li>
+<li>Remember main notebook tab number across sessions, only restored after
+    crash.</li>
+<li>Remember Gnet stats notebook tab number across sessions.</li>
+<li>Remember download info / tools notebook tab number across sessions.</li>
+
+</ul>
+<h5>Improvements</h5>
+<ul>
+<li>Added --cleanup to explicitly request for final memory cleanup
+    sequence.</li>
+<li>Updated Italian translation.</li>
+<li>Updated GeoIP databases.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Leaf nodes could end-up being connected to more ultrapeers than
+    configured.</li>
+<li>Fixed monitoring of alien threads, important when GTK file selector is
+    used.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Debian compatibility level changed from 4 to 5.</li>
+<li>Make sure we can deal with older pkg-config, which needs leading
+    arguments.</li>
+<li>Use "embedded" symbols for <code>xmalloc()</code>, <code>xfree()</code>
+    and friends.</li>
+<li>Added "query_trace" property to trace all queries which were
+    searched.</li>
+<li>Moved halloc-based string functions like <code>h_strdup()</code> to
+    dedicated hstrfn.c.</li>
+<li>Expanded search mask to 64 bits to be able to hold all digits and
+    letters.</li>
+<li>Count aliased queries and hits from aliases.</li>
+<li>Pre-compute shared file media type at record creation time.</li>
+<li>Pass query limits to <code>st_search()</code> to avoid needless pattern
+    matching.</li>
+<li>Added <code>h_strsplit()</code> and <code>h_strsplit_set()</code>.</li>
+<li>Added <code>strvec_append_with()</code> to expand vector by appending
+    another vector.</li>
+<li><code>crash_assert_logv()</code>: don't call <code>crash_mode()</code> if
+    assert failure was recorded.</li>
+<li><code>entropy_clock_time()</code>: mix the entropy nonce through hashing
+    for more diffusion.</li>
+<li><code>node_can_accept_connection()</code>: only send headers back when
+    handshaking.</li>
+<li><code>qrp_add_file()</code>: optimized to avoid computing word length if
+    not required.</li>
+<li><code>thread_stack_check_overflow()</code>: ignore virtual addresses
+    outside stack range.</li>
+<li><code>vmm_init_once()</code>: ensure any shared library for stacktrace
+    unwinding is loaded.</li>
+
+</ul>
+<!-- end of release 1.1.11 -->
