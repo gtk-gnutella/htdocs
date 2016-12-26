@@ -77,7 +77,7 @@
 
 <h2>GTK+ 2.x</h2>
 <ul>
-  <li><a href="#gtk2_slow">Gtk2 is way sloooow.</a></li>
+  <li><a href="#gtk2_ctype">Non-ASCII characters show up as _ (underscore).</a></li>
 </ul>
 
 <!--
@@ -650,13 +650,8 @@ Use the build.sh script instead of Configure!
 
 <h2>GTK+ 2.x</h2>
 
-<h3><a name="gtk2_slow">Gtk2 is way sloooow.</a></h3>
-<p>
-  Gtk+ 2.x has complex and powerful font-rendering. There's hope that future
-  versions will be much more optimized. If the performance is unacceptable,
-  you should consider using Gtk+ 1.2 instead. However, if you switch to a
-  pane with little action and minimize the window, the performance difference
-  is negligible.
+<h3><a name="gtk2_ctype">Non-ASCII characters show up as _ (underscore).</a></h3>
+<p>Set the environment variable <code>LC_CTYPE</code> or <code>LC_ALL</code> to an appropriate value for the encoding you use. For example, if you use special German characters in your filenames, set it to <code>de_DE.ISO8859-1</code>. The valid values depend on your operating system, see the manpage setlocale(3) for details. Ideally, everyone would use UTF-8 encoding which covers nearly all languages
 </p>
 
 
