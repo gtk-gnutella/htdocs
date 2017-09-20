@@ -1,0 +1,89 @@
+<h4>20 September 2017, Version 1.1.12 Released</h4>
+
+<p>This release fixes a very critical bug that was only manifesting when
+   Partial File Sharing was turned on, and which caused possible memory
+   corruption (leading to a sure crash later) when enqueuing new files for
+   downloading.</p>
+
+<h5>New Features</h5>
+<ul>
+<li>Throttle browsing requests to one per hour from a given IP.</li>
+<li>Limit uploads to stalling hosts to 1, regardless of user settings.</li>
+<li>[GTK2] Show proper average data speed on completed uploads.</li>
+
+</ul>
+<h5>Improvements</h5>
+<ul>
+<li>Added "WSHR" vendor code for WireShare.</li>
+<li>Added "ENVY" vendor code for Envy.</li>
+<li>Do not attempt costly operations after a crash / auto-restart.</li>
+<li>Updated FAQ -Uploads and Sharing-</li>
+<li>Use 64-bit variables for bandwidth computations.</li>
+<li>Make sure early stalling is not always reported for the same IP.</li>
+<li>Use even HTTP outgoing bandwidth as the last measure when stalling.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Allow IPv6 UDP traffic from G2 nodes.</li>
+<li>Be sure to use destructive list iteration with
+    <code>tmalloc_free_magazine()</code>.</li>
+<li>Critical upload HTTP statuses are now fully sent.</li>
+<li>Must give plain (untranslated) strings to
+    <code>send_upload_error()</code>.</li>
+<li><code>bg_task_finished()</code>: now calls safer
+    <code>bg_task_dead()</code>.</li>
+<li><code>file_object_open_from()</code>: also catch EROFS when opening
+    file.</li>
+<li><code>node_bye_v()</code>: do not call <code>node_remove_v()</code> for
+    G2 nodes.</li>
+<li><code>vendor_code_get_name()</code>: fixed validation of unknown code
+    tokens.</li>
+<li><code>verify_next_file()</code>: fixed wrong argument order in log
+    message.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>bfd_util: reworked mutex grabbing in an attempt to avoid deadlocks.</li>
+<li><code>binary_hash()</code>: disperse bits in initial hash value.</li>
+<li><code>check_for_events()</code>: optimize path if timeout is 0 or we
+    collect events.</li>
+<li><code>cq_event_called()</code>: only zero variable holding event when
+    asked!</li>
+<li><code>cq_zero()</code>: now always nullify the event, as the name
+    suggests.</li>
+<li><code>crash_setmain()</code>: avoid spurious warnings with recent
+    gcc.</li>
+<li><code>english_strerror()</code> and <code>symbolic_errno()</code> made
+    thread-safe.</li>
+<li><code>inputevt_timer()</code>: factorized common code into new
+    <code>inputevt_handle()</code>.</li>
+<li><code>socket_udp_flush_queue()</code>: do not process anything if we
+    cannot devote time.</li>
+<li><code>stack_sym_trylock()</code>: avoid deadly recursions through stack
+    lock dumping!</li>
+<li><code>thread_sig_handle()</code>: use atomic exchange operation to clear
+    pending set.</li>
+<li><code>u32_ptr_hash()</code>: discard lower bits of the multiplication as
+    well.</li>
+<li><code>upload_timer()</code>: clear the stall flag when it is over.</li>
+<li>Added <code>aging_record()</code> to simplify code for plain keys.</li>
+<li>Added <code>cq_event()</code> to acknowledge reception of events we do
+    not track.</li>
+<li>Added "inputevt_trace" property for tracing dispatched I/O callbacks.</li>
+<li>Added <code>english_strerror()</code> to guarantee English messages.</li>
+<li>Added <code>thread_signal_has_pending()</code> and
+    <code>thread_signal_process()</code>.</li>
+<li>Added "lock_sleep_trace" and "lock_contention_trace" properties.</li>
+<li>AJE: changed pool #0 filling policy and reseeding checks.</li>
+<li>Ensure <code>misc_init()</code> is called before using lookup tables.</li>
+<li>Simplify is_ascii_*() by performing table lookup.</li>
+<li>Thread runtime now allows a signal handler to run within another one.</li>
+<li>Updated UHC list, fixed obsolete port numbers.</li>
+<li>Use new <code>cq_event()</code> in thread callout events to avoid
+    possible leaks.</li>
+<li>Watchdog: revisited logic to do more under lock protection.</li>
+
+</ul>
+<!-- end of release 1.1.12 -->
