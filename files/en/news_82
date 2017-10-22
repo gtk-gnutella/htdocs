@@ -1,0 +1,114 @@
+<h4>22 October 2017, Version 1.1.13 Released</h4>
+
+<p>This release primarily addresses issues that were left-over in 1.1.12. Do
+   not use that previous release, migrate from 1.1.11 to 1.1.13 directly!</p>
+
+<p>The main issue was that of Partial File Sharing. Numerous bugs, dating
+   from 7 years or more, were lurking because my local configuration had
+   switched PFS off for testing, and it had never been turned back on! In
+   particular, completed files were not properly shared, it was not possible to
+   upload their THEX since it was not recomputed, and the files were not
+   properly indexed in the Query Routing Table due to bugs in the background
+   task layer.</p>
+
+<p>In case of a crash, we now dump the value of all the Gnutella properties
+   to be able to spot configurations that deviate from the norm. Too many bugs
+   were reported and ignored because they could not be reproduced, often due to
+   not having the same setup when attempting to debug!</p>
+
+<p>Another nasty bug was fixed: it was not possible to change the IP support
+   configuration without causing an immediate crash. The reason is due to a
+   change that was integrated in 1.1.12 to allow IPv6 UDP traffic from G2 nodes.
+   The problem was that this created an extra client stack on top of the
+   low-level UDP traffic scheduler and it was not properly cleaned-up when
+   switching IP configurations, leading to an assertion failure!</p>
+
+<h5>New Features</h5>
+
+<h5>Improvements</h5>
+<ul>
+<li>Append all Gnutella properties to the crashlog file.</li>
+<li>At startup, do not needlessly request TTH if we have it cached
+    already.</li>
+<li>Optimized requests for library scan / QRP rebuild, avoiding multiple
+    events.</li>
+<li>Allow TTH computation for seeded files.</li>
+<li>Obsolete and stale entries are now removed from the SHA1 cache.</li>
+<li>[GTK] Added GUI events on more fileinfo changes.</li>
+<li>[GTK] Show information about recomputed TTH for seeded files.</li>
+<li>Prune unshared entries from SHA1 cache at startup.</li>
+<li>Persist information about seeded files in the ASCII fileinfo
+    database.</li>
+<li>Remove unneeded libraries from the default GTK2 ldflags.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Was not able to properly seed completed files; fixed
+    <code>shared_file_path()</code>.</li>
+<li>Was not always updating QRP on the UP side after a library change.</li>
+<li>Could have background tasks stuck after cancelling a multi-ref'ed
+    one.</li>
+<li>Dynamic querying timeout was not properly computed (made too small).</li>
+<li>Changing from "IPv6 &amp; IPv4" to "IPv4 only" mode caused a crash.</li>
+<li>Restored ability for "shutdown -r" to work.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Added <code>prop_to_typed_string()</code>.</li>
+<li>Added <code>s_where()</code> to log a stacktrace on stderr only.</li>
+<li>Added <code>tt_slice_size()</code> to compute slice length per leaf in
+    the TTH.</li>
+<li>New <code>crash_dumper_add()</code> to register crash dumper
+    callbacks.</li>
+<li>No panicing when thread cannot block but was actually suspended.</li>
+<li>Was unduly offsetting stacktrace by one extra level.</li>
+<li><code>bg_sched_sleep()</code>: don't reduce runcount on exiting task!</li>
+<li><code>bg_sched_timer()</code>: added run count consistency check.</li>
+<li><code>bg_sched_timer()</code>: fixed logging of task's run time.</li>
+<li><code>bg_task_cancel()</code>: log task address as well, not just the
+    task name.</li>
+<li><code>bg_task_wakeup()</code>: must clear user sleeping flag.</li>
+<li><code>crash_restart_notify()</code>: use smarter
+    <code>crash_exit()</code>.</li>
+<li><code>crash_try_reexec()</code>: suspend other threads as a
+    precaution.</li>
+<li><code>deflate_flushed()</code>: suppressed soft assertion.</li>
+<li><code>dq_results_expired()</code>: fixed improper timeout
+    computation.</li>
+<li><code>fi_free()</code>: cut any pending reference by uploads!</li>
+<li><code>fi_tigertree_check()</code>: more verbose in case of errors.</li>
+<li><code>file_info_moved()</code>: must update fi-&gt;modified as well.</li>
+<li><code>file_info_remove_source()</code>: removed unused discard
+    parameter.</li>
+<li><code>file_info_retrieve()</code>: also validate that DONE is
+    consistent.</li>
+<li><code>file_info_shared_sha1()</code>: do not share bad files.</li>
+<li><code>get_file_to_upload_from_urn()</code>: factorized code.</li>
+<li><code>huge_update_hashes()</code>: enforce one sync of SHA1 cache every
+    minute.</li>
+<li><code>huge_verify_callback()</code>: use
+    <code>shared_file_indexed()</code>.</li>
+<li><code>node_udp_disable()</code>: was not disabling the G2 UDP IPv6
+    node.</li>
+<li><code>parse_and_append_cache_entry()</code>: discard obsolete / stale
+    entries.</li>
+<li><code>qrt_compressed()</code>: fixed outdated comments.</li>
+<li><code>qrt_diff_1()</code>: was never considering change.</li>
+<li><code>request_sha1()</code>: don't request TTH if we have it cached.</li>
+<li><code>shared_file_fileinfo_unref()</code>: clear fileinfo pointer.</li>
+<li><code>shared_file_from_fileinfo()</code>: copy TTH atom as well, if
+    any.</li>
+<li><code>shared_file_is_shareable()</code>: be stricter for partial
+    files.</li>
+<li><code>shared_file_path()</code>: must process sf-&gt;fi correctly!</li>
+<li><code>upload_file_present()</code>: loudly warn when completed file
+    changed on disk.</li>
+<li><code>upload_file_present()</code>: loudly warn when file not
+    shareable.</li>
+<li><code>verify_update()</code>: loudly warn when "progress" callback stops
+    processing.</li>
+
+</ul>
+<!-- end of release 1.1.13 -->
