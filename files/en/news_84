@@ -1,0 +1,123 @@
+<h4>14 July 2019, Version 1.1.15 Released</h4>
+
+<p>This release is a maintenance one fixing several minor bugs and two
+   annoying</p>
+<h5>ones</h5>
+
+<ul>
+<li>The semi-reliable UDP layer could crash due to an assertion that started
+    to trigger with the introduction of an explicit flush before the message
+    times out for transmission.</li>
+
+<li>Due to an overseen condition, we were not able to serve seeded files when
+    Partial File Sharing is enabled. A seeded file is a completed file that still
+    lies in the downloaded directory but is not part of the library
+    directories.</li>
+
+</ul>
+<p>The OOB banning code for hosts that never claim their OOB hits was also
+   revisited to prevent problems with hosts that query a popular file and then
+   get submerged by hits and thus refrain to claim the additional hits. We are
+   now much more tolerant to avoid accidentally banning innocent hosts.</p>
+
+<p>On Windows, the disassembling of machine instructions was enhanced to
+   further improve the ability to correctly issue symbolic stack traces when
+   encountering assertion failures or during crashes.</p>
+
+<p>Finally, the Geo IP databases were refreshed.</p>
+
+<h5>Improvements</h5>
+<ul>
+<li>OOB: increased timeout for OOB hit delivery.</li>
+<li>OOB: switch to unreliable notification if semi-reliable UDP fails.</li>
+<li>OOB: raise the bar for banning after unclaimed OOB hits.</li>
+<li>Dynamic Hits: let us forward hits that bear a small amount of
+    results.</li>
+<li>Count amount of banning we have to do for OOB querying hosts.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Rename statx struct to statistics to avoid name collision.</li>
+<li><code>browse_host_read_html()</code>: fixed English typo.</li>
+<li><code>dl_util_query()</code>: forgot to restore old signal handler.</li>
+<li><code>file_info_restrict_range()</code>: was not serving seeded
+    files!</li>
+<li><code>main()</code>: do not let the supervisor process restart on
+    crash!</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Added <code>thread_stack_diff()</code> to compare stack pointers.</li>
+<li>Added <code>PLURAL()</code> macros.</li>
+<li>Added <code>clz64()</code> to count leading zeroes on a 64-bit
+    quantity.</li>
+<li>Added <code>OP_CTZ()</code> and <code>OP_CLZ()</code> to work on op_t
+    quantities.</li>
+<li>Added <code>pattern_memrchr()</code> and <code>pattern_strrchr()</code>
+    implementations.</li>
+<li>Jumbo patch to use <code>vstrrchr()</code> instead of
+    <code>strrchr()</code>.</li>
+<li><code>BIT_GENERIC_BIT()</code> does not need the base argument.</li>
+<li>Factorized prefix-matching from sorted array.</li>
+<li>pattern.c: fix compiling with old gcc (version 4.4)</li>
+<li>pattern.c: forgot to include "endian.h".</li>
+<li>str: avoid "char" as parameter or return type, use "int".</li>
+<li>Windows: if not a "registered product", leave logs in current dir.</li>
+<li>Windows: enhanced stack unwinding.</li>
+<li>Windows: added option to debug backtraces "on crash" only.</li>
+<li>Windows: when backtracing, also parse another MOV instruction.</li>
+<li>Windows backtrace: also parse "add xx,%esp".</li>
+<li><code>compat_poll()</code>: can now use <code>poll()</code> on
+    Windows.</li>
+<li><code>evq_close()</code>: warn when EVQ is not terminated after 2
+    seconds.</li>
+<li><code>file_info_moved()</code>: no warning on file size if file still
+    partial.</li>
+<li><code>main()</code>: set a different product nickname for supervisor.</li>
+<li><code>mingw_analyze_prologue()</code>: handle cases where no SP
+    adjustment done.</li>
+<li><code>mingw_exception()</code>: also log symbolic thread name if
+    available.</li>
+<li><code>mingw_exception()</code>: disable signals on stack overflow.</li>
+<li><code>mingw_exception()</code>: interpret exception information
+    differently.</li>
+<li><code>mingw_exception_log()</code>: if PC looks invalid, try to intuit
+    caller.</li>
+<li><code>mingw_file_rotate()</code>: preserve extension during renaming.</li>
+<li><code>mingw_ftruncate()</code>: it is OK if current offset is beyond
+    truncation.</li>
+<li><code>mingw_get_return_address()</code>: enhanced scanning for
+    prologue.</li>
+<li><code>mingw_get_return_address()</code>: validate next PC by checking
+    CALL before.</li>
+<li><code>mingw_get_return_address()</code>: validate stack pointer before
+    access.</li>
+<li><code>mingw_thread_sig_deliver()</code>: special-case signals for current
+    thread.</li>
+<li><code>pattern_compile()</code>: must use <code>WALLOC0()</code> for
+    allocating!</li>
+<li><code>pattern_strstr_tiny()</code>: fixed starting condition for aligned
+    processing.</li>
+<li><code>rwlock_upgrade_from()</code>: don't wait for readers in
+    pass-through mode.</li>
+<li><code>rwlock_wait()</code>: dump lock waiting queue when tracing
+    sleeps.</li>
+<li><code>rwlock_wait()</code>: trace summary when logging contention /
+    sleeping.</li>
+<li><code>str_private()</code>: declare non-leaking parts for
+    TRACK_ZALLOC.</li>
+<li><code>teq_monitor()</code>: trace pending events as well.</li>
+<li>thread-test: for interrupt tests, timeout if no interrupt received.</li>
+<li><code>thread_backtrace_capture()</code>: avoid recursion and disable
+    signals.</li>
+<li><code>thread_id_stack_used()</code>: fixed for decreasing stacks.</li>
+<li><code>ut_frag_pmsg_free()</code>: be more robust, avoid internal
+    assertion.</li>
+<li><code>vmm_crashing_alloc()</code>: better abort explicitly if no
+    memory.</li>
+<li><code>wmove()</code>: make sure it's a no-op with TRACK_ZALLOC.</li>
+
+</ul>
+<!-- end of release 1.1.15 -->
