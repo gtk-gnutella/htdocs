@@ -1,0 +1,242 @@
+<h4>14 June 2020, Version 1.2.0 Released</h4>
+
+<p>This is an evolution release, hence the minor version bump.</p>
+
+<p>Several cases of bad input (from network) causing assertion failures were
+   fixed. In particular, bad DHT response after a security token lookup or
+   invalid G2 input streams were fatal.</p>
+
+<p>There was also a critical bug, originating from a harmful code typo, which
+   led gtk-gnutella to serve unvailable file chunks from partial files, as if
+   they were available, resulting in unintended download corruption on the
+   remote end!</p>
+
+<p>Thanks to Laurent Gil's efforts, it is now possible to run gtk-gnutella
+   from a Docker container. See https://github.com/angegar/gtk-gnutella-docker.
+   Running within docker raised some issues about <code>sbrk()</code> and
+   <code>thread_self()</code>, which were fixed.</p>
+
+<p>The computation of the build date was fixed, to avoid corner cases where
+   gtk-gnutella would complain it was "old" when freshely compiled from
+   up-to-date sources in a git tree whose "master" branch was only infrequently
+   updated.</p>
+
+<p>The file selector was fixed, to avoid displaying grayed-out folders, a
+   setup wich did not allow one to actually select directories in the
+   preferences.</p>
+
+<p>Many improvements were done to allow smoother uploading for servents with
+   more bandwidth than the recipients. Instead of drastically limiting upload
+   bandwidth (which was negatively impacting everyone), we are now monitoring
+   and adjusting our uploading speed to avoid congestion on the remote end. When
+   stalling happens, we also react quickly to reduce the available bandwidth of
+   the connection, not that of all connections to whom we are uploading.</p>
+
+<p>We also no longer rely on MaxMind GeoIP for providing the IP -&gt; country
+   mappings. Their distribution mode now requires a specific licence which seems
+   totally incompatible with the gtk-gnutella's distribution mode. Instead, we
+   are now using IP2Location, and the GEO_LICENCE file now lists the conditions
+   under which these data are re-distributed (gtk-gnutella transforms the data
+   into a form that it can digest, so we are distributing a modified, derived
+   work, not the original).</p>
+
+<p>If you are still using a version of gtk-gnutella earlier than the 1.1.x
+   series, you are strongly encouraged to upgrade. Starting from this release,
+   we are now considering these versions too old to connect to.</p>
+
+<h5>Improvements</h5>
+<ul>
+<li>Let --compile-info show which <code>malloc()</code> is used.</li>
+<li>It is now possible to run gtk-gnutella from a Docker container.</li>
+<li>Added details in the README file about required packages to compile.</li>
+<li>Use gradual bandwidth penalty when uploads are stalling.</li>
+<li>Added upload bandwidth capping.</li>
+<li>Forcefully reduce request chunk if b/w is limited.</li>
+<li>Emit a Retry-After header on 416 replies.</li>
+<li>On HTTP 416, emit a Last-Modified header.</li>
+<li>Switched to IP2Location for mapping IPs to countries, dropping MaxMind
+    GeoIP.</li>
+<li>Upload tab now shows our own partial completion ratio, not just
+    "(partial)".</li>
+<li>Detect abuse from HTTP clients not reading payloads.</li>
+<li>Enforce Retry-After softly.</li>
+<li>Ban them when they abuse of the browse-host feature.</li>
+<li>Smarter detection of duplicate incoming Gnutella connections.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>[GTK2] Fixed file selector to avoid greyed-out folders.</li>
+<li>[GTK2] Guarantee updating of properties when refresh button is
+    clicked.</li>
+<li>Added emergency path during startup should <code>sbrk()</code> fail.</li>
+<li>Fixed instructions following build.sh run.</li>
+<li>Fixed possible <code>thread_self()</code> instability at startup.</li>
+<li>Fixed backward portability issue with the BFD library.</li>
+<li>Fixed computation of build date.</li>
+<li>Fix 2 harmful typos, affecting serving of partial files.</li>
+<li>Regenrate Configure to fix gccversion usage bug.</li>
+<li>Restored compilation of a standalone local shell.</li>
+<li>Remove executable permissions on C source file!</li>
+<li>Rename our ARC4 interface on systems with native
+    <code>arc4random()</code>.</li>
+<li>Updated all files to fix obsolete FSF postal address.</li>
+<li>Avoid banning hosts issuing legitimate upload requests.</li>
+<li>Implement GNU extension <code>malloc_usable_size()</code> when using our
+    <code>malloc()</code>.</li>
+<li>UHC: when hardwired list is exhausted, reload it.</li>
+<li>Make Content-Range and Content-Length prioritary headers.</li>
+<li><code>ban_allow()</code>: was never returning BAN_FORCE.</li>
+<li><code>download_reply()</code>: reload available ranges after 416 if
+    needed.</li>
+<li><code>download_stop_switch()</code>: forgot to remove passive queue
+    indication.</li>
+<li><code>gtk_gnutella_exit()</code>: must close UPnP layer before HTTP.</li>
+<li><code>http_send_status()</code>: reworked to avoid undue header
+    truncation.</li>
+<li><code>node_g2_read()</code>: fixed faulty assertion.</li>
+<li><code>pb_token_found()</code>: be more robust against unexpected
+    input.</li>
+<li><code>search_gui_close_search()</code>: avoid crash when emptying search
+    list twice.</li>
+<li><code>update_available_ranges()</code>: revisited range processing
+    logic.</li>
+<li><code>upload_416_extra()</code>: was generating non-compliant
+    headers.</li>
+<li><code>vmm_dump_pmap_log()</code>: fixed deadlock.</li>
+<li><code>download_moved_with_bad_sha1()</code>: always reset fileinfo.</li>
+<li><code>file_info_reset()</code>: also discard previous TTH info.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Added temporary "xk" country code for Kosovo.</li>
+<li>Added <code>vmm_type_pointer()</code> to determine region type.</li>
+<li>Add lingering period for unreferenced file_descriptor objects.</li>
+<li>Add shell command "show files -d" to list currently used
+    file_descriptor.</li>
+<li>Raise minimum b/w scheduling slot to 256 bytes per second.</li>
+<li>Fixed <code>HashGenericCat()</code> in Jmakefile, leading to wrong .c
+    dependency.</li>
+<li>Fast assertions are a must for GTKG nowadays, always compile with
+    them.</li>
+<li>Do not post multiple randomness generation messages.</li>
+<li>Split bit_generic routines into .ht and .ct.</li>
+<li>Reserve <code>file_object_close()</code> for user code.</li>
+<li>Made it possible to compile with TRACK_MALLOC again.</li>
+<li>Improved "thread elements" shell command to trace callback function
+    names.</li>
+<li>Avoid VMM magazine allocation when running with TRACK_MALLOC.</li>
+<li>Enhanced TRACK_MALLOC to be able to trap <code>xalloc()</code> as
+    well.</li>
+<li>Enhanced TRACK_MALLOC debugging power with MALLOC_CATCH_MALLOC.</li>
+<li>Extended <code>bool_to_string()</code> to display value if not 0 or
+    1.</li>
+<li>TEQ: optimize I/O events by posting them directly to I/O queue.</li>
+<li>VMM pmap logging shows allocated size per fragment type.</li>
+<li>Removed gone / probably gone logic for discovered threads.</li>
+<li>Ensure <code>thread_atexit()</code> callbacks run in discovered
+    threads.</li>
+<li>Ensure <code>walloc0()</code> redirects to underlying zeroing routines,
+    for statistics.</li>
+<li>Simplified shell I/O condition management and logging.</li>
+<li>Separate Gnutella and HTTP (upload) banning categories.</li>
+<li>STATIC_ASSERT: use a more compact version for less verbose errors.</li>
+<li>Made thread exit value read-only in <code>thread_atexit()</code>
+    callbacks.</li>
+<li>Emit thread mask in crash logs upon detected deadlock.</li>
+<li>ADNS: the cache is now thread-safe and cached replies shuffled.</li>
+<li>ADNS: added expiring periodic callback for cached DNS entries.</li>
+<li>Added new "adns_debug" property for ADNS debugging.</li>
+<li>Avoid <code>g_memmove()</code> which has been deprecated.</li>
+<li>Added <code>ripening_contains()</code> and <code>ripening_update()</code>
+    routines, not used yet.</li>
+<li>Optimize ripening table when no value is kept.</li>
+<li>Use aging table to track download mesh sending times.</li>
+<li>Use 429 instead of 550 for "Too Many Requests".</li>
+<li>Remind less often about banning status.</li>
+<li>Let emulated <code>alloca()</code> cleanup when thread exits.</li>
+<li>Ensure <code>alloca_stack_direction_compute()</code> is never
+    inlined.</li>
+<li>Smarter detection of duplicate incoming Gnet connections.</li>
+<li>xmalloc: must "embed" <code>xstrdup()</code> and
+    <code>xstrndup()</code>.</li>
+<li>xmalloc: simplified allocation entry points.</li>
+<li>xmalloc: ensure stricter memory alignment when <code>xmalloc()</code>
+    replaces <code>malloc()</code>.</li>
+<li><code>ban_delay()</code>: fixed to return remaining ban time.</li>
+<li><code>ban_force()</code>: read incoming data before
+    <code>shutdown()</code>.</li>
+<li><code>ban_vendor()</code>: GTKG earlier than version 1.1 deemed too
+    old.</li>
+<li><code>bitcmp()</code>: use <code>memcmp()</code> for byte comparison.</li>
+<li><code>bool_to_string()</code>: added carp trace to help spot the
+    culprit.</li>
+<li><code>cq_cancel()</code>: fix logic to return TRUE if event was NULL.</li>
+<li><code>crash_deadlocked()</code>: no longer dump stacks.</li>
+<li><code>crash_handler()</code>: enter thread crash mode before signal
+    cleanup.</li>
+<li><code>crash_time_internal()</code>: use
+    <code>thread_safe_small_id()</code> in raw mode.</li>
+<li><code>download_queue_delay_switch()</code>: explicitly turn off queuing
+    if switching.</li>
+<li><code>download_queue_v()</code>: explicitely reset passive queuing
+    info.</li>
+<li><code>download_reply()</code>: Content-Length not necessary if
+    Content-Range.</li>
+<li><code>download_send_push_request()</code>: trace server GUID.</li>
+<li><code>erbtree_foreach()</code>: added cheap safety assertion.</li>
+<li><code>evq_trampoline()</code>: cleanup event if cannot signal thread.</li>
+<li><code>extract_retry_after()</code>: ensure amount in seconds is the only
+    value.</li>
+<li><code>fi_pick_rarest_chunk()</code>: be smarter about selected chunk.</li>
+<li><code>fi_pick_rarest_chunk()</code>: ensure first free chunk is
+    available.</li>
+<li><code>hcache_fill_caught_array()</code>: fix array fill logic.</li>
+<li><code>http_send_status()</code>: ensure generated header has trailing
+    CRLF.</li>
+<li><code>local_shell_mainloop()</code>: must flag "writable" on POLLHUP.</li>
+<li><code>mingw_exception_log()</code>: use static variables and be more
+    careful.</li>
+<li><code>natpmp_handle_discovery_reply()</code>: trace inconsistent
+    replies.</li>
+<li><code>natpmp_handle_mapping_reply()</code>: trace inconsistent
+    replies.</li>
+<li><code>parq_upload_send_queue()</code>: tie PARQ upload queue and
+    upload.</li>
+<li><code>pcache_pong_received()</code>: also validate changing ports.</li>
+<li>rand31: avoid race condition during intial seeding.</li>
+<li><code>random_pool_append()</code>: ensure no endless recursion, ever!</li>
+<li><code>send_pproxy_error_v()</code>: remove dead code.</li>
+<li><code>shell_handle_event()</code>: always <code>write()</code> when
+    having pending data.</li>
+<li><code>shell_handle_event()</code>: on exception, setup EOF/shutdown.</li>
+<li><code>shell_write_data()</code>: make sure to flush as much as
+    possible.</li>
+<li><code>sig_compute_pc_index()</code>: be paranoid about optimization.</li>
+<li><code>signal_name()</code>: contort to avoid gcc-10 warning.</li>
+<li><code>signal_trap_with()</code>: avoid kernel signal
+    desynchronisation.</li>
+<li><code>signal_uncaught()</code>: dump stack trace if harmful signal.</li>
+<li><code>sorted_array_lookup()</code>: sort array if they forgot to do
+    it!</li>
+<li><code>spinlock_deadlocked()</code>: capture lock status early.</li>
+<li><code>stacktrace_atom_lookup_and_store()</code>: trace race
+    conditions.</li>
+<li><code>stacktrace_load_symbols()</code>: do nothing if too early.</li>
+<li><code>thread_create_full()</code>: keep async exit callback
+    separated.</li>
+<li><code>thread_deadlock_check()</code>: disable locks when deadlock is
+    certain.</li>
+<li><code>thread_deadlock_check()</code>: only dump stacks of involved
+    threads.</li>
+<li><code>thread_stack_check_overflow()</code>: also log used stack size.</li>
+<li><code>upload_remove_v()</code>: create better logging message.</li>
+<li><code>vmm_malloc_inited()</code>: now only called internally.</li>
+<li><code>xmalloc_show_settings_log()</code>: trace chosen memory
+    alignment.</li>
+<li><code>zgc_zalloc()</code>: transformed some assertions into verbose
+    ones.</li>
+
+</ul>
+<!-- end of release 1.2.0 -->
