@@ -322,11 +322,11 @@ div.boxed {
 <hr class="hidden" />
 
 <div class="boxed" style="text-align: center">
-    <a class="image" href="http://sourceforge.net/projects/alexandria">
+    <a class="image" href="https://sourceforge.net">
       <img src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
       alt="SourceForge.net Logo" width="88" height="31" /></a>
 	&nbsp;
-   <a class="image" href="http://glade.gnome.org/">
+   <a class="image" href="https://glade.gnome.org/">
       <img src="/images/glade-banner.png" alt="Glade" width="100" height="45" /></a>
 	&nbsp;
 	<a class="image"
@@ -336,11 +336,11 @@ div.boxed {
 		title="RSS Feed Available" /></a>
 	&nbsp;
 	<a class="image"
-		href="http://www.ohloh.net/projects/491"><img
-		src="http://www.ohloh.net/projects/491/badge.gif"
-		width="100" height="16"
-		alt="Ohloh Metrics"
-		title="Ohloh Metrics" /></a>
+		href="https://www.openhub.net/p/gtk-gnutella"><img
+		src=""
+		width="" height=""
+		alt="Open Hub"
+		title="Open Hub metrics" /></a>
 	&nbsp;
 	<a class="image"
 		href="https://scan.coverity.com/projects/2178"><img

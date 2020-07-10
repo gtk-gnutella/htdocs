@@ -18,8 +18,8 @@ gtk-gnutella is available from several software distributions.
 <ul>
 <li><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gtk-gnutella">Fedora</a></li>
 <li><a href="http://packages.gentoo.org/package/net-p2p/gtk-gnutella">Gentoo</a></li>
-<li><a href="http://packages.ubuntu.com/search?keywords=gtk-gnutella">Ubuntu</a> (no longer maintained, use <a href="http://sourceforge.net/projects/gtk-gnutella/files/">source tarballs</a> instead.</li>
-<li><a href="http://packages.debian.org/search?keywords=gtk-gnutella">Debian</a> (no longer maintained, use <a href="http://sourceforge.net/projects/gtk-gnutella/files/">source tarballs</a> instead.</li>
+<li><a href="http://packages.ubuntu.com/search?keywords=gtk-gnutella">Ubuntu</a></li>
+<li><a href="http://packages.debian.org/search?keywords=gtk-gnutella">Debian</a></li>
 </ul>
 
 <h5>BSD</h5>
