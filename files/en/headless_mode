@@ -1,0 +1,52 @@
+<!-- $Id$ -->
+<h1>Headless mode commands</h1>
+
+<p>Headless (or Topless) mode allows gtk-gnutella tu run without a graphical interface. This is mostly meant to be used for running gtk-gnutella as an ultrapeer on a server. To run gtk-gnutella in headless mode refer to the <a href="/manual/headless.html">Online Manual</a>.</p>
+
+<p>Commands to the gtk-gnutella headless instance must be given from the command line shell.</p>
+
+<p>To interact with your topless gtk-gnutella process, run the following:</p>
+
+<code>
+$ gtk-gnutella --shell
+help
+status
+quit
+</code>
+
+<p>You can also say:</p>
+
+<code>
+  $ echo status | gtk-gnutella --shell
+  $ echo help lib | gtk-gnutella --shell
+</code>
+
+<p>This can be used to generate (almost) truly random numbers 31-bit numbers:</p>
+
+<code>
+ $ echo random 0x7fffffff | gtk-gnutella --shell | cut -d&#39; &#39; -f 2
+</code>
+
+<p>You can also get statistics:</p>
+
+<code>
+  $ echo memory show pmap | gtk-gnutella --shell | head
+  $ echo thread stats -p | gtk-gnutella --shell
+  $ echo stats -p | gtk-gnutella --shell
+</code>
+
+<p>You can see internal threads and background tasks:</p>
+
+<code>
+   $ echo thread list | gtk-gnutella --shell
+   $ echo task list -s | gtk-gnutella --shell
+</code>
+
+<p>You can query and change properties:</p>
+
+<code>
+  $ echo props -v _debug | gtk-gnutella --shell
+  $ echo set -v matching_debug 5 | gtk-gnutella --shell
+</code>
+
+<!-- end headless_mode -->
