@@ -36,6 +36,7 @@ $pages = array(
   "git_guide",
   "git_quick_guide",
   "glossary",
+  "headless_mode",
   "links",
   "mailing",
   "news_bridge",
