@@ -16,6 +16,9 @@
   <li>
     <a href="?page=glossary">Glossary</a>
   </li>
+  <li>
+    <a href="?page=headless_mode">Headless mode</a>
+  </li>
 </ul>
 
 <ul>
