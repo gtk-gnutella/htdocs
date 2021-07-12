@@ -1,0 +1,152 @@
+<h4>12 July 2021, Version 1.2.1 Released</h4>
+
+<p>This is a maintenance release with minor bug fixes.</p>
+
+<p>Note that our project IRC #gtk-gnutella channel is now on
+   irc.libera.chat.</p>
+
+<p>When launching gtk-gnutella and there is a stale lockfile present, listing
+   some PID, and it happens that there is already another process running under
+   this PID, we abort, complaining that another gtk-gnutella is running.
+   However, if the lockfile is really stale, and the PID listed in there has
+   nothing to do with gtk-gnutella at the moment, the user will need to remove
+   the stale lockfile. Hence we show them the command to run, listing the full
+   lockfile path so that it is easy to overcome this little inconvenience!</p>
+
+<p>When using hashtables for memory management, it was possible to trigger a
+   resizing and, during the course of operations, have further memory used,
+   requiring tracking of new items in the same hashtable we were in the process
+   of resizing. That led to double VMM freeing of the region used to store the
+   data.</p>
+
+<p>Add properties to track bytes exchanged by schedulers. These properties
+   track the amount of bytes exchanged by session and are reset to 0 whenever a
+   new user session starts. It allows users to see the actual amount of data
+   consumed by running gtk-gnutella sessions, programatically via the shell
+   interface.</p>
+
+<p>Add -t switch to shell "status" command: this displays the total amount of
+   bandwidth consumed during the session for the different schedulers.</p>
+
+<h5>Improvements</h5>
+<ul>
+<li>Show command to clean stale lockfile.</li>
+<li>Add properties to track bytes exchanged by schedulers.</li>
+<li>Add -t switch to shell "status" command.</li>
+<li>Make use of libera.chat instead of freenode.</li>
+<li>Expiration time now increased from 1 to 2 years.</li>
+<li>New --no-expire switch to disable GUI popup when expired.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li><code>pattern_prefix_period()</code>: don't corrupt end-of-block.</li>
+<li>Fix subtle recursive resizing bug.</li>
+<li>Do not emit empty leading description in saved properties.</li>
+<li>For time sync over UDP, write replying time later!</li>
+<li><code>hash_table_resize()</code>: clear last cached lookup!</li>
+<li><code>ev_link()</code>: insert events in the proper bucket!</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Updated GeoIP databases.</li>
+<li>Ad <code>bit_generic_count_set()</code>.</li>
+<li>Add <code>plural_child()</code>.</li>
+<li>Add <code>progstart_was_called()</code>.</li>
+<li>Add <code>H_STRFREEV_NULL()</code>.</li>
+<li>Add syn=c to *.ht and *.ct files for vim.</li>
+<li>Add <code>hash_table_copy_foreach()</code>.</li>
+<li>Add <code>tm_precise_elapsed_ns()</code> convenience routine.</li>
+<li>Add <code>thread_stack_size()</code> to get configured stack size.</li>
+<li>Add <code>pattern_string()</code> to get the string being looked for.</li>
+<li>Add <code>str_2c_from()</code> to grab C string from a given offset.</li>
+<li>Add <code>eval_subst_atom()</code>.</li>
+<li>Add <code>stacktrace_caller_fast()</code> and stack-test program.</li>
+<li>Add thread_{un}<code>suspend()</code>.</li>
+<li>Add <code>tmalloc_contains()</code> for assertions.</li>
+<li>Add public VMM validate/invalidate routines.</li>
+<li>Add macros to ease printing for tmval and tmspec.</li>
+<li>Add <code>node_check()</code> to node traversal loops.</li>
+<li>Avoid branches in <code>SIGN()</code> as well.</li>
+<li>Avoid regeneration of Geo DB if no data changes.</li>
+<li>Bump python dependency for jhbuild on OSX.</li>
+<li>Better clock skew computation.</li>
+<li>Handle time-sync exchanges via UDP better.</li>
+<li>Make use of travis cache feature for OSX builds.</li>
+<li>Only include &lt;sys/sysctl.h&gt; if we actually need it.</li>
+<li>Allow compilation with usemymalloc=n on 32-bit CPUs.</li>
+<li>Let <code>mem_test()</code> run only once.</li>
+<li>When no <code>backtrace()</code>, ensure we compile with a frame
+    pointer.</li>
+<li>Compile with -DTRACK_MALLOC -DREMAP_ZALLOC again.</li>
+<li>Made -DTRACK_ZALLOC usable again.</li>
+<li>Do not check stack at <code>longjmp()</code> if on altstack.</li>
+<li>Do not trap hash_list_{new,free}() under REMAP_ZALLOC.</li>
+<li>Ensure properties use <code>xmalloc()</code> for their values.</li>
+<li>Wait until <code>main()</code> starts to allocate the signal chunk.</li>
+<li>Made <code>ascii_toupper()</code> and <code>ascii_tolower()</code> avoid
+    branching.</li>
+<li>Trace saving time whithin property files.</li>
+<li>Trace page (PA) and offset within page on SEGV.</li>
+<li>Trace page protection on SEGV faults, if possible.</li>
+<li>Trace how and where symbols were loaded in crash log.</li>
+<li>Symbol quality definition moved to symbols!</li>
+<li>Windows: handle freopen("a") specially to allow read sharing.</li>
+<li>Windows: no need to dump stack again if no gdb.</li>
+<li>mutex: supply more context on lock errors.</li>
+<li>ostream: now also accepts str_t as output medium.</li>
+<li>rwlock: added debug option to track wlock location.</li>
+<li>random-test: added -a to benchmark all routines.</li>
+<li>random-test: add -v to be verbose when -a is used.</li>
+<li>VMM: added extra debugging tools / assertions.</li>
+<li>VMM: trace new compile-time options.</li>
+<li>clock: simplify code by using aging table.</li>
+<li>xmalloc: avoid late page pool creation.</li>
+<li>xmalloc: extended assertions to detect freelist corruption.</li>
+<li>zalloc: avoid warnings when compiling with REMAP_ZALLOC.</li>
+<li>zalloc: with ZONE_SAFE, ensure block tagging never changes!</li>
+<li>malloc.c: enhanced and fixed some errors with multi-threading.</li>
+<li>malloc.c: huge refactoring and cleanup.</li>
+<li><code>aging_destroy()</code>: remove periodic GC before cleanup.</li>
+<li><code>bfd_util_init()</code>: avoid warning on <code>bfd_init()</code>
+    call.</li>
+<li><code>clock_adjust()</code>: removed MAX_SDEV.</li>
+<li><code>clock_adjust()</code>: stop pruning if we keep everything.</li>
+<li><code>clock_update()</code>: lowered required amount of data.</li>
+<li><code>compat_setjmp()</code>: protect against gone contexts.</li>
+<li><code>crash_handler_process()</code>: only call
+    <code>crash_auto_restart()</code> if needed.</li>
+<li><code>ev_free()</code>: assert event is not linked in queue!</li>
+<li><code>ev_unlink()</code>: added list consistency assertions.</li>
+<li><code>eval_subst()</code>: remove the size limitation on the susbtituted
+    string.</li>
+<li><code>evq_close()</code>: be silent if event queue not created.</li>
+<li><code>fi_pick_rarest_chunk()</code>: fixed assertion failure.</li>
+<li><code>fi_pick_rarest_chunk()</code>: log assertion values.</li>
+<li><code>get_prop()</code>: also trace failing property when ps is NULL.</li>
+<li><code>ggept_filesize_encode()</code>: can return 0 if given 0.</li>
+<li><code>hash_compute_increment()</code>: make it odd without branch.</li>
+<li><code>main()</code>: do not set a crash dir if not running for long.</li>
+<li><code>name_to_single_host_addr()</code>: use
+    <code>pslist_random()</code>.</li>
+<li><code>ntp_send_probes()</code>: comment updates, cleanup.</li>
+<li><code>once_recursive()</code>: avoid calling
+    <code>stacktrace_function_name()</code>.</li>
+<li><code>progstart_duplicate()</code>: added assertions.</li>
+<li><code>prop_lock()</code>: use macro for locking (hiding lock type).</li>
+<li><code>rwlock_deadlocked()</code>: trace write owner if known.</li>
+<li><code>spinlock_loop()</code>: document why no memory barrier.</li>
+<li><code>statusbar_gui_push_v()</code>: be safe if called early.</li>
+<li><code>str_avail()</code>: new implementation and semantics.</li>
+<li><code>str_ichar()</code> and <code>str_istr()</code> can now append.</li>
+<li><code>strvec_cpy()</code>: was failing when called with cnt=0.</li>
+<li><code>thread_id_name_to_buf()</code>: be nicer with negative IDs.</li>
+<li><code>thread_lock_waiting_done()</code>: cleanup when no problems.</li>
+<li><code>tok_version_valid()</code>: no longer run
+    <code>clock_update()</code>.</li>
+<li><code>xcopy()</code>: not defined as inlined routine when
+    TRACK_MALLOC.</li>
+
+</ul>
+<!-- end of release 1.2.1 -->
