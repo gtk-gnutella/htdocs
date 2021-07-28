@@ -11,34 +11,32 @@
 </p>
 
 <p>
-  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-users/">
+  <a href="https://sourceforge.net/projects/gtk-gnutella/lists/gtk-gnutella-users">
     gtk-gnutella-users</a> Main list for Gtk-Gntuella users ( 
-  <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gtk-gnutella-users">
+  <a href="https://sourceforge.net/p/gtk-gnutella/mailman/gtk-gnutella-users/">
     archives</a> )<br>
 
-  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-devel/">
+  <a href="https://sourceforge.net/projects/gtk-gnutella/lists/gtk-gnutella-devel">
     gtk-gnutella-devel</a> If you're interested in contributing to gtk-gnutella ( 
-  <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gtk-gnutella-devel">
+  <a href="https://sourceforge.net/p/gtk-gnutella/mailman/gtk-gnutella-devel/">
     archives</a> )<br>
 
-  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-announce/">
+  <a href="https://sourceforge.net/projects/gtk-gnutella/lists/gtk-gnutella-announce">
     gtk-gnutella-announce</a> For release announcements only ( 
-  <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=gtk-gnutella-announce">
+  <a href="https://sourceforge.net/p/gtk-gnutella/mailman/gtk-gnutella-announce/">
     archives</a> )<br>
            
-  <a href="http://lists.sourceforge.net/mailman/listinfo/gtk-gnutella-cvs">
-    gtk-gnutella-cvs</a> For way too much information on SVN commits.<br>
-
+  <a href="https://sourceforge.net/projects/gtk-gnutella/lists/gtk-gnutella-cvs">
+    gtk-gnutella-cvs</a> For information on SVN commits ( 
+  <a href="https://sourceforge.net/p/gtk-gnutella/mailman/gtk-gnutella-cvs/">
+    archives</a> )<br>
 </p>
 
 <h4>IRC Chat</h4>
 
 <p>
-  On the <a href="http://www.freenode.net/">freenode network</a> (formerly 
-  Open Projects Network / OPN) we meet in the channel 
-  <a href="irc://irc.freenode.net/gtk-gnutella">#gtk-gnutella at irc.freenode.net</a>.
-  You can also read past discussions in the
-  <a href="http://gtk-gnutella.nl/irc/log/">public IRC log archive</a>.
+  On the <a href="https://libera.chat/">Libera.Chat network</a> we meet in the channel 
+  <a href="irc://irc.libera.chat/gtk-gnutella">#gtk-gnutella at irc.libera.chat</a>.
   There's always someone there, but not always someone 
   who knows the answer to your question. You need an IRC client like 
   <a href="http://www.xchat.org">xchat</a> to visit the channel. Though, if you don't
@@ -48,9 +46,9 @@
 <h4>SourceForge</h4>
 
 <p> 
-  The <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">
+  The <a href="https://sourceforge.net/p/gtk-gnutella/bugs/">
   Bug Tracker</a> and 
-  <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">
+  <a href="https://sourceforge.net/p/gtk-gnutella/feature-requests/">
   Feature Requests</a> are available on SourceForge, but you will most
   likely get a better response on the mailing lists or IRC. There is
   also a <a href="?page=bugreport_howto"> bug report howto</a>.

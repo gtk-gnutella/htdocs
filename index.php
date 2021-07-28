@@ -247,6 +247,10 @@ div.boxed {
 	padding: 0.5em;
 }
 
+pre {
+	white-space: pre-wrap;
+}
+
 }
 </style>
 
