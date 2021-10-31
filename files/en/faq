@@ -14,8 +14,8 @@
   <li><a href="#general1">This eats up too much bandwidth!</a></li>
   <li><a href="#general-ultrapeer">What are Ultrapeers and Leaf nodes?</a></li>
   <li><a href="#general-firewall">Why does gtk-gnutella claim it's firewalled
-    when it's not?</a>
-  </li>
+    when it's not?</a></li>
+  <li><a href="#general-forceEN">Is there a way to force English interface in Windows?</a></li>
 </ul>
 
 <h2>Building from source</h2>
@@ -183,6 +183,16 @@ default Gnutella port (6346).
 See also,
 <a href="#gnet1"><q>Do I need to forward a port on my firewall?</q></a>.
 </p>
+
+<h3><a name="#general-forceEN">Is there a way to force English interface in Windows?</a>
+</h3>
+
+<p>
+Yes, to force English UI you need to set the LANG variable to "en" before running 
+gtk-gnutella.exe with the command "set LANG=en" at the command line prompt. For example:
+</p>
+<p><code>C:\Program Files (x86)\gtk-gnutella>set LANG=en</code></p>
+<p><code>C:\Program Files (x86)\gtk-gnutella>gtk-gnutella.exe</code></p>
 
 
 <h2>Building from source</h2>
