@@ -1,0 +1,58 @@
+<h4>25 February 2022, Version 1.2.2 Released</h4>
+
+<p>This is a maintenance release with major bug fixes.</p>
+
+<p>There were several shortcomings with bandwidth management: capping was not
+   performed correctly and could overuse uploading bandwidth. Also when the DHT
+   is turned off or on, we need to recompute proper bandwidth stealing.</p>
+
+<p>Corruption of the DHT disk databases could also lead to a crash.</p>
+
+<p>There was a critical old bug in the Dynamic Querying layer that affected
+   Ultrapeers mostly: we could corrupt memory and/or crash when the current node
+   was removed and we were processing a Dynamic Query for that node. This is
+   more likely to happen when running as an Ultrapeer but it could also affect
+   nodes running as leaves, although the probability of that bug happening is
+   much less in that case.</p>
+
+<p>Finally, it is best to not iterate on a global list that could get changed
+   due to a node removal. This was the case when sending pongs to neighbouring
+   nodes, so we now take a private copy.</p>
+
+<h5>Improvements</h5>
+<ul>
+<li>Extended "props" shell command with -e (exact) and -i (ignore
+    missing).</li>
+<li>The "props" command now takes a set of properties, handled as one
+    batch.</li>
+
+</ul>
+<h5>Bug Fixes</h5>
+<ul>
+<li>Properly recompute bandwidth stealing on DHT changes.</li>
+<li>Avoid crashing in D-Bus lib when filename is improperly UTF-8
+    encoded.</li>
+<li>DHT: protect against corrupted database.</li>
+<li><code>bw_available()</code>: fix invalid logic for I/O source
+    capping.</li>
+<li><code>pong_all_neighbours_but_one()</code>: iterate on local list.</li>
+<li><code>dq_node_removed()</code>: must free dq object asynchronously.</li>
+
+</ul>
+<h5>Under the Hood</h5>
+<ul>
+<li>Update IRC network information: moved from freenode to libera.chat</li>
+<li>Chunk size limiting for uploads accounts for bandwidth.</li>
+<li>Reduce memory footprint for statx_t if no data kept.</li>
+<li>CQ: defer freeing of dispatched event.</li>
+<li>watchdog: be more verbose within critical messages.</li>
+<li><code>node_parse()</code>: signal to callers when we have BYE-ed the
+    node.</li>
+<li><code>cq_event_called()</code>: use better diagnostic on assert
+    failure.</li>
+<li><code>dbus_util_send_message()</code>: protect against invalid text.</li>
+<li><code>prepare_entry()</code>: ensure entry invariant remains true.</li>
+<li><code>wd_expire()</code>: do nothing if watchdog was asleep.</li>
+
+</ul>
+<!-- end of release 1.2.2 -->
