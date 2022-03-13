@@ -15,7 +15,7 @@
   <li><a href="#general-ultrapeer">What are Ultrapeers and Leaf nodes?</a></li>
   <li><a href="#general-firewall">Why does gtk-gnutella claim it's firewalled
     when it's not?</a></li>
-  <li><a href="#general-forceEN">Is there a way to force English interface in Windows?</a></li>
+  <li><a href="#general-force">Is there a way to force English interface in Windows?</a></li>
 </ul>
 
 <h2>Building from source</h2>
@@ -184,7 +184,7 @@ See also,
 <a href="#gnet1"><q>Do I need to forward a port on my firewall?</q></a>.
 </p>
 
-<h3><a name="#general-forceEN">Is there a way to force English interface in Windows?</a>
+<h3><a name="#general-force">Is there a way to force English interface in Windows?</a>
 </h3>
 
 <p>

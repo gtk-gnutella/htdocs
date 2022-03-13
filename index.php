@@ -326,38 +326,59 @@ pre {
 <hr class="hidden" />
 
 <div class="boxed" style="text-align: center">
+
+    <a class="image" href="https://sourceforge.net/projects/gtk-gnutella/">
+      <img src="https://sourceforge.net/cdn/syndication/badge_img/4467/oss-users-love-us-white"
+      alt="Users Love Us" width="125" /></a>
+
+    <a class="image" href="https://sourceforge.net/projects/gtk-gnutella/">
+      <img src="https://sourceforge.net/cdn/syndication/badge_img/4467/oss-community-choice-white"
+      alt="Community Choice" width="125" /></a>
+
+    <a class="image" href="https://sourceforge.net/projects/gtk-gnutella/">
+      <img src="https://sourceforge.net/cdn/syndication/badge_img/4467/oss-sf-favorite-white"
+      alt="SF Favourite" width="125" /></a>
+
+    <a class="image" href="https://sourceforge.net/projects/gtk-gnutella/">
+      <img src="https://sourceforge.net/cdn/syndication/badge_img/4467/oss-community-leader-white"
+      alt="Community Leader" width="125" /></a>
+
+    <a class="image" href="https://sourceforge.net/projects/gtk-gnutella/">
+      <img src="https://sourceforge.net/cdn/syndication/badge_img/4467/oss-open-source-excellence-white"
+      alt="Open Source Excellence" width="125" /></a>
+
     <a class="image" href="https://sourceforge.net">
-      <img src="http://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
+      <img src="https://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
       alt="SourceForge.net Logo" width="88" height="31" /></a>
-	&nbsp;
-   <a class="image" href="https://glade.gnome.org/">
+
+    <a class="image" href="https://glade.gnome.org/">
       <img src="/images/glade-banner.png" alt="Glade" width="100" height="45" /></a>
-	&nbsp;
+
 	<a class="image"
 		href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467"><img
 		src="/images/feed-icon-28x28.png"
 		alt="RSS Feed Available"
 		title="RSS Feed Available" /></a>
-	&nbsp;
+
 	<a class="image"
 		href="https://www.openhub.net/p/gtk-gnutella"><img
 		src=""
 		width="" height=""
 		alt="Open Hub"
 		title="Open Hub metrics" /></a>
-	&nbsp;
+
 	<a class="image"
 		href="https://scan.coverity.com/projects/2178"><img
 		alt="Coverity Scan Build Status"
 	  	width="95" height="18"
 		src="https://scan.coverity.com/projects/2178/badge.svg" /></a>
-	&nbsp;
+
 	<a class="image"
 		href="https://github.com/gtk-gnutella/gtk-gnutella"><img
 		alt="gtk-gnutella at GitHub"
 	  	width="32" height="32"
 		src="/images/GitHub-Mark-32px.png" /></a>
-	&nbsp;
+
    <div style="text-align: center;">
 	<?php iceinclude("sidenav_copyright", 0) ?>
 	</div>
