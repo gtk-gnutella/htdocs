@@ -10,7 +10,7 @@
  */
  
 /* Uncomment this for debugging */
-/* error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE); */
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 
 if (!defined(BASEDIR)) {
   define(BASEDIR, "/home/groups/g/gt/gtk-gnutella/htdocs/");
