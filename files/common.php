@@ -77,7 +77,7 @@ function getpage() {
   global $pages; /* so the included files know about it */
 
   $page = $_GET['page'];
-  if (in_array($page, $pages))
+  if ((preg_match('^/[a-z][a-z]/', $page)) && (in_array($page, $pages)))
     return $page;
   else
     return 'news';
@@ -87,7 +87,7 @@ function getpage() {
 function getdirlang() {
   $script = $_SERVER['PHP_SELF'];
 
-  if (isset($script) && ereg('^/[a-z][a-z]/', $script)) {
+  if (isset($script) && preg_match('^/[a-z][a-z]/', $script))
     $lang = substr($script, 1, 2);
     if (file_exists(BASEDIR . $lang . '/index.php'))
       return $lang;
@@ -118,7 +118,7 @@ function getlang() {
       /* not even a cookie. Choose from http_accept_language */
       while (
         empty($lang) &&
-        ereg('([a-z][a-z](-[A-Z][A-Z])?)', $accept, $res)
+        preg_match('([a-z][a-z](-[A-Z][A-Z])?)', $accept, $res)
       ) {
         $lang = $res[1];
         $accept = ereg_replace("$lang", '', $accept);
@@ -221,7 +221,7 @@ function newsfiles() {
 	$news_items = array();
 	$handle = opendir(BASEDIR . 'files/en');
 	while (false !== ($file = readdir($handle))) {
-		if (ereg('^news_([0-9]{1,3})$', $file)) {
+		if (preg_match('^news_([0-9]{1,3})$', $file)) {
 			$news_items[] = $file;
 		}
 	}
