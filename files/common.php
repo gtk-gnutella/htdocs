@@ -14,7 +14,7 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 ini_set('display_errors', 1);
 
 if (!defined(BASEDIR)) {
-  define(BASEDIR, "/home/groups/g/gt/gtk-gnutella/htdocs/");
+  define(BASEDIR, "/home/project-web/gtk-gnutella/htdocs/"); //old BASEDIR was: /home/groups/g/gt/gtk-gnutella/htdocs/
 }
 
 $news_items = null;
