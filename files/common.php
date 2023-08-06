@@ -87,7 +87,7 @@ function getpage() {
 function getdirlang() {
   $script = $_SERVER['PHP_SELF'];
 
-  if (isset($script) && preg_match('^/[a-z][a-z]/', $script))
+  if (isset($script) && preg_match('^/[a-z][a-z]/', $script)) {
     $lang = substr($script, 1, 2);
     if (file_exists(BASEDIR . $lang . '/index.php'))
       return $lang;
@@ -115,14 +115,14 @@ function getlang() {
       /* Language taken from cookie */
       $lang = $cooklang;
     } else {
-      /* not even a cookie. Choose from http_accept_language */
-      while (
+      /* not even a cookie. Choose from http_accept_language --REWRITE this part!-- */
+/*      while (
         empty($lang) &&
         preg_match('([a-z][a-z](-[A-Z][A-Z])?)', $accept, $res)
       ) {
         $lang = $res[1];
         $accept = ereg_replace("$lang", '', $accept);
-      }
+      } */
     }
   }
 
