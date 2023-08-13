@@ -13,8 +13,8 @@
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 ini_set('display_errors', 1);
 
-if (!defined(BASEDIR)) {
-  define(BASEDIR, "/home/groups/g/gt/gtk-gnutella/htdocs/");
+if (!defined("BASEDIR")) {
+  define("BASEDIR", "/home/groups/g/gt/gtk-gnutella/htdocs/");
 }
 
 $news_items = null;
@@ -77,7 +77,7 @@ function getpage() {
   global $pages; /* so the included files know about it */
 
   $page = $_GET['page'];
-  if ((preg_match('^/[a-z][a-z]/', $page)) && (in_array($page, $pages)))
+  if ((preg_match('^/[a-z][a-z]/^', $page)) && (in_array($page, $pages))) //not sure if the preg_match expression is correct
     return $page;
   else
     return 'news';
@@ -87,7 +87,7 @@ function getpage() {
 function getdirlang() {
   $script = $_SERVER['PHP_SELF'];
 
-  if (isset($script) && preg_match('^/[a-z][a-z]/', $script)) {
+  if (isset($script) && preg_match('^/[a-z][a-z]/^', $script)) { //not sure if the preg_match expression is correct
     $lang = substr($script, 1, 2);
     if (file_exists(BASEDIR . $lang . '/index.php'))
       return $lang;
@@ -99,7 +99,7 @@ function getdirlang() {
 
 /* getlang sub - check which language the visitor wants */
 function getlang() {
-  $cooklang = $_COOKIE['cooklang'];
+//  $cooklang = $_COOKIE['cooklang']; //REMOVED cookies
   $accept = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
   $lang = $_GET['lang'];
   $dirlang = getdirlang();
@@ -132,8 +132,8 @@ function getlang() {
   }
 
   /* Set the cookie only for the default path / but not e.g., /fr/ */
-  if (!isset($dirlang))
-    setcookie('cooklang', $lang, time() + 31536000);
+ /* if (!isset($dirlang))
+    setcookie('cooklang', $lang, time() + 31536000); ---DO NOT set cookies until the script works fine */
 
   return $lang;
 }
