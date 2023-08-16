@@ -186,7 +186,7 @@ function maincontent() {
   global $pages; /* so the included files know about it */
 
   iceinclude("sponsors", 0);
-  
+  var_dump(PAGE, LANG); //DEBUG
   if (
     in_array(PAGE, $pages) && (
       file_exists(BASEDIR . 'files/' . LANG . '/' . PAGE) ||

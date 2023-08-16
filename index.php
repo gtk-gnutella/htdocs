@@ -1,8 +1,5 @@
 <?php
 
-//DEBUG while WORK IN PROGRESS
-//if (!isset ($_GET['debug'])) header (Location: 'index_wip.php'); //does not work...
-
 /* Uncomment this for debugging */
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 ini_set('display_errors', 1);
@@ -330,6 +327,7 @@ pre {
     <hr class="hidden">
 
     <div class="content">
+      <div>Work in progress! Download the latest version from: <a href="https://sourceforge.net/projects/gtk-gnutella/">Sourceforge</a></div> <!-- REMOVE when the website will work -->
       <?php maincontent() ?>
     </div>
 

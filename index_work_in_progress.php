@@ -1,3 +1,4 @@
+<!-- Rename this file to index.php to set a temporary work in progress page -->
 <html>
 <head>
 <title>GTK-Gnutella - Work in Progress</title>
