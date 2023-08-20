@@ -14,7 +14,7 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 ini_set('display_errors', 1);
 
 if (!defined("BASEDIR")) {
-  define("BASEDIR", "/home/groups/g/gt/gtk-gnutella/htdocs/");
+  define("BASEDIR", ""); //Old BASEDIR was /home/groups/g/gt/gtk-gnutella/htdocs/ New should be /var/www/html/ but probably shall not be used!
 }
 
 $news_items = null;
@@ -77,7 +77,7 @@ function getpage() {
   global $pages; /* so the included files know about it */
 
   $page = $_GET['page'];
-  if ((preg_match('^/[a-z][a-z]/^', $page)) && (in_array($page, $pages))) //not sure if the preg_match expression is correct
+  if (in_array($page, $pages)) //not sure if the preg_match expression is correct TEMP REMOVED preg_match('^/[a-z][a-z]/^', $page)) && 
     return $page;
   else
     return 'news';
@@ -154,9 +154,9 @@ function icecontent($content) {
  */
 function iceinclude($file, $box) {
   global $news_items; /* so the included files know about it */
-  $incfile = BASEDIR . "/files/" . LANG . "/$file";
+  $incfile = BASEDIR . "files/" . LANG . "/$file"; //add slash / before files/ ?
   if (!file_exists($incfile)) {
-    $incfile = BASEDIR . "/files/en/$file";
+    $incfile = BASEDIR . "files/en/$file"; //add slash / before files/ ?
     if (file_exists($incfile)) {
       if ($box) {
         include(BASEDIR . GENDIR . "/cheader");
@@ -186,7 +186,6 @@ function maincontent() {
   global $pages; /* so the included files know about it */
 
   iceinclude("sponsors", 0);
-  var_dump(PAGE, LANG); //DEBUG
   if (
     in_array(PAGE, $pages) && (
       file_exists(BASEDIR . 'files/' . LANG . '/' . PAGE) ||
@@ -221,11 +220,12 @@ function newsfiles() {
 	$news_items = array();
 	$handle = opendir(BASEDIR . 'files/en');
 	while (false !== ($file = readdir($handle))) {
-		if (preg_match('^news_([0-9]{1,3})$', $file)) {
+		if (preg_match('^news_([0-9]{1,3})$', $file)) { //check regular expression!!
 			$news_items[] = $file;
 		}
 	}
 	closedir($handle);
+	var_dump($news_items); //show news array
 	usort($news_items, "strnatcmp");
 	$news_items = array_reverse($news_items);
 /*

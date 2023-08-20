@@ -1,9 +1,10 @@
 <?php
 
-/* Uncomment this for debugging */
+/* !!! DO NOT print anything before <html> tag or Sourceforge will show a blank page! */
+
+/* Uncomment this for debugging -- but does it actually work?? */
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 ini_set('display_errors', 1);
-
 
 /* $Id$ */
 /*
@@ -327,7 +328,6 @@ pre {
     <hr class="hidden">
 
     <div class="content">
-      <div>Work in progress! Download the latest version from: <a href="https://sourceforge.net/projects/gtk-gnutella/">Sourceforge</a></div> <!-- REMOVE when the website will work -->
       <?php maincontent() ?>
     </div>
 
