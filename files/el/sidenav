@@ -1,23 +1,23 @@
 <!-- $Id$ -->
 
 <div class="sb_section">
-<a href="?page=news">Νέα</a> &nbsp;|&nbsp;
-<a href="?page=download">Download</a>&nbsp;|&nbsp;
-<a href="?page=docs">Εγχειρίδιο</a> &nbsp;|&nbsp;
-<a href="?page=features">Χαρακτηριστικά</a> &nbsp;|&nbsp;
-<a href="?page=faq">Συχνές Ερωτήσεις</a> &nbsp;|&nbsp;
-<a href="?page=shots096u">Screenshots</a> &nbsp;|&nbsp;
-<a href="?page=release_history">Ιστορικό</a> &nbsp;|&nbsp;
-<a href="?page=mailing">Ζητώντας&nbsp;βοήθεια</a> &nbsp;|&nbsp;
-<a href="?page=bugreport_howto">Howto&nbsp;αναφοράς&nbsp;σφαλμάτων</a> &nbsp;|&nbsp;
+<a href="?lang=el&page=news">Νέα</a> &nbsp;|&nbsp;
+<a href="?lang=el&page=download">Download</a>&nbsp;|&nbsp;
+<a href="?lang=el&page=docs">Εγχειρίδιο</a> &nbsp;|&nbsp;
+<a href="?lang=el&page=features">Χαρακτηριστικά</a> &nbsp;|&nbsp;
+<a href="?lang=el&page=faq">Συχνές Ερωτήσεις</a> &nbsp;|&nbsp;
+<a href="?lang=el&page=shots096u">Screenshots</a> &nbsp;|&nbsp;
+<a href="?lang=el&page=release_history">Ιστορικό</a> &nbsp;|&nbsp;
+<a href="?lang=el&page=mailing">Ζητώντας&nbsp;βοήθεια</a> &nbsp;|&nbsp;
+<a href="?lang=el&page=bugreport_howto">Howto&nbsp;αναφοράς&nbsp;σφαλμάτων</a> &nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">Bug&nbsp;Tracker</a> &nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/feature-requests/">Αιτήματα&nbsp;Χαρακτηριστικών</a> &nbsp;|&nbsp;
-<a href="?page=devel">Υπεύθυνοι Ανάπτυξης</a> &nbsp;|&nbsp;
+<a href="?lang=el&page=devel">Υπεύθυνοι Ανάπτυξης</a> &nbsp;|&nbsp;
 <a href="http://sourceforge.net/projects/gtk-gnutella/"> Σελίδα έργου SF</a> &nbsp;|&nbsp;
 <a href="/doxygen/"> Παραπομπές API</a> &nbsp;|&nbsp;
-<a href="?page=code101">Κώδικας 101</a> &nbsp;|&nbsp;
-<a href="?page=devel#devel-snapshots">SVN&nbsp;Snapshots</a> &nbsp;|&nbsp;
-<a href="?page=links">Σύνδεσμοι</a> &nbsp;|&nbsp;
-<a href="?page=donate">Δωρεά</a>
+<a href="?lang=el&page=code101">Κώδικας 101</a> &nbsp;|&nbsp;
+<a href="?lang=el&page=devel#devel-snapshots">SVN&nbsp;Snapshots</a> &nbsp;|&nbsp;
+<a href="?lang=el&page=links">Σύνδεσμοι</a> &nbsp;|&nbsp;
+<a href="?lang=el&page=donate">Δωρεά</a>
 </div>
 <!-- end sidenav -->

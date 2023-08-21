@@ -1,22 +1,22 @@
 <!-- $Id$ -->
 
 <div class="sb_section">
-<a href="?page=news">Actualit&eacute;s</a>&nbsp;|&nbsp;
-<a href="?page=download">Download</a>&nbsp;|&nbsp;
-<a href="?page=docs">Documentation</a>&nbsp;|&nbsp;
-<a href="?page=features">Fonctionnalit&eacute;s</a>&nbsp;|&nbsp;
-<a href="?page=faq">FAQ</a>&nbsp;|&nbsp;
-<a href="?page=shots096u">Captures d'&eacute;cran</a>&nbsp;|&nbsp;
-<a href="?page=release_history">Historique</a>&nbsp;|&nbsp;
-<a href="?page=mailing">Obtenir de l'aide</a>&nbsp;|&nbsp;
-<a href="?page=bugreport_howto">Comment reporter un bug</a>&nbsp;|&nbsp;
+<a href="?lang=fr&page=news">Actualit&eacute;s</a>&nbsp;|&nbsp;
+<a href="?lang=fr&page=download">Download</a>&nbsp;|&nbsp;
+<a href="?lang=fr&page=docs">Documentation</a>&nbsp;|&nbsp;
+<a href="?lang=fr&page=features">Fonctionnalit&eacute;s</a>&nbsp;|&nbsp;
+<a href="?lang=fr&page=faq">FAQ</a>&nbsp;|&nbsp;
+<a href="?lang=fr&page=shots096u">Captures d'&eacute;cran</a>&nbsp;|&nbsp;
+<a href="?lang=fr&page=release_history">Historique</a>&nbsp;|&nbsp;
+<a href="?lang=fr&page=mailing">Obtenir de l'aide</a>&nbsp;|&nbsp;
+<a href="?lang=fr&page=bugreport_howto">Comment reporter un bug</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">Gestion des Bugs</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/feature-requests/">Demande de fonctionnalit&eacute;s suppl&eacute;mentaires</a>&nbsp;|&nbsp;
-<a href="?page=devel">D&eacute;veloppeurs</a>&nbsp;|&nbsp;
+<a href="?lang=fr&page=devel">D&eacute;veloppeurs</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/projects/gtk-gnutella/">Page du projet SF</a>&nbsp;|&nbsp;
 <a href="/doxygen/">API Reference</a>&nbsp;|&nbsp;
-<a href="?page=code101">Code 101</a>&nbsp;|&nbsp;
-<a href="?page=links">Liens</a>&nbsp;|&nbsp;
-<a href="?page=donate">Donner</a>
+<a href="?lang=fr&page=code101">Code 101</a>&nbsp;|&nbsp;
+<a href="?lang=fr&page=links">Liens</a>&nbsp;|&nbsp;
+<a href="?lang=fr&page=donate">Donner</a>
 </div>
 <!-- end sidenav -->

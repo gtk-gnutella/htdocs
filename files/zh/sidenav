@@ -1,24 +1,24 @@
 <!-- $Id$ -->
 
 <div class="sb_section">
-<a href="?page=news">新闻</a>&nbsp;|&nbsp;
-<a href="?page=download">下载</a>&nbsp;|&nbsp;
-<a href="?page=docs">文档</a>&nbsp;|&nbsp;
-<a href="?page=features">功能介绍</a>&nbsp;|&nbsp;
-<a href="?page=faq">有问有答</a>&nbsp;|&nbsp;
-<a href="?page=shots096u">界面截屏</a>&nbsp;|&nbsp;
-<a href="?page=release_history">历史记录</a>&nbsp;|&nbsp;
-<a href="?page=mailing">获取帮助</a>&nbsp;|&nbsp;
-<a href="?page=bugreport_howto">如何报告Bug</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=news">新闻</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=download">下载</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=docs">文档</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=features">功能介绍</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=faq">有问有答</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=shots096u">界面截屏</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=release_history">历史记录</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=mailing">获取帮助</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=bugreport_howto">如何报告Bug</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">Bug追踪</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/feature-requests/">功能需求</a>&nbsp;|&nbsp;
-<a href="?page=devel">开发园地</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=devel">开发园地</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/projects/gtk-gnutella/">SF项目页面</a>&nbsp;|&nbsp;
 <a href="/doxygen/">API 参考</a>&nbsp;|&nbsp;
-<a href="?page=code101">代码 101</a>&nbsp;|&nbsp;
-<a href="?page=devel#devel-snapshots">SVN 快照</a>&nbsp;|&nbsp;
-<a href="?page=links">链接</a>&nbsp;|&nbsp;
-<a href="?page=donate">捐助</a>
+<a href="?lang=zh&page=code101">代码 101</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=devel#devel-snapshots">SVN 快照</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=links">链接</a>&nbsp;|&nbsp;
+<a href="?lang=zh&page=donate">捐助</a>
 </div>
 <!-- end sidenav -->
 

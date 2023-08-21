@@ -83,7 +83,7 @@ function getpage() {
     return 'news';
 }
 
-/* getdirlang sub - check the script path for a language hint */
+/* getdirlang sub - check the script path for a language hint -- This function strips the first 2 characters from the page address to perpetuate la language but is probably useless since the LANG variable can be taken from the query string */
 function getdirlang() {
   $script = $_SERVER['PHP_SELF'];
 
@@ -101,28 +101,22 @@ function getdirlang() {
 function getlang() {
 //  $cooklang = $_COOKIE['cooklang']; //REMOVED cookies
   $accept = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+  $accept = substr($accept, 0, 2); //get the first two letters as language string
   $lang = $_GET['lang'];
-  $dirlang = getdirlang();
+  //$dirlang = getdirlang(); //removed
 
   if (!isset ($lang)) {
     /* no language selection in http request */
 
-    
-    if (isset($dirlang)) {
+    if (isset($dirlang)) { //to be removed
       /* Language taken from path e.g., /fr/index.php -> fr */
       $lang = $dirlang;
-    } else if (isset($cooklang)) {
+    } else if (isset($cooklang)) { //to be removed
       /* Language taken from cookie */
       $lang = $cooklang;
     } else {
-      /* not even a cookie. Choose from http_accept_language --REWRITE this part!-- */
-/*      while (
-        empty($lang) &&
-        preg_match('([a-z][a-z](-[A-Z][A-Z])?)', $accept, $res)
-      ) {
-        $lang = $res[1];
-        $accept = ereg_replace("$lang", '', $accept);
-      } */
+      /* not even a cookie. Choose from http_accept_language */
+      $lang = $accept;
     }
   }
 

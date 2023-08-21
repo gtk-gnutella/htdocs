@@ -1,23 +1,23 @@
 <!-- $Id$ -->
 
 <div class="sb_section">
-<a href="?page=news">Новини</a>&nbsp;|&nbsp;
-<a href="?page=download">Скачати</a>&nbsp;|&nbsp;
-<a href="?page=docs">Документація</a>&nbsp;|&nbsp;
-<a href="?page=features">Можливості</a>&nbsp;|&nbsp;
-<a href="?page=faq">FAQ</a>&nbsp;|&nbsp;
-<a href="?page=shots096u">Скріншоти</a>&nbsp;|&nbsp;
-<a href="?page=release_history">Історія</a>&nbsp;|&nbsp;
-<a href="?page=mailing">Допомога&nbsp;</a>&nbsp;|&nbsp;
-<a href="?page=bugreport_howto">Віправити&nbsp;Bug Report</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=news">Новини</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=download">Скачати</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=docs">Документація</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=features">Можливості</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=faq">FAQ</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=shots096u">Скріншоти</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=release_history">Історія</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=mailing">Допомога&nbsp;</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=bugreport_howto">Віправити&nbsp;Bug Report</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">Bug&nbsp;Tracker</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/feature-requests/">Feature&nbsp;Requests</a>&nbsp;|&nbsp;
-<a href="?page=devel">Розробники</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=devel">Розробники</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/projects/gtk-gnutella/">сторінка проекту в SF</a>&nbsp;|&nbsp;
 <a href="/doxygen/">API Reference</a>&nbsp;|&nbsp;
-<a href="?page=code101">Code 101</a>&nbsp;|&nbsp;
-<a href="?page=devel#devel-snapshots">SVN&nbsp;Snapshots</a>&nbsp;|&nbsp;
-<a href="?page=links">Лінки</a>&nbsp;|&nbsp;
-<a href="?page=donate">Пожертвування</a>
+<a href="?lang=uk&page=code101">Code 101</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=devel#devel-snapshots">SVN&nbsp;Snapshots</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=links">Лінки</a>&nbsp;|&nbsp;
+<a href="?lang=uk&page=donate">Пожертвування</a>
 </div>
 <!-- end sidenav -->

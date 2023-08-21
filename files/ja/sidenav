@@ -1,23 +1,23 @@
 <!-- $Id$ -->
 
 <div class="sb_section">
-<a href="?page=news">ニュース</a>&nbsp;|&nbsp;
-<a href="?page=download">ダウンロード</a>&nbsp;|&nbsp;
-<a href="?page=docs">文書</a> 
-<a href="?page=features">特徴</a>&nbsp;|&nbsp;
-<a href="?page=faq">FAQ</a>&nbsp;|&nbsp;
-<a href="?page=shots096u">スクリーンショット</a>&nbsp;|&nbsp;
-<a href="?page=release_history">リリース履歴</a>&nbsp;|&nbsp;
-<a href="?page=mailing">サポート</a>&nbsp;|&nbsp;
-<a href="?page=bugreport_howto">バグの報告に関して</a>&nbsp;|&nbsp;
+<a href="?lang=ja&page=news">ニュース</a>&nbsp;|&nbsp;
+<a href="?lang=ja&page=download">ダウンロード</a>&nbsp;|&nbsp;
+<a href="?lang=ja&page=docs">文書</a> 
+<a href="?lang=ja&page=features">特徴</a>&nbsp;|&nbsp;
+<a href="?lang=ja&page=faq">FAQ</a>&nbsp;|&nbsp;
+<a href="?lang=ja&page=shots096u">スクリーンショット</a>&nbsp;|&nbsp;
+<a href="?lang=ja&page=release_history">リリース履歴</a>&nbsp;|&nbsp;
+<a href="?lang=ja&page=mailing">サポート</a>&nbsp;|&nbsp;
+<a href="?lang=ja&page=bugreport_howto">バグの報告に関して</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">バグ追跡システム</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/feature-requests/">要望</a>&nbsp;|&nbsp;
-<a href="?page=devel" >開発</a>&nbsp;|&nbsp;
+<a href="?lang=ja&page=devel" >開発</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/projects/gtk-gnutella/">SFプロジェクト</a>&nbsp;|&nbsp;
 <a href="/doxygen/">APIリファレンス</a>&nbsp;|&nbsp;
-<a href="?page=code101">Code 101</a>&nbsp;|&nbsp;
-<a href="?page=devel#devel-snapshots">スナップショット</a>&nbsp;|&nbsp;
-<a href="?page=links">リンク</a>&nbsp;|&nbsp;
-<a href="?page=donate">寄付</a>
+<a href="?lang=ja&page=code101">Code 101</a>&nbsp;|&nbsp;
+<a href="?lang=ja&page=devel#devel-snapshots">スナップショット</a>&nbsp;|&nbsp;
+<a href="?lang=ja&page=links">リンク</a>&nbsp;|&nbsp;
+<a href="?lang=ja&page=donate">寄付</a>
 </div>
 <!-- end sidenav -->

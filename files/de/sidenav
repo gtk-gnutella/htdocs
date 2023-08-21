@@ -1,23 +1,23 @@
 <!-- $Id$ -->
 
 <div class="sb_section">
-<a href="?page=news">Neuigkeiten</a>&nbsp;|&nbsp;
-<a href="?page=download">Download</a>&nbsp;|&nbsp;
-<a href="?page=docs" >Dokumentation</a>&nbsp;|&nbsp;
-<a href="?page=features">Eigenschaften</a>&nbsp;|&nbsp;
-<a href="?page=faq">H&auml;ufige&nbsp;Fragen</a>&nbsp;|&nbsp;
-<a href="?page=shots096u">So&nbsp;siehts&nbsp;aus</a>&nbsp;|&nbsp;
-<a href="?page=release_history">Alte Meldungen</a>&nbsp;|&nbsp;
-<a href="?page=mailing">Benutzerhilfe</a>&nbsp;|&nbsp;
-<a href="?page=bugreport_howto">Fehler&nbsp;melden&nbsp;</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=news">Neuigkeiten</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=download">Download</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=docs" >Dokumentation</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=features">Eigenschaften</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=faq">H&auml;ufige&nbsp;Fragen</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=shots096u">So&nbsp;siehts&nbsp;aus</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=release_history">Alte Meldungen</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=mailing">Benutzerhilfe</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=bugreport_howto">Fehler&nbsp;melden&nbsp;</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">Fehlerberichte</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/feature-requests/">W&uuml;nsche</a>&nbsp;|&nbsp;
-<a href="?page=devel">Entwickler</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=devel">Entwickler</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/projects/gtk-gnutella/">SF Projektseite</a>&nbsp;|&nbsp;
 <a href="/doxygen/">API Reference</a>&nbsp;|&nbsp;
-<a href="?page=code101">Code 101</a>&nbsp;|&nbsp;
-<a href="?page=devel#devel-snapshots">SVN&nbsp;Schnapschuss</a>&nbsp;|&nbsp;
-<a href="?page=links">Links</a>&nbsp;|&nbsp;
-<a href="?page=donate">Spenden</a>
+<a href="?lang=de&page=code101">Code 101</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=devel#devel-snapshots">SVN&nbsp;Schnapschuss</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=links">Links</a>&nbsp;|&nbsp;
+<a href="?lang=de&page=donate">Spenden</a>
 </div>
 <!-- end sidenav -->

@@ -19,7 +19,7 @@ if (file_exists("files/maintainer_include.php")) {
 
 include("files/common.php");
 
-$dir = getdirlang();
+// $dir = getdirlang(); // probably useless, see common.php
 
 /* DEBUG!!!
 if (!isset($dir) || 0 != strcmp(LANG, $dir)) {

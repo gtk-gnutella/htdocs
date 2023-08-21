@@ -1,23 +1,23 @@
 <!-- $Id$ -->
 
 <div class="sb_section">
-<a href="?page=news">Nieuws</a>&nbsp;|&nbsp;
-<a href="?page=download">Download</a>&nbsp;|&nbsp;
-<a href="?page=docs">Documentatie</a>&nbsp;|&nbsp;
-<a href="?page=features">Features</a>&nbsp;|&nbsp;
-<a href="?page=faq">FAQ</a>&nbsp;|&nbsp;
-<a href="?page=shots096u">Schermafbeeldingen</a>&nbsp;|&nbsp;
-<a href="?page=release_history">Geschiedenis</a>&nbsp;|&nbsp;
-<a href="?page=mailing">Ondersteuning</a>&nbsp;|&nbsp;
-<a href="?page=bugreport_howto">Bug&nbsp;Report&nbsp;Howto</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=news">Nieuws</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=download">Download</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=docs">Documentatie</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=features">Features</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=faq">FAQ</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=shots096u">Schermafbeeldingen</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=release_history">Geschiedenis</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=mailing">Ondersteuning</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=bugreport_howto">Bug&nbsp;Report&nbsp;Howto</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">Bug&nbsp;Tracker</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/p/gtk-gnutella/feature-requests/">Feature&nbsp;Requests</a>&nbsp;|&nbsp;
-<a href="?page=devel">Ontwikkelaars</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=devel">Ontwikkelaars</a>&nbsp;|&nbsp;
 <a href="http://sourceforge.net/projects/gtk-gnutella/">SF Project pagina</a>&nbsp;|&nbsp;
 <a href="/doxygen/">API Reference</a>&nbsp;|&nbsp;
-<a href="?page=code101">Code 101</a>&nbsp;|&nbsp;
-<a href="?page=devel#devel-snapshots">SVN&nbsp;Snapshots</a>&nbsp;|&nbsp;
-<a href="?page=links">Links</a>&nbsp;|&nbsp;
-<a href="?page=donate">Doneren</a>
+<a href="?lang=nl&page=code101">Code 101</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=devel#devel-snapshots">SVN&nbsp;Snapshots</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=links">Links</a>&nbsp;|&nbsp;
+<a href="?lang=nl&page=donate">Doneren</a>
 </div>
 <!-- end sidenav -->
