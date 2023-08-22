@@ -9,7 +9,6 @@
 icecontent("intro");
 
 /* Recent news */
-echo "WORK IN PROGRESS <br />"; //DEBUG
 icecontent("news_header");
 newsfiles();
 

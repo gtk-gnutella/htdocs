@@ -210,22 +210,15 @@ function maincontent() {
  */
 function newsfiles() {
 	global $news_items;
-
 	$news_items = array();
 	$handle = opendir(BASEDIR . 'files/en');
 	while (false !== ($file = readdir($handle))) {
-		if (preg_match('^news_([0-9]{1,3})$', $file)) { //check regular expression!!
+		if (preg_match('^news_([0-9]{1,3})^', $file)) {
 			$news_items[] = $file;
 		}
 	}
 	closedir($handle);
-	var_dump($news_items); //show news array
 	usort($news_items, "strnatcmp");
 	$news_items = array_reverse($news_items);
-/*
-	for ($i = 0; $i < count($news_items); $i++) {
-		echo '<!-- ' . $news_items[$i] . ' -->';
-	}
- */
 }
 
