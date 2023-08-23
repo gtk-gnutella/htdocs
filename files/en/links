@@ -4,19 +4,17 @@
 
 <ul>
   <li>
-  <a href="http://www.infoanarchy.org/en/Gnutella">infoAnarchy's 
-    Gnutella Wiki</a>: good general information about all things Gnutella.
+    <a href="https://www.gnutellaforums.com/" target="_blank">Gnutella Forums</a>: for discussion about Gnutella network and software including GTK-Gnutella.
   </li>
   <li>
-    <a href="http://groups.yahoo.com/group/the_gdf/">The Gnutella Developer 
-      Forum (GDF)</a>: the place where the big players sit. 
-     It is in general not the right place for user-level, support or
-     client-specific questions.
+    <a href="https://www.gnu.org/philosophy/gnutella.en.html" target="_blank">Gnutella network on gnu.org</a>: a few info about Gnutella network and GNU operating system.
   </li>
   <li>
-    A <a
-     href="http://www.phex.org/wiki/index.php/Features#Feature_Comparision">feature comparison</a>
-    of diverse Gnutella software.
+    <a href="https://en.wikipedia.org/wiki/Gnutella" target="_blank">Gnutella Wikipedia page</a>
+  </li>
+  <li>
+    <a href="https://en.wikipedia.org/wiki/Gtk-gnutella" target="_blank">GTK-Gnutella Wikipedia page</a>
   </li>
 </ul>
+
 <!-- end links -->

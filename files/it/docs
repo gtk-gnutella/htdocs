@@ -12,13 +12,13 @@
     <a href="?page=bugreport_howto">Come segnalare bug</a> <small>by eqom14</small>
   </li>
   <li>
-    <a href="?page=glossary">Glossario</a>
+    <a href="?lang=it&page=glossary">Glossario</a>
   </li>
 </ul>
 
 <ul>
   <li>
-    <a href="?page=features">Caratteristiche</a>
+    <a href="?lang=it&page=features">Caratteristiche</a>
   </li>
   <li>
     <a href="?page=shots096u">Screenshot</a><br>

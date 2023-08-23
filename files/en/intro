@@ -6,16 +6,14 @@
 <p>
   gtk-gnutella is a server/client for the <em>Gnutella</em> peer-to-peer network.
   It runs on Microsoft Windows, MacOS and every Unix-like system which supports
-<a href="http://www.gtk.org/">GTK+</a> 
-  (1.2 or above).
+<a href="https://www.gtk.org/" target="_blank">GTK+</a> (1.2 or above).
   The GNOME desktop environment is not required. It is currently developed
-  and tested under Linux (<a href="http://www.debian.org/">Debian</a>) as
-  well as <a href="http://www.NetBSD.org">NetBSD</a>. It is known to run at
+  and tested under Linux (<a href="https://www.debian.org/" target="_blank">Debian</a>) as
+  well as <a href="http://www.NetBSD.org" target="_blank">NetBSD</a>. It is known to run at
   least on Linux,
-  <a href="http://www.freebsd.org/cgi/cvsweb.cgi/ports/net-p2p/gtk-gnutella/">FreeBSD</a>,
-  <a href="ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/net/gtk-gnutella/README.html">NetBSD</a>,
-  <a href="http://gtk-gnutella.darwinports.com/">Darwin</a>,
-Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS whereas CPU architectures include
+  <a href="https://svnweb.freebsd.org/ports/head/net-p2p/gtk-gnutella/" target="_blank">FreeBSD</a>,
+  <a href="https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/net/gtk-gnutella/index.html" target="_blank">NetBSD</a>,
+  Darwin, Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS whereas CPU architectures include
 x86, AMD64, PowerPC, SPARC, MIPS.  And of course Microsoft Windows (XP at least).
 </p>
 
@@ -31,18 +29,18 @@ x86, AMD64, PowerPC, SPARC, MIPS.  And of course Microsoft Windows (XP at least)
 </p>
 
 <p>
-  This website follows HTML5 and CSS3 web standards and uses cookies only to record language preferences.
+  This website is written in PHP, follows HTML5 and CSS3 web standards and does not use cookies.
 </p>
 
 <p>
   All ideas and comments are welcome to the gtk-gnutella-devel mailing list.
   Bugs should be reported to the 
-  <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">
+  <a href="http://sourceforge.net/p/gtk-gnutella/bugs/" target="_blank">
   SourceForge.net Bug Tracker</a>
 </p>
 
 <p style="text-align: center;">
-  <a href="?page=devel">We need additional
+  <a href="?lang=en&page=devel">We need additional
   contributors for C development and documentation</a>
 </p>
 

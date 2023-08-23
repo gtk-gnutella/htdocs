@@ -1,21 +1,20 @@
 <!-- $Id$ -->
 
-<h3>Collegamenti Gnutella</h3>
+<h3>Collegamenti su Gnutella</h3>
 
 <ul>
   <li>
-  <a href="http://www.infoanarchy.org/en/Gnutella">infoAnarchy's 
-    Gnutella Wiki</a>: informazioni generali di buon livello su ci&ograve; che riguarda Gnutella.
+    <a href="https://www.gnutellaforums.com/" target="_blank">Gnutella Forums</a>: per discussioni sulla rete Gnutella e software tra cui GTK-Gnutella.
   </li>
   <li>
-    <a href="http://groups.yahoo.com/group/the_gdf/">The Gnutella Developer 
-      Forum (GDF)</a>: il luogo dove risiedono i principali sviluppatori. 
-     Non &egrave; il luogo per richieste di supporto per gli utenti o quesiti specifici su Gtk-gnutella.
+    <a href="https://www.gnu.org/philosophy/gnutella.en.html" target="_blank">Gnutella network su gnu.org</a>: alcune informazioni sulla rete Gnutella e il sistema operativo GNU.
   </li>
   <li>
-    A <a
-     href="http://www.phex.org/wiki/index.php/Features#Feature_Comparision">confronto caratteristiche</a>
-    di vari software per Gnutella.
+    <a href="https://it.wikipedia.org/wiki/Gnutella" target="_blank">Pagina Wikipedia su Gnutella</a>
+  </li>
+  <li>
+    <a href="https://it.wikipedia.org/wiki/Gtk-gnutella" target="_blank">Pagina Wikipedia su GTK-Gnutella</a>
   </li>
 </ul>
+
 <!-- end links -->

@@ -359,10 +359,7 @@ pre {
       <img src="https://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
       alt="SourceForge.net Logo" width="88" height="31" /></a>
 
-    <a class="image" href="https://glade.gnome.org/">
-      <img src="/images/glade-banner.png" alt="Glade" width="100" height="45" /></a>
-
-	<a class="image"
+ 	<a class="image"
 		href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467"><img
 		src="/images/feed-icon-28x28.png"
 		alt="RSS Feed Available"
