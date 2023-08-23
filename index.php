@@ -37,7 +37,7 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
   <head>
     <meta charset="UTF-8" />
 	 <meta name="viewport" content="width=device-width, initial-scale=1" />
-	 <meta name="google-site-verification" content="eYBryyAZmOqaY7NhN4poQepTcY8bmvaBrv6do9TM6P4" />
+	 <meta name="google-site-verification" content="Uu1C2AmKM0OQw2s7EClaWmoK6JTd3YQ12GFvNSv6QHc" />
 
     <?php iceinclude("title", 0) ?>
 
