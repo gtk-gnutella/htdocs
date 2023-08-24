@@ -7,15 +7,6 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 ini_set('display_errors', 1);
 
 /* $Id$ */
-/*
- * For local testing for website maintainers
- * Define your personal BASEDIR in this file.
- *
- *		Markus Goetz <guruz@guruz.de>
- */
-if (file_exists("files/maintainer_include.php")) {
-  include("files/maintainer_include.php");
-}
 
 include("files/common.php");
 
@@ -35,54 +26,54 @@ if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
 <!DOCTYPE HTML>
 <html lang="<?php echo LANG ?>">
   <head>
-    <meta charset="UTF-8" />
-	 <meta name="viewport" content="width=device-width, initial-scale=1" />
-	 <meta name="google-site-verification" content="Uu1C2AmKM0OQw2s7EClaWmoK6JTd3YQ12GFvNSv6QHc" />
+    <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <meta name="google-site-verification" content="Uu1C2AmKM0OQw2s7EClaWmoK6JTd3YQ12GFvNSv6QHc">
 
     <?php iceinclude("title", 0) ?>
 
-    <link rel="icon" href="/images/favicon.png" type="image/png" />
-    <link rel="start" href="/" />
-    <link rel="copyright" href="https://sourceforge.net/projects/gtk-gnutella" />
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="bookmark" href="https://gtk-gnutella.sourceforge.io/">
+    <link rel="canonical" href="https://gtk-gnutella.sourceforge.io/">
     <link rel="alternate"
           type="text/html"
-          href="/en/?page=<?php echo PAGE ?>"
+          href="?lang=en&page=<?php echo PAGE ?>"
           hreflang="en"
-          title="English version" />
+          title="English version">
     <link rel="alternate"
-          href="/de/?page=<?php echo PAGE ?>"
+          href="?lang=de&page=<?php echo PAGE ?>"
           hreflang="de"
-          title="Deutsche &Uuml;bersetzung" />
+          title="Deutsche &Uuml;bersetzung">
     <link rel="alternate"
-          href="/el/?page=<?php echo PAGE ?>"
+          href="?lang=el&page=<?php echo PAGE ?>"
           hreflang="el"
-          title="Ελληνικά" />
+          title="Ελληνικά">
     <link rel="alternate"
-          href="/fr/?page=<?php echo PAGE ?>"
+          href="?lang=fr&page=<?php echo PAGE ?>"
           hreflang="fr"
-          title="Traduction fran&ccedil;aise" />
+          title="Traduction fran&ccedil;aise">
     <link rel="alternate"
-          href="/it/?page=<?php echo PAGE ?>"
+          href="?lang=it&page=<?php echo PAGE ?>"
           hreflang="it"
-          title="Traduction fran&ccedil;aise" />
+          title="Traduction fran&ccedil;aise">
     <link rel="alternate"
-          href="/ja/?page=<?php echo PAGE ?>"
+          href="?lang=ja&page=<?php echo PAGE ?>"
           hreflang="ja"
-          title="日本語版" />
+          title="日本語版">
     <link rel="alternate"
-          href="/nl/?page=<?php echo PAGE ?>"
+          href="?lang=nl&page=<?php echo PAGE ?>"
           hreflang="nl"
-          title="Nederlandse vertaling" />
+          title="Nederlandse vertaling">
     <link rel="alternate"
-          href="/uk/?page=<?php echo PAGE ?>"
+          href="?lang=uk&page=<?php echo PAGE ?>"
           hreflang="uk"
-          title="Ukrainian version" />
+          title="Ukrainian version">
     <link rel="alternate"
-          href="/zh/?page=<?php echo PAGE ?>"
+          href="?lang=zh&page=<?php echo PAGE ?>"
           hreflang="zh"
-          title="中文" />
+          title="中文">
 
-    <?php iceinclude("sections", 0) ?>
+<?php /* iceinclude("sections", 0)    USELESS also remove "section" files */ ?>
 
 <style>
 @media all {
@@ -112,7 +103,7 @@ h1 {
 h1.attention {
 	margin: 0 0;
 	border-style: solid;
-	border-color: red;
+	border-color: black;
 	background: red;
 	color: white;
 	text-align: center;
@@ -241,7 +232,7 @@ img {
 
 }
 
-@media handheld, only screen and (max-width: 440px) {
+@media screen and (max-width: 440px) {
 
 .title_image {
 	width: 100%;
@@ -331,58 +322,54 @@ pre {
       <?php maincontent() ?>
     </div>
 
-<hr class="hidden" />
+<hr class="hidden">
 
 <div class="boxed" style="text-align: center">
 
     <a class="image" href="https://sourceforge.net/projects/gtk-gnutella/">
       <img src="https://sourceforge.net/cdn/syndication/badge_img/4467/oss-users-love-us-white"
-      alt="Users Love Us" width="125" /></a>
+      alt="Users Love Us" width="125"></a>
 
     <a class="image" href="https://sourceforge.net/projects/gtk-gnutella/">
       <img src="https://sourceforge.net/cdn/syndication/badge_img/4467/oss-community-choice-white"
-      alt="Community Choice" width="125" /></a>
+      alt="Community Choice" width="125"></a>
 
     <a class="image" href="https://sourceforge.net/projects/gtk-gnutella/">
       <img src="https://sourceforge.net/cdn/syndication/badge_img/4467/oss-sf-favorite-white"
-      alt="SF Favourite" width="125" /></a>
+      alt="SF Favourite" width="125"></a>
 
     <a class="image" href="https://sourceforge.net/projects/gtk-gnutella/">
       <img src="https://sourceforge.net/cdn/syndication/badge_img/4467/oss-community-leader-white"
-      alt="Community Leader" width="125" /></a>
+      alt="Community Leader" width="125"></a>
 
     <a class="image" href="https://sourceforge.net/projects/gtk-gnutella/">
       <img src="https://sourceforge.net/cdn/syndication/badge_img/4467/oss-open-source-excellence-white"
-      alt="Open Source Excellence" width="125" /></a>
+      alt="Open Source Excellence" width="125"></a>
 
     <a class="image" href="https://sourceforge.net">
       <img src="https://sourceforge.net/sflogo.php?group_id=4467&amp;type=1"
-      alt="SourceForge.net Logo" width="88" height="31" /></a>
+      alt="SourceForge.net Logo" width="88" height="31"></a>
 
  	<a class="image"
 		href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467"><img
 		src="/images/feed-icon-28x28.png"
 		alt="RSS Feed Available"
-		title="RSS Feed Available" /></a>
+		title="RSS Feed Available"></a>
 
 	<a class="image"
-		href="https://www.openhub.net/p/gtk-gnutella"><img
-		src=""
-		width="" height=""
-		alt="Open Hub"
-		title="Open Hub metrics" /></a>
+		href="https://www.openhub.net/p/gtk-gnutella">Open Hub metrics</a>
 
 	<a class="image"
 		href="https://scan.coverity.com/projects/2178"><img
 		alt="Coverity Scan Build Status"
 	  	width="95" height="18"
-		src="https://scan.coverity.com/projects/2178/badge.svg" /></a>
+		src="https://scan.coverity.com/projects/2178/badge.svg"></a>
 
 	<a class="image"
 		href="https://github.com/gtk-gnutella/gtk-gnutella"><img
 		alt="gtk-gnutella at GitHub"
 	  	width="32" height="32"
-		src="/images/GitHub-Mark-32px.png" /></a>
+		src="/images/GitHub-Mark-32px.png"></a>
 
    <div style="text-align: center;">
 	<?php iceinclude("sidenav_copyright", 0) ?>
