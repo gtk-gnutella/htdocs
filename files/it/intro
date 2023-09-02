@@ -12,7 +12,7 @@
   <a href="http://www.NetBSD.org" target="_blank">NetBSD</a>. Funziona almeno sotto Linux,
   <a href="https://svnweb.freebsd.org/ports/head/net-p2p/gtk-gnutella/" target="_blank">FreeBSD</a>,
   <a href="https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/net/gtk-gnutella/index.html" target="_blank">NetBSD</a>,
-  Darwin, Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS whereas CPU architectures include
+  Darwin, Solaris, Tru64 UNIX (OSF/1), SGI IRIX, BeOS, con architetture delle CPU che includono
 x86, AMD64, PowerPC, SPARC, MIPS. E naturalmente Microsoft Windows (almeno XP).
 </p>
 

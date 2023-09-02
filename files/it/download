@@ -4,7 +4,7 @@
 
 <p>
 I rilasci ufficiali si possono scaricare da SourceForge come
-<a href="http://sourceforge.net/projects/gtk-gnutella/files/">sorgenti tar</a>.
+<a href="http://sourceforge.net/projects/gtk-gnutella/files/" target="_blank">sorgenti tar</a>.
 Le firme dei tar sono disponibili per il controllo crittografico di autenticit&agrave;. 
 </p>
 
@@ -16,37 +16,38 @@ gtk-gnutella &egrave; disponibile da diversi distributori di software.
 
 <h5>Linux</h5>
 <ul>
-<li><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gtk-gnutella">Fedora</a></li>
-<li><a href="http://packages.gentoo.org/package/net-p2p/gtk-gnutella">Gentoo</a></li>
-<li><a href="http://packages.ubuntu.com/search?keywords=gtk-gnutella">Ubuntu</a></li>
-<li><a href="http://packages.debian.org/search?keywords=gtk-gnutella">Debian</a></li>
+<li><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gtk-gnutella" target="_blank">Fedora</a></li>
+<li><a href="http://packages.gentoo.org/package/net-p2p/gtk-gnutella" target="_blank">Gentoo</a></li>
+<li><a href="http://packages.ubuntu.com/search?keywords=gtk-gnutella" target="_blank">Ubuntu</a> <strong>[Versione decisamente obsoleta!]</strong></li>
+<li>Il pacchetto non &egrave; attulmente disponibile per Debian e la versione di Ubuntu &egrave; obsoleta; si consiglia di compilare 
+<a href="http://sourceforge.net/projects/gtk-gnutella/files/" target="_blank">i sorgenti tar</a>.</li>
 </ul>
 
 <h5>BSD</h5>
 <ul>
-<li><a href="http://www.freshports.org/net-p2p/gtk-gnutella/">FreshPorts - pacchetti FreeBSD</a></li>
-<li><a href="http://pkgsrc.se/net/gtk-gnutella">pkgsrc - The NetBSD package collection</a> <strong>[Versione decisamente obsoleta!]</strong></li>
-<li><a href="http://openports.se/net/gtk-gnutella">openports - The OpenBSD package collection</a> <strong>[Versione decisamente obsoleta!]</strong></li>
+<li><a href="http://www.freshports.org/net-p2p/gtk-gnutella/" target="_blank">FreshPorts - pacchetti FreeBSD</a></li>
+<li><a href="http://pkgsrc.se/net/gtk-gnutella" target="_blank">pkgsrc - The NetBSD package collection</a> <strong>[Versione decisamente obsoleta!]</strong></li>
+<li><a href="http://openports.se/net/gtk-gnutella" target="_blank">openports - The OpenBSD package collection</a> <strong>[Versione decisamente obsoleta!]</strong></li>
 </ul>
-
-<h5>Mac OS X</h5>
-<ul>
-<li><a href="http://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/" target="_blank">Scarica l'ultimopacchetto .dmg da SourceForge</a></li>
-<li><a href="http://pdb.finkproject.org/pdb/package.php/gtk-gnutella">Fink</a> <strong>[Versione decisamente obsoleta!]</strong></li>
-</ul>
-
 
 <h5>Windows</h5>
 <ul>
 <li><a href="http://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/" target="_blank">L'ultimo pacchetto di installazione è disponibile su SourceForge</a></li>
 </ul>
+
+<h5>Mac OS X</h5>
+<ul>
+<li>Purtroppo i pacchetti .dmg per Mac OS X non sono al momento disponibili!</li>
+<li><a href="http://pdb.finkproject.org/pdb/package.php/gtk-gnutella" target="_blank">Fink</a> <strong>[Versione decisamente obsoleta!]</strong></li>
+</ul>
+
 <p>
 Queste sono le opzioni pi&ugrave; comode per installare gtk-gnutella ma le versioni possono essere obsolete.
 </p>
 
 <p>
 Cortesemente segnalate errori e problemi con gtk-gnutella nelle nostre
-<a href="?page=mailing">mailing list</a> o <a href="?page=bugreport_howto">bug tracker</a>!
+<a href="?lang=it&page=mailing">mailing list</a> o <a href="?lang=it&page=bugreport_howto">bug tracker</a>!
 </p>
 
 <!-- end download -->
