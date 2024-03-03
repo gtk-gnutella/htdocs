@@ -63,22 +63,15 @@ define("BASEURL", $_SERVER['PHP_SELF']);
 include(BASEDIR . "files/VERSION");
 
 header("Content-Type: text/html; charset=utf-8");
-/*
- * XXX: Please, explain why russian users should be given koi8-r instead
- *      of utf-8 as encoding. Disabled for now. --cbiere, 2005-07-01
- */
-/*** hack ** fscking damn php won't use LANG in header() ** hack **
-$ru = $CHARSET["ru"] = 'koi8-r';
-if (isset($CHARSET[LANG]))
-  header("Content-Type: text/html; charset=$ru");
-*/
 
 function getpage() {
   global $pages; /* so the included files know about it */
 
-  $page = $_GET['page'];
-  if (in_array($page, $pages)) //not sure if the preg_match expression is correct TEMP REMOVED preg_match('^/[a-z][a-z]/^', $page)) && 
+  if (isset($_GET['page'])) {
+    $page = $_GET['page'];
+    if (in_array($page, $pages)) //not sure if the preg_match expression is correct TEMP REMOVED preg_match('^/[a-z][a-z]/^', $page)) && 
     return $page;
+    }
   else
     return 'news';
 }
@@ -102,7 +95,7 @@ function getlang() {
 //  $cooklang = $_COOKIE['cooklang']; //REMOVED cookies
   $accept = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
   $accept = substr($accept, 0, 2); //get the first two letters as language string
-  $lang = $_GET['lang'];
+  if (isset($_GET['lang'])) $lang = $_GET['lang'];
   //$dirlang = getdirlang(); //removed
 
   if (!isset ($lang)) {
