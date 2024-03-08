@@ -4,7 +4,7 @@
 
 <p>
 I rilasci ufficiali si possono scaricare da SourceForge come
-<a href="http://sourceforge.net/projects/gtk-gnutella/files/" target="_blank">sorgenti tar</a>.
+<a href="https://sourceforge.net/projects/gtk-gnutella/files/" target="_blank">sorgenti tar</a>.
 Le firme dei tar sono disponibili per il controllo crittografico di autenticit&agrave;. 
 </p>
 
@@ -19,8 +19,7 @@ gtk-gnutella &egrave; disponibile da diversi distributori di software.
 <li><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gtk-gnutella" target="_blank">Fedora</a></li>
 <li><a href="http://packages.gentoo.org/package/net-p2p/gtk-gnutella" target="_blank">Gentoo</a></li>
 <li><a href="http://packages.ubuntu.com/search?keywords=gtk-gnutella" target="_blank">Ubuntu</a> <strong>[Versione decisamente obsoleta!]</strong></li>
-<li>Il pacchetto non &egrave; attulmente disponibile per Debian e la versione di Ubuntu &egrave; obsoleta; si consiglia di compilare 
-<a href="http://sourceforge.net/projects/gtk-gnutella/files/" target="_blank">i sorgenti tar</a>.</li>
+<li>Abbiamo richiesto il reinserimento del paccheto .deb nei repository di Debian; nell'attesa potete scaricare <a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/" target="_blank">l'ultimo pacchetto di installazione da SourceForge</a></li>
 </ul>
 
 <h5>BSD</h5>
@@ -32,7 +31,7 @@ gtk-gnutella &egrave; disponibile da diversi distributori di software.
 
 <h5>Windows</h5>
 <ul>
-<li><a href="http://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/" target="_blank">L'ultimo pacchetto di installazione è disponibile su SourceForge</a></li>
+<li><a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/" target="_blank">L'ultimo pacchetto di installazione è disponibile su SourceForge</a></li>
 </ul>
 
 <h5>Mac OS X</h5>
