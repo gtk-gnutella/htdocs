@@ -10,18 +10,6 @@ ini_set('display_errors', 1);
 
 include("files/common.php");
 
-// $dir = getdirlang(); // probably useless, see common.php
-
-/* DEBUG!!!
-if (!isset($dir) || 0 != strcmp(LANG, $dir)) {
-  if (!isset($dir)) {
-    $dir = 'en';
-  }
-  header('Location: /' . LANG . '/?page=' . PAGE);
-  exit;
-}
-*/
-
 ?>
 <!DOCTYPE HTML>
 <html lang="<?php echo LANG ?>">
@@ -278,6 +266,7 @@ pre {
           <?php iceinclude("sidenav", 0) ?>
 
 	  <div>
+	      <label for="lang">Page language</label>
           <select name="lang" tabindex=1 onchange="submit();">
             <option
 		<?php if ('en' === LANG) echo 'selected' ?>
