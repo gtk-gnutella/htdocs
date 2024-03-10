@@ -267,7 +267,7 @@ pre {
 
 	  <div>
 	      <label for="lang">Page language</label>
-          <select name="lang" tabindex=1 onchange="submit();">
+          <select aria-label="Page language" name="lang" tabindex=1 onchange="submit();">
             <option
 		<?php if ('en' === LANG) echo 'selected' ?>
 		value="en">English</option>

@@ -18,15 +18,14 @@ gtk-gnutella &egrave; disponibile da diversi distributori di software.
 <ul>
 <li><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gtk-gnutella" target="_blank">Fedora</a></li>
 <li><a href="http://packages.gentoo.org/package/net-p2p/gtk-gnutella" target="_blank">Gentoo</a></li>
-<li><a href="http://packages.ubuntu.com/search?keywords=gtk-gnutella" target="_blank">Ubuntu</a> <strong>[Versione decisamente obsoleta!]</strong></li>
-<li>Abbiamo richiesto il reinserimento del paccheto .deb nei repository di Debian; nell'attesa potete scaricare <a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/" target="_blank">l'ultimo pacchetto di installazione da SourceForge</a></li>
+<li><a href="http://packages.ubuntu.com/search?keywords=gtk-gnutella" target="_blank">Ubuntu</a> <strong>[Versione decisamente obsoleta!]</strong> scaricate <a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/" target="_blank">l'ultimo pacchetto di installazione .deb da SourceForge</a></li>
+<li>Debian: abbiamo richiesto il reinserimento del paccheto .deb nei repository; nell'attesa potete scaricare <a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/" target="_blank">l'ultimo pacchetto di installazione da SourceForge</a></li>
 </ul>
 
 <h5>BSD</h5>
 <ul>
 <li><a href="http://www.freshports.org/net-p2p/gtk-gnutella/" target="_blank">FreshPorts - pacchetti FreeBSD</a></li>
-<li><a href="http://pkgsrc.se/net/gtk-gnutella" target="_blank">pkgsrc - The NetBSD package collection</a> <strong>[Versione decisamente obsoleta!]</strong></li>
-<li><a href="http://openports.se/net/gtk-gnutella" target="_blank">openports - The OpenBSD package collection</a> <strong>[Versione decisamente obsoleta!]</strong></li>
+<li><a href="http://pkgsrc.se/net/gtk-gnutella" target="_blank">pkgsrc - The NetBSD package collection</a></li>
 </ul>
 
 <h5>Windows</h5>

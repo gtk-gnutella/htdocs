@@ -18,15 +18,14 @@ gtk-gnutella is available from several software distributions.
 <ul>
 <li><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gtk-gnutella" target="_blank">Fedora</a></li>
 <li><a href="http://packages.gentoo.org/package/net-p2p/gtk-gnutella" target="_blank">Gentoo</a></li>
-<li><a href="http://packages.ubuntu.com/search?keywords=gtk-gnutella" target="_blank">Ubuntu</a> <strong>[Terribly outdated version!]</strong></li>
-<li>We submitted the request to add back the .deb package into Debian repository; in the meanwhile download <a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/" target="_blank">the latest package from SourceForge</a></li>
+<li><a href="http://packages.ubuntu.com/search?keywords=gtk-gnutella" target="_blank">Ubuntu</a> <strong>[Terribly outdated version!]</strong> download <a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/" target="_blank">the latest .deb package from SourceForge</a></li>
+<li>Debian: we submitted the request to add back the .deb package into the Debian repository; in the meanwhile download <a href="https://sourceforge.net/projects/gtk-gnutella/files/gtk-gnutella/" target="_blank">the latest package from SourceForge</a></li>
 </ul>
 
 <h5>BSD</h5>
 <ul>
 <li><a href="http://www.freshports.org/net-p2p/gtk-gnutella/" target="_blank">FreshPorts - FreeBSD packages</a></li>
-<li><a href="http://pkgsrc.se/net/gtk-gnutella" target="_blank">pkgsrc - The NetBSD package collection</a> <strong>[Terribly outdated version!]</strong></li>
-<li><a href="http://openports.se/net/gtk-gnutella" target="_blank">openports - The OpenBSD package collection</a> <strong>[Terribly outdated version!]</strong></li>
+<li><a href="http://pkgsrc.se/net/gtk-gnutella" target="_blank">pkgsrc - The NetBSD package collection</a></li>
 </ul>
 
 <h5>Windows</h5>
