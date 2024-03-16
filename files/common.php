@@ -76,51 +76,21 @@ function getpage() {
     return 'news';
 }
 
-/* getdirlang sub - check the script path for a language hint -- This function strips the first 2 characters from the page address to perpetuate la language but is probably useless since the LANG variable can be taken from the query string */
-function getdirlang() {
-  $script = $_SERVER['PHP_SELF'];
-
-  if (isset($script) && preg_match('^/[a-z][a-z]/^', $script)) { //not sure if the preg_match expression is correct
-    $lang = substr($script, 1, 2);
-    if (file_exists(BASEDIR . $lang . '/index.php'))
-      return $lang;
-  }
-
-  /* Return "en" (English) by default just like getlang() */
-  return null;
-}
 
 /* getlang sub - check which language the visitor wants */
 function getlang() {
-//  $cooklang = $_COOKIE['cooklang']; //REMOVED cookies
-  $accept = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
-  $accept = substr($accept, 0, 2); //get the first two letters as language string
-  if (isset($_GET['lang'])) $lang = $_GET['lang'];
-  //$dirlang = getdirlang(); //removed
-
-  if (!isset ($lang)) {
-    /* no language selection in http request */
-
-    if (isset($dirlang)) { //to be removed
-      /* Language taken from path e.g., /fr/index.php -> fr */
-      $lang = $dirlang;
-    } else if (isset($cooklang)) { //to be removed
-      /* Language taken from cookie */
-      $lang = $cooklang;
-    } else {
-      /* not even a cookie. Choose from http_accept_language */
-      $lang = $accept;
-    }
+  if (isset($_GET['lang'])) {
+    $lang = substr($_GET['lang'], 0, 2); //first of all retrieve current language from the URL
+  } else if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+    $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2); //otherwise get the language from the browser preferences
+  } else {
+    $lang = 'en'; // if no browser preferred language is retrieved, fall back to English
   }
 
   if (!isset($lang) || !file_exists(BASEDIR . $lang . '/index.php')) {
-    /* Use English as default */
+    /* Use English as default if the selected language does not exist */
     $lang = 'en';
   }
-
-  /* Set the cookie only for the default path / but not e.g., /fr/ */
- /* if (!isset($dirlang))
-    setcookie('cooklang', $lang, time() + 31536000); ---DO NOT set cookies until the script works fine */
 
   return $lang;
 }

@@ -19,7 +19,7 @@ x86, AMD64, PowerPC, SPARC, MIPS.  And of course Microsoft Windows (XP at least)
 
 <p>
   gtk-gnutella is free open-source software and released under the GNU General
-  Public License (GPL).
+  Public License (GPL-2).
 </p>
 
 <p>
@@ -39,9 +39,11 @@ x86, AMD64, PowerPC, SPARC, MIPS.  And of course Microsoft Windows (XP at least)
   SourceForge.net Bug Tracker</a>
 </p>
 
-<p style="text-align: center;">
-  <a href="?lang=en&page=devel">We need additional
-  contributors for C development and documentation</a>
+<p>
+  <strong>We need additional contributors</strong> <a href="?lang=en&page=devel">for C development</a>,
+   documentation,
+   <a href="https://explore.transifex.com/gtk-gnutella/gtk-gnutella/" target="_blank">software translation</a>
+   and <a href="https://github.com/gtk-gnutella/htdocs" target="_blank">website translation</a>.
 </p>
 
 <!-- end intro -->

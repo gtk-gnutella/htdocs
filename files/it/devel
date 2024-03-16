@@ -3,7 +3,7 @@
 
 <h2>Collegamenti</h2>
 <ul>
-    <li><a href="http://sourceforge.net/projects/gtk-gnutella/">
+    <li><a href="https://sourceforge.net/projects/gtk-gnutella/">
       Pagina progetto su SourceForge</a></li>
     <li><a href="https://gtk-gnutella.sourceforge.io/doxygen/">
       API Reference</a></li>
@@ -85,10 +85,10 @@
 
 <p>
   Se volete contribuire alla sviluppo di gtk-gnutella visitate la nostra
-  <a href="http://sourceforge.net/projects/gtk-gnutella/">pagina SourceForge
+  <a href="https://sourceforge.net/projects/gtk-gnutella/">pagina SourceForge
   del progetto</a> dopo potete iscrivervi alla mailing list gtk-gnutella-devel
   e inviare le vostre correzioni, bug report e richieste di implementazioni sul 
-  <a href="http://sourceforge.net/p/gtk-gnutella/bugs/">nostro bug tracker</a>,
+  <a href="https://sourceforge.net/p/gtk-gnutella/bugs/">nostro bug tracker</a>,
   grazie.
 </p>
 

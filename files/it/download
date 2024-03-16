@@ -35,7 +35,7 @@ gtk-gnutella &egrave; disponibile da diversi distributori di software.
 
 <h5>Mac OS X</h5>
 <ul>
-<li>Purtroppo i pacchetti .dmg per Mac OS X non sono al momento disponibili!</li>
+<li>I pacchetti .dmg per Mac OS X non sono al momento disponibili, ma potete provare <a href="https://formulae.brew.sh/formula/gtk-gnutella" target="_blank">il pacchetto disponibile su Homebrew</a></li>
 <li><a href="http://pdb.finkproject.org/pdb/package.php/gtk-gnutella" target="_blank">Fink</a> <strong>[Versione decisamente obsoleta!]</strong></li>
 </ul>
 

@@ -36,7 +36,7 @@ gtk-gnutella is available from several software distributions.
 
 <h5>Mac OS X</h5>
 <ul>
-<li>Sorry but .dmg packages for Mac OS X are not currently available!</li>
+<li>Currently .dmg packages for Mac OS X are not available, but you can try <a href="https://formulae.brew.sh/formula/gtk-gnutella" target="_blank">the package available in Homebrew</a></li>
 <li><a href="http://pdb.finkproject.org/pdb/package.php/gtk-gnutella" target="_blank">Fink</a> <strong>[Terribly outdated version!]</strong></li>
 </ul>
 
