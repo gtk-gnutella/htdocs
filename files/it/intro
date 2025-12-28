@@ -32,7 +32,7 @@ x86, AMD64, PowerPC, SPARC, MIPS. E naturalmente Microsoft Windows (almeno XP).
 <p>
   Idee e commenti sono benvenuti nella mailing list gtk-gnutella-devel.
   I bug devono essere inviati al 
-  <a href="http://sourceforge.net/p/gtk-gnutella/bugs/" target="_blank">
+  <a href="https://sourceforge.net/p/gtk-gnutella/bugs/" target="_blank">
   Bug tracker su SourceForge.net</a>
 </p>
 

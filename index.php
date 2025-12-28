@@ -340,13 +340,13 @@ pre {
       alt="SourceForge.net Logo" width="88" height="31"></a>
 
  	<a class="image"
-		href="http://sourceforge.net/export/rss2_projfiles.php?group_id=4467"><img
+		href="https://sourceforge.net/projects/gtk-gnutella/rss?path=/"><img
 		src="/images/feed-icon-28x28.png"
 		alt="RSS Feed Available"
 		title="RSS Feed Available"></a>
 
 	<a class="image"
-		href="https://www.openhub.net/p/gtk-gnutella">Open Hub metrics</a>
+		href="https://openhub.net/p/gtk-gnutella">Open Hub metrics</a>
 
 	<a class="image"
 		href="https://scan.coverity.com/projects/2178"><img
