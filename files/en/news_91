@@ -1,0 +1,11 @@
+<h4>12 October 2026, Version 1.3.2 Released</h4>
+
+<p>This is an urgent release fixing bugs.</p>
+
+<h5>Bug Fixes</h5>
+<ul>
+<li>Fix spurious crash on DHT node lookup results without query tokens</li>
+<li>Regenerate proper identification keys</li>
+
+</ul>
+<!-- end of release 1.3.2 -->
